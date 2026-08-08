@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
 import Link from "next/link";
 import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
@@ -7,6 +7,12 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -20,16 +26,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col text-stone-200">
+    <html lang="en" className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col bg-background text-stone-200">
         <MotionProvider>
-          {/* gradient hairline */}
           <div className="h-px bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent" />
-          <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#080c0b]/80 backdrop-blur-xl">
+          <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#080c0b]/75 backdrop-blur-xl">
             <div className="mx-auto flex w-full max-w-6xl items-center gap-6 px-4 py-3.5">
               <Link
                 href="/"
-                className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text text-lg font-black tracking-tight text-transparent"
+                className="bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text font-serif text-xl font-black italic tracking-tight text-transparent"
               >
                 dandak
               </Link>
@@ -54,18 +59,27 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </a>
             </div>
           </header>
-          <main className="flex-1">{children}</main>
-          <footer className="mt-20 border-t border-white/[0.06] py-10 text-center text-xs text-stone-500">
-            <p className="mx-auto max-w-xl px-4 leading-relaxed">
-              <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text font-bold text-transparent">
-                dandak
-              </span>{" "}
-              — an open, provenance-tracked tourism dataset for the Dandakaranya belt. Facts carry
-              confidence levels; verify volatile details before you travel.
+          <main className="flex-1 overflow-x-clip">{children}</main>
+          <footer className="relative mt-24 overflow-hidden border-t border-white/[0.06] pb-10 pt-14">
+            <p
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 -bottom-10 select-none text-center font-serif text-[26vw] font-black italic leading-none text-stroke sm:text-[18vw]"
+            >
+              dandak
             </p>
-            <p className="mt-2 px-4 text-[11px] text-stone-600">
-              Photography: Vijay Barot, Dinesh Valke — CC BY-SA via Wikimedia Commons.
-            </p>
+            <div className="relative text-center text-xs text-stone-500">
+              <p className="mx-auto max-w-xl px-4 leading-relaxed">
+                <span className="bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text font-serif font-bold italic text-transparent">
+                  dandak
+                </span>{" "}
+                — an open, provenance-tracked tourism dataset for the Dandakaranya belt. Facts
+                carry confidence levels; verify volatile details before you travel.
+              </p>
+              <p className="mt-2 px-4 text-[11px] text-stone-600">
+                Photography: Vijay Barot, Dinesh Valke, JB Kalola, Vijayakumarblathur — CC BY-SA via
+                Wikimedia Commons.
+              </p>
+            </div>
           </footer>
         </MotionProvider>
       </body>

@@ -133,7 +133,7 @@ export default async function SpotPage({ params }: { params: Params }) {
         </span>
       </div>
 
-      <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight text-stone-50 sm:text-5xl">
+      <h1 className="mt-4 font-serif text-4xl font-black leading-[1.05] tracking-tight text-stone-50 sm:text-6xl">
         {spot.name.en}
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-stone-400">{spot.summary}</p>

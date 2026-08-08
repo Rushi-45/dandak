@@ -93,7 +93,18 @@
     { "id": "dang-vansda-national-park", "distance_km": 10 }
   ],
   "itineraries": ["saputara-waghai-2-day", "monsoon-waterfall-circuit"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gira_Water_Fall_saputara.JPG",
+        "license": "cc-by-sa",
+        "caption": "Gira Falls in monsoon flow",
+        "credit": "JB Kalola",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Gira_Water_Fall_saputara.JPG"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Gira Falls, Waghai — Monsoon Guide",
     "meta_description": "Gira Falls near Waghai: best months, access walk, safety and crowd tips for Dang's most visited monsoon waterfall."

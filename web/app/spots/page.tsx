@@ -28,10 +28,10 @@ export default function SpotsPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14">
-      <h1 className="text-4xl font-black tracking-tight text-stone-100">
+      <h1 className="font-serif text-5xl font-black tracking-tight text-stone-100">
         All{" "}
-        <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text text-transparent">
-          spots
+        <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text italic text-transparent">
+          spots.
         </span>
       </h1>
       <p className="mt-2 text-sm text-stone-500">
@@ -44,7 +44,7 @@ export default function SpotsPage() {
           <section key={id} id={id} className="relative mt-14 scroll-mt-24">
             <div className={`absolute -top-4 left-0 h-px w-40 bg-gradient-to-r ${accent} to-transparent`} />
             <div className="flex items-baseline gap-3">
-              <h2 className="text-2xl font-extrabold text-stone-100">{label}</h2>
+              <h2 className="font-serif text-3xl font-black italic text-stone-100">{label}</h2>
               <span className="rounded-full border border-white/[0.07] bg-white/[0.03] px-2 py-0.5 text-xs text-stone-500">
                 {group.length} spots
               </span>

@@ -90,7 +90,18 @@
     { "id": "narmada-valley-of-flowers", "distance_km": 4 }
   ],
   "itineraries": ["sou-express-1-day"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sardar_Sarovar_Dam_1.jpg",
+        "license": "cc-by-sa",
+        "caption": "The Sardar Sarovar dam wall from the viewpoint side",
+        "credit": "Vijayakumarblathur",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sardar_Sarovar_Dam_1.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Sardar Sarovar Dam Viewpoints — Ekta Nagar Guide",
     "meta_description": "When the Sardar Sarovar dam is worth prioritising, how viewpoint access works at Ekta Nagar, and the best months for gate releases."

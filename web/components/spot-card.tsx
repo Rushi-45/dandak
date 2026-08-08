@@ -26,7 +26,7 @@ export function SpotCard({ spot }: { spot: Spot }) {
         )}
       </div>
 
-      <h3 className="text-base font-bold text-stone-100 transition-colors group-hover:text-emerald-200">
+      <h3 className="font-serif text-lg font-black leading-snug text-stone-100 transition-colors group-hover:text-emerald-200">
         {spot.name.en}
       </h3>
       <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-stone-400">{spot.summary}</p>
