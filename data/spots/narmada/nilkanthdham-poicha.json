@@ -93,7 +93,18 @@
     { "id": "narmada-statue-of-unity", "distance_km": 40 }
   ],
   "itineraries": ["narmada-faith-day"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Nilkanthdham_-_panoramio.jpg",
+        "license": "cc-by",
+        "caption": "The parikrama waterway around Nilkanthdham's shrines",
+        "credit": "chirayumistry",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nilkanthdham_-_panoramio.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Nilkanthdham Poicha — Temple Complex Guide",
     "meta_description": "Visiting Nilkanthdham Swaminarayan complex at Poicha: darshan timings, free entry, river ghats, exhibitions and evening lighting."

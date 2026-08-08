@@ -94,7 +94,18 @@
     { "id": "narmada-sagai-malsamot", "distance_km": 15 }
   ],
   "itineraries": ["dediapada-offbeat-loop"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Water_passage_at_shoolpaneshwar_wildlife_sanctuary_01.jpg",
+        "license": "cc-by-sa",
+        "caption": "A water passage inside Shoolpaneshwar sanctuary",
+        "credit": "Mohak Maniar",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Water_passage_at_shoolpaneshwar_wildlife_sanctuary_01.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Shoolpaneshwar Wildlife Sanctuary — Visit Guide",
     "meta_description": "Permits, seasons, sloth bears and eco-campsites in Shoolpaneshwar sanctuary — Narmada district's 600 km² of hill forest."

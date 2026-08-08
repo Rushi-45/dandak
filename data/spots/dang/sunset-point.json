@@ -92,7 +92,18 @@
     { "id": "dang-echo-point", "distance_km": 2 }
   ],
   "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/A_View_from_Sunset_Point_Saputara_Hill_Station%2CThe_Dangs%2CGujarat.jpg",
+        "license": "cc-by-sa",
+        "caption": "Rays breaking over the valley from Sunset Point",
+        "credit": "Mihir.S.Mehta",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_View_from_Sunset_Point_Saputara_Hill_Station,The_Dangs,Gujarat.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Sunset Point (Gandhi Shikhar), Saputara — Guide",
     "meta_description": "How to reach Saputara's Sunset Point by ropeway or steps, the best months for clear views, and photography timing tips."

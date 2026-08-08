@@ -93,7 +93,10 @@ export interface Spot {
   faqs: { q: string; a: string }[];
   nearby: { id: string; distance_km: number; note?: string | null }[];
   itineraries: string[];
-  media: { images: unknown[]; videos: unknown[] };
+  media: {
+    images: { url: string; license: string; caption?: string | null; credit?: string | null; source_url?: string | null }[];
+    videos: unknown[];
+  };
   seo: { meta_title: string | null; meta_description: string | null };
   provenance: {
     created: string;
@@ -186,3 +189,25 @@ export function getItineraries(): Itinerary[] {
 }
 
 export { MONTHS, formatMonths, categoryLabel } from "./format";
+
+/** Local card/hero image for a spot, if one has been staged under public/images/spots. */
+export function getSpotImagePath(spotId: string): string | null {
+  const p = path.join(process.cwd(), "public", "images", "spots", `${spotId}.jpg`);
+  return fs.existsSync(p) ? `/images/spots/${spotId}.jpg` : null;
+}
+
+/** Slim a full Spot down to the card contract (adds the local image path). */
+export function toCardData(s: Spot) {
+  return {
+    slug: s.slug,
+    district: s.district,
+    name: { en: s.name.en },
+    category: s.category,
+    cluster: s.cluster,
+    tags: s.tags,
+    summary: s.summary,
+    seasonality: { monsoon_dependent: s.seasonality.monsoon_dependent },
+    provenance: { confidence: s.provenance.confidence },
+    image: getSpotImagePath(s.id),
+  };
+}

@@ -92,7 +92,18 @@
     { "id": "narmada-nilkanthdham-poicha", "distance_km": 45, "note": "Classic same-day pairing" }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kabirvad_hodi_ghat.JPG",
+        "license": "cc-by-sa",
+        "caption": "The boat ghat crossing to Kabirvad island",
+        "credit": "સતિષચંદ્ર (Gujarati Wikipedia)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kabirvad_hodi_ghat.JPG"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Kabirvad Banyan Island — Boat & Visit Guide",
     "meta_description": "Reaching Kabirvad's giant banyan by boat: fares, timings, the Kabir legend and pairing with Poicha."

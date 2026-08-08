@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categoryLabel } from "@/lib/format";
 import { categoryMeta } from "@/lib/ui";
 
-/** The slim, serializable slice of a spot the card needs — full Spot satisfies it structurally. */
+/** The slim, serializable slice of a spot the card needs. */
 export interface SpotCardData {
   slug: string;
   district: string;
@@ -13,6 +14,7 @@ export interface SpotCardData {
   summary: string;
   seasonality: { monsoon_dependent: boolean | null };
   provenance: { confidence: "high" | "medium" | "low" };
+  image?: string | null;
 }
 
 const confidenceDot: Record<string, string> = {
@@ -29,7 +31,20 @@ export function SpotCard({ spot }: { spot: SpotCardData }) {
       className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/30 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-20px_rgba(16,185,129,0.35)] group-hover/cards:[&:not(:hover)]:opacity-40 group-hover/cards:[&:not(:hover)]:blur-[1.5px] group-hover/cards:[&:not(:hover)]:scale-[0.98]"
     >
       {/* corner glow on hover */}
-      <div className="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-emerald-400/0 blur-2xl transition-colors duration-500 group-hover:bg-emerald-400/15" />
+      <div className="pointer-events-none absolute -right-16 -top-16 z-10 h-32 w-32 rounded-full bg-emerald-400/0 blur-2xl transition-colors duration-500 group-hover:bg-emerald-400/15" />
+
+      {spot.image && (
+        <div className="relative -mx-5 -mt-5 mb-4 h-40 overflow-hidden">
+          <Image
+            src={spot.image}
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#101513] via-transparent to-transparent" />
+        </div>
+      )}
 
       <div className="mb-3 flex items-center gap-2 text-xs">
         <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-medium ring-1 ${meta.chip}`}>

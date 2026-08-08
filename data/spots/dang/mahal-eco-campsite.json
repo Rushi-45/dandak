@@ -94,7 +94,18 @@
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cottage_House_in_Purna_Wildlife_Sanctuary_%2C_The_Dangs_%2C_Gujarat.jpg",
+        "license": "cc-by-sa",
+        "caption": "A bamboo cottage at the Mahal campsite after dark",
+        "credit": "Mihir.S.Mehta",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cottage_House_in_Purna_Wildlife_Sanctuary_,_The_Dangs_,_Gujarat.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Mahal Eco Campsite, Purna Sanctuary — Stay Guide",
     "meta_description": "Booking Mahal campsite inside Purna sanctuary: cottages on the river, dawn walks, season and what to carry."

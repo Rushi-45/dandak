@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/flip-words";
 import { SpotCard } from "@/components/spot-card";
 import { TiltCard } from "@/components/tilt-card";
 import { Meteors } from "@/components/meteors";
-import { getAllSpots, getDistrict, getItineraries, getSpotById } from "@/lib/data";
+import { getAllSpots, getDistrict, getItineraries, getSpotById, toCardData } from "@/lib/data";
 import souImg from "@/public/images/statue-of-unity.jpg";
 import lakeImg from "@/public/images/saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
@@ -357,7 +357,7 @@ export default function Home() {
             <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {dang.hero_spots.slice(0, 6).map((id) => {
                 const spot = getSpotById(id);
-                return spot ? <SpotCard key={id} spot={spot} /> : null;
+                return spot ? <SpotCard key={id} spot={toCardData(spot)} /> : null;
               })}
             </div>
           </section>
@@ -393,7 +393,7 @@ export default function Home() {
             <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {narmada.hero_spots.slice(0, 6).map((id) => {
                 const spot = getSpotById(id);
-                return spot ? <SpotCard key={id} spot={spot} /> : null;
+                return spot ? <SpotCard key={id} spot={toCardData(spot)} /> : null;
               })}
             </div>
           </section>

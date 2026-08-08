@@ -99,7 +99,18 @@
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Purna_River_view_from_Campsite.jpg",
+        "license": "cc-by-sa",
+        "caption": "The Purna river from the Mahal campsite",
+        "credit": "Yndesai",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Purna_River_view_from_Campsite.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Purna Wildlife Sanctuary, Dang — Forest Guide",
     "meta_description": "Permits, season, Mahal campsite and what wildlife to expect in Purna sanctuary — Gujarat's densest forest, in the Dang hills."

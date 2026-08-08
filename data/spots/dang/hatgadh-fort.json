@@ -93,7 +93,18 @@
     { "id": "dang-sunset-point", "distance_km": 7 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hatgad_village_viewed_from_Hatgad_fort_%2851694602788%29.jpg",
+        "license": "cc-by-sa",
+        "caption": "Hatgadh village and hills seen from the fort",
+        "credit": "Dinesh Valke",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hatgad_village_viewed_from_Hatgad_fort_(51694602788).jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Hatgadh Fort Trek near Saputara — Guide",
     "meta_description": "The Hatgadh fort climb from Saputara: route, effort, best months and what remains on the summit."
