@@ -96,7 +96,18 @@
     { "id": "dang-sunset-point", "distance_km": 2.5 }
   ],
   "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day", "tribal-culture-trail"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Saputara_lake_viewed_from_ropeway_%2851697377388%29.jpg",
+        "license": "cc-by-sa",
+        "caption": "Saputara lake and town from the Pushpak ropeway",
+        "credit": "Dinesh Valke",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Saputara_lake_viewed_from_ropeway_(51697377388).jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Saputara Lake — Boating & Lakefront Guide",
     "meta_description": "Boating rates, timings, best season and crowd tips for Saputara Lake, the lakeside heart of Gujarat's only hill station."

@@ -109,7 +109,18 @@
     { "id": "narmada-unity-glow-garden", "distance_km": 2 }
   ],
   "itineraries": ["sou-express-1-day", "sou-family-2-day"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Statue_of_Unity.jpg",
+        "license": "cc-by-sa",
+        "caption": "The Statue of Unity above the walkway plaza",
+        "credit": "Vijay Barot",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Statue_of_Unity.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Statue of Unity, Ekta Nagar — Complete Visit Guide",
     "meta_description": "Tickets, viewing-gallery slots, Monday closure, best season and one-vs-two-day plans for the Statue of Unity at Ekta Nagar (Kevadia)."

@@ -63,6 +63,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               — an open, provenance-tracked tourism dataset for the Dandakaranya belt. Facts carry
               confidence levels; verify volatile details before you travel.
             </p>
+            <p className="mt-2 px-4 text-[11px] text-stone-600">
+              Photography: Vijay Barot, Dinesh Valke — CC BY-SA via Wikimedia Commons.
+            </p>
           </footer>
         </MotionProvider>
       </body>
