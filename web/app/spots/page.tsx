@@ -1,65 +1,44 @@
 import type { Metadata } from "next";
-import { FadeIn } from "@/components/fade-in";
-import { SpotCard } from "@/components/spot-card";
+import { SpotExplorer } from "@/components/spot-explorer";
+import type { SpotCardData } from "@/components/spot-card";
 import { getAllSpots } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "All Spots",
   description:
-    "Every documented place in Dang and Narmada districts — waterfalls, viewpoints, temples, sanctuaries and the Statue of Unity campus.",
+    "Search and filter every documented place in Dang and Narmada districts — waterfalls, viewpoints, temples, sanctuaries and the Statue of Unity campus.",
 };
 
 export default function SpotsPage() {
-  const spots = getAllSpots();
-  const districts: { id: "dang" | "narmada"; label: string; blurb: string; accent: string }[] = [
-    {
-      id: "dang",
-      label: "Dang",
-      blurb: "Saputara, the Waghai belt and the forest interior.",
-      accent: "from-emerald-400/70",
-    },
-    {
-      id: "narmada",
-      label: "Narmada",
-      blurb: "The Statue of Unity campus, Rajpipla and the Shoolpaneshwar belt.",
-      accent: "from-amber-400/70",
-    },
-  ];
+  // Slim the records down to what the client explorer needs.
+  const spots: SpotCardData[] = getAllSpots().map((s) => ({
+    slug: s.slug,
+    district: s.district,
+    name: { en: s.name.en },
+    category: s.category,
+    cluster: s.cluster,
+    tags: s.tags,
+    summary: s.summary,
+    seasonality: { monsoon_dependent: s.seasonality.monsoon_dependent },
+    provenance: { confidence: s.provenance.confidence },
+  }));
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-14">
+    <div className="mx-auto max-w-6xl px-4 py-12">
       <h1 className="font-serif text-5xl font-black tracking-tight text-stone-100">
-        All{" "}
+        Find your{" "}
         <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text italic text-transparent">
-          spots.
+          spot.
         </span>
       </h1>
-      <p className="mt-2 text-sm text-stone-500">
-        {spots.length} places, grouped by district. Filters land in the next milestone.
+      <p className="mt-2 max-w-xl text-sm text-stone-500">
+        {spots.length} documented places across Dang and Narmada — search anything, or filter by
+        district, kind and mood.
       </p>
 
-      {districts.map(({ id, label, blurb, accent }) => {
-        const group = spots.filter((s) => s.district === id);
-        return (
-          <section key={id} id={id} className="relative mt-14 scroll-mt-24">
-            <div className={`absolute -top-4 left-0 h-px w-40 bg-gradient-to-r ${accent} to-transparent`} />
-            <div className="flex items-baseline gap-3">
-              <h2 className="font-serif text-3xl font-black italic text-stone-100">{label}</h2>
-              <span className="rounded-full border border-white/[0.07] bg-white/[0.03] px-2 py-0.5 text-xs text-stone-500">
-                {group.length} spots
-              </span>
-            </div>
-            <p className="mt-1.5 text-sm text-stone-500">{blurb}</p>
-            <FadeIn>
-              <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {group.map((spot) => (
-                  <SpotCard key={spot.id} spot={spot} />
-                ))}
-              </div>
-            </FadeIn>
-          </section>
-        );
-      })}
+      <div className="mt-8">
+        <SpotExplorer spots={spots} />
+      </div>
     </div>
   );
 }

@@ -1,9 +1,27 @@
 import Link from "next/link";
-import type { Spot } from "@/lib/data";
-import { categoryLabel } from "@/lib/data";
+import { categoryLabel } from "@/lib/format";
 import { categoryMeta } from "@/lib/ui";
 
-export function SpotCard({ spot }: { spot: Spot }) {
+/** The slim, serializable slice of a spot the card needs — full Spot satisfies it structurally. */
+export interface SpotCardData {
+  slug: string;
+  district: string;
+  name: { en: string };
+  category: string;
+  cluster: string | null;
+  tags: string[];
+  summary: string;
+  seasonality: { monsoon_dependent: boolean | null };
+  provenance: { confidence: "high" | "medium" | "low" };
+}
+
+const confidenceDot: Record<string, string> = {
+  high: "bg-emerald-500",
+  medium: "bg-amber-400",
+  low: "bg-stone-300",
+};
+
+export function SpotCard({ spot }: { spot: SpotCardData }) {
   const meta = categoryMeta(spot.category);
   return (
     <Link
@@ -24,6 +42,10 @@ export function SpotCard({ spot }: { spot: Spot }) {
             ☔
           </span>
         )}
+        <span
+          className={`${spot.seasonality.monsoon_dependent ? "" : "ml-auto "}inline-block h-2 w-2 rounded-full ${confidenceDot[spot.provenance.confidence]}`}
+          title={`Data confidence: ${spot.provenance.confidence}`}
+        />
       </div>
 
       <h3 className="font-serif text-lg font-black leading-snug text-stone-100 transition-colors group-hover:text-emerald-200">
