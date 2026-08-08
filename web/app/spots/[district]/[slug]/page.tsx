@@ -10,6 +10,7 @@ import {
   getSpotById,
   type Spot,
 } from "@/lib/data";
+import { categoryMeta, CONFIDENCE_META } from "@/lib/ui";
 
 type Params = Promise<{ district: string; slug: string }>;
 
@@ -39,9 +40,9 @@ const DAY_NAMES: Record<string, string> = {
 
 function Fact({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-xl border border-stone-200 bg-white p-3">
-      <dt className="text-[11px] font-medium uppercase tracking-wide text-stone-400">{label}</dt>
-      <dd className="mt-0.5 text-sm font-medium text-stone-800">{value}</dd>
+    <div className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3 backdrop-blur">
+      <dt className="text-[10px] font-semibold uppercase tracking-widest text-stone-500">{label}</dt>
+      <dd className="mt-1 text-sm font-semibold text-stone-100">{value}</dd>
     </div>
   );
 }
@@ -53,7 +54,10 @@ function quickFacts(spot: Spot): { label: string; value: string }[] {
 
   if (spot.visit.duration_min) {
     const h = spot.visit.duration_min / 60;
-    facts.push({ label: "Time needed", value: h >= 1 ? `~${Math.round(h * 10) / 10} hr` : `${spot.visit.duration_min} min` });
+    facts.push({
+      label: "Time needed",
+      value: h >= 1 ? `~${Math.round(h * 10) / 10} hr` : `${spot.visit.duration_min} min`,
+    });
   }
 
   if (spot.visit.fees === null) {
@@ -73,7 +77,10 @@ function quickFacts(spot: Spot): { label: string; value: string }[] {
   }
 
   if (spot.visit.weekly_closure) {
-    facts.push({ label: "Closed", value: `${DAY_NAMES[spot.visit.weekly_closure] ?? spot.visit.weekly_closure}s` });
+    facts.push({
+      label: "Closed",
+      value: `${DAY_NAMES[spot.visit.weekly_closure] ?? spot.visit.weekly_closure}s`,
+    });
   }
 
   if (spot.experience.difficulty) {
@@ -88,40 +95,51 @@ export default async function SpotPage({ params }: { params: Params }) {
   const spot = getSpot(district, slug);
   if (!spot) notFound();
 
+  const meta = categoryMeta(spot.category);
+  const conf = CONFIDENCE_META[spot.provenance.confidence];
   const paragraphs = spot.description?.split("\n\n") ?? [];
   const verified = spot.provenance.last_verified;
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-10">
+    <article className="relative mx-auto max-w-3xl px-4 py-12">
+      {/* page glow */}
+      <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
+
       {/* Header */}
-      <nav className="text-xs text-stone-400">
-        <Link href="/spots" className="hover:text-emerald-800">
+      <nav className="text-xs text-stone-500">
+        <Link href="/spots" className="transition-colors hover:text-emerald-300">
           Spots
         </Link>{" "}
-        / <span className="capitalize">{spot.district}</span>
+        <span className="text-stone-700">/</span> <span className="capitalize">{spot.district}</span>
       </nav>
-      <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
-        <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 font-medium text-emerald-800">
+
+      <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
+        <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold ring-1 ${meta.chip}`}>
+          <span aria-hidden>{meta.emoji}</span>
           {categoryLabel(spot.category)}
         </span>
         {spot.cluster && (
-          <span className="rounded-full bg-stone-100 px-2.5 py-0.5 text-stone-500">
+          <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400">
             {categoryLabel(spot.cluster)}
           </span>
         )}
         {spot.seasonality.monsoon_dependent && (
-          <span className="rounded-full bg-sky-50 px-2.5 py-0.5 font-medium text-sky-700">
-            Monsoon-dependent
+          <span className="rounded-full bg-cyan-400/10 px-3 py-1 font-semibold text-cyan-300 ring-1 ring-cyan-400/30">
+            ☔ Monsoon-dependent
           </span>
         )}
+        <span className={`ml-auto rounded-full px-3 py-1 font-semibold ring-1 ${conf.cls}`}>
+          {conf.label}
+        </span>
       </div>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+
+      <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight text-stone-50 sm:text-5xl">
         {spot.name.en}
       </h1>
-      <p className="mt-3 text-lg leading-relaxed text-stone-600">{spot.summary}</p>
+      <p className="mt-4 text-lg leading-relaxed text-stone-400">{spot.summary}</p>
 
       {/* Quick facts */}
-      <dl className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3">
+      <dl className="mt-8 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
         {quickFacts(spot).map((f) => (
           <Fact key={f.label} label={f.label} value={f.value} />
         ))}
@@ -132,7 +150,7 @@ export default async function SpotPage({ params }: { params: Params }) {
           href={spot.visit.booking.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-block rounded-xl bg-emerald-800 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700"
+          className="mt-6 inline-block rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-5 py-2.5 text-sm font-bold text-emerald-950 shadow-[0_10px_40px_-10px_rgba(16,185,129,0.6)] transition-shadow hover:shadow-[0_10px_50px_-8px_rgba(16,185,129,0.8)]"
         >
           Book tickets (official) ↗
         </a>
@@ -141,9 +159,9 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Description */}
       {paragraphs.length > 0 && (
         <FadeIn>
-          <section className="prose-stone mt-10">
+          <section className="mt-12">
             {paragraphs.map((p, i) => (
-              <p key={i} className="mt-4 leading-relaxed text-stone-700">
+              <p key={i} className="mt-4 leading-relaxed text-stone-300 first:mt-0">
                 {p}
               </p>
             ))}
@@ -154,12 +172,14 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Highlights */}
       {spot.highlights && spot.highlights.length > 0 && (
         <FadeIn>
-          <section className="mt-10">
-            <h2 className="text-lg font-bold text-stone-900">Highlights</h2>
-            <ul className="mt-3 space-y-2">
+          <section className="mt-12 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              Highlights
+            </h2>
+            <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
               {spot.highlights.map((h) => (
-                <li key={h} className="flex gap-2 text-sm text-stone-700">
-                  <span className="mt-0.5 text-emerald-700">✓</span>
+                <li key={h} className="flex gap-2.5 text-sm leading-snug text-stone-300">
+                  <span className="mt-0.5 text-emerald-400">◆</span>
                   {h}
                 </li>
               ))}
@@ -171,34 +191,42 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Lore */}
       {spot.history_legend && (
         <FadeIn>
-          <section className="mt-10 rounded-2xl border border-amber-100 bg-amber-50/60 p-5">
-            <h2 className="text-sm font-bold uppercase tracking-wide text-amber-800">
+          <section className="mt-12 overflow-hidden rounded-2xl border border-amber-400/15 bg-gradient-to-br from-amber-400/[0.08] to-transparent p-6">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-amber-300">
               History &amp; lore
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-stone-700">{spot.history_legend}</p>
+            <p className="mt-3 text-sm leading-relaxed text-stone-300">{spot.history_legend}</p>
           </section>
         </FadeIn>
       )}
 
       {/* Tips & warnings */}
       <FadeIn>
-        <section className="mt-10 grid gap-4 sm:grid-cols-2">
+        <section className="mt-12 grid gap-4 sm:grid-cols-2">
           {spot.tips.length > 0 && (
-            <div className="rounded-2xl border border-stone-200 bg-white p-5">
-              <h2 className="text-sm font-bold text-stone-900">Traveller tips</h2>
-              <ul className="mt-3 space-y-2 text-sm text-stone-600">
+            <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-teal-300">
+                Traveller tips
+              </h2>
+              <ul className="mt-4 space-y-2.5 text-sm leading-snug text-stone-300">
                 {spot.tips.map((t) => (
-                  <li key={t}>• {t}</li>
+                  <li key={t} className="flex gap-2">
+                    <span className="text-teal-400">→</span>
+                    {t}
+                  </li>
                 ))}
               </ul>
             </div>
           )}
           {spot.safety.warnings.length > 0 && (
-            <div className="rounded-2xl border border-red-100 bg-red-50/50 p-5">
-              <h2 className="text-sm font-bold text-red-900">Safety</h2>
-              <ul className="mt-3 space-y-2 text-sm text-stone-700">
+            <div className="rounded-2xl border border-red-400/15 bg-gradient-to-br from-red-400/[0.07] to-transparent p-6">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-red-300">Safety</h2>
+              <ul className="mt-4 space-y-2.5 text-sm leading-snug text-stone-300">
                 {spot.safety.warnings.map((w) => (
-                  <li key={w}>⚠ {w}</li>
+                  <li key={w} className="flex gap-2">
+                    <span className="text-red-400">⚠</span>
+                    {w}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -208,19 +236,44 @@ export default async function SpotPage({ params }: { params: Params }) {
 
       {/* Getting there */}
       <FadeIn>
-        <section className="mt-10">
-          <h2 className="text-lg font-bold text-stone-900">Getting there</h2>
-          <div className="mt-3 space-y-2 text-sm text-stone-600">
-            {spot.access.modes.road && <p><strong className="text-stone-800">Road:</strong> {spot.access.modes.road}</p>}
-            {spot.access.modes.rail && <p><strong className="text-stone-800">Rail:</strong> {spot.access.modes.rail}</p>}
-            {spot.access.modes.air && <p><strong className="text-stone-800">Air:</strong> {spot.access.modes.air}</p>}
-            {spot.access.last_mile && <p><strong className="text-stone-800">Last stretch:</strong> {spot.access.last_mile}</p>}
+        <section className="mt-12 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+            Getting there
+          </h2>
+          <div className="mt-4 space-y-2.5 text-sm leading-relaxed text-stone-400">
+            {spot.access.modes.road && (
+              <p>
+                <strong className="font-semibold text-stone-200">Road · </strong>
+                {spot.access.modes.road}
+              </p>
+            )}
+            {spot.access.modes.rail && (
+              <p>
+                <strong className="font-semibold text-stone-200">Rail · </strong>
+                {spot.access.modes.rail}
+              </p>
+            )}
+            {spot.access.modes.air && (
+              <p>
+                <strong className="font-semibold text-stone-200">Air · </strong>
+                {spot.access.modes.air}
+              </p>
+            )}
+            {spot.access.last_mile && (
+              <p>
+                <strong className="font-semibold text-stone-200">Last stretch · </strong>
+                {spot.access.last_mile}
+              </p>
+            )}
           </div>
           {Object.keys(spot.location.distances_km).length > 0 && (
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
               {Object.entries(spot.location.distances_km).map(([hub, km]) => (
-                <span key={hub} className="rounded-lg bg-stone-100 px-2.5 py-1 text-xs text-stone-600">
-                  {categoryLabel(hub)} · {km} km
+                <span
+                  key={hub}
+                  className="rounded-lg border border-white/[0.07] bg-white/[0.03] px-2.5 py-1 text-xs text-stone-400"
+                >
+                  {categoryLabel(hub)} <span className="text-emerald-300">{km} km</span>
                 </span>
               ))}
             </div>
@@ -231,13 +284,15 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* FAQs */}
       {spot.faqs.length > 0 && (
         <FadeIn>
-          <section className="mt-10">
-            <h2 className="text-lg font-bold text-stone-900">Questions people ask</h2>
-            <div className="mt-3 space-y-4">
+          <section className="mt-12">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              Questions people ask
+            </h2>
+            <div className="mt-4 space-y-4">
               {spot.faqs.map((f) => (
-                <div key={f.q}>
-                  <h3 className="text-sm font-semibold text-stone-800">{f.q}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-stone-600">{f.a}</p>
+                <div key={f.q} className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
+                  <h3 className="text-sm font-bold text-stone-100">{f.q}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-400">{f.a}</p>
                 </div>
               ))}
             </div>
@@ -248,9 +303,9 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Nearby */}
       {spot.nearby.length > 0 && (
         <FadeIn>
-          <section className="mt-10">
-            <h2 className="text-lg font-bold text-stone-900">Nearby</h2>
-            <div className="mt-3 flex flex-wrap gap-2">
+          <section className="mt-12">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">Nearby</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
               {spot.nearby.map((n) => {
                 const near = getSpotById(n.id);
                 if (!near) return null;
@@ -258,9 +313,9 @@ export default async function SpotPage({ params }: { params: Params }) {
                   <Link
                     key={n.id}
                     href={`/spots/${near.district}/${near.slug}`}
-                    className="rounded-xl border border-stone-200 bg-white px-3 py-2 text-sm text-stone-700 hover:border-emerald-300 hover:text-emerald-800"
+                    className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-sm text-stone-300 transition-all hover:-translate-y-0.5 hover:border-emerald-400/40 hover:text-emerald-200"
                   >
-                    {near.name.en} <span className="text-xs text-stone-400">· {n.distance_km} km</span>
+                    {near.name.en} <span className="text-xs text-stone-500">· {n.distance_km} km</span>
                   </Link>
                 );
               })}
@@ -270,26 +325,31 @@ export default async function SpotPage({ params }: { params: Params }) {
       )}
 
       {/* Provenance */}
-      <section className="mt-12 rounded-2xl border border-stone-200 bg-white p-5 text-xs text-stone-500">
+      <section className="mt-14 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5 text-xs text-stone-500">
         <p>
           Data confidence:{" "}
-          <strong className="capitalize text-stone-700">{spot.provenance.confidence}</strong>
+          <span className={`rounded-full px-2 py-0.5 font-semibold ring-1 ${conf.cls}`}>{conf.label}</span>
           {verified ? ` · facts last verified ${verified}` : " · not yet verified against sources"}
           {spot.provenance.needs_verification.length > 0 &&
             ` · ${spot.provenance.needs_verification.length} field(s) awaiting verification`}
         </p>
         {spot.provenance.sources.length > 0 && (
-          <ul className="mt-2 space-y-1">
+          <ul className="mt-3 space-y-1.5">
             {spot.provenance.sources.map((s) => (
               <li key={s.title}>
                 {s.url ? (
-                  <a href={s.url} className="underline hover:text-emerald-800" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={s.url}
+                    className="underline decoration-stone-700 underline-offset-2 transition-colors hover:text-emerald-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {s.title}
                   </a>
                 ) : (
                   s.title
                 )}
-                {s.publisher ? ` — ${s.publisher}` : ""}
+                {s.publisher ? <span className="text-stone-600"> — {s.publisher}</span> : ""}
               </li>
             ))}
           </ul>
