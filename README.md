@@ -35,15 +35,17 @@ Machine-readable schemas (normative): [`schema/spot.schema.json`](schema/spot.sc
 ## Target repo layout
 
 ```
-specs/                  ← you are here (phase 0)
-schema/                 ← JSON Schemas (spot now; companions in phase 5)
-seed/spots-master.csv   ← derived from specs/08 (phase 1)
+specs/                  ← normative documents (phase 0)
+schema/                 ← JSON Schemas for all six entity types
+seed/spots-master.csv   ← the drafting seed list
 data/
   districts/            ← dang.json, narmada.json
   spots/dang/           ← one JSON file per spot
   spots/narmada/
   itineraries/  events/  stays/  food/
-scripts/                ← validate, stats, lint (phase 1)
+exports/                ← GeoJSON + stats snapshot (regenerable)
+scripts/                ← validate, stats, export-geojson
+web/                    ← Next.js app consuming ../data (npm run dev inside web/)
 ```
 
 ## Ground rules (summary)
