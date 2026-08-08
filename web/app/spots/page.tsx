@@ -51,7 +51,7 @@ export default function SpotsPage() {
             </div>
             <p className="mt-1.5 text-sm text-stone-500">{blurb}</p>
             <FadeIn>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {group.map((spot) => (
                   <SpotCard key={spot.id} spot={spot} />
                 ))}

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { Spotlight } from "@/components/spotlight";
+import { TextGenerate } from "@/components/text-generate";
+import { TracingBeam } from "@/components/tracing-beam";
 import {
   categoryLabel,
   formatMonths,
@@ -104,6 +107,7 @@ export default async function SpotPage({ params }: { params: Params }) {
     <article className="relative mx-auto max-w-3xl px-4 py-12">
       {/* page glow */}
       <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
+      <TracingBeam>
 
       {/* Header */}
       <nav className="text-xs text-stone-500">
@@ -136,14 +140,18 @@ export default async function SpotPage({ params }: { params: Params }) {
       <h1 className="mt-4 font-serif text-4xl font-black leading-[1.05] tracking-tight text-stone-50 sm:text-6xl">
         {spot.name.en}
       </h1>
-      <p className="mt-4 text-lg leading-relaxed text-stone-400">{spot.summary}</p>
+      <p className="mt-4 text-lg leading-relaxed text-stone-400">
+        <TextGenerate text={spot.summary} />
+      </p>
 
       {/* Quick facts */}
-      <dl className="mt-8 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
-        {quickFacts(spot).map((f) => (
-          <Fact key={f.label} label={f.label} value={f.value} />
-        ))}
-      </dl>
+      <Spotlight>
+        <dl className="mt-8 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+          {quickFacts(spot).map((f) => (
+            <Fact key={f.label} label={f.label} value={f.value} />
+          ))}
+        </dl>
+      </Spotlight>
 
       {spot.visit.booking.required && spot.visit.booking.url && (
         <a
@@ -355,6 +363,7 @@ export default async function SpotPage({ params }: { params: Params }) {
           </ul>
         )}
       </section>
+      </TracingBeam>
     </article>
   );
 }

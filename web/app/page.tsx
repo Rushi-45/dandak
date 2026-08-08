@@ -4,7 +4,8 @@ import { FadeIn } from "@/components/fade-in";
 import { FlipWords } from "@/components/flip-words";
 import { SpotCard } from "@/components/spot-card";
 import { TiltCard } from "@/components/tilt-card";
-import { getAllSpots, getDistrict, getItineraries, getSpotById, MONTHS } from "@/lib/data";
+import { Meteors } from "@/components/meteors";
+import { getAllSpots, getDistrict, getItineraries, getSpotById } from "@/lib/data";
 import souImg from "@/public/images/statue-of-unity.jpg";
 import lakeImg from "@/public/images/saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
@@ -258,6 +259,7 @@ export default function Home() {
                 >
                   राम
                 </p>
+                <Meteors />
                 <span className="w-fit rounded-full bg-amber-400/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-200 ring-1 ring-amber-300/30">
                   Living geography
                 </span>
@@ -352,7 +354,7 @@ export default function Home() {
                 📷 Dinesh Valke · CC BY-SA
               </a>
             </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {dang.hero_spots.slice(0, 6).map((id) => {
                 const spot = getSpotById(id);
                 return spot ? <SpotCard key={id} spot={spot} /> : null;
@@ -388,7 +390,7 @@ export default function Home() {
                 Explore Narmada →
               </Link>
             </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="group/cards mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {narmada.hero_spots.slice(0, 6).map((id) => {
                 const spot = getSpotById(id);
                 return spot ? <SpotCard key={id} spot={spot} /> : null;
