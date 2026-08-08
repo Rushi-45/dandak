@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "zarwani-eco-campsite",
+  "slug": "zarwani-eco-campsite",
+  "name": "Zarwani Eco Campsite",
+  "type": "eco-campsite",
+  "district": "narmada",
+  "cluster": "ekta-nagar-area",
+  "spot_id": "narmada-zarwani-falls",
+  "coordinates": { "lat": 21.772, "lng": 73.66, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; inside Shoolpaneshwar sanctuary near the falls" },
+  "contact": null,
+  "amenities": ["tents/cottages", "mess meals when booked", "guided walks", "sanctuary setting"],
+  "nearest_spots": [
+    { "id": "narmada-zarwani-falls", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 13 }
+  ],
+  "notes": "The closest real-forest night to the SoU campus — sanctuary rules apply (daylight movement, no alcohol, generator-scheduled power).",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}

@@ -90,7 +90,7 @@
     { "id": "narmada-ekta-cruise", "distance_km": 2 },
     { "id": "narmada-unity-glow-garden", "distance_km": 2 }
   ],
-  "itineraries": [],
+  "itineraries": ["sou-express-1-day", "sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Valley of Flowers, Ekta Nagar — Visit Guide",

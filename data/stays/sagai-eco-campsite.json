@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "sagai-eco-campsite",
+  "slug": "sagai-eco-campsite",
+  "name": "Sagai Eco Campsite (Malsamot)",
+  "type": "eco-campsite",
+  "district": "narmada",
+  "cluster": "dediapada-belt",
+  "spot_id": "narmada-sagai-malsamot",
+  "coordinates": { "lat": 21.585, "lng": 73.51, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; monsoon weekends fill early" },
+  "contact": null,
+  "amenities": ["cottages and tents", "mess meals when booked", "guided trails", "Malsamot plateau access"],
+  "nearest_spots": [
+    { "id": "narmada-sagai-malsamot", "distance_km": 0 },
+    { "id": "narmada-ninai-falls", "distance_km": 50 },
+    { "id": "narmada-shoolpaneshwar-wls", "distance_km": 15 }
+  ],
+  "notes": "The anchor stay of the eastern belt — forest-department simple, plateau sunsets, near-zero connectivity. Carry cash and offline maps.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}

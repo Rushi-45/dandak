@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "chikoo",
+  "slug": "chikoo",
+  "name": { "en": "Chikoo of the Bilimora–Waghai Belt" },
+  "type": "produce",
+  "veg": true,
+  "districts": ["dang"],
+  "description": "The lowland approach to Dang runs through one of India's classic chikoo (sapota) belts around Bilimora–Gandevi, and the fruit floods stalls at Waghai and along the ghat road in season. Sweet, malty and cheap by the kilo, it is the drive-snack of the Saputara run — and chikoo shakes appear on half the menus below the ghat. The heritage narrow-gauge line to Waghai even carries the nickname of a 'chikoo route' among rail fans.",
+  "where_to_try": [
+    { "name": "Fruit stalls", "place": "Waghai and the Bilimora road" },
+    { "name": "Juice stalls (chikoo shake)", "place": "Waghai, Saputara" }
+  ],
+  "season": "Main flushes winter–spring; available much of the year",
+  "cultural_note": null,
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

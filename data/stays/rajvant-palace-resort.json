@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "rajvant-palace-resort",
+  "slug": "rajvant-palace-resort",
+  "name": "Rajvant Palace Resort, Rajpipla",
+  "type": "resort",
+  "district": "narmada",
+  "cluster": "rajpipla",
+  "spot_id": "narmada-rajvant-palace",
+  "coordinates": { "lat": 21.87, "lng": 73.5, "precision": "approximate" },
+  "price_band": "mid",
+  "booking": { "mode": "phone", "url": null, "notes": "Direct booking with the resort; ~14 rooms, so weekends and film-shoot periods block out fast" },
+  "contact": null,
+  "amenities": ["heritage palace rooms", "restaurant", "museum wing on site", "lawns"],
+  "nearest_spots": [
+    { "id": "narmada-rajvant-palace", "distance_km": 0 },
+    { "id": "narmada-harsiddhi-mata-temple", "distance_km": 2 },
+    { "id": "narmada-statue-of-unity", "distance_km": 25 }
+  ],
+  "notes": "Sleeping in the 1910 palace is the quiet way to do the SoU circuit — 25 min from the campus without its hotel crush.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Rajavant Palace — District Narmada", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
+      { "title": "Rajvant Palace Resort — Cvent listing", "url": "https://www.cvent.com/venues/rajpipla/resort/rajvant-palace-resort/venue-7101ca9b-52b5-4c55-ac5a-bbc2cbb408b8", "publisher": "cvent.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["contact", "price_band"]
+  }
+}

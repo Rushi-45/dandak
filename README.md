@@ -12,8 +12,8 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 |---|---|
 | Spec version | Draft v0.1 |
 | Last updated | 2026-08-08 |
-| Phase | 4 complete — next: 5 (companions) |
-| Data records | 64/64 drafted; 48/64 verified (T1 100%, T2 81%) — see `npm run stats` |
+| Phase | 5 complete — next: 6 (exports & v1.0) |
+| Data records | 64 spots (48 verified: T1 100%, T2 81%) + 44 companions (2 districts, 9 itineraries, 8 events, 15 stays, 10 foods) |
 
 ## Spec index
 
@@ -30,7 +30,7 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 | [08 — Spot Inventory](specs/08-spot-inventory.md) | The master seed list: every candidate spot with category, cluster, tier |
 | [09 — Roadmap](specs/09-roadmap.md) | Post-v1: languages, GeoJSON, SQLite, media, ratings, expansion |
 
-Machine-readable schema (normative, mirrors spec 02): [`schema/spot.schema.json`](schema/spot.schema.json)
+Machine-readable schemas (normative): [`schema/spot.schema.json`](schema/spot.schema.json) plus `district`, `itinerary`, `event`, `stay` and `food` schemas in the same folder.
 
 ## Target repo layout
 

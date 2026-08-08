@@ -88,7 +88,7 @@
     { "id": "narmada-statue-of-unity", "distance_km": 0.5 },
     { "id": "narmada-unity-glow-garden", "distance_km": 2 }
   ],
-  "itineraries": [],
+  "itineraries": ["sou-express-1-day", "sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Statue of Unity Laser Show — Timings & Tips",

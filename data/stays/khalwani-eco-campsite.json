@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "khalwani-eco-campsite",
+  "slug": "khalwani-eco-campsite",
+  "name": "Khalwani Eco Campsite",
+  "type": "eco-campsite",
+  "district": "narmada",
+  "cluster": "ekta-nagar-area",
+  "spot_id": "narmada-river-rafting-khalwani",
+  "coordinates": { "lat": 21.86, "lng": 73.67, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; adjoins the rafting base" },
+  "contact": null,
+  "amenities": ["tents/cottages", "mess meals when booked", "rafting base adjacency", "riverside setting"],
+  "nearest_spots": [
+    { "id": "narmada-river-rafting-khalwani", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 8 }
+  ],
+  "notes": "Sleep beside the rafting stretch and take the first batch of the morning — the practical adventure-stay of the campus area.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}

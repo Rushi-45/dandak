@@ -88,7 +88,7 @@
     { "id": "dang-saputara-tribal-museum", "distance_km": 1 },
     { "id": "dang-saputara-lake", "distance_km": 1.5 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Artist Village Gandharvapur, Saputara — Warli Crafts",

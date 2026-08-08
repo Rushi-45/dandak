@@ -91,7 +91,7 @@
     { "id": "narmada-zarwani-falls", "distance_km": 12 },
     { "id": "narmada-statue-of-unity", "distance_km": 15 }
   ],
-  "itineraries": [],
+  "itineraries": ["dediapada-offbeat-loop", "narmada-faith-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Shoolpaneshwar Mahadev Temple, Gora — Guide",

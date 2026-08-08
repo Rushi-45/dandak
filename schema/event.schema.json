@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:saputara-narmada:schemas:event:v1",
+  "title": "Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "slug", "name", "type", "district", "spot_id", "place", "timing", "description", "scale", "crowd_impact", "tips", "provenance"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "$ref": "#/$defs/kebab" },
+    "slug": { "$ref": "#/$defs/kebab" },
+    "name": {
+      "type": "object", "additionalProperties": false, "required": ["en"],
+      "properties": { "en": { "type": "string", "minLength": 1, "maxLength": 120 }, "gu": { "type": "string" }, "hi": { "type": "string" } }
+    },
+    "type": { "enum": ["festival", "fair", "show", "season-window"] },
+    "district": { "enum": ["dang", "narmada"] },
+    "spot_id": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^(dang|narmada)-[a-z0-9]+(-[a-z0-9]+)*$" }] },
+    "place": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 200 }] },
+    "timing": {
+      "type": "object", "additionalProperties": false, "required": ["recurrence", "typical_months", "duration_days"],
+      "properties": {
+        "recurrence": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "typical_months": { "type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true, "items": { "type": "integer", "minimum": 1, "maximum": 12 } },
+        "duration_days": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": 1, "maximum": 120 }] }
+      }
+    },
+    "description": { "type": "string", "minLength": 50, "maxLength": 2000 },
+    "scale": { "enum": ["local", "regional", "national"] },
+    "crowd_impact": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 400 }] },
+    "tips": { "type": "array", "maxItems": 6, "items": { "type": "string", "maxLength": 250 } },
+    "provenance": {
+      "type": "object", "additionalProperties": false, "required": ["created", "last_verified", "confidence", "sources", "needs_verification"],
+      "properties": {
+        "created": { "$ref": "#/$defs/isoDate" },
+        "last_verified": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/isoDate" }] },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "sources": {
+          "type": "array", "maxItems": 10,
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["title"],
+            "properties": {
+              "title": { "type": "string", "maxLength": 200 },
+              "url": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 300 }] },
+              "publisher": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 200 }] },
+              "accessed": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/isoDate" }] }
+            }
+          }
+        },
+        "needs_verification": { "type": "array", "maxItems": 20, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z_][a-z0-9_.]*$", "maxLength": 80 } }
+      }
+    }
+  },
+  "$defs": {
+    "kebab": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 60 },
+    "isoDate": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+  }
+}

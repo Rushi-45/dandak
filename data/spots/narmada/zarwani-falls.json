@@ -93,7 +93,7 @@
     { "id": "narmada-river-rafting-khalwani", "distance_km": 15 },
     { "id": "narmada-shoolpaneshwar-wls", "distance_km": 25, "note": "Same sanctuary, Dediapada side" }
   ],
-  "itineraries": [],
+  "itineraries": ["dediapada-offbeat-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Zarwani Waterfall, Ekta Nagar — Forest Guide",

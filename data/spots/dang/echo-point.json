@@ -84,7 +84,7 @@
     { "id": "dang-table-point", "distance_km": 1 },
     { "id": "dang-sunrise-point", "distance_km": 2 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Echo Point, Saputara — Quick Stop Guide",

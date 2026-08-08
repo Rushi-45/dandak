@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "shabridham-mela",
+  "slug": "shabridham-mela",
+  "name": { "en": "Shabridham Mela" },
+  "type": "fair",
+  "district": "dang",
+  "spot_id": "dang-shabari-dham",
+  "place": "Shabari Dham, Subir",
+  "timing": {
+    "recurrence": "Annually in January; the tradition descends from the first Shabari Kumbh held in 2006",
+    "typical_months": [1],
+    "duration_days": 3
+  },
+  "description": "The annual mela at Shabari Dham gathers pilgrims to the hilltop where Dang's tradition places Shabari's meeting with Ram. It descends from the landmark Shabari Kumbh of 2006, which put the site on India's pilgrimage map, and now runs each January with darshan queues, kirtan, community meals and stalls filling the Subir hillside. Regional in draw but deeply local in flavour, it pairs the Ramayana narrative with Dangi village festivity.",
+  "scale": "regional",
+  "crowd_impact": "The Subir approach roads and parking stretch thin on peak mela days; ordinary weeks stay easy.",
+  "tips": [
+    "Combine with Pampa Sarovar — the mela extends there naturally",
+    "Mornings are calmer; community meals welcome visitors respectfully"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Shabridham Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["timing.duration_days"]
+  }
+}

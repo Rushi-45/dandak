@@ -18,7 +18,8 @@ const report = (level, file, msg) => problems[level].push({ file, msg });
 
 const registry = readJson(join(ROOT, "scripts", "registry.json"));
 const schema = readJson(join(ROOT, "schema", "spot.schema.json"));
-const validateL1 = new Ajv2020({ allErrors: true, strict: false }).compile(schema);
+const ajv = new Ajv2020({ allErrors: true, strict: false });
+const validateL1 = ajv.compile(schema);
 
 // ---------- seed checks ----------
 const seedPath = join(ROOT, "seed", "spots-master.csv");
@@ -162,6 +163,82 @@ for (const { meta, rec } of parsed) {
   if (wanted.join() !== actual.join()) report("warn", rel, "L3 top-level keys not in template order (spec 02)");
 }
 
+// ---------- companion entities (districts, itineraries, events, stays, food) ----------
+const companionKinds = [
+  { kind: "district", dir: "districts", schemaFile: "district.schema.json" },
+  { kind: "itinerary", dir: "itineraries", schemaFile: "itinerary.schema.json" },
+  { kind: "event", dir: "events", schemaFile: "event.schema.json" },
+  { kind: "stay", dir: "stays", schemaFile: "stay.schema.json" },
+  { kind: "food", dir: "food", schemaFile: "food.schema.json" },
+];
+const companions = {}; // kind -> [{rel, fileSlug, rec}]
+let nCompanions = 0;
+for (const { kind, dir, schemaFile } of companionKinds) {
+  companions[kind] = [];
+  const dPath = join(ROOT, "data", dir);
+  if (!existsSync(dPath)) continue;
+  const sPath = join(ROOT, "schema", schemaFile);
+  const check = existsSync(sPath) ? ajv.compile(readJson(sPath)) : null;
+  if (!check) report("warn", `schema/${schemaFile}`, `missing schema for ${kind} records`);
+  for (const f of readdirSync(dPath).filter((n) => n.endsWith(".json"))) {
+    const rel = `data/${dir}/${f}`;
+    const { text, hadBom } = readText(join(dPath, f));
+    if (hadBom) report("warn", rel, "L3 file has UTF-8 BOM - save without BOM (spec 01)");
+    let rec;
+    try {
+      rec = JSON.parse(text);
+    } catch (e) {
+      report("error", rel, `invalid JSON: ${e.message}`);
+      continue;
+    }
+    if (check && !check(rec))
+      for (const e of check.errors) report("error", rel, `L1 ${e.instancePath || "/"} ${e.message}`);
+    companions[kind].push({ rel, fileSlug: basename(f, ".json"), rec });
+    nCompanions++;
+  }
+}
+
+// L2 for companions
+const eventIds = new Set(companions.event.map((c) => c.rec.id));
+const foodIds = new Set(companions.food.map((c) => c.rec.id));
+const allHubKeys = new Set([...Object.keys(registry.hubs.dang), ...Object.keys(registry.hubs.narmada)]);
+const stayIdSet = new Set(companions.stay.map((c) => c.rec.id));
+
+for (const { rel, fileSlug, rec } of companions.district) {
+  if (rec.id !== fileSlug) report("error", rel, `L2 id "${rec.id}" does not match filename`);
+  for (const s of rec.hero_spots ?? []) if (!datasetIds.has(s)) report("error", rel, `L2 hero_spot "${s}" unknown`);
+  for (const ev of rec.festivals ?? []) if (!eventIds.has(ev)) report("error", rel, `L2 festival "${ev}" not found in events`);
+  for (const fd of rec.foods ?? []) if (!foodIds.has(fd)) report("error", rel, `L2 food "${fd}" not found in food records`);
+}
+for (const { rel, fileSlug, rec } of companions.itinerary) {
+  if (rec.id !== fileSlug || rec.slug !== fileSlug) report("error", rel, "L2 id/slug must match filename");
+  for (const st of rec.stops ?? []) {
+    if (!datasetIds.has(st.spot_id)) report("error", rel, `L2 stop spot_id "${st.spot_id}" unknown`);
+    if (st.day > rec.duration_days) report("error", rel, `L2 stop day ${st.day} exceeds duration_days`);
+  }
+  if (rec.base_hub && !allHubKeys.has(rec.base_hub) && !stayIdSet.has(rec.base_hub))
+    report("warn", rel, `L2 base_hub "${rec.base_hub}" is neither a registry hub nor a stay id`);
+  for (const t of rec.themes ?? []) if (!registry.tags.includes(t)) report("warn", rel, `L3 theme "${t}" not in tag vocabulary`);
+}
+for (const { rel, fileSlug, rec } of companions.event) {
+  if (rec.id !== fileSlug || rec.slug !== fileSlug) report("error", rel, "L2 id/slug must match filename");
+  if (rec.spot_id && !datasetIds.has(rec.spot_id)) report("error", rel, `L2 spot_id "${rec.spot_id}" unknown`);
+  if (rec.spot_id == null && rec.place == null) report("warn", rel, "L3 event has neither spot_id nor place");
+}
+for (const { rel, fileSlug, rec } of companions.stay) {
+  if (rec.id !== fileSlug || rec.slug !== fileSlug) report("error", rel, "L2 id/slug must match filename");
+  if (rec.cluster != null) {
+    const c = registry.clusters[rec.cluster];
+    if (!c) report("error", rel, `L2 unknown cluster "${rec.cluster}"`);
+    else if (c.district !== rec.district) report("error", rel, `L2 cluster "${rec.cluster}" belongs to ${c.district}`);
+  }
+  if (rec.spot_id && !datasetIds.has(rec.spot_id)) report("error", rel, `L2 spot_id "${rec.spot_id}" unknown`);
+  for (const n of rec.nearest_spots ?? []) if (!datasetIds.has(n.id)) report("error", rel, `L2 nearest_spot "${n.id}" unknown`);
+}
+for (const { rel, fileSlug, rec } of companions.food) {
+  if (rec.id !== fileSlug || rec.slug !== fileSlug) report("error", rel, "L2 id/slug must match filename");
+}
+
 // ---------- report ----------
 const touched = [...new Set([...problems.error, ...problems.warn].map((p) => p.file))].sort();
 for (const f of touched) {
@@ -172,7 +249,7 @@ for (const f of touched) {
 const nRecords = parsed.filter((p) => !p.meta.fixture).length;
 const nFixtures = parsed.length - nRecords;
 console.log(
-  `\nvalidate: ${nRecords} record(s), ${nFixtures} fixture(s), ${seed.size} seed row(s) -> ` +
+  `\nvalidate: ${nRecords} record(s), ${nCompanions} companion(s), ${nFixtures} fixture(s), ${seed.size} seed row(s) -> ` +
   `${problems.error.length} error(s), ${problems.warn.length} warning(s)${STRICT ? " [strict]" : ""}`
 );
 process.exit(problems.error.length > 0 || (STRICT && problems.warn.length > 0) ? 1 : 0);

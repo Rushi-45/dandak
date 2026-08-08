@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "kilad-campsite",
+  "slug": "kilad-campsite",
+  "name": "Kilad Nature Education Campsite",
+  "type": "eco-campsite",
+  "district": "dang",
+  "cluster": "waghai",
+  "spot_id": "dang-kilad-nature-campsite",
+  "coordinates": { "lat": 20.776, "lng": 73.512, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; school groups block-book in season" },
+  "contact": null,
+  "amenities": ["riverside cottages and dorms", "mess meals when booked", "nature-education trails"],
+  "nearest_spots": [
+    { "id": "dang-gira-falls", "distance_km": 4 },
+    { "id": "dang-waghai-botanical-garden", "distance_km": 3 },
+    { "id": "dang-vansda-national-park", "distance_km": 9 }
+  ],
+  "notes": "The gentlest forest stay in Dang and the perfect base for an early Vansda NP gate slot — Ambika river steps from the cottages.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Kilad Camping Site — Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Kilad Campsite", "url": "https://kiladcampsite.com/", "publisher": "kiladcampsite.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}

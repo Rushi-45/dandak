@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "dangi-desi-chicken",
+  "slug": "dangi-desi-chicken",
+  "name": { "en": "Dangi-Style Desi Chicken" },
+  "type": "dish",
+  "veg": false,
+  "districts": ["dang"],
+  "description": "The celebratory dish of Dangi households: free-ranging country chicken cooked hard with red chilli, garlic and local masala, usually alongside nagli rotla or rice. It is rustic, fiery and lean — nothing like a city butter-chicken — and mostly lives in homes, small hotels in Ahwa and Waghai, and pre-arranged homestay dinners rather than tourist-facing menus. Vegetarian-dominant Saputara serves little of it; the interior does.",
+  "where_to_try": [
+    { "name": "Small hotels and dhabas", "place": "Ahwa, Waghai" },
+    { "name": "Homestay dinners (arrange ahead)", "place": "Don and interior villages" }
+  ],
+  "season": null,
+  "cultural_note": "Chicken and goat mark festivals and guests in Dangi homes; being cooked a desi murgh is a gesture of regard.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

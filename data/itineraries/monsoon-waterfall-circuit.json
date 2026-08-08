@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "monsoon-waterfall-circuit",
+  "slug": "monsoon-waterfall-circuit",
+  "title": "Dang Monsoon Waterfall Circuit — Gira to Girmal",
+  "duration_days": 2,
+  "districts": ["dang"],
+  "themes": ["monsoon", "nature", "photography", "offbeat"],
+  "best_months": [7, 8, 9],
+  "base_hub": "ahwa",
+  "party": "friends",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "dang-gira-falls", "duration_min": 75, "note": "The accessible headliner — do it first, before crowds" },
+    { "day": 1, "order": 2, "spot_id": "dang-waghai-botanical-garden", "duration_min": 75, "note": "Monsoon-green interlude" },
+    { "day": 1, "order": 3, "spot_id": "dang-shivghat", "duration_min": 30, "note": "Riverside chai halt on the climb to Ahwa" },
+    { "day": 2, "order": 4, "spot_id": "dang-girmal-falls", "duration_min": 90, "note": "Gujarat's tallest — the day's anchor" },
+    { "day": 2, "order": 5, "spot_id": "dang-don-hill", "duration_min": 150, "note": "Meadows and cloud; combinable only with an early Girmal start" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Waghai belt then up to Ahwa for the night — fuel and dinner there; hotels are basic but honest." },
+    { "day": 2, "note": "Interior forest roads: slow, green, occasionally cloud-blind. Girmal first, Don if time and weather allow, back via Ahwa before dark." }
+  ],
+  "total_drive_km": 190,
+  "notes": "Strictly a July–September plan; the same route in winter is a pleasant forest drive with modest falls. No fuel beyond Ahwa — top up religiously.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

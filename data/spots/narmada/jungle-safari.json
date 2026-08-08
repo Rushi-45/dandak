@@ -92,7 +92,7 @@
     { "id": "narmada-children-nutrition-park", "distance_km": 2 },
     { "id": "narmada-cactus-garden", "distance_km": 3 }
   ],
-  "itineraries": [],
+  "itineraries": ["sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Jungle Safari, Ekta Nagar — Zoological Park Guide",

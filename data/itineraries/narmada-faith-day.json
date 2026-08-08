@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "narmada-faith-day",
+  "slug": "narmada-faith-day",
+  "title": "Narmada Faith Day — Poicha, Garudeshwar & the River Temples",
+  "duration_days": 1,
+  "districts": ["narmada"],
+  "themes": ["pilgrimage", "family", "nature"],
+  "best_months": [10, 11, 12, 1, 2],
+  "base_hub": "rajpipla",
+  "party": "family",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "narmada-nilkanthdham-poicha", "duration_min": 180, "note": "Morning darshan and the exhibitions before crowds build" },
+    { "day": 1, "order": 2, "spot_id": "narmada-garudeshwar", "duration_min": 75, "note": "Datta samadhi; reach within the evening window" },
+    { "day": 1, "order": 3, "spot_id": "narmada-shoolpaneshwar-temple", "duration_min": 45, "note": "End on the riverbank at Gora" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Poicha → Rajpipla (lunch) → Garudeshwar → Gora runs ~90 km of easy roads. With an extra half-day, extend west to Kabirvad's banyan island via the Bharuch-side ghat (boat crossing, ₹20–40)." }
+  ],
+  "total_drive_km": 90,
+  "notes": "All three sites are free-entry, active places of worship — modest dress, footwear off at shrines. Shravan and Datta Jayanti transform the crowd levels.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

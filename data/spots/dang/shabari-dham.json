@@ -92,7 +92,7 @@
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 25 },
     { "id": "dang-don-hill", "distance_km": 30 }
   ],
-  "itineraries": [],
+  "itineraries": ["dang-ramayana-trail", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Shabari Dham, Dang — Ramayana Pilgrimage Site",

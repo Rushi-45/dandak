@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "tent-city-1",
+  "slug": "tent-city-1",
+  "name": "Tent City 1, Ekta Nagar",
+  "type": "tent-city",
+  "district": "narmada",
+  "cluster": "sou-complex",
+  "spot_id": null,
+  "coordinates": null,
+  "price_band": "premium",
+  "booking": { "mode": "official-portal", "url": "https://www.tentcitynarmada.com/", "notes": "Operated under the SoU tourism ecosystem; packages typically bundle meals and some attraction transfers" },
+  "contact": null,
+  "amenities": ["luxury tents", "restaurant/meals included", "campus shuttle access", "event lawns"],
+  "nearest_spots": [
+    { "id": "narmada-statue-of-unity", "distance_km": 3 },
+    { "id": "narmada-sardar-sarovar-dam", "distance_km": 4 }
+  ],
+  "notes": "The flagship glamping option beside the campus — book well ahead for Diwali–New Year; rates and inventory swing with season.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [
+      { "title": "Tent City Narmada", "url": "https://www.tentcitynarmada.com/", "publisher": "tentcitynarmada.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "booking.notes", "price_band"]
+  }
+}

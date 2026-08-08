@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "saputara-hotel-belt",
+  "slug": "saputara-hotel-belt",
+  "name": "Saputara Hotel Belt (various)",
+  "type": "hotel",
+  "district": "dang",
+  "cluster": "saputara",
+  "spot_id": null,
+  "coordinates": { "lat": 20.575, "lng": 73.757, "precision": "area" },
+  "price_band": "mid",
+  "booking": { "mode": "ota", "url": null, "notes": "Several dozen hotels and resorts ring the lake and main road, budget lodges to upscale resorts; standard OTA booking works" },
+  "contact": null,
+  "amenities": ["full range: budget to upscale", "restaurants", "lake proximity"],
+  "nearest_spots": [
+    { "id": "dang-saputara-lake", "distance_km": 0.5 },
+    { "id": "dang-pushpak-ropeway", "distance_km": 1 }
+  ],
+  "notes": "A pointer record for the town's hotel stock. Peak pricing (May, Diwali, Christmas–New Year, monsoon-festival weekends) runs 2× the shoulder season — book those weeks well ahead.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["price_band"]
+  }
+}

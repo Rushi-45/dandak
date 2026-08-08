@@ -83,7 +83,7 @@
     { "id": "dang-shabari-dham", "distance_km": 6 },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 22 }
   ],
-  "itineraries": [],
+  "itineraries": ["dang-ramayana-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Pampa Sarovar, Dang — Shabari's Pond",

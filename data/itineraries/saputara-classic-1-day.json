@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "saputara-classic-1-day",
+  "slug": "saputara-classic-1-day",
+  "title": "Saputara in a Day — The Classic Circuit",
+  "duration_days": 1,
+  "districts": ["dang"],
+  "themes": ["family", "nature", "photography", "weekend-getaway"],
+  "best_months": [5, 7, 8, 9, 10, 11, 12, 1],
+  "base_hub": "saputara",
+  "party": "any",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "dang-sunrise-point", "duration_min": 45, "note": "Be in place 20 min before sunrise" },
+    { "day": 1, "order": 2, "spot_id": "dang-table-point", "duration_min": 45 },
+    { "day": 1, "order": 3, "spot_id": "dang-echo-point", "duration_min": 15 },
+    { "day": 1, "order": 4, "spot_id": "dang-saputara-tribal-museum", "duration_min": 60, "note": "Context for everything else you'll see" },
+    { "day": 1, "order": 5, "spot_id": "dang-saputara-lake", "duration_min": 90, "note": "Boating + lakefront lunch" },
+    { "day": 1, "order": 6, "spot_id": "dang-artist-village", "duration_min": 60, "note": "Buy Warli directly from the artists" },
+    { "day": 1, "order": 7, "spot_id": "dang-pushpak-ropeway", "duration_min": 45, "note": "Ride up before the pre-sunset rush" },
+    { "day": 1, "order": 8, "spot_id": "dang-sunset-point", "duration_min": 90, "note": "Claim a railing spot 40 min before sunset on weekends" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Everything sits within ~5 km of town — an auto or own vehicle covers it easily. Lunch at the lakefront or hotel belt; carry a layer for the post-sunset chill." }
+  ],
+  "total_drive_km": 15,
+  "notes": "Works year-round; in monsoon swap Sunrise Point's mist lottery for a longer museum-and-lake morning.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

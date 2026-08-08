@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "nagli-papad",
+  "slug": "nagli-papad",
+  "name": { "en": "Nagli & Maize Papad" },
+  "type": "snack",
+  "veg": true,
+  "districts": ["dang"],
+  "description": "Sun-dried papads of nagli and maize are Dang's cottage snack industry — roasted over coals at stalls and fairs, or carried home in stacks from women's-group outlets. The nagli version is earthy and dark; the maize one sweeter and lighter. They keep for months, cost little, and roast up in seconds on a gas flame — the sensible edible souvenir alongside forest honey.",
+  "where_to_try": [
+    { "name": "SHG/women's-group stalls", "place": "Ahwa, Saputara, fairs" },
+    { "name": "Fair stalls", "place": "Dang Darbar, Saputara Monsoon Festival" }
+  ],
+  "season": null,
+  "cultural_note": "Papad-making is significant seasonal income for village women's groups — buying from their stalls is the direct route.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

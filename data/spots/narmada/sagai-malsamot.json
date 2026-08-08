@@ -93,7 +93,7 @@
     { "id": "narmada-shoolpaneshwar-wls", "distance_km": 15 },
     { "id": "narmada-devmogra-temple", "distance_km": 35 }
   ],
-  "itineraries": [],
+  "itineraries": ["dediapada-offbeat-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Sagai–Malsamot Eco Campsite — Stay Guide",

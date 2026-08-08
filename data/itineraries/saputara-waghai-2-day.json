@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "saputara-waghai-2-day",
+  "slug": "saputara-waghai-2-day",
+  "title": "Saputara + Waghai Belt — Two Easy Days",
+  "duration_days": 2,
+  "districts": ["dang"],
+  "themes": ["family", "nature", "monsoon", "weekend-getaway"],
+  "best_months": [7, 8, 9, 10, 11, 12],
+  "base_hub": "saputara",
+  "party": "family",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "dang-saputara-lake", "duration_min": 90 },
+    { "day": 1, "order": 2, "spot_id": "dang-saputara-tribal-museum", "duration_min": 60 },
+    { "day": 1, "order": 3, "spot_id": "dang-table-point", "duration_min": 45 },
+    { "day": 1, "order": 4, "spot_id": "dang-sunset-point", "duration_min": 90, "note": "Ropeway up, steps down" },
+    { "day": 2, "order": 5, "spot_id": "dang-gira-falls", "duration_min": 75, "note": "Arrive before 10:00 on monsoon weekends" },
+    { "day": 2, "order": 6, "spot_id": "dang-waghai-botanical-garden", "duration_min": 90 },
+    { "day": 2, "order": 7, "spot_id": "dang-kilad-nature-campsite", "duration_min": 60, "note": "Riverside leg-stretch; or swap for Vansda NP in Oct–Mar" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Saputara's core, unhurried. Dinner and overnight in the hotel belt." },
+    { "day": 2, "note": "Descend the ghat (~50 km, allow 75–90 min with viewpoints), do the Waghai trio, lunch in Waghai town, and exit toward Surat/Bilimora — or climb back for a second Saputara night." }
+  ],
+  "total_drive_km": 120,
+  "notes": "In October–March, Vansda National Park (10 min from Waghai) upgrades day 2 — gate pass at the Kilad-village entry.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

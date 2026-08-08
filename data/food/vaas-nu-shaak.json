@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "vaas-nu-shaak",
+  "slug": "vaas-nu-shaak",
+  "name": { "en": "Vaas nu Shaak (Bamboo-Shoot Curry)" },
+  "type": "dish",
+  "veg": true,
+  "districts": ["dang", "narmada"],
+  "description": "Monsoon's signature dish in the bamboo belt: tender young bamboo shoots, sliced and cooked into a spiced curry — earthy, faintly tangy, unlike anything in mainstream Gujarati thalis. The shoots emerge with the rains, so July to September is the honest season; village kitchens and some Ahwa-side eateries make it, and campsite cooks will if asked when shoots are around. Pickled bamboo shoot extends the season in local homes.",
+  "where_to_try": [
+    { "name": "Village kitchens and homestays in season", "place": "Interior Dang" },
+    { "name": "Campsite messes (ask ahead)", "place": "Mahal, Sagai" },
+    { "name": "Local eateries", "place": "Ahwa, Dediapada" }
+  ],
+  "season": "Monsoon (July–September) for fresh shoots",
+  "cultural_note": "Bamboo is the material and the meal of these forests — harvest of shoots follows customary norms; the dish is forest knowledge on a plate.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

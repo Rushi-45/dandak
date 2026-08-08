@@ -94,7 +94,7 @@
     { "id": "narmada-river-rafting-khalwani", "distance_km": 12 },
     { "id": "narmada-shoolpaneshwar-temple", "distance_km": 10 }
   ],
-  "itineraries": [],
+  "itineraries": ["dediapada-offbeat-loop", "narmada-faith-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Garudeshwar Datta Temple — Pilgrimage Guide",

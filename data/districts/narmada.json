@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "narmada",
+  "name": { "en": "Narmada" },
+  "headline": "The Statue of Unity's home district — a mega-monument at the edge of deep tribal forest country.",
+  "overview": "Narmada district runs on a striking contrast. On its river-facing edge stands India's biggest tourism project of the last decade: the 182-metre Statue of Unity at Ekta Nagar (formerly Kevadia), ringed by the Sardar Sarovar dam, ticketed gardens, a zoological park, cruise jetties and a purpose-built railway station. Forty minutes south and east, the district turns into something entirely different — the 600 km² Shoolpaneshwar sanctuary's hill forests, monsoon waterfalls at Zarwani and Ninai, the princely leftovers of Rajpipla, and a tribal heartland whose great festival at Devmogra draws half a million Vasava and Bhil devotees each spring.\n\nMost visitors come for the statue and leave having seen only the campus. The district rewards those who stay a second day: rafting below the dam, the Datta pilgrimage at Garudeshwar, the Swaminarayan complex at Poicha, palace-and-bazaar Rajpipla, and — in season — the eastern belt's falls and forest campsites. Ekta Nagar's infrastructure is the best in the region; beyond Rajpipla, expect rural roads, thin signal and the forest department as your host.\n\nOctober to February is the comfortable season and the SoU peak; monsoon brings the dam releases, full waterfalls and green hills at the price of heat-free but humid days.",
+  "hero_spots": [
+    "narmada-statue-of-unity",
+    "narmada-sardar-sarovar-dam",
+    "narmada-jungle-safari",
+    "narmada-zarwani-falls",
+    "narmada-ninai-falls",
+    "narmada-rajvant-palace",
+    "narmada-nilkanthdham-poicha",
+    "narmada-devmogra-temple"
+  ],
+  "hubs": [
+    { "name": "Ekta Nagar (Kevadia)", "type": "town", "coordinates": { "lat": 21.838, "lng": 73.719 }, "notes": "SoU base town: hotels, e-buses, the campus circuit" },
+    { "name": "Ekta Nagar railway station", "type": "railhead", "notes": "Direct trains from Ahmedabad, Mumbai and other cities; itself built as a showcase" },
+    { "name": "Rajpipla", "type": "town", "coordinates": { "lat": 21.866, "lng": 73.502 }, "notes": "District headquarters; civil hospital, markets, palace heritage" },
+    { "name": "Dediapada", "type": "town", "coordinates": { "lat": 21.633, "lng": 73.612 }, "notes": "Gateway to the eastern forest belt and Shoolpaneshwar sanctuary" },
+    { "name": "Ankleshwar Junction", "type": "railhead", "coordinates": { "lat": 21.626, "lng": 73.015 }, "notes": "Broad-gauge alternative (~70 km from Rajpipla)" },
+    { "name": "Vadodara airport", "type": "airport", "coordinates": { "lat": 22.307, "lng": 73.181 }, "notes": "~90 km from Ekta Nagar — the practical airport" },
+    { "name": "Surat airport", "type": "airport", "coordinates": { "lat": 21.17, "lng": 72.831 }, "notes": "~150 km from Ekta Nagar" }
+  ],
+  "getting_there": {
+    "road": "Ekta Nagar is ~90 km from Vadodara and ~85 km from Bharuch on excellent highways; Rajpipla sits 25 km west of the campus. Dediapada and the eastern belt connect via the Rajpipla–Sagbara corridor. Buses run from Vadodara, Bharuch and Surat; taxis are plentiful on the SoU routes.",
+    "rail": "Ekta Nagar station has direct services from Ahmedabad, Mumbai and other cities timed for SoU tourism; Ankleshwar and Bharuch junctions cover the west of the district.",
+    "air": "Vadodara (~90 km) is the practical airport; Surat and Ahmedabad (~200 km) also work."
+  },
+  "local_transport": "Within the SoU campus, ticketed e-buses and shuttles do the moving; autos and taxis cover Ekta Nagar town and Rajpipla. Beyond Rajpipla and Dediapada, shared jeeps and own transport are the reality — book return taxis for the eastern belt, and expect no app cabs anywhere in the district.",
+  "weather_by_month": [
+    { "month": 1, "temp_min_c": 13, "temp_max_c": 30, "rain": "none", "notes": "Peak visitor season" },
+    { "month": 2, "temp_min_c": 15, "temp_max_c": 33, "rain": "none" },
+    { "month": 3, "temp_min_c": 19, "temp_max_c": 37, "rain": "none" },
+    { "month": 4, "temp_min_c": 23, "temp_max_c": 40, "rain": "none", "notes": "Hot; plan outdoor walks early" },
+    { "month": 5, "temp_min_c": 26, "temp_max_c": 41, "rain": "low", "notes": "Hottest weeks" },
+    { "month": 6, "temp_min_c": 26, "temp_max_c": 37, "rain": "moderate", "notes": "Monsoon arrives; humidity spikes" },
+    { "month": 7, "temp_min_c": 25, "temp_max_c": 32, "rain": "heavy", "notes": "Waterfalls wake up; dam releases possible" },
+    { "month": 8, "temp_min_c": 24, "temp_max_c": 31, "rain": "heavy", "notes": "Best month for Zarwani/Ninai and dam spectacle" },
+    { "month": 9, "temp_min_c": 24, "temp_max_c": 33, "rain": "moderate" },
+    { "month": 10, "temp_min_c": 21, "temp_max_c": 35, "rain": "low", "notes": "Green hills, opening season" },
+    { "month": 11, "temp_min_c": 17, "temp_max_c": 33, "rain": "none" },
+    { "month": 12, "temp_min_c": 14, "temp_max_c": 30, "rain": "none", "notes": "Holiday-week crowds at SoU" }
+  ],
+  "best_season": "October–February for the Statue of Unity and general touring (book ahead for Diwali and Christmas–New Year weeks); July–September for waterfalls, dam releases and the green Shoolpaneshwar belt; the Devmogra fair lands in Feb–Mar. April–June is hot — campus mornings and evenings only.",
+  "emergency": {
+    "police": "112 (national emergency); Ekta Nagar (Kevadia), Rajpipla, Garudeshwar, Dediapada and Sagbara police stations",
+    "ambulance": "108 (GVK EMRI, Gujarat)",
+    "hospitals": ["Civil Hospital, Rajpipla (district hospital)", "Ekta Nagar area medical facilities and first-aid posts", "CHC Dediapada", "CHC Sagbara"],
+    "forest_dept": "Shoolpaneshwar division; check posts at Thawadia (Ekta Nagar side) and the Dediapada ranges handle sanctuary entry"
+  },
+  "festivals": ["unity-day-sou", "devmogra-fair", "shravan-narmada-temples", "sou-peak-season"],
+  "foods": ["khichdi-kadhi-thali", "kand", "mahua-sweets", "nagli-rotla"],
+  "tips": [
+    "The entire SoU campus closes on Mondays — build itineraries around it",
+    "Book viewing-gallery and safari slots online days ahead for weekends and holiday weeks",
+    "Fuel up at Rajpipla or Ekta Nagar before the eastern belt; Dediapada is the last dependable stop",
+    "Forest campsites (Zarwani, Sagai, Khalwani) book via the official eco-tourism portal, not OTAs",
+    "Gujarat is a dry state — no alcohol is sold anywhere in the district"
+  ],
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

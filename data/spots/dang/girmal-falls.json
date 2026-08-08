@@ -97,7 +97,7 @@
     { "id": "dang-don-hill", "distance_km": 40, "note": "Pairs well for a full-day interior loop" },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 25 }
   ],
-  "itineraries": [],
+  "itineraries": ["monsoon-waterfall-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Girmal Falls, Dang — Gujarat's Tallest Waterfall",

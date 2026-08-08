@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:saputara-narmada:schemas:district:v1",
+  "title": "District",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "headline", "overview", "hero_spots", "hubs", "getting_there", "local_transport", "weather_by_month", "best_season", "emergency", "festivals", "foods", "tips", "provenance"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "enum": ["dang", "narmada"] },
+    "name": {
+      "type": "object", "additionalProperties": false, "required": ["en"],
+      "properties": { "en": { "type": "string", "minLength": 1, "maxLength": 80 }, "gu": { "type": "string" }, "hi": { "type": "string" } }
+    },
+    "headline": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "overview": { "type": "string", "minLength": 200, "maxLength": 4000 },
+    "hero_spots": {
+      "type": "array", "minItems": 5, "maxItems": 8, "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^(dang|narmada)-[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "hubs": {
+      "type": "array", "minItems": 2, "maxItems": 12,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+          "type": { "enum": ["town", "railhead", "airport", "bus-station"] },
+          "coordinates": {
+            "type": "object", "additionalProperties": false, "required": ["lat", "lng"],
+            "properties": { "lat": { "type": "number", "minimum": 8, "maximum": 37 }, "lng": { "type": "number", "minimum": 68, "maximum": 98 } }
+          },
+          "notes": { "type": "string", "maxLength": 300 }
+        }
+      }
+    },
+    "getting_there": {
+      "type": "object", "additionalProperties": false, "required": ["road", "rail", "air"],
+      "properties": {
+        "road": { "type": "string", "maxLength": 600 },
+        "rail": { "type": "string", "maxLength": 600 },
+        "air": { "type": "string", "maxLength": 600 }
+      }
+    },
+    "local_transport": { "type": "string", "minLength": 1, "maxLength": 600 },
+    "weather_by_month": {
+      "type": "array", "minItems": 12, "maxItems": 12,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["month", "temp_min_c", "temp_max_c", "rain"],
+        "properties": {
+          "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "temp_min_c": { "type": "integer", "minimum": -5, "maximum": 40 },
+          "temp_max_c": { "type": "integer", "minimum": 0, "maximum": 50 },
+          "rain": { "enum": ["none", "low", "moderate", "heavy"] },
+          "notes": { "type": "string", "maxLength": 200 }
+        }
+      }
+    },
+    "best_season": { "type": "string", "minLength": 1, "maxLength": 600 },
+    "emergency": {
+      "type": "object", "additionalProperties": false, "required": ["police", "ambulance", "hospitals", "forest_dept"],
+      "properties": {
+        "police": { "type": "string", "maxLength": 200 },
+        "ambulance": { "type": "string", "maxLength": 200 },
+        "hospitals": { "type": "array", "maxItems": 8, "items": { "type": "string", "maxLength": 200 } },
+        "forest_dept": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 300 }] }
+      }
+    },
+    "festivals": { "type": "array", "maxItems": 12, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" } },
+    "foods": { "type": "array", "maxItems": 15, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" } },
+    "tips": { "type": "array", "maxItems": 8, "items": { "type": "string", "maxLength": 250 } },
+    "provenance": {
+      "type": "object", "additionalProperties": false, "required": ["created", "last_reviewed"],
+      "properties": {
+        "created": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "last_reviewed": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }] }
+      }
+    }
+  }
+}

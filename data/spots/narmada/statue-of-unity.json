@@ -108,7 +108,7 @@
     { "id": "narmada-jungle-safari", "distance_km": 3 },
     { "id": "narmada-unity-glow-garden", "distance_km": 2 }
   ],
-  "itineraries": [],
+  "itineraries": ["sou-express-1-day", "sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Statue of Unity, Ekta Nagar — Complete Visit Guide",

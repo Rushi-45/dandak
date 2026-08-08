@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "tribal-culture-trail",
+  "slug": "tribal-culture-trail",
+  "title": "Dang Tribal Culture Trail — Museum to Meadow",
+  "duration_days": 2,
+  "districts": ["dang"],
+  "themes": ["tribal-culture", "heritage", "offbeat", "shopping"],
+  "best_months": [10, 11, 12, 1, 2, 3],
+  "base_hub": "saputara",
+  "party": "any",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "dang-saputara-tribal-museum", "duration_min": 75, "note": "The decoder ring — do it first" },
+    { "day": 1, "order": 2, "spot_id": "dang-artist-village", "duration_min": 120, "note": "Warli workshop + direct-from-artist buying" },
+    { "day": 1, "order": 3, "spot_id": "dang-saputara-lake", "duration_min": 90, "note": "Evening at the lakefront" },
+    { "day": 2, "order": 4, "spot_id": "dang-don-hill", "duration_min": 240, "note": "A living Dangi village on the plateau — walk, talk, eat local if offered" },
+    { "day": 2, "order": 5, "spot_id": "dang-shabari-dham", "duration_min": 60, "note": "How the Ramayana maps onto Dang's landscape" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Saputara-based: museum context, then hands-on Warli. Evening free at the lake." },
+    { "day": 2, "note": "Interior day via Ahwa. If your dates land in the week before Holi, drop everything for Dang Darbar at Ahwa — the district's cultural centrepiece." }
+  ],
+  "total_drive_km": 160,
+  "notes": "Photograph people only with consent; buy crafts from makers. March visitors should check Dang Darbar dates first and plan the whole trip around them.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

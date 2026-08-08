@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "dang-forest-honey",
+  "slug": "dang-forest-honey",
+  "name": { "en": "Dang Forest Honey" },
+  "type": "produce",
+  "veg": true,
+  "districts": ["dang"],
+  "description": "Multifloral honey from the Dang forests — darker and more resinous than plains honey, its character shifting with what the forest bloomed that season. Collected by local cooperatives and apiculture initiatives, it is the district's most portable genuine souvenir. Buy sealed and labelled: the Honey Bee Centre in Saputara (when operating), co-op outlets and reputable shops beat roadside bottles of uncertain provenance.",
+  "where_to_try": [
+    { "name": "Honey Bee Centre", "place": "Saputara" },
+    { "name": "Co-operative and khadi outlets", "place": "Ahwa, Saputara" }
+  ],
+  "season": "Post-monsoon and winter harvests are freshest",
+  "cultural_note": "Honey gathering is old forest work here; buying the co-op jar keeps the value with the gatherers.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "mahua-sweets",
+  "slug": "mahua-sweets",
+  "name": { "en": "Mahua Flower Delicacies" },
+  "type": "sweet",
+  "veg": true,
+  "districts": ["dang", "narmada"],
+  "description": "The mahua tree anchors the adivasi year: its fleshy spring flowers are gathered at dawn, sun-dried, and eaten as a naturally sweet snack or worked into laddoos, halwa-style preparations and jaggery-mahua mixes. The dried flowers taste like caramel-raisin; the sweets built on them are increasingly sold by community enterprises and at fairs like Dang Darbar and Devmogra. April–May is gathering season; dried mahua keeps year-round.",
+  "where_to_try": [
+    { "name": "Fair stalls", "place": "Dang Darbar (Ahwa), Devmogra mela" },
+    { "name": "Community/SHG outlets", "place": "Ahwa, Dediapada" }
+  ],
+  "season": "Flowers gathered March–May; dried products year-round",
+  "cultural_note": "Mahua is a sacred, economically vital tree in adivasi life. Its fermented use is heritage context — Gujarat is a dry state, and the sweets are the traveller's lane.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

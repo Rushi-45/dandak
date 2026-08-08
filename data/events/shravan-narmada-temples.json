@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "shravan-narmada-temples",
+  "slug": "shravan-narmada-temples",
+  "name": { "en": "Shravan Month on the Narmada" },
+  "type": "season-window",
+  "district": "narmada",
+  "spot_id": "narmada-shoolpaneshwar-temple",
+  "place": "Shoolpaneshwar (Gora), Garudeshwar and the riverbank shrines",
+  "timing": {
+    "recurrence": "The Hindu month of Shravan each year — roughly late July to late August, with Mondays as peak days",
+    "typical_months": [7, 8],
+    "duration_days": 30
+  },
+  "description": "Shravan turns the district's riverbank temples up several notches: Shoolpaneshwar Mahadev at Gora runs long darshan queues every Monday, Garudeshwar's rhythm intensifies, and Narmada parikrama pilgrims thread through with their bundles. For devotees it is the month to come; for everyone else it is worth knowing that the quiet river temples of winter are, in these weeks, humming devotional fairs — with the monsoon river running high and brown behind them.",
+  "scale": "regional",
+  "crowd_impact": "Shravan Mondays bring queues and parking pressure at Gora and Garudeshwar; weekdays stay manageable.",
+  "tips": [
+    "Non-devotee visitors: pick any day except Monday",
+    "Combine with Zarwani — the sanctuary is at full monsoon green",
+    "River bathing only at designated ghat steps; the Shravan river is powerful"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": []
+  }
+}

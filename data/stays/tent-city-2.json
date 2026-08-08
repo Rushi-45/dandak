@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "tent-city-2",
+  "slug": "tent-city-2",
+  "name": "Tent City 2, Ekta Nagar",
+  "type": "tent-city",
+  "district": "narmada",
+  "cluster": "sou-complex",
+  "spot_id": null,
+  "coordinates": null,
+  "price_band": "premium",
+  "booking": { "mode": "official-portal", "url": "https://www.tentcitynarmada.com/", "notes": "Sibling site to Tent City 1 with its own tent categories; same booking ecosystem" },
+  "contact": null,
+  "amenities": ["luxury and standard tents", "meals included", "campus shuttle access"],
+  "nearest_spots": [
+    { "id": "narmada-statue-of-unity", "distance_km": 4 },
+    { "id": "narmada-valley-of-flowers", "distance_km": 3 }
+  ],
+  "notes": "Marginally different location and tent mix than Tent City 1 — compare both on the portal before booking peak weeks.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [
+      { "title": "Tent City Narmada", "url": "https://www.tentcitynarmada.com/", "publisher": "tentcitynarmada.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "booking.notes", "price_band"]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "dediapada-offbeat-loop",
+  "slug": "dediapada-offbeat-loop",
+  "title": "Eastern Narmada Offbeat Loop — Zarwani to Ninai",
+  "duration_days": 2,
+  "districts": ["narmada"],
+  "themes": ["offbeat", "nature", "monsoon", "adventure"],
+  "best_months": [7, 8, 9, 10],
+  "base_hub": "sagai-eco-campsite",
+  "party": "friends",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "narmada-zarwani-falls", "duration_min": 120, "note": "Thawadia check post entry; weekday mornings are near-private" },
+    { "day": 1, "order": 2, "spot_id": "narmada-shoolpaneshwar-temple", "duration_min": 45, "note": "The submergence story, riverside" },
+    { "day": 1, "order": 3, "spot_id": "narmada-garudeshwar", "duration_min": 60, "note": "Datta samadhi; time the evening window (15:00–20:00)" },
+    { "day": 1, "order": 4, "spot_id": "narmada-sagai-malsamot", "duration_min": 240, "note": "Check in, plateau sunset, forest night" },
+    { "day": 2, "order": 5, "spot_id": "narmada-shoolpaneshwar-wls", "duration_min": 120, "note": "Dawn walk with a campsite guide" },
+    { "day": 2, "order": 6, "spot_id": "narmada-ninai-falls", "duration_min": 120, "note": "~35 km beyond Dediapada — the loop's payoff in monsoon" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Start from Ekta Nagar/Rajpipla with a full tank. Book Sagai cottages ahead via the official eco-tourism portal." },
+    { "day": 2, "note": "Sagai → Dediapada (fuel, snacks) → Ninai → return via Rajpipla. Forest-office permission applies for Ninai's falls area." }
+  ],
+  "total_drive_km": 220,
+  "notes": "A monsoon-first plan: July–September for the waterfalls, October for open forest access plus residual flow. Carry cash, offline maps and leech protection.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

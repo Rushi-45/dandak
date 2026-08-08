@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "padam-dungari-campsite",
+  "slug": "padam-dungari-campsite",
+  "name": "Padam Dungari Eco Campsite",
+  "type": "eco-campsite",
+  "district": "dang",
+  "cluster": "waghai",
+  "spot_id": "dang-padam-dungari",
+  "coordinates": { "lat": 21.03, "lng": 73.4, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; technically in Tapi district but part of the same forest circuit" },
+  "contact": null,
+  "amenities": ["riverside cottages and tents", "mess meals when booked", "trails"],
+  "nearest_spots": [
+    { "id": "dang-padam-dungari", "distance_km": 0 },
+    { "id": "dang-waghai-botanical-garden", "distance_km": 33 }
+  ],
+  "notes": "Popular with Surat weekenders — book cottages over tents in monsoon; the Ambika river air soaks canvas.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}

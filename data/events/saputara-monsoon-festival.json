@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "saputara-monsoon-festival",
+  "slug": "saputara-monsoon-festival",
+  "name": { "en": "Saputara Monsoon Festival" },
+  "type": "festival",
+  "district": "dang",
+  "spot_id": "dang-saputara-lake",
+  "place": "Saputara town",
+  "timing": {
+    "recurrence": "Annually through the monsoon weeks, typically late July into August; organised by Gujarat Tourism",
+    "typical_months": [7, 8],
+    "duration_days": 30
+  },
+  "description": "Gujarat Tourism's flagship hill-station event: a weeks-long programme of cultural performances, Dangi dance, food stalls, adventure activities and parades staged around Saputara's lakefront while the plateau does its best monsoon impression — mist over the lake, waterfalls at full volume nearby, and everything green. Weekends carry the main programming. It is the busiest the town gets outside Diwali; the flip side is that monsoon Saputara with a festival layered on is genuinely at its most atmospheric.",
+  "scale": "regional",
+  "crowd_impact": "Festival weekends sell out Saputara's hotels; book weeks ahead and expect slow ghat traffic on Sunday evenings.",
+  "tips": [
+    "Weekends for the programme, weekdays for the atmosphere without crowds",
+    "Pair festival days with Gira Falls at peak flow, 50 km down the ghat",
+    "Carry rain gear you can walk in — umbrellas lose to ghat wind"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["timing.recurrence", "timing.duration_days"]
+  }
+}

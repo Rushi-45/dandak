@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "sou-express-1-day",
+  "slug": "sou-express-1-day",
+  "title": "Statue of Unity Express — The Essential Day",
+  "duration_days": 1,
+  "districts": ["narmada"],
+  "themes": ["popular", "family", "history", "architecture"],
+  "best_months": [10, 11, 12, 1, 2],
+  "base_hub": "ekta-nagar",
+  "party": "any",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "narmada-statue-of-unity", "duration_min": 240, "note": "First slot of the day; viewing gallery before the museum" },
+    { "day": 1, "order": 2, "spot_id": "narmada-sardar-sarovar-dam", "duration_min": 60, "note": "Ask whether gates are releasing — it changes the priority" },
+    { "day": 1, "order": 3, "spot_id": "narmada-valley-of-flowers", "duration_min": 90, "note": "Golden-hour statue-over-flowerbeds frame" },
+    { "day": 1, "order": 4, "spot_id": "narmada-sou-laser-show", "duration_min": 60, "note": "Claim sightlines 45 min early on weekends" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "Book the earliest viewing-gallery slot online days ahead. E-buses link every stop; food court for lunch. Never plan this for a Monday — the campus closes." }
+  ],
+  "total_drive_km": 20,
+  "notes": "Doable as a long day-trip from Vadodara (~90 km each way); staying the night upgrades it enormously.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

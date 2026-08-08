@@ -88,7 +88,7 @@
     { "id": "narmada-jungle-safari", "distance_km": 2 },
     { "id": "narmada-unity-glow-garden", "distance_km": 1 }
   ],
-  "itineraries": [],
+  "itineraries": ["sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Children Nutrition Park, Ekta Nagar — Guide",

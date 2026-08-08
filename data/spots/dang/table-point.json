@@ -90,7 +90,7 @@
     { "id": "dang-echo-point", "distance_km": 1 },
     { "id": "dang-saputara-lake", "distance_km": 2 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Table Point, Saputara — Flat-Top Valley Views",

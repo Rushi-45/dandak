@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "unity-day-sou",
+  "slug": "unity-day-sou",
+  "name": { "en": "Unity Day at the Statue of Unity" },
+  "type": "festival",
+  "district": "narmada",
+  "spot_id": "narmada-statue-of-unity",
+  "place": "Ekta Nagar",
+  "timing": {
+    "recurrence": "Every 31 October — Sardar Patel's birth anniversary, marked nationally as Rashtriya Ekta Diwas",
+    "typical_months": [10],
+    "duration_days": 1
+  },
+  "description": "The statue's own festival: 31 October, Sardar Patel's birth anniversary, observed nationally as Unity Day with its centrepiece at Ekta Nagar. The morning brings the Ekta Diwas parade and ceremonial events — frequently with the Prime Minister in attendance — followed by cultural programmes through the day and the campus at its most polished. It is simultaneously the most spectacular and the most restricted day to visit: security tightens, sections close for VIP movements, and normal tourist flow bends around the ceremony.",
+  "scale": "national",
+  "crowd_impact": "Expect security cordons, section closures and heavy traffic; hotels fill across Ekta Nagar and Rajpipla. Normal sightseeing is better the day after.",
+  "tips": [
+    "Attend for the parade and atmosphere, not for a normal statue visit",
+    "Check official announcements — access arrangements change year to year",
+    "Book stays a month ahead for the late-October week"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "high",
+    "sources": [],
+    "needs_verification": ["crowd_impact"]
+  }
+}

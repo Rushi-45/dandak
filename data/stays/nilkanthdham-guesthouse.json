@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "nilkanthdham-guesthouse",
+  "slug": "nilkanthdham-guesthouse",
+  "name": "Nilkanthdham Guesthouse & Bhojanalaya, Poicha",
+  "type": "dharamshala",
+  "district": "narmada",
+  "cluster": "poicha",
+  "spot_id": "narmada-nilkanthdham-poicha",
+  "coordinates": { "lat": 21.976, "lng": 73.534, "precision": "approximate" },
+  "price_band": "budget",
+  "booking": { "mode": "phone", "url": "https://nilkanthdham.org/", "notes": "Rooms via the temple's guest facilities; simple, clean, vegetarian campus rules apply" },
+  "contact": null,
+  "amenities": ["simple rooms", "bhojanalaya (veg meals)", "on-campus location", "large parking"],
+  "nearest_spots": [
+    { "id": "narmada-nilkanthdham-poicha", "distance_km": 0 },
+    { "id": "narmada-rajvant-palace", "distance_km": 20 }
+  ],
+  "notes": "Best for pilgrims and anyone wanting the complex at dawn before day crowds; expect devotional campus norms, not hotel service.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Shri Nilkanthdham, Poicha — Plan Your Visit", "url": "https://nilkanthdham.org/visit.html", "publisher": "nilkanthdham.org (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["contact", "booking.notes"]
+  }
+}

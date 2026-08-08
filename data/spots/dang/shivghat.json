@@ -83,7 +83,7 @@
     { "id": "dang-shabari-dham", "distance_km": 25 },
     { "id": "dang-girmal-falls", "distance_km": 45 }
   ],
-  "itineraries": [],
+  "itineraries": ["monsoon-waterfall-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Shivghat, Dang — Riverside Halt",

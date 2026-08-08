@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "khichdi-kadhi-thali",
+  "slug": "khichdi-kadhi-thali",
+  "name": { "en": "Narmada-Belt Khichdi–Kadhi Thali" },
+  "type": "dish",
+  "veg": true,
+  "districts": ["narmada"],
+  "description": "The honest workhorse meal of the Narmada belt: soft khichdi with a tempered Gujarati kadhi, rotla or thepla, a seasonal shaak, papad and chhaas. Pilgrim kitchens perfected it — the bhojanalayas at Poicha and the temple-town eateries of Garudeshwar serve versions by the thousand — and every Rajpipla thali house runs its own. After a day of campus walking or forest roads, it is exactly what the body votes for.",
+  "where_to_try": [
+    { "name": "Nilkanthdham bhojanalaya", "place": "Poicha" },
+    { "name": "Thali houses", "place": "Rajpipla" },
+    { "name": "Temple-town eateries", "place": "Garudeshwar" }
+  ],
+  "season": null,
+  "cultural_note": "The pilgrim thali tradition means big volumes, low prices and strict vegetarianism across the belt.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

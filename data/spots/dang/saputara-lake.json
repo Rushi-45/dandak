@@ -95,7 +95,7 @@
     { "id": "dang-pushpak-ropeway", "distance_km": 0.8 },
     { "id": "dang-sunset-point", "distance_km": 2.5 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Saputara Lake — Boating & Lakefront Guide",

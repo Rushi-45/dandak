@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "saputara-strawberries",
+  "slug": "saputara-strawberries",
+  "name": { "en": "Saputara Winter Strawberries" },
+  "type": "produce",
+  "veg": true,
+  "districts": ["dang"],
+  "description": "The plateau's cool winters host a small strawberry season — roadside stalls around Saputara and the ghat sell punnets, and hotel kitchens run strawberry-and-cream specials through the peak weeks. It is a modest cousin of Mahabaleshwar's famous crop, but a fresh January punnet eaten at a viewpoint needs no comparison. Expect the stalls from late December into February.",
+  "where_to_try": [
+    { "name": "Roadside stalls", "place": "Saputara town and ghat approaches" },
+    { "name": "Hotel dessert menus", "place": "Saputara" }
+  ],
+  "season": "Late December – February",
+  "cultural_note": null,
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}

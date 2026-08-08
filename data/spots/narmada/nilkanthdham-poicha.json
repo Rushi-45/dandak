@@ -92,7 +92,7 @@
     { "id": "narmada-rajvant-palace", "distance_km": 20 },
     { "id": "narmada-statue-of-unity", "distance_km": 40 }
   ],
-  "itineraries": [],
+  "itineraries": ["narmada-faith-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Nilkanthdham Poicha — Temple Complex Guide",

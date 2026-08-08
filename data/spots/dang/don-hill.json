@@ -92,7 +92,7 @@
     { "id": "dang-girmal-falls", "distance_km": 40, "note": "Classic full-day pairing" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
   ],
-  "itineraries": [],
+  "itineraries": ["monsoon-waterfall-circuit", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Don Hill Station, Dang — Gujarat's Quiet Plateau",

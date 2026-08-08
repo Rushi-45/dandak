@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "saputara-winter-peak",
+  "slug": "saputara-winter-peak",
+  "name": { "en": "Saputara Christmas–New Year Peak" },
+  "type": "season-window",
+  "district": "dang",
+  "spot_id": null,
+  "place": "Saputara town",
+  "timing": {
+    "recurrence": "Every year, roughly 20 December to 2 January, peaking on the New Year weekend",
+    "typical_months": [12, 1],
+    "duration_days": 14
+  },
+  "description": "Not a festival but a phenomenon worth planning around: Saputara's hotel belt sells out for the Christmas–New Year fortnight as Surat, Mumbai and Ahmedabad arrive for cold air and bonfire evenings. Boating queues triple, Sunset Point fills an hour early, and room rates double. Come prepared — or come the second week of January, when the town exhales and winter Saputara is at its gentle best.",
+  "scale": "regional",
+  "crowd_impact": "Hotels sell out weeks ahead; New Year's Eve traffic on the ghat roads runs late into the night.",
+  "tips": [
+    "Book stays by early December or shift to Ahwa/Waghai",
+    "Do the viewpoints at sunrise — the crowds sleep in",
+    "Second week of January gives winter without the squeeze"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": []
+  }
+}

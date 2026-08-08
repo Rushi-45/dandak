@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "dang-darbar",
+  "slug": "dang-darbar",
+  "name": { "en": "Dang Darbar" },
+  "type": "fair",
+  "district": "dang",
+  "spot_id": null,
+  "place": "Ahwa town",
+  "timing": {
+    "recurrence": "Annually in the days before Holi, on dates set by the lunar calendar",
+    "typical_months": [3],
+    "duration_days": 4
+  },
+  "description": "Dang Darbar is the district's cultural centrepiece and a living constitutional curiosity: the descendants of Dang's five Bhil and Kunbi kings — who leased their forests to the British rather than surrender them — still receive ceremonial political pensions at this darbar, a practice continued by the Indian state. Around that ceremony grows a huge fair at Ahwa: Dangi dance troupes with drums and pipes, bazaars, wedding-season finery, and villagers from every fold of the district. For visitors it is the single best window into Dang's living culture — crowded, loud, unstaged and warm.",
+  "scale": "regional",
+  "crowd_impact": "Ahwa fills completely; Saputara hotels feel the overflow. Roads into Ahwa crawl on the main days.",
+  "tips": [
+    "Confirm dates early — they track Holi and shift each year",
+    "Go with time to wander; the fair rewards hours, not a drive-past",
+    "Photograph people and performers only with consent"
+  ],
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["timing.duration_days"]
+  }
+}

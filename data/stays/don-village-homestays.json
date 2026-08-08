@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "don-village-homestays",
+  "slug": "don-village-homestays",
+  "name": "Don Village Homestays (informal)",
+  "type": "homestay",
+  "district": "dang",
+  "cluster": "dang-interior",
+  "spot_id": "dang-don-hill",
+  "coordinates": { "lat": 20.87, "lng": 73.8, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "walk-in", "url": null, "notes": "Informal village arrangements — a few families host visitors and cook meals; nothing is listed online. Ask at the village or via Ahwa contacts, and confirm before building a plan around an overnight" },
+  "contact": null,
+  "amenities": ["village rooms", "home-cooked Dangi meals", "plateau at the doorstep"],
+  "nearest_spots": [
+    { "id": "dang-don-hill", "distance_km": 0 },
+    { "id": "dang-girmal-falls", "distance_km": 40 }
+  ],
+  "notes": "The only way to catch Don's dawn without the pre-sunrise interior drive. Expect village hospitality, not hotel service — carry cash, water and flexibility.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["booking.notes", "amenities", "coordinates"]
+  }
+}

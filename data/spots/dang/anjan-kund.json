@@ -89,7 +89,7 @@
     { "id": "dang-shabari-dham", "distance_km": 12 },
     { "id": "dang-pampa-sarovar", "distance_km": 10 }
   ],
-  "itineraries": [],
+  "itineraries": ["dang-ramayana-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Anjan Kund, Dang — Hanuman Lore Trek",

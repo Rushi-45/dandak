@@ -87,7 +87,7 @@
     { "id": "dang-artist-village", "distance_km": 1 },
     { "id": "dang-step-garden", "distance_km": 0.7 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Saputara Tribal Museum — Dangi Culture in an Hour",

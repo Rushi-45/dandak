@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:saputara-narmada:schemas:food:v1",
+  "title": "Food",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "slug", "name", "type", "veg", "districts", "description", "where_to_try", "season", "cultural_note", "provenance"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "$ref": "#/$defs/kebab" },
+    "slug": { "$ref": "#/$defs/kebab" },
+    "name": {
+      "type": "object", "additionalProperties": false, "required": ["en"],
+      "properties": { "en": { "type": "string", "minLength": 1, "maxLength": 100 }, "gu": { "type": "string" }, "hi": { "type": "string" } }
+    },
+    "type": { "enum": ["dish", "snack", "sweet", "beverage", "produce"] },
+    "veg": { "type": "boolean" },
+    "districts": { "type": "array", "minItems": 1, "maxItems": 2, "uniqueItems": true, "items": { "enum": ["dang", "narmada"] } },
+    "description": { "type": "string", "minLength": 50, "maxLength": 1500 },
+    "where_to_try": {
+      "type": "array", "maxItems": 6,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["name", "place"],
+        "properties": {
+          "name": { "type": "string", "maxLength": 120 },
+          "place": { "type": "string", "maxLength": 120 }
+        }
+      }
+    },
+    "season": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 200 }] },
+    "cultural_note": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 500 }] },
+    "provenance": {
+      "type": "object", "additionalProperties": false, "required": ["created", "last_reviewed"],
+      "properties": {
+        "created": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "last_reviewed": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }] }
+      }
+    }
+  },
+  "$defs": {
+    "kebab": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 60 }
+  }
+}

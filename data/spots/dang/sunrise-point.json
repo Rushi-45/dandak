@@ -90,7 +90,7 @@
     { "id": "dang-echo-point", "distance_km": 2 },
     { "id": "dang-saputara-lake", "distance_km": 2.5 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-classic-1-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Sunrise Point (Valley View), Saputara — Guide",

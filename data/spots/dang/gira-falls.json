@@ -92,7 +92,7 @@
     { "id": "dang-kilad-nature-campsite", "distance_km": 4 },
     { "id": "dang-vansda-national-park", "distance_km": 10 }
   ],
-  "itineraries": [],
+  "itineraries": ["saputara-waghai-2-day", "monsoon-waterfall-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Gira Falls, Waghai — Monsoon Guide",

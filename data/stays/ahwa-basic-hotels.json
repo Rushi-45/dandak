@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "ahwa-basic-hotels",
+  "slug": "ahwa-basic-hotels",
+  "name": "Ahwa & Waghai Basic Hotels (various)",
+  "type": "guesthouse",
+  "district": "dang",
+  "cluster": "dang-interior",
+  "spot_id": null,
+  "coordinates": { "lat": 20.757, "lng": 73.686, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "walk-in", "url": null, "notes": "Simple lodges and guesthouses in both towns; walk-in or phone booking. Ahwa's matter for interior-circuit overnights, Waghai's for early ghat starts" },
+  "contact": null,
+  "amenities": ["basic clean rooms", "local dining nearby", "fuel and market access"],
+  "nearest_spots": [
+    { "id": "dang-shivghat", "distance_km": 5 },
+    { "id": "dang-girmal-falls", "distance_km": 45 }
+  ],
+  "notes": "Function over charm — these towns are the practical overnights for waterfall-circuit and Ramayana-trail days that outgrow a Saputara base.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["amenities"]
+  }
+}

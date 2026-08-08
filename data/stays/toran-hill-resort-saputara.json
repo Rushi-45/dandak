@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "toran-hill-resort-saputara",
+  "slug": "toran-hill-resort-saputara",
+  "name": "Toran Hill Resort, Saputara (GTDC)",
+  "type": "resort",
+  "district": "dang",
+  "cluster": "saputara",
+  "spot_id": null,
+  "coordinates": { "lat": 20.574, "lng": 73.755, "precision": "area" },
+  "price_band": "mid",
+  "booking": { "mode": "official-portal", "url": null, "notes": "Historically the Gujarat Tourism (GTDC) property in town; operator arrangements have changed over the years — verify current management and booking channel before relying on it" },
+  "contact": null,
+  "amenities": ["central location", "restaurant", "garden"],
+  "nearest_spots": [
+    { "id": "dang-saputara-lake", "distance_km": 0.5 },
+    { "id": "dang-saputara-tribal-museum", "distance_km": 0.5 }
+  ],
+  "notes": "The legacy government resort of Saputara — location is its argument. Status flagged for verification.",
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["booking.mode", "booking.notes", "coordinates", "price_band"]
+  }
+}

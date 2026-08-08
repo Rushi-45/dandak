@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "dang-ramayana-trail",
+  "slug": "dang-ramayana-trail",
+  "title": "Dang's Ramayana Trail — Shabari, Pampa & Anjani",
+  "duration_days": 1,
+  "districts": ["dang"],
+  "themes": ["pilgrimage", "mythology", "offbeat", "tribal-culture"],
+  "best_months": [10, 11, 12, 1, 2, 3],
+  "base_hub": "ahwa",
+  "party": "any",
+  "stops": [
+    { "day": 1, "order": 1, "spot_id": "dang-shabari-dham", "duration_min": 75, "note": "The anchor shrine; morning darshan" },
+    { "day": 1, "order": 2, "spot_id": "dang-pampa-sarovar", "duration_min": 30, "note": "The narrative pair, 6 km on" },
+    { "day": 1, "order": 3, "spot_id": "dang-anjan-kund", "duration_min": 120, "note": "Kund-and-cave trek; local guide from the base village" }
+  ],
+  "day_notes": [
+    { "day": 1, "note": "A half-day of Dang's living Ramayana geography from Ahwa or en route Saputara–interior. January adds the Shabridham Mela; Ram Navami is the devotional peak. Dress modestly; the Anjan Kund leg needs walking shoes." }
+  ],
+  "total_drive_km": 80,
+  "notes": "Treat the sites as living devotional geography — cherished traditions, told honestly. Combine with Girmal Falls for a full interior day.",
+  "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
+}
