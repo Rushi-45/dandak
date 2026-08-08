@@ -4,14 +4,19 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [1.0.0] — 2026-08-08
+
+First release. All spec-00 success criteria met: 64 schema-valid spot records (100% of Tier-1 verified within 90 days), full companion sets, zero validation errors.
+
 ### Added
 - Phase 0 — specification suite v0.1: specs 00–09, spot schema v1 (`schema/spot.schema.json`).
 - Phase 1 — scaffold: `seed/spots-master.csv` (64 spots: 32 Dang, 32 Narmada), validator (`scripts/validate.mjs`, levels L1–L3 + seed checks), stats dashboard (`scripts/stats.mjs`), vocabulary registry (`scripts/registry.json`, mirrors spec 04), example fixture (`schema/examples/spot.example.json`).
-- Phase 3 — full corpus drafted: all 64 spot records (T1 22, T2 27, T3 15), knowledge-drafted per spec 05 with `needs_verification` ledgers populated; validator clean (0 errors / 0 warnings). Confidence mix: 48 medium, 16 low. Nothing verified yet — phase 4 pending.
-
-- Phase 4 — verification: 48/64 records web-verified and stamped `last_verified` (T1 22/22 = 100%; T2 22/27 = 81%). Official sources recorded where they exist (Gujarat Tourism, district NIC sites, PIB, SSNNL, Utsav portal, forest-department portal). Confidence mix now 11 high / 40 medium / 13 low. Remaining 16 records (mostly T3 verify-existence spots and low-info temples) stay flagged via `needs_verification`; coordinates remain the standing ledger item (60 records) pending a dedicated map pass.
-
-- Phase 5 — companions: 5 machine schemas (district, itinerary, event, stay, food); 2 district files (overview, hubs, 12-month weather, emergency); 9 itineraries; 8 events (Dang Darbar, Devmogra fair, Shabridham Mela, monsoon festival, Unity Day + season windows); 15 stays (forest campsites on the official portal, tent cities, heritage and pointer records); 10 foods (nagli rotla to mahua sweets). Validator extended to L1/L2 for all companion kinds; spot `itineraries` arrays wired to the new itineraries. Full-graph validation: 0 errors / 0 warnings.
+- Phase 3 — full corpus drafted: all 64 spot records (T1 22, T2 27, T3 15), knowledge-drafted per spec 05 with `needs_verification` ledgers populated; validator clean (0 errors / 0 warnings).
+- Phase 4 — verification: 48/64 records web-verified and stamped `last_verified` (T1 22/22 = 100%; T2 22/27 = 81%). Official sources recorded where they exist (Gujarat Tourism, district NIC sites, PIB, SSNNL, Utsav portal, forest-department portal). Confidence mix 11 high / 40 medium / 13 low. Remaining 16 records stay flagged via `needs_verification`; coordinates remain the standing ledger item (60 records) pending a dedicated map pass.
+- Phase 5 — companions: 5 machine schemas (district, itinerary, event, stay, food); 2 district files (overview, hubs, 12-month weather, emergency); 9 itineraries; 8 events (Dang Darbar, Devmogra fair, Shabridham Mela, monsoon festival, Unity Day + season windows); 15 stays (forest campsites on the official portal, tent cities, heritage and pointer records); 10 foods. Validator extended to all companion kinds; spot `itineraries` arrays wired. Full-graph validation: 0 errors / 0 warnings.
+- Phase 6 — release: GeoJSON exports (`exports/geojson/`, per-district + combined FeatureCollections via `npm run export:geojson`), stats snapshot (`exports/STATS.md`).
 
 ### Fixed
 - `dang-anjan-kund`: road distances made consistent with (approximate) coordinates after L3 plausibility lint flagged the mismatch.

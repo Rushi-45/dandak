@@ -1,6 +1,6 @@
 {
   "name": "dandak",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Structured tourism dataset for Dang and Narmada districts, Gujarat - specs-first.",
   "type": "module",
@@ -8,7 +8,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "validate:strict": "node scripts/validate.mjs --strict",
-    "stats": "node scripts/stats.mjs"
+    "stats": "node scripts/stats.mjs",
+    "export:geojson": "node scripts/export-geojson.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1"

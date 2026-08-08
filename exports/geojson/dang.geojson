@@ -1,0 +1,914 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72,
+          20.8
+        ]
+      },
+      "properties": {
+        "id": "dang-anjan-kund",
+        "name": "Anjan Kund (Anjani Parvat)",
+        "category": "religious-site",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "mythology",
+          "trekking",
+          "offbeat",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "A forest kund and cave on Anjani hill held locally as Hanuman's birthplace — a short trek into Dang's Ramayana geography.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.762,
+          20.577
+        ]
+      },
+      "properties": {
+        "id": "dang-artist-village",
+        "name": "Artist Village (Gandharvapur)",
+        "category": "cultural",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "tribal-culture",
+          "shopping",
+          "heritage",
+          "family",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A working craft centre outside Saputara where Warli painting and bamboo work are made, taught and sold by the artists themselves.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68,
+          20.92
+        ]
+      },
+      "properties": {
+        "id": "dang-barda-falls",
+        "name": "Barda Falls",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "A little-documented interior-Dang monsoon waterfall near Barda village — for completists willing to ask directions and accept a rough approach.",
+        "monsoon_dependent": true,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          20.87
+        ]
+      },
+      "properties": {
+        "id": "dang-don-hill",
+        "name": "Don Hill Station",
+        "category": "viewpoint",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "offbeat",
+          "nature",
+          "sunrise",
+          "trekking",
+          "photography",
+          "tribal-culture"
+        ],
+        "precision": "area",
+        "summary": "A quiet tribal village on one of Gujarat's highest plateaus — grass meadows, ridge walks and valley views without Saputara's crowds.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.768,
+          20.579
+        ]
+      },
+      "properties": {
+        "id": "dang-echo-point",
+        "name": "Echo Point",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "family",
+          "kids",
+          "nature",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A curve on Saputara's rim road where the facing cliffs bounce a clean echo — a five-minute stop kids refuse to leave.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.533,
+          20.751
+        ]
+      },
+      "properties": {
+        "id": "dang-gira-falls",
+        "name": "Gira Falls",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "popular",
+          "photography",
+          "nature",
+          "family",
+          "picnic"
+        ],
+        "precision": "approximate",
+        "summary": "Dang's most visited waterfall — a broad ~23 m (75 ft) curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.83,
+          20.95
+        ]
+      },
+      "properties": {
+        "id": "dang-girmal-falls",
+        "name": "Girmal Falls",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "photography",
+          "nature",
+          "picnic"
+        ],
+        "precision": "approximate",
+        "summary": "Gujarat's tallest waterfall — a roughly 30 m plunge on the Gira river deep in interior Dang, thundering from July to October.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749,
+          20.577
+        ]
+      },
+      "properties": {
+        "id": "dang-governors-hill",
+        "name": "Governor's Hill",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "offbeat",
+          "nature",
+          "photography",
+          "trekking"
+        ],
+        "precision": "area",
+        "summary": "A wooded knoll above Saputara town with walking paths and quiet town-and-valley views — the low-key alternative to the headline points.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.701,
+          20.586
+        ]
+      },
+      "properties": {
+        "id": "dang-hatgadh-fort",
+        "name": "Hatgadh Fort",
+        "category": "fort",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "trekking",
+          "history",
+          "offbeat",
+          "photography",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "A hill fort just across the Maharashtra border from Saputara — an hour's rocky climb to ramparts, rock-cut cisterns and huge two-state views.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.758,
+          20.576
+        ]
+      },
+      "properties": {
+        "id": "dang-honey-bee-centre",
+        "name": "Honey Bee Centre",
+        "category": "cultural",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "family",
+          "kids",
+          "offbeat",
+          "food"
+        ],
+        "precision": "area",
+        "summary": "Saputara's little apiculture stop — hive demonstrations, bee lore and forest honey to take home; check it's operating before you plan around it.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.512,
+          20.776
+        ]
+      },
+      "properties": {
+        "id": "dang-kilad-nature-campsite",
+        "name": "Kilad Nature Education Campsite",
+        "category": "eco-campsite",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "family",
+          "birding",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "Forest-department campsite on the Ambika river near Waghai — riverside cottages, nature trails and an easy first taste of Dang's forests.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7565,
+          20.572
+        ]
+      },
+      "properties": {
+        "id": "dang-lake-garden",
+        "name": "Lake Garden",
+        "category": "garden",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "family",
+          "picnic",
+          "evening",
+          "nature",
+          "kids"
+        ],
+        "precision": "area",
+        "summary": "Lawns, play corners and shaded benches right on Saputara Lake's shore — the default family unwind after boating.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71,
+          20.947
+        ]
+      },
+      "properties": {
+        "id": "dang-mahal-eco-campsite",
+        "name": "Mahal Eco Campsite",
+        "category": "eco-campsite",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "birding",
+          "family"
+        ],
+        "precision": "area",
+        "summary": "Forest-department cottages on the Purna river deep inside Purna sanctuary — the base for dawn walks, river mornings and real forest nights.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.758,
+          20.571
+        ]
+      },
+      "properties": {
+        "id": "dang-nageshwar-mahadev-temple",
+        "name": "Nageshwar Mahadev Temple",
+        "category": "temple",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "family",
+          "evening",
+          "mythology"
+        ],
+        "precision": "area",
+        "summary": "Lakeside Shiva temple woven into Saputara's serpent-worship roots — small, active, and busiest during Shravan and festival evenings.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4,
+          21.03
+        ]
+      },
+      "properties": {
+        "id": "dang-padam-dungari",
+        "name": "Padam Dungari Eco Campsite",
+        "category": "eco-campsite",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "family",
+          "birding"
+        ],
+        "precision": "area",
+        "summary": "Forest-department campsite on the Ambika river in the hills near Vyara — riverside cottages and trails that pair with the Waghai belt.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.755,
+          20.855
+        ]
+      },
+      "properties": {
+        "id": "dang-pampa-sarovar",
+        "name": "Pampa Sarovar",
+        "category": "religious-site",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "mythology",
+          "nature",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "A quiet sacred pond near Subir tied to the Shabari story — forest-edged water, small shrines and almost no crowd.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7,
+          20.93
+        ]
+      },
+      "properties": {
+        "id": "dang-purna-wildlife-sanctuary",
+        "name": "Purna Wildlife Sanctuary",
+        "category": "wildlife",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "wildlife",
+          "nature",
+          "birding",
+          "offbeat",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "Dense teak-and-bamboo forest on the Purna river — one of Gujarat's rainiest tracts, with forest drives, trails and the Mahal campsite at its heart.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.753,
+          20.5725
+        ]
+      },
+      "properties": {
+        "id": "dang-pushpak-ropeway",
+        "name": "Pushpak Ropeway",
+        "category": "adventure",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "popular",
+          "family",
+          "adventure",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Saputara's cable car glides from the lake side across the valley to the Sunset Point ridge — ten scenic minutes each way.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.754,
+          20.573
+        ]
+      },
+      "properties": {
+        "id": "dang-rose-garden",
+        "name": "Rose Garden",
+        "category": "garden",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "family",
+          "nature",
+          "photography",
+          "picnic",
+          "winter"
+        ],
+        "precision": "area",
+        "summary": "Saputara's rose beds near the lakefront — modest in size, at their fragrant best on cool winter mornings.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.61,
+          20.66
+        ]
+      },
+      "properties": {
+        "id": "dang-rupgadh-fort",
+        "name": "Rupgadh Fort",
+        "category": "fort",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "trekking",
+          "history",
+          "offbeat",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "Hilltop fort remains linked to Dang's Bhil kings — a forest trek to ramparts few tourists have ever heard of.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749,
+          20.577
+        ]
+      },
+      "properties": {
+        "id": "dang-saputara-adventure-park",
+        "name": "Saputara Adventure Park",
+        "category": "adventure",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "seasonal",
+        "tags": [
+          "adventure",
+          "kids",
+          "family"
+        ],
+        "precision": "area",
+        "summary": "Operator-run adventure activities on Governor's Hill — ziplines, rope courses, ATVs; seasonal and variable, so confirm before promising the kids.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.755,
+          20.5712
+        ]
+      },
+      "properties": {
+        "id": "dang-saputara-lake",
+        "name": "Saputara Lake",
+        "category": "lake",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "popular",
+          "family",
+          "boating",
+          "picnic",
+          "evening",
+          "summer-escape"
+        ],
+        "precision": "approximate",
+        "summary": "Saputara's centrepiece — a calm hilltop lake with pedal and row boating, garden-lined banks, and the town's liveliest evening scene.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7595,
+          20.5755
+        ]
+      },
+      "properties": {
+        "id": "dang-saputara-tribal-museum",
+        "name": "Saputara Tribal Museum",
+        "category": "museum",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "tribal-culture",
+          "heritage",
+          "history",
+          "family"
+        ],
+        "precision": "approximate",
+        "summary": "Compact museum of Dangi life — masks, instruments, house models and household tools that decode the villages you drive past in Dang.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.762,
+          20.842
+        ]
+      },
+      "properties": {
+        "id": "dang-shabari-dham",
+        "name": "Shabari Dham",
+        "category": "temple",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "mythology",
+          "family",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "Hilltop temple near Subir marking the spot where, by local tradition, Shabari offered wild berries to Ram — a key Ramayana site in Dang.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.66,
+          20.72
+        ]
+      },
+      "properties": {
+        "id": "dang-shivghat",
+        "name": "Shivghat",
+        "category": "religious-site",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "offbeat",
+          "pilgrimage",
+          "nature",
+          "monsoon"
+        ],
+        "precision": "area",
+        "summary": "A riverside Shiva shrine and bathing ghat on the Ahwa–Saputara road — a shady halt where road, river and a small temple meet.",
+        "monsoon_dependent": true,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.757,
+          20.576
+        ]
+      },
+      "properties": {
+        "id": "dang-step-garden",
+        "name": "Step Garden",
+        "category": "garden",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "family",
+          "kids",
+          "picnic",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "Terraced hillside garden in Saputara town — planted steps, shaded corners and short winding paths that suit an easy family hour.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.772,
+          20.583
+        ]
+      },
+      "properties": {
+        "id": "dang-sunrise-point",
+        "name": "Sunrise Point (Valley View Point)",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "sunrise",
+          "photography",
+          "nature",
+          "family"
+        ],
+        "precision": "approximate",
+        "summary": "East-facing viewpoint a short drive from Saputara town where the valley fills with dawn mist — the quiet counterpart to Sunset Point.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.741,
+          20.568
+        ]
+      },
+      "properties": {
+        "id": "dang-sunset-point",
+        "name": "Sunset Point (Gandhi Shikhar)",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "sunset",
+          "popular",
+          "photography",
+          "family",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "Saputara's classic evening ritual — a west-facing ridge reached by ropeway or a stepped climb, with layered Sahyadri views at dusk.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.766,
+          20.58
+        ]
+      },
+      "properties": {
+        "id": "dang-table-point",
+        "name": "Table Point",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "popular",
+          "family",
+          "picnic",
+          "photography",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "A flat hilltop meadow on Saputara's rim with wide valley views, pony rides and snack stalls — the easiest family stop in town.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.763,
+          20.582
+        ]
+      },
+      "properties": {
+        "id": "dang-town-view-point",
+        "name": "Town View Point",
+        "category": "viewpoint",
+        "cluster": "saputara",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "photography",
+          "nature",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "A roadside rise overlooking Saputara's rooftops, lake and plateau bowl — the postcard-of-the-town shot in one stop.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.455,
+          20.77
+        ]
+      },
+      "properties": {
+        "id": "dang-vansda-national-park",
+        "name": "Vansda National Park",
+        "category": "wildlife",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "wildlife",
+          "nature",
+          "birding",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "A compact national park of dense old forest bordering Waghai — giant squirrels, pythons, leopards and butterflies in barely 24 km².",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.505,
+          20.786
+        ]
+      },
+      "properties": {
+        "id": "dang-waghai-botanical-garden",
+        "name": "Waghai Botanical Garden",
+        "category": "garden",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "family",
+          "birding",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A large forest-department botanical campus at Waghai — labelled native trees, bamboo groves and shaded walks at the foot of the Dang hills.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    }
+  ]
+}

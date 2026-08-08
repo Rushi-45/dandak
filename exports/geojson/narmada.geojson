@@ -1,0 +1,909 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7,
+          21.843
+        ]
+      },
+      "properties": {
+        "id": "narmada-arogya-van",
+        "name": "Arogya Van",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "family",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A wellness-themed garden of medicinal plants near the Statue of Unity — Ayurvedic plots, yoga spaces and calm landscaped walks.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.705,
+          21.835
+        ]
+      },
+      "properties": {
+        "id": "narmada-butterfly-garden",
+        "name": "Butterfly Garden",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "kids",
+          "family",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "Host-plant gardens alive with free-flying butterflies near the Statue of Unity — best in the first sunny hours of the morning.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.706,
+          21.846
+        ]
+      },
+      "properties": {
+        "id": "narmada-cactus-garden",
+        "name": "Cactus Garden",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "photography",
+          "family",
+          "kids"
+        ],
+        "precision": "area",
+        "summary": "A dome-and-dunes showcase of hundreds of cactus and succulent species near the Statue of Unity — oddly photogenic and genuinely educational.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.708,
+          21.847
+        ]
+      },
+      "properties": {
+        "id": "narmada-children-nutrition-park",
+        "name": "Children Nutrition Park",
+        "category": "park",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "kids",
+          "family",
+          "popular",
+          "ticketed"
+        ],
+        "precision": "area",
+        "summary": "A toy-train-led edutainment park teaching kids about food and nutrition through themed stations — squarely aimed at the under-12s.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.722,
+          21.448
+        ]
+      },
+      "properties": {
+        "id": "narmada-devmogra-temple",
+        "name": "Devmogra Mata Temple",
+        "category": "temple",
+        "cluster": "dediapada-belt",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "tribal-culture",
+          "offbeat",
+          "heritage"
+        ],
+        "precision": "approximate",
+        "summary": "Principal shrine of Yaha Mogi, the great mother goddess of the region's tribal communities — its annual fair draws lakhs to Sagbara.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.703,
+          21.836
+        ]
+      },
+      "properties": {
+        "id": "narmada-dino-trail",
+        "name": "Dino Trail",
+        "category": "park",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "kids",
+          "family",
+          "offbeat",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A short walk among life-size dinosaur models headlined by a towering Rajasaurus — a kids' delight with a real Narmada-valley fossil hook.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.705,
+          21.845
+        ]
+      },
+      "properties": {
+        "id": "narmada-ekta-cruise",
+        "name": "Ekta Cruise (Narmada Boat Ride)",
+        "category": "adventure",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "family",
+          "popular",
+          "photography",
+          "boating",
+          "evening"
+        ],
+        "precision": "area",
+        "summary": "A calm Narmada boat ride with the Statue of Unity growing off the bow — the water-level angle no viewpoint on land can give.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71,
+          21.849
+        ]
+      },
+      "properties": {
+        "id": "narmada-ekta-mall",
+        "name": "Ekta Mall",
+        "category": "market",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "shopping",
+          "family",
+          "heritage"
+        ],
+        "precision": "area",
+        "summary": "State-emporium shopping under one roof — handicrafts and handlooms from across India, the campus's answer to souvenir hunting.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.703,
+          21.847
+        ]
+      },
+      "properties": {
+        "id": "narmada-ekta-nursery",
+        "name": "Ekta Nursery",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "shopping",
+          "family"
+        ],
+        "precision": "area",
+        "summary": "A large production nursery with a visitor face — greenhouses, bonsai and cactus sections, and plants you can actually buy and carry home.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.652,
+          21.752
+        ]
+      },
+      "properties": {
+        "id": "narmada-garudeshwar",
+        "name": "Garudeshwar Datta Temple",
+        "category": "temple",
+        "cluster": "ekta-nagar-area",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "family",
+          "nature",
+          "offbeat"
+        ],
+        "precision": "approximate",
+        "summary": "Riverside samadhi shrine of Vasudevanand Saraswati — a major Dattatreya pilgrimage on the Narmada, minutes from Ekta Nagar.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.505,
+          21.867
+        ]
+      },
+      "properties": {
+        "id": "narmada-harsiddhi-mata-temple",
+        "name": "Harsiddhi Mata Temple, Rajpipla",
+        "category": "temple",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "heritage",
+          "family"
+        ],
+        "precision": "area",
+        "summary": "Rajpipla's town goddess — the royal family's Harsiddhi Mata shrine, busiest and brightest through Navratri.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55,
+          21.78
+        ]
+      },
+      "properties": {
+        "id": "narmada-junaraj",
+        "name": "Junaraj (Old Rajpipla)",
+        "category": "fort",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "history",
+          "offbeat",
+          "trekking",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "The hill site of Rajpipla's original capital — scattered ruins in forested country south of the modern town, for history-minded explorers.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.702,
+          21.828
+        ]
+      },
+      "properties": {
+        "id": "narmada-jungle-safari",
+        "name": "Jungle Safari (Sardar Patel Zoological Park)",
+        "category": "wildlife",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "family",
+          "kids",
+          "wildlife",
+          "popular",
+          "ticketed"
+        ],
+        "precision": "approximate",
+        "summary": "A large hillside zoological park near the Statue of Unity — native and exotic animals across terraced levels, plus walk-in aviaries kids love.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.085,
+          21.865
+        ]
+      },
+      "properties": {
+        "id": "narmada-kabirvad",
+        "name": "Kabirvad Banyan Island",
+        "category": "religious-site",
+        "cluster": "poicha",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "pilgrimage",
+          "mythology",
+          "offbeat",
+          "boating"
+        ],
+        "precision": "approximate",
+        "summary": "An island in the Narmada covered by a single colossal banyan linked to sant Kabir — reached by a short boat crossing, unlike anywhere else in Gujarat.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.578,
+          21.8
+        ]
+      },
+      "properties": {
+        "id": "narmada-karjan-reservoir",
+        "name": "Karjan Dam & Reservoir",
+        "category": "dam",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "picnic",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A quiet reservoir in the hills south-east of Rajpipla — sunset water views and picnic spots, with public access rules worth checking first.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71,
+          21.844
+        ]
+      },
+      "properties": {
+        "id": "narmada-maze-garden",
+        "name": "Maze Garden (Bhool Bhulaiya)",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "family",
+          "kids",
+          "photography",
+          "popular"
+        ],
+        "precision": "area",
+        "summary": "A large hedge maze laid out in a yantra pattern near the Statue of Unity — half puzzle, half photo op, best fun with kids in tow.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.708,
+          21.841
+        ]
+      },
+      "properties": {
+        "id": "narmada-miyawaki-forest",
+        "name": "Miyawaki Forest",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A demonstration of the Japanese dense-planting method — a fast-grown native mini-forest with walkways, more idea than attraction.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.534,
+          21.976
+        ]
+      },
+      "properties": {
+        "id": "narmada-nilkanthdham-poicha",
+        "name": "Nilkanthdham Swaminarayan Temple, Poicha",
+        "category": "temple",
+        "cluster": "poicha",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "popular",
+          "family",
+          "architecture",
+          "evening"
+        ],
+        "precision": "approximate",
+        "summary": "A vast Swaminarayan temple-and-exhibition complex on the Narmada bank at Poicha — ornate shrines, ghats, themed displays and evening lighting.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8219,
+          21.6669
+        ]
+      },
+      "properties": {
+        "id": "narmada-ninai-falls",
+        "name": "Ninai Falls",
+        "category": "waterfall",
+        "cluster": "dediapada-belt",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "photography",
+          "picnic"
+        ],
+        "precision": "exact",
+        "summary": "A compact, forceful monsoon waterfall in forested country ~35 km from Dediapada — eastern Narmada's favourite rainy-season outing.",
+        "monsoon_dependent": true,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.502,
+          21.866
+        ]
+      },
+      "properties": {
+        "id": "narmada-rajpipla-heritage-walk",
+        "name": "Rajpipla Old Town & Clock Tower",
+        "category": "cultural",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "heritage",
+          "history",
+          "architecture",
+          "photography",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "A self-guided wander through Rajpipla's princely leftovers — clock tower, gates, palace facades and bazaar streets that remember a capital.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5,
+          21.87
+        ]
+      },
+      "properties": {
+        "id": "narmada-rajvant-palace",
+        "name": "Rajvant Palace (Vijay Palace)",
+        "category": "palace",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "heritage",
+          "history",
+          "architecture",
+          "photography",
+          "family"
+        ],
+        "precision": "approximate",
+        "summary": "Rajpipla's European-style royal palace — colonnaded halls, royal memorabilia and film-shoot lawns, now run as a heritage resort with a museum wing.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.67,
+          21.86
+        ]
+      },
+      "properties": {
+        "id": "narmada-river-rafting-khalwani",
+        "name": "River Rafting, Khalwani",
+        "category": "adventure",
+        "cluster": "ekta-nagar-area",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "adventure",
+          "popular",
+          "nature",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "White-water rafting on a dam-fed stretch of the Narmada near Ekta Nagar — a guided run through forested gorge with beginner-friendly rapids.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.51,
+          21.585
+        ]
+      },
+      "properties": {
+        "id": "narmada-sagai-malsamot",
+        "name": "Sagai–Malsamot Eco Campsite & Hill",
+        "category": "eco-campsite",
+        "cluster": "dediapada-belt",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "offbeat",
+          "nature",
+          "family",
+          "birding",
+          "trekking"
+        ],
+        "precision": "area",
+        "summary": "Forest campsite and hilltop plateau in the Dediapada belt — eastern Narmada's 'mini hill station' with cottages, trails and monsoon views.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7476,
+          21.8306
+        ]
+      },
+      "properties": {
+        "id": "narmada-sardar-sarovar-dam",
+        "name": "Sardar Sarovar Dam Viewpoints",
+        "category": "dam",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "popular",
+          "photography",
+          "family",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "Designated viewpoints over one of the world's largest concrete gravity dams — at full monsoon release, the most dramatic sight at Ekta Nagar.",
+        "monsoon_dependent": true,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.633,
+          21.79
+        ]
+      },
+      "properties": {
+        "id": "narmada-shoolpaneshwar-temple",
+        "name": "Shoolpaneshwar Mahadev Temple (Gora)",
+        "category": "temple",
+        "cluster": "ekta-nagar-area",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "mythology",
+          "nature",
+          "offbeat"
+        ],
+        "precision": "approximate",
+        "summary": "The re-established Shiva shrine of a temple submerged by the Sardar Sarovar reservoir — riverside darshan at Gora with deep Narmada lore.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55,
+          21.65
+        ]
+      },
+      "properties": {
+        "id": "narmada-shoolpaneshwar-wls",
+        "name": "Shoolpaneshwar Wildlife Sanctuary",
+        "category": "wildlife",
+        "cluster": "dediapada-belt",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "wildlife",
+          "nature",
+          "birding",
+          "offbeat",
+          "trekking"
+        ],
+        "precision": "area",
+        "summary": "Six hundred square kilometres of hill forest along the Narmada's south bank — sloth bear country with waterfalls, treks and eco-campsites.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.717,
+          21.838
+        ]
+      },
+      "properties": {
+        "id": "narmada-sou-laser-show",
+        "name": "SoU Laser Light & Sound Show",
+        "category": "show",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "evening",
+          "popular",
+          "family",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "Nightly laser projection and sound show that turns the Statue of Unity into a canvas for Sardar Patel's story — the campus's evening set piece.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7191,
+          21.838
+        ]
+      },
+      "properties": {
+        "id": "narmada-statue-of-unity",
+        "name": "Statue of Unity",
+        "category": "monument",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "popular",
+          "family",
+          "architecture",
+          "history",
+          "ticketed",
+          "photography"
+        ],
+        "precision": "exact",
+        "summary": "The world's tallest statue — Sardar Patel at 182 m above the Narmada, with a 153 m viewing gallery, museum, and a full day of campus attractions.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.705,
+          21.849
+        ]
+      },
+      "properties": {
+        "id": "narmada-unity-glow-garden",
+        "name": "Unity Glow Garden",
+        "category": "park",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "evening",
+          "family",
+          "kids",
+          "popular",
+          "ticketed"
+        ],
+        "precision": "area",
+        "summary": "An after-dark park of illuminated sculptures, light tunnels and glowing installations — the SoU campus's designated evening hour.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.715,
+          21.842
+        ]
+      },
+      "properties": {
+        "id": "narmada-valley-of-flowers",
+        "name": "Valley of Flowers (Bharat Van)",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "family",
+          "photography",
+          "nature",
+          "popular",
+          "couples"
+        ],
+        "precision": "area",
+        "summary": "Riverside flower gardens along the Narmada below the Statue of Unity — curated beds, lawns and photo spots best in the cool months.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712,
+          21.84
+        ]
+      },
+      "properties": {
+        "id": "narmada-vishwa-van",
+        "name": "Vishwa Van",
+        "category": "garden",
+        "cluster": "sou-complex",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A 'world forest' planting trees and herbs from the continents around symbolic global themes — one of the campus's quieter green tickets.",
+        "monsoon_dependent": false,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.66,
+          21.772
+        ]
+      },
+      "properties": {
+        "id": "narmada-zarwani-falls",
+        "name": "Zarwani Waterfall",
+        "category": "waterfall",
+        "cluster": "ekta-nagar-area",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "nature",
+          "photography",
+          "adventure",
+          "picnic"
+        ],
+        "precision": "approximate",
+        "summary": "A forest waterfall inside Shoolpaneshwar sanctuary, 30 minutes from Ekta Nagar — rocky gorge, shallow pools and a proper jungle feel.",
+        "monsoon_dependent": true,
+        "confidence": "high"
+      }
+    }
+  ]
+}
