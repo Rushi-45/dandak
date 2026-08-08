@@ -92,7 +92,18 @@
     { "id": "narmada-ninai-falls", "distance_km": 40 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Devmogra_gujarat_india.jpg",
+        "license": "cc-by-sa",
+        "caption": "Satpura gorge country at Devmogra",
+        "credit": "Gtm_17",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Devmogra_gujarat_india.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Devmogra Mata Temple, Sagbara — Guide",
     "meta_description": "Yaha Mogi's shrine at Devmogra: the great tribal fair near Mahashivratri, respectful-visit notes and access from Rajpipla."

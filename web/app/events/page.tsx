@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
 import { MONTHS } from "@/lib/format";
-import { getEvents, getSpotById } from "@/lib/data";
+import { getEvents, getSpotById, getSpotImagePath, type EventRec } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Events & Seasons",
@@ -22,6 +23,19 @@ const SCALE_LABEL: Record<string, string> = {
   regional: "Regional draw",
   national: "National draw",
 };
+
+/** Events without an imaged spot borrow a thematically-right neighbour. */
+const IMAGE_FALLBACK: Record<string, string> = {
+  "saputara-winter-peak": "dang-saputara-lake",
+  "shravan-narmada-temples": "narmada-shoolpaneshwar-wls",
+};
+
+function eventImageFor(e: EventRec): string | null {
+  const direct = e.spot_id ? getSpotImagePath(e.spot_id) : null;
+  if (direct) return direct;
+  const fallback = IMAGE_FALLBACK[e.id];
+  return fallback ? getSpotImagePath(fallback) : null;
+}
 
 export default function EventsPage() {
   const events = getEvents();
@@ -45,13 +59,34 @@ export default function EventsPage() {
       <div className="mt-12 space-y-5">
         {events.map((e, i) => {
           const spot = e.spot_id ? getSpotById(e.spot_id) : undefined;
+          const img = eventImageFor(e);
           return (
             <FadeIn key={e.id} delay={i * 0.03}>
               <article className="relative overflow-hidden rounded-[1.75rem] border border-white/[0.07] bg-white/[0.02] p-6 sm:p-7">
+                {img ? (
+                  <div className="absolute inset-y-0 right-0 w-36 sm:w-72">
+                    <Image
+                      src={img}
+                      alt=""
+                      fill
+                      sizes="(min-width: 640px) 288px, 144px"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0c100e] via-[#0c100e]/60 to-[#0c100e]/10" />
+                  </div>
+                ) : (
+                  <p
+                    aria-hidden
+                    className="pointer-events-none absolute -right-2 -top-6 select-none font-serif text-[8rem] font-black italic leading-none text-amber-200/[0.06]"
+                  >
+                    ઢોલ
+                  </p>
+                )}
                 <div
                   aria-hidden
                   className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-amber-400/[0.07] blur-2xl"
                 />
+                <div className={img ? "relative z-10 pr-24 sm:pr-56" : "relative z-10"}>
                 <div className="flex flex-wrap items-center gap-2 text-[11px]">
                   <span className={`rounded-full px-2.5 py-1 font-bold uppercase tracking-wide ring-1 ${TYPE_STYLE[e.type]}`}>
                     {e.type.replace("-", " ")}
@@ -89,6 +124,7 @@ export default function EventsPage() {
                   )}
                   {!spot && e.place && <span className="text-stone-500">📍 {e.place}</span>}
                   {e.tips[0] && <span className="text-stone-500">💡 {e.tips[0]}</span>}
+                </div>
                 </div>
               </article>
             </FadeIn>

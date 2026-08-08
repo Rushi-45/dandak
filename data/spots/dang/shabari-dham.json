@@ -93,7 +93,18 @@
     { "id": "dang-don-hill", "distance_km": 30 }
   ],
   "itineraries": ["dang-ramayana-trail", "tribal-culture-trail"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Shabridham_subir.jpg",
+        "license": "cc-by-sa",
+        "caption": "The Shabari Dham temple on its hill at Subir",
+        "credit": "સતિષચંદ્ર",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Shabridham_subir.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Shabari Dham, Dang — Ramayana Pilgrimage Site",
     "meta_description": "Visiting Shabari Dham near Subir: the Shabari–Ram tradition, darshan timings, access and pairing with Pampa Sarovar."
