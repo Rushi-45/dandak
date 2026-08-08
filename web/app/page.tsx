@@ -5,7 +5,8 @@ import { FlipWords } from "@/components/flip-words";
 import { SpotCard } from "@/components/spot-card";
 import { TiltCard } from "@/components/tilt-card";
 import { Meteors } from "@/components/meteors";
-import { getAllSpots, getDistrict, getItineraries, getSpotById, toCardData } from "@/lib/data";
+import { getAllSpots, getDistrict, getEvents, getItineraries, getSpotById, toCardData } from "@/lib/data";
+import { formatMonths, MONTHS } from "@/lib/format";
 import souImg from "@/public/images/statue-of-unity.jpg";
 import lakeImg from "@/public/images/saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
@@ -27,6 +28,8 @@ const MONTH_NAMES = [
   "July", "August", "September", "October", "November", "December",
 ];
 
+const FEATURED_TRIPS = ["monsoon-waterfall-circuit", "sou-family-2-day", "dang-ramayana-trail"];
+
 export default function Home() {
   const spots = getAllSpots();
   const dang = getDistrict("dang");
@@ -45,6 +48,12 @@ export default function Home() {
       return pa - pb || a.name.en.localeCompare(b.name.en);
     })
     .slice(0, 10);
+
+  // Events landing this month or next — again computed, not curated.
+  const nextMonth = (month % 12) + 1;
+  const upcoming = getEvents()
+    .filter((e) => e.timing.typical_months.some((m) => m === month || m === nextMonth))
+    .slice(0, 4);
 
   return (
     <div>
@@ -399,44 +408,142 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* == Editorial pull-quote ========================== */}
+        {/* == Featured trips ================================ */}
         <FadeIn>
-          <section className="border-t border-white/[0.06] py-20 text-center">
-            <div className="mx-auto h-10 w-px bg-gradient-to-b from-transparent to-amber-300/50" />
-            <blockquote className="mx-auto mt-6 max-w-3xl font-serif text-3xl font-black italic leading-snug text-stone-200 sm:text-4xl">
-              “Dandakaranya — the forest the epics wandered through.{" "}
-              <span className="bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text text-transparent">
-                It still stands, and it still floods every monsoon.
-              </span>”
-            </blockquote>
-            <div className="mx-auto mt-6 h-10 w-px bg-gradient-to-t from-transparent to-emerald-300/50" />
+          <section id="trips" className="scroll-mt-20 border-t border-white/[0.06] py-14">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-teal-300">
+                  Go with a plan
+                </p>
+                <h2 className="mt-2 font-serif text-4xl font-black tracking-tight text-stone-100">
+                  Trips, pre-routed<span className="text-teal-300">.</span>
+                </h2>
+              </div>
+              <Link href="/itineraries" className="text-sm font-semibold text-teal-300 hover:text-teal-200">
+                All {itineraries.length} trips →
+              </Link>
+            </div>
+            <div className="group/cards mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {FEATURED_TRIPS.map((slug) => {
+                const it = itineraries.find((i) => i.slug === slug);
+                if (!it) return null;
+                return (
+                  <Link
+                    key={slug}
+                    href={`/itineraries/${it.slug}`}
+                    className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-white/[0.07] bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/30 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-20px_rgba(45,212,191,0.35)] group-hover/cards:[&:not(:hover)]:opacity-40 group-hover/cards:[&:not(:hover)]:blur-[1.5px]"
+                  >
+                    <p
+                      aria-hidden
+                      className="pointer-events-none absolute -right-3 -top-8 select-none font-serif text-[7rem] font-black leading-none text-stroke"
+                    >
+                      {it.duration_days}
+                    </p>
+                    <div className="flex items-center gap-2 text-xs">
+                      <span className="rounded-full bg-teal-400/10 px-2.5 py-1 font-bold text-teal-300 ring-1 ring-teal-400/25">
+                        {it.duration_days} day{it.duration_days > 1 ? "s" : ""}
+                      </span>
+                      <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-2.5 py-1 text-stone-400">
+                        {it.stops.length} stops
+                      </span>
+                    </div>
+                    <h3 className="mt-4 font-serif text-xl font-black leading-snug text-stone-100 transition-colors group-hover:text-teal-200">
+                      {it.title}
+                    </h3>
+                    <p className="mt-auto pt-4 text-[11px] font-semibold uppercase tracking-widest text-amber-300/80">
+                      Best: {formatMonths(it.best_months)}
+                    </p>
+                  </Link>
+                );
+              })}
+            </div>
           </section>
         </FadeIn>
 
-        {/* == Honesty strip ================================= */}
+        {/* == Coming up (events) ============================ */}
+        {upcoming.length > 0 && (
+          <FadeIn>
+            <section className="border-t border-white/[0.06] py-14">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-rose-300">
+                Coming up
+              </p>
+              <h2 className="mt-2 font-serif text-4xl font-black tracking-tight text-stone-100">
+                On the calendar<span className="text-rose-300">.</span>
+              </h2>
+              <div className="mt-7 space-y-3">
+                {upcoming.map((e) => (
+                  <Link
+                    key={e.id}
+                    href="/events"
+                    className="group flex flex-wrap items-baseline gap-x-4 gap-y-1 rounded-2xl border border-white/[0.07] bg-white/[0.02] px-5 py-4 transition-all hover:-translate-y-0.5 hover:border-rose-400/25 hover:bg-white/[0.04]"
+                  >
+                    <span className="font-serif text-lg font-black text-rose-200">
+                      {e.timing.typical_months.map((m) => MONTHS[m - 1]).join(" – ")}
+                    </span>
+                    <span className="font-serif text-lg font-black text-stone-100 group-hover:text-rose-100">
+                      {e.name.en}
+                    </span>
+                    <span className="text-xs uppercase tracking-widest text-stone-500">
+                      {e.type.replace("-", " ")} · {e.district}
+                    </span>
+                    <span className="ml-auto text-sm text-stone-500 transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          </FadeIn>
+        )}
+
+        {/* == Finale ======================================== */}
         <FadeIn>
-          <section className="relative mb-4 overflow-hidden rounded-[2rem] border border-white/[0.07] p-8 sm:p-10">
-            {/* aurora */}
+          <section className="relative mb-6 overflow-hidden rounded-[2.5rem] border border-white/[0.08] px-6 py-16 text-center sm:py-20">
+            {/* aurora + meteors */}
             <div
               aria-hidden
-              className="animate-aurora-a pointer-events-none absolute -left-20 -top-24 h-80 w-[36rem] rounded-full bg-emerald-500/15 blur-[80px]"
+              className="animate-aurora-a pointer-events-none absolute -left-24 -top-24 h-80 w-[36rem] rounded-full bg-emerald-500/15 blur-[80px]"
             />
             <div
               aria-hidden
               className="animate-aurora-b pointer-events-none absolute -bottom-28 -right-16 h-72 w-[30rem] rounded-full bg-amber-500/12 blur-[80px]"
             />
-            <div
-              aria-hidden
-              className="animate-aurora-a pointer-events-none absolute left-1/3 top-1/2 h-40 w-72 rounded-full bg-cyan-500/10 blur-[70px]"
-            />
-            <h2 className="relative font-serif text-2xl font-black text-stone-100">
-              Built different: every fact has a receipt<span className="text-emerald-300">.</span>
-            </h2>
-            <p className="relative mt-3 max-w-2xl text-sm leading-relaxed text-stone-400">
-              Each place carries a confidence level, a last-verified date and its sources — official
-              portals first. When something is unverified, the page says so instead of guessing.
-              That is the whole point of dandak.
+            <Meteors />
+
+            <p className="relative text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-300">
+              Every fact has a receipt
             </p>
+            <h2 className="relative mx-auto mt-5 max-w-3xl font-serif text-4xl font-black italic leading-snug text-stone-100 sm:text-5xl">
+              “The forest the epics wandered{" "}
+              <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200 bg-clip-text text-transparent">
+                still stands — and still floods every monsoon.
+              </span>”
+            </h2>
+            <p className="relative mx-auto mt-5 max-w-xl text-sm leading-relaxed text-stone-400">
+              {spots.length} places, {verified} of them verified against official sources, with
+              confidence levels and citations on every page. When something is unknown, dandak says
+              so instead of guessing.
+            </p>
+            <div className="relative mt-9 flex flex-wrap items-center justify-center gap-3">
+              <Link href="/spots" className="group relative inline-flex overflow-hidden rounded-xl p-[1.5px]">
+                <span
+                  aria-hidden
+                  className="absolute inset-[-1000%] animate-[spin_3.5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#34d399_0%,#115e59_25%,#fbbf24_50%,#115e59_75%,#34d399_100%)] motion-reduce:animate-none"
+                />
+                <span className="relative inline-flex items-center rounded-[10.5px] bg-[#06110d] px-7 py-3 text-sm font-bold text-emerald-200 transition-colors group-hover:bg-[#0a1a14] group-hover:text-emerald-100">
+                  Start exploring →
+                </span>
+              </Link>
+              <a
+                href="https://github.com/Rushi-45/dandak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-semibold text-stone-300 backdrop-blur transition-colors hover:border-amber-300/40 hover:text-amber-200"
+              >
+                The open dataset ↗
+              </a>
+            </div>
           </section>
         </FadeIn>
       </div>
