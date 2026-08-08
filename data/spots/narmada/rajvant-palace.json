@@ -18,8 +18,8 @@
     "Lawns familiar from countless film shoots",
     "Easy 40-minute pairing with Ekta Nagar"
   ],
-  "history_legend": "Rajpipla state was ruled by the Gohil Rajput dynasty for centuries before merging with India in 1948. Maharaja Vijaysinhji, remembered for winning the 1934 Epsom Derby with Windsor Lad, built and embellished the town's early-20th-century palaces, of which Vijay/Rajvant is the most visitable today.",
-  "attributes": { "era": "Early 20th century", "built_by": "Rajpipla royal family (Gohil dynasty)" },
+  "history_legend": "Rajpipla state was ruled by the Gohil Rajput dynasty for centuries before merging with India in 1948. Vijay/Rajvant Palace was raised in 1910 by Maharana Chhatrasinhji for the young Vijaysinhji — who grew up to win the 1934 Epsom Derby with Windsor Lad, still India's only Derby-winning owner.",
+  "attributes": { "era": "1910", "built_by": "Maharana Chhatrasinhji, for Vijaysinhji" },
   "location": {
     "taluka": "Nandod",
     "admin_district": null,
@@ -97,9 +97,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates", "attributes.era"]
+    "sources": [
+      { "title": "Rajavant Palace — District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
   }
 }

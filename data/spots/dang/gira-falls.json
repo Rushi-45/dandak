@@ -10,23 +10,23 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "Dang's most visited waterfall — a broad ~30 m curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
-  "description": "Gira Falls is the waterfall most Gujarat travellers meet first: barely off the Waghai–Saputara road, a short walk from parking, and in full monsoon a genuinely loud, broad curtain of brown-white water dropping roughly thirty metres into the Ambika river system. Spray reaches the viewing area on big days, and the whole riverbed setting — black rock, red soil, forest on both banks — is classic Dang.\n\nThe approach is a flat walk of a few hundred metres from the roadside parking through seasonal stalls selling corn, lemon water and bhajiya. Viewing is from the riverbed and its rock shelves; there is no formal deck, so how close you get is judgement — and in July–August the safe answer is: not close. Flow peaks July to September, stays photogenic into November, and thins to a modest ribbon by January.\n\nBecause it is so accessible, weekends and holidays in monsoon get properly crowded by late morning. Come before 10:00 for space, or push deeper into Dang (Girmal) if you want falls without company.",
+  "summary": "Dang's most visited waterfall — a broad ~23 m (75 ft) curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
+  "description": "Gira Falls is the waterfall most Gujarat travellers meet first: barely off the Waghai–Saputara road, a short walk from parking, and in full monsoon a genuinely loud, broad curtain of brown-white water dropping roughly twenty-three metres (about 75 ft) into the Ambika river system. Spray reaches the viewing area on big days, and the whole riverbed setting — black rock, red soil, forest on both banks — is classic Dang.\n\nThe approach is a flat walk of a few hundred metres from the roadside parking through seasonal stalls selling corn, lemon water and bhajiya. Viewing is from the riverbed and its rock shelves; there is no formal deck, so how close you get is judgement — and in July–August the safe answer is: not close. Flow peaks July to September, stays photogenic into November, and thins to a modest ribbon by January.\n\nBecause it is so accessible, weekends and holidays in monsoon get properly crowded by late morning. Come before 10:00 for space, or push deeper into Dang (Girmal) if you want falls without company.",
   "highlights": [
-    "Broad ~30 m monsoon curtain minutes off the Waghai road",
-    "Flat few-hundred-metre walk from parking",
+    "Broad ~23 m monsoon curtain minutes off the Waghai road",
+    "Flat ~1 km riverside walk from parking",
     "Peak flow July–September, photogenic into November"
   ],
   "history_legend": null,
-  "attributes": { "height_m": 30, "river": "Ambika" },
+  "attributes": { "height_m": 23, "river": "Ambika" },
   "location": {
     "taluka": "Waghai",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Waghai", "distance_km": 3 },
+    "nearest_town": { "name": "Waghai", "distance_km": 5 },
     "coordinates": { "lat": 20.751, "lng": 73.533, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 3, "ahwa": 33, "saputara": 52, "surat": 105 }
+    "distances_km": { "waghai": 5, "ahwa": 33, "saputara": 49, "surat": 105 }
   },
   "access": {
     "modes": {
@@ -34,13 +34,13 @@
       "rail": "Waghai station (heritage narrow gauge from Bilimora, limited service); Bilimora Jn (~55 km) for broad gauge",
       "air": "Surat (~105 km)"
     },
-    "last_mile": "Flat ~300–400 m walk from parking to the riverbed viewing area",
+    "last_mile": "Flat ~1 km walk from parking to the riverbed viewing area",
     "road_condition": "Tarred; the last stretch is single-lane and slow on monsoon weekends",
-    "parking": { "available": true, "fee": null, "notes": "Informal lot managed locally in season" }
+    "parking": { "available": true, "fee": 50, "notes": "₹40–50 by vehicle, collected locally in season" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Informal daylight access; no gates outside monsoon management" }],
-    "fees": [],
+    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Managed daylight access in season" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Charged in season; some periods reported free — conflicting reports" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -60,7 +60,7 @@
     "photography_notes": "Morning side-light works best; carry lens protection from spray in peak flow. The wide riverbed suits panoramas more than tight frames."
   },
   "amenities": {
-    "food": "Seasonal stalls along the approach path; proper meals in Waghai",
+    "food": "Seasonal tea/snack stalls along the approach; picnic huts near the falls; proper meals in Waghai",
     "toilets": "basic",
     "drinking_water": false,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.height_m", "visit.timings"]
+    "sources": [
+      { "title": "Gira Falls, Saputara — Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/saputara/gira-falls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Gira Waterfall — Complete Travel Guide", "url": "https://en.safargujarat.com/gira-waterfall-dang-travel-guide/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "visit.fees", "attributes.height_m"]
   }
 }

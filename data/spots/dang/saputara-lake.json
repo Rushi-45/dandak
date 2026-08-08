@@ -42,13 +42,13 @@
   "visit": {
     "timings": [],
     "fees": [
-      { "type": "boating", "amount_inr": 150, "note": "Indicative per-boat rate for ~30 min; varies by boat type and season" }
+      { "type": "boating", "amount_inr": 300, "note": "4-seat pedal boat, ~30 min; per-seat row/pedal options ₹25–35 — rates vary by boat type" }
     ],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 90,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "The lakefront is an open area; boating counters run roughly 09:00–18:00 and pause in heavy rain or low water."
+    "notes": "The lakefront is an open area; the boat house runs roughly 08:30–18:30 and pauses in heavy rain or low water."
   },
   "seasonality": {
     "best_months": [5, 7, 8, 9, 10, 11, 12],
@@ -103,9 +103,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km", "access.parking.fee"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Saputara Lake — Timings, Entry Fee, Boating", "url": "https://www.trawell.in/gujarat/saputara/saputara-lake", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Saputara Lake — Boating Timings, Ticket Price", "url": "https://en.safargujarat.com/saputara-lake-distance-ticket-price-boating-timings/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "access.parking.fee"]
   }
 }

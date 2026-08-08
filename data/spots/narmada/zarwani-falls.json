@@ -31,7 +31,7 @@
   },
   "access": {
     "modes": {
-      "road": "Signposted forest road off the Ekta Nagar–Rajpipla route; entry via the sanctuary check post",
+      "road": "Signposted forest road off the Ekta Nagar–Rajpipla route; sanctuary entry at the Thawadia check post, falls ~7 km beyond",
       "rail": "Ekta Nagar station (~13 km)",
       "air": "Vadodara (~100 km)"
     },
@@ -40,8 +40,8 @@
     "parking": { "available": true, "fee": 0, "notes": "Clearing near the trailhead" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Sanctuary daylight hours enforced at the check post; indicative" }],
-    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative per-head sanctuary fee; vehicle charge may apply — confirm at the check post" }],
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Gate timings shift by season; enforced at the Thawadia check post" }],
+    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Per person, plus vehicle charge at the check post (~₹400 car / ₹220 bike). Verified Aug 2026" }],
     "booking": { "required": false, "url": null, "notes": "Campsite stays book separately via the forest department" },
     "duration_min": 120,
     "best_time_of_day": "morning",
@@ -101,9 +101,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates", "location.distances_km"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Zarwani Waterfalls, Kevadiya — Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Zarwani Waterfall Gujarat Guide 2026 — Timings, Entry Fee, Trek", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates"]
   }
 }
