@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "dang-vansda-national-park",
+  "slug": "vansda-national-park",
+  "name": { "en": "Vansda National Park" },
+  "aliases": ["Bansda National Park"],
+  "category": "wildlife",
+  "subcategories": ["national-park"],
+  "tags": ["wildlife", "nature", "birding", "offbeat"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "A compact national park of dense old forest bordering Waghai — giant squirrels, pythons, leopards and butterflies in barely 24 km².",
+  "description": "Vansda packs national-park status into a small, dense square of forest just across the district line from Waghai — old-growth teak and towering trees whose canopy closes over the internal road, protecting a surprising roster: leopard, hyena, four-horned antelope, pangolin, Malabar giant squirrels overhead, rock pythons in the leaf litter, and a butterfly and bird list that outperforms the park's size.\n\nBecause it is compact, Vansda is best treated as a guided half-day: entry works on forest-department permits at the gate, with local guides available, and the standard visit is a slow vehicle transect plus short walks where permitted. The interpretation infrastructure is modest; what you get is genuine forest density an hour from the Saputara circuit.\n\nThe park typically closes through the monsoon breeding months and reopens for an October-to-May season, of which October–March is the comfortable, active window. Pair it with Kilad or the Waghai botanical garden and you have Dang's best easy nature day.",
+  "highlights": [
+    "Old-growth canopy forest in a compact 24 km²",
+    "Malabar giant squirrels, leopard and python country",
+    "Butterfly and bird density beyond its size",
+    "Easy pairing with Waghai's garden and Kilad"
+  ],
+  "history_legend": "The forest was once part of the Vansda princely state's holdings — protection under royal shikar rules ironically preserved the old growth that became a national park in 1979.",
+  "attributes": { "area_km2": 24, "key_species": ["leopard", "Malabar giant squirrel", "four-horned antelope", "Indian rock python", "great black woodpecker"], "entry_permit": "Forest-department permit at the gate" },
+  "location": {
+    "taluka": "Vansda (Navsari)",
+    "admin_district": "Navsari",
+    "outside_district": true,
+    "nearest_town": { "name": "Waghai", "distance_km": 8 },
+    "coordinates": { "lat": 20.77, "lng": 73.455, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 8, "bilimora": 50, "saputara": 60, "surat": 100 }
+  },
+  "access": {
+    "modes": {
+      "road": "Gate off the Waghai–Bilimora corridor; approach from Waghai (10 min) or Chikhli side",
+      "rail": "Waghai narrow gauge; Bilimora Jn (~50 km)",
+      "air": "Surat (~100 km)"
+    },
+    "last_mile": "Vehicle transect on the internal forest road; walks only where staff permit",
+    "road_condition": "Good approach; internal road unpaved",
+    "parking": { "available": true, "fee": 0, "notes": "At the gate" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Indicative gate hours in season" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative permit + vehicle combination; guide fee separate at the gate" }],
+    "booking": { "required": false, "url": null, "notes": "Permits at the gate; groups can arrange ahead via the range office" },
+    "duration_min": 180,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Typically closed during monsoon breeding months (roughly June–September) — verify season dates before planning."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "avoid_months": [6, 7, 8, 9],
+    "monsoon_dependent": false,
+    "notes": "October–March is the season; the park generally stays shut through monsoon."
+  },
+  "experience": {
+    "activities": ["safari", "jungle-trail", "birdwatching", "nature-walk", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Canopy keeps light low — fast lenses; look up often, the giant squirrels give themselves away by sound."
+  },
+  "amenities": {
+    "food": "None inside; Waghai town 10 minutes away",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "ok" },
+    "guides": "Local guides at the gate — take one; they hear the forest before you see it",
+    "ev_charging": false,
+    "stay_nearby": ["dang-kilad-nature-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Stay in or beside the vehicle except on permitted walks",
+      "No food scraps out of the car — habituation harms wildlife",
+      "Exit before gate closing; no lingering at dusk"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~8 km)", "police": "Waghai PS / Vansda PS; park range office", "notes": null }
+  },
+  "tips": [
+    "First gate slot of the morning doubles your wildlife odds",
+    "Base at Kilad the night before for the earliest start",
+    "Binoculars matter more than a camera here"
+  ],
+  "faqs": [
+    {
+      "q": "Will I see a leopard in Vansda?",
+      "a": "Treat it as a lottery ticket — they exist, they hide. The reliable stars are giant squirrels, langurs, birds and the forest itself."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-waghai-botanical-garden", "distance_km": 8 },
+    { "id": "dang-gira-falls", "distance_km": 10 },
+    { "id": "dang-kilad-nature-campsite", "distance_km": 9 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Vansda National Park — Permits & Season Guide",
+    "meta_description": "Visiting Vansda National Park near Waghai: gate permits, October–March season, wildlife odds and pairings."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "visit.notes", "location.coordinates", "attributes.area_km2"]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "dang-mahal-eco-campsite",
+  "slug": "mahal-eco-campsite",
+  "name": { "en": "Mahal Eco Campsite" },
+  "aliases": ["Mahal Campsite", "Mahal Forest Rest Area"],
+  "category": "eco-campsite",
+  "subcategories": ["forest-department"],
+  "tags": ["nature", "offbeat", "birding", "family"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Forest-department cottages on the Purna river deep inside Purna sanctuary — the base for dawn walks, river mornings and real forest nights.",
+  "description": "Mahal is the night you remember from a Dang trip: a forest-department campsite on the banks of the Purna river, deep inside the sanctuary, where the generator quiets, the canopy closes over the cottages and the forest runs the soundtrack. Accommodation is eco-campsite standard — riverside cottages and tents, simple mess meals when booked — and the location is the entire luxury.\n\nStays unlock what day permits can't: dawn guided walks when the forest is loudest, the river in first light, night skies with zero competition, and the internal roads before day visitors arrive. The historic Mahal forest rest house nearby dates to colonial forestry days, and the campsite continues that tradition of foresters' hospitality in plainer form.\n\nBook through the forest department's eco-tourism channels well ahead for winter weekends. Combine a night here with Girmal Falls and the Shabari Dham circuit and interior Dang stops feeling remote and starts feeling organised.",
+  "highlights": [
+    "Riverside cottages inside Purna sanctuary",
+    "Dawn guided walks from your doorstep",
+    "Genuinely dark night skies",
+    "Anchors the Girmal–Shabari interior circuit"
+  ],
+  "history_legend": "Mahal has been a forestry station since the colonial teak-working era — the old rest house predates the sanctuary and hosted generations of forest officers.",
+  "attributes": { "operator": "Gujarat Forest Department", "booking_portal": "Forest-department eco-tourism booking channels" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 30 },
+    "coordinates": { "lat": 20.947, "lng": 73.71, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 30, "waghai": 45, "saputara": 80 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via the Mahal forest road from Ahwa or the Waghai side; sanctuary check-post entry",
+      "rail": "Waghai narrow gauge; Bilimora Jn for broad gauge",
+      "air": "Surat (~140 km)"
+    },
+    "last_mile": "Drive-in to the campsite; riverbank paths on foot",
+    "road_condition": "Tarred approach, forest-track final stretch; slow after rain",
+    "parking": { "available": true, "fee": 0, "notes": "At the campsite" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Day visits within sanctuary hours; guests per booking" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Sanctuary permit applies for the drive in; campsite tariffs separate via booking" }],
+    "booking": { "required": true, "url": null, "notes": "Stays via the forest department's eco-tourism portal/range office; winter weekends fill weeks ahead" },
+    "duration_min": 240,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Monsoon operation is limited when sanctuary access tightens — check while planning."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "avoid_months": [6, 7],
+    "monsoon_dependent": false,
+    "notes": "October–March is the dependable season; early monsoon can suspend access entirely."
+  },
+  "experience": {
+    "activities": ["camping", "nature-walk", "birdwatching", "jungle-trail", "photography", "stargazing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "River mist at dawn is the frame; astro works from the riverbank on moonless winter nights."
+  },
+  "amenities": {
+    "food": "Campsite mess with booking; nothing else within 30 km — carry supplements",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Campsite staff arrange guided walks — take the dawn slot",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "No wandering beyond campsite bounds after dark — leopard country",
+      "River bathing only at the spots staff indicate, in lean flow",
+      "Carry cash; nothing digital works reliably here"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~30 km)", "police": "Ahwa PS; Mahal range office on site", "notes": null }
+  },
+  "tips": [
+    "Book the dawn walk when you book the cottage — slots are few",
+    "Pair the stay with Girmal Falls (25 km) the next morning",
+    "Pack a power bank and torch; supply is generator-scheduled"
+  ],
+  "faqs": [
+    {
+      "q": "Is Mahal suitable for a family with kids?",
+      "a": "Yes for kids who enjoy outdoors — the campsite is safe and staffed. It is not for those needing hotel comforts; power, food and network are all forest-basic."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 5 },
+    { "id": "dang-girmal-falls", "distance_km": 25 },
+    { "id": "dang-shabari-dham", "distance_km": 25 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Mahal Eco Campsite, Purna Sanctuary — Stay Guide",
+    "meta_description": "Booking Mahal campsite inside Purna sanctuary: cottages on the river, dawn walks, season and what to carry."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.booking.notes", "location.coordinates", "visit.notes"]
+  }
+}

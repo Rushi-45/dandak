@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "dang-artist-village",
+  "slug": "artist-village",
+  "name": { "en": "Artist Village (Gandharvapur)" },
+  "aliases": ["Gandharvapur Artist Village", "Saputara Artist Village"],
+  "category": "cultural",
+  "subcategories": [],
+  "tags": ["tribal-culture", "shopping", "heritage", "family", "photography"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A working craft centre outside Saputara where Warli painting and bamboo work are made, taught and sold by the artists themselves.",
+  "description": "Gandharvapur Artist Village, on the road out of Saputara, is a working answer to the question every Tribal Museum visitor asks: where is this culture now? Here artists make and sell Warli paintings, bamboo craft, masks and terracotta, and — this is the part worth planning for — run hands-on sessions where visitors paint their own Warli piece under instruction.\n\nThe village grew around the long effort of local artists to keep Dangi and Warli craft economically alive, and it operates as workshop first, shop second. Prices are fair and the money lands with the makers; a painting bought here, with the painter explaining the story grammar of circles, triangles and stick figures, beats anything from a highway emporium.\n\nSessions and stock vary with the season and the artists' calendars — mornings on weekdays are the calm window. Photograph people and works-in-progress only with permission; it is a workplace, not an exhibit.",
+  "highlights": [
+    "Warli painting workshops you can join",
+    "Bamboo craft, masks and terracotta sold by makers",
+    "Direct-to-artist buying, fair prices",
+    "Living counterpart to the Tribal Museum"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 1.5 },
+    "coordinates": { "lat": 20.577, "lng": 73.762, "precision": "area" },
+    "altitude_m": 980,
+    "distances_km": { "saputara": 1.5, "ahwa": 49 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the main road just outside Saputara town; autos and the sightseeing circuits stop here",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in from the road",
+    "road_condition": "Good",
+    "parking": { "available": true, "fee": 0, "notes": "Roadside" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative; workshop sessions depend on artist availability" }],
+    "fees": [{ "type": "activity", "amount_inr": 200, "note": "Indicative per-person Warli workshop charge including materials; buying is of course à la carte" }],
+    "booking": { "required": false, "url": null, "notes": "Groups should call ahead for workshop slots" },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Season-proof; busiest during Saputara's holiday peaks."
+  },
+  "experience": {
+    "activities": ["village-tour", "shopping", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Ask before photographing artists or unfinished work; finished pieces on display are fair game."
+  },
+  "amenities": {
+    "food": "None on site; town eateries 5 minutes away",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "The artists themselves — better than any guide",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~49 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Do the Tribal Museum first, then buy here with context",
+    "A small Warli canvas takes about an hour in a workshop — good rainy-day slot",
+    "Carry cash; digital payments work but connectivity wobbles"
+  ],
+  "faqs": [
+    {
+      "q": "Are the workshops suitable for children?",
+      "a": "Yes — Warli's basic vocabulary is simple shapes, and artists are patient teachers. Kids leave with their own painting."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-saputara-tribal-museum", "distance_km": 1 },
+    { "id": "dang-saputara-lake", "distance_km": 1.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Artist Village Gandharvapur, Saputara — Warli Crafts",
+    "meta_description": "Warli painting workshops and direct-from-artist crafts at Saputara's Gandharvapur Artist Village — timings and tips."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

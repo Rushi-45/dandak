@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "dang-rose-garden",
+  "slug": "rose-garden",
+  "name": { "en": "Rose Garden" },
+  "aliases": [],
+  "category": "garden",
+  "subcategories": ["floral"],
+  "tags": ["family", "nature", "photography", "picnic", "winter"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Saputara's rose beds near the lakefront — modest in size, at their fragrant best on cool winter mornings.",
+  "description": "The Rose Garden is a small, honest garden: beds of roses in mixed varieties arranged around lawns and paths near the lakefront, with the hills doing the backdrop work. It peaks in the cool months — December to February mornings carry actual fragrance — and looks tired by late summer, as rose gardens do.\n\nTreat it as a add-on to the lake rather than a destination: fifteen minutes of colour, a few photographs, a bench in the sun. Serious garden energy in Saputara belongs to the Step Garden and, in the Waghai belt below, the botanical garden. That said, on a clear January morning with the beds full and the light low, this little plot quietly outperforms its size.",
+  "highlights": [
+    "Rose beds at their best December–February",
+    "Lakefront location — pairs with the lake loop",
+    "Quick, low-effort colour stop"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.573, "lng": 73.754, "precision": "area" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "Near the lakefront in Saputara town",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in; level paths",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Shared lakefront parking" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "19:00", "note": "Indicative garden hours" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Token entry where charged; sometimes free off-season" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [12, 1, 2],
+    "avoid_months": [4, 5, 6],
+    "monsoon_dependent": false,
+    "notes": "Rose bloom tracks the cool season; expect thin beds outside November–March."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Low winter morning light through the beds; macro works before the breeze rises."
+  },
+  "amenities": {
+    "food": "Lakefront stalls nearby",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Fold it into the lake walk rather than driving separately",
+    "Skip it in summer — the beds will disappoint"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.3 },
+    { "id": "dang-lake-garden", "distance_km": 0.4 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Rose Garden, Saputara — Winter Bloom Notes",
+    "meta_description": "When Saputara's Rose Garden is worth the stop: winter bloom months, lakefront pairing and timings."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-echo-point",
+  "slug": "echo-point",
+  "name": { "en": "Echo Point" },
+  "aliases": [],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["family", "kids", "nature", "photography"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A curve on Saputara's rim road where the facing cliffs bounce a clean echo — a five-minute stop kids refuse to leave.",
+  "description": "Echo Point is the simplest pleasure on the Saputara circuit: a bend on the rim road where the valley walls face each other at just the right angle, and a good shout comes back to you a beat later. Every passing family stops, every child tests it at full volume, and the view — a green bowl of valley dropping toward the border hills — quietly earns the halt on its own.\n\nThere is nothing to do here in the itinerary sense, which is the charm: pull over, shout, take the photograph, move on to Table Point or Sunrise Point along the same stretch. Vendors with corn and cucumber appear in season. Monsoon mist can eat the echo along with the view; clear winter mornings carry it best.",
+  "highlights": [
+    "Reliable echo off the facing valley walls",
+    "Green valley bowl views",
+    "Effortless roadside stop on the rim circuit"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "valley" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "coordinates": { "lat": 20.579, "lng": 73.768, "precision": "area" },
+    "altitude_m": 985,
+    "distances_km": { "saputara": 2, "ahwa": 48 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the Saputara rim road near Table Point; all sightseeing circuits pass it",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Roadside — steps from your vehicle",
+    "road_condition": "Good tarred road; blind curve — park fully off the carriageway",
+    "parking": { "available": true, "fee": 0, "notes": "Roadside pull-off; tight on holiday afternoons" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 15,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Echo carries best in still, clear air — early mornings beat windy afternoons."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Monsoon mist often blanks both the view and the echo."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "A quick wide-angle of the valley bowl; nothing here demands more than a phone."
+  },
+  "amenities": {
+    "food": "Seasonal corn and cucumber vendors",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Park fully off the road — the bend has fast-moving traffic",
+      "Keep children back from the unfenced edge"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~48 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "String it with Table Point and Sunrise Point — all three sit on one stretch",
+    "Test the echo one person at a time; a crowd shouting together returns mud"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-table-point", "distance_km": 1 },
+    { "id": "dang-sunrise-point", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Echo Point, Saputara — Quick Stop Guide",
+    "meta_description": "Where Saputara's Echo Point is, when the echo carries best, and how to string it with Table Point and Sunrise Point."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates"]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-step-garden",
+  "slug": "step-garden",
+  "name": { "en": "Step Garden" },
+  "aliases": [],
+  "category": "garden",
+  "subcategories": ["themed"],
+  "tags": ["family", "kids", "picnic", "nature"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Terraced hillside garden in Saputara town — planted steps, shaded corners and short winding paths that suit an easy family hour.",
+  "description": "The Step Garden works Saputara's slope instead of fighting it: planted terraces stacked down a hillside, linked by winding paths, small bridges and staircases, with flowerbeds and clipped shrubs holding each level. It is compact, shaded in the right places, and built for exactly the hour between checking in and heading out to the viewpoints.\n\nChildren treat the levels as a course to be run; everyone else drifts, sits, and photographs the framed views that open between trees. Bloom is best in and just after monsoon and through the winter bedding season. Like most of Saputara's town gardens it charges a token entry and keeps garden hours — mornings are quiet, holiday evenings busy.",
+  "highlights": [
+    "Planted terraces stepping down the hillside",
+    "Shaded paths and sit-down corners",
+    "Compact one-hour family stop in town"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.576, "lng": 73.757, "precision": "area" },
+    "altitude_m": 980,
+    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "In Saputara town; walkable from the lake and hotel belt",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in; internal paths involve constant gentle stairs",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Street parking nearby" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "19:00", "note": "Indicative garden hours" }],
+    "fees": [{ "type": "entry", "amount_inr": 15, "note": "Token entry; revised periodically" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Freshest just after monsoon; winter bedding keeps colour through January."
+  },
+  "experience": {
+    "activities": ["sightseeing", "picnic", "photography", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "The terrace geometry reads best from the top gate looking down, early or late in the day."
+  },
+  "amenities": {
+    "food": "Vendors at the gate in season; cafés in town minutes away",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Steps get slippery in rain — mind footing with small children"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "The stairs add up — elderly visitors may prefer the flatter Lake Garden",
+    "Slot it as a morning filler before the rim-road circuit"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.7 },
+    { "id": "dang-saputara-tribal-museum", "distance_km": 0.7 },
+    { "id": "dang-governors-hill", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Step Garden, Saputara — Visit Notes",
+    "meta_description": "Saputara's terraced Step Garden: timings, token entry, and when the hillside beds are at their best."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

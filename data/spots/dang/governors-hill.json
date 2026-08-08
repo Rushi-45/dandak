@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-governors-hill",
+  "slug": "governors-hill",
+  "name": { "en": "Governor's Hill" },
+  "aliases": ["Governor Hill Saputara"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["offbeat", "nature", "photography", "trekking"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A wooded knoll above Saputara town with walking paths and quiet town-and-valley views — the low-key alternative to the headline points.",
+  "description": "Governor's Hill rises gently over Saputara's south side, a wooded knoll whose name is a leftover of the colonial habit of reserving the best breeze for administrators. Paths wind up through trees to clearings that look over the town's rooftops, the lake glinting between them, and the valley beyond.\n\nIt is the least programmed of Saputara's viewpoints — no stalls, no pony rides, often nobody at all — which makes it the choice for a quiet walk when the rim-road points are running at holiday volume. The climb is short and shaded, comfortable for anyone who can manage twenty minutes of gentle uphill. Development plans have touched the hill in recent years (walkway and viewing-structure work has been reported); expect some built elements and check locally for current access if the walk matters to your plan.",
+  "highlights": [
+    "Shaded walking paths over the town",
+    "Lake-and-rooftop views from the clearings",
+    "Quietest of Saputara's viewpoints"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "town and valley" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 1 },
+    "coordinates": { "lat": 20.577, "lng": 73.749, "precision": "area" },
+    "altitude_m": 1000,
+    "distances_km": { "saputara": 1, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "Trailhead within walking distance of Saputara town centre",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "15–25 min gentle wooded climb on paths",
+    "road_condition": "Town roads to the base; footpaths beyond",
+    "parking": { "available": true, "fee": 0, "notes": "Street parking near the trailhead" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 75,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open hillside; if new walkway structures have gated sections, hours will be posted locally."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Monsoon makes the woods drip and glow; winter mornings are crisp and clear."
+  },
+  "experience": {
+    "activities": ["nature-walk", "trekking", "photography", "birdwatching"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Town-and-lake frames open at the upper clearings; morning haze lifts by 09:00 in winter."
+  },
+  "amenities": {
+    "food": "None on the hill; everything in town below",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Paths get slick under wet leaves in monsoon",
+      "Carry water; there are no facilities on the hill"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Best used as an early-morning walk before the day's driving circuit",
+    "Combine with the Step Garden on the way back into town"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-step-garden", "distance_km": 1 },
+    { "id": "dang-saputara-lake", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Governor's Hill, Saputara — Quiet Walks",
+    "meta_description": "Governor's Hill in Saputara: the shaded walking alternative to the busy viewpoints, with town and lake views."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "visit.notes", "access.last_mile"]
+  }
+}

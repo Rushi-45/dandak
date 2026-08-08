@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "dang-pampa-sarovar",
+  "slug": "pampa-sarovar",
+  "name": { "en": "Pampa Sarovar" },
+  "aliases": ["Pampa Lake Subir"],
+  "category": "religious-site",
+  "subcategories": [],
+  "tags": ["pilgrimage", "mythology", "nature", "offbeat"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A quiet sacred pond near Subir tied to the Shabari story — forest-edged water, small shrines and almost no crowd.",
+  "description": "Pampa Sarovar completes the Shabari Dham pair: a modest pond at the forest edge near Subir that Dang's tradition identifies with the Pampa of the Ramayana, on whose banks Shabari's hermitage stood and where pilgrims bathe before darshan at the main temple a few kilometres away. Small shrines and ghats mark the waterline; the setting — still water, big trees, birdsong — does the rest.\n\nAs an experience it is the opposite of a headline sight: ten unhurried minutes for most visitors, longer for pilgrims and anyone happy to sit where it is quiet. Water levels and freshness are best from monsoon through winter. Combine it with Shabari Dham as one stop; alone it is a detour only devotees will rate.",
+  "highlights": [
+    "The Pampa of Dang's Ramayana geography",
+    "Forest-edged pond with bathing ghats",
+    "Naturally paired with Shabari Dham"
+  ],
+  "history_legend": "Regional tradition places Shabari's hermitage on Pampa's banks, where she waited a lifetime for Ram. Dang's identification of this pond as that Pampa rose to prominence alongside Shabari Dham in the 2000s — devotional geography, held with real local feeling.",
+  "attributes": {},
+  "location": {
+    "taluka": "Subir",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Subir", "distance_km": 6 },
+    "coordinates": { "lat": 20.855, "lng": 73.755, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "subir": 6, "ahwa": 28, "saputara": 68 }
+  },
+  "access": {
+    "modes": {
+      "road": "Signed village road off the Subir–Shabari Dham route",
+      "rail": "No practical railhead; district access via Waghai/Bilimora",
+      "air": "Surat (~150 km)"
+    },
+    "last_mile": "Short walk from parking to the ghats",
+    "road_condition": "Narrow village tar; fine in all seasons",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the approach" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open site; busiest during Ram Navami season alongside Shabari Dham."
+  },
+  "seasonality": {
+    "best_months": [8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Fullest and freshest monsoon through winter; shrinks and dulls by late summer."
+  },
+  "experience": {
+    "activities": ["darshan", "sightseeing", "birdwatching"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Still-water reflections early morning; egrets and kingfishers work the edges."
+  },
+  "amenities": {
+    "food": "None on site; stalls at Shabari Dham and Subir",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "none", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Bathe only at the ghat steps — the pond bed drops off unevenly"
+    ],
+    "emergency": { "nearest_hospital": "PHC Subir; Civil Hospital Ahwa (~28 km)", "police": "Subir PS", "notes": null }
+  },
+  "tips": [
+    "Do it as the quiet second half of the Shabari Dham stop",
+    "Early morning is the site at its best — light, birds, stillness"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-shabari-dham", "distance_km": 6 },
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 22 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Pampa Sarovar, Dang — Shabari's Pond",
+    "meta_description": "Pampa Sarovar near Subir: the Ramayana-linked pond paired with Shabari Dham — access, season and visit notes."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
+  }
+}

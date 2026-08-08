@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-lake-garden",
+  "slug": "lake-garden",
+  "name": { "en": "Lake Garden" },
+  "aliases": [],
+  "category": "garden",
+  "subcategories": [],
+  "tags": ["family", "picnic", "evening", "nature", "kids"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Lawns, play corners and shaded benches right on Saputara Lake's shore — the default family unwind after boating.",
+  "description": "The Lake Garden runs along Saputara Lake's shore: broad lawns, old shade trees, flower borders, a children's play corner and benches angled at the water. Its job is simple — absorb the families that spill off the boats — and it does it well, especially in the soft hour before sunset when the lake mirrors the ridge and the town's day-trippers settle onto the grass.\n\nBecause it is level and adjacent to everything, this is the easiest green space in town for elderly visitors and prams. Vendors work the gate; the promenade connects onward to the boat club and the Nageshwar temple, so the garden folds naturally into the standard lakefront hour rather than demanding its own slot.",
+  "highlights": [
+    "Lawns and shade directly on the lakeshore",
+    "Play corner for small children",
+    "Level paths — the easiest garden in town"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.572, "lng": 73.7565, "precision": "area" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the lakefront in Saputara town",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in from the promenade; level throughout",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Shared lakefront parking" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "20:00", "note": "Indicative; stays lively into the evening" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Token entry where charged" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 45,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [5, 7, 8, 9, 10, 11, 12],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Green and full through monsoon and winter; May evenings carry the summer crowd."
+  },
+  "experience": {
+    "activities": ["picnic", "sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Pre-sunset reflections across the lake from the shoreline benches."
+  },
+  "amenities": {
+    "food": "Vendors at the gate; lakefront stalls adjacent",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Supervise children near the shoreline edge"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Fold it into the boating hour — no separate slot needed",
+    "Evening is its best self; mornings are for the Step Garden"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.2 },
+    { "id": "dang-nageshwar-mahadev-temple", "distance_km": 0.4 },
+    { "id": "dang-rose-garden", "distance_km": 0.4 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Lake Garden, Saputara — Lakeshore Lawns",
+    "meta_description": "Saputara's Lake Garden: lakeshore lawns, play corner and evening atmosphere beside the boat club."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

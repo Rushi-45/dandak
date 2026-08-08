@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "dang-hatgadh-fort",
+  "slug": "hatgadh-fort",
+  "name": { "en": "Hatgadh Fort" },
+  "aliases": ["Hatgad Fort"],
+  "category": "fort",
+  "subcategories": [],
+  "tags": ["trekking", "history", "offbeat", "photography", "nature"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A hill fort just across the Maharashtra border from Saputara — an hour's rocky climb to ramparts, rock-cut cisterns and huge two-state views.",
+  "description": "Hatgadh is Saputara's fort fix: a flat-topped hill rising over Hatgadh village a few kilometres into Maharashtra, crowned by the remains of a Deccan hill fort in the Sahyadri tradition — gate fragments, rock-cut water cisterns, a Ganesh idol, and rampart lines tracing the summit edge. Local attribution ties it to the Maratha era and popularly to Shivaji's network of forts; the visible works speak more reliably than the paperwork.\n\nThe climb from the village trailhead takes forty-five minutes to an hour and a half depending on pace and route-finding: dirt path, rock steps, a couple of scrambly moments near the top. The reward is the biggest panorama in the Saputara area — the plateau town on one side, Maharashtra's ranges rolling south, and in monsoon a landscape of running green with cloud pouring over the passes (and, fair warning, over your view).\n\nGo early, carry water, and treat wet rock with respect. Post-monsoon — October, November — is the sweet spot of green plus visibility.",
+  "highlights": [
+    "Summit ramparts and rock-cut cisterns",
+    "Two-state panorama over Saputara and the Sahyadris",
+    "Proper little trek 15 minutes from town",
+    "October–November green-plus-views window"
+  ],
+  "history_legend": "The fort belongs to the Sahyadri hill-fort tradition and is locally linked to the Maratha period and Shivaji's chain of strongholds. Firm documentation is thin — read the ramparts and cisterns as the primary record.",
+  "attributes": { "era": "Deccan/Maratha hill-fort tradition", "trek_time_min": 75 },
+  "location": {
+    "taluka": "Surgana (Nashik)",
+    "admin_district": "Nashik (Maharashtra)",
+    "outside_district": true,
+    "nearest_town": { "name": "Saputara", "distance_km": 6 },
+    "coordinates": { "lat": 20.586, "lng": 73.701, "precision": "approximate" },
+    "altitude_m": 1100,
+    "distances_km": { "saputara": 6, "nashik": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via the Saputara–Nashik highway to Hatgadh village (border checkpoint en route); trailhead at the village",
+      "rail": "Nashik Road (~80 km)",
+      "air": "Nashik (~85 km), Surat (~165 km)"
+    },
+    "last_mile": "45–90 min climb on dirt path and rock steps; brief scrambles near the summit",
+    "road_condition": "Good highway to the village; the last village lanes are narrow",
+    "parking": { "available": true, "fee": 0, "notes": "Informal parking in Hatgadh village" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 180,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Open hill; start early to summit before heat or afternoon cloud."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon is spectacular but slippery with frequent whiteouts; October–February is the climbing season that makes sense."
+  },
+  "experience": {
+    "activities": ["trekking", "photography", "sightseeing"],
+    "difficulty": "hard",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "Summit rim at first light for the Saputara-plateau shot; monsoon gives drama between whiteouts — keep gear rain-proofed."
+  },
+  "amenities": {
+    "food": "Village stalls at the base in season; nothing on the hill",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
+    "guides": "Village youths guide for a small fee — worthwhile first time, as the upper route braids",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Wet rock sections are genuinely dangerous — avoid the climb during active rain",
+      "No railings anywhere; keep well off the rampart edges in wind",
+      "Carry 2 litres of water per person; there is none safe on the hill"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC (~6 km); larger care at Nashik", "police": "Hatgadh/Surgana PS (MH); Saputara PS (GJ)", "notes": "Fort lies in Maharashtra — border checkpoint on the highway" }
+  },
+  "tips": [
+    "Start by 07:00 — the face catches sun by mid-morning",
+    "Sturdy shoes non-negotiable; the 'path' is half rock",
+    "Combine the descent with lunch in Saputara, 15 minutes away"
+  ],
+  "faqs": [
+    {
+      "q": "Can beginners do the Hatgadh trek?",
+      "a": "Fit beginners yes, in dry months and ideally with a village guide. It's a short but real hill climb — not a stroller-and-sandals outing."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 6 },
+    { "id": "dang-sunset-point", "distance_km": 7 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Hatgadh Fort Trek near Saputara — Guide",
+    "meta_description": "The Hatgadh fort climb from Saputara: route, effort, best months and what remains on the summit."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "attributes.trek_time_min", "location.altitude_m"]
+  }
+}

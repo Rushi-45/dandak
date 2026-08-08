@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-kilad-nature-campsite",
+  "slug": "kilad-nature-campsite",
+  "name": { "en": "Kilad Nature Education Campsite" },
+  "aliases": ["Kilad Campsite", "Kilad Eco Campsite"],
+  "category": "eco-campsite",
+  "subcategories": ["forest-department"],
+  "tags": ["nature", "family", "birding", "offbeat"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "Forest-department campsite on the Ambika river near Waghai — riverside cottages, nature trails and an easy first taste of Dang's forests.",
+  "description": "Kilad is the gentlest of Dang's forest-department campsites: a nature-education campus on the Ambika river minutes from Waghai, with simple cottages and dorms under big trees, a riverside frontage, short interpretive trails, and staff used to school groups and first-time forest visitors. It was built for exactly that — introducing people to the forest without demanding anything of them.\n\nDay visitors can walk the trails and riverbank; overnight guests get the better deal, with dawn birdsong, the river running steps away and Gira Falls, the botanical garden and Vansda National Park all within a fifteen-minute radius. Facilities are forest-department simple: clean, functional, generator-scheduled in places, and booked through the department's eco-tourism channels rather than hotel sites.\n\nMonsoon is the full-immersion season — river high, forest dripping — while winter gives comfortable trails and the strongest birding.",
+  "highlights": [
+    "Riverside cottages under forest canopy",
+    "Interpretive nature trails for beginners",
+    "15-minute radius to Gira Falls, botanical garden and Vansda NP"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Gujarat Forest Department", "booking_portal": "Forest-department eco-tourism booking channels" },
+  "location": {
+    "taluka": "Waghai",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Waghai", "distance_km": 3 },
+    "coordinates": { "lat": 20.776, "lng": 73.512, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 3, "ahwa": 33, "saputara": 52, "surat": 105 }
+  },
+  "access": {
+    "modes": {
+      "road": "Just off the Waghai–Saputara road; signed approach",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn (~55 km)",
+      "air": "Surat (~105 km)"
+    },
+    "last_mile": "Drive-in; level campus paths",
+    "road_condition": "Good",
+    "parking": { "available": true, "fee": 0, "notes": "Inside the campus" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Day-visit window indicative; overnight guests per booking" }],
+    "fees": [{ "type": "entry", "amount_inr": 30, "note": "Indicative day-visit fee; cottage/dorm tariffs separate via booking" }],
+    "booking": { "required": false, "url": null, "notes": "Stays book via the forest department's eco-tourism portal/range office; day visits walk-in" },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Carrying alcohol is prohibited on forest campuses; expect basic, clean facilities rather than resort comforts."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon for the river and green; November–February for trails and birds."
+  },
+  "experience": {
+    "activities": ["nature-walk", "birdwatching", "camping", "picnic", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "River frontage at dawn; kingfishers and wagtails work the banks in winter."
+  },
+  "amenities": {
+    "food": "Campus mess for guests when booked; Waghai town eateries otherwise",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Nature-education staff lead walks for groups; ask when booking",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "River currents strengthen sharply in monsoon — no swimming",
+      "Keep food sealed at night; the forest's smaller residents investigate"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~3 km)", "police": "Waghai PS", "notes": null }
+  },
+  "tips": [
+    "Book ahead for monsoon and winter weekends — school groups block-book",
+    "Use it as a base night before an early Vansda NP or Gira Falls start"
+  ],
+  "faqs": [
+    {
+      "q": "Can I visit Kilad without staying?",
+      "a": "Yes — day visits to the trails and riverbank are allowed in campus hours for a small fee, subject to group bookings on site."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-gira-falls", "distance_km": 4 },
+    { "id": "dang-waghai-botanical-garden", "distance_km": 3 },
+    { "id": "dang-vansda-national-park", "distance_km": 9 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Kilad Nature Campsite, Waghai — Stay & Visit",
+    "meta_description": "Kilad forest campsite near Waghai: riverside cottages, trails, booking route and pairing with Gira Falls."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "visit.booking.notes", "location.coordinates"]
+  }
+}
