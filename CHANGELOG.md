@@ -4,7 +4,8 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 
 ## [Unreleased]
 
-Nothing yet.
+### Added
+- Media entries for 14 spot records: CC-licensed photography (Wikimedia Commons) with credits, licenses and source links — Statue of Unity, Saputara Lake, Gira Falls, Sardar Sarovar Dam, Zarwani, Hatgadh, Kabirvad, Purna, Mahal, Sunset Point, Shoolpaneshwar WLS, Nilkanthdham Poicha, Shabari Dham, Devmogra.
 
 ## [1.0.0] — 2026-08-08
 
