@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 25 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 15 },
     "coordinates": { "lat": 20.8, "lng": 73.72, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 25, "subir": 15, "saputara": 60 }
+    "distances_km": { "ahwa": 15, "subir": 12, "saputara": 55 }
   },
   "access": {
     "modes": {
@@ -73,7 +73,7 @@
       "Do not attempt the wet-rock sections around the kund in monsoon",
       "Carry water and keep daylight margin for the descent"
     ],
-    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~25 km)", "police": "Ahwa PS", "notes": null }
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~15 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
     "Fold into the Shabari Dham–Pampa Sarovar circuit for a sacred-geography half day",
