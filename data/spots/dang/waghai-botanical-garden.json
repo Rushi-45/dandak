@@ -13,12 +13,12 @@
   "summary": "A large forest-department botanical campus at Waghai — labelled native trees, bamboo groves and shaded walks at the foot of the Dang hills.",
   "description": "Waghai's botanical garden is one of Gujarat's largest, a forest-department campus laid out where the plains meet the first Dang slopes. Its sections read like a catalogue of the region's flora: native timber species with name-plates, a substantial bamboo collection, medicinal and aromatic plant beds, palms, and old shade trees over lawns that invite an unhurried loop rather than a checklist march.\n\nFor travellers, it works on two levels. Botanically inclined visitors can spend half a day with the labels and the interpretation displays; everyone else gets a green, quiet, level walk of an hour or so — welcome on a hot afternoon, and busy with birdlife early in the morning. The garden sits minutes from Gira Falls and the Kilad campsite, so the three make a natural Waghai half-day before or after the ghat climb to Saputara.\n\nMonsoon is the garden at its most alive, though paths get muddy; winter mornings are the comfortable sweet spot.",
   "highlights": [
-    "One of Gujarat's largest botanical collections",
+    "One of Gujarat's largest botanical collections — ~1,400 species over 24 ha",
     "Labelled native trees and a serious bamboo section",
     "Level shaded walks; strong morning birdlife"
   ],
   "history_legend": null,
-  "attributes": {},
+  "attributes": { "area_ha": 24, "established": 1966 },
   "location": {
     "taluka": "Waghai",
     "admin_district": null,
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Indicative forest-department hours" }],
-    "fees": [{ "type": "entry", "amount_inr": 20, "note": "Nominal; camera fees may apply — confirm at the gate" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Adult ₹10 / child ₹5 per recent guides; Gujarat Tourism lists entry as free — conflicting reports" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 90,
     "best_time_of_day": "morning",
@@ -98,9 +98,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Waghai Botanical Gardens — Gujarat Tourism", "url": "https://gujarattourism.com/south-zone/dang/waghai-botanical-gardens.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Waghai Botanical Garden — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/waghai-botanical-garden", "publisher": "trawell.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
   }
 }

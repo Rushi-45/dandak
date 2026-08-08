@@ -91,9 +91,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "low",
-    "sources": [],
+    "sources": [
+      { "title": "Honey Bees Centre, Saputara", "url": "https://www.hellotravel.com/india/honey-bees-centre-saputara", "publisher": "hellotravel.com", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["status", "visit.timings", "visit.fees", "location.coordinates"]
   }
 }

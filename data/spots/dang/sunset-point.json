@@ -40,12 +40,12 @@
   },
   "visit": {
     "timings": [],
-    "fees": [],
+    "fees": [{ "type": "entry", "amount_inr": 35, "note": "Reported by 2026 guides — possibly a seasonal/maintenance charge; historically free. Conflicting reports" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 90,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "Open ridge with no gates; the ropeway keeps its own hours (roughly 09:00–18:00) and stops in high wind."
+    "notes": "Open ridge; guides report access 09:00–20:00. The ropeway keeps its own hours (roughly 09:00–19:00) and stops in high wind."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -99,9 +99,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["location.coordinates", "location.distances_km", "visit.notes"]
+    "sources": [
+      { "title": "14 Top Places to Visit in Saputara Hill Station (2026)", "url": "https://thetriptimes.in/blog/best-places-to-visit-in-saputara", "publisher": "thetriptimes.in", "accessed": "2026-08-08" },
+      { "title": "20 Best Places to Visit in Saputara", "url": "https://www.trawell.in/gujarat/saputara/places-to-visit-things-to-do", "publisher": "trawell.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
   }
 }

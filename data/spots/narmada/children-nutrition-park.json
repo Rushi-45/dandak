@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "10:00", "close": "18:00", "note": "Train-batch entry; evening sessions in peak periods" }],
-    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Indicative; child/adult tiers and batch pricing change" }],
+    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Adult ₹200 / child ₹125. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Book batches ahead on weekends" },
     "duration_min": 90,
     "best_time_of_day": "morning",
@@ -96,9 +96,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

@@ -18,7 +18,7 @@
     "Quick educational add-on stop"
   ],
   "history_legend": null,
-  "attributes": {},
+  "attributes": { "opened_year": 2022 },
   "location": {
     "taluka": "Garudeshwar",
     "admin_district": null,
@@ -88,9 +88,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "low",
-    "sources": [],
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "PM dedicates Maze Garden and Miyawaki Forest in Ekta Nagar (Oct 2022)", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1872060", "publisher": "PIB (official)", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
   }
 }

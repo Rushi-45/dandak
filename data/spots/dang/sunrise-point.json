@@ -98,9 +98,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
+    "sources": [
+      { "title": "Sunrise Point, Saputara — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d2633726-Reviews-Sunrise_Point-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" },
+      { "title": "Places to Visit in Saputara", "url": "https://www.holidify.com/places/saputara/sightseeing-and-things-to-do.html", "publisher": "holidify.com", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["location.coordinates", "location.distances_km"]
   }
 }

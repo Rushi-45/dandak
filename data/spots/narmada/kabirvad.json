@@ -19,7 +19,7 @@
     "Pillared root-halls unlike anywhere in Gujarat"
   ],
   "history_legend": "Tradition holds that Kabir stayed on this island and that the banyan grew from a twig he used — the tree as the saint's living relic. Kabirpanthi devotion keeps the shrine; the banyan itself, among India's largest, keeps the argument for the legend.",
-  "attributes": {},
+  "attributes": { "canopy_m2": 17520, "canopy_perimeter_m": 641 },
   "location": {
     "taluka": "Jhagadia (Bharuch)",
     "admin_district": "Bharuch",
@@ -40,8 +40,8 @@
     "parking": { "available": true, "fee": null, "notes": "At the ghat; managed on festival days" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Boats run daylight hours; last return before dusk" }],
-    "fees": [{ "type": "boating", "amount_inr": 50, "note": "Indicative return boat fare per person; shared launches" }],
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Boats run roughly 09:00–17:00; last return before dusk" }],
+    "fees": [{ "type": "boating", "amount_inr": 40, "note": "Shared launch ₹20–40 return per person; private boat ~₹200. Verified Aug 2026" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 120,
     "best_time_of_day": "morning",
@@ -85,7 +85,7 @@
   "faqs": [
     {
       "q": "How big is the Kabirvad banyan really?",
-      "a": "Coverage estimates vary (floods reshape it), but it ranks among India's largest banyans — the honest answer is 'bigger than you can photograph', spread over hectares."
+      "a": "The canopy covers about 17,520 m² (4.3 acres) with a perimeter of 641 m — among India's largest banyans, and floods keep reshaping it. In person the honest answer is 'bigger than you can photograph'."
     }
   ],
   "nearby": [
@@ -99,9 +99,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates", "location.distances_km"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Kabirvad — Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/bharuch/kabirvad.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Kabirvad in Bharuch — History, Timings, Ticket Prices", "url": "https://www.theindia.co.in/places/kabirvad", "publisher": "theindia.co.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
   }
 }

@@ -12,8 +12,8 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 |---|---|
 | Spec version | Draft v0.1 |
 | Last updated | 2026-08-08 |
-| Phase | 4 — verification in progress |
-| Data records | 64/64 drafted; verification sweeps underway (see `npm run stats`) |
+| Phase | 4 complete — next: 5 (companions) |
+| Data records | 64/64 drafted; 48/64 verified (T1 100%, T2 81%) — see `npm run stats` |
 
 ## Spec index
 

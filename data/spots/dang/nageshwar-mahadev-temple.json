@@ -39,7 +39,7 @@
     "parking": { "available": true, "fee": 0, "notes": "Shared lakefront parking" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "06:00", "close": "20:00", "note": "Indicative; aarti times posted at the temple" }],
+    "timings": [{ "days": "all", "open": "06:00", "close": "18:00", "note": "Aarti times posted at the temple" }],
     "fees": [],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 30,
@@ -91,9 +91,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "Nageshwar Mahadev Temple, Saputara — Tripadvisor", "url": "https://www.tripadvisor.com/Attraction_Review-g1156008-d2625819-Reviews-or10-Nageshwar_Mahadev_Temple-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-08" },
+      { "title": "Places to Visit in Saputara — Thomas Cook", "url": "https://www.thomascook.in/india-tourism/places-to-visit-in-saputara", "publisher": "thomascook.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates"]
   }
 }

@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "20:00", "note": "Indicative; stays lively into the evening" }],
-    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Token entry where charged" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "No entrance fee. Verified Aug 2026" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 45,
     "best_time_of_day": "evening",
@@ -92,9 +92,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+    "sources": [
+      { "title": "Lake Garden, Saputara — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/lake-garden", "publisher": "trawell.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

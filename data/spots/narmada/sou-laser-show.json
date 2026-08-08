@@ -96,9 +96,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "visit.booking.notes"]
+    "sources": [
+      { "title": "Statue of Unity — Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Timings 2026 — Entry Hours, Laser Show", "url": "https://statueofunity.in/statue-of-unity-timings-entry-laser-show-2026/", "publisher": "statueofunity.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "visit.booking.notes"]
   }
 }

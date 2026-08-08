@@ -19,7 +19,7 @@
     "Steady, unhurried pilgrim atmosphere"
   ],
   "history_legend": "Local and regional tradition holds this hill to be where Shabari, the Bhil ascetic of the Ramayana, waited for Ram and offered him ber fruit she had tasted for sweetness. The identification gained wide currency in the 2000s, and a large Shabari Kumbh gathering in 2006 fixed the site on the pilgrimage map. It is devotional geography — cherished locally, not archaeology.",
-  "attributes": { "deity": "Ram with Shabari", "main_festival": "Ram Navami" },
+  "attributes": { "deity": "Ram with Shabari", "main_festival": "Ram Navami; annual Shabridham Mela each January", "built_year": 2004 },
   "location": {
     "taluka": "Subir",
     "admin_district": null,
@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Subir", "distance_km": 4 },
     "coordinates": { "lat": 20.842, "lng": 73.762, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "subir": 4, "ahwa": 25, "saputara": 65 }
+    "distances_km": { "subir": 4, "ahwa": 30, "saputara": 70 }
   },
   "access": {
     "modes": {
@@ -61,7 +61,7 @@
     "photography_notes": "Forest-and-hill backdrops from the temple rim are best in soft morning light; be discreet inside the shrine."
   },
   "amenities": {
-    "food": "Prasad and snack stalls at the base; simple eateries in Subir",
+    "food": "Prasad and snack stalls at the base; simple accommodation and bhojan available at the complex; eateries in Subir",
     "toilets": "basic",
     "drinking_water": true,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "none", "bsnl": "ok" },
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Shabridham Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Shabari Dham Temple, Subir, Ahwa", "url": "https://darpan.blog/travel/shabari-dham-subir-ahwa-the-story-of-lord-rama-ber-shabari/", "publisher": "darpan.blog", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

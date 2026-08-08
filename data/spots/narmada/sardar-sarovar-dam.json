@@ -18,7 +18,7 @@
     "Dam and Statue of Unity in a single frame from the terraces"
   ],
   "history_legend": "The dam is the terminal project of the Narmada Valley scheme, decades in the making and politically contested through the 1990s and 2000s; it reached its full height in 2017. It supplies irrigation and drinking water to large parts of Gujarat and power shared between three states.",
-  "attributes": { "river": "Narmada", "height_m": 163, "length_m": 1210, "purpose": "Irrigation, water supply, hydropower" },
+  "attributes": { "river": "Narmada", "height_m": 163, "length_m": 1210, "reservoir_length_km": 214, "purpose": "Irrigation, water supply, hydropower" },
   "location": {
     "taluka": "Garudeshwar",
     "admin_district": null,
@@ -41,7 +41,7 @@
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the SoU campus pattern; viewpoint access rules vary" }],
     "fees": [],
-    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Viewpoint access is typically bundled with SoU-area ticketing; arrangements change — check current rules" },
+    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Public terraces work via SoU-area ticketing; closer dam visits require permission via the SSNNL official site (sardarsarovardam.org) — arrangements change" },
     "duration_min": 60,
     "best_time_of_day": "afternoon",
     "weekly_closure": "mon",
@@ -97,9 +97,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.booking.notes", "visit.timings", "attributes.height_m", "attributes.length_m", "location.coordinates"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Dam & Reservoir — Sardar Sarovar Narmada Nigam Limited", "url": "https://sardarsarovardam.org/dam-reservoir.aspx", "publisher": "SSNNL (official)", "accessed": "2026-08-08" },
+      { "title": "Sardar Sarovar Dam — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sardar_Sarovar_Dam", "publisher": "Wikipedia", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

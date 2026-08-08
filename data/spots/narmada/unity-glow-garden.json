@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "18:30", "close": "22:00", "note": "Evening sessions; hours shift seasonally" }],
-    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative adult ticket; revised periodically" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Adult ₹100 / child ₹50. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Buy ahead on holiday nights" },
     "duration_min": 90,
     "best_time_of_day": "night",
@@ -91,9 +91,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+    "sources": [
+      { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
+      { "title": "Unity Glow Garden — Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/glow-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

@@ -39,8 +39,8 @@
     "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle drop-off" }
   },
   "visit": {
-    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the SoU campus pattern" }],
-    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative; sometimes sold bundled with other campus attractions" }],
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "09:00", "close": "17:30", "note": "Closed Mondays with the campus" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "No separate fee — access included with SoU-area ticketing. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Same portal as other campus tickets when sold separately" },
     "duration_min": 90,
     "best_time_of_day": "evening",
@@ -98,9 +98,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Valley of Flowers, Kevadiya — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/kevadiya/valley-of-flowers", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Valley of Flowers Kevadia (Bharat Van) Guide 2026", "url": "https://chalbanjare.com/faq/valley-of-flowers-kevadia", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates"]
   }
 }

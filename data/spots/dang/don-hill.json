@@ -24,10 +24,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 32 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 33 },
     "coordinates": { "lat": 20.87, "lng": 73.8, "precision": "area" },
     "altitude_m": 1000,
-    "distances_km": { "ahwa": 32, "saputara": 75, "waghai": 65 }
+    "distances_km": { "ahwa": 33, "saputara": 75, "waghai": 65 }
   },
   "access": {
     "modes": {
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.elevation_m", "amenities.food"]
+    "sources": [
+      { "title": "Don, Dang — Wikipedia", "url": "https://en.wikipedia.org/wiki/Don,_Dang", "publisher": "Wikipedia", "accessed": "2026-08-08" },
+      { "title": "Don Hill Station — Hidden Hill Retreat of Dang", "url": "https://en.safargujarat.com/don-hill-station-dang-gujarat/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "amenities.food"]
   }
 }

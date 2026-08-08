@@ -45,7 +45,7 @@
     "duration_min": 60,
     "best_time_of_day": "afternoon",
     "weekly_closure": "mon",
-    "notes": "Operations pause during high dam releases and rough weather — confirm on the day."
+    "notes": "Operations pause during high releases and rough weather — confirm on the day. As of Aug 2026 the existing ~200-passenger cruise runs conditionally; a new 600-passenger vessel is launched but awaiting SOUADTGA certification, expected in service around Oct 2026."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -98,9 +98,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "low",
-    "sources": [],
-    "needs_verification": ["status", "visit.fees", "visit.timings", "access.last_mile", "location.coordinates"]
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Statue of Unity Launches a 600-Passenger Luxury Cruise on the Narmada (Aug 2026)", "url": "https://www.travelerstoday.com/articles/60766/20260806/statue-unity-launches-600-passenger-luxury-cruise-narmada-river.htm", "publisher": "travelerstoday.com", "accessed": "2026-08-08" },
+      { "title": "Ekta Cruise — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g2435016-d23725172-Reviews-Ekta_Cruise-Kevadia_Narmada_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
   }
 }

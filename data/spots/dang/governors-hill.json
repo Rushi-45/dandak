@@ -92,9 +92,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "low",
-    "sources": [],
+    "last_verified": "2026-08-08",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Governor's Hill Tourism (Saputara)", "url": "https://travelsetu.com/guide/governor-s-hill-tourism", "publisher": "travelsetu.com", "accessed": "2026-08-08" },
+      { "title": "Saputara Adventure Park (at Governor Hill) — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d8700374-Reviews-Saputara_Adventure_Park-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["location.coordinates", "visit.notes", "access.last_mile"]
   }
 }

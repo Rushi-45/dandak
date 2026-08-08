@@ -10,10 +10,10 @@
   "cluster": "saputara",
   "status": "seasonal",
   "district": "dang",
-  "summary": "Operator-run zipline, rope-course and paintball activities near the lake — seasonal, variable, and worth confirming before promising the kids.",
-  "description": "Saputara's adventure offerings cluster near the lake and gardens: a zipline across a scenic gap, low and high rope courses, archery, paintball and similar operator-run activities that expand for the May and Diwali rushes and contract or vanish off-season. Quality and safety practices track the operator of the year — inspect harnesses and belays like an adult before handing over children.\n\nPrices are per-activity and negotiable in slow weeks. As with most hill-station activity parks, treat it as a fun add-on for kids and groups rather than a destination: the fixed stars of Saputara remain the lake, points and forests.",
+  "summary": "Operator-run adventure activities on Governor's Hill — ziplines, rope courses, ATVs; seasonal and variable, so confirm before promising the kids.",
+  "description": "Saputara's adventure park sits on Governor's Hill above the town — one of Saputara's highest perches — with operators running ziplines, rope courses, rappelling, zorbing, ATV rides, archery, paintball and, in some seasons, paragliding. The menu expands for the May and Diwali rushes and contracts or vanishes off-season; reviews describe zones still under development, so what is actually running varies by visit. Quality and safety practices track the operator of the year — inspect harnesses and belays like an adult before handing over children.\n\nPrices are per-activity and negotiable in slow weeks. As with most hill-station activity parks, treat it as a fun add-on for kids and groups rather than a destination: the fixed stars of Saputara remain the lake, points and forests.",
   "highlights": [
-    "Zipline and rope courses near the lake",
+    "Ziplines, rope courses and ATVs on Governor's Hill",
     "Per-activity pricing, kid-friendly options",
     "Expands in May and Diwali seasons"
   ],
@@ -23,14 +23,14 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
-    "coordinates": { "lat": 20.57, "lng": 73.752, "precision": "area" },
-    "altitude_m": 975,
-    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+    "nearest_town": { "name": "Saputara", "distance_km": 1 },
+    "coordinates": { "lat": 20.577, "lng": 73.749, "precision": "area" },
+    "altitude_m": 1000,
+    "distances_km": { "saputara": 1, "ahwa": 50 }
   },
   "access": {
     "modes": {
-      "road": "Near the lake and gardens zone in town",
+      "road": "On Governor's Hill above the town (Gotiyamal side); short drive or walk up from the centre",
       "rail": "Bilimora Jn (~110 km)",
       "air": "Surat (~160 km), Nashik (~90 km)"
     },
@@ -81,8 +81,8 @@
   ],
   "faqs": [],
   "nearby": [
-    { "id": "dang-saputara-lake", "distance_km": 0.3 },
-    { "id": "dang-pushpak-ropeway", "distance_km": 0.8 }
+    { "id": "dang-governors-hill", "distance_km": 0.3 },
+    { "id": "dang-saputara-lake", "distance_km": 1 }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },
@@ -92,9 +92,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "low",
-    "sources": [],
-    "needs_verification": ["status", "attributes.operator", "visit.fees", "visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "Saputara Adventure Park (Near Governor Hill, Gotiyamal) — Justdial", "url": "https://www.justdial.com/Saputara/Saputara-Adventure-Park-Near-Governor-Hill-Gotiyamal/9999P2673-2673-170315164530-S2P2_BZDET", "publisher": "justdial.com", "accessed": "2026-08-08" },
+      { "title": "Saputara Adventure Park — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d8700374-Reviews-Saputara_Adventure_Park-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["status", "attributes.operator", "visit.fees", "visit.timings"]
   }
 }

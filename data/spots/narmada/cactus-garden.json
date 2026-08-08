@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
-    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Indicative; sometimes bundled in combo tickets" }],
+    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Per person, sold online. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -92,9 +92,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Ticket Price 2026 — Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

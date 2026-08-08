@@ -19,14 +19,14 @@
     "October–November green-plus-views window"
   ],
   "history_legend": "The fort belongs to the Sahyadri hill-fort tradition and is locally linked to the Maratha period and Shivaji's chain of strongholds. Firm documentation is thin — read the ramparts and cisterns as the primary record.",
-  "attributes": { "era": "Deccan/Maratha hill-fort tradition", "trek_time_min": 75 },
+  "attributes": { "era": "Deccan/Maratha hill-fort tradition", "trek_time_min": 60, "elevation_ft": 3600 },
   "location": {
     "taluka": "Surgana (Nashik)",
     "admin_district": "Nashik (Maharashtra)",
     "outside_district": true,
     "nearest_town": { "name": "Saputara", "distance_km": 6 },
     "coordinates": { "lat": 20.586, "lng": 73.701, "precision": "approximate" },
-    "altitude_m": 1100,
+    "altitude_m": 1097,
     "distances_km": { "saputara": 6, "nashik": 75 }
   },
   "access": {
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["location.coordinates", "attributes.trek_time_min", "location.altitude_m"]
+    "sources": [
+      { "title": "Hatgadh Fort — Wikipedia", "url": "https://en.wikipedia.org/wiki/Hatgadh_Fort", "publisher": "Wikipedia", "accessed": "2026-08-08" },
+      { "title": "Hatgad Fort, Saputara — Timings, History", "url": "https://www.trawell.in/gujarat/saputara/hatgad-fort", "publisher": "trawell.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates"]
   }
 }

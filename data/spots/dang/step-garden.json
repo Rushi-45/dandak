@@ -39,8 +39,11 @@
     "parking": { "available": true, "fee": 0, "notes": "Street parking nearby" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "08:00", "close": "19:00", "note": "Indicative garden hours" }],
-    "fees": [{ "type": "entry", "amount_inr": 15, "note": "Token entry; revised periodically" }],
+    "timings": [
+      { "days": "all", "open": "08:00", "close": "12:00", "note": "Reported morning window" },
+      { "days": "all", "open": "15:00", "close": "17:00", "note": "Reported afternoon window; sources conflict — verify locally" }
+    ],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "₹10 commonly cited; up to ₹50 reported — conflicting" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -92,9 +95,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
+    "sources": [
+      { "title": "14 Top Places to Visit in Saputara (2026)", "url": "https://thetriptimes.in/blog/best-places-to-visit-in-saputara", "publisher": "thetriptimes.in", "accessed": "2026-08-08" },
+      { "title": "Step Garden, Saputara — TripHobo", "url": "https://www.triphobo.com/places/saputara-india/step-garden", "publisher": "triphobo.com", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
   }
 }

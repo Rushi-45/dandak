@@ -92,9 +92,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
+    "sources": [
+      { "title": "20 Places To Visit in Saputara 2026", "url": "https://www.thrillophilia.com/places-to-visit-in-saputara", "publisher": "thrillophilia.com", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["location.coordinates"]
   }
 }

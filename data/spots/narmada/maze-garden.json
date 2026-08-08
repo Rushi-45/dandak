@@ -18,7 +18,7 @@
     "Easy 45–60 minutes of family fun"
   ],
   "history_legend": null,
-  "attributes": {},
+  "attributes": { "opened_year": 2022 },
   "location": {
     "taluka": "Garudeshwar",
     "admin_district": null,
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
-    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Indicative; combo-ticket inclusion varies" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Adult ₹100 / child ₹50. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -91,9 +91,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "PM dedicates Maze Garden and Miyawaki Forest in Ekta Nagar (Oct 2022)", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1872060", "publisher": "PIB (official)", "accessed": "2026-08-08" },
+      { "title": "Maze Garden — Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/maze-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

@@ -36,12 +36,17 @@
       "air": "Surat (~140 km)"
     },
     "last_mile": "Forest tracks to Mahal; walks are guided from the campsite/range office",
-    "road_condition": "Approach tarred; internal roads dirt — slow, and slippery in rain",
+    "road_condition": "Approach tarred; internal roads dirt — slow, and slippery in rain; 4WD helps after rainfall",
     "parking": { "available": true, "fee": 0, "notes": "At Mahal campsite and range gates" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "07:00", "close": "18:00", "note": "Daylight entry via permit gates; indicative" }],
-    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative per-head/vehicle permit combination; guide fees separate — confirm at range office" }],
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Daylight entry via permit gates; varies with conditions" }],
+    "fees": [
+      { "type": "entry", "amount_inr": 20, "note": "Per person; some sources cite higher bundled rates — conflicting" },
+      { "type": "other", "amount_inr": 200, "note": "Per car/jeep (bus ~₹1750)" },
+      { "type": "camera", "amount_inr": 50 },
+      { "type": "guide", "amount_inr": 300, "note": "Per guided outing" }
+    ],
     "booking": { "required": false, "url": null, "notes": "Day entry at the gate; Mahal campsite stays book via the forest department" },
     "duration_min": 240,
     "best_time_of_day": "early-morning",
@@ -101,9 +106,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "visit.notes", "attributes.area_km2", "location.coordinates"]
+    "sources": [
+      { "title": "Purna Wildlife Sanctuary — Timings, Entry Fee, Safari", "url": "https://www.trawell.in/gujarat/saputara/purna-wildlife-sanctuary", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Purna Wildlife Sanctuary, Dang", "url": "https://darpan.blog/travel/purna-wildlife-sanctuary-dang-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "visit.notes", "attributes.area_km2", "location.coordinates"]
   }
 }

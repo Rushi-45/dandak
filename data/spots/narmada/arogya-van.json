@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
-    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative; therapies at the wellness section cost extra" }],
+    "fees": [{ "type": "entry", "amount_inr": 30, "note": "Adult ₹30 / child ₹20; therapies at the wellness section cost extra. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
     "duration_min": 75,
     "best_time_of_day": "afternoon",
@@ -89,9 +89,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+    "sources": [
+      { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates"]
   }
 }

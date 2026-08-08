@@ -89,9 +89,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
+    "sources": [
+      { "title": "21 Places to visit in Saputara", "url": "https://www.holidify.com/places/saputara/sightseeing-and-things-to-do.html", "publisher": "holidify.com", "accessed": "2026-08-08" }
+    ],
     "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
   }
 }

@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 12 },
     "coordinates": { "lat": 21.752, "lng": 73.652, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ekta-nagar": 12, "rajpipla": 30, "vadodara": 85 }
+    "distances_km": { "ekta-nagar": 12, "rajpipla": 17, "vadodara": 85 }
   },
   "access": {
     "modes": {
@@ -40,7 +40,10 @@
     "parking": { "available": true, "fee": 0, "notes": "Temple parking; stretched during Datta Jayanti" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "06:00", "close": "20:00", "note": "Indicative; aarti and parayan schedules posted at the temple" }],
+    "timings": [
+      { "days": "all", "open": "05:30", "close": "12:00", "note": "Morning darshan window" },
+      { "days": "all", "open": "15:00", "close": "20:00", "note": "Evening darshan window; aarti and parayan schedules posted at the temple" }
+    ],
     "fees": [],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 75,
@@ -99,9 +102,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Garudeshwar Dutt Mandir — Darshan Timings", "url": "https://temple.yatradham.org/temple/garudeshwar-dutt-mandir", "publisher": "yatradham.org", "accessed": "2026-08-08" },
+      { "title": "Vasudevanand Saraswati — Wikipedia", "url": "https://en.wikipedia.org/wiki/Vasudevanand_Saraswati", "publisher": "Wikipedia", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
   }
 }

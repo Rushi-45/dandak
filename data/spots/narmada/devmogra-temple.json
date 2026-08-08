@@ -19,7 +19,7 @@
     "Calm, welcoming shrine outside fair days"
   ],
   "history_legend": "Yaha Mogi is the great mother of the region's adivasi cosmology — provider of grain and protector of the community; her granary sits beside her in the shrine. Oral tradition, not text, carries her story, and the annual pilgrimage predates every modern boundary drawn around these hills.",
-  "attributes": { "deity": "Yaha Mogi (Devmogra Mata)", "main_festival": "Annual fair around Mahashivratri (Feb–Mar)" },
+  "attributes": { "deity": "Yaha Mogi (Devmogra Mata)", "main_festival": "Five-day annual fair ending the day before Mahashivratri (Feb–Mar), with the Gadh Yatra procession" },
   "location": {
     "taluka": "Sagbara",
     "admin_district": null,
@@ -46,7 +46,7 @@
     "duration_min": 90,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "The fair (around Mahashivratri) is a several-day event with lakhs attending — plan deliberately for it or deliberately around it."
+    "notes": "The fair runs five days, from Maha Vad Amas to the day before Mahashivratri (Feb–Mar), drawing around five lakh devotees from Gujarat, Maharashtra, MP and Rajasthan; the Gadh Yatra procession is its climax. Plan deliberately for it or deliberately around it."
   },
   "seasonality": {
     "best_months": [11, 12, 1, 2, 3],
@@ -99,9 +99,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km", "visit.notes"]
+    "sources": [
+      { "title": "Devmogra Mataji Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/devmogra-mataji-mela", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Devmogara Temple: Story, History, Pilgrimage", "url": "https://saurashtratoday.com/devmogara-temple-story-history/", "publisher": "saurashtratoday.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km"]
   }
 }

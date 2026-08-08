@@ -41,7 +41,7 @@
   },
   "visit": {
     "timings": [{ "days": "all", "open": "07:00", "close": "17:00", "note": "Daylight entry by permit; indicative — hours set by range offices" }],
-    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative permit + vehicle combination; guide fees separate — set at the range office" }],
+    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Per person, plus vehicle charge (~₹400 car / ₹220 bike) at check posts such as Thawadia; guide fees separate" }],
     "booking": { "required": false, "url": null, "notes": "Day permits at the gate; campsite stays book via the forest department's eco-tourism channels" },
     "duration_min": 300,
     "best_time_of_day": "early-morning",
@@ -101,9 +101,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "attributes.area_km2", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Zarwani Waterfalls, Kevadiya — sanctuary entry fees", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Zarwani Waterfall Gujarat Guide 2026", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.timings", "attributes.area_km2", "location.coordinates", "location.distances_km"]
   }
 }

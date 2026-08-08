@@ -18,7 +18,7 @@
     "All-weather indoor stop near the bus stand"
   ],
   "history_legend": null,
-  "attributes": {},
+  "attributes": { "established": 1970 },
   "location": {
     "taluka": "Ahwa",
     "admin_district": null,
@@ -39,8 +39,8 @@
     "parking": { "available": true, "fee": 0, "notes": "Street parking nearby" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "10:30", "close": "17:30", "note": "Indicative government-museum hours; lunch-break closures possible" }],
-    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Nominal; revised periodically" }],
+    "timings": [{ "days": "all", "open": "10:00", "close": "17:00", "note": "Government-museum hours; lunch-break closures possible" }],
+    "fees": [{ "type": "entry", "amount_inr": 5, "note": "Indians ₹5, foreign visitors ₹50. Verified Aug 2026" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 60,
     "best_time_of_day": "afternoon",
@@ -95,9 +95,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "visit.fees", "visit.weekly_closure", "location.coordinates"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Saputara Tribal Museum — Timings, Entry Fee, History", "url": "https://www.trawell.in/gujarat/saputara/saputara-tribal-museum", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Saputara Tribal Museum — History, Entry Fee & Timings", "url": "https://www.gujaratexpert.com/blog/saputara-tribal-museum/", "publisher": "gujaratexpert.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.weekly_closure", "location.coordinates"]
   }
 }
