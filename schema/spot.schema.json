@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:saputara-narmada:schemas:spot:v1",
+  "title": "Spot",
+  "description": "A tourist spot in the Dang / Narmada tourism dataset. Normative twin of specs/02-spot-schema.md. Null = unknown; [] = known-empty.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "id", "slug", "name", "aliases", "category", "subcategories",
+    "tags", "cluster", "status", "district", "summary", "description", "highlights",
+    "history_legend", "attributes", "location", "access", "visit", "seasonality",
+    "experience", "amenities", "safety", "tips", "faqs", "nearby", "itineraries",
+    "media", "seo", "provenance"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^(dang|narmada)-[a-z0-9]+(-[a-z0-9]+)*$" },
+    "slug": { "$ref": "#/$defs/kebab" },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "gu": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "hi": { "type": "string", "minLength": 1, "maxLength": 120 }
+      }
+    },
+    "aliases": {
+      "type": "array", "maxItems": 6, "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+    },
+    "category": {
+      "enum": [
+        "waterfall", "viewpoint", "lake", "garden", "park", "temple", "religious-site",
+        "museum", "wildlife", "fort", "palace", "monument", "dam", "adventure",
+        "eco-campsite", "cultural", "market", "show"
+      ]
+    },
+    "subcategories": {
+      "type": "array", "maxItems": 4, "uniqueItems": true,
+      "items": { "$ref": "#/$defs/kebab" }
+    },
+    "tags": {
+      "type": "array", "minItems": 3, "maxItems": 8, "uniqueItems": true,
+      "items": { "$ref": "#/$defs/kebab" }
+    },
+    "cluster": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/kebab" }] },
+    "status": { "enum": ["active", "seasonal", "temporarily_closed", "permanently_closed"] },
+    "district": { "enum": ["dang", "narmada"] },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "description": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 4000 }] },
+    "highlights": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "array", "maxItems": 8, "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+        }
+      ]
+    },
+    "history_legend": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 2000 }] },
+    "attributes": { "type": "object" },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["taluka", "admin_district", "outside_district", "nearest_town", "coordinates", "altitude_m", "distances_km"],
+      "properties": {
+        "taluka": { "$ref": "#/$defs/nullableShortString" },
+        "admin_district": { "$ref": "#/$defs/nullableShortString" },
+        "outside_district": { "type": "boolean" },
+        "nearest_town": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "distance_km"],
+              "properties": {
+                "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+                "distance_km": { "type": "number", "minimum": 0, "maximum": 500 }
+              }
+            }
+          ]
+        },
+        "coordinates": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lat", "lng", "precision"],
+          "properties": {
+            "lat": { "type": "number", "minimum": 8, "maximum": 37 },
+            "lng": { "type": "number", "minimum": 68, "maximum": 98 },
+            "precision": { "enum": ["exact", "approximate", "area"] }
+          }
+        },
+        "altitude_m": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": -10, "maximum": 2000 }] },
+        "distances_km": {
+          "type": "object",
+          "propertyNames": { "pattern": "^[a-z][a-z-]*$" },
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1500 }
+        }
+      }
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modes", "last_mile", "road_condition", "parking"],
+      "properties": {
+        "modes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["road", "rail", "air"],
+          "properties": {
+            "road": { "$ref": "#/$defs/nullableMediumString" },
+            "rail": { "$ref": "#/$defs/nullableMediumString" },
+            "air": { "$ref": "#/$defs/nullableMediumString" }
+          }
+        },
+        "last_mile": { "$ref": "#/$defs/nullableMediumString" },
+        "road_condition": { "$ref": "#/$defs/nullableMediumString" },
+        "parking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["available", "fee", "notes"],
+          "properties": {
+            "available": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+            "fee": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": 0, "maximum": 1000 }] },
+            "notes": { "$ref": "#/$defs/nullableShortString" }
+          }
+        }
+      }
+    },
+    "visit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timings", "fees", "booking", "duration_min", "best_time_of_day", "weekly_closure", "notes"],
+      "properties": {
+        "timings": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "array", "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["days", "open", "close"],
+                "properties": {
+                  "days": {
+                    "oneOf": [
+                      { "enum": ["all", "weekdays", "weekends"] },
+                      {
+                        "type": "array", "minItems": 1, "maxItems": 7, "uniqueItems": true,
+                        "items": { "$ref": "#/$defs/day" }
+                      }
+                    ]
+                  },
+                  "open": { "$ref": "#/$defs/timeHHMM" },
+                  "close": { "$ref": "#/$defs/timeHHMM" },
+                  "note": { "$ref": "#/$defs/nullableShortString" }
+                }
+              }
+            }
+          ]
+        },
+        "fees": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "array", "maxItems": 8,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["type", "amount_inr"],
+                "properties": {
+                  "type": { "enum": ["entry", "camera", "activity", "safari", "boating", "ropeway", "rafting", "guide", "show", "combo", "other"] },
+                  "amount_inr": { "type": "integer", "minimum": 0, "maximum": 100000 },
+                  "note": { "$ref": "#/$defs/nullableShortString" }
+                }
+              }
+            }
+          ]
+        },
+        "booking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["required", "url", "notes"],
+          "properties": {
+            "required": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+            "url": { "$ref": "#/$defs/nullableMediumString" },
+            "notes": { "$ref": "#/$defs/nullableMediumString" }
+          }
+        },
+        "duration_min": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": 5, "maximum": 1440 }] },
+        "best_time_of_day": { "oneOf": [{ "type": "null" }, { "enum": ["early-morning", "morning", "afternoon", "evening", "night", "any"] }] },
+        "weekly_closure": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/day" }] },
+        "notes": { "$ref": "#/$defs/nullableLongString" }
+      }
+    },
+    "seasonality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["best_months", "avoid_months", "monsoon_dependent", "notes"],
+      "properties": {
+        "best_months": { "$ref": "#/$defs/monthArray" },
+        "avoid_months": { "$ref": "#/$defs/monthArray" },
+        "monsoon_dependent": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+        "notes": { "$ref": "#/$defs/nullableLongString" }
+      }
+    },
+    "experience": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["activities", "difficulty", "suitable_for", "photography_notes"],
+      "properties": {
+        "activities": {
+          "type": "array", "maxItems": 10, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/kebab" }
+        },
+        "difficulty": { "oneOf": [{ "type": "null" }, { "enum": ["easy", "moderate", "hard"] }] },
+        "suitable_for": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kids", "elderly", "wheelchair"],
+          "properties": {
+            "kids": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+            "elderly": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+            "wheelchair": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] }
+          }
+        },
+        "photography_notes": { "$ref": "#/$defs/nullableLongString" }
+      }
+    },
+    "amenities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["food", "toilets", "drinking_water", "mobile_network", "guides", "ev_charging", "stay_nearby"],
+      "properties": {
+        "food": { "$ref": "#/$defs/nullableMediumString" },
+        "toilets": { "oneOf": [{ "type": "null" }, { "enum": ["none", "basic", "good"] }] },
+        "drinking_water": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+        "mobile_network": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["jio", "airtel", "vi", "bsnl"],
+          "properties": {
+            "jio": { "$ref": "#/$defs/networkLevel" },
+            "airtel": { "$ref": "#/$defs/networkLevel" },
+            "vi": { "$ref": "#/$defs/networkLevel" },
+            "bsnl": { "$ref": "#/$defs/networkLevel" }
+          }
+        },
+        "guides": { "$ref": "#/$defs/nullableMediumString" },
+        "ev_charging": { "oneOf": [{ "type": "null" }, { "type": "boolean" }] },
+        "stay_nearby": {
+          "type": "array", "maxItems": 8, "uniqueItems": true,
+          "items": { "$ref": "#/$defs/kebab" }
+        }
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["warnings", "emergency"],
+      "properties": {
+        "warnings": {
+          "type": "array", "maxItems": 8,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "emergency": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["nearest_hospital", "police", "notes"],
+          "properties": {
+            "nearest_hospital": { "$ref": "#/$defs/nullableShortString" },
+            "police": { "$ref": "#/$defs/nullableShortString" },
+            "notes": { "$ref": "#/$defs/nullableMediumString" }
+          }
+        }
+      }
+    },
+    "tips": {
+      "type": "array", "maxItems": 6,
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+    },
+    "faqs": {
+      "type": "array", "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["q", "a"],
+        "properties": {
+          "q": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "a": { "type": "string", "minLength": 1, "maxLength": 600 }
+        }
+      }
+    },
+    "nearby": {
+      "type": "array", "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "distance_km"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(dang|narmada)-[a-z0-9]+(-[a-z0-9]+)*$" },
+          "distance_km": { "type": "number", "minimum": 0, "maximum": 500 },
+          "note": { "$ref": "#/$defs/nullableShortString" }
+        }
+      }
+    },
+    "itineraries": {
+      "type": "array", "maxItems": 8, "uniqueItems": true,
+      "items": { "$ref": "#/$defs/kebab" }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["images", "videos"],
+      "properties": {
+        "images": {
+          "type": "array", "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "license"],
+            "properties": {
+              "url": { "type": "string", "minLength": 1, "maxLength": 500 },
+              "license": { "enum": ["own", "cc0", "cc-by", "cc-by-sa", "govt-open", "licensed", "unknown"] },
+              "caption": { "$ref": "#/$defs/nullableShortString" },
+              "credit": { "$ref": "#/$defs/nullableShortString" },
+              "source_url": { "$ref": "#/$defs/nullableMediumString" }
+            }
+          }
+        },
+        "videos": {
+          "type": "array", "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url"],
+            "properties": {
+              "url": { "type": "string", "minLength": 1, "maxLength": 500 },
+              "title": { "$ref": "#/$defs/nullableShortString" },
+              "source": { "$ref": "#/$defs/nullableShortString" }
+            }
+          }
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["meta_title", "meta_description"],
+      "properties": {
+        "meta_title": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 70 }] },
+        "meta_description": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 170 }] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created", "last_verified", "confidence", "sources", "needs_verification"],
+      "properties": {
+        "created": { "$ref": "#/$defs/isoDate" },
+        "last_verified": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/isoDate" }] },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "sources": {
+          "type": "array", "maxItems": 10,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title"],
+            "properties": {
+              "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+              "url": { "$ref": "#/$defs/nullableMediumString" },
+              "publisher": { "$ref": "#/$defs/nullableShortString" },
+              "accessed": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/isoDate" }] }
+            }
+          }
+        },
+        "needs_verification": {
+          "type": "array", "maxItems": 20, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z_][a-z0-9_.]*$", "maxLength": 80 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "kebab": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 60 },
+    "day": { "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] },
+    "timeHHMM": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
+    "isoDate": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "networkLevel": { "oneOf": [{ "type": "null" }, { "enum": ["none", "weak", "ok", "good"] }] },
+    "monthArray": {
+      "type": "array", "maxItems": 12, "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 1, "maximum": 12 }
+    },
+    "nullableShortString": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 200 }] },
+    "nullableMediumString": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 300 }] },
+    "nullableLongString": { "oneOf": [{ "type": "null" }, { "type": "string", "minLength": 1, "maxLength": 500 }] }
+  }
+}
