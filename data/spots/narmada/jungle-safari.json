@@ -19,7 +19,7 @@
     "Shuttle carts between levels"
   ],
   "history_legend": null,
-  "attributes": { "safari": "walk-through zoological park with internal shuttles", "entry_permit": "Ticketed entry" },
+  "attributes": { "safari": "walk-through zoological park with internal shuttles", "entry_permit": "Ticketed entry", "area_acres": 375, "levels": 7, "species_count": "186+" },
   "location": {
     "taluka": "Garudeshwar",
     "admin_district": null,
@@ -40,9 +40,9 @@
     "parking": { "available": true, "fee": null, "notes": "Dedicated lot at the safari entrance" }
   },
   "visit": {
-    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "09:00", "close": "17:00", "note": "Last entry earlier; follows the SoU campus Monday closure" }],
-    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Indicative adult ticket; child rates lower; prices revise periodically" }],
-    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Advance booking sensible on weekends and holidays" },
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "17:00", "note": "Last entry earlier; follows the SoU campus Monday closure" }],
+    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Adult ₹200 / child ₹125; small extra for the petting zone. Verified Aug 2026" }],
+    "booking": { "required": true, "url": "https://www.soutickets.in/", "notes": "Tickets sold online via the official portal — book ahead on weekends and holidays" },
     "duration_min": 180,
     "best_time_of_day": "morning",
     "weekly_closure": "mon",
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates", "location.distances_km"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Statue of Unity Jungle Safari 2026: Ticket Price, Timings & Booking Guide", "url": "https://theunitytourism.com/blog/statue-of-unity-jungle-safari-2026:-ticket-price-timings-and-booking-guide", "publisher": "theunitytourism.com", "accessed": "2026-08-08" },
+      { "title": "Sardar Patel Zoological Park & Jungle, Kevadiya", "url": "https://www.trawell.in/gujarat/kevadiya/sardar-patel-zoological-park-jungle", "publisher": "trawell.in", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
   }
 }

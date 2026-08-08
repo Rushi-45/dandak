@@ -41,7 +41,7 @@
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Day-visit window indicative; guests per booking" }],
     "fees": [{ "type": "entry", "amount_inr": 30, "note": "Indicative day-visit fee; cottage tariffs separate" }],
-    "booking": { "required": true, "url": null, "notes": "Stays via the forest department's eco-tourism portal; weekends fill early" },
+    "booking": { "required": true, "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Official Gujarat Forest Dept eco-tourism portal; weekends fill early" },
     "duration_min": 180,
     "best_time_of_day": "morning",
     "weekly_closure": null,
@@ -92,9 +92,11 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.booking.notes", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
   }
 }

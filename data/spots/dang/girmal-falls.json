@@ -21,7 +21,7 @@
   "history_legend": null,
   "attributes": { "height_m": 30, "river": "Gira" },
   "location": {
-    "taluka": "Ahwa",
+    "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
     "nearest_town": { "name": "Ahwa", "distance_km": 45 },
@@ -105,9 +105,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.height_m", "visit.timings"]
+    "sources": [
+      { "title": "Girmal Waterfalls, Dang", "url": "https://gujarattourism.com/south-zone/dang/gimal-waterfalls.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Girmal Waterfalls, Dangs & U Point: Highest Waterfall in Gujarat", "url": "https://darpan.blog/travel/girmal-waterfalls-dangs-u-point-highest-waterfall-in-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "visit.timings"]
   }
 }

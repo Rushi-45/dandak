@@ -10,11 +10,11 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "The world's tallest statue — Sardar Patel at 182 m above the Narmada, with a 135 m viewing gallery, museum, and a full day of campus attractions.",
-  "description": "The Statue of Unity is the anchor of everything at Ekta Nagar (formerly Kevadia): a 182-metre bronze-clad figure of Sardar Vallabhbhai Patel facing the Sardar Sarovar dam across the Narmada. Scale is the whole experience — the statue reads as a landmark from kilometres out, and grows steadily more improbable as the approach walkways deliver you to its base.\n\nThe standard visit runs: entry plaza and museum/audio-visual gallery at the base, then the high-speed lifts to the viewing gallery at around 135 metres — inside the statue's chest — for a river-and-ridge panorama that takes in the dam, the Valley of Flowers and the Satpura and Vindhya edges. Tickets are slot-based and sell out on weekends and holidays; the viewing gallery has its own (higher) ticket tier and is the part worth planning around. Evenings add a laser-and-sound show on most nights.\n\nBudget realistically: with security lines, internal distances and the museum, the statue alone is a half day, and the surrounding campus — Valley of Flowers, Jungle Safari, glow garden and more — can fill two. Mondays the entire complex closes for maintenance. Book online in advance; on-ground ticket queues in peak season are long and sometimes futile.",
+  "summary": "The world's tallest statue — Sardar Patel at 182 m above the Narmada, with a 153 m viewing gallery, museum, and a full day of campus attractions.",
+  "description": "The Statue of Unity is the anchor of everything at Ekta Nagar (formerly Kevadia): a 182-metre bronze-clad figure of Sardar Vallabhbhai Patel facing the Sardar Sarovar dam across the Narmada. Scale is the whole experience — the statue reads as a landmark from kilometres out, and grows steadily more improbable as the approach walkways deliver you to its base.\n\nThe standard visit runs: entry plaza and museum/audio-visual gallery at the base, then the high-speed lifts to the viewing gallery at 153 metres — inside the statue's chest — for a river-and-ridge panorama that takes in the dam, the Valley of Flowers and the Satpura and Vindhya edges. Tickets are slot-based and sell out on weekends and holidays; the viewing gallery has its own (higher) ticket tier and is the part worth planning around. Evenings add a laser-and-sound show on most nights.\n\nBudget realistically: with security lines, internal distances and the museum, the statue alone is a half day, and the surrounding campus — Valley of Flowers, Jungle Safari, glow garden and more — can fill two. Mondays the entire complex closes for maintenance. Book online in advance; on-ground ticket queues in peak season are long and sometimes futile.",
   "highlights": [
     "World's tallest statue at 182 m",
-    "Viewing gallery at ~135 m inside the statue's chest",
+    "Viewing gallery at 153 m inside the statue's chest",
     "Museum and audio-visual gallery at the base",
     "Evening laser-and-sound show most nights",
     "Anchor of a two-day campus of attractions"
@@ -46,10 +46,10 @@
     "parking": { "available": true, "fee": null, "notes": "Large designated lots; shuttle transfer to the precinct" }
   },
   "visit": {
-    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Slot-based entry; laser show after sunset on operating days" }],
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Slot-based entry; last tickets ~17:00, gallery closes ~17:30; laser show from ~19:00 on operating days" }],
     "fees": [
-      { "type": "entry", "amount_inr": 150, "note": "Indicative adult base ticket (museum + grounds); tiers and prices revise periodically" },
-      { "type": "combo", "amount_inr": 380, "note": "Indicative adult viewing-gallery ticket; child and express tiers exist" }
+      { "type": "entry", "amount_inr": 150, "note": "Adult base ticket (grounds + museum); verified Aug 2026" },
+      { "type": "combo", "amount_inr": 380, "note": "Adult viewing-gallery ticket (child ~₹230); express and multi-attraction combos exist — portal is authoritative" }
     ],
     "booking": { "required": true, "url": "https://www.soutickets.in/", "notes": "Book viewing-gallery slots days ahead for weekends and holiday weeks" },
     "duration_min": 240,
@@ -116,9 +116,13 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "visit.booking.url", "amenities.ev_charging", "location.distances_km"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Statue of Unity — Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Ticket Price 2026 — Full Breakdown", "url": "https://statueofunity.in/statue-of-unity-ticket-price-2026-breakdown/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Ticket Price, Timings & Booking Guide (2026)", "url": "https://theunitytourism.com/blog/statue-of-unity-ticket-price-timings-and-booking-guide-(2026)", "publisher": "theunitytourism.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["amenities.ev_charging", "location.distances_km"]
   }
 }

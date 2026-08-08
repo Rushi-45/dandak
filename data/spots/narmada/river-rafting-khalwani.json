@@ -18,7 +18,7 @@
     "Unusually long season thanks to dam-regulated flow"
   ],
   "history_legend": null,
-  "attributes": { "operator": "Licensed adventure operators from a managed base camp", "price_range_inr": "1000-1500", "min_age": 12, "season": "Most of the year, subject to dam-release levels" },
+  "attributes": { "operator": "Licensed adventure operators from a managed base camp", "price_range_inr": "1000", "min_age": 14, "max_age": 55, "season": "Most of the year, subject to dam-release levels; best October–March" },
   "location": {
     "taluka": "Garudeshwar",
     "admin_district": null,
@@ -39,8 +39,8 @@
     "parking": { "available": true, "fee": 0, "notes": "At the base camp" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "09:00", "close": "17:00", "note": "Batch slots through the day; subject to release levels and light" }],
-    "fees": [{ "type": "rafting", "amount_inr": 1200, "note": "Indicative per person including gear and guide; operators revise rates" }],
+    "timings": [{ "days": "all", "open": "08:00", "close": "15:30", "note": "Batch slots through the day; subject to release levels and light" }],
+    "fees": [{ "type": "rafting", "amount_inr": 1000, "note": "Per adult including gear and guide; shorter eco-activities at Khalwani cost less — portals quote ₹300–1000 by package" }],
     "booking": { "required": true, "url": null, "notes": "Book a slot ahead on weekends; walk-ins possible midweek" },
     "duration_min": 150,
     "best_time_of_day": "morning",
@@ -48,10 +48,10 @@
     "notes": "Carry a change of clothes; waterproof pouches or lockers handle phones and keys."
   },
   "seasonality": {
-    "best_months": [8, 9, 10, 11, 12, 1, 2],
+    "best_months": [10, 11, 12, 1, 2, 3],
     "avoid_months": [],
     "monsoon_dependent": false,
-    "notes": "Flow is release-regulated, so the season is long; extreme releases after very heavy rain can suspend runs for safety."
+    "notes": "Flow is release-regulated, so the season is long; October–March is the operators' recommended window, and extreme releases after very heavy rain suspend runs."
   },
   "experience": {
     "activities": ["rafting", "photography"],
@@ -71,7 +71,7 @@
   "safety": {
     "warnings": [
       "Follow the guide's commands exactly — the rapids are friendly only when the raft is",
-      "Declare medical conditions and weak swimming at booking, not at the put-in",
+      "Age band is 14–55 with declared fitness — say so at booking, not at the put-in",
       "Runs suspend during extreme dam releases; respect a cancelled slot"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~22 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": "Operators carry rescue kayakers/throw-bags per license terms" }
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "attributes.min_age", "attributes.operator", "location.coordinates", "location.distances_km"]
+    "sources": [
+      { "title": "Khalwani River Rafting & Eco-Tourism Kevadia Guide 2026", "url": "https://chalbanjare.com/place/khalwani-river-rafting-and-eco-tourism", "publisher": "chalbanjare.com", "accessed": "2026-08-08" },
+      { "title": "Khalwani River Rafting Booking — Statue of Unity", "url": "https://www.statueofunitybooking.com/khalwani-river-rafting/", "publisher": "statueofunitybooking.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "attributes.operator", "location.coordinates", "location.distances_km"]
   }
 }

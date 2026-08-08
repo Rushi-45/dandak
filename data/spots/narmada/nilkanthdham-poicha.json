@@ -40,8 +40,8 @@
     "parking": { "available": true, "fee": 0, "notes": "Very large lots; managed flow on festival days" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "06:00", "close": "20:00", "note": "Indicative; mandir darshan follows its own aarti schedule with midday breaks" }],
-    "fees": [{ "type": "entry", "amount_inr": 0, "note": "Complex entry free; nominal tickets for some exhibition sections" }],
+    "timings": [{ "days": "all", "open": "06:00", "close": "20:30", "note": "Mandir hours (seasonal ±30–60 min); ticketed attractions run roughly 09:30–20:00" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "Darshan free (verified); cultural exhibition, naukavihar boat ride and pool are ticketed separately" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 180,
     "best_time_of_day": "evening",
@@ -100,9 +100,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km", "visit.fees"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Plan Your Visit — Shri Nilkanthdham, Poicha", "url": "https://nilkanthdham.org/visit.html", "publisher": "nilkanthdham.org (official)", "accessed": "2026-08-08" },
+      { "title": "Nilkanth Dham Poicha — Ticket Price, Timings & Room Booking", "url": "https://blog.yatradham.org/nilkanth-dham-poicha/", "publisher": "yatradham.org", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
   }
 }

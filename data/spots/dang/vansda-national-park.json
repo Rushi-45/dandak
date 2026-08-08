@@ -42,17 +42,17 @@
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Indicative gate hours in season" }],
     "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative permit + vehicle combination; guide fee separate at the gate" }],
-    "booking": { "required": false, "url": null, "notes": "Permits at the gate; groups can arrange ahead via the range office" },
+    "booking": { "required": false, "url": null, "notes": "Gate pass issued at the Kilad-village entry; own vehicles allowed inside — no prior permission needed for normal visits" },
     "duration_min": 180,
     "best_time_of_day": "early-morning",
     "weekly_closure": null,
-    "notes": "Typically closed during monsoon breeding months (roughly June–September) — verify season dates before planning."
+    "notes": "Closed for monsoon from roughly mid-June to mid-October; reopens with the post-rain green."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2, 3],
     "avoid_months": [6, 7, 8, 9],
     "monsoon_dependent": false,
-    "notes": "October–March is the season; the park generally stays shut through monsoon."
+    "notes": "October–March is the season (October especially, with waterbodies full); the park stays shut mid-June to mid-October."
   },
   "experience": {
     "activities": ["safari", "jungle-trail", "birdwatching", "nature-walk", "photography"],
@@ -101,9 +101,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
+    "last_verified": "2026-08-08",
     "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "visit.notes", "location.coordinates", "attributes.area_km2"]
+    "sources": [
+      { "title": "Vansda National Park — Timings, Entry Fee, Safari, Best Time", "url": "https://www.trawell.in/gujarat/saputara/vansda-national-park", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Vansda National Park, Gujarat — How to Reach & Entry Fees", "url": "https://www.gujaratexpert.com/vansda-national-park/", "publisher": "gujaratexpert.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["visit.fees", "location.coordinates", "attributes.area_km2"]
   }
 }

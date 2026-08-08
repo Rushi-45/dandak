@@ -18,7 +18,7 @@
     "About ten minutes each way"
   ],
   "history_legend": null,
-  "attributes": { "price_range_inr": "100-200", "season": "Year-round; pauses in high wind and storms" },
+  "attributes": { "price_range_inr": "60-80", "season": "Year-round; pauses in high wind and storms" },
   "location": {
     "taluka": "Ahwa",
     "admin_district": null,
@@ -39,8 +39,8 @@
     "parking": { "available": true, "fee": null, "notes": "Shared public parking near the lake" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative; extended on peak evenings, suspended in bad weather" }],
-    "fees": [{ "type": "ropeway", "amount_inr": 150, "note": "Indicative return fare per adult; revised periodically" }],
+    "timings": [{ "days": "all", "open": "09:00", "close": "19:00", "note": "Lunch break roughly 13:00–14:00; suspended in bad weather" }],
+    "fees": [{ "type": "ropeway", "amount_inr": 77, "note": "Return fare per person (₹62–77 cited across recent sources); operator revises periodically" }],
     "booking": { "required": false, "url": null, "notes": "Tickets at the counter; no advance booking" },
     "duration_min": 45,
     "best_time_of_day": "afternoon",
@@ -97,9 +97,12 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": null,
-    "confidence": "medium",
-    "sources": [],
-    "needs_verification": ["visit.fees", "visit.timings", "attributes.price_range_inr", "location.coordinates"]
+    "last_verified": "2026-08-08",
+    "confidence": "high",
+    "sources": [
+      { "title": "Table Land & Ropeway, Saputara — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/table-land-ropeway", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Saputara Ropeway: One of India's Most Scenic Cable Car Rides", "url": "https://www.storiesbysoumya.com/saputara-ropeway-pushpak-gujarat/", "publisher": "storiesbysoumya.com", "accessed": "2026-08-08" }
+    ],
+    "needs_verification": ["location.coordinates"]
   }
 }
