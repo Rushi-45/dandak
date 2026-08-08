@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "narmada-butterfly-garden",
+  "slug": "butterfly-garden",
+  "name": { "en": "Butterfly Garden" },
+  "aliases": ["Butterfly Park Kevadia"],
+  "category": "garden",
+  "subcategories": ["themed"],
+  "tags": ["nature", "kids", "family", "photography"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Host-plant gardens alive with free-flying butterflies near the Statue of Unity — best in the first sunny hours of the morning.",
+  "description": "The Butterfly Garden plants its way to its residents: beds of host and nectar species — citrus, milkweeds, lantana relatives, curry-leaf — that keep local butterfly populations breeding on site rather than behind netting. On a warm, sunny mid-morning the paths flicker with them; on an overcast afternoon you will mostly see plants, which is the honest trade of a living exhibit.\n\nInterpretation boards cover life cycles and species; kids get caterpillar-hunting on the host plants with a little guidance. It is a light, pleasant forty minutes that lands best with children and macro photographers, folded into the jetty-zone loop with the Cactus Garden next door.",
+  "highlights": [
+    "Free-flying butterflies on living host plants",
+    "Life-cycle spotting for kids — eggs to chrysalis",
+    "Quick pairing with the Cactus Garden"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.835, "lng": 73.705, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit; e-buses stop nearby",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level garden paths",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 30, "note": "Indicative; often bundled in combo tickets" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
+    "duration_min": 45,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": "Butterfly activity tracks sun and warmth — 09:00–11:30 is the window."
+  },
+  "seasonality": {
+    "best_months": [9, 10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Post-monsoon months carry the biggest populations."
+  },
+  "experience": {
+    "activities": ["nature-walk", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Macro or a long lens at mid-morning; move slowly and shoot nectaring stops rather than chasing flight."
+  },
+  "amenities": {
+    "food": "Kiosks in adjacent zones",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "No catching or handling — enforced for the colony's sake"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Schedule it mid-morning between bigger attractions",
+    "Overcast day? Deprioritise it — activity drops with the sun"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-cactus-garden", "distance_km": 1.5 },
+    { "id": "narmada-statue-of-unity", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Butterfly Garden, Ekta Nagar — When to Go",
+    "meta_description": "The SoU campus Butterfly Garden: best hours for activity, tickets and what kids get out of it."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

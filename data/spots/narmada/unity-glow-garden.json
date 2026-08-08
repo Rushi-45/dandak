@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "narmada-unity-glow-garden",
+  "slug": "unity-glow-garden",
+  "name": { "en": "Unity Glow Garden" },
+  "aliases": ["Glow Garden Kevadia"],
+  "category": "park",
+  "subcategories": [],
+  "tags": ["evening", "family", "kids", "popular", "ticketed"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "An after-dark park of illuminated sculptures, light tunnels and glowing installations — the SoU campus's designated evening hour.",
+  "description": "The Unity Glow Garden switches on when the rest of the campus winds down: walkways through large illuminated installations — animal figures, flowers, arches, light tunnels, themed tableaux — built from LED frameworks and glowing panels. It is unabashed spectacle, calibrated for families and cameras, and it solves the evening problem for visitors staying overnight at Ekta Nagar.\n\nEntries run in evening sessions; weekends and holiday weeks queue hard after dinner. Photographs outperform reality if you steady your phone — take the slow walk, let the kids run the tunnels, and cap the night with it after the laser show. Displays refresh periodically, so repeat visitors usually find new set pieces.",
+  "highlights": [
+    "Light tunnels and large glowing installations",
+    "The campus's main after-dark attraction",
+    "Fresh set pieces added periodically"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 1.5 },
+    "coordinates": { "lat": 21.849, "lng": 73.705, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 1.5, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "Near the Ekta Nagar side of the campus; short hop from hotels and the station",
+      "rail": "Ekta Nagar station (~1.5 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level paved walkways throughout",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Adjacent lot; overflow on holiday nights" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "18:30", "close": "22:00", "note": "Evening sessions; hours shift seasonally" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative adult ticket; revised periodically" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Buy ahead on holiday nights" },
+    "duration_min": 90,
+    "best_time_of_day": "night",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Winter evenings are the comfortable window; monsoon sessions run weather-permitting."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "show"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Steady your phone against railings for the tunnels; keep flash off — it kills the glow."
+  },
+  "amenities": {
+    "food": "Snack kiosks inside; dinner options back in Ekta Nagar",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Hold small children's hands in the dark stretches between installations"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Sequence the evening: laser show first, glow garden after",
+    "Weeknights are dramatically calmer than weekends"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 2 },
+    { "id": "narmada-children-nutrition-park", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Unity Glow Garden, Ekta Nagar — Evening Guide",
+    "meta_description": "Session timings, tickets and photo tips for the Unity Glow Garden — the Statue of Unity campus after dark."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

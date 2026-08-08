@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "narmada-sagai-malsamot",
+  "slug": "sagai-malsamot",
+  "name": { "en": "Sagai–Malsamot Eco Campsite & Hill" },
+  "aliases": ["Sagai Eco Campsite", "Malsamot Hill"],
+  "category": "eco-campsite",
+  "subcategories": ["forest-department"],
+  "tags": ["offbeat", "nature", "family", "birding", "trekking"],
+  "cluster": "dediapada-belt",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Forest campsite and hilltop plateau in the Dediapada belt — eastern Narmada's 'mini hill station' with cottages, trails and monsoon views.",
+  "description": "Sagai and Malsamot together make the Dediapada belt's overnight case: Sagai is a forest-department eco-campsite in Shoolpaneshwar's folds — cottages and tents under canopy, trails, streams close by — while Malsamot above it is a small plateau the region cheerfully markets as its mini hill station, catching breeze, cloud and long views over the sanctuary's ridges.\n\nThe combination works as a slow 24 hours: arrive, walk the campsite trails, sunset from the Malsamot rim, a forest night, and a dawn walk before pushing on to Ninai falls in season. Facilities follow the forest-department pattern — clean, simple, mess meals when booked, power by schedule — and booking runs through the department's eco-tourism channels rather than commercial platforms.\n\nMonsoon is the spectacle season (streams live, cloud walking the plateau), winter the comfortable one. Either way this is the anchor stay for exploring eastern Narmada beyond day-trip range.",
+  "highlights": [
+    "Forest cottages inside the Shoolpaneshwar belt",
+    "Malsamot plateau views and sunset rim",
+    "Anchor stay for Ninai falls and sanctuary treks",
+    "Monsoon cloud-and-stream season"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Gujarat Forest Department", "booking_portal": "Forest-department eco-tourism booking channels" },
+  "location": {
+    "taluka": "Dediapada",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Dediapada", "distance_km": 20 },
+    "coordinates": { "lat": 21.585, "lng": 73.51, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "dediapada": 20, "rajpipla": 45, "ekta-nagar": 65 }
+  },
+  "access": {
+    "modes": {
+      "road": "Forest roads from Dediapada; signage improves yearly but ask locally",
+      "rail": "Bharuch/Ankleshwar railheads (~100 km)",
+      "air": "Surat or Vadodara (~130 km)"
+    },
+    "last_mile": "Drive-in to the campsite; plateau viewpoints are short walks or a rough drive up",
+    "road_condition": "Tarred to the belt, rough forest stretches; monsoon demands slow, confident driving",
+    "parking": { "available": true, "fee": 0, "notes": "At the campsite" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Day visits within forest hours; guests per booking" }],
+    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative day-visit/permit fee; cottage tariffs separate" }],
+    "booking": { "required": true, "url": null, "notes": "Stays via the forest department's eco-tourism portal/range office; monsoon weekends fill early" },
+    "duration_min": 240,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Power and hot water run on schedules; pack accordingly."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon for streams and cloud on the plateau; November–February for trails and comfort."
+  },
+  "experience": {
+    "activities": ["camping", "nature-walk", "trekking", "birdwatching", "photography", "stargazing"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Malsamot rim at sunset; monsoon gives moving cloud through the valleys — keep gear rain-ready."
+  },
+  "amenities": {
+    "food": "Campsite mess when booked; Dediapada for everything else — carry supplements",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Campsite staff arrange local guides for trails",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Unfenced plateau edges — keep distance in wind and rain",
+      "No wandering beyond campsite bounds after dark; this is bear country",
+      "Fuel up at Dediapada; nothing beyond"
+    ],
+    "emergency": { "nearest_hospital": "CHC Dediapada (~20 km)", "police": "Dediapada PS; forest range office", "notes": null }
+  },
+  "tips": [
+    "Book cottages for monsoon weekends weeks ahead",
+    "Sequence: arrive by noon, plateau sunset, dawn walk, Ninai falls next morning",
+    "Cash and offline maps — connectivity is decorative here"
+  ],
+  "faqs": [
+    {
+      "q": "Is Malsamot really a hill station?",
+      "a": "It's a plateau viewpoint with campsite infrastructure, not a town — 'mini hill station' oversells the amenities and undersells the peace. Go for forest and views, not cafés."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-ninai-falls", "distance_km": 15 },
+    { "id": "narmada-shoolpaneshwar-wls", "distance_km": 15 },
+    { "id": "narmada-devmogra-temple", "distance_km": 35 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Sagai–Malsamot Eco Campsite — Stay Guide",
+    "meta_description": "Booking Sagai campsite and Malsamot plateau in eastern Narmada: season, facilities and the Ninai falls pairing."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.booking.notes", "location.coordinates", "location.distances_km"]
+  }
+}

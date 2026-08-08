@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "narmada-shoolpaneshwar-temple",
+  "slug": "shoolpaneshwar-temple",
+  "name": { "en": "Shoolpaneshwar Mahadev Temple (Gora)" },
+  "aliases": ["Shulpaneshwar Temple", "Gora Shiva Temple"],
+  "category": "temple",
+  "subcategories": [],
+  "tags": ["pilgrimage", "mythology", "nature", "offbeat"],
+  "cluster": "ekta-nagar-area",
+  "status": "active",
+  "district": "narmada",
+  "summary": "The re-established Shiva shrine of a temple submerged by the Sardar Sarovar reservoir — riverside darshan at Gora with deep Narmada lore.",
+  "description": "Shoolpaneshwar Mahadev carries one of the Narmada valley's more poignant stories: the original ancient shrine — a stop on the river's parikrama circuit for centuries — went under the Sardar Sarovar reservoir as the dam rose, and the deity was ceremonially re-established in a new temple at Gora village on the bank downstream. The current structure is modern; the devotion, the name and the river are the continuity.\n\nThe temple gives the sanctuary its name, and its riverside setting keeps the old rhythm: morning and evening aartis, Shravan-month crowds, parikrama pilgrims passing through with their bundles. For visitors doing the Ekta Nagar circuit it pairs naturally with Garudeshwar as a half-day of river devotion, ten minutes apart.\n\nThe lore holds that Shiva stood here with his trishul (shoola) — hence the name — and Narmada tradition ranks the site among the river's significant tirthas.",
+  "highlights": [
+    "Successor shrine of the reservoir-submerged original",
+    "Named source of Shoolpaneshwar sanctuary",
+    "Riverside aartis and parikrama-pilgrim traffic",
+    "Pairs with Garudeshwar, ten minutes away"
+  ],
+  "history_legend": "The original Shoolpaneshwar temple, an ancient tirtha on the Narmada parikrama, was submerged by the Sardar Sarovar reservoir; the deity was re-installed at Gora. Tradition derives the name from Shiva bearing his trishul here — Shoolpani, the trident-holder.",
+  "attributes": { "deity": "Shiva (Shoolpaneshwar Mahadev)", "main_festival": "Mahashivratri; Shravan month" },
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 15 },
+    "coordinates": { "lat": 21.79, "lng": 73.633, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 15, "rajpipla": 30, "vadodara": 88 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via the Gora side from Ekta Nagar or Rajpipla; signed local roads",
+      "rail": "Ekta Nagar station (~15 km)",
+      "air": "Vadodara (~88 km)"
+    },
+    "last_mile": "Walk from parking to the riverside temple; some steps",
+    "road_condition": "Good local tar",
+    "parking": { "available": true, "fee": 0, "notes": "Temple lot; busy on Shravan Mondays" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "06:00", "close": "19:30", "note": "Indicative darshan hours" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 45,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Shravan Mondays and Mahashivratri bring queues and special arrangements."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Shravan (roughly July–August) is the devotional peak; winter mornings are the calm ones."
+  },
+  "experience": {
+    "activities": ["darshan", "sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "River-and-temple frames from the bank at first light; discretion inside the shrine."
+  },
+  "amenities": {
+    "food": "Prasad stalls; simple eateries toward Ekta Nagar and Rajpipla",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Temple priests share the submergence story readily",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "River bathing only at the ghat steps — currents are strong",
+      "Steps are slick in monsoon"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~30 km)", "police": "Garudeshwar PS", "notes": null }
+  },
+  "tips": [
+    "Do Garudeshwar and this temple as one riverside half-day",
+    "Ask about the original temple — the submergence story is the visit's depth"
+  ],
+  "faqs": [
+    {
+      "q": "Is this the original ancient temple?",
+      "a": "No — the ancient shrine lies under the reservoir. This is its formally re-established successor at Gora, which continues the tirtha's tradition and name."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-garudeshwar", "distance_km": 10 },
+    { "id": "narmada-zarwani-falls", "distance_km": 12 },
+    { "id": "narmada-statue-of-unity", "distance_km": 15 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Shoolpaneshwar Mahadev Temple, Gora — Guide",
+    "meta_description": "The re-established Shoolpaneshwar Shiva temple near Ekta Nagar: the submergence story, darshan timings and river setting."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km"]
+  }
+}

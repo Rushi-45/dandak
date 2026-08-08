@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "narmada-children-nutrition-park",
+  "slug": "children-nutrition-park",
+  "name": { "en": "Children Nutrition Park" },
+  "aliases": ["Nutrition Park Kevadia"],
+  "category": "park",
+  "subcategories": [],
+  "tags": ["kids", "family", "popular", "ticketed"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A toy-train-led edutainment park teaching kids about food and nutrition through themed stations — squarely aimed at the under-12s.",
+  "description": "The Children Nutrition Park does exactly what its odd name promises: a miniature train (the 'Nutri Express') carries children between themed stations with names like Fruitpuri and Payonagari, where interactive galleries, mirror mazes, projections and games sell one consistent message — eat real food. It is unapologetically for kids; adults ride along as chaperones and generally leave charmed anyway.\n\nSessions run in train-batches, so on busy days you queue for a departure rather than wandering in. Budget about ninety minutes end to end. With under-12s in the group it earns its slot on a two-day campus plan; without them, spend the ticket elsewhere.",
+  "highlights": [
+    "Nutri Express toy train between themed stations",
+    "Interactive galleries, mirror maze and projections",
+    "Purpose-built for the under-12 crowd"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.847, "lng": 73.708, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit; e-buses stop nearby",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level entry; the experience itself is train-and-walk",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "10:00", "close": "18:00", "note": "Train-batch entry; evening sessions in peak periods" }],
+    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Indicative; child/adult tiers and batch pricing change" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Book batches ahead on weekends" },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Mostly enclosed stations; works in any season."
+  },
+  "experience": {
+    "activities": ["sightseeing", "show"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Station interiors are dim — bump ISO; the train platform is the group-photo spot."
+  },
+  "amenities": {
+    "food": "Healthy-eating themed kiosks inside; food court in the precinct",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Staff-run stations",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Keep small children seated on the train between stations"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "First batch of the day has the shortest queues",
+    "Skip it in a no-kids group — it's built for children, not about them"
+  ],
+  "faqs": [
+    {
+      "q": "Is it worth it for adults without children?",
+      "a": "Honestly, no — the content pitches at ages 4–12. With kids in tow it's one of the campus's best 90 minutes."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-jungle-safari", "distance_km": 2 },
+    { "id": "narmada-unity-glow-garden", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Children Nutrition Park, Ekta Nagar — Guide",
+    "meta_description": "The Nutri Express train park at the Statue of Unity campus: batches, tickets and whether it fits your group."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

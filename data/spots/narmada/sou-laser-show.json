@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "narmada-sou-laser-show",
+  "slug": "sou-laser-show",
+  "name": { "en": "SoU Laser Light & Sound Show" },
+  "aliases": ["Statue of Unity Laser Show"],
+  "category": "show",
+  "subcategories": [],
+  "tags": ["evening", "popular", "family", "photography"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Nightly laser projection and sound show that turns the Statue of Unity into a canvas for Sardar Patel's story — the campus's evening set piece.",
+  "description": "After sunset on operating days, projectors and lasers wash the Statue of Unity in colour while a narrated soundtrack tells Sardar Patel's life and the statue's making — the monument itself as a 182-metre screen. Seating and standing areas face the statue from the show plaza; the spectacle runs roughly half an hour and lands hardest with first-time visitors and children.\n\nEntry arrangements have varied between being included with day tickets and separately managed seating — check current rules when booking. No show on Mondays (the campus closes), and weather can cancel. Arrive early on weekends: the good sightlines go 45 minutes before start, and exit traffic afterwards is its own event.",
+  "highlights": [
+    "Laser projection across the 182 m statue",
+    "Narrated Sardar Patel story, ~30 minutes",
+    "The natural finale of a campus day"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 3 },
+    "coordinates": { "lat": 21.838, "lng": 73.717, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 3, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "Show plaza in the statue precinct; e-buses run until after the show",
+      "rail": "Ekta Nagar station (~3 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Walkways from the drop-off to the viewing plaza",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus lots; expect slow exit after the show" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "19:00", "close": "20:00", "note": "Start time shifts with sunset and season; single or double shows per evening" }],
+    "fees": [{ "type": "show", "amount_inr": 0, "note": "Historically included with entry tickets; separate/managed seating has applied at times — confirm current arrangement" }],
+    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Check whether the show needs its own slot when you book day tickets" },
+    "duration_min": 60,
+    "best_time_of_day": "night",
+    "weekly_closure": "mon",
+    "notes": "Weather cancellations happen in monsoon; the show is outdoors."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Winter evenings are comfortable and clear; carry a layer — the plaza gets breezy."
+  },
+  "experience": {
+    "activities": ["show", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "A small tripod or a railing brace gets the long-exposure sweeps; video captures it better than stills."
+  },
+  "amenities": {
+    "food": "Kiosks near the plaza before the show",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not applicable — narrated show",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Keep the group together during the post-show exit crush on weekends"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Claim sightlines 45 minutes early on weekends",
+    "Sequence: viewing gallery by day, laser show at dusk, glow garden after"
+  ],
+  "faqs": [
+    {
+      "q": "Is the laser show included in the entry ticket?",
+      "a": "It has been bundled with day tickets for long stretches, with managed seating at times — the arrangement changes, so confirm on the official portal when booking."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 0.5 },
+    { "id": "narmada-unity-glow-garden", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Statue of Unity Laser Show — Timings & Tips",
+    "meta_description": "The SoU laser light and sound show: start times, ticket arrangement, weekend crowd strategy and photo notes."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "visit.booking.notes"]
+  }
+}

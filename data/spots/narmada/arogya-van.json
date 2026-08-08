@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "narmada-arogya-van",
+  "slug": "arogya-van",
+  "name": { "en": "Arogya Van" },
+  "aliases": ["Herbal Garden Kevadia"],
+  "category": "garden",
+  "subcategories": ["themed"],
+  "tags": ["nature", "family", "photography"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A wellness-themed garden of medicinal plants near the Statue of Unity — Ayurvedic plots, yoga spaces and calm landscaped walks.",
+  "description": "Arogya Van organises a garden around the idea of health: plots of medicinal and aromatic plants arranged by therapeutic theme, water features, sculpture, indoor interpretation on Ayurveda and yoga traditions, and lawns designed for stillness rather than selfies — though the landscaping gets its share of those too.\n\nIt is one of the campus's calmer tickets, suited to the afternoon lull between the statue and the evening attractions. Plant labels reward the curious; a wellness centre section offers therapies at extra cost when operational. Treat it as a decompression hour — the point is the pace.",
+  "highlights": [
+    "Medicinal and aromatic plant plots by theme",
+    "Calmest landscaped space on the campus",
+    "Indoor Ayurveda and yoga interpretation"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.843, "lng": 73.7, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit; e-buses stop nearby",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level paths and ramps",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative; therapies at the wellness section cost extra" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
+    "duration_min": 75,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Cool months make the outdoor plots pleasant; monsoon keeps everything vivid."
+  },
+  "experience": {
+    "activities": ["nature-walk", "sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "The water features and sculpture court shoot best in late soft light."
+  },
+  "amenities": {
+    "food": "Kiosks nearby on the circuit",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Use it as the between-attractions decompression hour",
+    "Plant-curious visitors should budget longer than the ticket suggests"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 2 },
+    { "id": "narmada-cactus-garden", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Arogya Van, Ekta Nagar — Wellness Garden",
+    "meta_description": "Arogya Van at the Statue of Unity campus: medicinal-plant plots, calm walks, tickets and timing."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

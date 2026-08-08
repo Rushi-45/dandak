@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "narmada-cactus-garden",
+  "slug": "cactus-garden",
+  "name": { "en": "Cactus Garden" },
+  "aliases": ["Cactus Garden Kevadia"],
+  "category": "garden",
+  "subcategories": ["botanical", "themed"],
+  "tags": ["nature", "photography", "family", "kids"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A dome-and-dunes showcase of hundreds of cactus and succulent species near the Statue of Unity — oddly photogenic and genuinely educational.",
+  "description": "The Cactus Garden is the SoU campus's most distinctive side attraction: a large geodesic dome and landscaped outdoor beds holding hundreds of cactus and succulent species from the Americas, Africa and beyond — barrels, columns, agaves, euphorbias — arranged in gravel dunescapes that photograph like a set. Interpretation panels do honest botanical work on how these plants engineer survival.\n\nIt is compact (an hour covers it), shaded in the dome, and different enough from the campus's flower-and-lawn defaults to stay memorable. Children tend to love the sheer weirdness of the shapes. Combine it with the neighbouring jetty-zone attractions rather than making a separate trip.",
+  "highlights": [
+    "Geodesic dome of exotic cacti and succulents",
+    "Dunescape beds built for photography",
+    "Compact one-hour, all-weather-ish stop"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.846, "lng": 73.706, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit near the jetty zone; e-buses stop close by",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level paths; gravel sections between beds",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Indicative; sometimes bundled in combo tickets" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "The dome works year-round; outdoor beds are kindest in the cool months."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Backlit spines glow near opening and closing hours; macro lovers should budget extra time."
+  },
+  "amenities": {
+    "food": "Kiosks in the adjacent zones",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Keep children's hands off the plants — the spines are not decorative"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Pair with the Butterfly Garden and jetty zone in one loop",
+    "Photographers: go at opening for empty dunescapes"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-butterfly-garden", "distance_km": 1.5 },
+    { "id": "narmada-ekta-cruise", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 3 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Cactus Garden, Ekta Nagar — Visit Notes",
+    "meta_description": "The Statue of Unity campus's cactus dome: what's inside, timings, tickets and the best photo hours."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "narmada-harsiddhi-mata-temple",
+  "slug": "harsiddhi-mata-temple",
+  "name": { "en": "Harsiddhi Mata Temple, Rajpipla" },
+  "aliases": ["Harsiddhi Temple"],
+  "category": "temple",
+  "subcategories": [],
+  "tags": ["pilgrimage", "heritage", "family"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Rajpipla's town goddess — the royal family's Harsiddhi Mata shrine, busiest and brightest through Navratri.",
+  "description": "The Harsiddhi Mata temple is Rajpipla's devotional anchor, tied to the town's royal history: the goddess was the Gohil dynasty's protective deity, and the temple's patronage ran through the palace for generations. The shrine sits in the town's fabric — arriving here means arriving in Rajpipla proper, between bazaar streets and the leftovers of princely architecture.\n\nDaily rhythm is unhurried aarti-and-darshan; Navratri turns the temple and its surroundings into the town's biggest festival stage, with garba spilling into the nights. For travellers, it slots into a Rajpipla half-day with Rajvant Palace and the old-town walk — fifteen devotional minutes that anchor the town's story better than any plaque.",
+  "highlights": [
+    "The Gohil royals' protective goddess",
+    "Navratri is the town's festive peak",
+    "Anchors the Rajpipla old-town half-day"
+  ],
+  "history_legend": "Harsiddhi Mata served as the kuldevi of Rajpipla's Gohil rulers; tradition ties the shrine's establishment to the dynasty's fortunes, and palace patronage maintained it through the princely era.",
+  "attributes": { "deity": "Harsiddhi Mata", "main_festival": "Navratri" },
+  "location": {
+    "taluka": "Nandod",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 1 },
+    "coordinates": { "lat": 21.867, "lng": 73.505, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 1, "ekta-nagar": 25, "vadodara": 70 }
+  },
+  "access": {
+    "modes": {
+      "road": "In Rajpipla town; autos from anywhere in town",
+      "rail": "Ekta Nagar station (~25 km); Ankleshwar Jn (~70 km)",
+      "air": "Vadodara (~70 km)"
+    },
+    "last_mile": "Walk-in from the street; a few steps at the entrance",
+    "road_condition": "Town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Street parking; tight during Navratri" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "06:00", "close": "20:00", "note": "Indicative; aarti schedule posted at the temple" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Navratri evenings are the temple at full volume — go for atmosphere, not calm."
+  },
+  "seasonality": {
+    "best_months": [9, 10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Navratri (Sep–Oct) is the peak occasion; pleasant visiting through winter."
+  },
+  "experience": {
+    "activities": ["darshan", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Exterior and bazaar-street frames; keep cameras down at the garbhagriha."
+  },
+  "amenities": {
+    "food": "Rajpipla town eateries all around",
+    "toilets": "none",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~1 km)", "police": "Rajpipla town PS", "notes": null }
+  },
+  "tips": [
+    "Fold into the Rajvant Palace + old-town loop",
+    "Navratri visits: park early, walk, and stay for the garba"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-rajvant-palace", "distance_km": 2 },
+    { "id": "narmada-rajpipla-heritage-walk", "distance_km": 0.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Harsiddhi Mata Temple, Rajpipla — Notes",
+    "meta_description": "Rajpipla's royal kuldevi shrine: darshan timings, Navratri atmosphere and pairing with Rajvant Palace."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "location.coordinates"]
+  }
+}

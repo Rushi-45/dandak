@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "narmada-maze-garden",
+  "slug": "maze-garden",
+  "name": { "en": "Maze Garden (Bhool Bhulaiya)" },
+  "aliases": ["Bhool Bhulaiya Garden Kevadia"],
+  "category": "garden",
+  "subcategories": ["themed"],
+  "tags": ["family", "kids", "photography", "popular"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A large hedge maze laid out in a yantra pattern near the Statue of Unity — half puzzle, half photo op, best fun with kids in tow.",
+  "description": "The Maze Garden plants a full-scale hedge labyrinth on the campus — reportedly among the country's largest — its paths laid out in a shrivatsa/yantra-inspired geometry that reads beautifully from the elevated viewing points and turns into honest confusion at hedge level. Getting mildly lost takes ten minutes; getting out is the family entertainment.\n\nThe hedges have matured enough to block sightlines for children while adults can still orient by landmarks. It is a light 45–60 minute ticket that lands best with kids and groups in a playful mood; solo efficiency-minded itineraries can skip it without regret. Mornings beat afternoons — the maze bowl holds heat.",
+  "highlights": [
+    "Full-scale hedge maze in a yantra layout",
+    "Elevated viewpoints for the pattern shot",
+    "Easy 45–60 minutes of family fun"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.844, "lng": 73.71, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit; e-buses stop nearby",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level gravel-and-turf paths inside the maze",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Indicative; combo-ticket inclusion varies" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "The hedge bowl traps afternoon heat in summer; cool-season mornings are ideal."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "The geometry shot needs the viewing deck; inside, shoot junctions with people for scale."
+  },
+  "amenities": {
+    "food": "Kiosks nearby on the circuit",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Staff at the exit gates keep anyone from being lost longer than is fun",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Agree a meeting point with kids before entering — phones beat shouting"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Do the viewing deck after solving it — the pattern is the payoff",
+    "Pair with the glow garden zone for an easy half day with kids"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-unity-glow-garden", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Maze Garden, Ekta Nagar — Bhool Bhulaiya",
+    "meta_description": "The Statue of Unity campus hedge maze: tickets, best hours and the viewpoint for the yantra pattern."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "narmada-devmogra-temple",
+  "slug": "devmogra-temple",
+  "name": { "en": "Devmogra Mata Temple" },
+  "aliases": ["Yaha Mogi Mata Temple", "Devmogra Yatradham"],
+  "category": "temple",
+  "subcategories": [],
+  "tags": ["pilgrimage", "tribal-culture", "offbeat", "heritage"],
+  "cluster": "dediapada-belt",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Principal shrine of Yaha Mogi, the great mother goddess of the region's tribal communities — its annual fair draws lakhs to Sagbara.",
+  "description": "Devmogra, near Sagbara in the district's south-east corner, is the spiritual centre of gravity for the Vasava, Bhil and Tadvi communities of the Gujarat–Maharashtra–Madhya Pradesh tri-border: the shrine of Yaha Mogi (Devmogra Mata), the mother goddess whose annual fair transforms these quiet hills into one of western India's largest tribal gatherings. Families arrive on foot, by tractor and truck, carrying offerings of grain and bamboo baskets; vows are fulfilled, marriages blessed, harvests dedicated.\n\nThe main fair runs around Mahashivratri (dates follow the lunar calendar) across several days — an extraordinary spectacle of devotion, music and market, and also dense crowds, basic facilities and long queues. Outside fair season the temple is calm: a working shrine where the goddess sits with her granary, and where respectful visitors get an unforced look at living adivasi devotion.\n\nVisit as a guest, not a spectator: photograph people only with clear consent, dress plainly, and buy from the local stalls — that is the economy the fair exists to feed.",
+  "highlights": [
+    "Principal shrine of Yaha Mogi / Devmogra Mata",
+    "Annual fair around Mahashivratri drawing lakhs",
+    "Heart of Vasava-Bhil devotional culture",
+    "Calm, welcoming shrine outside fair days"
+  ],
+  "history_legend": "Yaha Mogi is the great mother of the region's adivasi cosmology — provider of grain and protector of the community; her granary sits beside her in the shrine. Oral tradition, not text, carries her story, and the annual pilgrimage predates every modern boundary drawn around these hills.",
+  "attributes": { "deity": "Yaha Mogi (Devmogra Mata)", "main_festival": "Annual fair around Mahashivratri (Feb–Mar)" },
+  "location": {
+    "taluka": "Sagbara",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Sagbara", "distance_km": 10 },
+    "coordinates": { "lat": 21.448, "lng": 73.722, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "sagbara": 10, "dediapada": 45, "rajpipla": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Sagbara from the Rajpipla–Dediapada corridor; fair days bring managed one-way routes",
+      "rail": "Ankleshwar/Bharuch railheads (~110 km)",
+      "air": "Surat (~130 km), Vadodara (~150 km)"
+    },
+    "last_mile": "Walk from parking to the shrine; fair days mean long approach queues",
+    "road_condition": "Tarred; interior speeds",
+    "parking": { "available": true, "fee": 0, "notes": "Large open grounds; managed during the fair" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "06:00", "close": "19:00", "note": "Indicative; fair days run extended schedules" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "The fair (around Mahashivratri) is a several-day event with lakhs attending — plan deliberately for it or deliberately around it."
+  },
+  "seasonality": {
+    "best_months": [11, 12, 1, 2, 3],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "The Mahashivratri-season fair is the peak experience and the peak logistics challenge; ordinary winter days are serene."
+  },
+  "experience": {
+    "activities": ["darshan", "village-tour", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "During the fair, ask before every people-shot — offerings and rituals are personal. The granary shrine itself is usually off-limits to cameras."
+  },
+  "amenities": {
+    "food": "Stalls and bhojan arrangements, expanding hugely at fair time; Sagbara town otherwise",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "none", "bsnl": "ok" },
+    "guides": "Local youths orient visitors; Vasavi and Gujarati are the languages of the ground",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Fair crowds are immense — fix meeting points and keep children in hand",
+      "Respect ritual spaces; some inner areas are for community members"
+    ],
+    "emergency": { "nearest_hospital": "CHC Sagbara (~10 km)", "police": "Sagbara PS; fair-time police posts", "notes": null }
+  },
+  "tips": [
+    "For the fair, arrive early morning and expect to walk kilometres",
+    "Off-season, combine with the Dediapada belt for a full eastern loop",
+    "Buy baskets and produce at the stalls — it is the right kind of souvenir"
+  ],
+  "faqs": [
+    {
+      "q": "Can non-tribal visitors attend the fair?",
+      "a": "Yes — it is open and welcoming, but you are a guest at someone else's most important gathering. Dress plainly, ask before photographing, and follow stewards' directions."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-sagai-malsamot", "distance_km": 35 },
+    { "id": "narmada-ninai-falls", "distance_km": 40 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Devmogra Mata Temple, Sagbara — Guide",
+    "meta_description": "Yaha Mogi's shrine at Devmogra: the great tribal fair near Mahashivratri, respectful-visit notes and access from Rajpipla."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "location.coordinates", "location.distances_km", "visit.notes"]
+  }
+}

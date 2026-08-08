@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "narmada-ekta-cruise",
+  "slug": "ekta-cruise",
+  "name": { "en": "Ekta Cruise (Narmada Boat Ride)" },
+  "aliases": ["Narmada Ferry Kevadia", "SoU Boat Ride"],
+  "category": "adventure",
+  "subcategories": ["boating"],
+  "tags": ["family", "popular", "photography", "boating", "evening"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A calm Narmada boat ride with the Statue of Unity growing off the bow — the water-level angle no viewpoint on land can give.",
+  "description": "The Ekta Cruise runs sightseeing boats on the still stretch of the Narmada below the statue, turning the campus's headline monument into a waterline experience: the statue first as a figure on the horizon, then filling the sky as the boat closes in. Rides run from the jetty area near Shreshtha Bharat Bhavan and loop the viewing stretch in roughly half an hour.\n\nIt is an easy, all-ages add-on rather than an adventure — flat water, seated ride, life jackets issued. Late-afternoon departures get the warm light on the statue's face; mornings get calmer water. Operations have varied over the years with river conditions and operator arrangements, so confirm the cruise is running and where exactly it boards when you plan — and expect suspensions when dam releases push the river up.",
+  "highlights": [
+    "Water-level views of the Statue of Unity",
+    "Calm ~30-minute seated ride, all ages",
+    "Late-afternoon light is the photographer's slot"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Campus-licensed boat operator", "price_range_inr": "300-600" },
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.845, "lng": 73.705, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "Jetty zone on the campus circuit; e-buses and autos from Ekta Nagar",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Short walk from drop-off to the jetty; boarding ramps",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "09:00", "close": "18:00", "note": "Departure batches; follows the campus Monday closure" }],
+    "fees": [{ "type": "boating", "amount_inr": 400, "note": "Indicative per person; tiers and operator rates change" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Buy at the jetty or with campus tickets; weekend slots fill by afternoon" },
+    "duration_min": 60,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": "mon",
+    "notes": "Operations pause during high dam releases and rough weather — confirm on the day."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Winter afternoons are the dependable window; monsoon running depends on river levels."
+  },
+  "experience": {
+    "activities": ["boating", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Sit starboard (right) outbound for the statue side; late sun warms the bronze."
+  },
+  "amenities": {
+    "food": "Kiosks at the jetty zone",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "On-board commentary on most runs",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Wear the life jacket for the full ride — enforced",
+      "Rides suspend at short notice on high river levels; keep plans flexible"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Book the golden-hour departure and keep the glow garden for after",
+    "Confirm operations that morning — river releases cancel batches"
+  ],
+  "faqs": [
+    {
+      "q": "Is the cruise scary for non-swimmers?",
+      "a": "No — it's a flat-water sightseeing loop with life jackets issued to everyone. The only real risk is a cancelled slot on high-release days."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 2 },
+    { "id": "narmada-valley-of-flowers", "distance_km": 2 },
+    { "id": "narmada-cactus-garden", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Ekta Cruise, Statue of Unity — Boat Ride Guide",
+    "meta_description": "The Narmada boat ride below the Statue of Unity: fares, timings, best light and when operations pause."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "visit.fees", "visit.timings", "access.last_mile", "location.coordinates"]
+  }
+}

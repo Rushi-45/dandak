@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "narmada-kabirvad",
+  "slug": "kabirvad",
+  "name": { "en": "Kabirvad Banyan Island" },
+  "aliases": ["Kabir Vad", "Kabirvad Shuklatirth"],
+  "category": "religious-site",
+  "subcategories": [],
+  "tags": ["nature", "pilgrimage", "mythology", "offbeat", "boating"],
+  "cluster": "poicha",
+  "status": "active",
+  "district": "narmada",
+  "summary": "An island in the Narmada covered by a single colossal banyan linked to sant Kabir — reached by a short boat crossing, unlike anywhere else in Gujarat.",
+  "description": "Kabirvad is a botanical event with a shrine at its heart: a river island in the Narmada near Shuklatirth where one banyan tree has spent centuries becoming a forest — trunks begetting trunks across hectares until 'the tree' means everything the eye can hold. Tradition ties it to sant Kabir, the fifteenth-century mystic-poet, who is said to have stayed here; a Kabir temple sits within the canopy and gives the island its devotional pulse.\n\nThe visit begins with a short boat crossing from the ghat — diesel launches shuttle constantly on busy days — and then you simply walk into the tree: pillared halls of aerial roots, filtered light, langurs overhead, pilgrims and picnickers below. Full moon days, Kabir Jayanti and winter weekends run busiest; weekday mornings feel primeval.\n\nAdministratively the island falls in Bharuch district, but it pairs so naturally with Poicha and the Statue of Unity circuit that no sensible Narmada itinerary omits it. Respect the tree — no climbing, no carving — and the shrine's plain Kabirpanthi etiquette.",
+  "highlights": [
+    "A single banyan spread across hectares of island",
+    "Boat crossing on the Narmada to reach it",
+    "Kabir temple within the canopy",
+    "Pillared root-halls unlike anywhere in Gujarat"
+  ],
+  "history_legend": "Tradition holds that Kabir stayed on this island and that the banyan grew from a twig he used — the tree as the saint's living relic. Kabirpanthi devotion keeps the shrine; the banyan itself, among India's largest, keeps the argument for the legend.",
+  "attributes": {},
+  "location": {
+    "taluka": "Jhagadia (Bharuch)",
+    "admin_district": "Bharuch",
+    "outside_district": true,
+    "nearest_town": { "name": "Bharuch", "distance_km": 30 },
+    "coordinates": { "lat": 21.865, "lng": 73.085, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "bharuch": 30, "ankleshwar": 40, "vadodara": 70, "poicha": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "To the Shuklatirth-side ghat via Bharuch; then the boat crossing",
+      "rail": "Bharuch Jn (~30 km)",
+      "air": "Vadodara or Surat (~70–90 km)"
+    },
+    "last_mile": "5–10 min boat crossing from the ghat, then level island paths under the canopy",
+    "road_condition": "Good to the ghat",
+    "parking": { "available": true, "fee": null, "notes": "At the ghat; managed on festival days" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Boats run daylight hours; last return before dusk" }],
+    "fees": [{ "type": "boating", "amount_inr": 50, "note": "Indicative return boat fare per person; shared launches" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Crossings suspend when the river runs high after heavy releases — check locally in monsoon."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [7, 8],
+    "monsoon_dependent": false,
+    "notes": "Winter is ideal; peak-monsoon crossings can suspend on high water."
+  },
+  "experience": {
+    "activities": ["boating", "darshan", "nature-walk", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Wide lens for the root halls; shafted light mid-morning. Include people for scale — the tree defeats bare frames."
+  },
+  "amenities": {
+    "food": "Stalls at the ghat and simple vendors on the island in season",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Boatmen and shrine caretakers narrate freely",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Wear the life jackets when offered on the crossing",
+      "No swimming off the island — the Narmada's currents are serious",
+      "Watch footing on root tangles; ankles turn easily"
+    ],
+    "emergency": { "nearest_hospital": "Bharuch civil hospital (~30 km)", "police": "Shuklatirth-side PS", "notes": null }
+  },
+  "tips": [
+    "Pair with Nilkanthdham Poicha for the classic river-faith day",
+    "Weekday mornings give you the root halls in silence",
+    "Carry water; island facilities are minimal"
+  ],
+  "faqs": [
+    {
+      "q": "How big is the Kabirvad banyan really?",
+      "a": "Coverage estimates vary (floods reshape it), but it ranks among India's largest banyans — the honest answer is 'bigger than you can photograph', spread over hectares."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-nilkanthdham-poicha", "distance_km": 45, "note": "Classic same-day pairing" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Kabirvad Banyan Island — Boat & Visit Guide",
+    "meta_description": "Reaching Kabirvad's giant banyan by boat: fares, timings, the Kabir legend and pairing with Poicha."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates", "location.distances_km"]
+  }
+}
