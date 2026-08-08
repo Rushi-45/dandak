@@ -1,0 +1,87 @@
+{
+  "_note": "Mirrors specs/04-taxonomies.md - update both in one commit (governance rule). Hub coordinates are approximate town centres (+/-2 km), used only for distance-plausibility lints, never as data.",
+  "categories": [
+    "waterfall", "viewpoint", "lake", "garden", "park", "temple", "religious-site",
+    "museum", "wildlife", "fort", "palace", "monument", "dam", "adventure",
+    "eco-campsite", "cultural", "market", "show"
+  ],
+  "subcategories": {
+    "wildlife": ["sanctuary", "national-park", "zoo", "safari-park"],
+    "garden": ["botanical", "floral", "themed"],
+    "adventure": ["ropeway", "rafting", "boating", "aerial", "activity-park"],
+    "viewpoint": ["hill-station"],
+    "eco-campsite": ["forest-department", "private"]
+  },
+  "tags": [
+    "monsoon", "winter", "summer-escape", "offbeat", "popular", "family", "kids",
+    "couples", "adventure", "pilgrimage", "mythology", "history", "heritage",
+    "tribal-culture", "nature", "wildlife", "birding", "photography", "sunrise",
+    "sunset", "trekking", "picnic", "boating", "architecture", "shopping", "food",
+    "evening", "free-entry", "ticketed", "weekend-getaway"
+  ],
+  "activities": [
+    "sightseeing", "photography", "boating", "rafting", "ropeway-ride", "safari",
+    "jungle-trail", "trekking", "nature-walk", "birdwatching", "camping", "cycling",
+    "picnic", "shopping", "darshan", "museum-visit", "show", "stargazing",
+    "village-tour", "adventure-activities"
+  ],
+  "clusters": {
+    "saputara": { "district": "dang", "label": "Saputara Hill Station" },
+    "waghai": { "district": "dang", "label": "Waghai Belt" },
+    "dang-interior": { "district": "dang", "label": "Interior Dang" },
+    "sou-complex": { "district": "narmada", "label": "Statue of Unity Complex" },
+    "ekta-nagar-area": { "district": "narmada", "label": "Around Ekta Nagar" },
+    "dediapada-belt": { "district": "narmada", "label": "Dediapada & Shoolpaneshwar Belt" },
+    "rajpipla": { "district": "narmada", "label": "Rajpipla Town & Around" },
+    "poicha": { "district": "narmada", "label": "Poicha Riverbank" }
+  },
+  "hubs": {
+    "dang": {
+      "saputara": [20.575, 73.757],
+      "ahwa": [20.757, 73.686],
+      "waghai": [20.772, 73.499],
+      "subir": [20.845, 73.740],
+      "bilimora": [20.769, 72.961],
+      "nashik": [19.997, 73.790],
+      "surat": [21.170, 72.831],
+      "vadodara": [22.307, 73.181],
+      "ahmedabad": [23.023, 72.571],
+      "mumbai": [19.076, 72.877]
+    },
+    "narmada": {
+      "ekta-nagar": [21.838, 73.719],
+      "rajpipla": [21.866, 73.502],
+      "dediapada": [21.633, 73.612],
+      "sagbara": [21.473, 73.772],
+      "poicha": [21.976, 73.534],
+      "vadodara": [22.307, 73.181],
+      "bharuch": [21.705, 72.995],
+      "ankleshwar": [21.626, 73.015],
+      "surat": [21.170, 72.831],
+      "ahmedabad": [23.023, 72.571],
+      "mumbai": [19.076, 72.877]
+    }
+  },
+  "bboxes": {
+    "dang": { "latMin": 20.30, "latMax": 21.10, "lngMin": 73.25, "lngMax": 74.00 },
+    "narmada": { "latMin": 21.35, "latMax": 22.10, "lngMin": 73.20, "lngMax": 74.10 },
+    "widened": { "latMin": 20.20, "latMax": 22.20, "lngMin": 72.90, "lngMax": 74.20 }
+  },
+  "bannedPhrases": [
+    "breathtaking", "mesmerizing", "enchanting", "magical", "paradise",
+    "must-visit", "awe-inspiring", "jaw-dropping", "nestled", "hidden gem"
+  ],
+  "lints": {
+    "summaryTargetChars": 160,
+    "durationMinRange": [15, 600],
+    "feeWarnAboveInr": 5000,
+    "tagCountRange": [3, 8]
+  },
+  "topLevelKeyOrder": [
+    "schema_version", "id", "slug", "name", "aliases", "category", "subcategories",
+    "tags", "cluster", "status", "district", "summary", "description", "highlights",
+    "history_legend", "attributes", "location", "access", "visit", "seasonality",
+    "experience", "amenities", "safety", "tips", "faqs", "nearby", "itineraries",
+    "media", "seo", "provenance"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-girmal-falls",
+  "slug": "girmal-falls",
+  "name": { "en": "Girmal Falls" },
+  "aliases": ["Girmal Waterfall"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "photography", "nature", "picnic"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Gujarat's tallest waterfall — a roughly 30 m plunge on the Gira river that thunders from July to October.",
+  "description": "Two to four paragraphs written per spec 05…",
+  "highlights": [
+    "Tallest waterfall in Gujarat at roughly 30 m",
+    "Railed viewing deck directly facing the plunge",
+    "Rarely crowded even at monsoon peak"
+  ],
+  "history_legend": null,
+  "attributes": { "height_m": 30, "river": "Gira" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 45 },
+    "coordinates": { "lat": 20.95, "lng": 73.83, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 45, "saputara": 60, "waghai": 55, "surat": 160 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Ahwa; the last stretch is a narrow forest road to Girmal village",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn is the nearest broad-gauge railhead",
+      "air": "Surat (~160 km)"
+    },
+    "last_mile": "Motorable to the viewpoint gate; short paved walk to the deck",
+    "road_condition": "Tarred but narrow interior roads; slow going in rain",
+    "parking": { "available": true, "fee": 0, "notes": "Small unpaved lot" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Deck may close briefly after very heavy overnight rain."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Full flow July–September; reduces to a trickle by late winter."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Shoot before 10:00 for side-lit spray; carry a lens cloth — the deck sits in the mist zone in August."
+  },
+  "amenities": {
+    "food": "Seasonal snack stalls at the parking lot; nearest reliable food is in Ahwa",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "ok" },
+    "guides": "Not needed; the path is obvious",
+    "ev_charging": false,
+    "stay_nearby": ["dang-mahal-eco-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Do not cross the railing — rock faces are lethal when wet",
+      "No swimming at the base pool",
+      "Leech protection advised on grassy paths at monsoon peak"
+    ],
+    "emergency": { "nearest_hospital": "Ahwa Civil Hospital (~45 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Club it with Don hill or Mahal campsite to justify the interior drive",
+    "Fuel up in Ahwa — there are no petrol pumps on the interior stretch"
+  ],
+  "faqs": [
+    {
+      "q": "Is Girmal Falls worth visiting outside monsoon?",
+      "a": "October–November still has decent flow; by February it is a thin stream — go for the drive and the valley, not the falls."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-mahal-eco-campsite", "distance_km": 25 },
+    { "id": "dang-don-hill", "distance_km": 40, "note": "Pairs well for a full-day interior loop" }
+  ],
+  "itineraries": ["monsoon-waterfall-circuit"],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Girmal Falls, Dang — Gujarat's Tallest Waterfall",
+    "meta_description": "Plan a monsoon visit to the 30 m Girmal Falls in the Dang forests: timings, best months, road access from Saputara and Ahwa, and safety tips."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km", "visit.timings"]
+  }
+}

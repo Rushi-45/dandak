@@ -10,7 +10,7 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 |---|---|
 | Spec version | Draft v0.1 |
 | Last updated | 2026-08-08 |
-| Phase | 0 — Specification |
+| Phase | 1 — Scaffold complete (validator green) |
 | Data records | 0 (target ≈ 64 spots, see inventory) |
 
 ## Spec index

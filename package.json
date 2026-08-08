@@ -1,0 +1,16 @@
+{
+  "name": "saputara-narmada",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Structured tourism dataset for Dang and Narmada districts, Gujarat - specs-first.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "validate:strict": "node scripts/validate.mjs --strict",
+    "stats": "node scripts/stats.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  }
+}
