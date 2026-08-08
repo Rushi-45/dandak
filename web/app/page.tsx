@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
+import { FlipWords } from "@/components/flip-words";
 import { SpotCard } from "@/components/spot-card";
+import { TiltCard } from "@/components/tilt-card";
 import { getAllSpots, getDistrict, getItineraries, getSpotById, MONTHS } from "@/lib/data";
 import souImg from "@/public/images/statue-of-unity.jpg";
 import lakeImg from "@/public/images/saputara-lake.jpg";
@@ -45,7 +47,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* ══ Cinematic hero ══════════════════════════════════ */}
+      {/* == Cinematic hero ================================== */}
       <section className="relative left-1/2 right-1/2 -mx-[50vw] flex min-h-[92svh] w-screen items-end overflow-hidden">
         <Image
           src={souImg}
@@ -84,17 +86,30 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-300">
-            Waterfalls that only exist in monsoon. A statue taller than imagination. Leopard
-            forests, meadow villages and living Ramayana geography — documented with{" "}
-            <span className="text-emerald-300">receipts</span>.
+            This is the land of{" "}
+            <FlipWords
+              words={[
+                "monsoon waterfalls",
+                "leopard forests",
+                "Ramayana trails",
+                "meadow villages",
+                "one colossal statue",
+              ]}
+              className="font-serif text-xl font-black italic text-emerald-300"
+            />
+            <br />— every place documented with{" "}
+            <span className="text-amber-300">receipts</span>.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Link
-              href="/spots"
-              className="rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-3 text-sm font-bold text-emerald-950 shadow-[0_10px_40px_-10px_rgba(16,185,129,0.7)] transition-shadow hover:shadow-[0_10px_60px_-8px_rgba(16,185,129,0.95)]"
-            >
-              Explore {spots.length} places →
+            <Link href="/spots" className="group relative inline-flex overflow-hidden rounded-xl p-[1.5px]">
+              <span
+                aria-hidden
+                className="absolute inset-[-1000%] animate-[spin_3.5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#34d399_0%,#115e59_25%,#fbbf24_50%,#115e59_75%,#34d399_100%)] motion-reduce:animate-none"
+              />
+              <span className="relative inline-flex items-center rounded-[10.5px] bg-[#06110d] px-6 py-3 text-sm font-bold text-emerald-200 transition-colors group-hover:bg-[#0a1a14] group-hover:text-emerald-100">
+                Explore {spots.length} places →
+              </span>
             </Link>
             <Link
               href="/spots#dang"
@@ -116,7 +131,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══ Marquee ticker ══════════════════════════════════ */}
+      {/* == Marquee ticker ================================== */}
       <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-hidden border-y border-white/[0.06] bg-white/[0.02] py-3">
         <div className="animate-marquee flex w-max gap-8 whitespace-nowrap">
           {[...TICKER, ...TICKER].map((t, i) => (
@@ -131,7 +146,7 @@ export default function Home() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4">
-        {/* ══ Stats band ════════════════════════════════════ */}
+        {/* == Stats band ==================================== */}
         <section className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 py-14 text-center">
           {[
             { label: "places documented", value: spots.length },
@@ -150,7 +165,7 @@ export default function Home() {
           ))}
         </section>
 
-        {/* ══ In season right now ═══════════════════════════ */}
+        {/* == In season right now =========================== */}
         {inSeason.length > 0 && (
           <FadeIn>
             <section className="border-t border-white/[0.06] py-14">
@@ -172,18 +187,22 @@ export default function Home() {
                   All spots →
                 </Link>
               </div>
-              <div className="no-scrollbar -mx-4 mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2">
-                {inSeason.map((spot) => (
-                  <div key={spot.id} className="w-[300px] shrink-0 snap-start">
-                    <SpotCard spot={spot} />
-                  </div>
-                ))}
+              <div className="group relative left-1/2 right-1/2 -mx-[50vw] mt-7 w-screen overflow-hidden">
+                <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[#080c0b] to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[#080c0b] to-transparent" />
+                <div className="animate-marquee flex w-max gap-4 px-4 pb-2 [animation-duration:55s] group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+                  {[...inSeason, ...inSeason].map((spot, i) => (
+                    <div key={`${spot.id}-${i}`} className="w-[300px] shrink-0">
+                      <SpotCard spot={spot} />
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
           </FadeIn>
         )}
 
-        {/* ══ Mood collections ══════════════════════════════ */}
+        {/* == Mood collections ============================== */}
         <FadeIn>
           <section className="border-t border-white/[0.06] py-14">
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-300">
@@ -195,9 +214,10 @@ export default function Home() {
 
             <div className="mt-8 grid gap-5 lg:grid-cols-3">
               {/* Monsoon */}
+              <TiltCard className="h-[440px]">
               <Link
                 href="/spots#dang"
-                className="group relative h-[440px] overflow-hidden rounded-[2rem] ring-1 ring-white/10"
+                className="group relative block h-full overflow-hidden rounded-[2rem] ring-1 ring-white/10"
               >
                 <Image
                   src={giraImg}
@@ -224,11 +244,13 @@ export default function Home() {
                   📷 JB Kalola · CC BY-SA
                 </span>
               </Link>
+              </TiltCard>
 
               {/* Legends — editorial card */}
+              <TiltCard className="h-[440px]">
               <Link
                 href="/spots#dang"
-                className="group relative flex h-[440px] flex-col justify-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.14] via-orange-400/[0.06] to-transparent p-6 ring-1 ring-amber-300/15 transition-colors hover:ring-amber-300/35"
+                className="group relative flex h-full flex-col justify-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.14] via-orange-400/[0.06] to-transparent p-6 ring-1 ring-amber-300/15 transition-colors hover:ring-amber-300/35"
               >
                 <p
                   aria-hidden
@@ -250,11 +272,13 @@ export default function Home() {
                   Shabari Dham · Pampa · Anjan Kund · Kabirvad
                 </p>
               </Link>
+              </TiltCard>
 
               {/* Grand campus */}
+              <TiltCard className="h-[440px]">
               <Link
                 href="/spots#narmada"
-                className="group relative h-[440px] overflow-hidden rounded-[2rem] ring-1 ring-white/10"
+                className="group relative block h-full overflow-hidden rounded-[2rem] ring-1 ring-white/10"
               >
                 <Image
                   src={damImg}
@@ -281,11 +305,12 @@ export default function Home() {
                   📷 Vijayakumarblathur · CC BY-SA
                 </span>
               </Link>
+              </TiltCard>
             </div>
           </section>
         </FadeIn>
 
-        {/* ══ District 01 — Dang ════════════════════════════ */}
+        {/* == District 01 — Dang ============================ */}
         <FadeIn>
           <section className="relative border-t border-white/[0.06] py-14">
             <div className="relative overflow-hidden rounded-[2rem] ring-1 ring-white/10">
@@ -336,7 +361,7 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* ══ District 02 — Narmada ═════════════════════════ */}
+        {/* == District 02 — Narmada ========================= */}
         <FadeIn>
           <section className="relative border-t border-white/[0.06] py-14">
             <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.13] via-emerald-400/[0.05] to-transparent p-7 ring-1 ring-white/10 sm:p-12">
@@ -372,7 +397,7 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* ══ Editorial pull-quote ══════════════════════════ */}
+        {/* == Editorial pull-quote ========================== */}
         <FadeIn>
           <section className="border-t border-white/[0.06] py-20 text-center">
             <div className="mx-auto h-10 w-px bg-gradient-to-b from-transparent to-amber-300/50" />
@@ -386,13 +411,26 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* ══ Honesty strip ═════════════════════════════════ */}
+        {/* == Honesty strip ================================= */}
         <FadeIn>
-          <section className="mb-4 overflow-hidden rounded-[2rem] border border-white/[0.07] bg-gradient-to-br from-emerald-400/[0.08] via-transparent to-amber-400/[0.05] p-8 sm:p-10">
-            <h2 className="font-serif text-2xl font-black text-stone-100">
+          <section className="relative mb-4 overflow-hidden rounded-[2rem] border border-white/[0.07] p-8 sm:p-10">
+            {/* aurora */}
+            <div
+              aria-hidden
+              className="animate-aurora-a pointer-events-none absolute -left-20 -top-24 h-80 w-[36rem] rounded-full bg-emerald-500/15 blur-[80px]"
+            />
+            <div
+              aria-hidden
+              className="animate-aurora-b pointer-events-none absolute -bottom-28 -right-16 h-72 w-[30rem] rounded-full bg-amber-500/12 blur-[80px]"
+            />
+            <div
+              aria-hidden
+              className="animate-aurora-a pointer-events-none absolute left-1/3 top-1/2 h-40 w-72 rounded-full bg-cyan-500/10 blur-[70px]"
+            />
+            <h2 className="relative font-serif text-2xl font-black text-stone-100">
               Built different: every fact has a receipt<span className="text-emerald-300">.</span>
             </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-400">
+            <p className="relative mt-3 max-w-2xl text-sm leading-relaxed text-stone-400">
               Each place carries a confidence level, a last-verified date and its sources — official
               portals first. When something is unverified, the page says so instead of guessing.
               That is the whole point of dandak.

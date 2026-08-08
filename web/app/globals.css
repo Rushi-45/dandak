@@ -33,7 +33,7 @@ body {
   scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
 }
 
-/* ── Editorial helpers ─────────────────────────────────── */
+/* -- Editorial helpers ----------------------------------- */
 
 /* Ghost outlined numerals / wordmarks */
 .text-stroke {
@@ -77,9 +77,37 @@ body {
   display: none;
 }
 
+/* Aurora drift blobs */
+@keyframes aurora-a {
+  0%,
+  100% {
+    transform: translate(-12%, -18%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(14%, 12%) rotate(35deg) scale(1.15);
+  }
+}
+@keyframes aurora-b {
+  0%,
+  100% {
+    transform: translate(12%, 16%) rotate(0deg) scale(1.1);
+  }
+  50% {
+    transform: translate(-14%, -10%) rotate(-30deg) scale(1);
+  }
+}
+.animate-aurora-a {
+  animation: aurora-a 18s ease-in-out infinite;
+}
+.animate-aurora-b {
+  animation: aurora-b 24s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-kenburns,
-  .animate-marquee {
+  .animate-marquee,
+  .animate-aurora-a,
+  .animate-aurora-b {
     animation: none;
   }
 }
