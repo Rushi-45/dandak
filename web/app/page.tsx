@@ -217,7 +217,7 @@ export default function Home() {
               {/* Monsoon */}
               <TiltCard className="h-[440px]">
               <Link
-                href="/spots#dang"
+                href="/itineraries/monsoon-waterfall-circuit"
                 className="group relative block h-full overflow-hidden rounded-[2rem] ring-1 ring-white/10"
               >
                 <Image
@@ -250,7 +250,7 @@ export default function Home() {
               {/* Legends — editorial card */}
               <TiltCard className="h-[440px]">
               <Link
-                href="/spots#dang"
+                href="/itineraries/dang-ramayana-trail"
                 className="group relative flex h-full flex-col justify-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.14] via-orange-400/[0.06] to-transparent p-6 ring-1 ring-amber-300/15 transition-colors hover:ring-amber-300/35"
               >
                 <p
@@ -279,7 +279,7 @@ export default function Home() {
               {/* Grand campus */}
               <TiltCard className="h-[440px]">
               <Link
-                href="/spots#narmada"
+                href="/itineraries/sou-family-2-day"
                 className="group relative block h-full overflow-hidden rounded-[2rem] ring-1 ring-white/10"
               >
                 <Image
@@ -339,7 +339,7 @@ export default function Home() {
                 </h2>
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-stone-300">{dang.headline}</p>
                 <Link
-                  href="/spots#dang"
+                  href="/districts/dang"
                   className="mt-5 w-fit rounded-xl border border-emerald-300/30 bg-emerald-400/10 px-4 py-2 text-sm font-bold text-emerald-200 backdrop-blur transition-colors hover:bg-emerald-400/20"
                 >
                   Explore Dang →
@@ -384,7 +384,7 @@ export default function Home() {
                 {narmada.headline}
               </p>
               <Link
-                href="/spots#narmada"
+                href="/districts/narmada"
                 className="mt-5 inline-block w-fit rounded-xl border border-amber-300/30 bg-amber-400/10 px-4 py-2 text-sm font-bold text-amber-200 backdrop-blur transition-colors hover:bg-amber-400/20"
               >
                 Explore Narmada →

@@ -1,0 +1,199 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { FadeIn } from "@/components/fade-in";
+import { SpotCard } from "@/components/spot-card";
+import { MONTHS } from "@/lib/format";
+import { getDistrict, getEvents, getFoods, getSpotById, toCardData } from "@/lib/data";
+
+type Params = Promise<{ id: string }>;
+
+export function generateStaticParams() {
+  return [{ id: "dang" }, { id: "narmada" }];
+}
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const { id } = await params;
+  if (id !== "dang" && id !== "narmada") return {};
+  const d = getDistrict(id);
+  return { title: `${d.name.en} District`, description: d.headline };
+}
+
+const RAIN_STYLE: Record<string, string> = {
+  none: "bg-stone-600",
+  low: "bg-sky-400",
+  moderate: "bg-blue-400",
+  heavy: "bg-cyan-300",
+};
+
+export default async function DistrictPage({ params }: { params: Params }) {
+  const { id } = await params;
+  if (id !== "dang" && id !== "narmada") notFound();
+  const d = getDistrict(id);
+  const events = getEvents().filter((e) => d.festivals.includes(e.id));
+  const foods = getFoods().filter((f) => d.foods.includes(f.id));
+  const accent = id === "dang" ? "text-emerald-300" : "text-amber-300";
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-14">
+      <p className={`text-[11px] font-semibold uppercase tracking-[0.3em] ${accent}`}>
+        District · Gujarat
+      </p>
+      <h1 className="mt-2 font-serif text-6xl font-black italic tracking-tight text-stone-50 sm:text-7xl">
+        {d.name.en}
+      </h1>
+      <p className="mt-3 max-w-2xl text-lg leading-relaxed text-stone-400">{d.headline}</p>
+
+      {/* Overview */}
+      <FadeIn>
+        <section className="mt-10 max-w-3xl">
+          {d.overview.split("\n\n").map((p, i) => (
+            <p key={i} className="mt-4 leading-relaxed text-stone-300 first:mt-0">
+              {p}
+            </p>
+          ))}
+        </section>
+      </FadeIn>
+
+      {/* Hero spots */}
+      <FadeIn>
+        <section className="mt-14">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+            The essentials
+          </h2>
+          <div className="group/cards mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {d.hero_spots.map((sid) => {
+              const spot = getSpotById(sid);
+              return spot ? <SpotCard key={sid} spot={toCardData(spot)} /> : null;
+            })}
+          </div>
+          <Link
+            href={`/spots#${id}`}
+            className="mt-5 inline-block text-sm font-semibold text-emerald-300 hover:text-emerald-200"
+          >
+            All {d.name.en} spots →
+          </Link>
+        </section>
+      </FadeIn>
+
+      {/* Weather */}
+      <FadeIn>
+        <section className="mt-14">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+            The year, month by month
+          </h2>
+          <div className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-4 lg:grid-cols-6">
+            {d.weather_by_month.map((w) => (
+              <div
+                key={w.month}
+                className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-3 text-center"
+                title={w.notes ?? undefined}
+              >
+                <p className="text-[10px] font-bold uppercase tracking-widest text-stone-500">
+                  {MONTHS[w.month - 1]}
+                </p>
+                <p className="mt-1 text-sm font-semibold text-stone-200">
+                  {w.temp_min_c}–{w.temp_max_c}°
+                </p>
+                <p className="mt-1.5 flex items-center justify-center gap-1 text-[10px] text-stone-500">
+                  <span className={`inline-block h-1.5 w-1.5 rounded-full ${RAIN_STYLE[w.rain]}`} />
+                  {w.rain}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 text-sm text-stone-500">{d.best_season}</p>
+        </section>
+      </FadeIn>
+
+      {/* Getting there + practical */}
+      <FadeIn>
+        <section className="mt-14 grid gap-4 lg:grid-cols-2">
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              Getting there
+            </h2>
+            <div className="mt-4 space-y-2.5 text-sm leading-relaxed text-stone-400">
+              <p><strong className="font-semibold text-stone-200">Road · </strong>{d.getting_there.road}</p>
+              <p><strong className="font-semibold text-stone-200">Rail · </strong>{d.getting_there.rail}</p>
+              <p><strong className="font-semibold text-stone-200">Air · </strong>{d.getting_there.air}</p>
+              <p><strong className="font-semibold text-stone-200">On the ground · </strong>{d.local_transport}</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-teal-300">
+              Know before you go
+            </h2>
+            <ul className="mt-4 space-y-2.5 text-sm leading-snug text-stone-300">
+              {d.tips.map((t) => (
+                <li key={t} className="flex gap-2">
+                  <span className="text-teal-400">→</span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 border-t border-white/[0.06] pt-3 text-xs text-stone-500">
+              Emergency: {d.emergency.police} · Ambulance {d.emergency.ambulance} ·{" "}
+              {d.emergency.hospitals[0]}
+            </p>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Festivals */}
+      {events.length > 0 && (
+        <FadeIn>
+          <section className="mt-14">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-amber-300">
+              When {d.name.en} celebrates
+            </h2>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              {events.map((e) => (
+                <div key={e.id} className="rounded-2xl border border-amber-400/10 bg-gradient-to-br from-amber-400/[0.06] to-transparent p-5">
+                  <div className="flex items-center gap-2 text-[11px]">
+                    <span className="rounded-full bg-amber-400/10 px-2 py-0.5 font-bold uppercase tracking-wide text-amber-300 ring-1 ring-amber-400/25">
+                      {e.type}
+                    </span>
+                    <span className="text-stone-500">
+                      {e.timing.typical_months.map((m) => MONTHS[m - 1]).join(" · ")}
+                    </span>
+                  </div>
+                  <h3 className="mt-2 font-serif text-xl font-black text-stone-100">{e.name.en}</h3>
+                  <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-stone-400">
+                    {e.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <Link href="/events" className="mt-5 inline-block text-sm font-semibold text-amber-300 hover:text-amber-200">
+              All events →
+            </Link>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* Food */}
+      {foods.length > 0 && (
+        <FadeIn>
+          <section className="mt-14">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-rose-300">
+              Eat like a local
+            </h2>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {foods.map((f) => (
+                <span
+                  key={f.id}
+                  title={f.description}
+                  className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-sm text-stone-300"
+                >
+                  {f.veg ? "🌿" : "🍗"} {f.name.en}
+                  {f.season && <span className="ml-1.5 text-[10px] text-stone-500">({f.season.split("(")[0].trim().split(";")[0]})</span>}
+                </span>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
+      )}
+    </div>
+  );
+}

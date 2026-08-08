@@ -124,6 +124,34 @@ export interface District {
   tips: string[];
 }
 
+export interface EventRec {
+  id: string;
+  slug: string;
+  name: LangText;
+  type: "festival" | "fair" | "show" | "season-window";
+  district: "dang" | "narmada";
+  spot_id: string | null;
+  place: string | null;
+  timing: { recurrence: string; typical_months: number[]; duration_days: number | null };
+  description: string;
+  scale: "local" | "regional" | "national";
+  crowd_impact: string | null;
+  tips: string[];
+}
+
+export interface Food {
+  id: string;
+  slug: string;
+  name: LangText;
+  type: string;
+  veg: boolean;
+  districts: string[];
+  description: string;
+  where_to_try: { name: string; place: string }[];
+  season: string | null;
+  cultural_note: string | null;
+}
+
 export interface ItineraryStop {
   day: number;
   order: number;
@@ -185,7 +213,21 @@ export function getDistrict(id: "dang" | "narmada"): District {
 }
 
 export function getItineraries(): Itinerary[] {
-  return readDir<Itinerary>("itineraries");
+  return readDir<Itinerary>("itineraries").sort((a, b) => a.duration_days - b.duration_days || a.title.localeCompare(b.title));
+}
+
+export function getItinerary(slug: string): Itinerary | undefined {
+  return getItineraries().find((i) => i.slug === slug);
+}
+
+export function getEvents(): EventRec[] {
+  return readDir<EventRec>("events").sort(
+    (a, b) => (a.timing.typical_months[0] ?? 13) - (b.timing.typical_months[0] ?? 13)
+  );
+}
+
+export function getFoods(): Food[] {
+  return readDir<Food>("food").sort((a, b) => a.name.en.localeCompare(b.name.en));
 }
 
 export { MONTHS, formatMonths, categoryLabel } from "./format";

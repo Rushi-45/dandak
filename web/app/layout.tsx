@@ -38,14 +38,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               >
                 dandak
               </Link>
-              <nav className="flex items-center gap-5 text-sm text-stone-400">
+              <nav className="flex items-center gap-4 text-sm text-stone-400 sm:gap-5">
                 <Link href="/spots" className="transition-colors hover:text-emerald-300">
-                  All spots
+                  Spots
                 </Link>
-                <Link href="/spots#dang" className="transition-colors hover:text-emerald-300">
+                <Link href="/itineraries" className="transition-colors hover:text-emerald-300">
+                  Trips
+                </Link>
+                <Link href="/events" className="transition-colors hover:text-emerald-300">
+                  Events
+                </Link>
+                <Link href="/districts/dang" className="hidden transition-colors hover:text-emerald-300 sm:block">
                   Dang
                 </Link>
-                <Link href="/spots#narmada" className="transition-colors hover:text-emerald-300">
+                <Link href="/districts/narmada" className="hidden transition-colors hover:text-emerald-300 sm:block">
                   Narmada
                 </Link>
               </nav>
