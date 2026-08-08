@@ -76,8 +76,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 carry confidence levels; verify volatile details before you travel.
               </p>
               <p className="mt-2 px-4 text-[11px] text-stone-600">
-                Photography: Vijay Barot, Dinesh Valke, JB Kalola, Vijayakumarblathur — CC BY-SA via
-                Wikimedia Commons.
+                Photography by contributors on Wikimedia Commons (CC BY / CC BY-SA) — credited and
+                linked on every image.
               </p>
             </div>
           </footer>
