@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "dang-saputara-lake",
+  "slug": "saputara-lake",
+  "name": { "en": "Saputara Lake" },
+  "aliases": ["Saputara Boat Club"],
+  "category": "lake",
+  "subcategories": [],
+  "tags": ["popular", "family", "boating", "picnic", "evening", "summer-escape"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Saputara's centrepiece — a calm hilltop lake with pedal and row boating, garden-lined banks, and the town's liveliest evening scene.",
+  "description": "Saputara Lake sits at the heart of Gujarat's only hill station, a man-made waterbody ringed by gardens, snack stalls and the low wooded hills of the Sahyadris. Almost every Saputara itinerary begins or ends here: mornings are quiet enough for a lakeside walk, while evenings bring boat queues, candy-floss vendors and families out for the cool air that made this town a summer refuge in the first place.\n\nThe boat club on the eastern bank runs pedal boats and rowing boats in fair weather, and the flat promenade makes for an easy loop on foot. The Lake Garden and Nageshwar Mahadev temple sit right on the shore, so the lake works well as an anchor — park once and cover three or four sights on foot. Water levels are highest and the surrounding green most vivid from July through November; in peak summer the lake shrinks but the town's climate stays kinder than the plains below.\n\nExpect real crowds on May weekends, Diwali week and around Christmas–New Year, when boating queues can stretch past half an hour. If you want the lake to yourself, come before 09:00.",
+  "highlights": [
+    "Pedal and row boating on a hilltop lake",
+    "Flat lakeside promenade linking gardens and temple",
+    "Liveliest spot in town after sunset",
+    "Coolest escape in Gujarat through May–June"
+  ],
+  "history_legend": null,
+  "attributes": { "origin": "man-made", "boating": true },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.5712, "lng": 73.755, "precision": "approximate" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 1, "ahwa": 50, "nashik": 80, "surat": 160, "mumbai": 250 }
+  },
+  "access": {
+    "modes": {
+      "road": "In the centre of Saputara town; the hill station is reached via the Waghai ghat road from Gujarat or via Nashik from Maharashtra",
+      "rail": "Bilimora Jn (~110 km) is the nearest broad-gauge railhead; the Bilimora–Waghai heritage narrow gauge runs on limited days",
+      "air": "Surat (~160 km) and Nashik (~90 km) are the practical airports"
+    },
+    "last_mile": "Walk-in from the town's main road; the promenade is flat and paved",
+    "road_condition": "Good tarred town roads; ghat sections approaching Saputara are winding but well maintained",
+    "parking": { "available": true, "fee": null, "notes": "Public parking near the boat club; fills up on holiday weekends" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [
+      { "type": "boating", "amount_inr": 150, "note": "Indicative per-boat rate for ~30 min; varies by boat type and season" }
+    ],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "The lakefront is an open area; boating counters run roughly 09:00–18:00 and pause in heavy rain or low water."
+  },
+  "seasonality": {
+    "best_months": [5, 7, 8, 9, 10, 11, 12],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Pleasant year-round: May brings summer-holiday crowds, monsoon turns the hills deep green, December–January is coolest."
+  },
+  "experience": {
+    "activities": ["boating", "picnic", "photography", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Late-afternoon light hits the boats against the wooded ridge; monsoon mornings give still reflections before the breeze picks up."
+  },
+  "amenities": {
+    "food": "Snack stalls and juice vendors on the promenade; proper restaurants along the main road and in hotels within 1 km",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Stay off the lake edge outside railed sections, especially with children",
+      "Life jackets are provided for boating — insist on them"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Park once near the boat club and cover Lake Garden and Nageshwar temple on foot",
+    "Boating queues on holiday weekends run 30+ minutes — go before 10:00",
+    "Carry a light jacket after sunset even in summer"
+  ],
+  "faqs": [
+    {
+      "q": "Is boating open during monsoon?",
+      "a": "Usually yes, but counters pause during heavy rain and when water levels are unsafe. Mornings are more reliable than evenings in July–August."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-lake-garden", "distance_km": 0.3 },
+    { "id": "dang-nageshwar-mahadev-temple", "distance_km": 0.5 },
+    { "id": "dang-pushpak-ropeway", "distance_km": 0.8 },
+    { "id": "dang-sunset-point", "distance_km": 2.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Saputara Lake — Boating & Lakefront Guide",
+    "meta_description": "Boating rates, timings, best season and crowd tips for Saputara Lake, the lakeside heart of Gujarat's only hill station."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km", "access.parking.fee"]
+  }
+}

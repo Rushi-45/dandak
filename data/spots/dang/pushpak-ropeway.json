@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "dang-pushpak-ropeway",
+  "slug": "pushpak-ropeway",
+  "name": { "en": "Pushpak Ropeway" },
+  "aliases": ["Saputara Ropeway", "Saputara Cable Car"],
+  "category": "adventure",
+  "subcategories": ["ropeway"],
+  "tags": ["popular", "family", "adventure", "photography"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Saputara's cable car glides from the lake side across the valley to the Sunset Point ridge — ten scenic minutes each way.",
+  "description": "The Pushpak ropeway is Saputara's signature ride: small gondolas strung across the valley between the lake side and the ridge near Sunset Point. The crossing takes around ten minutes each way, and the mid-span view — lake on one side, wooded valley dropping away on the other — is one most visitors would otherwise never see.\n\nFor many, the ropeway doubles as transport: it is the easy way to reach Sunset Point without the stepped climb, which makes it popular with older visitors and families with small children. Queues build in the hour before sunset and through May and Diwali holidays; mid-morning rides are walk-on. Cabins pause in high wind and during lightning, which mostly matters in June–July.\n\nBuy a return ticket unless you specifically plan to walk down the Sunset Point steps — a pleasant descent of twenty-odd minutes that pairs well with a one-way ride up.",
+  "highlights": [
+    "Mid-air view over Saputara lake and valley",
+    "Easiest access to Sunset Point for elderly visitors",
+    "About ten minutes each way"
+  ],
+  "history_legend": null,
+  "attributes": { "price_range_inr": "100-200", "season": "Year-round; pauses in high wind and storms" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 1 },
+    "coordinates": { "lat": 20.5725, "lng": 73.753, "precision": "approximate" },
+    "altitude_m": 980,
+    "distances_km": { "saputara": 1, "nashik": 80, "surat": 160 }
+  },
+  "access": {
+    "modes": {
+      "road": "Lower station is on the lake side of Saputara town, walkable from most hotels",
+      "rail": "Bilimora Jn (~110 km); Nashik Road (~85 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in; short stair sections at both stations",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": null, "notes": "Shared public parking near the lake" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative; extended on peak evenings, suspended in bad weather" }],
+    "fees": [{ "type": "ropeway", "amount_inr": 150, "note": "Indicative return fare per adult; revised periodically" }],
+    "booking": { "required": false, "url": null, "notes": "Tickets at the counter; no advance booking" },
+    "duration_min": 45,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Ride before the pre-sunset rush unless you want to reach Sunset Point exactly at golden hour."
+  },
+  "seasonality": {
+    "best_months": [5, 7, 8, 9, 10, 11, 12],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Monsoon rides cross low cloud on good days; June–July has the most weather suspensions."
+  },
+  "experience": {
+    "activities": ["ropeway-ride", "sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Shoot through the front-facing window at mid-span; afternoon light keeps the lake side unshadowed."
+  },
+  "amenities": {
+    "food": "Kiosks near the lower station; snack vendors at the ridge",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Service suspends in high wind or lightning — do not count on the last ride down in stormy weather",
+      "Hold children's hands on the boarding platform"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Take the ropeway up and walk the Sunset Point steps down",
+    "Holiday queues peak 16:00–18:00; mornings are walk-on"
+  ],
+  "faqs": [
+    {
+      "q": "Does the ropeway run in the rain?",
+      "a": "Light rain yes, storms no. Operations pause for high wind and lightning, most often in June–July. Keep a backup plan for reaching Sunset Point by road and steps."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.8 },
+    { "id": "dang-sunset-point", "distance_km": 1.5, "note": "Upper station is close to the ridge" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Pushpak Ropeway, Saputara — Cable Car Guide",
+    "meta_description": "Fares, timings and queue tips for Saputara's Pushpak ropeway — the scenic cable-car link between the lake and Sunset Point."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "attributes.price_range_inr", "location.coordinates"]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-table-point",
+  "slug": "table-point",
+  "name": { "en": "Table Point" },
+  "aliases": ["Table Land, Saputara"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["popular", "family", "picnic", "photography", "nature"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A flat hilltop meadow on Saputara's rim with wide valley views, pony rides and snack stalls — the easiest family stop in town.",
+  "description": "Table Point is exactly what the name says: a broad, flat shelf of grassland on the edge of the Saputara plateau, big enough to absorb bus-loads of visitors without feeling cramped. The open side falls away into the valley toward the Maharashtra border, giving a long, uninterrupted view that is especially green between July and November.\n\nThis is Saputara at its most relaxed — pony rides and photo-prop vendors in season, kids running on the flat grass, and families spreading out snacks bought from the stalls that line the parking side. There is no climb and no entry gate, which makes it the default stop for anyone travelling with grandparents or toddlers. Photographers get more from the far edge, away from the stalls, where the meadow meets the drop.\n\nCome in the golden hour before sunset if you want the view at its best without committing to the Sunset Point crowds; monsoon afternoons bring rolling cloud through the gap that can be its own show.",
+  "highlights": [
+    "Flat, walkable meadow — zero climbing",
+    "Long valley views toward the Maharashtra border",
+    "Pony rides and stalls make it an easy kids' stop"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "valley" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "coordinates": { "lat": 20.58, "lng": 73.766, "precision": "approximate" },
+    "altitude_m": 990,
+    "distances_km": { "saputara": 2, "ahwa": 48, "nashik": 82 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the Saputara rim road ~2 km from the town centre; all local sightseeing circuits include it",
+      "rail": "Bilimora Jn (~110 km); Nashik Road (~85 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Level walk-in from the parking area",
+    "road_condition": "Good tarred road",
+    "parking": { "available": true, "fee": null, "notes": "Large informal lot; fills on holiday afternoons" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Open meadow; pony rides and stalls operate roughly 09:00 to sunset in season."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Greenest July–November; clear long views December–February; hazier by late spring."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Walk to the far edge past the stalls for clean frames; golden hour flatters the valley layers."
+  },
+  "amenities": {
+    "food": "Snack and corn stalls at the parking side in season",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Keep children away from the unfenced drop at the meadow's far edge",
+      "Ground gets slippery after rain near the rim"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~48 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Combine with Sunrise Point and Echo Point — all three sit on the same stretch",
+    "Late afternoon gives the best light without Sunset Point's crowds"
+  ],
+  "faqs": [
+    {
+      "q": "Is Table Point wheelchair friendly?",
+      "a": "Mostly yes by Saputara standards — parking opens straight onto flat grass. The ground is natural meadow, so assistance helps after rain."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-sunrise-point", "distance_km": 1.5 },
+    { "id": "dang-echo-point", "distance_km": 1 },
+    { "id": "dang-saputara-lake", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Table Point, Saputara — Flat-Top Valley Views",
+    "meta_description": "Saputara's easiest viewpoint: a flat hilltop meadow with valley views, pony rides and stalls. Access, timing and family tips."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
+  }
+}

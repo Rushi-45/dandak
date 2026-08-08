@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "dang-sunset-point",
+  "slug": "sunset-point",
+  "name": { "en": "Sunset Point (Gandhi Shikhar)" },
+  "aliases": ["Gandhi Shikhar", "Sunset Point Saputara"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["sunset", "popular", "photography", "family", "nature"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Saputara's classic evening ritual — a west-facing ridge reached by ropeway or a stepped climb, with layered Sahyadri views at dusk.",
+  "description": "Sunset Point, also called Gandhi Shikhar, is the ridge where Saputara gathers every clear evening. The drop-off faces west over a broad sweep of the Sahyadri foothills, and on good days the ranges recede in three or four visible layers before the sun goes down between them. It is the single most photographed frame in the town.\n\nThere are two ways up: the Pushpak ropeway glides across the valley from near the lake and deposits you close to the top, or a stepped path climbs from the road in twenty to thirty minutes at an easy pace. Most visitors ride up and walk down. The viewing area has railings, a few snack vendors in season, and enough space that even weekend crowds spread out — though the prime railing spots go fast in the last half hour before sunset.\n\nMonsoon evenings are a gamble: cloud can swallow the view entirely, or break open into the best light of the year. October to February gives the most reliable sightlines, with the post-monsoon green still on the hills through November.",
+  "highlights": [
+    "Widest west-facing view in Saputara",
+    "Reachable by ropeway or a 20–30 min stepped climb",
+    "Ranges visible in receding layers on clear days"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "sunset" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "coordinates": { "lat": 20.568, "lng": 73.741, "precision": "approximate" },
+    "altitude_m": 1000,
+    "distances_km": { "saputara": 2.5, "nashik": 80, "surat": 160 }
+  },
+  "access": {
+    "modes": {
+      "road": "Short drive or auto from Saputara town to the base of the steps; the ropeway lower station is near the lake",
+      "rail": "Bilimora Jn (~110 km); Nashik Road (~85 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Ropeway to the top, or a stepped 20–30 min climb from the road; final viewing area is a short flat walk",
+    "road_condition": "Good town roads to both base points",
+    "parking": { "available": true, "fee": null, "notes": "Roadside parking at the steps; limited space near sunset time" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Open ridge with no gates; the ropeway keeps its own hours (roughly 09:00–18:00) and stops in high wind."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Clearest sunsets October–February; monsoon evenings can white out entirely or turn spectacular after a shower."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "ropeway-ride"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Arrive 45 min before sunset for the layered-ridge shots; a short telephoto compresses the ranges better than a wide lens."
+  },
+  "amenities": {
+    "food": "Seasonal snack vendors at the top; proper food back in town",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Head back before dark — the stepped path has no lighting",
+      "Do not climb beyond the railings for photos"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Ride the ropeway up and walk down for the best of both",
+    "Elderly visitors should prefer the ropeway — the steps are steady but long",
+    "Weekend railing spots fill 30–40 min before sunset"
+  ],
+  "faqs": [
+    {
+      "q": "Can I see the sunset in monsoon?",
+      "a": "It is hit or miss — cloud cover often blocks the horizon in July–August, but post-shower breaks can be dramatic. October onward is far more reliable."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-pushpak-ropeway", "distance_km": 1.5, "note": "Ropeway connects the lake side to this ridge" },
+    { "id": "dang-saputara-lake", "distance_km": 2.5 },
+    { "id": "dang-echo-point", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Sunset Point (Gandhi Shikhar), Saputara — Guide",
+    "meta_description": "How to reach Saputara's Sunset Point by ropeway or steps, the best months for clear views, and photography timing tips."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km", "visit.notes"]
+  }
+}

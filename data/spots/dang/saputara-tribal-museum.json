@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "dang-saputara-tribal-museum",
+  "slug": "saputara-tribal-museum",
+  "name": { "en": "Saputara Tribal Museum" },
+  "aliases": ["Saputara Museum"],
+  "category": "museum",
+  "subcategories": [],
+  "tags": ["tribal-culture", "heritage", "history", "family"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Compact museum of Dangi life — masks, instruments, house models and household tools that decode the villages you drive past in Dang.",
+  "description": "The Tribal Museum near Saputara's bus stand is small, old-fashioned and genuinely useful: an hour here reframes the rest of a Dang trip. Its galleries collect the material culture of the district's communities — Bhil, Kunbi, Warli and others — through wedding costumes, dance masks, bamboo and gourd instruments, fishing traps, agricultural tools, and scaled models of traditional homesteads.\n\nThe displays are captioned simply, and the collection's strength is its specificity: the same drum shapes, grain stores and carved house-posts appear in living villages along the Ahwa and Waghai roads once you know to look. Sections on Dangi festivals give context for the Dang Darbar held at Ahwa each year before Holi.\n\nIt is an indoor, level visit that works in any weather — a sensible slot for a rainy monsoon hour or the hot early afternoon. Photography rules vary by gallery; ask at the counter.",
+  "highlights": [
+    "Masks, instruments and costumes of Dang's communities",
+    "Models of traditional Dangi homesteads",
+    "All-weather indoor stop near the bus stand"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.5755, "lng": 73.7595, "precision": "approximate" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 0.5, "ahwa": 50, "surat": 160 }
+  },
+  "access": {
+    "modes": {
+      "road": "In Saputara town near the bus stand; walkable from the lake and most hotels",
+      "rail": "Bilimora Jn (~110 km); Nashik Road (~85 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in from the road; ground-level galleries",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Street parking nearby" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "10:30", "close": "17:30", "note": "Indicative government-museum hours; lunch-break closures possible" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Nominal; revised periodically" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Public-holiday closures follow the government museum calendar."
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Indoor and season-proof — the standard rainy-hour stop in Saputara."
+  },
+  "experience": {
+    "activities": ["museum-visit"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Gallery photography rules vary — ask at the counter before shooting."
+  },
+  "amenities": {
+    "food": "None inside; tea and snack shops within a short walk",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Staff sometimes walk visitors through on quiet days",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Visit before exploring interior Dang — the exhibits make village details legible",
+    "Pairs well with the Artist Village for crafts you can actually buy"
+  ],
+  "faqs": [
+    {
+      "q": "How long does the museum take?",
+      "a": "45 minutes to an hour covers it comfortably; add time if you read every caption."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.5 },
+    { "id": "dang-artist-village", "distance_km": 1 },
+    { "id": "dang-step-garden", "distance_km": 0.7 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Saputara Tribal Museum — Dangi Culture in an Hour",
+    "meta_description": "What's inside Saputara's Tribal Museum: Dangi masks, instruments and house models. Timings, fee and visit tips."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "visit.weekly_closure", "location.coordinates"]
+  }
+}

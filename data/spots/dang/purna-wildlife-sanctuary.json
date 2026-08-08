@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "dang-purna-wildlife-sanctuary",
+  "slug": "purna-wildlife-sanctuary",
+  "name": { "en": "Purna Wildlife Sanctuary" },
+  "aliases": ["Purna Sanctuary", "Mahal Forest"],
+  "category": "wildlife",
+  "subcategories": ["sanctuary"],
+  "tags": ["wildlife", "nature", "birding", "offbeat", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Dense teak-and-bamboo forest on the Purna river — one of Gujarat's rainiest tracts, with forest drives, trails and the Mahal campsite at its heart.",
+  "description": "Purna Wildlife Sanctuary protects a big block of moist deciduous forest around the Purna river in northern Dang — by most measures the wettest, densest forest tract in Gujarat. Towering teak, huge bamboo brakes and a closed canopy give it a feel closer to the Western Ghats than anything else in the state.\n\nWildlife here is heard more than seen: leopard, hyena and jungle cat move through, but realistic sightings are barking deer, four-horned antelope, wild boar, giant squirrels, and a strong bird list — hornbills, woodpeckers, raptors and winter migrants. The experience is the forest itself: drives on the internal roads, guided walks around Mahal, and the river running brown in monsoon and clear in winter. The Mahal eco-campsite deep inside the sanctuary is the natural base, with forest-department cottages and tents.\n\nEntry works via forest-department permits at the range gates, with local guides assigned for walks. Seasonal closures apply — the core is typically restricted during peak monsoon — so check before building a trip around it.",
+  "highlights": [
+    "Gujarat's densest, rainiest forest tract",
+    "Teak and giant bamboo under a closed canopy",
+    "Strong birding: hornbills to winter migrants",
+    "Mahal eco-campsite as an in-forest base"
+  ],
+  "history_legend": null,
+  "attributes": { "area_km2": 160, "key_species": ["leopard", "four-horned antelope", "barking deer", "giant squirrel", "grey hornbill"], "entry_permit": "Forest-department permit at range gates" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 30 },
+    "coordinates": { "lat": 20.93, "lng": 73.7, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 30, "waghai": 45, "saputara": 80, "surat": 140 }
+  },
+  "access": {
+    "modes": {
+      "road": "Entry via the Mahal road from Ahwa or from the Waghai side; internal forest roads are unpaved",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~140 km)"
+    },
+    "last_mile": "Forest tracks to Mahal; walks are guided from the campsite/range office",
+    "road_condition": "Approach tarred; internal roads dirt — slow, and slippery in rain",
+    "parking": { "available": true, "fee": 0, "notes": "At Mahal campsite and range gates" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "07:00", "close": "18:00", "note": "Daylight entry via permit gates; indicative" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative per-head/vehicle permit combination; guide fees separate — confirm at range office" }],
+    "booking": { "required": false, "url": null, "notes": "Day entry at the gate; Mahal campsite stays book via the forest department" },
+    "duration_min": 240,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Core-area access is typically restricted in peak monsoon (roughly mid-June to September) — verify current rules before planning."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "October–March is prime: open roads, active birdlife, comfortable walking. Monsoon transforms the forest but limits access."
+  },
+  "experience": {
+    "activities": ["safari", "jungle-trail", "birdwatching", "nature-walk", "photography", "camping"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Forest is dark under canopy — fast lenses or high ISO; winter mornings give mist over the Purna for landscape frames."
+  },
+  "amenities": {
+    "food": "Meals at Mahal campsite when booked; otherwise carry food — Ahwa has the nearest restaurants",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Local guides assigned at the gate/campsite; mandatory for walks",
+    "ev_charging": false,
+    "stay_nearby": ["dang-mahal-eco-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Stay with your guide on all walks — this is leopard country",
+      "No off-track driving; exit the sanctuary before dark",
+      "Leeches are standard issue in and just after monsoon"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~30 km)", "police": "Ahwa PS; forest range office Mahal", "notes": null }
+  },
+  "tips": [
+    "Book Mahal campsite ahead and build the day around a dawn walk",
+    "Pair with Girmal Falls — the road onward is one of Dang's best forest drives",
+    "Winter nights get cold in the forest; pack accordingly"
+  ],
+  "faqs": [
+    {
+      "q": "Will I see a leopard?",
+      "a": "Very unlikely — they're present but shy. Come for the forest, the birds and the deer; treat any big-cat pugmarks your guide finds as the win."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-mahal-eco-campsite", "distance_km": 5 },
+    { "id": "dang-girmal-falls", "distance_km": 25 },
+    { "id": "dang-shabari-dham", "distance_km": 25 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Purna Wildlife Sanctuary, Dang — Forest Guide",
+    "meta_description": "Permits, season, Mahal campsite and what wildlife to expect in Purna sanctuary — Gujarat's densest forest, in the Dang hills."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "visit.notes", "attributes.area_km2", "location.coordinates"]
+  }
+}

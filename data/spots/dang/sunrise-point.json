@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-sunrise-point",
+  "slug": "sunrise-point",
+  "name": { "en": "Sunrise Point (Valley View Point)" },
+  "aliases": ["Valley View Point"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["sunrise", "photography", "nature", "family"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "East-facing viewpoint a short drive from Saputara town where the valley fills with dawn mist — the quiet counterpart to Sunset Point.",
+  "description": "Valley View Point, better known as Sunrise Point, sits on the eastern rim of the Saputara plateau off the Ahwa road. Where Sunset Point draws the crowds, this one rewards the few who set an alarm: on winter and post-monsoon mornings the valley below holds a sheet of mist that burns off as the sun clears the far ridge, and for twenty minutes the light does most of the work for any camera.\n\nThe point is a short walk from the roadside parking — a few minutes on a rough but easy path to a railed ledge. Even outside dawn hours it is a worthwhile stop for the valley panorama, and it stays pleasant through the day because the crowds concentrate elsewhere. Combine it with Table Point and Echo Point, which lie along the same stretch, for an easy morning loop before breakfast in town.\n\nCarry a layer: pre-dawn temperatures on the rim run several degrees below the town, and the breeze is steady.",
+  "highlights": [
+    "Dawn mist pooling in the eastern valley",
+    "Five-minute walk from roadside parking",
+    "Far quieter than Sunset Point"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "sunrise" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "coordinates": { "lat": 20.583, "lng": 73.772, "precision": "approximate" },
+    "altitude_m": 990,
+    "distances_km": { "saputara": 2.5, "ahwa": 48, "nashik": 82 }
+  },
+  "access": {
+    "modes": {
+      "road": "Off the Saputara–Ahwa road, ~2–3 km from the town centre; autos and taxis do early-morning drops",
+      "rail": "Bilimora Jn (~110 km); Nashik Road (~85 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "~5 min walk from roadside parking on an uneven but easy path",
+    "road_condition": "Good tarred road; the short approach path is rough dirt",
+    "parking": { "available": true, "fee": 0, "notes": "Informal roadside pull-off" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 45,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Open point, no gates; aim to arrive 20 minutes before sunrise."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Mist effects are best October–January; monsoon mornings are often fully clouded."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "The mist shot needs you in place before first light; a graduated filter or exposure bracketing helps against the bright east sky."
+  },
+  "amenities": {
+    "food": "None at the point; tea stalls open in town from ~07:00",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "The approach path is uneven — use a phone torch before dawn",
+      "Stay behind the railing; the ledge drops sharply"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~48 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Pair with Table Point and Echo Point for a pre-breakfast loop",
+    "Winter dawns are cold — carry a proper layer, not just a shawl"
+  ],
+  "faqs": [
+    {
+      "q": "Is it worth going if I miss sunrise?",
+      "a": "Yes — the valley panorama holds up all day and the point stays quiet. But the mist, the main event, is gone by mid-morning."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-table-point", "distance_km": 1.5 },
+    { "id": "dang-echo-point", "distance_km": 2 },
+    { "id": "dang-saputara-lake", "distance_km": 2.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Sunrise Point (Valley View), Saputara — Guide",
+    "meta_description": "Timing, access and photography notes for Saputara's Sunrise Point — dawn mist over the eastern valley, minutes from town."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km"]
+  }
+}

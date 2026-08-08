@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-waghai-botanical-garden",
+  "slug": "waghai-botanical-garden",
+  "name": { "en": "Waghai Botanical Garden" },
+  "aliases": ["Botanical Garden Waghai"],
+  "category": "garden",
+  "subcategories": ["botanical"],
+  "tags": ["nature", "family", "birding", "picnic", "photography"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "A large forest-department botanical campus at Waghai — labelled native trees, bamboo groves and shaded walks at the foot of the Dang hills.",
+  "description": "Waghai's botanical garden is one of Gujarat's largest, a forest-department campus laid out where the plains meet the first Dang slopes. Its sections read like a catalogue of the region's flora: native timber species with name-plates, a substantial bamboo collection, medicinal and aromatic plant beds, palms, and old shade trees over lawns that invite an unhurried loop rather than a checklist march.\n\nFor travellers, it works on two levels. Botanically inclined visitors can spend half a day with the labels and the interpretation displays; everyone else gets a green, quiet, level walk of an hour or so — welcome on a hot afternoon, and busy with birdlife early in the morning. The garden sits minutes from Gira Falls and the Kilad campsite, so the three make a natural Waghai half-day before or after the ghat climb to Saputara.\n\nMonsoon is the garden at its most alive, though paths get muddy; winter mornings are the comfortable sweet spot.",
+  "highlights": [
+    "One of Gujarat's largest botanical collections",
+    "Labelled native trees and a serious bamboo section",
+    "Level shaded walks; strong morning birdlife"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Waghai",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Waghai", "distance_km": 2 },
+    "coordinates": { "lat": 20.786, "lng": 73.505, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 2, "ahwa": 32, "saputara": 51, "surat": 104, "bilimora": 52 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the outskirts of Waghai town, just off the main road; buses on the Waghai routes stop close by",
+      "rail": "Waghai station (heritage narrow gauge, limited service); Bilimora Jn (~52 km)",
+      "air": "Surat (~104 km)"
+    },
+    "last_mile": "Level walk-in from the gate; internal paths are unpaved but even",
+    "road_condition": "Good tarred approach",
+    "parking": { "available": true, "fee": 0, "notes": "Lot at the gate" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Indicative forest-department hours" }],
+    "fees": [{ "type": "entry", "amount_inr": 20, "note": "Nominal; camera fees may apply — confirm at the gate" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Interpretation centre hours can be shorter than garden hours."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Lushest in monsoon (muddy paths), most comfortable November–February; hot and dusty by late spring."
+  },
+  "experience": {
+    "activities": ["nature-walk", "birdwatching", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Early light through the bamboo groves is the signature frame; macro subjects everywhere after rain."
+  },
+  "amenities": {
+    "food": "None inside; tea stalls and simple restaurants in Waghai town",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Forest staff occasionally available for groups — ask at the office",
+    "ev_charging": false,
+    "stay_nearby": ["dang-kilad-nature-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Leech protection helps on grass paths at monsoon peak",
+      "Carry water — the campus is bigger than it looks"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~2 km)", "police": "Waghai PS", "notes": null }
+  },
+  "tips": [
+    "Do the garden early, Gira Falls late morning, and lunch in Waghai",
+    "Birders should walk the riverside edge first thing after opening"
+  ],
+  "faqs": [
+    {
+      "q": "Is it worth stopping if I'm not into plants?",
+      "a": "As a shaded, level hour it earns its place on a hot day, and kids get space to run. If you're rushing to Saputara with limited time, Gira Falls is the higher-priority Waghai stop in monsoon."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-gira-falls", "distance_km": 5 },
+    { "id": "dang-kilad-nature-campsite", "distance_km": 3 },
+    { "id": "dang-vansda-national-park", "distance_km": 8 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Waghai Botanical Garden — Visit Guide",
+    "meta_description": "Timings, entry fee and what to see at Waghai Botanical Garden in Dang — bamboo groves, labelled native flora and shaded walks."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates", "location.distances_km"]
+  }
+}

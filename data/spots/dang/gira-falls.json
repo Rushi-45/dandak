@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "dang-gira-falls",
+  "slug": "gira-falls",
+  "name": { "en": "Gira Falls" },
+  "aliases": ["Gira Dhodh", "Gira Waterfall Waghai"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "popular", "photography", "nature", "family", "picnic"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "Dang's most visited waterfall — a broad ~30 m curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
+  "description": "Gira Falls is the waterfall most Gujarat travellers meet first: barely off the Waghai–Saputara road, a short walk from parking, and in full monsoon a genuinely loud, broad curtain of brown-white water dropping roughly thirty metres into the Ambika river system. Spray reaches the viewing area on big days, and the whole riverbed setting — black rock, red soil, forest on both banks — is classic Dang.\n\nThe approach is a flat walk of a few hundred metres from the roadside parking through seasonal stalls selling corn, lemon water and bhajiya. Viewing is from the riverbed and its rock shelves; there is no formal deck, so how close you get is judgement — and in July–August the safe answer is: not close. Flow peaks July to September, stays photogenic into November, and thins to a modest ribbon by January.\n\nBecause it is so accessible, weekends and holidays in monsoon get properly crowded by late morning. Come before 10:00 for space, or push deeper into Dang (Girmal) if you want falls without company.",
+  "highlights": [
+    "Broad ~30 m monsoon curtain minutes off the Waghai road",
+    "Flat few-hundred-metre walk from parking",
+    "Peak flow July–September, photogenic into November"
+  ],
+  "history_legend": null,
+  "attributes": { "height_m": 30, "river": "Ambika" },
+  "location": {
+    "taluka": "Waghai",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Waghai", "distance_km": 3 },
+    "coordinates": { "lat": 20.751, "lng": 73.533, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 3, "ahwa": 33, "saputara": 52, "surat": 105 }
+  },
+  "access": {
+    "modes": {
+      "road": "Signposted turn off the Waghai–Saputara road ~3 km from Waghai; approach lane to parking is narrow",
+      "rail": "Waghai station (heritage narrow gauge from Bilimora, limited service); Bilimora Jn (~55 km) for broad gauge",
+      "air": "Surat (~105 km)"
+    },
+    "last_mile": "Flat ~300–400 m walk from parking to the riverbed viewing area",
+    "road_condition": "Tarred; the last stretch is single-lane and slow on monsoon weekends",
+    "parking": { "available": true, "fee": null, "notes": "Informal lot managed locally in season" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Informal daylight access; no gates outside monsoon management" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "After exceptionally heavy rain, access to the riverbed may be barred for a day or two."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11],
+    "avoid_months": [3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Thunderous July–September; graceful October–November; a thin ribbon by late winter and mostly dry in summer."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Morning side-light works best; carry lens protection from spray in peak flow. The wide riverbed suits panoramas more than tight frames."
+  },
+  "amenities": {
+    "food": "Seasonal stalls along the approach path; proper meals in Waghai",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": ["dang-kilad-nature-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Do not enter the water or approach the fall base in monsoon — currents and undertows are lethal",
+      "Rock shelves are extremely slippery when wet",
+      "Watch for sudden flow surges after upstream rain"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~3 km)", "police": "Waghai PS", "notes": null }
+  },
+  "tips": [
+    "Arrive before 10:00 on monsoon weekends — crowds and parking chaos build fast",
+    "Combine with Waghai Botanical Garden and Kilad campsite for a half-day Waghai loop",
+    "October gives strong flow with far fewer people than August"
+  ],
+  "faqs": [
+    {
+      "q": "Can you bathe under Gira Falls?",
+      "a": "No. The riverbed looks inviting in lean months, but currents, submerged rocks and sudden surges have caused fatalities. Enjoy it from the rocks well back from the flow."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-waghai-botanical-garden", "distance_km": 5 },
+    { "id": "dang-kilad-nature-campsite", "distance_km": 4 },
+    { "id": "dang-vansda-national-park", "distance_km": 10 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Gira Falls, Waghai — Monsoon Guide",
+    "meta_description": "Gira Falls near Waghai: best months, access walk, safety and crowd tips for Dang's most visited monsoon waterfall."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.height_m", "visit.timings"]
+  }
+}
