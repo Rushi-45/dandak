@@ -41,17 +41,18 @@ body {
   -webkit-text-stroke: 1.5px rgba(231, 229, 228, 0.14);
 }
 
-/* Cinematic slow drift on hero imagery */
+/* Cinematic slow drift on hero imagery — top-anchored so heads never crop */
 @keyframes kenburns {
   0% {
-    transform: scale(1.02) translateY(0);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.14) translateY(-2%);
+    transform: scale(1.1);
   }
 }
 .animate-kenburns {
   animation: kenburns 28s ease-in-out infinite alternate;
+  transform-origin: 50% 6%;
   will-change: transform;
 }
 

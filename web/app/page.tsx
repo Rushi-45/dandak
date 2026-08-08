@@ -54,7 +54,7 @@ export default function Home() {
           placeholder="blur"
           fill
           sizes="100vw"
-          className="animate-kenburns object-cover object-[center_22%]"
+          className="animate-kenburns object-cover object-top"
         />
         {/* scrims */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#080c0b] via-[#080c0b]/45 to-[#080c0b]/20" />
