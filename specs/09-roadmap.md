@@ -17,6 +17,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Non-normative — aspirations 
 
 - **Framework:** Next.js (App Router). Spot/itinerary pages statically generated from `data/` (`generateStaticParams`); ISR refresh after verification sweeps. Owner is fluent in React/Next — velocity over framework purity.
 - **UI:** Tailwind; MapLibre GL over the GeoJSON export; client-side filters driven by the schema enums (category/tags/cluster/district).
+- **Animation:** Motion (formerly Framer Motion) — yes, for filter/card transitions, galleries and itinerary reveals. Guardrails: `LazyMotion` + `m` components, no above-the-fold animation on content pages, `MotionConfig reducedMotion="user"`, transform/opacity only.
 - **API:** Next.js route handlers reading the same JSON (later the SQLite export for query-shaped endpoints) — one repo, one deploy covers both declared consumers (D5).
 - **Hosting:** Vercel or Cloudflare free tier.
 - **User features (accounts/reviews/trip-saving):** stay deferred (D7); Supabase is the default candidate if/when they arrive.
