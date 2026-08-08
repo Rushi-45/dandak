@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "narmada-junaraj",
+  "slug": "junaraj",
+  "name": { "en": "Junaraj (Old Rajpipla)" },
+  "aliases": ["Juna Raj", "Old Rajpipla"],
+  "category": "fort",
+  "subcategories": [],
+  "tags": ["history", "offbeat", "trekking", "nature"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "The hill site of Rajpipla's original capital — scattered ruins in forested country south of the modern town, for history-minded explorers.",
+  "description": "Before Rajpipla was Rajpipla, the Gohil capital sat in the safer hill country to the south — Junaraj, 'the old realm', whose scattered remains (gate fragments, wall lines, temple and stepwell traces by local account) sit in forested terrain that has largely reclaimed them. The state shifted its seat to the present town centuries ago; the old site kept the name and lost the roofs.\n\nThis is an explorer's entry: what stands, how far one walks, and how findable the remains are all need ground verification, and local guidance from the nearest village is essential. The draw is atmosphere — capital-turned-forest — and the drive through genuinely pretty country beyond Karjan reservoir. Dry months only; expect nothing in the way of facilities, signage or company.",
+  "highlights": [
+    "Site of the Gohil dynasty's original hill capital",
+    "Ruins being reclaimed by forest",
+    "Explorer-grade outing beyond Karjan reservoir"
+  ],
+  "history_legend": "Rajpipla's Gohil rulers held their early capital in these defensible hills before moving to the plains-edge site of the present town; Junaraj kept the name — 'old realm' — and local memory keeps the map of what stood where.",
+  "attributes": { "era": "Early Rajpipla state (Gohil dynasty)" },
+  "location": {
+    "taluka": "Nandod",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 20 },
+    "coordinates": { "lat": 21.78, "lng": 73.55, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 20, "ekta-nagar": 40 }
+  },
+  "access": {
+    "modes": {
+      "road": "Country roads south of Rajpipla toward the hills; final directions from local villages",
+      "rail": "Ekta Nagar station (~40 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Forest walking of unverified length from the road end; local guide essential",
+    "road_condition": "Rural tar then dirt; dry-season territory",
+    "parking": { "available": null, "fee": null, "notes": "Village clearing at best" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 180,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Unmanaged site — daylight-only, group visits with local guidance."
+  },
+  "seasonality": {
+    "best_months": [11, 12, 1, 2],
+    "avoid_months": [6, 7, 8, 9],
+    "monsoon_dependent": false,
+    "notes": "Dry, cool months only; monsoon closes the forest tracks."
+  },
+  "experience": {
+    "activities": ["trekking", "photography", "nature-walk", "sightseeing"],
+    "difficulty": "hard",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "Ruin-and-root frames in raking morning light; carry everything in a daypack."
+  },
+  "amenities": {
+    "food": "None — provision fully in Rajpipla",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Arrange in the nearest village — non-negotiable",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Go in a group with a local guide; terrain and remains are unmanaged",
+      "Old masonry is unstable — no climbing",
+      "Carry water for the full outing"
+    ],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~20 km)", "police": "Rajpipla rural PS", "notes": null }
+  },
+  "tips": [
+    "Combine with the Karjan reservoir drive — same direction",
+    "Ask at Rajvant Palace's museum about Junaraj first; context transforms the ruins"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-karjan-reservoir", "distance_km": 15 },
+    { "id": "narmada-rajvant-palace", "distance_km": 20 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Junaraj — Old Rajpipla's Hill Capital",
+    "meta_description": "Exploring Junaraj, the forested site of Rajpipla's original capital: what's known, verification caveats and how to attempt it."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "location.coordinates", "location.distances_km", "access.last_mile", "history_legend"]
+  }
+}

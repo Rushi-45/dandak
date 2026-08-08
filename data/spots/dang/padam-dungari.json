@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-padam-dungari",
+  "slug": "padam-dungari",
+  "name": { "en": "Padam Dungari Eco Campsite" },
+  "aliases": ["Padamdungri", "Padam Dungri Eco Tourism"],
+  "category": "eco-campsite",
+  "subcategories": ["forest-department"],
+  "tags": ["nature", "offbeat", "family", "birding"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "Forest-department campsite on the Ambika river in the hills near Vyara — riverside cottages and trails that pair with the Waghai belt.",
+  "description": "Padam Dungari sits just over the district line in Tapi, but travellers treat it as part of the same forest country as Waghai: an eco-campsite where the Ambika river comes off the Dang hills through a wooded valley, with cottages, tents, a riverside stretch made for slow mornings, and trails into the surrounding forest. It is among south Gujarat's better-known forest stays, popular with Surat weekenders.\n\nThe formula matches its Dang siblings — forest-department simplicity, mess meals when booked, guided walks on request — with somewhat easier access from the plains. Monsoon brings the river up and the crowds in; winter is calm and better for birds. Book ahead through the department's eco-tourism channels for any weekend.",
+  "highlights": [
+    "Riverside cottages under forest hills",
+    "Easier plains access than the interior campsites",
+    "Pairs with Waghai's garden, Gira Falls and Vansda NP"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Gujarat Forest Department", "booking_portal": "Forest-department eco-tourism booking channels" },
+  "location": {
+    "taluka": "Vyara (Tapi)",
+    "admin_district": "Tapi",
+    "outside_district": true,
+    "nearest_town": { "name": "Vyara", "distance_km": 25 },
+    "coordinates": { "lat": 21.03, "lng": 73.4, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 35, "surat": 90, "saputara": 85 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Vyara from NH-53 or via the Waghai side; signed approach to the campsite",
+      "rail": "Vyara station (~25 km)",
+      "air": "Surat (~90 km)"
+    },
+    "last_mile": "Drive-in; riverside paths on foot",
+    "road_condition": "Good, with a rural final stretch",
+    "parking": { "available": true, "fee": 0, "notes": "At the campsite" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "18:00", "note": "Day-visit window indicative; guests per booking" }],
+    "fees": [{ "type": "entry", "amount_inr": 30, "note": "Indicative day-visit fee; cottage tariffs separate" }],
+    "booking": { "required": true, "url": null, "notes": "Stays via the forest department's eco-tourism portal; weekends fill early" },
+    "duration_min": 180,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon river season vs. calm birding winters — both work."
+  },
+  "experience": {
+    "activities": ["camping", "nature-walk", "birdwatching", "picnic", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "River bends at dawn; the wooded valley holds mist into mid-morning in winter."
+  },
+  "amenities": {
+    "food": "Campsite mess when booked; Vyara for the rest",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Campsite staff arrange trail walks",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "River bathing only in marked gentle stretches — monsoon flow is strong",
+      "Weekend crowds bring litter; carry yours back"
+    ],
+    "emergency": { "nearest_hospital": "Vyara civil hospital (~25 km)", "police": "Vyara PS", "notes": null }
+  },
+  "tips": [
+    "Combine with a Waghai-belt day — garden, Gira Falls, Kilad",
+    "Book cottages over tents in monsoon; the river air soaks everything"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-waghai-botanical-garden", "distance_km": 33 },
+    { "id": "dang-gira-falls", "distance_km": 36 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Padam Dungari Eco Campsite — Stay Notes",
+    "meta_description": "Padam Dungari on the Ambika river: forest-department cottages, booking route and Waghai-belt pairings."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.booking.notes", "location.coordinates", "location.distances_km"]
+  }
+}

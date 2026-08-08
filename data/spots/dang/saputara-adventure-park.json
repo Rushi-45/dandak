@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-saputara-adventure-park",
+  "slug": "saputara-adventure-park",
+  "name": { "en": "Saputara Adventure Park" },
+  "aliases": ["Adventure Activities Saputara"],
+  "category": "adventure",
+  "subcategories": ["activity-park"],
+  "tags": ["adventure", "kids", "family"],
+  "cluster": "saputara",
+  "status": "seasonal",
+  "district": "dang",
+  "summary": "Operator-run zipline, rope-course and paintball activities near the lake — seasonal, variable, and worth confirming before promising the kids.",
+  "description": "Saputara's adventure offerings cluster near the lake and gardens: a zipline across a scenic gap, low and high rope courses, archery, paintball and similar operator-run activities that expand for the May and Diwali rushes and contract or vanish off-season. Quality and safety practices track the operator of the year — inspect harnesses and belays like an adult before handing over children.\n\nPrices are per-activity and negotiable in slow weeks. As with most hill-station activity parks, treat it as a fun add-on for kids and groups rather than a destination: the fixed stars of Saputara remain the lake, points and forests.",
+  "highlights": [
+    "Zipline and rope courses near the lake",
+    "Per-activity pricing, kid-friendly options",
+    "Expands in May and Diwali seasons"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Seasonal private operators", "price_range_inr": "100-500 per activity" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.57, "lng": 73.752, "precision": "area" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "Near the lake and gardens zone in town",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Shared lakefront parking" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Seasonal and operator-dependent" }],
+    "fees": [{ "type": "activity", "amount_inr": 300, "note": "Indicative mid-range per activity; varies widely" }],
+    "booking": { "required": false, "url": null, "notes": "Walk-in; groups can negotiate bundles" },
+    "duration_min": 90,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Off-season operation is patchy — confirm locally the same day."
+  },
+  "seasonality": {
+    "best_months": [5, 10, 11, 12],
+    "avoid_months": [7, 8],
+    "monsoon_dependent": false,
+    "notes": "Fullest in holiday seasons; monsoon suspends most aerial activities."
+  },
+  "experience": {
+    "activities": ["adventure-activities"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Shoot the zipline from the receiving end with a long lens."
+  },
+  "amenities": {
+    "food": "Lakefront stalls adjacent",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Operator marshals run each activity",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Check harnesses, helmets and belay points yourself before use",
+      "Weight and age limits exist for good reasons — respect them"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Morning slots have fresher marshals and shorter queues",
+    "Agree the price list before starting, not after"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.3 },
+    { "id": "dang-pushpak-ropeway", "distance_km": 0.8 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Saputara Adventure Park — Activities Guide",
+    "meta_description": "Zipline, rope courses and paintball at Saputara: seasonal operation, pricing and safety checks."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "attributes.operator", "visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

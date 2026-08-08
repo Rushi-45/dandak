@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "dang-honey-bee-centre",
+  "slug": "honey-bee-centre",
+  "name": { "en": "Honey Bee Centre" },
+  "aliases": ["Madhumakhi Kendra", "Saputara Bee Centre"],
+  "category": "cultural",
+  "subcategories": [],
+  "tags": ["family", "kids", "offbeat", "food"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "Saputara's little apiculture stop — hive demonstrations, bee lore and forest honey to take home; check it's operating before you plan around it.",
+  "description": "The Honey Bee Centre is one of Saputara's original small attractions: a demonstration apiary where visitors see working hive frames behind glass, hear the basics of bee society and apiculture, and buy forest honey — Dang's multifloral forest honey being the genuine product worth carrying home.\n\nIt is a twenty-minute stop that lands best with children, folded between the lake and museum. Operations have run at varying energy over the years depending on the managing agency and season, so treat it as an opportunistic halt rather than an anchor — and if it is shut, honey from reputable local shops fills the same bag.",
+  "highlights": [
+    "Glass-front hive demonstrations",
+    "Dang forest honey for sale",
+    "Quick kid-friendly stop near the lake"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "coordinates": { "lat": 20.576, "lng": 73.758, "precision": "area" },
+    "altitude_m": 975,
+    "distances_km": { "saputara": 0.5, "ahwa": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "In Saputara town near the lake circuit",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Walk-in",
+    "road_condition": "Good town roads",
+    "parking": { "available": true, "fee": 0, "notes": "Street parking" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative and variable — confirm locally" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Token entry where charged" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Operating status has varied over the years — verify before planning around it."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Hive activity and honey stock are best post-monsoon through winter."
+  },
+  "experience": {
+    "activities": ["sightseeing", "shopping"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Macro through the demonstration glass works if you shade reflections."
+  },
+  "amenities": {
+    "food": "Honey tastings when open; town eateries adjacent",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
+    "guides": "Staff demonstrations when running",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Anyone with bee-sting allergies should keep distance from open-air hives"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Buy sealed, labelled honey; ask which forest bloom the batch is from",
+    "Treat it as a fill-in stop, not an anchor"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-saputara-lake", "distance_km": 0.5 },
+    { "id": "dang-saputara-tribal-museum", "distance_km": 0.3 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Honey Bee Centre, Saputara — Quick Stop",
+    "meta_description": "Saputara's bee demonstration centre: what's there, forest honey buying tips, and why to confirm it's open."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "visit.timings", "visit.fees", "location.coordinates"]
+  }
+}

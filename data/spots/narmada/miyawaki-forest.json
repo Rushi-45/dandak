@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "narmada-miyawaki-forest",
+  "slug": "miyawaki-forest",
+  "name": { "en": "Miyawaki Forest" },
+  "aliases": ["Miyawaki Van Kevadia"],
+  "category": "garden",
+  "subcategories": ["themed"],
+  "tags": ["nature", "offbeat", "photography"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A demonstration of the Japanese dense-planting method — a fast-grown native mini-forest with walkways, more idea than attraction.",
+  "description": "The Miyawaki Forest demonstrates the eponymous Japanese technique: native species planted extremely densely so they race each other upward, producing in a few years a thicket that behaves like decades-old forest. The campus plot pairs the young dense stands with walkways and boards explaining the method's logic — soil prep, species mixing, accelerated succession.\n\nIt is a fifteen-to-thirty-minute educational stroll, honest about being a demonstration rather than a destination. Ecology-curious visitors and students get the most from it; as the stand matures it should earn its place on shade alone.",
+  "highlights": [
+    "Working demo of the Miyawaki dense-planting method",
+    "Native-species mini-forest growing at speed",
+    "Quick educational add-on stop"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.841, "lng": 73.708, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Short level walkways",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "Free or bundled; arrangements vary" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Post-monsoon growth spurts are when the method shows off."
+  },
+  "experience": {
+    "activities": ["nature-walk", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Density-contrast shots — the packed stand against open lawn — tell the story."
+  },
+  "amenities": {
+    "food": "Kiosks on the circuit",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Tack it onto a neighbouring attraction — it doesn't need its own slot"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-vishwa-van", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Miyawaki Forest, Ekta Nagar — Demo Plot",
+    "meta_description": "The Miyawaki-method mini-forest at the SoU campus: what the technique is and what to expect."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

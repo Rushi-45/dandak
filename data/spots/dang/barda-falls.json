@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "dang-barda-falls",
+  "slug": "barda-falls",
+  "name": { "en": "Barda Falls" },
+  "aliases": ["Barda Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A little-documented interior-Dang monsoon waterfall near Barda village — for completists willing to ask directions and accept a rough approach.",
+  "description": "Barda is deep-cut Dang: a seasonal waterfall near Barda village that appears in district eco-tourism material and local knowledge but almost nowhere else. Reports describe a forest fall in the Purna catchment reaching strength in peak monsoon, with an unmarked approach — village lanes, then footpath — that changes with the year's washouts.\n\nThis record exists to be verified: location, route and current access all need ground-truthing before the dataset can recommend a visit plan. If you go, go in August–September, hire a local guide at the village, and treat it as an exploration with a waterfall at the end rather than a destination with facilities — it has none.",
+  "highlights": [
+    "Undocumented monsoon fall in the Purna catchment",
+    "True exploration-grade offbeat Dang",
+    "Local guide from Barda village essential"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 28 },
+    "coordinates": { "lat": 20.92, "lng": 73.68, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 28, "waghai": 42 }
+  },
+  "access": {
+    "modes": {
+      "road": "Interior roads toward the Purna belt, then village lanes — ask at Ahwa/Mahal for current directions",
+      "rail": "No practical railhead",
+      "air": "Surat (~150 km)"
+    },
+    "last_mile": "Village footpath of unverified length and condition",
+    "road_condition": "Rough interior stretches; monsoon mud likely",
+    "parking": { "available": null, "fee": null, "notes": "Village clearing at best" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Unmanaged site; daylight-only, monsoon-only."
+  },
+  "seasonality": {
+    "best_months": [8, 9],
+    "avoid_months": [11, 12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Effectively an August–September phenomenon."
+  },
+  "experience": {
+    "activities": ["trekking", "photography", "nature-walk"],
+    "difficulty": "hard",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "Unknown vantage conditions — pack light and weatherproof."
+  },
+  "amenities": {
+    "food": "None — carry everything from Ahwa",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Hire locally at Barda village — non-negotiable for the footpath",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Unmanaged terrain with no rescue margin — go in a group with a local guide",
+      "Flash-flow risk near any Dang stream in active monsoon"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~28 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Combine the recce with a Mahal stay — ask campsite staff for current conditions",
+    "If time is short, Girmal delivers the interior-waterfall experience with certainty"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-mahal-eco-campsite", "distance_km": 10 },
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 8 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Barda Falls, Dang — Exploration Notes",
+    "meta_description": "The little-documented Barda waterfall in interior Dang: what's known, what needs verifying, and how to attempt it safely."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "location.coordinates", "location.distances_km", "access.road", "access.last_mile"]
+  }
+}

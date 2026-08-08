@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "narmada-dino-trail",
+  "slug": "dino-trail",
+  "name": { "en": "Dino Trail" },
+  "aliases": ["Dinosaur Trail Kevadia"],
+  "category": "park",
+  "subcategories": [],
+  "tags": ["kids", "family", "offbeat", "photography"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A short walk among life-size dinosaur models headlined by a towering Rajasaurus — a kids' delight with a real Narmada-valley fossil hook.",
+  "description": "The Dino Trail plants a paleontological footnote in the campus: the Narmada valley is genuine dinosaur country — Rajasaurus narmadensis, an Indian predator, was described from fossils found in this river's basin — and the trail runs that fact through life-size models along a landscaped walk, crowned by a very large, very photographed Rajasaurus.\n\nIt is unapologetically a kids' stop: twenty to thirty minutes of roaring photo ops with signboards that smuggle in real science. With under-10s it earns its ticket; without them, it is a drive-past unless the fossil angle charms you.",
+  "highlights": [
+    "Towering Rajasaurus centrepiece",
+    "Life-size models along a short walk",
+    "Real Narmada-valley fossil story underneath"
+  ],
+  "history_legend": "Rajasaurus narmadensis — 'the regal reptile of the Narmada' — was described in 2003 from fossils recovered in the Narmada basin, giving India its own named large predator and this trail its excuse.",
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2.5 },
+    "coordinates": { "lat": 21.836, "lng": 73.703, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2.5, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit",
+      "rail": "Ekta Nagar station (~2.5 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Short level trail",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 60, "note": "Indicative; combo inclusion varies" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": null },
+    "duration_min": 30,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Season-proof; shadeless at midday in summer."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Shoot kids from low angles beside the Rajasaurus for maximum monster."
+  },
+  "amenities": {
+    "food": "Kiosks on the circuit",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "No climbing the models — enforced and sensible"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Bundle with the Nutrition Park for a kids' half-day"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-children-nutrition-park", "distance_km": 1.5 },
+    { "id": "narmada-jungle-safari", "distance_km": 1.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Dino Trail, Ekta Nagar — Rajasaurus Walk",
+    "meta_description": "The dinosaur-model trail at the SoU campus and the real Narmada fossil story behind it."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

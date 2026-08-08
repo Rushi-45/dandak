@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "dang-town-view-point",
+  "slug": "town-view-point",
+  "name": { "en": "Town View Point" },
+  "aliases": [],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["photography", "nature", "offbeat"],
+  "cluster": "saputara",
+  "status": "active",
+  "district": "dang",
+  "summary": "A roadside rise overlooking Saputara's rooftops, lake and plateau bowl — the postcard-of-the-town shot in one stop.",
+  "description": "Town View Point does one specific job: it is the place to photograph Saputara itself — the lake as a mirror at the centre, hotels and gardens ringing it, and the plateau's wooded rim closing the frame. Most sightseeing circuits pause here for ten minutes between the bigger viewpoints on the same stretch.\n\nCome in the slanting light of early morning or late afternoon; midday flattens the bowl. In monsoon the view alternates between washed-clean clarity and total whiteout, sometimes within the same halt.",
+  "highlights": [
+    "The classic overview of Saputara town and lake",
+    "Ten-minute roadside stop",
+    "Best in slanted morning or evening light"
+  ],
+  "history_legend": null,
+  "attributes": { "faces": "town" },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Saputara", "distance_km": 1.5 },
+    "coordinates": { "lat": 20.582, "lng": 73.763, "precision": "area" },
+    "altitude_m": 990,
+    "distances_km": { "saputara": 1.5, "ahwa": 49 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the rim-road circuit out of town",
+      "rail": "Bilimora Jn (~110 km)",
+      "air": "Surat (~160 km), Nashik (~90 km)"
+    },
+    "last_mile": "Roadside",
+    "road_condition": "Good",
+    "parking": { "available": true, "fee": 0, "notes": "Pull-off" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 15,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Post-monsoon clarity gives the deepest greens around the town bowl."
+  },
+  "experience": {
+    "activities": ["photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "A mild telephoto tightens the lake-and-town composition better than wide."
+  },
+  "amenities": {
+    "food": "Occasional seasonal vendor",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "good", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Park clear of the carriageway"
+    ],
+    "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~49 km)", "police": "Saputara PS", "notes": null }
+  },
+  "tips": [
+    "Fold into the Table Point–Echo Point–Sunrise Point stretch"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-table-point", "distance_km": 1 },
+    { "id": "dang-sunrise-point", "distance_km": 1.5 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Town View Point, Saputara",
+    "meta_description": "The overview shot of Saputara town and lake: where to stop, best light and circuit pairing."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["location.coordinates"]
+  }
+}

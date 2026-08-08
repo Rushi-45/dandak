@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "narmada-karjan-reservoir",
+  "slug": "karjan-reservoir",
+  "name": { "en": "Karjan Dam & Reservoir" },
+  "aliases": ["Karjan Dam"],
+  "category": "dam",
+  "subcategories": [],
+  "tags": ["nature", "offbeat", "picnic", "photography"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A quiet reservoir in the hills south-east of Rajpipla — sunset water views and picnic spots, with public access rules worth checking first.",
+  "description": "The Karjan dam impounds a Narmada tributary in the low hills beyond Rajpipla, and its reservoir gives the area a water-and-hills panorama that locals use for evening drives and picnics — the fields-and-forest drive out being part of the appeal. Post-monsoon, with the reservoir full and the hills green, the vantage points along the approach are genuinely pretty.\n\nAs with most working dams, how close the public gets varies with security posture: viewpoints and the picnic-friendly banks are the realistic target, not the dam crest. Facilities are minimal to none — this is a carry-your-own-chai outing for travellers who have done Rajpipla's headline stops and want an unhurried hour by water.",
+  "highlights": [
+    "Reservoir-and-hills views post-monsoon",
+    "Quiet picnic banks locals favour",
+    "Pleasant countryside drive from Rajpipla"
+  ],
+  "history_legend": null,
+  "attributes": { "river": "Karjan", "purpose": "Irrigation" },
+  "location": {
+    "taluka": "Nandod",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 18 },
+    "coordinates": { "lat": 21.8, "lng": 73.578, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 18, "ekta-nagar": 35 }
+  },
+  "access": {
+    "modes": {
+      "road": "Country roads south-east from Rajpipla; ask locally for the current open viewpoint",
+      "rail": "Ekta Nagar station (~35 km)",
+      "air": "Vadodara (~85 km)"
+    },
+    "last_mile": "Short walks from roadside to bank viewpoints",
+    "road_condition": "Rural tar; fine in all seasons",
+    "parking": { "available": true, "fee": 0, "notes": "Informal roadside" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Dam-adjacent access rules vary — respect barriers and signage; the banks and viewpoints are the visit."
+  },
+  "seasonality": {
+    "best_months": [9, 10, 11, 12, 1],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Fullest and greenest just after monsoon; low and hazy by late summer."
+  },
+  "experience": {
+    "activities": ["sightseeing", "picnic", "photography", "birdwatching"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Sunset over the water from the eastern banks; winter mornings bring waterbirds."
+  },
+  "amenities": {
+    "food": "None — carry everything from Rajpipla",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "No swimming — reservoir depths and slopes are treacherous",
+      "Respect all dam-security barriers; photography restrictions may apply near the structure"
+    ],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~18 km)", "police": "Rajpipla rural PS", "notes": null }
+  },
+  "tips": [
+    "Treat it as Rajpipla's sunset drive, not a destination attraction",
+    "Carry chai and snacks; there are no vendors"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-rajvant-palace", "distance_km": 18 },
+    { "id": "narmada-junaraj", "distance_km": 15 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Karjan Reservoir, Rajpipla — Sunset Drive",
+    "meta_description": "The Karjan dam reservoir near Rajpipla: viewpoints, picnic banks, access caveats and best months."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["status", "visit.notes", "location.coordinates", "location.distances_km"]
+  }
+}

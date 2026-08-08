@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "narmada-ekta-nursery",
+  "slug": "ekta-nursery",
+  "name": { "en": "Ekta Nursery" },
+  "aliases": ["Ekta Nursery Kevadia"],
+  "category": "garden",
+  "subcategories": [],
+  "tags": ["nature", "shopping", "family"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A large production nursery with a visitor face — greenhouses, bonsai and cactus sections, and plants you can actually buy and carry home.",
+  "description": "Ekta Nursery is the campus attraction with a supply chain: a working nursery raising lakhs of plants for the SoU landscape, opened up with visitor walkways through greenhouses, bonsai and cactus corners, themed display beds and a 'plants for sale' section that turns tourists into people carrying saplings onto trains. A bamboo-craft and souvenir angle rounds it out.\n\nIt is free-entry or near it, unhurried, and quietly the most useful stop for garden-minded visitors. Kids get greenhouse novelty; everyone else gets the only souvenir on campus that keeps growing.",
+  "highlights": [
+    "Working nursery behind the SoU landscaping",
+    "Bonsai, cactus and greenhouse sections",
+    "Buy-and-carry plants and seeds"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
+    "coordinates": { "lat": 21.847, "lng": 73.703, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the campus circuit near the jetty zone",
+      "rail": "Ekta Nagar station (~2 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level nursery paths",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Adjacent lot" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "Free or token entry; purchases à la carte" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 45,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Season-proof; stock varies by planting cycle."
+  },
+  "experience": {
+    "activities": ["sightseeing", "shopping", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Greenhouse rows make tidy leading-line frames."
+  },
+  "amenities": {
+    "food": "Kiosks nearby",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Nursery staff answer plant questions happily",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Buy plants at the end of your trip, not the start",
+    "Cactus and bonsai sections are the photogenic corners"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-cactus-garden", "distance_km": 1 },
+    { "id": "narmada-ekta-cruise", "distance_km": 1 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Ekta Nursery, Ekta Nagar — Plants to Go",
+    "meta_description": "The SoU campus's working nursery: greenhouses, bonsai corners and plants you can buy."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

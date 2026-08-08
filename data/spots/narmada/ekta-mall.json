@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "narmada-ekta-mall",
+  "slug": "ekta-mall",
+  "name": { "en": "Ekta Mall" },
+  "aliases": ["Ekta Mall Kevadia"],
+  "category": "market",
+  "subcategories": [],
+  "tags": ["shopping", "family", "heritage"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "State-emporium shopping under one roof — handicrafts and handlooms from across India, the campus's answer to souvenir hunting.",
+  "description": "Ekta Mall runs the unity theme through retail: floors of emporium-style outlets representing states' handicrafts and handloom traditions — textiles, brass, woodwork, paintings, the familiar government-emporium canon — collected beside the statue so visitors can shop the country in an hour. Prices are fixed-tag emporium level: fair for verified craft, no bargaining theatre.\n\nAs malls go it is small and as craft collections go it is broad-but-shallow; its real function is convenience. If your itinerary already crosses serious craft sources (or the Artist Village in Dang for local work), spend there — otherwise this is the dependable one-stop for gifts before the train.",
+  "highlights": [
+    "State handicraft emporiums under one roof",
+    "Fixed-price verified craft",
+    "The practical souvenir stop before Ekta Nagar station"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 1.5 },
+    "coordinates": { "lat": 21.849, "lng": 73.71, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 1.5, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "Near the Ekta Nagar side of the campus",
+      "rail": "Ekta Nagar station (~1.5 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Walk-in; lifts inside",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Adjacent lot" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "10:00", "close": "20:00", "note": "Indicative retail hours; follows campus Monday closure" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "evening",
+    "weekly_closure": "mon",
+    "notes": null
+  },
+  "seasonality": {
+    "best_months": [],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Season-proof indoor stop."
+  },
+  "experience": {
+    "activities": ["shopping"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Craft displays photograph fine; ask outlets before shooting close-ups."
+  },
+  "amenities": {
+    "food": "Food outlets in and around the mall",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not applicable",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Save it for the gap before your train from Ekta Nagar",
+    "Compare with the Artist Village in Dang if your trip covers both districts — different craft, different economics"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "narmada-unity-glow-garden", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 3 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Ekta Mall, Ekta Nagar — Craft Shopping",
+    "meta_description": "State-emporium handicraft shopping at the SoU campus: hours, what's stocked and when it's worth the stop."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [],
+    "needs_verification": ["visit.timings", "location.coordinates"]
+  }
+}
