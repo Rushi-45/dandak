@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "narmada-shoolpaneshwar-wls",
+  "slug": "shoolpaneshwar-wls",
+  "name": { "en": "Shoolpaneshwar Wildlife Sanctuary" },
+  "aliases": ["Shoolpaneshwar Sanctuary", "Dumkhal Sanctuary"],
+  "category": "wildlife",
+  "subcategories": ["sanctuary"],
+  "tags": ["wildlife", "nature", "birding", "offbeat", "trekking"],
+  "cluster": "dediapada-belt",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Six hundred square kilometres of hill forest along the Narmada's south bank — sloth bear country with waterfalls, treks and eco-campsites.",
+  "description": "Shoolpaneshwar is the big wild space of the Narmada district: roughly six hundred square kilometres of moist deciduous forest and bamboo climbing from the river's south bank into the Satpura edges, touching the Maharashtra border. It wraps around much of what visitors come this way for — Zarwani and Ninai falls both lie within or on its skirts — but the sanctuary proper rewards those who go deeper.\n\nThis is sloth bear country first, with leopard, hyena, barking deer, four-horned antelope, giant and flying squirrels, and a bird list that keeps binoculars busy from crested serpent eagles to winter flycatchers. Sightings follow sanctuary rules of luck and effort: dawn drives on the internal roads, guided walks from the eco-campsites at Zarwani or the Dediapada side, and patience. The forest itself — huge bamboo brakes, perennial streams, tribal hamlets along the boundary — is the dependable spectacle.\n\nEntry works through forest-department check posts (Dediapada and the Ekta Nagar side), with permits, fees and guide arrangements at the gate. October to March is the season that makes sense; monsoon access is restricted and summer is punishing.",
+  "highlights": [
+    "One of Gujarat's largest sanctuaries at ~600 km²",
+    "Sloth bear, leopard and a serious bird list",
+    "Contains Zarwani falls; Ninai sits on its edge",
+    "Eco-campsites for nights inside the forest"
+  ],
+  "history_legend": "The sanctuary takes its name from the old Shoolpaneshwar Mahadev shrine on the Narmada — the original temple site was submerged by the Sardar Sarovar reservoir and re-established on the bank at Gora.",
+  "attributes": { "area_km2": 608, "key_species": ["sloth bear", "leopard", "giant flying squirrel", "four-horned antelope", "crested serpent eagle"], "entry_permit": "Forest-department permit at Dediapada / Ekta Nagar-side check posts" },
+  "location": {
+    "taluka": "Dediapada",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Dediapada", "distance_km": 10 },
+    "coordinates": { "lat": 21.65, "lng": 73.55, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "dediapada": 10, "rajpipla": 50, "ekta-nagar": 60 }
+  },
+  "access": {
+    "modes": {
+      "road": "Main access from Dediapada; secondary access from the Ekta Nagar/Zarwani side; internal roads are forest tracks",
+      "rail": "Bharuch/Ankleshwar railheads (~90 km)",
+      "air": "Vadodara or Surat (~120–140 km)"
+    },
+    "last_mile": "Forest tracks and guided trails from the check posts and campsites",
+    "road_condition": "Approach roads tarred; internal tracks rough, some four-wheel-drive territory after rain",
+    "parking": { "available": true, "fee": 0, "notes": "At check posts and campsites" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "07:00", "close": "17:00", "note": "Daylight entry by permit; indicative — hours set by range offices" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative permit + vehicle combination; guide fees separate — set at the range office" }],
+    "booking": { "required": false, "url": null, "notes": "Day permits at the gate; campsite stays book via the forest department's eco-tourism channels" },
+    "duration_min": 300,
+    "best_time_of_day": "early-morning",
+    "weekly_closure": null,
+    "notes": "Core-area access is typically restricted during peak monsoon; carry ID for permits."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2, 3],
+    "avoid_months": [5, 6],
+    "monsoon_dependent": false,
+    "notes": "October–March for access and wildlife; the forest is at its most beautiful just after the rains in October–November."
+  },
+  "experience": {
+    "activities": ["safari", "jungle-trail", "trekking", "birdwatching", "camping", "photography", "nature-walk"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Dark under canopy — fast glass or high ISO; bamboo corridors give clean sightlines for bird photography in the first hour of light."
+  },
+  "amenities": {
+    "food": "Only at campsites when booked; Dediapada has the nearest reliable meals — carry supplies",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Assigned at check posts; mandatory for walks and strongly advised for drives",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Sloth bears are genuinely dangerous at close range — never walk unguided",
+      "Exit before the check-post deadline; no night movement inside",
+      "Carry all water; streams are not treated"
+    ],
+    "emergency": { "nearest_hospital": "CHC Dediapada (~10 km); Rajpipla civil hospital (~50 km)", "police": "Dediapada PS; forest range offices", "notes": null }
+  },
+  "tips": [
+    "Base at an eco-campsite (Zarwani, Sagai or Dediapada-side) and build around a dawn walk",
+    "Combine with Ninai falls in early October — flow plus open forest access",
+    "Binoculars beat cameras here; bring both if you can"
+  ],
+  "faqs": [
+    {
+      "q": "Is there a vehicle safari like Gir?",
+      "a": "No formal safari fleet — you drive permitted tracks in your own vehicle with a guide, or walk guided trails. It is a quieter, harder, more rewarding kind of sanctuary."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-zarwani-falls", "distance_km": 25 },
+    { "id": "narmada-ninai-falls", "distance_km": 20 },
+    { "id": "narmada-sagai-malsamot", "distance_km": 15 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Shoolpaneshwar Wildlife Sanctuary — Visit Guide",
+    "meta_description": "Permits, seasons, sloth bears and eco-campsites in Shoolpaneshwar sanctuary — Narmada district's 600 km² of hill forest."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "attributes.area_km2", "location.coordinates", "location.distances_km"]
+  }
+}

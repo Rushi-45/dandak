@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "narmada-valley-of-flowers",
+  "slug": "valley-of-flowers",
+  "name": { "en": "Valley of Flowers (Bharat Van)" },
+  "aliases": ["Bharat Van", "Valley of Flowers Kevadia"],
+  "category": "garden",
+  "subcategories": ["floral"],
+  "tags": ["family", "photography", "nature", "popular", "couples"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Riverside flower gardens along the Narmada below the Statue of Unity — curated beds, lawns and photo spots best in the cool months.",
+  "description": "The Valley of Flowers spreads along the Narmada's banks near the statue: a long ribbon of curated flowerbeds, lawns, themed gardens and sculpture-dotted walks, planted at a scale that only makes sense next to a 182-metre statue. It is a landscaped showpiece rather than a wild meadow — expect seasonal bedding in bold blocks of colour, topiary, selfie installations and buggy routes rather than trails.\n\nAs a break between the campus's ticketed headliners it works well: the river keeps a breeze moving, the statue looms over the treeline for the signature photo, and children can run without a queue in sight. Bloom quality tracks the cool season — November to February is the peak, with fresh planting after the monsoon; by late spring the beds thin out.\n\nGo golden-hour if you can: the statue picks up warm light from across the river and the crowds thin as tour buses rotate to the laser show.",
+  "highlights": [
+    "Statue of Unity rising over the flowerbeds — the signature frame",
+    "Riverside lawns and buggy-friendly walks",
+    "Peak bloom November–February"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 3 },
+    "coordinates": { "lat": 21.842, "lng": 73.715, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 3, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "Within the SoU campus circuit; e-buses and autos serve it from the ticket zones and Ekta Nagar",
+      "rail": "Ekta Nagar station (~3 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Level garden paths; buggies available inside",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Campus parking with shuttle drop-off" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the SoU campus pattern" }],
+    "fees": [{ "type": "entry", "amount_inr": 50, "note": "Indicative; sometimes sold bundled with other campus attractions" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Same portal as other campus tickets when sold separately" },
+    "duration_min": 90,
+    "best_time_of_day": "evening",
+    "weekly_closure": "mon",
+    "notes": "Bedding is replanted seasonally; displays vary month to month."
+  },
+  "seasonality": {
+    "best_months": [11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Cool-season bloom is the show; monsoon is green but wet under open skies."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "picnic", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Frame the statue over the beds from the river-facing walks at golden hour; mid-day light flattens the colour blocks."
+  },
+  "amenities": {
+    "food": "Kiosks at entry zones; food court back toward the statue precinct",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Stay on paths near the river edge",
+      "Sun-exposed in the afternoon — hats for children"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Slot it for golden hour between the statue and the laser show",
+    "Buggies are worth it with elderly visitors — the ribbon is longer than it looks"
+  ],
+  "faqs": [
+    {
+      "q": "Is this like the Himalayan Valley of Flowers?",
+      "a": "No — it's a landscaped garden showcase, not an alpine meadow. Judge it as a riverside park with the statue as backdrop and it delivers."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 1 },
+    { "id": "narmada-ekta-cruise", "distance_km": 2 },
+    { "id": "narmada-unity-glow-garden", "distance_km": 2 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Valley of Flowers, Ekta Nagar — Visit Guide",
+    "meta_description": "Best months, timings and photo spots for the Valley of Flowers (Bharat Van) beside the Statue of Unity."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "narmada-river-rafting-khalwani",
+  "slug": "river-rafting-khalwani",
+  "name": { "en": "River Rafting, Khalwani" },
+  "aliases": ["Kevadia River Rafting", "Narmada White Water Rafting"],
+  "category": "adventure",
+  "subcategories": ["rafting"],
+  "tags": ["adventure", "popular", "nature", "photography"],
+  "cluster": "ekta-nagar-area",
+  "status": "active",
+  "district": "narmada",
+  "summary": "White-water rafting on a dam-fed stretch of the Narmada near Ekta Nagar — a guided run through forested gorge with beginner-friendly rapids.",
+  "description": "The rafting operation near Khalwani runs on a short, lively stretch of the Narmada downstream of the dam complex, where regulated releases keep water moving through a green, rocky corridor. The run covers a few kilometres with a string of small-to-medium rapids — enough splash to feel real, tame enough for first-timers — book-ended by calm sections where the gorge scenery does the work.\n\nSessions are fully guided: safety briefing, helmets, life jackets and a guide in every raft, with batches running through the day from the base camp. Because flow depends on dam releases rather than raw monsoon, the season here is unusually long by Indian rafting standards, though operators pause when releases are too strong or too weak. Age and fitness rules apply (children below the operator's cutoff and non-swimmers with medical conditions sit out).\n\nAs an add-on to a Statue of Unity trip it is the obvious half-day of actual adventure — book a morning slot, get wet, and be back for an afternoon attraction.",
+  "highlights": [
+    "Beginner-friendly rapids in a forested Narmada gorge",
+    "Fully guided runs with safety kit provided",
+    "Unusually long season thanks to dam-regulated flow"
+  ],
+  "history_legend": null,
+  "attributes": { "operator": "Licensed adventure operators from a managed base camp", "price_range_inr": "1000-1500", "min_age": 12, "season": "Most of the year, subject to dam-release levels" },
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 8 },
+    "coordinates": { "lat": 21.86, "lng": 73.67, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 8, "rajpipla": 22, "vadodara": 85 }
+  },
+  "access": {
+    "modes": {
+      "road": "Short drive from Ekta Nagar toward Khalwani; autos and taxis do drops to the rafting base",
+      "rail": "Ekta Nagar station (~8 km)",
+      "air": "Vadodara (~85 km)"
+    },
+    "last_mile": "Walk down to the put-in from the base camp; steps and river-bank paths",
+    "road_condition": "Good; the last approach is rural single-lane",
+    "parking": { "available": true, "fee": 0, "notes": "At the base camp" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "17:00", "note": "Batch slots through the day; subject to release levels and light" }],
+    "fees": [{ "type": "rafting", "amount_inr": 1200, "note": "Indicative per person including gear and guide; operators revise rates" }],
+    "booking": { "required": true, "url": null, "notes": "Book a slot ahead on weekends; walk-ins possible midweek" },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Carry a change of clothes; waterproof pouches or lockers handle phones and keys."
+  },
+  "seasonality": {
+    "best_months": [8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Flow is release-regulated, so the season is long; extreme releases after very heavy rain can suspend runs for safety."
+  },
+  "experience": {
+    "activities": ["rafting", "photography"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "Operators usually sell photo/video packages shot from the bank — your own camera stays in the locker unless it's an action cam with a mount."
+  },
+  "amenities": {
+    "food": "Basic refreshments at the base camp; proper meals in Ekta Nagar",
+    "toilets": "basic",
+    "drinking_water": true,
+    "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Included — every raft runs with a trained guide",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Follow the guide's commands exactly — the rapids are friendly only when the raft is",
+      "Declare medical conditions and weak swimming at booking, not at the put-in",
+      "Runs suspend during extreme dam releases; respect a cancelled slot"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~22 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": "Operators carry rescue kayakers/throw-bags per license terms" }
+  },
+  "tips": [
+    "Morning slots have the best light in the gorge and leave the afternoon for SoU attractions",
+    "Wear quick-dry clothes and strap-on sandals — flip-flops don't survive rapids",
+    "Ask the operator which rapid grade the day's release is producing before bringing nervous first-timers"
+  ],
+  "faqs": [
+    {
+      "q": "Is the rafting safe for complete beginners?",
+      "a": "Yes at normal release levels — rapids are modest, briefings thorough, and guides handle the raft. The operator's age and health rules are the real gate; respect them."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 8 },
+    { "id": "narmada-zarwani-falls", "distance_km": 15 },
+    { "id": "narmada-garudeshwar", "distance_km": 12 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "River Rafting at Khalwani, Ekta Nagar — Guide",
+    "meta_description": "Booking, rates, season and safety for white-water rafting on the Narmada near the Statue of Unity at Khalwani."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "attributes.min_age", "attributes.operator", "location.coordinates", "location.distances_km"]
+  }
+}

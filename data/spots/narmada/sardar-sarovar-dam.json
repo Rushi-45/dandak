@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "narmada-sardar-sarovar-dam",
+  "slug": "sardar-sarovar-dam",
+  "name": { "en": "Sardar Sarovar Dam Viewpoints" },
+  "aliases": ["Sardar Sarovar Dam", "Narmada Dam"],
+  "category": "dam",
+  "subcategories": [],
+  "tags": ["popular", "photography", "family", "nature"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Designated viewpoints over one of the world's largest concrete gravity dams — at full monsoon release, the most dramatic sight at Ekta Nagar.",
+  "description": "The Sardar Sarovar dam is the reason Ekta Nagar exists, and the public viewpoints above it deliver one of the most memorable engineering panoramas in India: the long concrete wall across the Narmada, the reservoir stretching upstream toward the horizon, and — when gates are open in a good monsoon — a controlled cascade whose spray and noise carry to the terraces.\n\nAccess is via designated view points on the heights flanking the dam, reached by road within the managed SoU zone; arrangements and which terraces are open vary with security posture and season, so treat the details as changeable. The classic frame pairs the dam with the Statue of Unity downstream — from the right terrace you get both in one sweep.\n\nTiming matters more here than anywhere else on the campus: in August–September after strong rains the dam is a spectacle; in dry months it is a vast, silent wall and a fine view, but a different experience. Ask locally whether gates are releasing before you prioritise it.",
+  "highlights": [
+    "Panorama over one of the world's largest gravity dams",
+    "Monsoon gate releases are the campus's most dramatic sight",
+    "Dam and Statue of Unity in a single frame from the terraces"
+  ],
+  "history_legend": "The dam is the terminal project of the Narmada Valley scheme, decades in the making and politically contested through the 1990s and 2000s; it reached its full height in 2017. It supplies irrigation and drinking water to large parts of Gujarat and power shared between three states.",
+  "attributes": { "river": "Narmada", "height_m": 163, "length_m": 1210, "purpose": "Irrigation, water supply, hydropower" },
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 5 },
+    "coordinates": { "lat": 21.8306, "lng": 73.7476, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 5, "rajpipla": 28, "vadodara": 93 }
+  },
+  "access": {
+    "modes": {
+      "road": "Within the managed SoU zone; reached by the internal roads/e-buses from the ticketing areas",
+      "rail": "Ekta Nagar station (~5 km)",
+      "air": "Vadodara (~93 km)"
+    },
+    "last_mile": "Short walks from viewpoint parking/drop-off to the terraces",
+    "road_condition": "Excellent internal roads",
+    "parking": { "available": true, "fee": null, "notes": "At or near the designated viewpoints, subject to zone rules" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the SoU campus pattern; viewpoint access rules vary" }],
+    "fees": [],
+    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Viewpoint access is typically bundled with SoU-area ticketing; arrangements change — check current rules" },
+    "duration_min": 60,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": "mon",
+    "notes": "Gate releases depend on reservoir levels — August–September after heavy rain is the best bet."
+  },
+  "seasonality": {
+    "best_months": [8, 9, 10],
+    "avoid_months": [],
+    "monsoon_dependent": true,
+    "notes": "The overflow spectacle is monsoon-dependent; the panorama itself is year-round."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Afternoon light works for the downstream face; a polariser cuts haze over the reservoir. Long lens for spray detail at the gates."
+  },
+  "amenities": {
+    "food": "Kiosks in the SoU zone; nothing at the terraces themselves",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage covers the basics",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Respect barriers absolutely — this is monitored critical infrastructure",
+      "Drones are prohibited across the dam zone"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~28 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
+  },
+  "tips": [
+    "Ask at your hotel or the ticket office whether gates are releasing — it changes the visit's priority entirely",
+    "Combine with the Statue of Unity viewing gallery for the top-down view of the same scene"
+  ],
+  "faqs": [
+    {
+      "q": "Can you walk on the dam itself?",
+      "a": "No — public access is to designated viewpoints on the flanking heights, not the dam crest. Security rules on which terraces open can change without notice."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 3.5 },
+    { "id": "narmada-valley-of-flowers", "distance_km": 4 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Sardar Sarovar Dam Viewpoints — Ekta Nagar Guide",
+    "meta_description": "When the Sardar Sarovar dam is worth prioritising, how viewpoint access works at Ekta Nagar, and the best months for gate releases."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.booking.notes", "visit.timings", "attributes.height_m", "attributes.length_m", "location.coordinates"]
+  }
+}

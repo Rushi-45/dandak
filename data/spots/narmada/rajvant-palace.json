@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "narmada-rajvant-palace",
+  "slug": "rajvant-palace",
+  "name": { "en": "Rajvant Palace (Vijay Palace)" },
+  "aliases": ["Vijay Palace", "Rajvant Palace Resort"],
+  "category": "palace",
+  "subcategories": [],
+  "tags": ["heritage", "history", "architecture", "photography", "family"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Rajpipla's European-style royal palace — colonnaded halls, royal memorabilia and film-shoot lawns, now run as a heritage resort with a museum wing.",
+  "description": "Rajvant Palace, also called Vijay Palace, is the showpiece of Rajpipla's royal past: an early-twentieth-century palace in confident European classical style — domes, Corinthian columns, high colonnaded verandahs — set in lawns above the Karjan river's low country. Built for the Gohil Rajput rulers of Rajpipla state, it stayed with the family after independence and now runs as a heritage resort whose public side includes a museum wing of royal photographs, furniture, trophies and costume.\n\nRajpipla's princely history is more colourful than the town's size suggests — Maharaja Vijaysinhji, its most famous ruler, won the 1934 Epsom Derby with his horse Windsor Lad, still India's only Derby-winning owner. Rooms of memorabilia carry that era, and Bollywood knows the palace well: its lawns and staircases appear regularly in film and television shoots, which occasionally close sections to visitors.\n\nAs a stop, it pairs the museum hour with a walk through the grounds, and works as a heritage-flavoured contrast to the engineering spectacle at Ekta Nagar, forty minutes away.",
+  "highlights": [
+    "European classical palace of the Rajpipla royals",
+    "Museum wing with royal memorabilia",
+    "Lawns familiar from countless film shoots",
+    "Easy 40-minute pairing with Ekta Nagar"
+  ],
+  "history_legend": "Rajpipla state was ruled by the Gohil Rajput dynasty for centuries before merging with India in 1948. Maharaja Vijaysinhji, remembered for winning the 1934 Epsom Derby with Windsor Lad, built and embellished the town's early-20th-century palaces, of which Vijay/Rajvant is the most visitable today.",
+  "attributes": { "era": "Early 20th century", "built_by": "Rajpipla royal family (Gohil dynasty)" },
+  "location": {
+    "taluka": "Nandod",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 1 },
+    "coordinates": { "lat": 21.87, "lng": 73.5, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 1, "ekta-nagar": 25, "vadodara": 70, "bharuch": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the edge of Rajpipla town; well connected by road from Vadodara, Bharuch and Ekta Nagar",
+      "rail": "Ekta Nagar station (~25 km) or Ankleshwar Jn (~70 km)",
+      "air": "Vadodara (~70 km)"
+    },
+    "last_mile": "Drive-in to the grounds; museum is ground-floor with some stairs to upper verandahs",
+    "road_condition": "Good",
+    "parking": { "available": true, "fee": 0, "notes": "Inside the grounds" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative museum/grounds hours; sections close during film shoots and private events" }],
+    "fees": [{ "type": "entry", "amount_inr": 100, "note": "Indicative museum entry; resort guests roam free" }],
+    "booking": { "required": false, "url": null, "notes": "Stays book as a heritage resort; museum entry is walk-in" },
+    "duration_min": 90,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Call ahead if the museum matters to your plan — shoot-day closures are unannounced."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [],
+    "monsoon_dependent": false,
+    "notes": "Comfortable October–February; monsoon greens the lawns and river country."
+  },
+  "experience": {
+    "activities": ["sightseeing", "museum-visit", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Late-afternoon light warms the west façade; interiors need permission — ask at the desk."
+  },
+  "amenities": {
+    "food": "Resort restaurant on site; Rajpipla town eateries minutes away",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Staff walk-throughs on request",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~2 km)", "police": "Rajpipla town PS", "notes": null }
+  },
+  "tips": [
+    "Combine with Harsiddhi Mata temple and an old-town walk for a Rajpipla half-day",
+    "Ask about the Derby story at the museum — the memorabilia makes more sense with it",
+    "Staying a night here is the easy way to see Ekta Nagar without its hotel crush"
+  ],
+  "faqs": [
+    {
+      "q": "Can non-guests visit the palace?",
+      "a": "Yes — the museum wing and grounds are ticketed for day visitors, subject to event and shoot closures. The private residential wings stay off-limits."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-harsiddhi-mata-temple", "distance_km": 2 },
+    { "id": "narmada-rajpipla-heritage-walk", "distance_km": 1 },
+    { "id": "narmada-statue-of-unity", "distance_km": 25 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Rajvant Palace, Rajpipla — Heritage Visit Guide",
+    "meta_description": "Rajpipla's Vijay/Rajvant Palace: museum entry, timings, the 1934 Derby story and pairing it with the Statue of Unity."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.timings", "visit.fees", "location.coordinates", "attributes.era"]
+  }
+}

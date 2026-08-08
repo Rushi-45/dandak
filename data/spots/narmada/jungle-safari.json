@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "narmada-jungle-safari",
+  "slug": "jungle-safari",
+  "name": { "en": "Jungle Safari (Sardar Patel Zoological Park)" },
+  "aliases": ["Kevadia Jungle Safari", "Sardar Patel Zoological Park"],
+  "category": "wildlife",
+  "subcategories": ["zoo"],
+  "tags": ["family", "kids", "wildlife", "popular", "ticketed"],
+  "cluster": "sou-complex",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A large hillside zoological park near the Statue of Unity — native and exotic animals across terraced levels, plus walk-in aviaries kids love.",
+  "description": "The Jungle Safari at Ekta Nagar is a modern zoological park laid out over a hillside a few kilometres from the statue, its enclosures terraced across multiple levels connected by walkways and internal shuttles. The collection mixes Indian species — big cats, bears, deer, antelope — with exotics and a strong bird section; the twin walk-through aviaries, among the larger ones in the country, are the consistent highlight for children.\n\nThis is a zoo experience, not a drive-through safari — set expectations accordingly. The terraced layout means genuine walking with climbs between levels; shuttle carts help with small kids or older visitors. Animals are most active in the first hours after opening and near closing; midday, especially in warm months, is nap time behind glass and shade.\n\nAs the second-biggest time commitment on the campus after the statue itself, it fits best on a two-day plan — half a day here without rushing.",
+  "highlights": [
+    "Terraced hillside park minutes from the statue",
+    "Two large walk-in aviaries",
+    "Indian big cats, bears and a broad bird collection",
+    "Shuttle carts between levels"
+  ],
+  "history_legend": null,
+  "attributes": { "safari": "walk-through zoological park with internal shuttles", "entry_permit": "Ticketed entry" },
+  "location": {
+    "taluka": "Garudeshwar",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 3 },
+    "coordinates": { "lat": 21.828, "lng": 73.702, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ekta-nagar": 3, "rajpipla": 25, "vadodara": 90 }
+  },
+  "access": {
+    "modes": {
+      "road": "On the SoU campus circuit; e-buses and autos from Ekta Nagar and the ticket zones",
+      "rail": "Ekta Nagar station (~3 km)",
+      "air": "Vadodara (~90 km)"
+    },
+    "last_mile": "Walking park — terraced levels with stairs and ramps; shuttle carts available",
+    "road_condition": "Excellent",
+    "parking": { "available": true, "fee": null, "notes": "Dedicated lot at the safari entrance" }
+  },
+  "visit": {
+    "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "09:00", "close": "17:00", "note": "Last entry earlier; follows the SoU campus Monday closure" }],
+    "fees": [{ "type": "entry", "amount_inr": 200, "note": "Indicative adult ticket; child rates lower; prices revise periodically" }],
+    "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Advance booking sensible on weekends and holidays" },
+    "duration_min": 180,
+    "best_time_of_day": "morning",
+    "weekly_closure": "mon",
+    "notes": "Animals are most visible in the first two hours; carry water — the hillside walking adds up."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Winter mornings are ideal; summer middays leave most animals in shade and visitors in the sun."
+  },
+  "experience": {
+    "activities": ["nature-walk", "birdwatching", "photography", "sightseeing"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
+    "photography_notes": "Aviaries reward patience and a mid-telephoto; enclosure glass needs a lens hood pressed flat to kill reflections."
+  },
+  "amenities": {
+    "food": "Kiosks inside and near the gate; no outside food in enclosures areas",
+    "toilets": "good",
+    "drinking_water": true,
+    "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
+    "guides": "Signage-led; keeper talks occasionally on weekends",
+    "ev_charging": null,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Do not feed or provoke animals — strictly enforced",
+      "The terraced walk is longer than it looks; use shuttles with small children in summer"
+    ],
+    "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": "First-aid post at the entrance" }
+  },
+  "tips": [
+    "Take the first slot of the day — active animals and cool walking",
+    "Do aviaries early before school groups arrive",
+    "Keep it for day two of a SoU trip; it deserves an unhurried half day"
+  ],
+  "faqs": [
+    {
+      "q": "Is it a vehicle safari like a national park?",
+      "a": "No — it's a walk-through zoological park with shuttle carts between sections. For wild-forest experiences in this district, look at Shoolpaneshwar sanctuary instead."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-statue-of-unity", "distance_km": 3 },
+    { "id": "narmada-children-nutrition-park", "distance_km": 2 },
+    { "id": "narmada-cactus-garden", "distance_km": 3 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Jungle Safari, Ekta Nagar — Zoological Park Guide",
+    "meta_description": "Tickets, timings, walking effort and what animals to expect at the Sardar Patel Zoological Park (Jungle Safari) near the Statue of Unity."
+  },
+  "provenance": {
+    "created": "2026-08-08",
+    "last_verified": null,
+    "confidence": "medium",
+    "sources": [],
+    "needs_verification": ["visit.fees", "visit.timings", "location.coordinates", "location.distances_km"]
+  }
+}
