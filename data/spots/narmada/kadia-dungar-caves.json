@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "narmada-kadia-dungar-caves",
+  "slug": "kadia-dungar-caves",
+  "name": { "en": "Kadia Dungar Caves" },
+  "aliases": ["Kadio Dungar", "Kadiya Dungar Buddhist Caves"],
+  "category": "monument",
+  "subcategories": [],
+  "tags": ["history", "heritage", "offbeat", "trekking", "mythology", "photography"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "Seven rock-cut Buddhist caves of the 1st–2nd century AD on a forested hill near Jhagadia — lion pillars, a brick stupa, and a stiff climb.",
+  "description": "Kadia Dungar holds south Gujarat's oldest cave group: seven Buddhist caves cut into the hill near Zazpor village in the 1st–2nd century AD, vihara-style, with monolithic lion pillars still standing at the site and the remains of a brick stupa at the hill's foot. They were the first caves of their kind found in this part of Gujarat, which gives the modest site real weight in the region's history.\n\nLocal tradition, as usual, has its own version — the caves become the Pandavas' exile shelter, and the hill keeps a Bhima–Hidimba association. The two stories coexist comfortably on the signboards and in the telling.\n\nThe visit is half trek: a steep climb up the forested hill from the village side, rewarded with the caves, the pillars and long views over the Bharuch–Narmada border country. Carry water, wear real shoes, and treat the monsoon rock with respect. It is administratively in Bharuch district, but for travellers it belongs to the Rajpipla orbit — half an hour west, pairing naturally with Kesharva waterfall in season.",
+  "highlights": [
+    "Seven 1st–2nd century AD rock-cut Buddhist caves",
+    "Monolithic lion pillars and a brick stupa base",
+    "Pandava exile legend layered over the archaeology",
+    "Forested hill climb with border-country views"
+  ],
+  "history_legend": "Carved in the 1st–2nd century AD as a vihara group — the first Buddhist caves found in south Gujarat. Local belief recasts them as the Pandavas' exile refuge and ties the hill to the Bhima–Hidimba story; both tellings live side by side at the site.",
+  "attributes": { "period": "1st-2nd century AD", "caves": 7 },
+  "location": {
+    "taluka": "Jhagadia (Bharuch)",
+    "admin_district": "Bharuch",
+    "outside_district": true,
+    "nearest_town": { "name": "Jhagadia", "distance_km": 20 },
+    "coordinates": { "lat": 21.6737, "lng": 73.2723, "precision": "exact" },
+    "altitude_m": null,
+    "distances_km": { "ankleshwar": 35, "bharuch": 40, "rajpipla": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Jhagadia from the Ankleshwar–Rajpipla road; village roads to Zazpor at the hill's base",
+      "rail": "Ankleshwar Jn (~35 km)",
+      "air": "Surat or Vadodara (~90–100 km)"
+    },
+    "last_mile": "Steep footpath climb up the forested hill from the village side",
+    "road_condition": "Tarred to the base village; the hill is on foot",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the base" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open archaeological site on a hill — daylight visits, no gate in practice."
+  },
+  "seasonality": {
+    "best_months": [10, 11, 12, 1, 2],
+    "avoid_months": [4, 5, 6],
+    "monsoon_dependent": false,
+    "notes": "Winter for the climb and the views; the monsoon greens the hill but makes the rock path slick."
+  },
+  "experience": {
+    "activities": ["sightseeing", "trekking", "photography"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The lion pillars carry the frame; morning side-light models the cave facades best."
+  },
+  "amenities": {
+    "food": "None at the site — Jhagadia has the nearest food",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "No formal guides; village elders sometimes walk visitors up for a tip",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "The climb is steep and unshaded in stretches — carry water",
+      "Monsoon rock is slippery; the caves' outer ledges have no railings"
+    ],
+    "emergency": { "nearest_hospital": "CHC Jhagadia (~20 km)", "police": "Jhagadia PS", "notes": null }
+  },
+  "tips": [
+    "Pair with Kesharva waterfall in monsoon or Rajpipla's palaces in winter",
+    "Go early — the climb is far kinder before the sun is up the hill",
+    "Respect the site: the caves are unfenced archaeology, not a picnic shelter"
+  ],
+  "faqs": [
+    {
+      "q": "Are the caves Buddhist or Pandava-era?",
+      "a": "Archaeologically they are 1st–2nd century AD Buddhist viharas — south Gujarat's earliest. The Pandava story is living local tradition layered on top; enjoy both without needing them to agree."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-kesharva-falls", "distance_km": 25, "note": "Monsoon pairing across the district line" },
+    { "id": "narmada-kabirvad", "distance_km": 45 }
+  ],
+  "itineraries": [],
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Kadia_Dungar_Caves_1.jpg",
+        "license": "cc-by-sa",
+        "caption": "The cave row and its railed stair on the Kadia Dungar scarp",
+        "credit": "Venkygrams",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kadia_Dungar_Caves_1.jpg"
+      }
+    ],
+    "videos": []
+  },
+  "seo": {
+    "meta_title": "Kadia Dungar Caves — Buddhist Caves near Jhagadia",
+    "meta_description": "The seven 1st–2nd century Buddhist caves of Kadia Dungar: lion pillars, brick stupa, the hill climb, and how to pair them with Rajpipla."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "high",
+    "sources": [
+      { "title": "Kadia Dungar Caves — Wikipedia (coordinates 21.673742, 73.272278; seven caves, 1st–2nd century AD)", "url": "https://en.wikipedia.org/wiki/Kadia_Dungar_Caves", "publisher": "Wikipedia", "accessed": "2026-08-09" },
+      { "title": "Kadia Dungar Buddhist Cave, Bharuch", "url": "https://gujarattourism.com/central-zone/bharuch/kadia-dungar-caves.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-09" },
+      { "title": "Kadia Dungar Caves — District Bharuch", "url": "https://bharuch.nic.in/gallery/kadia-dungar-caves/", "publisher": "bharuch.nic.in (official)", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.distances_km", "visit.timings", "amenities.guides"]
+  }
+}

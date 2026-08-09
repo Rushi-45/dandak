@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 12 | 37 |
-| Narmada | 10 | 14 | 11 | 35 |
-| **Total** | **22** | **27** | **23** | **72** |
+| Dang | 12 | 13 | 17 | 42 |
+| Narmada | 10 | 14 | 13 | 37 |
+| **Total** | **22** | **27** | **30** | **79** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -56,6 +56,11 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-don-falls` | Don Waterfall | waterfall | dang-interior | 3 | Pool at base; near Don village |
 | `dang-birsa-falls` | Birsa Waterfall | waterfall | dang-interior | 3 | Between Ahwa and Don; map-pin grade |
 | `dang-koshmal-falls` | Koshmal Falls (Bhigu Dhodh) | waterfall | waghai | 3 | Guide essential; forest warnings posted |
+| `dang-u-turn-point` | U Turn Eco Tourism Point | viewpoint | dang-interior | 3 | Gira hairpin deck on the Girmal approach; EDC restaurant, Girli Lodges |
+| `dang-bhalkhet-falls` | Bhalkhet Waterfall | waterfall | dang-interior | 3 | Godadiya/Subir belt; located via listing plus-code |
+| `dang-mahal-falls` | Mahal Waterfall | waterfall | dang-interior | 3 | Campsite trail fall with river crossing |
+| `dang-gaumukh-falls` | Gaumukh Waterfalls (Songadh) | waterfall | dang-interior | 3 | OD: Songadh (Tapi); temple + seasonal fall |
+| `dang-medha-falls` | Medha Waterfall | waterfall | dang-interior | 3 | OD: Songadh (Tapi), Jamkhadi; multi-tier |
 
 ## Narmada (32)
 
@@ -96,6 +101,8 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `narmada-juna-ghanta-falls` | Juna Ghanta Waterfall | waterfall | rajpipla | 3 | Karjan stream; aka Juna Ghata / Takara |
 | `narmada-mandan-lake` | Mandan Lake View | lake | rajpipla | 3 | Karjan reservoir bank; boating, camping |
 | `narmada-barkhadi-falls` | Barkhadi Falls | waterfall | rajpipla | 3 | Devsatra belt; 2 km walk from the village school |
+| `narmada-kesharva-falls` | Kesharva Waterfall | waterfall | rajpipla | 3 | Bathing tiers 24 km west of Rajpipla |
+| `narmada-kadia-dungar-caves` | Kadia Dungar Caves | monument | rajpipla | 3 | OD: Jhagadia (Bharuch); seven Buddhist caves |
 
 ## Folded (deliberately not separate records)
 
@@ -114,7 +121,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 `dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
 
-*Searched but not added (2026-08-09): "Milan waterfall" and "Chhatawada waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
+*Searched but not added (2026-08-09): "Milan waterfall" and "Chhatawada waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. "Wonder waterfall" (Dang) is confirmed to exist — visited first-hand and titled in a YouTube video — but no source names its village or pin; it joins the awaiting-a-pin list. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
 
 ## Phase-1 note
 

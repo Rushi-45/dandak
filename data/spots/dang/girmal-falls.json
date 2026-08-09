@@ -93,6 +93,7 @@
     }
   ],
   "nearby": [
+    { "id": "dang-u-turn-point", "distance_km": 3, "note": "The Gira hairpin deck on the approach — chai stop" },
     { "id": "dang-mahal-eco-campsite", "distance_km": 8, "note": "Just across the forest — the natural overnight base" },
     { "id": "dang-don-hill", "distance_km": 40, "note": "Pairs well for a full-day interior loop" },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 10 }

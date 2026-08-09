@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "narmada-kesharva-falls",
+  "slug": "kesharva-falls",
+  "name": { "en": "Kesharva Waterfall" },
+  "aliases": ["Kesharva Dhodh", "Keshwarva Waterfall"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "picnic", "family", "photography"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "A tiered bathing waterfall near Kesharva village west of Rajpipla — a 1 km walk through black-soil fields to falls you can actually get into.",
+  "description": "Kesharva is the Rajpipla belt's soak-and-swim waterfall: a tiered fall — a smaller drop and a main one — where getting wet is the point rather than the risk, with shallow aprons that draw families through the monsoon. It sits near Kesharva village in the low country west of Rajpipla toward the Bharuch line, about 24 km (35 minutes) from town and 80 km from Vadodara via the Dabhoi or Por highways.\n\nThe walk in runs roughly a kilometre through farmland — black cotton soil first, then a rocky, somewhat slippery final stretch along the stream. Flow is seasonal and swings with each wet spell; villagers track it, so ask locally before building a day around it. One warning carries over from every trip report: the plunge pool by the smaller fall is deep — bathe at the shallow tiers, not there.\n\nVisitors note how little litter the place carries; keep it that way and it stays the kind of spot locals keep welcoming outsiders to.",
+  "highlights": [
+    "Tiered falls with shallow aprons made for a monsoon soak",
+    "Easy ~1 km fields-and-stream walk in",
+    "35 minutes from Rajpipla — the town's closest bathing falls",
+    "Still clean, still local — no commercial buildup"
+  ],
+  "history_legend": null,
+  "attributes": { "walk_in_km": 1, "pool_at_base": true },
+  "location": {
+    "taluka": null,
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 24 },
+    "coordinates": { "lat": 21.7805, "lng": 73.3742, "precision": "exact" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 24, "vadodara": 80 }
+  },
+  "access": {
+    "modes": {
+      "road": "West from Rajpipla toward the Bharuch line, or from Vadodara via the Dabhoi/Por highways to Kesharva village",
+      "rail": "Ankleshwar/Bharuch railheads (~50 km)",
+      "air": "Vadodara (~80 km, about 2 hours)"
+    },
+    "last_mile": "~1 km walk — farm fields on black soil, then a rocky slippery stretch along the stream",
+    "road_condition": "Highway then village tar; the field track can be sticky right after rain",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the village/field edge" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Flow varies sharply between wet spells — ask in the village whether the falls are running before you walk in."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "A monsoon waterfall that responds to each spell; can drop to a trickle between rains even in season."
+  },
+  "experience": {
+    "activities": ["picnic", "nature-walk", "photography", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The two tiers stack nicely from downstream; overcast monsoon light suits the dark rock."
+  },
+  "amenities": {
+    "food": "None — carry everything from Rajpipla",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed; villagers point the way",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "The plunge pool by the smaller fall is deep — stay out of it; soak at the shallow tiers only",
+      "The rocky final stretch is slippery — proper footwear, not slippers",
+      "Flow rises quickly during active rain; keep children in hand"
+    ],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~24 km)", "police": "Rajpipla rural PS", "notes": null }
+  },
+  "tips": [
+    "Check flow with villagers before walking in — it swings between wet spells",
+    "Combine with Rajpipla town or the Karjan back-country for a full day",
+    "Carry out everything you carry in — the spot's cleanliness is its charm"
+  ],
+  "faqs": [
+    {
+      "q": "Can you bathe at Kesharva waterfall?",
+      "a": "Yes — that is its local appeal. Use the shallow tiered aprons, keep clear of the deep plunge pool by the smaller fall, and treat post-rain surges with respect."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-kadia-dungar-caves", "distance_km": 25, "note": "Buddhist caves across the Bharuch line" },
+    { "id": "narmada-rajvant-palace", "distance_km": 24 },
+    { "id": "narmada-karjan-reservoir", "distance_km": 32 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Kesharva Waterfall, Narmada — Rajpipla's Bathing Falls",
+    "meta_description": "Kesharva waterfall near Rajpipla: the 1 km field walk, tiered pools you can soak in, the deep-pool warning and best monsoon window."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Kesharva Waterfall: Soak yourself in positivity — trip report (24 km/35 min from Rajpipla, 80 km from Vadodara, 1 km trail)", "url": "https://safarwithsasha.com/our_trips/kesharva-waterfall-soak-yourself-in-positivity/", "publisher": "safarwithsasha.com", "accessed": "2026-08-09" },
+      { "title": "Kesharva Waterfall — map place pin (21.7805, 73.3742)", "url": "https://maps.app.goo.gl/ApNcXXCkqfV5w4wg8", "publisher": "Google Maps (link published by safarwithsasha.com)", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.taluka", "location.admin_district", "location.distances_km", "amenities.mobile_network"]
+  }
+}

@@ -89,7 +89,8 @@
     }
   ],
   "nearby": [
-    { "id": "dang-girmal-falls", "distance_km": 30, "note": "The official 'tallest' — compare for yourself in one monsoon day" }
+    { "id": "dang-girmal-falls", "distance_km": 30, "note": "The official 'tallest' — compare for yourself in one monsoon day" },
+    { "id": "dang-gaumukh-falls", "distance_km": 15, "note": "Temple falls across the Tapi line" }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },

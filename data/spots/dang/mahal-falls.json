@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "dang-mahal-falls",
+  "slug": "mahal-falls",
+  "name": { "en": "Mahal Waterfall" },
+  "aliases": ["Mahal Trail Waterfall", "Purna Waterfall Mahal"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "picnic"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "The monsoon waterfall on the Mahal campsite's forest trail in Purna sanctuary — a river-crossing walk through bamboo to a quiet cascade.",
+  "description": "Mahal's waterfall is the reward at the end of the eco-campsite's walking trail: a monsoon cascade reached through Purna sanctuary's bamboo forest, with a river crossing en route that is half the fun in season. It is a walkers' waterfall rather than a drive-up sight — no parking lot of its own, no stalls, just the trail from the campsite and whatever water the rains have given the stream.\n\nCampsite literature keeps it vague ('the trail leads to a river crossing and some lovely hidden waterfalls'), and that vagueness is accurate: flow, and even which braid of the stream runs, changes with every wet spell. Go with a campsite guide — the sanctuary prefers it, the trail braids, and the guides know which fall is running.\n\nFor guests sleeping at Mahal it turns the stay into a proper forest day: dawn birding, the waterfall walk before lunch, Girmal falls just across the forest after.",
+  "highlights": [
+    "Bamboo-forest trail with a monsoon river crossing",
+    "The campsite's own quiet cascade — no crowds, no stalls",
+    "Completes a Mahal overnight with Girmal 8 km away"
+  ],
+  "history_legend": null,
+  "attributes": { "river": "Purna" },
+  "location": {
+    "taluka": "Subir",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 40 },
+    "coordinates": { "lat": 20.94, "lng": 73.72, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 40 }
+  },
+  "access": {
+    "modes": {
+      "road": "To Mahal eco campsite via the Ahwa–Subir forest roads; the waterfall is on foot from there",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~160 km)"
+    },
+    "last_mile": "Forest trail from the campsite with a stream/river crossing; timing varies with flow",
+    "road_condition": "Narrow forest tar to the campsite; the rest is trail",
+    "parking": { "available": true, "fee": 0, "notes": "Park at the campsite" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": "No fee for the falls; the campsite and sanctuary have their own entry arrangements" },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Walk it with a campsite guide — trails braid inside the sanctuary and crossings shift with flow."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Runs with the rains; by late winter the stream is a trickle and the walk is the point."
+  },
+  "experience": {
+    "activities": ["nature-walk", "trekking", "photography", "picnic"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Bamboo corridors on the way in are as photogenic as the fall; the crossing shoots best mid-morning."
+  },
+  "amenities": {
+    "food": "Campsite kitchen at Mahal (order ahead); nothing on the trail",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Campsite guides available — strongly recommended inside the sanctuary",
+    "ev_charging": false,
+    "stay_nearby": ["dang-mahal-eco-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Do not attempt the river crossing in spate — turn back and try the next day",
+      "Leech protection in peak monsoon; grip footwear always",
+      "This is sanctuary interior — stay with your guide and on the trail"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~40 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Book a Mahal campsite night and do the falls as the morning walk",
+    "Ask the campsite staff which fall is running — flow braids change with every wet spell"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-mahal-eco-campsite", "distance_km": 2, "note": "The trailhead" },
+    { "id": "dang-girmal-falls", "distance_km": 8 },
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 3 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Mahal Waterfall, Dang — Purna's Trail Cascade",
+    "meta_description": "The waterfall walk from Mahal eco campsite in Purna sanctuary: river crossing, guide advice, season window and pairing with Girmal."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [
+      { "title": "Purna Wildlife Sanctuary — 'a trail that leads to a river crossing and some lovely hidden waterfalls' (Mahal campsite)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "access.last_mile", "visit.notes", "amenities.guides"]
+  }
+}

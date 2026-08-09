@@ -5,6 +5,8 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- Seven traveller-reported spots (2026-08-09), all visited first-hand by the project's maintainer and then source-verified: `dang-u-turn-point` (the Gira hairpin deck en route Girmal — EDC restaurant, Girli Lodges), `dang-bhalkhet-falls` (Godadiya/Subir), `dang-mahal-falls` (the campsite trail's cascade), `dang-gaumukh-falls` and `dang-medha-falls` (both OD: Songadh, Tapi — temple falls and the multi-tier 'Gujarat's Dudhsagar'), `narmada-kesharva-falls` (bathing tiers 24 km west of Rajpipla, map-pinned exact), `narmada-kadia-dungar-caves` (OD: Bharuch — seven 1st–2nd-century Buddhist caves, confidence high). Corpus: 72 → 79. "Wonder waterfall" (Dang) is also confirmed first-hand but awaits a village name or pin before drafting.
+- Photo for `narmada-kadia-dungar-caves` (CC BY-SA, the cave row and stair). 17 records now carry imagery.
 - `narmada-barkhadi-falls` (2026-08-09) — walk-in monsoon waterfall in the Devsatra belt south-east of Rajpipla, found via map sweep; trailhead pinned to the Barkhadi village primary school (21.8161, 73.6289) from a published trip report. Corpus: 71 → 72 spots. "Chhatawada waterfall" was searched and has no findable footprint (joins "Milan" on the awaiting-a-pin list).
 - Photos for `narmada-ninai-falls` (CC0, the falls in August flow — found by Commons geosearch at the record's coordinates) and `narmada-junaraj` (CC BY-SA, the old capital's temples part-submerged in the Karjan backwater). 16 records now carry imagery.
 

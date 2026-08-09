@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "dang-medha-falls",
+  "slug": "medha-falls",
+  "name": { "en": "Medha Waterfall" },
+  "aliases": ["Medha Dhodh", "Medha Waterfall Jamkhadi"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A multi-tiered cascade in the Songadh forests near Jamkhadi — a 15–20 minute jungle trek, free entry, and locals call it Gujarat's Dudhsagar.",
+  "description": "Medha earns its reels nickname — 'Gujarat's Dudhsagar' — the way most such names are earned: a multi-layered cascade spilling wide over stepped rock, dense forest on all sides, and mist sitting in the valley through the monsoon months. It lies in the Songadh forest belt of Tapi district near Jamkhadi and Medha villages, just over the line from Dang, about 18 km from Songadh town and 95 km from Surat.\n\nThe walk in is a 15–20 minute forest trek with small stream crossings and a muddy, slippery monsoon path — short enough for families, wet enough to demand real footwear. There is no ticket; locals may collect small parking or guide money in season, and stalls are occasional rather than reliable.\n\nGo July to September for the full spread of the tiers. It pairs naturally with Gaumukh waterfall on the same side, or extends an interior-Dang day north over the border.",
+  "highlights": [
+    "Multi-tiered 'Dudhsagar of Gujarat' spread over stepped rock",
+    "15–20 minute jungle trek with stream crossings",
+    "Free entry; genuinely uncommercialised",
+    "Pairs with Gaumukh for a Songadh forest day"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Songadh (Tapi)",
+    "admin_district": "Tapi",
+    "outside_district": true,
+    "nearest_town": { "name": "Songadh", "distance_km": 18 },
+    "coordinates": { "lat": 21.16, "lng": 73.66, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "surat": 95, "ahwa": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Songadh off NH-53; village roads to the Jamkhadi side, then the forest trailhead",
+      "rail": "Songadh/Vyara railheads on the Surat–Bhusawal line",
+      "air": "Surat (~95 km)"
+    },
+    "last_mile": "15–20 minute forest trek — muddy and slippery in monsoon, small stream crossings",
+    "road_condition": "Tarred to the villages; rough final approach",
+    "parking": { "available": true, "fee": null, "notes": "Informal; locals may collect a small fee in season" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": "No entry ticket" },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Leave by late afternoon — guides advise being out before 18:00."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "The tiers need monsoon volume; flow thins quickly after September."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography", "picnic"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The stepped tiers reward wide frames from the base; mist and spray argue for a lens cloth."
+  },
+  "amenities": {
+    "food": "Occasional seasonal stalls; carry food and water from Songadh",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
+    "guides": "Optional — local youths offer for a small fee in season",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Do not enter the water in high monsoon flow — the tiers hide undertows",
+      "The trek path is genuinely slippery — trekking shoes, not slippers",
+      "Supervise children at the stream crossings"
+    ],
+    "emergency": { "nearest_hospital": "CHC Songadh (~18 km)", "police": "Songadh PS", "notes": null }
+  },
+  "tips": [
+    "Club it with Gaumukh waterfall — the two make Songadh's monsoon day",
+    "Aim to be walking in by 09:00; the path crowds after noon on weekends",
+    "Carry out your plastic — the spot is clean and locals work to keep it that way"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-gaumukh-falls", "distance_km": 12, "note": "Same forest belt" },
+    { "id": "dang-chimer-falls", "distance_km": 20 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Medha Waterfall, Songadh — Gujarat's Dudhsagar",
+    "meta_description": "Medha waterfall near Jamkhadi, Songadh: the 15–20 minute jungle trek, multi-tier cascade, free entry and monsoon window."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Medha Waterfall Songadh — Hidden Paradise Just 95 km from Surat (ticket price & travel guide)", "url": "https://en.safargujarat.com/medha-waterfall-songadh-distance-from-surat-ticket-price/", "publisher": "safargujarat.com", "accessed": "2026-08-09" },
+      { "title": "મેઢા ધોધ (Medha Waterfall) — સોનગઢના જંગલોમાં છુપાયેલ કુદરતી ખજાનો", "url": "https://safargujarat.com/medha-waterfall-songadh-tapi/", "publisher": "safargujarat.com (Gujarati)", "accessed": "2026-08-09" },
+      { "title": "Medha Waterfalls — Jamkhadi, Songadh listing", "url": "https://mindtrip.ai/attraction/songadh-gujarat/medha-waterfalls/at-Mic2IcEg", "publisher": "mindtrip.ai", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "visit.notes", "amenities.guides"]
+  }
+}
