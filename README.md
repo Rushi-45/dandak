@@ -1,6 +1,6 @@
 # Dandak — Saputara–Narmada Tourism Dataset
 
-A structured, verifiable tourism dataset for the **Dang** and **Narmada** districts of Gujarat, India — covering ~65 tourist spots (Saputara hill station, the Statue of Unity complex, waterfalls, sanctuaries, temples, and offbeat interior sites) plus companion data (itineraries, events, stays, food).
+A structured, verifiable tourism dataset for the **Dang** and **Narmada** districts of Gujarat, India — covering 70+ tourist spots (Saputara hill station, the Statue of Unity complex, waterfalls, sanctuaries, temples, and offbeat interior sites) plus companion data (itineraries, events, stays, food).
 
 *The name comes from **Dandakaranya**, the epic forest that once covered this belt — whose living Ramayana geography (Shabari Dham, Pampa Sarovar, Anjan Kund) is part of the dataset itself.*
 
@@ -12,7 +12,7 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 |---|---|
 | Dataset release | **v1.0.0** (2026-08-08) |
 | Phase | 6 complete — pipeline phases 0–6 all shipped |
-| Data records | 64 spots (48 verified: T1 100%, T2 81%) + 44 companions (2 districts, 9 itineraries, 8 events, 15 stays, 10 foods) |
+| Data records | 71 spots (48 verified: T1 100%, T2 81%) + 44 companions (2 districts, 9 itineraries, 8 events, 15 stays, 10 foods) |
 | Exports | GeoJSON (`exports/geojson/`), stats snapshot (`exports/STATS.md`) |
 
 ## Spec index

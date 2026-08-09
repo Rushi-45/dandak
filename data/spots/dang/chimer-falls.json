@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "dang-chimer-falls",
+  "slug": "chimer-falls",
+  "name": { "en": "Chimer (Chichkund) Falls" },
+  "aliases": ["Chichkund Waterfall", "Chimer Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "photography", "nature", "trekking"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Four cascades off a ~100 m escarpment on Dang's northern rim — locally claimed as Gujarat's tallest waterfall, and almost entirely unvisited.",
+  "description": "Chimer is the deep-cut that outgrows its obscurity the moment you see it: near Chimer village on Dang's northern rim toward Songadh, a monsoon stream throws itself off an escarpment locally measured at around 327 feet — roughly 100 metres — in four falls, two large and two small. That figure would make it Gujarat's tallest by a wide margin, but it remains an unofficial local claim; the state's official material gives Girmal that title, and nobody with a survey instrument appears to have settled the argument.\n\nWhat is not in dispute is the setting: dense forest, farm paths for an approach, and a viewing experience that requires walking in from the road through fields with no tourist infrastructure of any kind. Sources even disagree on which district it belongs to — Dang and Tapi listings both claim it, which tells you exactly how far off the circuit it sits.\n\nJune to September is the season; the falls run strongest July–September and fade fast after. Go with a local contact, keep expectations rustic, and treat every published fact — including these — as pending ground-truth.",
+  "highlights": [
+    "Claimed ~100 m drop — unofficially Gujarat's tallest",
+    "Four cascades in one amphitheatre",
+    "Farm-path approach through dense forest",
+    "Genuinely undiscovered — no infrastructure at all"
+  ],
+  "history_legend": null,
+  "attributes": { "height_m": 100, "tiers": 4 },
+  "location": {
+    "taluka": null,
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Songadh", "distance_km": 30 },
+    "coordinates": { "lat": 21.05, "lng": 73.62, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": {}
+  },
+  "access": {
+    "modes": {
+      "road": "Via the Dang–Tapi border roads toward Chimer village from the Songadh/Vyara side; ask locally — signage is absent",
+      "rail": "Vyara station is the practical railhead",
+      "air": "Surat (~120 km)"
+    },
+    "last_mile": "Walk from the road through farm paths to the viewing area; distance varies with route",
+    "road_condition": "Rural tar then village tracks; slow in monsoon",
+    "parking": { "available": null, "fee": null, "notes": "Village clearing at best" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Unmanaged site; daylight-only visits."
+  },
+  "seasonality": {
+    "best_months": [6, 7, 8, 9],
+    "avoid_months": [11, 12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Strongest July–September; fades quickly once the rains stop."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "trekking", "nature-walk"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "The full four-fall amphitheatre needs a wide lens from across the bowl; mist drifts far in peak flow."
+  },
+  "amenities": {
+    "food": "None — provision at Songadh or Vyara",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "A local contact from Chimer village is strongly advised",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Unfenced escarpment edges — keep well back; the drop is serious",
+      "Farm paths turn to slick mud in rain",
+      "No facilities and no quick rescue — group visits only"
+    ],
+    "emergency": { "nearest_hospital": "CHC Songadh / Vyara civil hospital", "police": "Songadh PS", "notes": null }
+  },
+  "tips": [
+    "Pair with the Waghai belt or Padam Dungari on the drive back toward Surat",
+    "The district boundary is genuinely ambiguous here — expect Tapi signage",
+    "Take the height claim as folklore until someone measures it"
+  ],
+  "faqs": [
+    {
+      "q": "Is Chimer really taller than Girmal?",
+      "a": "Locally, yes — the ~327 ft figure circulates widely. Officially, no measurement exists and Gujarat Tourism's material calls Girmal the state's tallest. This dataset records both claims honestly."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-girmal-falls", "distance_km": 45, "note": "The official 'tallest' — compare for yourself in one monsoon day" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Chimer (Chichkund) Falls — Dang's Contested Giant",
+    "meta_description": "The ~100 m Chimer falls on Dang's northern rim: four cascades, an unofficial tallest-in-Gujarat claim, and a farm-path approach."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Chimer (Chichkund) Waterfall, Dang — Darpan Dodiya", "url": "https://darpan.blog/travel/chimer-chichkund-waterfall-dang-gujarat-photo-gallery-information/", "publisher": "darpan.blog", "accessed": "2026-08-09" },
+      { "title": "Chimer (Chichkund) Waterfall, Songadh — Travel and History", "url": "https://www.travel-history.com/2021/11/chimer-chichkund-waterfall-songadh-dang.html", "publisher": "travel-history.com", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "location.admin_district", "attributes.height_m", "access.last_mile"]
+  }
+}

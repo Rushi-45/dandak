@@ -5,6 +5,7 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- Seven "pinch-in" Tier-3 spots (2026-08-09), web-grounded where possible and flagged for ground-truthing: Pandav Caves & Waterfall (Javatla), Chimer/Chichkund Falls (claimed ~100 m, unofficial), Don Waterfall, Birsa Waterfall, Koshmal Falls (Bhigu Dhodh), Juna Ghanta Waterfall, Mandan Lake View. "Milan waterfall" was searched but has no findable footprint and awaits a local pin. Corpus: 64 → 71 spots.
 - Media entries for 14 spot records: CC-licensed photography (Wikimedia Commons) with credits, licenses and source links — Statue of Unity, Saputara Lake, Gira Falls, Sardar Sarovar Dam, Zarwani, Hatgadh, Kabirvad, Purna, Mahal, Sunset Point, Shoolpaneshwar WLS, Nilkanthdham Poicha, Shabari Dham, Devmogra.
 
 ## [1.0.0] — 2026-08-08

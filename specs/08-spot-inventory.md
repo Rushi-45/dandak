@@ -9,9 +9,11 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 7 | 32 |
-| Narmada | 10 | 14 | 8 | 32 |
-| **Total** | **22** | **27** | **15** | **64** |
+| Dang | 12 | 13 | 12 | 37 |
+| Narmada | 10 | 14 | 10 | 34 |
+| **Total** | **22** | **27** | **22** | **71** |
+
+*2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
 ## Dang (32)
 
@@ -49,6 +51,11 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-barda-falls` | Barda Falls | waterfall | dang-interior | 3 | Verify existence/access |
 | `dang-rupgadh-fort` | Rupgadh Fort | fort | dang-interior | 3 | Trek; verify route |
 | `dang-padam-dungari` | Padam Dungari Eco Campsite | eco-campsite | waghai | 3 | **OD** — Tapi; Ambika riverside |
+| `dang-pandav-caves` | Pandav Caves & Waterfall | religious-site | dang-interior | 3 | Javatla via Linga; cave + monsoon fall |
+| `dang-chimer-falls` | Chimer (Chichkund) Falls | waterfall | dang-interior | 3 | Claimed ~100 m, unofficial; Dang–Tapi border zone |
+| `dang-don-falls` | Don Waterfall | waterfall | dang-interior | 3 | Pool at base; near Don village |
+| `dang-birsa-falls` | Birsa Waterfall | waterfall | dang-interior | 3 | Between Ahwa and Don; map-pin grade |
+| `dang-koshmal-falls` | Koshmal Falls (Bhigu Dhodh) | waterfall | waghai | 3 | Guide essential; forest warnings posted |
 
 ## Narmada (32)
 
@@ -86,6 +93,8 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `narmada-rajpipla-heritage-walk` | Rajpipla Old Town & Clock Tower | cultural | rajpipla | 3 | |
 | `narmada-karjan-reservoir` | Karjan Dam & Reservoir | dam | rajpipla | 3 | Verify visitor access |
 | `narmada-junaraj` | Junaraj (Old Rajpipla) | fort | rajpipla | 3 | Verify existence/route |
+| `narmada-juna-ghanta-falls` | Juna Ghanta Waterfall | waterfall | rajpipla | 3 | Karjan stream; aka Juna Ghata / Takara |
+| `narmada-mandan-lake` | Mandan Lake View | lake | rajpipla | 3 | Karjan reservoir bank; boating, camping |
 
 ## Folded (deliberately not separate records)
 
@@ -102,7 +111,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 ## Verify-existence-first (before drafting)
 
-`dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj`
+`dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
+
+*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion.*
 
 ## Phase-1 note
 

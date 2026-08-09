@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "dang-don-falls",
+  "slug": "don-falls",
+  "name": { "en": "Don Waterfall" },
+  "aliases": ["Don Village Waterfall"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "picnic", "trekking"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Don village's own monsoon waterfall — a 1–2 km walk to a pool-bottomed drop, with changing rooms at the base and a genuinely rough approach road.",
+  "description": "The plateau village of Don keeps a waterfall in its back pocket: a monsoon cascade a short trek from the village, dropping into a natural pool that draws weekend bathers from across the district. The walk in runs one to two kilometres, easy-to-moderate, and the base has grown a small welcome — changing rooms, washrooms, tea and snack sellers — which makes it one of the more visitor-ready of Dang's remote falls.\n\nThe catch is the approach: the road toward the falls is regularly described as bad and unsuited to low cars, and it compounds the already-steep final climb to Don village itself. Come in a high-clearance vehicle or accept a longer walk. Weekends in August get properly busy with local crowds; weekdays return the falls to the herders.\n\nIt completes the Don day perfectly — meadows and ridgelines up top, the pool below — and pairs with Birsa waterfall on the drive back toward Ahwa.",
+  "highlights": [
+    "Natural pool at the base — the district's favourite monsoon dip",
+    "1–2 km easy-to-moderate walk from Don village",
+    "Changing rooms and tea stalls at the base",
+    "Completes the Don plateau day"
+  ],
+  "history_legend": null,
+  "attributes": { "pool_at_base": true },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 33 },
+    "coordinates": { "lat": 20.86, "lng": 73.79, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 33, "saputara": 75 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via the Don village road from Ahwa; the waterfall stretch is rough and not friendly to low cars",
+      "rail": "No practical railhead; Waghai/Bilimora serve the district",
+      "air": "Surat (~190 km)"
+    },
+    "last_mile": "1–2 km walk from the parking/base area; easy to moderate",
+    "road_condition": "Steep, narrow and broken in stretches — high clearance helps",
+    "parking": { "available": true, "fee": null, "notes": "Informal, managed locally in season" }
+  },
+  "visit": {
+    "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Managed informally in season; daylight only" }],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "August weekends run crowded with local visitors; weekdays are quiet."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "A monsoon waterfall in practice — flow thins fast from November."
+  },
+  "experience": {
+    "activities": ["sightseeing", "picnic", "trekking", "photography", "nature-walk"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The pool bowl shoots best late morning when light clears the rim; keep gear dry-bagged in spray."
+  },
+  "amenities": {
+    "food": "Tea and snack sellers at the base in season; meals at Don village or Ahwa",
+    "toilets": "basic",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Village youths point the way for a small tip",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Enter the pool only in gentle flow and never alone — depth and currents change with every rain",
+      "The approach road is genuinely bad; avoid after-dark driving",
+      "Rocks around the pool are slick — grip footwear, not slippers"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~33 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Do the plateau at dawn, the waterfall before noon, and Birsa on the drive back",
+    "Carry a change of clothes — the changing rooms assume you'll need them",
+    "Weekdays beat August Sundays by a wide margin"
+  ],
+  "faqs": [
+    {
+      "q": "Can you swim at Don waterfall?",
+      "a": "Locals do, in the calmer pool edges and in moderate flow. Treat it with monsoon respect: currents strengthen after rain, and there is no lifeguard — never swim alone or in spate."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-don-hill", "distance_km": 2 },
+    { "id": "dang-birsa-falls", "distance_km": 14, "note": "On the Ahwa side — natural pairing" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Don Waterfall, Dang — Pool, Trek & Access",
+    "meta_description": "Don village's monsoon waterfall: the 1–2 km walk, the pool at the base, changing rooms, and the rough road in."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Don Waterfall, Dang — listing", "url": "https://mindtrip.ai/attraction/ahwa-gujarat/don-waterfall-dang/at-XL8sB7VN", "publisher": "mindtrip.ai", "accessed": "2026-08-09" },
+      { "title": "Don Village — District Dang", "url": "https://dangs.nic.in/gallery/don-village/", "publisher": "dangs.nic.in (official)", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "visit.timings", "visit.fees", "access.road_condition"]
+  }
+}

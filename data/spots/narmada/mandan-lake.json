@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "narmada-mandan-lake",
+  "slug": "mandan-lake",
+  "name": { "en": "Mandan Lake View" },
+  "aliases": ["Mandan Lake", "Mandan Tapu"],
+  "category": "lake",
+  "subcategories": [],
+  "tags": ["nature", "picnic", "photography", "boating", "monsoon", "offbeat"],
+  "cluster": "rajpipla",
+  "status": "active",
+  "district": "narmada",
+  "summary": "The Karjan reservoir at its most scenic — hill-ringed water off Mandan village, 16 km from Rajpipla, with cheap boat rides and roasted-corn stalls.",
+  "description": "Mandan Lake View is what happens when a working reservoir grows a beauty spot: on the Karjan's western banks near Mandan village, the water spreads between low green hills and small islands — 'tapus' — and the view has quietly become the Rajpipla belt's favourite picnic, photo-shoot and camping backdrop. Monsoon and the months after are the show, when the reservoir brims and everything around it runs green.\n\nThe experience is endearingly informal: a rough 1–1.5 km approach road off the main route, parking managed by villagers, local boats doing rounds for ₹150–200 a head, and corn roasting on the banks. Pre-wedding shoots stake out the ridgelines; overlanders camp the flats. There is no ticket, no gate and no infrastructure beyond what Mandan village improvises — which is precisely the charm.\n\nIt shares its water with the Karjan dam viewpoint a few kilometres north, and stacks with Juna Ghanta falls for the belt's full monsoon loop.",
+  "highlights": [
+    "Hill-ringed reservoir views with island 'tapus'",
+    "Boat rounds for ₹150–200 and corn on the banks",
+    "The Rajpipla belt's favourite photo-shoot backdrop",
+    "Informal camping and overlanding flats"
+  ],
+  "history_legend": null,
+  "attributes": { "origin": "reservoir (Karjan)", "boating": true },
+  "location": {
+    "taluka": "Nandod",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Rajpipla", "distance_km": 16 },
+    "coordinates": { "lat": 21.77, "lng": 73.6, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "rajpipla": 16 }
+  },
+  "access": {
+    "modes": {
+      "road": "16 km from Rajpipla toward Mandan village; the final 1–1.5 km is a rough approach track",
+      "rail": "Ekta Nagar station (~40 km); Ankleshwar Jn (~75 km)",
+      "air": "Vadodara (~85 km)"
+    },
+    "last_mile": "Short walk from the informal parking to the banks and viewpoints",
+    "road_condition": "Good until the last 1–1.5 km, which is broken and slow",
+    "parking": { "available": true, "fee": null, "notes": "Informal, managed by villagers; small fee likely" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [{ "type": "boating", "amount_inr": 200, "note": "₹150–200 per person reported for local boat rounds" }],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Open banks, no gate; busiest on monsoon weekends and holidays."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Brimming and green July–November; shrinks and browns by late summer but stays scenic."
+  },
+  "experience": {
+    "activities": ["boating", "picnic", "photography", "camping", "sightseeing"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Golden hour over the tapus from the ridge above the parking; drones are popular here but check current rules near the dam."
+  },
+  "amenities": {
+    "food": "Corn and snack stalls in season; meals in Rajpipla",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed; boatmen narrate the tapus",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Reservoir depths drop off fast — no swimming, and life jackets on boats are worth insisting on",
+      "The approach track punishes low cars; go slow",
+      "Campers: levels rise with dam operations — pitch well above the waterline"
+    ],
+    "emergency": { "nearest_hospital": "Rajpipla civil hospital (~16 km)", "police": "Rajpipla rural PS", "notes": null }
+  },
+  "tips": [
+    "Evenings beat middays — light, breeze and corn stalls all improve",
+    "Stack with Karjan dam viewpoint and Juna Ghanta falls for the full loop",
+    "Weekdays give you the tapus almost alone"
+  ],
+  "faqs": [
+    {
+      "q": "Is Mandan Lake different from the Karjan reservoir?",
+      "a": "Same water, different vantage: Mandan village's banks and islands are the scenic southern face of the reservoir the Karjan dam impounds a few kilometres north."
+    }
+  ],
+  "nearby": [
+    { "id": "narmada-karjan-reservoir", "distance_km": 6, "note": "Same waters — the dam-side viewpoint" },
+    { "id": "narmada-juna-ghanta-falls", "distance_km": 12 },
+    { "id": "narmada-rajvant-palace", "distance_km": 16 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Mandan Lake View, Rajpipla — Karjan's Scenic Bank",
+    "meta_description": "Mandan Lake on the Karjan reservoir: boat rides, island views, the rough approach road and the best months to go."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "medium",
+    "sources": [
+      { "title": "How to reach beautiful Mandan Lake, Narmada — Explore The Nature", "url": "https://www.explorethenature.in/mandan-lake-rajpipla/", "publisher": "explorethenature.in", "accessed": "2026-08-09" },
+      { "title": "Mandan Lake View — mindtrip listing", "url": "https://mindtrip.ai/attraction/vaavadi-gujarat/mandan-lake-view/at-ILOHV0R2", "publisher": "mindtrip.ai", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "visit.fees", "access.parking.fee"]
+  }
+}

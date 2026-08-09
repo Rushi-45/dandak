@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "dang-birsa-falls",
+  "slug": "birsa-falls",
+  "name": { "en": "Birsa Waterfall" },
+  "aliases": ["Birsa Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A reels-famous forest cascade between Ahwa and Don — a waterfall that exists mostly as a map pin, monsoon videos and word of mouth.",
+  "description": "Birsa is the definition of a pinch-in spot: zoom the map between Ahwa and Don and a waterfall pin appears, backed by a steady stream of monsoon reels and very little else. The videos show a broad, forceful cascade in green forest — clearly worth a stop on the Don road in season — but published facts (exact village, path length, safe viewing points) are thin to nonexistent.\n\nThis record exists to be ground-truthed. If you go: it sits roughly fourteen kilometres from Don on the Ahwa side, monsoon-only, with no facilities and no management. Ask in the villages along the road, take the usual Dang precautions, and treat every detail here as provisional until someone paces it out.",
+  "highlights": [
+    "Roadside-belt cascade on the Ahwa–Don stretch",
+    "Monsoon-reel famous, guidebook invisible",
+    "Zero infrastructure — exploration etiquette applies"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 20 },
+    "coordinates": { "lat": 20.82, "lng": 73.75, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 20 }
+  },
+  "access": {
+    "modes": {
+      "road": "On or just off the Ahwa–Don road; ask locally for the current pull-off",
+      "rail": "No practical railhead",
+      "air": "Surat (~175 km)"
+    },
+    "last_mile": "Short walk from the road by most accounts — unverified",
+    "road_condition": "Interior tar; the Don stretch beyond is rough",
+    "parking": { "available": null, "fee": null, "notes": "Roadside at best" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Unmanaged; daylight only."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9],
+    "avoid_months": [11, 12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Strictly a July–September spectacle."
+  },
+  "experience": {
+    "activities": ["sightseeing", "photography", "nature-walk"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "The reels favour the head-on road-side angle in August spate."
+  },
+  "amenities": {
+    "food": "None — Ahwa is the supply stop",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Ask in roadside villages",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Unmanaged monsoon water — keep off wet rock shelves and out of the flow",
+      "Details here are provisional; scout before committing children or elders"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~20 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Fold into the Don day — waterfall, plateau and Don falls make one loop",
+    "If you ground-truth it, note the village name and path — this record needs it"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-don-hill", "distance_km": 14 },
+    { "id": "dang-don-falls", "distance_km": 14 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Birsa Waterfall, Dang — Map-Pin Guide",
+    "meta_description": "Birsa waterfall between Ahwa and Don: what the monsoon reels show, what remains unverified, and how to attempt it."
+  },
+  "provenance": {
+    "created": "2026-08-09",
+    "last_verified": "2026-08-09",
+    "confidence": "low",
+    "sources": [
+      { "title": "Birsa Waterfall, The Dangs — listing", "url": "https://indiasthan.com/place/gujarat/388194/birsa-waterfall", "publisher": "indiasthan.com", "accessed": "2026-08-09" },
+      { "title": "Birsa Waterfall — Trip.com attraction listing", "url": "https://www.trip.com/travel-guide/attraction/dang/birsa-waterfall-136974891/", "publisher": "trip.com", "accessed": "2026-08-09" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "access.road", "access.last_mile", "visit.timings"]
+  }
+}
