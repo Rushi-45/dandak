@@ -10,8 +10,8 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
 | Dang | 12 | 13 | 12 | 37 |
-| Narmada | 10 | 14 | 10 | 34 |
-| **Total** | **22** | **27** | **22** | **71** |
+| Narmada | 10 | 14 | 11 | 35 |
+| **Total** | **22** | **27** | **23** | **72** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -95,6 +95,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `narmada-junaraj` | Junaraj (Old Rajpipla) | fort | rajpipla | 3 | Verify existence/route |
 | `narmada-juna-ghanta-falls` | Juna Ghanta Waterfall | waterfall | rajpipla | 3 | Karjan stream; aka Juna Ghata / Takara |
 | `narmada-mandan-lake` | Mandan Lake View | lake | rajpipla | 3 | Karjan reservoir bank; boating, camping |
+| `narmada-barkhadi-falls` | Barkhadi Falls | waterfall | rajpipla | 3 | Devsatra belt; 2 km walk from the village school |
 
 ## Folded (deliberately not separate records)
 
@@ -113,7 +114,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 `dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
 
-*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion.*
+*Searched but not added (2026-08-09): "Milan waterfall" and "Chhatawada waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
 
 ## Phase-1 note
 

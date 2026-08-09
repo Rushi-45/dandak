@@ -86,7 +86,18 @@
     { "id": "narmada-rajvant-palace", "distance_km": 20 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Junaraj-Gujarat-India.jpg",
+        "license": "cc-by-sa",
+        "caption": "Temples of old Rajpipla rising from the Karjan reservoir backwater",
+        "credit": "Urvish Chaudhari",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Junaraj-Gujarat-India.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Junaraj — Old Rajpipla's Hill Capital",
     "meta_description": "Exploring Junaraj, the forested site of Rajpipla's original capital: what's known, verification caveats and how to attempt it."
@@ -95,7 +106,9 @@
     "created": "2026-08-08",
     "last_verified": null,
     "confidence": "low",
-    "sources": [],
+    "sources": [
+      { "title": "Junaraj-Gujarat-India.jpg — Commons photo (geotagged in the Karjan belt) showing the site's temples part-submerged in the reservoir backwater", "url": "https://commons.wikimedia.org/wiki/File:Junaraj-Gujarat-India.jpg", "publisher": "Wikimedia Commons / Urvish Chaudhari", "accessed": "2026-08-09" }
+    ],
     "needs_verification": ["status", "location.coordinates", "location.distances_km", "access.last_mile", "history_legend"]
   }
 }

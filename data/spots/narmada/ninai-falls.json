@@ -94,7 +94,18 @@
     { "id": "narmada-devmogra-temple", "distance_km": 45 }
   ],
   "itineraries": ["dediapada-offbeat-loop"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/A_place_where_Nature_meets_Humans.jpg",
+        "license": "cc0",
+        "caption": "Ninai Falls in August flow, from the viewing rocks",
+        "credit": "Arunbodra",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_place_where_Nature_meets_Humans.jpg"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Ninai Falls, Narmada — Monsoon Guide",
     "meta_description": "Reaching Ninai falls from Dediapada: forest-track access, best months, safety and pairing with Sagai–Malsamot."
@@ -106,7 +117,8 @@
     "sources": [
       { "title": "Ninai Waterfall — District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/ninai-waterfall/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
       { "title": "Ninai Waterfalls — Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/narmada/ninai-waterfall.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
-      { "title": "Ninai Falls — Wikipedia; coordinates via Mappls", "url": "https://en.wikipedia.org/wiki/Ninai_Falls", "publisher": "Wikipedia / Mappls", "accessed": "2026-08-08" }
+      { "title": "Ninai Falls — Wikipedia; coordinates via Mappls", "url": "https://en.wikipedia.org/wiki/Ninai_Falls", "publisher": "Wikipedia / Mappls", "accessed": "2026-08-08" },
+      { "title": "OpenStreetMap — Ninai (node 2376720535; independently agrees with the recorded coordinates)", "url": "https://www.openstreetmap.org/node/2376720535", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["access.road_condition"]
   }

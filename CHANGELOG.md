@@ -5,6 +5,11 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- `narmada-barkhadi-falls` (2026-08-09) — walk-in monsoon waterfall in the Devsatra belt south-east of Rajpipla, found via map sweep; trailhead pinned to the Barkhadi village primary school (21.8161, 73.6289) from a published trip report. Corpus: 71 → 72 spots. "Chhatawada waterfall" was searched and has no findable footprint (joins "Milan" on the awaiting-a-pin list).
+- Photos for `narmada-ninai-falls` (CC0, the falls in August flow — found by Commons geosearch at the record's coordinates) and `narmada-junaraj` (CC BY-SA, the old capital's temples part-submerged in the Karjan backwater). 16 records now carry imagery.
+
+### Changed
+- Coordinate map-pass via an OpenStreetMap sweep of both districts (every `waterway=waterfall` node): `dang-gira-falls` moved ~4.5 km to exact (20.7378, 73.4916; two independent OSM nodes agree), `dang-girmal-falls` moved ~11 km west to exact (20.97, 73.7207 — it sits beside Mahal, not east of it), `dang-anjan-kund` pinned exact (20.7118, 73.8164, "Anjani Caves & Waterfall" node) which relocated it south-east of Ahwa — approach text, distances and confidence (low → medium) updated; `dang-don-falls` moved to an unnamed OSM waterfall node 2 km NE of Don village (a conflicting pin named "Don Waterfall" ~17 km south is ledgered). `narmada-ninai-falls` coordinates independently confirmed. Dependent nearby-distances corrected across 8 records (notably Girmal ↔ Mahal 25 → 8 km).
 - Seven "pinch-in" Tier-3 spots (2026-08-09), web-grounded where possible and flagged for ground-truthing: Pandav Caves & Waterfall (Javatla), Chimer/Chichkund Falls (claimed ~100 m, unofficial), Don Waterfall, Birsa Waterfall, Koshmal Falls (Bhigu Dhodh), Juna Ghanta Waterfall, Mandan Lake View. "Milan waterfall" was searched but has no findable footprint and awaits a local pin. Corpus: 64 → 71 spots.
 - Media entries for 14 spot records: CC-licensed photography (Wikimedia Commons) with credits, licenses and source links — Statue of Unity, Saputara Lake, Gira Falls, Sardar Sarovar Dam, Zarwani, Hatgadh, Kabirvad, Purna, Mahal, Sunset Point, Shoolpaneshwar WLS, Nilkanthdham Poicha, Shabari Dham, Devmogra.
 

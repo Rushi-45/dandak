@@ -24,7 +24,7 @@
     "admin_district": null,
     "outside_district": false,
     "nearest_town": { "name": "Waghai", "distance_km": 5 },
-    "coordinates": { "lat": 20.751, "lng": 73.533, "precision": "approximate" },
+    "coordinates": { "lat": 20.7378, "lng": 73.4916, "precision": "exact" },
     "altitude_m": null,
     "distances_km": { "waghai": 5, "ahwa": 33, "saputara": 49, "surat": 105 }
   },
@@ -88,7 +88,7 @@
     }
   ],
   "nearby": [
-    { "id": "dang-waghai-botanical-garden", "distance_km": 5 },
+    { "id": "dang-waghai-botanical-garden", "distance_km": 7 },
     { "id": "dang-kilad-nature-campsite", "distance_km": 4 },
     { "id": "dang-vansda-national-park", "distance_km": 10 }
   ],
@@ -111,12 +111,13 @@
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": "2026-08-08",
+    "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
       { "title": "Gira Falls, Saputara — Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/saputara/gira-falls", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Gira Waterfall — Complete Travel Guide", "url": "https://en.safargujarat.com/gira-waterfall-dang-travel-guide/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+      { "title": "Gira Waterfall — Complete Travel Guide", "url": "https://en.safargujarat.com/gira-waterfall-dang-travel-guide/", "publisher": "safargujarat.com", "accessed": "2026-08-08" },
+      { "title": "OpenStreetMap — Gira Waterfalls (independent nodes 2362286107 and 11425652069, 65 m apart)", "url": "https://www.openstreetmap.org/node/2362286107", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "visit.fees", "attributes.height_m"]
+    "needs_verification": ["visit.fees", "attributes.height_m"]
   }
 }

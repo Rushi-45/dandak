@@ -86,7 +86,7 @@
     }
   ],
   "nearby": [
-    { "id": "dang-gira-falls", "distance_km": 5 },
+    { "id": "dang-gira-falls", "distance_km": 7 },
     { "id": "dang-kilad-nature-campsite", "distance_km": 3 },
     { "id": "dang-vansda-national-park", "distance_km": 8 }
   ],

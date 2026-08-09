@@ -25,7 +25,7 @@
     "admin_district": null,
     "outside_district": false,
     "nearest_town": { "name": "Ahwa", "distance_km": 33 },
-    "coordinates": { "lat": 20.86, "lng": 73.79, "precision": "area" },
+    "coordinates": { "lat": 20.8908, "lng": 73.7963, "precision": "approximate" },
     "altitude_m": null,
     "distances_km": { "ahwa": 33, "saputara": 75 }
   },
@@ -104,7 +104,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "Don Waterfall, Dang — listing", "url": "https://mindtrip.ai/attraction/ahwa-gujarat/don-waterfall-dang/at-XL8sB7VN", "publisher": "mindtrip.ai", "accessed": "2026-08-09" },
-      { "title": "Don Village — District Dang", "url": "https://dangs.nic.in/gallery/don-village/", "publisher": "dangs.nic.in (official)", "accessed": "2026-08-09" }
+      { "title": "Don Village — District Dang", "url": "https://dangs.nic.in/gallery/don-village/", "publisher": "dangs.nic.in (official)", "accessed": "2026-08-09" },
+      { "title": "OpenStreetMap — unnamed waterfall 2 km NE of Don village (node 2562424823); NB a pin named 'Don Waterfall' (node 11425667069) sits ~17 km south — unresolved", "url": "https://www.openstreetmap.org/node/2562424823", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "visit.timings", "visit.fees", "access.road_condition"]
   }

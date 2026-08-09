@@ -83,6 +83,7 @@
   "nearby": [
     { "id": "narmada-mandan-lake", "distance_km": 6, "note": "The reservoir's scenic southern banks" },
     { "id": "narmada-juna-ghanta-falls", "distance_km": 10 },
+    { "id": "narmada-barkhadi-falls", "distance_km": 10, "note": "Walk-in waterfall in the same hill belt" },
     { "id": "narmada-rajvant-palace", "distance_km": 18 },
     { "id": "narmada-junaraj", "distance_km": 15 }
   ],

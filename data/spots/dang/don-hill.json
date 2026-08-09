@@ -90,7 +90,7 @@
   ],
   "nearby": [
     { "id": "dang-don-falls", "distance_km": 2, "note": "The village's own monsoon waterfall and pool" },
-    { "id": "dang-girmal-falls", "distance_km": 40, "note": "Classic full-day pairing" },
+    { "id": "dang-girmal-falls", "distance_km": 35, "note": "Classic full-day pairing" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
   ],
   "itineraries": ["monsoon-waterfall-circuit", "tribal-culture-trail"],

@@ -95,7 +95,7 @@
   ],
   "nearby": [
     { "id": "dang-mahal-eco-campsite", "distance_km": 5 },
-    { "id": "dang-girmal-falls", "distance_km": 25 },
+    { "id": "dang-girmal-falls", "distance_km": 10 },
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],
   "itineraries": [],
