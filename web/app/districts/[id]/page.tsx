@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { SpotCard } from "@/components/spot-card";
 import { RealMap, type SpotMarker } from "@/components/leaflet-map";
 import { MONTHS, categoryLabel } from "@/lib/format";
-import { getAllSpots, getDistrict, getEvents, getFoods, getSpotById, toCardData } from "@/lib/data";
+import { getAllSpots, getDistrict, getEvents, getFoodImagePath, getFoods, getSpotById, toCardData } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
 
 type Params = Promise<{ id: string }>;
@@ -214,17 +215,54 @@ export default async function DistrictPage({ params }: { params: Params }) {
             <h2 className="text-xs font-bold uppercase tracking-widest text-rose-300">
               Eat like a local
             </h2>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {foods.map((f) => (
-                <span
-                  key={f.id}
-                  title={f.description}
-                  className="rounded-xl border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 text-sm text-stone-300"
-                >
-                  {f.veg ? "🌿" : "🍗"} {f.name.en}
-                  {f.season && <span className="ml-1.5 text-[10px] text-stone-500">({f.season.split("(")[0].trim().split(";")[0]})</span>}
-                </span>
-              ))}
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {foods.map((f) => {
+                const img = getFoodImagePath(f.id);
+                const credit = f.media?.images?.[0]?.credit;
+                return (
+                  <div
+                    key={f.id}
+                    className="overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.03] transition-colors hover:border-rose-300/25"
+                  >
+                    {img && (
+                      <div className="relative h-36 w-full">
+                        <Image
+                          src={img}
+                          alt={f.name.en}
+                          fill
+                          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                        {credit && (
+                          <span className="absolute bottom-1.5 right-1.5 rounded bg-black/45 px-1.5 py-0.5 text-[9px] text-stone-300 backdrop-blur-md">
+                            📷 {credit}
+                          </span>
+                        )}
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <p className="font-serif text-lg font-black leading-snug text-stone-100">
+                        {f.veg ? "🌿" : "🍗"} {f.name.en}
+                      </p>
+                      {f.season && (
+                        <p className="mt-1 text-[11px] text-stone-500">
+                          {f.season.split("(")[0].trim().split(";")[0]}
+                        </p>
+                      )}
+                      <p className="mt-1.5 line-clamp-3 text-xs leading-relaxed text-stone-400">
+                        {f.description}
+                      </p>
+                      {f.where_to_try.length > 0 && (
+                        <p className="mt-2 text-[11px] leading-snug text-stone-500">
+                          <span className="text-rose-300/70">Try at:</span>{" "}
+                          {f.where_to_try.slice(0, 2).map((w) => w.name).join(" · ")}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </section>
         </FadeIn>

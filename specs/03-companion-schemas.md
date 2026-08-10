@@ -95,5 +95,6 @@ Seed stays: Tent City 1 & 2 (Ekta Nagar) · SoU-area hotels · Rajvant Palace Re
 | `where_to_try` | array | []ok | `{ name, place }` — loose refs, not ids. |
 | `season` | string | N | e.g. winter strawberries. |
 | `cultural_note` | string | N | Respectful context ([spec 05](05-content-guidelines.md#sensitivity)). |
+| `media` | object | N | Optional `{ images: [{ url, license, caption, credit, source_url }] }`, same licence enum and crediting duty as a spot's media. Added 2026-08-10 so dishes can carry photography; omitting the key stays valid. |
 
 Seed foods: nagli (ragi) rotla · vaas nu shaak (bamboo shoot curry) · Dangi-style desi chicken · kand (purple yam) preparations · mahua-flower sweets · local honey (Saputara bee centre) · winter strawberries (Saputara) · chikoo belt produce (Bilimora–Waghai) · maize/nagli papad · Narmada-belt khichdi-kadhi thali.

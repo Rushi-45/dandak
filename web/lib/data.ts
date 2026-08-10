@@ -150,6 +150,9 @@ export interface Food {
   where_to_try: { name: string; place: string }[];
   season: string | null;
   cultural_note: string | null;
+  media?: {
+    images: { url: string; license: string; caption?: string; credit?: string; source_url?: string }[];
+  } | null;
 }
 
 export interface ItineraryStop {
@@ -236,6 +239,12 @@ export { MONTHS, formatMonths, categoryLabel } from "./format";
 export function getSpotImagePath(spotId: string): string | null {
   const p = path.join(process.cwd(), "public", "images", "spots", `${spotId}.jpg`);
   return fs.existsSync(p) ? `/images/spots/${spotId}.jpg` : null;
+}
+
+/** Local image for a food record, if one has been staged under public/images/food. */
+export function getFoodImagePath(foodId: string): string | null {
+  const p = path.join(process.cwd(), "public", "images", "food", `${foodId}.jpg`);
+  return fs.existsSync(p) ? `/images/food/${foodId}.jpg` : null;
 }
 
 /** Slim a full Spot down to the card contract (adds the local image path). */

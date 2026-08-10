@@ -29,6 +29,29 @@
     },
     "season": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 200 }] },
     "cultural_note": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 500 }] },
+    "media": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object", "additionalProperties": false, "required": ["images"],
+          "properties": {
+            "images": {
+              "type": "array", "maxItems": 6,
+              "items": {
+                "type": "object", "additionalProperties": false, "required": ["url", "license"],
+                "properties": {
+                  "url": { "type": "string", "minLength": 1, "maxLength": 500 },
+                  "license": { "enum": ["own", "cc0", "cc-by", "cc-by-sa", "govt-open", "licensed", "unknown"] },
+                  "caption": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 300 }] },
+                  "credit": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 200 }] },
+                  "source_url": { "oneOf": [{ "type": "null" }, { "type": "string", "maxLength": 300 }] }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "provenance": {
       "type": "object", "additionalProperties": false, "required": ["created", "last_reviewed"],
       "properties": {
