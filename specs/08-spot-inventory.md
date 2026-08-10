@@ -10,8 +10,8 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
 | Dang | 12 | 13 | 18 | 43 |
-| Narmada | 10 | 14 | 15 | 39 |
-| **Total** | **22** | **27** | **33** | **82** |
+| Narmada | 10 | 14 | 16 | 40 |
+| **Total** | **22** | **27** | **34** | **83** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -103,6 +103,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `narmada-mandan-lake` | Mandan Lake View | lake | rajpipla | 3 | Karjan reservoir bank; boating, camping |
 | `narmada-barkhadi-falls` | Barkhadi Falls | waterfall | rajpipla | 3 | Devsatra belt; 2 km walk from the village school |
 | `narmada-kesharva-falls` | Kesharva Waterfall | waterfall | rajpipla | 3 | Bathing tiers 24 km west of Rajpipla |
+| `narmada-chhatwada-falls` | Chhatwada Waterfall | waterfall | rajpipla | 3 | aka Handi waterfall; Kesharva belt; maintainer-pinned |
 | `narmada-kadia-dungar-caves` | Kadia Dungar Caves | monument | rajpipla | 3 | OD: Jhagadia (Bharuch); seven Buddhist caves |
 | `narmada-devsatra-hills` | Devsatra Hills | viewpoint | rajpipla | 3 | Hill trek above Barkhadi; shrine + seasonal fall |
 | `narmada-ghanikhut-falls` | Ghanikhut Waterfall | waterfall | dediapada-belt | 3 | OD: Netrang (Bharuch); aka Rampam/Reva; drive-up |
@@ -124,7 +125,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 `dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
 
-*Searched but not added (2026-08-09): "Milan waterfall" and "Chhatawada waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. "Wonder waterfall" (Dang) is confirmed to exist — visited first-hand and titled in a YouTube video — but no source names its village or pin; it joins the awaiting-a-pin list. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
+*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. "Chhatawada waterfall" graduated from this list on 2026-08-10: the maintainer supplied the village pin and the falls' map name ('Handi waterfall') — now `narmada-chhatwada-falls`. "Wonder waterfall" (Dang) is confirmed to exist — visited first-hand and titled in a YouTube video — but no source names its village or pin; it remains on the awaiting-a-pin list. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
 
 ### Candidate pool — vlog-mined (2026-08-10)
 

@@ -89,6 +89,7 @@
     }
   ],
   "nearby": [
+    { "id": "narmada-chhatwada-falls", "distance_km": 9, "note": "The belt's spate falls — pair them" },
     { "id": "narmada-kadia-dungar-caves", "distance_km": 25, "note": "Buddhist caves across the Bharuch line" },
     { "id": "narmada-rajvant-palace", "distance_km": 24 },
     { "id": "narmada-karjan-reservoir", "distance_km": 32 }
