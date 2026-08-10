@@ -38,7 +38,7 @@ export default async function ItineraryPage({ params }: { params: Params }) {
   const days = Array.from({ length: it.duration_days }, (_, i) => i + 1);
 
   const mapStops: TripMapStop[] = it.stops
-    .map((stop) => {
+    .map((stop): TripMapStop | null => {
       const spot = getSpotById(stop.spot_id);
       if (!spot) return null;
       const c = spot.location.coordinates;
