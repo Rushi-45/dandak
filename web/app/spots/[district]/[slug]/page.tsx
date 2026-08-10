@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { SpotMap } from "@/components/spot-map";
 import { Spotlight } from "@/components/spotlight";
+import { VideoStrip } from "@/components/video-strip";
 import { TextGenerate } from "@/components/text-generate";
 import { TracingBeam } from "@/components/tracing-beam";
 import {
@@ -276,6 +277,9 @@ export default async function SpotPage({ params }: { params: Params }) {
           )}
         </section>
       </FadeIn>
+
+      {/* Short clips */}
+      <VideoStrip videos={spot.media.videos ?? []} />
 
       {/* Where it is */}
       <section className="mt-12">

@@ -95,7 +95,7 @@ export interface Spot {
   itineraries: string[];
   media: {
     images: { url: string; license: string; caption?: string | null; credit?: string | null; source_url?: string | null }[];
-    videos: unknown[];
+    videos: { url: string; title?: string | null; source?: string | null }[];
   };
   seo: { meta_title: string | null; meta_description: string | null };
   provenance: {

@@ -102,7 +102,9 @@
         "credit": "Rushi Chudasama"
       }
     ],
-    "videos": []
+    "videos": [
+      { "url": "/videos/dang-pandav-caves-1.mp4", "title": "Standing behind the curtain, under the overhang", "source": "Rushi Chudasama (own footage)" }
+    ]
   },
   "seo": {
     "meta_title": "Pandav Caves & Waterfall, Dang — Trek Guide",

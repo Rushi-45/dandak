@@ -92,7 +92,12 @@
     { "id": "dang-mahal-eco-campsite", "distance_km": 15, "note": "The stay that gave the falls its nickname" }
   ],
   "itineraries": ["subir-falls-circuit"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [],
+    "videos": [
+      { "url": "/videos/dang-mahal-falls-1.mp4", "title": "A monkey on the railing, on the walk in to the falls", "source": "Rushi Chudasama (own footage)" }
+    ]
+  },
   "seo": {
     "meta_title": "Karanjwa (Mahal) Waterfall, Dang — Subir Belt Falls",
     "meta_description": "Karanjwa waterfall — the 'Mahal waterfall' of campsite word-of-mouth: where it actually is, the walk-in, and the Subir-belt falls cluster."

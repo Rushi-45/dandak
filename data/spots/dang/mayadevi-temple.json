@@ -105,7 +105,9 @@
         "credit": "Rushi Chudasama"
       }
     ],
-    "videos": []
+    "videos": [
+      { "url": "/videos/dang-mayadevi-temple-1.mp4", "title": "Monsoon rain caught on a leaf beside the river", "source": "Rushi Chudasama (own footage)" }
+    ]
   },
   "seo": {
     "meta_title": "Mayadevi Temple, Dang — Forest Shrine & Fair",

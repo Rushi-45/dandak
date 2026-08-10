@@ -127,7 +127,11 @@
         "source_url": "https://commons.wikimedia.org/wiki/File:Gira_Water_Fall_saputara.JPG"
       }
     ],
-    "videos": []
+    "videos": [
+      { "url": "/videos/dang-gira-falls-1.mp4", "title": "The river pouring over the shelf at dusk", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-gira-falls-2.mp4", "title": "The curtain at full monsoon width", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-gira-falls-3.mp4", "title": "Panning the whole multi-tier fall", "source": "Rushi Chudasama (own footage)" }
+    ]
   },
   "seo": {
     "meta_title": "Gira Falls, Waghai — Monsoon Guide",

@@ -109,7 +109,9 @@
         "source_url": "https://maps.app.goo.gl/4N3ziiFPdWQoGxjZ7"
       }
     ],
-    "videos": []
+    "videos": [
+      { "url": "/videos/dang-girmal-falls-1.mp4", "title": "Gujarat's tallest fall running in monsoon", "source": "Rushi Chudasama (own footage)" }
+    ]
   },
   "seo": {
     "meta_title": "Girmal Falls, Dang — Gujarat's Tallest Waterfall",

@@ -108,7 +108,11 @@
         "credit": "Rushi Chudasama"
       }
     ],
-    "videos": []
+    "videos": [
+      { "url": "/videos/dang-chimer-falls-1.mp4", "title": "The fall from the viewpoint across the valley", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-chimer-falls-2.mp4", "title": "The full drop, close up", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-chimer-falls-3.mp4", "title": "Looking down the gorge from the rim", "source": "Rushi Chudasama (own footage)" }
+    ]
   },
   "seo": {
     "meta_title": "Chimer (Chichkund) Falls — Dang's Contested Giant",
