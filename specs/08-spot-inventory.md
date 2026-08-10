@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 18 | 43 |
+| Dang | 12 | 13 | 19 | 44 |
 | Narmada | 10 | 14 | 16 | 40 |
-| **Total** | **22** | **27** | **34** | **83** |
+| **Total** | **22** | **27** | **35** | **84** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -62,6 +62,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-gaumukh-falls` | Gaumukh Waterfalls (Songadh) | waterfall | dang-interior | 3 | OD: Songadh (Tapi); temple + seasonal fall |
 | `dang-medha-falls` | Medha Waterfall | waterfall | dang-interior | 3 | OD: Songadh (Tapi), Jamkhadi; multi-tier |
 | `dang-raja-rani-falls` | Raja Rani Waterfall | waterfall | dang-interior | 3 | Twin falls (Pandar Dhodh) in Purna WLS; trek-grade |
+| `dang-janki-van` | Janki Van | garden | waghai | 3 | OD: Vansda (Navsari); Ramayana-themed forest garden at Bhinar |
 
 ## Narmada (32)
 
@@ -125,7 +126,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 `dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
 
-*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. "Chhatawada waterfall" graduated from this list on 2026-08-10: the maintainer supplied the village pin and the falls' map name ('Handi waterfall') — now `narmada-chhatwada-falls`. "Wonder waterfall" (Dang) is confirmed to exist — visited first-hand and titled in a YouTube video — but no source names its village or pin; it remains on the awaiting-a-pin list. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
+*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. "Chhatawada waterfall" graduated from this list on 2026-08-10: the maintainer supplied the village pin and the falls' map name ('Handi waterfall') — now `narmada-chhatwada-falls`. "Wonder waterfall" is confirmed to exist — visited first-hand, and the NikunjTravelogy video description places it in **Vyara taluka (Tapi)**, not Dang proper — but no source names its village or pin; it remains on the awaiting-a-pin list. An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
 
 ### Candidate pool — vlog-mined (2026-08-10)
 
@@ -139,6 +140,17 @@ YouTube travel vlogs enumerate more places than the tourism literature does. The
 | Devghat waterfall | darpan.blog guide — Umarpada (Surat)/Songadh (Tapi) border, ~125 km from Surat | outside both districts — OD decision pending |
 | Vangan waterfall (Aakda Dhodh) | video: ~16 km from Vansda (Navsari) | OD decision pending |
 | YouTube playlist "Waterfall's Near Rajpipla, Kevadia & Dediyapada" (PLFJI9jClWluzUN3TKvrfYqKENpdrYUirt) | unmined playlist — likely more names | next mining pass |
+
+Channel harvest (2026-08-10, five local vloggers supplied by the maintainer — NikunjTravelogy, TravelingDoctor, VIPULSNATURELENCE, d.r.p vlogs, RinkeshVasava) produced `dang-janki-van` plus these further leads:
+
+| Candidate | Best lead | Blocker |
+|---|---|---|
+| Bhambhi waterfall (Dang) | NikunjTravelogy 2024 video + a Facebook trek video | no village or pin in any source |
+| Ekva Golan waterfalls (Songadh, Tapi) | mindtrip listing; Ekva Golan village is 25 km from Songadh — but its gram panchayat is Medha, so listings may conflate these falls with `dang-medha-falls` | needs a pin to distinguish from Medha |
+| Kaka-Kaki waterfall (Songadh, Tapi) | nrigujarati.co.in guide claiming a ~200-ft fall in dense forest | OD scope decision + coordinates |
+| Kadam Dungar (sunset hill) and Pilva Dungar (off-road hill, Vansda side) | d.r.p vlogs | thin: activity spots, no pins |
+| Unai hot-spring temple (Unai Mata, Navsari) | 6 km from Janki Van; classic halt on the Waghai–Vyara road | OD scope decision — strong candidate for the next wave |
+| Kaprada / Wilson Hills / Shankar Dhodh / Nargol (Valsad belt) | multiple vlogs by the same channels | out of scope — different travel orbit (Valsad/Dharampur) |
 
 ## Phase-1 note
 
