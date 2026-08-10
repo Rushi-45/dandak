@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "dang-pilva-dungar",
+  "slug": "pilva-dungar",
+  "name": { "en": "Pilva Dungar" },
+  "aliases": ["Pilva Hill", "Pindhara Dev Dungar"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["nature", "offbeat", "trekking", "tribal-culture", "monsoon", "adventure"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "'The last hill of Gujarat' at Chorvani near Vansda — a monsoon-green dungar with the Pindhara Dev shrine, loved by trekkers and off-roaders alike.",
+  "description": "Pilva Dungar carries the kind of title that makes a detour irresistible: villagers call it the last hill of Gujarat, the final rise of the state's ground at Chorvani village in Vansda taluka before the land runs on into Maharashtra. The hill keeps a shrine of Pindhara Dev — the local deity the monsoon vlogs name in the same breath — and its slopes have lately become a small magnet for two crowds at once: walkers after the green climb, and off-road riders after the track up.\n\nMonsoon is the season for both. The grass runs full, cloud drags across the summit, and the villages below stage the whole show. As at every worshipped hill in this belt, the shrine's observances come first — ask at Chorvani before climbing on festival days, and leave the summit as found.",
+  "highlights": [
+    "'The last hill of Gujarat' — the state's final rise at Chorvani",
+    "Pindhara Dev's hill shrine",
+    "Monsoon grass and cloud; a favourite of walkers and off-roaders"
+  ],
+  "history_legend": "The hill is held as Gujarat's last — the state's final high ground before Maharashtra — and keeps the shrine of Pindhara Dev, the local deity of the surrounding Vansda villages.",
+  "attributes": {},
+  "location": {
+    "taluka": "Vansda (Navsari)",
+    "admin_district": "Navsari",
+    "outside_district": true,
+    "nearest_town": { "name": "Vansda", "distance_km": 12 },
+    "coordinates": { "lat": 20.7, "lng": 73.4, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 18 }
+  },
+  "access": {
+    "modes": {
+      "road": "Village roads to Chorvani from the Vansda side; the hill track continues from the village",
+      "rail": "Waghai/Bilimora heritage-line side; Bilimora Jn for broad gauge",
+      "air": "Surat (~105 km)"
+    },
+    "last_mile": "Hill path (or rough vehicle track) from Chorvani to the summit",
+    "road_condition": "Rural tar to the village; the hill track is rough and monsoon-slick",
+    "parking": { "available": true, "fee": 0, "notes": "At Chorvani village" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open hill; the shrine's observances take precedence on festival days."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon for the green and the cloud; winter for the long clear views."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography", "adventure-activities"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The summit's border panorama is the frame; monsoon rides up the track make the action shots."
+  },
+  "amenities": {
+    "food": "None — Vansda town has the nearest food",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
+    "guides": "Chorvani villagers point the way; needed only in mist",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "The hill track is genuinely rough — off-road riding is for experienced riders only",
+      "Open slopes; descend early in lightning weather",
+      "Respect the Pindhara Dev shrine and its offerings"
+    ],
+    "emergency": { "nearest_hospital": "CHC Vansda (~12 km)", "police": "Vansda PS", "notes": null }
+  },
+  "tips": [
+    "Combine with Vangan's falls and the national park for the full Vansda day",
+    "Walkers should give the off-road riders the track and take the footpath line",
+    "Ask at Chorvani about festival days before planning a summit picnic"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-vangan-falls", "distance_km": 8, "note": "The Ankada Dhodh — same Vansda orbit" },
+    { "id": "dang-vansda-national-park", "distance_km": 12 },
+    { "id": "dang-chirai-falls", "distance_km": 14 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Pilva Dungar — The Last Hill of Gujarat",
+    "meta_description": "Pilva Dungar at Chorvani near Vansda: the Pindhara Dev shrine, the monsoon climb, the off-road track and the border panorama."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Pilva Dungar Vansda | Pindhara Dev — vlog placing the hill at Chorvani village, 'the last hill of Gujarat'", "url": "https://www.youtube.com/watch?v=0-iGgMzDAYA", "publisher": "YouTube", "accessed": "2026-08-10" },
+      { "title": "Pilva Dungar | Vansda | Monsoon Special — vlog", "url": "https://www.youtube.com/watch?v=EDS0GJ0Cf64", "publisher": "YouTube (Weekend Tales)", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "history_legend", "access.last_mile"]
+  }
+}

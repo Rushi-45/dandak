@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "dang-kadam-dungar",
+  "slug": "kadam-dungar",
+  "name": { "en": "Kadam Dungar" },
+  "aliases": ["Kalam Dungar", "Kadamdungar"],
+  "category": "viewpoint",
+  "subcategories": [],
+  "tags": ["nature", "offbeat", "tribal-culture", "pilgrimage", "sunset", "trekking"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "An 800-metre hill off the Ahwa–Waghai road — one of Dang's high points, sacred to the Adivasi villages around it, with sunset views over the whole belt.",
+  "description": "Kadam Dungar — Kalam Dungar in some mouths — rises off the Ahwa–Waghai road to more than eight hundred metres, which in this district's geography makes it one of the high points between the Saputara ridge and the interior plateaus. The hill matters twice over: as a viewpoint, with long lines over the forest belt at sunrise and sunset, and as a sacred place of the surrounding Adivasi villages, whose shrines and observances on the hill deserve a visitor's quiet respect.\n\nThe climb is a hill path rather than a built stair — an unhurried hour up for most walkers — and the summit in monsoon sits in and out of moving cloud the way Don's plateau does, with none of Don's distance from the main road. It is the easiest big view on the district's east–west spine.",
+  "highlights": [
+    "800-plus metres — a Dang high point off the main road",
+    "Sacred hill of the surrounding Adivasi villages",
+    "Sunset over the forest belt an hour's climb from the car"
+  ],
+  "history_legend": "The hill is a living sacred place for the Adivasi villages around it; treat shrines and offerings on the summit as worship, not decor.",
+  "attributes": { "elevation_m": 800 },
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 12 },
+    "coordinates": { "lat": 20.76, "lng": 73.63, "precision": "area" },
+    "altitude_m": 800,
+    "distances_km": { "ahwa": 12, "waghai": 20 }
+  },
+  "access": {
+    "modes": {
+      "road": "Off the Ahwa–Waghai road, roughly 20 km from Waghai; the trailhead is villager-known",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~130 km)"
+    },
+    "last_mile": "Hill path to the summit — about an hour up for most walkers",
+    "road_condition": "Highway to the turn, village lane to the base",
+    "parking": { "available": true, "fee": 0, "notes": "Informal at the base" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 180,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Time the summit for sunset and carry a light for the descent — or climb for dawn."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Monsoon for cloud drama, winter for clarity; a hot bare climb by late spring."
+  },
+  "experience": {
+    "activities": ["trekking", "sightseeing", "photography", "stargazing"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The east–west road below gives the summit shot its leading line; monsoon cloud opens and closes the view by the minute."
+  },
+  "amenities": {
+    "food": "None — Ahwa and Waghai bracket the hill",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "ok" },
+    "guides": "A villager from the base makes the braided paths simple",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Open summit — descend early in lightning weather",
+      "Respect shrines and offerings; this is a worshipped hill"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~12 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "The easiest big view on the Ahwa–Waghai spine — no interior drive required",
+    "Pair with Shivghat's riverside chai on the same road",
+    "Ask at the base hamlet before climbing on local festival days"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-shivghat", "distance_km": 7 },
+    { "id": "dang-kunda-falls", "distance_km": 14 },
+    { "id": "dang-waghai-botanical-garden", "distance_km": 20 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Kadam Dungar, Dang — The Ahwa Road's High Point",
+    "meta_description": "Kadam (Kalam) Dungar off the Ahwa–Waghai road: the hour's climb, the Adivasi sacred hill, and sunset over the forest belt."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Kadam Dungar, Waghai, Dangs — ~20 km from Waghai on the Ahwa road; 800+ m; sacred to local Adivasis", "url": "https://darpan.blog/travel/kadam-dungar-waghai-dangs/", "publisher": "darpan.blog", "accessed": "2026-08-10" },
+      { "title": "Kadam dungar, Dang, Gujarat — overview", "url": "https://www.gujaratplaces.in/2021/09/kadam-dungar-dang-gujarat.html", "publisher": "gujaratplaces.in", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.elevation_m", "access.last_mile"]
+  }
+}

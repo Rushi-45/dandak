@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 35 | 60 |
+| Dang | 12 | 13 | 41 | 66 |
 | Narmada | 10 | 14 | 16 | 40 |
-| **Total** | **22** | **27** | **51** | **100** |
+| **Total** | **22** | **27** | **57** | **106** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -79,6 +79,12 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-chirai-falls` | Chirai Waterfalls | waterfall | waghai | 3 | Far SW toward the Vansda border |
 | `dang-advait-falls` | Advait Waterfall | waterfall | waghai | 3 | Vangan's twin on the border line |
 | `dang-vangan-falls` | Vangan Waterfall (Ankada Dhodh) | waterfall | waghai | 3 | OD: Vansda (Navsari); Gandavle hill folded in |
+| `dang-svtis-falls` | Svtis Waterfall | waterfall | dang-interior | 3 | SW pocket; name verified by maintainer |
+| `dang-soul-to-prakriti-falls` | Soul to Prakriti Waterfall | waterfall | dang-interior | 3 | Near Medha; name verified by maintainer |
+| `dang-kaka-kaki-falls` | Kaka-Kaki Waterfall | waterfall | dang-interior | 3 | OD: Songadh (Tapi); 200-ft claim; guide-essential |
+| `dang-unai-mata-temple` | Unai Mata Temple & Hot Springs | temple | waghai | 3 | OD: Vansda (Navsari); Rama-arrow hot springs |
+| `dang-kadam-dungar` | Kadam Dungar | viewpoint | dang-interior | 3 | 800 m sacred hill on the Ahwa–Waghai road |
+| `dang-pilva-dungar` | Pilva Dungar | viewpoint | waghai | 3 | OD: Vansda (Navsari); 'last hill of Gujarat'; Pindhara Dev |
 
 ## Narmada (32)
 
@@ -156,8 +162,8 @@ YouTube travel vlogs enumerate more places than the tourism literature does. The
 | Devghat waterfall | darpan.blog guide — Umarpada (Surat)/Songadh (Tapi) border, ~125 km from Surat | outside both districts — OD decision pending |
 | ~~Vangan waterfall (Aakda Dhodh)~~ | resolved 2026-08-10 — maintainer's pin → `dang-vangan-falls` (OD: Vansda, Navsari; Advait + Gandavle hill alongside) | — |
 | ~~Maharaychond forest~~ | resolved 2026-08-10 — maintainer describes it as a picnic forest → `dang-maharaychond-forest` | — |
-| 'Svtis Waterfall' pin (20.6787, 73.6224) and 'Soul to prakriti Waterfall' pin (21.0830, 73.6931) | real map pins, but both names read as uploader coinages; records were drafted then withdrawn at the maintainer's discretion | await proper local names before re-inclusion |
-| Vanvihar stay home (20.7103, 73.7095) | maintainer's pin — homestay by Temburgartha dam | stay record, not a spot; queue for the stays companion set |
+| ~~'Svtis' and 'Soul to prakriti' pins~~ | restored 2026-08-10 — the maintainer verified both names are genuinely in local use → `dang-svtis-falls`, `dang-soul-to-prakriti-falls` | — |
+| ~~Vanvihar stay home~~ | resolved 2026-08-10 → stay record `vanvihar-stay-home` in the stays companion set | — |
 | YouTube playlist "Waterfall's Near Rajpipla, Kevadia & Dediyapada" (PLFJI9jClWluzUN3TKvrfYqKENpdrYUirt) | unmined playlist — likely more names | next mining pass |
 
 Channel harvest (2026-08-10, five local vloggers supplied by the maintainer — NikunjTravelogy, TravelingDoctor, VIPULSNATURELENCE, d.r.p vlogs, RinkeshVasava) produced `dang-janki-van` plus these further leads:
@@ -166,9 +172,9 @@ Channel harvest (2026-08-10, five local vloggers supplied by the maintainer — 
 |---|---|---|
 | ~~Bhambhi waterfall~~ | resolved 2026-08-10 — maintainer's pin (map name 'Bhambai', 20.7859/73.9314) → `dang-bhambhi-falls` | — |
 | ~~Ekva Golan waterfalls~~ | resolved 2026-08-10 — maintainer confirms same falls as Medha; pin (21.0873/73.7118) folded into `dang-medha-falls` as alias + coordinate fix | — |
-| Kaka-Kaki waterfall (Songadh, Tapi) | nrigujarati.co.in guide claiming a ~200-ft fall in dense forest | OD scope decision + coordinates |
-| Kadam Dungar (sunset hill) and Pilva Dungar (off-road hill, Vansda side) | d.r.p vlogs | thin: activity spots, no pins |
-| Unai hot-spring temple (Unai Mata, Navsari) | 6 km from Janki Van; classic halt on the Waghai–Vyara road | OD scope decision — strong candidate for the next wave |
+| ~~Kaka-Kaki waterfall~~ | resolved 2026-08-10 (maintainer verified) → `dang-kaka-kaki-falls` | — |
+| ~~Kadam Dungar / Pilva Dungar~~ | resolved 2026-08-10 (maintainer verified; darpan + vlog sources located both) → `dang-kadam-dungar`, `dang-pilva-dungar` | — |
+| ~~Unai hot-spring temple~~ | resolved 2026-08-10 (maintainer verified) → `dang-unai-mata-temple` | — |
 | Kaprada / Wilson Hills / Shankar Dhodh / Nargol (Valsad belt) | multiple vlogs by the same channels | out of scope — different travel orbit (Valsad/Dharampur) |
 
 ## Phase-1 note

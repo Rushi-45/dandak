@@ -5,6 +5,8 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- The candidate pool cleared (2026-08-10, all names maintainer-verified): `dang-kaka-kaki-falls` (the border forest's claimed 200-footer near Gusrangam — guide-essential), `dang-unai-mata-temple` (the Rama's-arrow hot springs, official Utsav festival listing, 6 km from Janki Van), `dang-kadam-dungar` (800 m sacred hill on the Ahwa–Waghai road) and `dang-pilva-dungar` ('the last hill of Gujarat' at Chorvani, with the Pindhara Dev shrine). `dang-svtis-falls` and `dang-soul-to-prakriti-falls` restored — the maintainer verified both names are genuinely in use. Corpus: 100 → 106.
+- `vanvihar-stay-home` added to the stays companion set (village homestay by Temburgartha dam) — 16 stays. Don Village Homestays' coordinates corrected to the relocated village.
 - `dang-maharaychond-forest` (2026-08-10) — the picnic forest south of Ahwa, unlocked by the maintainer's one-line description; wired into the south-western circuit (Wasurna vista, Temburgartha dam).
 
 ### Removed

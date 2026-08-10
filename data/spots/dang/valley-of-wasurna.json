@@ -82,6 +82,7 @@
   "nearby": [
     { "id": "dang-temburgartha-dam", "distance_km": 8 },
     { "id": "dang-maharaychond-forest", "distance_km": 3, "note": "The circuit's picnic woods" },
+    { "id": "dang-svtis-falls", "distance_km": 7 },
     { "id": "dang-chikhalda-falls", "distance_km": 10 }
   ],
   "itineraries": [],
