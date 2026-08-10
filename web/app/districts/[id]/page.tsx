@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { SpotCard } from "@/components/spot-card";
-import { MONTHS } from "@/lib/format";
-import { getDistrict, getEvents, getFoods, getSpotById, toCardData } from "@/lib/data";
+import { SpotsMap, type SpotMarker } from "@/components/spots-map";
+import { MONTHS, categoryLabel } from "@/lib/format";
+import { getAllSpots, getDistrict, getEvents, getFoods, getSpotById, toCardData } from "@/lib/data";
+import { categoryMeta } from "@/lib/ui";
 
 type Params = Promise<{ id: string }>;
 
@@ -33,6 +35,29 @@ export default async function DistrictPage({ params }: { params: Params }) {
   const events = getEvents().filter((e) => d.festivals.includes(e.id));
   const foods = getFoods().filter((f) => d.foods.includes(f.id));
   const accent = id === "dang" ? "text-emerald-300" : "text-amber-300";
+
+  const markers: SpotMarker[] = getAllSpots()
+    .filter((s) => s.district === id)
+    .map((s) => ({
+      id: s.id,
+      district: s.district,
+      slug: s.slug,
+      name: s.name.en,
+      lat: s.location.coordinates.lat,
+      lng: s.location.coordinates.lng,
+      category: s.category,
+      emoji: categoryMeta(s.category).emoji,
+    }));
+  const counts = new Map<string, number>();
+  for (const m of markers) counts.set(m.category, (counts.get(m.category) ?? 0) + 1);
+  const categories = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([key, count]) => ({
+      key,
+      label: categoryLabel(key),
+      emoji: categoryMeta(key).emoji,
+      count,
+    }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14">
@@ -75,6 +100,16 @@ export default async function DistrictPage({ params }: { params: Params }) {
           </Link>
         </section>
       </FadeIn>
+
+      {/* District map */}
+      <section className="mt-14">
+        <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+          {d.name.en} on the map
+        </h2>
+        <div className="mt-5">
+          <SpotsMap markers={markers} categories={categories} />
+        </div>
+      </section>
 
       {/* Weather */}
       <FadeIn>

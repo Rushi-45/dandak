@@ -30,7 +30,7 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
   const [category, setCategory] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
-  const { H, project } = useMemo(() => {
+  const { H, positions } = useMemo(() => {
     const midLat = markers.reduce((a, s) => a + s.lat, 0) / markers.length;
     const kx = Math.cos((midLat * Math.PI) / 180);
     const xs = markers.map((s) => s.lng * kx);
@@ -47,13 +47,28 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
     const scale = Math.min((W - pad * 2) / dx, (height - pad * 2) / dy);
     const ox = (W - dx * scale) / 2;
     const oy = (height - dy * scale) / 2;
-    return {
-      H: height,
-      project: (s: SpotMarker) => ({
+
+    // Spiral fan-out: dense clusters (the SoU complex packs ~15 spots into
+    // a square kilometre) bloom into readable rings instead of one smudge.
+    const placed: { x: number; y: number }[] = [];
+    const pts = new Map<string, { x: number; y: number }>();
+    for (const s of markers) {
+      const base = {
         x: ox + (s.lng * kx - minX) * scale,
         y: oy + (maxY - s.lat) * scale,
-      }),
-    };
+      };
+      let p = base;
+      for (let t = 0; t < 24; t++) {
+        const clash = placed.some((q) => Math.hypot(q.x - p.x, q.y - p.y) < 13);
+        if (!clash) break;
+        const ring = Math.floor(t / 6) + 1;
+        const ang = (t % 6) * ((Math.PI * 2) / 6) + (ring - 1) * 0.55;
+        p = { x: base.x + Math.cos(ang) * 13 * ring, y: base.y + Math.sin(ang) * 13 * ring };
+      }
+      placed.push(p);
+      pts.set(s.id, p);
+    }
+    return { H: height, positions: pts };
   }, [markers]);
 
   const shown = category ? markers.filter((m) => m.category === category) : markers;
@@ -109,7 +124,7 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
         </svg>
 
         {markers.map((s) => {
-          const { x, y } = project(s);
+          const { x, y } = positions.get(s.id)!;
           const left = (x / W) * 100;
           const top = (y / H) * 100;
           const active = !category || s.category === category;
@@ -155,14 +170,18 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/[0.06] px-5 py-3">
         <div className="flex items-center gap-4 text-[11px] text-stone-400">
-          <span className="flex items-center gap-1.5">
-            <span className="inline-block h-2.5 w-2.5 rounded-full border border-emerald-300/80 bg-emerald-400/25" />
-            Dang
-          </span>
-          <span className="flex items-center gap-1.5">
-            <span className="inline-block h-2.5 w-2.5 rounded-full border border-sky-300/80 bg-sky-400/25" />
-            Narmada
-          </span>
+          {markers.some((m) => m.district === "dang") && (
+            <span className="flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-full border border-emerald-300/80 bg-emerald-400/25" />
+              Dang
+            </span>
+          )}
+          {markers.some((m) => m.district === "narmada") && (
+            <span className="flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-full border border-sky-300/80 bg-sky-400/25" />
+              Narmada
+            </span>
+          )}
           <span className="text-stone-600">
             {shownCount} spot{shownCount === 1 ? "" : "s"} shown
           </span>
