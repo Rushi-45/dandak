@@ -83,19 +83,24 @@ export function MediaGallery({ items, title }: { items: GalleryItem[]; title: st
           </span>
         )}
         {hero.caption && (
-          <p className="absolute bottom-3 left-4 max-w-[70%] text-left text-xs text-stone-300">
+          <p className="absolute inset-x-4 bottom-3 text-left text-xs leading-snug text-stone-300">
             {hero.caption}
           </p>
         )}
+        {/* credit sits top-right: at phone widths a bottom-right chip collides
+            with a caption that has wrapped to two lines */}
         <Credit
           item={hero}
-          className="absolute bottom-3 right-3 rounded-md bg-black/40 px-2 py-1 text-[10px] text-stone-400 backdrop-blur-md"
+          className="absolute right-3 top-3 rounded-md bg-black/45 px-2 py-1 text-[10px] text-stone-300 backdrop-blur-md"
         />
       </button>
 
       {/* filmstrip */}
       {count > 1 && (
-        <div className="no-scrollbar mt-3 flex gap-2 overflow-x-auto pb-1">
+        <div className="relative mt-3">
+          {/* fade tells you the strip keeps going past the edge */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-[#080c0b] to-transparent" />
+        <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1">
           {items.map((it, i) => (
             <button
               key={it.src}
@@ -118,9 +123,10 @@ export function MediaGallery({ items, title }: { items: GalleryItem[]; title: st
               )}
             </button>
           ))}
-          <span className="flex shrink-0 items-center px-2 text-[11px] text-stone-600">
+          <span className="flex shrink-0 items-center pl-2 pr-10 text-[11px] text-stone-600">
             {count} item{count > 1 ? "s" : ""}
           </span>
+        </div>
         </div>
       )}
 
