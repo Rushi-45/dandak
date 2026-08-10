@@ -30,7 +30,7 @@
   },
   "access": {
     "modes": {
-      "road": "Village roads south-east of Ahwa, on the Don side of the district; ask locally — signage is thin",
+      "road": "Via the Don village road from Ahwa (~33 km to Don); the caves and kund are on Don's own plateau — ask in the village for the path",
       "rail": "No practical railhead",
       "air": "Surat (~150 km)"
     },
@@ -86,18 +86,31 @@
     }
   ],
   "nearby": [
+    { "id": "dang-don-hill", "distance_km": 1, "note": "The caves share Don's plateau" },
+    { "id": "dang-don-falls", "distance_km": 3 },
     { "id": "dang-shabari-dham", "distance_km": 24 },
     { "id": "dang-pampa-sarovar", "distance_km": 26 }
   ],
   "itineraries": ["dang-ramayana-trail"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs/AH1DqX-3fJ8UdbqHAAsnd_dkjmO4XYG4pCGd_zxeZ7uWM8aQw6PCAhje42J6bx5rnJU-IIz6B62y2LGBnsdjAPxSdxpsrFs2r4HUwXbwB38EuJrOygsqfoiiXrcMJc1tf8trInk1jLDy",
+        "license": "own",
+        "caption": "The seasonal fall threading off the Anjani Parvat scarp",
+        "credit": "Rushi Chudasama",
+        "source_url": "https://maps.app.goo.gl/2WNkiXbsfA6apMNm8"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Anjan Kund, Dang — Hanuman Lore Trek",
     "meta_description": "Trekking to Anjan Kund on Anjani Parvat in Dang: the local Hanuman-birthplace tradition, route notes and season."
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": "2026-08-09",
+    "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
       { "title": "OpenStreetMap — 'Anjani Caves & Waterfall' (node 11425667070; pinned in the same local mapping session as the verified Gira and Girmal nodes)", "url": "https://www.openstreetmap.org/node/11425667070", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }

@@ -1,0 +1,1 @@
+﻿Drop your own travel photos here - any filename is fine, but naming them after the place helps (e.g. wonder-waterfall-1.jpg, girmal-2.jpg). Phone originals preferred (EXIF GPS tags let us pin exact coordinates). Then tell Claude 'photos are in the inbox' and each will be resized, staged to the website, and registered in its spot record with license 'own' and your credit.

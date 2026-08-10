@@ -25,13 +25,13 @@
     "admin_district": null,
     "outside_district": false,
     "nearest_town": { "name": "Ahwa", "distance_km": 33 },
-    "coordinates": { "lat": 20.87, "lng": 73.8, "precision": "area" },
+    "coordinates": { "lat": 20.7128, "lng": 73.8183, "precision": "exact" },
     "altitude_m": 1000,
-    "distances_km": { "ahwa": 33, "saputara": 75, "waghai": 65 }
+    "distances_km": { "ahwa": 33, "waghai": 65 }
   },
   "access": {
     "modes": {
-      "road": "From Ahwa via interior roads toward the Maharashtra border; the final climb is steep, narrow and hairpinned",
+      "road": "From Ahwa via interior roads toward the Maharashtra border; the final climb is steep, narrow and hairpinned. From Saputara ~55 km via the direct road built in 2013",
       "rail": "Bilimora Jn (~140 km) via Waghai; no practical rail access",
       "air": "Surat (~190 km), Nashik (~110 km)"
     },
@@ -90,23 +90,35 @@
   ],
   "nearby": [
     { "id": "dang-don-falls", "distance_km": 2, "note": "The village's own monsoon waterfall and pool" },
-    { "id": "dang-girmal-falls", "distance_km": 35, "note": "Classic full-day pairing" },
+    { "id": "dang-anjan-kund", "distance_km": 1, "note": "The Anjani caves and kund sit on Don's own plateau" },
+    { "id": "dang-girmal-falls", "distance_km": 60, "note": "Full-day pairing via the interior roads" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
   ],
   "itineraries": ["monsoon-waterfall-circuit", "tribal-culture-trail"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs/AH1DqX97Nhvsaw6X9oN9mlitFvo-LIwUZmgwOMekQ4aQWj2DfRC-V6Td6Bqqlvi0eNjIvJXemXfi9fcihndBFE1AvH9Ysz12s38sPncXTHAU5Qm5IOWFUYicQnaFYl66kwykB4rrU8-E",
+        "license": "own",
+        "caption": "The Don plateau scarp under monsoon cloud, from the approach viewpoint",
+        "credit": "Rushi Chudasama",
+        "source_url": "https://maps.app.goo.gl/Ya1qFb779e2VQC1f7"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Don Hill Station, Dang — Gujarat's Quiet Plateau",
     "meta_description": "How to visit Don village in Dang: the steep access road, meadow viewpoints, best months and day-trip tips from Saputara or Ahwa."
   },
   "provenance": {
     "created": "2026-08-08",
-    "last_verified": "2026-08-08",
+    "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
       { "title": "Don, Dang — Wikipedia", "url": "https://en.wikipedia.org/wiki/Don,_Dang", "publisher": "Wikipedia", "accessed": "2026-08-08" },
       { "title": "Don Hill Station — Hidden Hill Retreat of Dang", "url": "https://en.safargujarat.com/don-hill-station-dang-gujarat/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["location.coordinates", "amenities.food"]
+    "needs_verification": ["amenities.food"]
   }
 }
