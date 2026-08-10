@@ -92,7 +92,8 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
         if (cancelled || !divRef.current || mapRef.current) return;
 
         const map = L.map(divRef.current, { scrollWheelZoom: false });
-        addBaseLayers(L, map);
+        // a route map opens on the road network; imagery is a click away
+        addBaseLayers(L, map, { base: "roads" });
 
         byDay.forEach((list, i) => {
           const color = DAY_STROKE[i % DAY_STROKE.length];

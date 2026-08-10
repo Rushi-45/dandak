@@ -56,7 +56,7 @@ export default function MapPage() {
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-stone-600">
-        Switch layers (top right) between satellite, terrain and dark. Interior positions can be
+        Switch layers (top right) between satellite, roads, terrain and dark. Interior positions can be
         approximate or area-level — it's the standing item on the verification ledger, and each
         record's provenance tells you how exact its pin is. For turn-by-turn navigation, use the
         Google Maps buttons on trip pages.
