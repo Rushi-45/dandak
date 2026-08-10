@@ -6,6 +6,7 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 
 ### Added
 - `narmada-chhatwada-falls` (2026-08-10) — the "Chhatawada waterfall" that was on the awaiting-a-pin list since 2026-08-09, resolved by the maintainer: village pin (Chhatwada 393145), the falls' map name ('Handi waterfall', 21.7677/73.4279) and an own-photo hero of the step in full spate. Pairs with Kesharva 9 km away. Corpus: 82 → 83; 22 records with imagery.
+- Maintainer photo for `dang-gaumukh-falls` (the spring-fed cascade over the fluted rock) — 23 records with imagery.
 - First batch of the maintainer's own photography (license `own`, via shared Google Maps contribution links, 2026-08-10): hero images for `dang-girmal-falls` (the plunge into the gorge), `dang-anjan-kund` (the scarp waterfall), `dang-don-hill` (the plateau under monsoon cloud) and `narmada-ghanikhut-falls` (the Rampam cascades). 21 records now carry imagery.
 
 ### Fixed

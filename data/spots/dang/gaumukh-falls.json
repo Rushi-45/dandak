@@ -86,7 +86,18 @@
     { "id": "dang-chimer-falls", "distance_km": 15, "note": "Across the district line in Dang" }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs/AH1DqX_KADZIpFd_1FouPaZNTZ5n-MV9mkRjmChdO6dDfiW88y-5lV7qJd_AJlLGmSIgJxeTtM-891a28fVFNdm8SQNTHxEWpoGz2Tdz2bdI2t1Mpto6UYYwnCLE1j38ZYVQJ_Nl2vOF",
+        "license": "own",
+        "caption": "The spring-fed cascade over Gaumukh's fluted rock",
+        "credit": "Rushi Chudasama",
+        "source_url": "https://maps.app.goo.gl/8vR19nKp2s92exvW9"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Gaumukh Waterfalls, Songadh — Temple in the Forest",
     "meta_description": "Gaumukh waterfall and temple near Songadh on the Dang–Tapi border: rugged approach, monsoon-only flow, and pairing with Medha falls."
