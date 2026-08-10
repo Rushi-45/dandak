@@ -5,6 +5,10 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- `dang-maharaychond-forest` (2026-08-10) — the picnic forest south of Ahwa, unlocked by the maintainer's one-line description; wired into the south-western circuit (Wasurna vista, Temburgartha dam).
+
+### Removed
+- `dang-svtis-falls` and `dang-soul-to-prakriti-falls`, at the maintainer's discretion: both pins are real but both map names read as uploader coinages. The pins are preserved in the spec-08 candidate pool awaiting proper local names. Corpus settles at exactly 100.
 - **Fourteen maintainer-pinned spots (2026-08-10) — the corpus crosses 100.** Headline: `dang-milan-falls`, closing the dataset's oldest unfindable (the awaiting-a-pin list is now empty). With it: Kunda (Ahwa's own falls), Dhulda, Soul-to-Prakriti (coined map name, flagged), Mayadevi Temple, Temburgartha Dam (sunset/net point and the Vanvihar homestay folded in), Valley of Wasurna, Svtis (garbled map name, flagged), the Chikhalda–Ritu pocket (Vadla ni vadi grove folded in), Baaj (village view point folded in), Chirai, and the border twins Advait + Vangan/Ankada Dhodh (OD: Vansda — retiring that pool row; Gandavle hill folded in). Corpus: 87 → 101.
 
 ### Changed

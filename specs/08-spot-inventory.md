@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 36 | 61 |
+| Dang | 12 | 13 | 35 | 60 |
 | Narmada | 10 | 14 | 16 | 40 |
-| **Total** | **22** | **27** | **52** | **101** |
+| **Total** | **22** | **27** | **51** | **100** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -69,11 +69,10 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-milan-falls` | Milan Waterfall | waterfall | dang-interior | 3 | Subir belt; the resolved awaiting-a-pin item; maintainer-pinned |
 | `dang-kunda-falls` | Kunda Waterfall | waterfall | dang-interior | 3 | 6 km S of Ahwa; maintainer-pinned |
 | `dang-dhulda-falls` | Dhulda Waterfall | waterfall | dang-interior | 3 | West of the Girmal country; maintainer-pinned |
-| `dang-soul-to-prakriti-falls` | Soul to Prakriti Waterfall | waterfall | dang-interior | 3 | Near Medha; coined map name flagged; maintainer-pinned |
 | `dang-mayadevi-temple` | Mayadevi Temple | temple | dang-interior | 3 | NW forest shrine and fair; maintainer-pinned |
+| `dang-maharaychond-forest` | Maharaychond Forest | park | dang-interior | 3 | Picnic forest S of Ahwa; maintainer-pinned |
 | `dang-temburgartha-dam` | Temburgartha Dam | dam | dang-interior | 3 | S of Ahwa; sunset/net point + Vanvihar homestay noted |
 | `dang-valley-of-wasurna` | Valley of Wasurna | viewpoint | dang-interior | 3 | SW valley vista; maintainer-pinned |
-| `dang-svtis-falls` | Svtis Waterfall | waterfall | dang-interior | 3 | Map name likely garbled — local name wanted |
 | `dang-chikhalda-falls` | Chikhalda Waterfall | waterfall | dang-interior | 3 | SW pocket anchor; Vadla ni vadi grove folded in |
 | `dang-ritu-falls` | Ritu Waterfall | waterfall | dang-interior | 3 | Chikhalda's 1 km sibling |
 | `dang-baaj-falls` | Baaj Waterfall | waterfall | waghai | 3 | Falls + village view point; near Koshmal |
@@ -156,7 +155,8 @@ YouTube travel vlogs enumerate more places than the tourism literature does. The
 | Dahel waterfall | video "Bharuch to Dahel via Sagai Eco Campsite" | likely across the Maharashtra line — scope decision |
 | Devghat waterfall | darpan.blog guide — Umarpada (Surat)/Songadh (Tapi) border, ~125 km from Surat | outside both districts — OD decision pending |
 | ~~Vangan waterfall (Aakda Dhodh)~~ | resolved 2026-08-10 — maintainer's pin → `dang-vangan-falls` (OD: Vansda, Navsari; Advait + Gandavle hill alongside) | — |
-| Maharaychond forest (20.6771, 73.6819) | maintainer's pin, south of Ahwa | category/story unclear — one line from the maintainer unlocks it |
+| ~~Maharaychond forest~~ | resolved 2026-08-10 — maintainer describes it as a picnic forest → `dang-maharaychond-forest` | — |
+| 'Svtis Waterfall' pin (20.6787, 73.6224) and 'Soul to prakriti Waterfall' pin (21.0830, 73.6931) | real map pins, but both names read as uploader coinages; records were drafted then withdrawn at the maintainer's discretion | await proper local names before re-inclusion |
 | Vanvihar stay home (20.7103, 73.7095) | maintainer's pin — homestay by Temburgartha dam | stay record, not a spot; queue for the stays companion set |
 | YouTube playlist "Waterfall's Near Rajpipla, Kevadia & Dediyapada" (PLFJI9jClWluzUN3TKvrfYqKENpdrYUirt) | unmined playlist — likely more names | next mining pass |
 

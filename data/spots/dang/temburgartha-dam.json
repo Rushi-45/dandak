@@ -83,6 +83,7 @@
   "faqs": [],
   "nearby": [
     { "id": "dang-kunda-falls", "distance_km": 7 },
+    { "id": "dang-maharaychond-forest", "distance_km": 6, "note": "The picnic woods on the Wasurna side" },
     { "id": "dang-shivghat", "distance_km": 12 },
     { "id": "dang-don-hill", "distance_km": 15, "note": "The plateau — continue south-east" }
   ],

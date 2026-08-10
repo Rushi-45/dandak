@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "dang-maharaychond-forest",
+  "slug": "maharaychond-forest",
+  "name": { "en": "Maharaychond Forest" },
+  "aliases": ["Maharaychond Picnic Forest"],
+  "category": "park",
+  "subcategories": [],
+  "tags": ["nature", "picnic", "offbeat", "family", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A picnic forest in the village country south of Ahwa — shade, birdsong and spread-a-mat ground on the Wasurna side of the district.",
+  "description": "Maharaychond is the south-western pocket's picnic forest: a stand of shade trees in the village country beyond Temburgartha, where local families spread mats under the canopy and make an unhurried afternoon of it. There is no gate, no fee and no development — the forest itself is the amenity, and the etiquette is the village's: leave nothing, light nothing.\n\nIt slots into the pocket's easy circuit — the Wasurna valley vista is three kilometres away, the Temburgartha dam's sunset ridge six — and works best exactly as locals use it: the shaded lunch stop between the pocket's viewpoints and falls.",
+  "highlights": [
+    "Canopy shade and picnic ground in open village country",
+    "Three kilometres from the Wasurna valley vista",
+    "The natural lunch stop of the south-western circuit"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 13 },
+    "coordinates": { "lat": 20.6771, "lng": 73.6819, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 13 }
+  },
+  "access": {
+    "modes": {
+      "road": "The Wasurna-side village roads south from Ahwa",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~145 km)"
+    },
+    "last_mile": "Level walk from the roadside into the trees",
+    "road_condition": "Rural tar",
+    "parking": { "available": true, "fee": 0, "notes": "Informal roadside" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "afternoon",
+    "weekly_closure": null,
+    "notes": "Open forest — carry everything in and everything out; no fires."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
+    "avoid_months": [4, 5],
+    "monsoon_dependent": false,
+    "notes": "Green and cool through monsoon and winter; leafless and hot by late spring."
+  },
+  "experience": {
+    "activities": ["picnic", "nature-walk", "birdwatching", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Canopy light-shafts on clear mornings; birdlife is the quiet draw."
+  },
+  "amenities": {
+    "food": "None — carry the picnic from Ahwa",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "No fires — this is standing forest",
+      "Carry out all waste; there is no collection of any kind"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~13 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Make it the lunch stop between the Wasurna vista and the dam's sunset ridge",
+    "Weekdays have the shade to yourself; local families claim Sundays"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-valley-of-wasurna", "distance_km": 3 },
+    { "id": "dang-temburgartha-dam", "distance_km": 6 },
+    { "id": "dang-kunda-falls", "distance_km": 10 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Maharaychond Forest, Dang — The Picnic Woods",
+    "meta_description": "Maharaychond picnic forest south of Ahwa: canopy shade, village etiquette and the south-western circuit it anchors."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Maharaychond forest' (20.6771, 73.6819); supplied and described as a picnic forest by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Maharaychond+forest/@20.6771199,73.6819185,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.taluka", "location.distances_km", "amenities.mobile_network"]
+  }
+}

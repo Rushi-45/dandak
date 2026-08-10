@@ -82,7 +82,6 @@
   "faqs": [],
   "nearby": [
     { "id": "dang-ritu-falls", "distance_km": 1, "note": "The pocket's second fall" },
-    { "id": "dang-svtis-falls", "distance_km": 5 },
     { "id": "dang-baaj-falls", "distance_km": 8 }
   ],
   "itineraries": [],
