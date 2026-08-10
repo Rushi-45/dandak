@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { LayerGroup, Map as LeafletMap_, LatLngExpression } from "leaflet";
+import { addBaseLayers } from "@/components/map-base";
 import geoRaw from "@/lib/geo.json";
 
 interface GeoData {
@@ -67,44 +68,7 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
         scrollWheelZoom: true,
       });
 
-      const satellite = L.tileLayer(
-        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-        {
-          maxZoom: 17,
-          attribution:
-            "Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, GIS User Community",
-        }
-      );
-      const terrain = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
-        maxZoom: 16,
-        attribution: "© OpenStreetMap contributors, SRTM · © OpenTopoMap (CC-BY-SA)",
-      });
-      const dark = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-        maxZoom: 19,
-        attribution: "© OpenStreetMap contributors · © CARTO",
-      });
-
-      satellite.addTo(map);
-      L.control
-        .layers(
-          { "🛰 Satellite": satellite, "⛰ Terrain": terrain, "🌒 Dark": dark },
-          undefined,
-          { position: "topright" }
-        )
-        .addTo(map);
-
-      // Place-name tiles (cities/towns/villages) ride along with the satellite
-      // layer only - Terrain and Dark already carry their own labels.
-      const placeLabels = L.tileLayer(
-        "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 17, attribution: "Labels © Esri" }
-      );
-      placeLabels.addTo(map);
-      map.on("baselayerchange", (e) => {
-        const name = (e as unknown as { name: string }).name;
-        if (name.includes("Satellite")) placeLabels.addTo(map);
-        else map.removeLayer(placeLabels);
-      });
+      addBaseLayers(L, map);
 
       // Our base towns, always visible in the site's own type.
       for (const t of TOWNS) {

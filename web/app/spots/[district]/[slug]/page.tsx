@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { SpotMap } from "@/components/spot-map";
 import { Spotlight } from "@/components/spotlight";
 import { TextGenerate } from "@/components/text-generate";
 import { TracingBeam } from "@/components/tracing-beam";
@@ -275,6 +276,22 @@ export default async function SpotPage({ params }: { params: Params }) {
           )}
         </section>
       </FadeIn>
+
+      {/* Where it is */}
+      <section className="mt-12">
+        <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+          Where it is
+        </h2>
+        <div className="mt-4">
+          <SpotMap
+            name={spot.name.en}
+            emoji={meta.emoji}
+            lat={spot.location.coordinates.lat}
+            lng={spot.location.coordinates.lng}
+            precision={spot.location.coordinates.precision}
+          />
+        </div>
+      </section>
 
       {/* Getting there */}
       <FadeIn>
