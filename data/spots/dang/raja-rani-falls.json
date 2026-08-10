@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "dang-raja-rani-falls",
+  "slug": "raja-rani-falls",
+  "name": { "en": "Raja Rani Waterfall" },
+  "aliases": ["Pandar Dhodh", "Pandar Waterfall", "Rajarani Waterfall"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "photography", "wildlife"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Twin jungle falls deep in Purna sanctuary — Raja and Rani drop within sight of each other, earned by a proper monsoon forest trek.",
+  "description": "Raja Rani is Purna sanctuary's secret pair: two waterfalls — Raja and Rani, locally Pandar Dhodh — that stand apart in the forest yet within view of each other, so that from the rock apron of one you watch the other threading down its own face. Few of Dang's falls offer that composition, and fewer still take this much forest to reach.\n\nThe reach is the filter. Approaches run from Savarkhadi on the Ahwa side or Dhongi Amba on the Vyara side toward Daradi village, and the final stretch is a genuine jungle trek inside sanctuary forest — braiding paths, stream beds, leech country in the rains. A local from the approach villages is not a luxury here; the falls are not signed and the sanctuary prefers walkers accounted for.\n\nJuly to September is the window that justifies the effort, when both falls run full and the forest is loud with water. Treat it as a trekking day, not a picnic stop — and leave the pools alone in spate.",
+  "highlights": [
+    "Twin falls — each visible from the other's viewing rocks",
+    "Deep-forest trek inside Purna sanctuary",
+    "Among the least-visited of Dang's named waterfalls"
+  ],
+  "history_legend": "The paired falls carry a king-and-queen naming — Raja and Rani — common to twin natural features across India; locally the site is equally known as Pandar Dhodh.",
+  "attributes": { "twin_falls": true },
+  "location": {
+    "taluka": "Subir",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 45 },
+    "coordinates": { "lat": 21.0, "lng": 73.65, "precision": "area" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 45, "waghai": 50 }
+  },
+  "access": {
+    "modes": {
+      "road": "Via Savarkhadi from the Ahwa side, or Dhongi Amba from the Vyara side, toward Daradi village; the last leg is on foot",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~130 km)"
+    },
+    "last_mile": "Jungle trek from the road end through sanctuary forest — paths braid; take a local",
+    "road_condition": "Village tar then forest track; monsoon slows everything",
+    "parking": { "available": true, "fee": 0, "notes": "Informal at the trailhead village" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": "Inside Purna sanctuary — check position with the forest office at Mahal or Ahwa before a monsoon trek" },
+    "duration_min": 240,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "A trekking outing, not a drive-up stop; start early and be out of the forest well before dark."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Both falls need the rains; by late autumn the pair thins to streaks."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography"],
+    "difficulty": "hard",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "The one-fall-from-the-other frame is the shot; a mid-zoom carries it better than wide glass in the forest gloom."
+  },
+  "amenities": {
+    "food": "None anywhere near — carry the day's food and water",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Effectively required — arrange in the approach villages (Savarkhadi/Daradi side)",
+    "ev_charging": false,
+    "stay_nearby": ["dang-mahal-eco-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "Sanctuary interior with no network — never trek alone or unannounced",
+      "Leeches and slick rock throughout the monsoon window",
+      "Stay out of the plunge pools in spate — there is no rescue here"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~45 km)", "police": "Ahwa PS", "notes": "Inform the forest chowki of your route" }
+  },
+  "tips": [
+    "Hire a local at the trailhead village — the paths braid and the falls are unsigned",
+    "Pair the trek with a Mahal campsite night rather than attempting a same-day return to Saputara",
+    "Go mid-week; even small groups change the feel of a place this quiet"
+  ],
+  "faqs": [
+    {
+      "q": "Why is it called Raja Rani?",
+      "a": "The twin falls are named as a royal pair — Raja and Rani — because they drop within sight of each other across the forest. Locally the site is also called Pandar Dhodh."
+    }
+  ],
+  "nearby": [
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 15 },
+    { "id": "dang-mahal-eco-campsite", "distance_km": 20 },
+    { "id": "dang-girmal-falls", "distance_km": 20, "note": "The interior circuit's headliner" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Raja Rani Waterfall, Dang — Purna's Twin Falls",
+    "meta_description": "Trekking to Raja Rani (Pandar Dhodh) in Purna sanctuary: the twin-falls view, Savarkhadi and Vyara-side approaches, and monsoon window."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Raja Rani Waterfall, Dang — Hidden Monsoon Trekking Paradise (near Daradi; approaches via Dhongi Amba/Vyara and Savarkhadi/Ahwa)", "url": "https://en.safargujarat.com/raja-rani-waterfall-dang-gujarat/", "publisher": "safargujarat.com", "accessed": "2026-08-10" },
+      { "title": "Pandar Dhod (Raja Rani Waterfall): lesser known place in Purna Wildlife Sanctuary — trip report", "url": "https://movewithoutmap.blogspot.com/2021/08/pandar-dhod-raja-rani-waterfall-lesser.html", "publisher": "movewithoutmap.blogspot.com", "accessed": "2026-08-10" },
+      { "title": "Rajarani waterfall Vyara trekking — Hindi route guide", "url": "https://chaltekadam.com/rajarani-waterfall-vyara-trekking-kaise-pahuche/", "publisher": "chaltekadam.com", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.coordinates", "location.distances_km", "location.taluka", "access.road", "visit.booking"]
+  }
+}

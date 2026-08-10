@@ -89,6 +89,7 @@
     }
   ],
   "nearby": [
+    { "id": "narmada-devsatra-hills", "distance_km": 2, "note": "The hill trek above the village — same trailhead" },
     { "id": "narmada-juna-ghanta-falls", "distance_km": 8, "note": "The same Karjan hill belt" },
     { "id": "narmada-karjan-reservoir", "distance_km": 10 },
     { "id": "narmada-mandan-lake", "distance_km": 12 },
