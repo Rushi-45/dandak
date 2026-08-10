@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 22 | 47 |
+| Dang | 12 | 13 | 36 | 61 |
 | Narmada | 10 | 14 | 16 | 40 |
-| **Total** | **22** | **27** | **38** | **87** |
+| **Total** | **22** | **27** | **52** | **101** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -58,7 +58,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-koshmal-falls` | Koshmal Falls (Bhigu Dhodh) | waterfall | waghai | 3 | Guide essential; forest warnings posted |
 | `dang-u-turn-point` | U Turn Eco Tourism Point | viewpoint | dang-interior | 3 | Gira hairpin deck on the Girmal approach; EDC restaurant, Girli Lodges |
 | `dang-bhalkhet-falls` | Bhalkhet Waterfall | waterfall | dang-interior | 3 | Godadiya/Subir belt; located via listing plus-code |
-| `dang-mahal-falls` | Mahal Waterfall | waterfall | dang-interior | 3 | Campsite trail fall with river crossing |
+| `dang-mahal-falls` | Karanjwa Waterfall | waterfall | dang-interior | 3 | aka 'Mahal waterfall' (campsite shorthand); maintainer-pinned |
 | `dang-gaumukh-falls` | Gaumukh Waterfalls (Songadh) | waterfall | dang-interior | 3 | OD: Songadh (Tapi); temple + seasonal fall |
 | `dang-medha-falls` | Medha Waterfall | waterfall | dang-interior | 3 | OD: Songadh (Tapi), Jamkhadi; multi-tier |
 | `dang-raja-rani-falls` | Raja Rani Waterfall | waterfall | dang-interior | 3 | Twin falls (Pandar Dhodh) in Purna WLS; trek-grade |
@@ -66,6 +66,20 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-dev-van-falls` | Dev Van Waterfall | waterfall | dang-interior | 3 | aka 'Wonder Waterfall'; Subir belt; maintainer-pinned |
 | `dang-bhambhi-falls` | Bhambhi Waterfall | waterfall | dang-interior | 3 | aka Bhambai; eastern border forest; maintainer-pinned |
 | `dang-songadh-fort` | Songadh Fort | fort | dang-interior | 3 | OD: Songadh (Tapi); Gaekwads' first stronghold; maintainer-pinned |
+| `dang-milan-falls` | Milan Waterfall | waterfall | dang-interior | 3 | Subir belt; the resolved awaiting-a-pin item; maintainer-pinned |
+| `dang-kunda-falls` | Kunda Waterfall | waterfall | dang-interior | 3 | 6 km S of Ahwa; maintainer-pinned |
+| `dang-dhulda-falls` | Dhulda Waterfall | waterfall | dang-interior | 3 | West of the Girmal country; maintainer-pinned |
+| `dang-soul-to-prakriti-falls` | Soul to Prakriti Waterfall | waterfall | dang-interior | 3 | Near Medha; coined map name flagged; maintainer-pinned |
+| `dang-mayadevi-temple` | Mayadevi Temple | temple | dang-interior | 3 | NW forest shrine and fair; maintainer-pinned |
+| `dang-temburgartha-dam` | Temburgartha Dam | dam | dang-interior | 3 | S of Ahwa; sunset/net point + Vanvihar homestay noted |
+| `dang-valley-of-wasurna` | Valley of Wasurna | viewpoint | dang-interior | 3 | SW valley vista; maintainer-pinned |
+| `dang-svtis-falls` | Svtis Waterfall | waterfall | dang-interior | 3 | Map name likely garbled — local name wanted |
+| `dang-chikhalda-falls` | Chikhalda Waterfall | waterfall | dang-interior | 3 | SW pocket anchor; Vadla ni vadi grove folded in |
+| `dang-ritu-falls` | Ritu Waterfall | waterfall | dang-interior | 3 | Chikhalda's 1 km sibling |
+| `dang-baaj-falls` | Baaj Waterfall | waterfall | waghai | 3 | Falls + village view point; near Koshmal |
+| `dang-chirai-falls` | Chirai Waterfalls | waterfall | waghai | 3 | Far SW toward the Vansda border |
+| `dang-advait-falls` | Advait Waterfall | waterfall | waghai | 3 | Vangan's twin on the border line |
+| `dang-vangan-falls` | Vangan Waterfall (Ankada Dhodh) | waterfall | waghai | 3 | OD: Vansda (Navsari); Gandavle hill folded in |
 
 ## Narmada (32)
 
@@ -129,7 +143,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 `dang-barda-falls` · `dang-rupgadh-fort` · `dang-honey-bee-centre` · `dang-saputara-adventure-park` · `dang-governors-hill` (skywalk claim) · `narmada-ekta-cruise` (operational status) · `narmada-karjan-reservoir` (access) · `narmada-junaraj` · `dang-birsa-falls` (facts thin) · `narmada-juna-ghanta-falls` (facts thin)
 
-*Searched but not added (2026-08-09): "Milan waterfall" — no web footprint found under any spelling; awaiting a map pin or local name before inclusion. Everything else has graduated: "Chhatawada" became `narmada-chhatwada-falls` (2026-08-10, maintainer's pin — map name 'Handi waterfall'); "Wonder waterfall" became `dang-dev-van-falls` (2026-08-10, maintainer identified its map name Dev Van at 20.9169/73.6167 — in Dang's Subir belt, despite vlogs filing it under Vyara). An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
+*The awaiting-a-pin list is now EMPTY (2026-08-10). All three original items graduated on the maintainer's pins: "Chhatawada" → `narmada-chhatwada-falls` (map name 'Handi waterfall'); "Wonder waterfall" → `dang-dev-van-falls` (map name Dev Van, Subir belt); "Milan waterfall" — the oldest unfindable — → `dang-milan-falls` (20.888/73.6131, between Bhalkhet and Dev Van). An OpenStreetMap sweep of both districts (waterway=waterfall, 2026-08-09) found no further named falls beyond those already inventoried; two unnamed border-zone nodes (21.78176/74.08431, 21.10155/74.01157) remain unidentified.*
 
 ### Candidate pool — vlog-mined (2026-08-10)
 
@@ -141,7 +155,9 @@ YouTube travel vlogs enumerate more places than the tourism literature does. The
 | Kevdi (Dumkhal) waterfall | same video; Kevdi and Dumkhal are both Dediapada-taluka villages | no dedicated written source |
 | Dahel waterfall | video "Bharuch to Dahel via Sagai Eco Campsite" | likely across the Maharashtra line — scope decision |
 | Devghat waterfall | darpan.blog guide — Umarpada (Surat)/Songadh (Tapi) border, ~125 km from Surat | outside both districts — OD decision pending |
-| Vangan waterfall (Aakda Dhodh) | video: ~16 km from Vansda (Navsari) | OD decision pending |
+| ~~Vangan waterfall (Aakda Dhodh)~~ | resolved 2026-08-10 — maintainer's pin → `dang-vangan-falls` (OD: Vansda, Navsari; Advait + Gandavle hill alongside) | — |
+| Maharaychond forest (20.6771, 73.6819) | maintainer's pin, south of Ahwa | category/story unclear — one line from the maintainer unlocks it |
+| Vanvihar stay home (20.7103, 73.7095) | maintainer's pin — homestay by Temburgartha dam | stay record, not a spot; queue for the stays companion set |
 | YouTube playlist "Waterfall's Near Rajpipla, Kevadia & Dediyapada" (PLFJI9jClWluzUN3TKvrfYqKENpdrYUirt) | unmined playlist — likely more names | next mining pass |
 
 Channel harvest (2026-08-10, five local vloggers supplied by the maintainer — NikunjTravelogy, TravelingDoctor, VIPULSNATURELENCE, d.r.p vlogs, RinkeshVasava) produced `dang-janki-van` plus these further leads:

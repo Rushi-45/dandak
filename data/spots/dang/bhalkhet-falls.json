@@ -83,6 +83,7 @@
   "faqs": [],
   "nearby": [
     { "id": "dang-dev-van-falls", "distance_km": 5, "note": "The reels' 'Wonder Waterfall' — same belt" },
+    { "id": "dang-milan-falls", "distance_km": 5 },
     { "id": "dang-girmal-falls", "distance_km": 25, "note": "The interior-day pairing" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
   ],

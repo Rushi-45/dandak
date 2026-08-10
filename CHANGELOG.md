@@ -5,6 +5,10 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- **Fourteen maintainer-pinned spots (2026-08-10) — the corpus crosses 100.** Headline: `dang-milan-falls`, closing the dataset's oldest unfindable (the awaiting-a-pin list is now empty). With it: Kunda (Ahwa's own falls), Dhulda, Soul-to-Prakriti (coined map name, flagged), Mayadevi Temple, Temburgartha Dam (sunset/net point and the Vanvihar homestay folded in), Valley of Wasurna, Svtis (garbled map name, flagged), the Chikhalda–Ritu pocket (Vadla ni vadi grove folded in), Baaj (village view point folded in), Chirai, and the border twins Advait + Vangan/Ankada Dhodh (OD: Vansda — retiring that pool row; Gandavle hill folded in). Corpus: 87 → 101.
+
+### Changed
+- `dang-mahal-falls` renamed to **Karanjwa Waterfall** ('Mahal waterfall' kept as alias): the maintainer identified the campsite nickname with the pinned Karanjwa falls (20.892, 73.6526) — coordinates, distances and the Mahal-campsite cross-link corrected; confidence low → medium.
 - `dang-songadh-fort` (2026-08-10, maintainer-pinned) — the Gaekwad dynasty's first stronghold above Songadh town (OD: Tapi), heritage anchor for the Gaumukh–Medha forest day. Corpus: 86 → 87.
 - `dang-dev-van-falls` and `dang-bhambhi-falls` (2026-08-10) — both maintainer-pinned. Dev Van is the falls the reels call 'Wonder Waterfall' (Subir belt, 5 km from Bhalkhet — closing the last open item from the 2026-08-09 awaiting-a-pin list besides Milan); Bhambhi (map name Bhambai) is the far-eastern border-forest trek. Corpus: 84 → 86.
 

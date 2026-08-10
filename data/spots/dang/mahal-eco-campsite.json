@@ -90,7 +90,7 @@
   ],
   "nearby": [
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 5 },
-    { "id": "dang-mahal-falls", "distance_km": 2, "note": "The campsite trail's own waterfall" },
+    { "id": "dang-mahal-falls", "distance_km": 15, "note": "Karanjwa — the falls campsite word-of-mouth calls 'Mahal waterfall'" },
     { "id": "dang-girmal-falls", "distance_km": 8, "note": "Gujarat's tallest falls are just across the forest" },
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],

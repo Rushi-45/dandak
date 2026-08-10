@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "dang-soul-to-prakriti-falls",
+  "slug": "soul-to-prakriti-falls",
+  "name": { "en": "Soul to Prakriti Waterfall" },
+  "aliases": ["Prakriti Waterfall"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A forest fall two kilometres from Medha's cascades on the Dang–Tapi line — mapped under a coined name, worth asking for by landmark not label.",
+  "description": "This fall's map name — 'Soul to Prakriti' — reads like an uploader's caption rather than anything a village uses, but the pin marks a real drop in the forest country of the northern border belt, barely two kilometres from the Medha (Ekva Golan) cascades. Treat the two as one outing: the same forest roads, the same monsoon window, the same mist-hung hills that make this belt the district line's best-kept stretch.\n\nNo written source describes it; the record exists on the strength of the pin and a traveller who has stood there. Ask locally by landmark — the dhodh near the Medha side — rather than by the map's poetry, and expect the belt's standard bargain: real beauty, zero facilities.",
+  "highlights": [
+    "Two kilometres from Medha falls — one outing, two drops",
+    "The border belt's mist-and-forest setting",
+    "Completely undocumented beyond its map pin"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": null,
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Songadh", "distance_km": 25 },
+    "coordinates": { "lat": 21.083, "lng": 73.6931, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 60, "surat": 105 }
+  },
+  "access": {
+    "modes": {
+      "road": "The Medha/Ekva Golan forest roads off the Songadh side; the Ahwa–Songadh road serves it from the south",
+      "rail": "Songadh/Vyara stations on the Surat–Bhusawal line",
+      "air": "Surat (~105 km)"
+    },
+    "last_mile": "Forest walk from the road end; unmarked",
+    "road_condition": "Rural tar then forest track",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the road end" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open forest; daylight visits only."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Monsoon-fed like its Medha neighbour."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Mist moves through this belt all monsoon — work the clearings."
+  },
+  "amenities": {
+    "food": "None — carry from Songadh side",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
+    "guides": "Take local guidance — paths are unmarked",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Unmarked forest paths — do not explore alone",
+      "Slick rock and surging flow through the monsoon"
+    ],
+    "emergency": { "nearest_hospital": "CHC Songadh (~25 km)", "police": "Songadh PS", "notes": null }
+  },
+  "tips": [
+    "Do it with Medha falls — the pins are two kilometres apart",
+    "Ask by landmark, not the map name; villages will not know 'Soul to Prakriti'"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-medha-falls", "distance_km": 4, "note": "The documented neighbour" },
+    { "id": "dang-chimer-falls", "distance_km": 12 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Soul to Prakriti Waterfall — Medha's Undocumented Neighbour",
+    "meta_description": "The unnamed-in-person falls two kilometres from Medha on the Dang–Tapi line: what the pin shows and how to pair the two."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Soul to prakriti Waterfall' (21.0830, 73.6931); supplied by the maintainer, who has visited — the map name is likely an uploader's coinage", "url": "https://www.google.com/maps/place/Soul+to+prakriti+Waterfall/@21.082986,73.693108,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["name", "location.taluka", "location.admin_district", "location.distances_km"]
+  }
+}

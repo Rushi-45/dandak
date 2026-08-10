@@ -89,6 +89,7 @@
   ],
   "nearby": [
     { "id": "dang-bhalkhet-falls", "distance_km": 5, "note": "The Subir-belt double" },
+    { "id": "dang-milan-falls", "distance_km": 5 },
     { "id": "dang-girmal-falls", "distance_km": 20 }
   ],
   "itineraries": [],

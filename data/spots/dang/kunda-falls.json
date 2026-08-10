@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "dang-kunda-falls",
+  "slug": "kunda-falls",
+  "name": { "en": "Kunda Waterfall" },
+  "aliases": ["Kunda Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "picnic", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "Ahwa's own waterfall — Kunda drops in the forest edge barely six kilometres south of the district headquarters, the town's quick monsoon fix.",
+  "description": "Kunda is the waterfall Ahwa keeps for itself: a monsoon drop in the forest country immediately south of town, close enough that it works as an evening outing rather than an expedition. For travellers based in Ahwa it is the zero-effort taste of what the district's remoter belts do at scale — and for everyone else it is the consolation stop when the deep-forest falls are out of reach on a short trip.\n\nExpect local picnic crowds on August weekends and near-solitude otherwise. As everywhere in Dang, the season is the story: July to October or nothing.",
+  "highlights": [
+    "Six kilometres from Ahwa — the district's most accessible interior fall",
+    "Evening-outing scale; no expedition required",
+    "Quiet on weekdays even at monsoon peak"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 6 },
+    "coordinates": { "lat": 20.7446, "lng": 73.7176, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 6 }
+  },
+  "access": {
+    "modes": {
+      "road": "South from Ahwa on village roads; the falls sit just off the road end",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~140 km)"
+    },
+    "last_mile": "Short walk from the road end",
+    "road_condition": "Rural tar; fine year-round",
+    "parking": { "available": true, "fee": 0, "notes": "Informal roadside" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Ahwa's evening spot in season — mornings are quieter."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Monsoon-fed; reduces to a trickle after October."
+  },
+  "experience": {
+    "activities": ["sightseeing", "picnic", "photography", "nature-walk"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Golden-hour light works — the fall faces the evening sun in season."
+  },
+  "amenities": {
+    "food": "Ahwa town, six kilometres away, has everything",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Wet rock is slick; watch children near the drop",
+      "Flow rises quickly during active rain"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~6 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Perfect first-evening stop when basing at Ahwa for the interior",
+    "Pair with Shivghat on the Waghai road for the low-effort water day"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-shivghat", "distance_km": 9 },
+    { "id": "dang-birsa-falls", "distance_km": 14 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Kunda Waterfall — Ahwa's Own Monsoon Falls",
+    "meta_description": "Kunda waterfall six kilometres from Ahwa: the district headquarters' evening falls, season window and pairings."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Kunda waterfall' (20.7446, 73.7176); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Kunda+waterfall/@20.7445836,73.7176247,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+  }
+}

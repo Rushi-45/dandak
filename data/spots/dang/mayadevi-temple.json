@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "dang-mayadevi-temple",
+  "slug": "mayadevi-temple",
+  "name": { "en": "Mayadevi Temple" },
+  "aliases": ["Maya Devi Mandir"],
+  "category": "temple",
+  "subcategories": [],
+  "tags": ["pilgrimage", "tribal-culture", "offbeat", "nature"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A Devi shrine in Dang's north-western forest country — quiet most of the year, a living centre of the district's adivasi devotion on its fair days.",
+  "description": "Mayadevi's temple sits in the forest-and-field country of north-western Dang, between the Waghai belt and the Subir falls cluster. Like most of the district's shrines it runs on two clocks: village-quiet through the ordinary year, and thronged when its fair days come around, when the goddess's following across the surrounding hamlets converges in the way Dang's adivasi devotion does — loud, musical and brief.\n\nFor travellers it works as the cultural stop on a western-interior loop — Mayadevi, then the Bhalkhet–Milan falls country east of it — and as a reminder that the district's living religion is its own attraction, distinct from the Ramayana geography of the Shabari sites.",
+  "highlights": [
+    "A working Devi shrine of the district's adivasi tradition",
+    "Fair days transform the quiet forest temple",
+    "Pairs with the Subir falls belt for a western-interior day"
+  ],
+  "history_legend": "The shrine belongs to Dang's living goddess tradition; its fair gathers the surrounding villages. Details of the temple's founding and fair calendar need local verification.",
+  "attributes": { "deity": "Mayadevi" },
+  "location": {
+    "taluka": null,
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Waghai", "distance_km": 28 },
+    "coordinates": { "lat": 20.9298, "lng": 73.5332, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 28, "ahwa": 40 }
+  },
+  "access": {
+    "modes": {
+      "road": "Village roads north-east from the Waghai side; ask for the Mayadevi mandir",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~110 km)"
+    },
+    "last_mile": "Short approach from the village road",
+    "road_condition": "Rural tar; fine outside heavy rain",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the temple approach" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 60,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Fair days bring the year's crowds; otherwise a quiet darshan stop."
+  },
+  "seasonality": {
+    "best_months": [9, 10, 11, 12, 1, 2, 3],
+    "avoid_months": [5, 6],
+    "monsoon_dependent": false,
+    "notes": "Comfortable post-monsoon through spring; check locally for fair dates."
+  },
+  "experience": {
+    "activities": ["darshan", "sightseeing", "photography", "village-tour"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
+    "photography_notes": "Ask before photographing worship — this is a living shrine, not a monument."
+  },
+  "amenities": {
+    "food": "Village stalls on fair days; otherwise carry your own",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "ok" },
+    "guides": "Not needed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Fair days mean dense crowds on narrow village roads — park early and walk"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~28 km)", "police": "Waghai PS", "notes": null }
+  },
+  "tips": [
+    "Combine with the Bhalkhet–Milan falls belt east of the shrine in monsoon",
+    "If you can time a fair day, do — it is the temple's real life"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-bhalkhet-falls", "distance_km": 11 },
+    { "id": "dang-girmal-falls", "distance_km": 25 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Mayadevi Temple, Dang — Forest Shrine & Fair",
+    "meta_description": "The Mayadevi temple in north-western Dang: the living adivasi shrine, its fair days, and pairing with the Subir falls belt."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Mayadevi Temple' (20.9298, 73.5332); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Mayadevi+Temple/@20.9297924,73.5331867,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["history_legend", "location.taluka", "location.distances_km", "visit.notes"]
+  }
+}

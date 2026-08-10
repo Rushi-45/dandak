@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "dang-milan-falls",
+  "slug": "milan-falls",
+  "name": { "en": "Milan Waterfall" },
+  "aliases": ["Milan Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "The Subir belt's third falls — Milan sits between Bhalkhet and Dev Van, a monsoon drop the web never documented until its map pin surfaced.",
+  "description": "Milan spent a year on this dataset's 'searched but not found' list: no article, no listing, no spelling of the name led anywhere. The map pin — supplied by a traveller who has stood at it — finally placed it exactly where the belt's other secrets live: the Godadiya–Subir forest country, three kilometres from Bhalkhet and five from Dev Van, making a tight triangle of falls that share the same roads, the same rains and the same near-total absence from tourism literature.\n\nExpect the belt's standard terms: a monsoon-fed drop reached by a short walk from village roads, no facilities, no signage, and flow that lives and dies with the wet spells. Ask for 'Milan dhodh' in the surrounding hamlets — as with its neighbours, local directions beat any map.",
+  "highlights": [
+    "Completes the Bhalkhet–Dev Van–Milan falls triangle",
+    "Zero web footprint — a genuinely local waterfall",
+    "Same belt roads as its better-known neighbours"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Subir",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 28 },
+    "coordinates": { "lat": 20.888, "lng": 73.6131, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 28, "waghai": 28 }
+  },
+  "access": {
+    "modes": {
+      "road": "Village roads in the Godadiya–Subir belt, off the Ahwa and Waghai sides; ask locally for the Milan turn",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~125 km)"
+    },
+    "last_mile": "Short walk from the road end; wet-season slick",
+    "road_condition": "Rural tar and dirt; slow in monsoon",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the road end" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 90,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "Open village land; daylight visits only."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Monsoon-fed like the whole belt; thin to nothing outside the rains."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography", "picnic"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "Forest-framed falls; overcast monsoon light flatters the dark rock."
+  },
+  "amenities": {
+    "food": "None — carry everything; nearest food at Subir or Ahwa",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Village youths point or walk along for a tip",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Wet rock is slick — grip footwear only",
+      "Flow surges after upstream rain; stay off the apron in spate"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~28 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "String Bhalkhet, Milan and Dev Van into one Subir-belt falls run",
+    "Weekdays keep the belt to herders; reels are finding it fast"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-bhalkhet-falls", "distance_km": 5 },
+    { "id": "dang-dev-van-falls", "distance_km": 5 },
+    { "id": "dang-mahal-falls", "distance_km": 7, "note": "Karanjwa, the belt's fourth fall" }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Milan Waterfall, Dang — The Subir Belt's Hidden Third",
+    "meta_description": "Milan waterfall in Dang's Subir belt: the undocumented monsoon falls between Bhalkhet and Dev Van, finally pinned."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Milan waterfall' (20.8880, 73.6131); supplied by the maintainer, who has visited — resolving the dataset's oldest awaiting-a-pin item", "url": "https://www.google.com/maps/place/Milan+waterfall/@20.887985,73.6131257,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+  }
+}

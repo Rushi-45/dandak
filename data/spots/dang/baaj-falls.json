@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "dang-baaj-falls",
+  "slug": "baaj-falls",
+  "name": { "en": "Baaj Waterfall" },
+  "aliases": ["Baaj Water Fall", "Baaj Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "picnic", "photography", "sunset"],
+  "cluster": "waghai",
+  "status": "active",
+  "district": "dang",
+  "summary": "Baaj village's falls and ridge-top view point on the Waghai side — a fall, a vista and, close by, the Koshmal forest country in one stop.",
+  "description": "Baaj packs a village outing into one name: the waterfall by the village, and a kilometre north, the mapped Baaj Village View Point — a ridge vantage over the surrounding forest country that earns the detour on clear evenings. An unnamed second drop is pinned a couple of kilometres south, part of the same stream system; locals will point if the season is running.\n\nThe village sits in the Waghai-side country near the Koshmal forest, which puts it on the same loop as the Bhigu Dhodh trek for travellers who like their falls in pairs. Facilities are the pocket's usual none; the view point asks only working legs and a clear sky.",
+  "highlights": [
+    "Falls and ridge view point in one village stop",
+    "Neighbours the Koshmal (Bhigu Dhodh) forest country",
+    "Evening light from the view point over the western forests"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Waghai",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Waghai", "distance_km": 12 },
+    "coordinates": { "lat": 20.7053, "lng": 73.5459, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "waghai": 12, "ahwa": 20 }
+  },
+  "access": {
+    "modes": {
+      "road": "Village roads east from the Waghai side to Baaj; the view point is a kilometre north of the falls",
+      "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
+      "air": "Surat (~120 km)"
+    },
+    "last_mile": "Short village walks to both the falls and the ridge",
+    "road_condition": "Rural tar; monsoon-slow",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the village" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
+    "best_time_of_day": "evening",
+    "weekly_closure": null,
+    "notes": "Falls in the morning light, view point for the evening — or both around a village lunch from your own bag."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10, 11],
+    "avoid_months": [3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "The falls need the rains; the view point stays worthwhile into early winter."
+  },
+  "experience": {
+    "activities": ["sightseeing", "picnic", "nature-walk", "photography"],
+    "difficulty": "easy",
+    "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
+    "photography_notes": "The ridge gives the pocket's best wide frames; monsoon cloud rolls through fast."
+  },
+  "amenities": {
+    "food": "None — Waghai has the nearest food",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Villagers point the way to both falls and ridge",
+    "ev_charging": false,
+    "stay_nearby": ["dang-kilad-nature-campsite"]
+  },
+  "safety": {
+    "warnings": [
+      "The ridge edge is unfenced — keep back in wind",
+      "Wet rock at the falls is slick; grip footwear"
+    ],
+    "emergency": { "nearest_hospital": "CHC Waghai (~12 km)", "police": "Waghai PS", "notes": null }
+  },
+  "tips": [
+    "Pair with the Koshmal trek — same forest country, one day",
+    "Stay for the view point's evening light before the drive out"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-koshmal-falls", "distance_km": 3, "note": "The Bhigu Dhodh forest trek next door" },
+    { "id": "dang-chikhalda-falls", "distance_km": 8 },
+    { "id": "dang-chirai-falls", "distance_km": 9 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Baaj Waterfall & View Point, Dang — Waghai-Side Village Stop",
+    "meta_description": "Baaj village's waterfall and ridge view point near Koshmal: the walk, the season and the western-forest evening light."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — 'Baaj Water Fall' (20.7053, 73.5459), 'Baaj Village View Point' (20.7140, 73.5470) and an unnamed fall (20.6904, 73.5444); maintainer-supplied, visited", "url": "https://www.google.com/maps/place/Baaj+Water+Fall/@20.7053174,73.5459409,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+  }
+}

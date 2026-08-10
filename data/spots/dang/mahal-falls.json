@@ -2,103 +2,109 @@
   "schema_version": 1,
   "id": "dang-mahal-falls",
   "slug": "mahal-falls",
-  "name": { "en": "Mahal Waterfall" },
-  "aliases": ["Mahal Trail Waterfall", "Purna Waterfall Mahal"],
+  "name": { "en": "Karanjwa Waterfall" },
+  "aliases": ["Mahal Waterfall", "Karanjwa Dhodh"],
   "category": "waterfall",
   "subcategories": [],
   "tags": ["monsoon", "offbeat", "nature", "trekking", "picnic"],
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "The monsoon waterfall on the Mahal campsite's forest trail in Purna sanctuary — a river-crossing walk through bamboo to a quiet cascade.",
-  "description": "Mahal's waterfall is the reward at the end of the eco-campsite's walking trail: a monsoon cascade reached through Purna sanctuary's bamboo forest, with a river crossing en route that is half the fun in season. It is a walkers' waterfall rather than a drive-up sight — no parking lot of its own, no stalls, just the trail from the campsite and whatever water the rains have given the stream.\n\nCampsite literature keeps it vague ('the trail leads to a river crossing and some lovely hidden waterfalls'), and that vagueness is accurate: flow, and even which braid of the stream runs, changes with every wet spell. Go with a campsite guide — the sanctuary prefers it, the trail braids, and the guides know which fall is running.\n\nFor guests sleeping at Mahal it turns the stay into a proper forest day: dawn birding, the waterfall walk before lunch, Girmal falls just across the forest after.",
+  "summary": "Karanjwa — the falls the Mahal-campsite crowd calls 'Mahal waterfall' — a monsoon drop in the Subir belt between the Girmal country and Bhalkhet.",
+  "description": "Karanjwa carries two names: the map's, and 'Mahal waterfall' — the label the eco-campsite crowd attached because Mahal is where most visitors are staying when they hear about it. The falls actually sit a proper drive south-west of the campsite, in the same Subir-belt forest country as Bhalkhet, Milan and Dev Van, and together the four make the belt the densest little waterfall cluster in the district.\n\nIt keeps the belt's terms: monsoon-fed flow, a short walk from village roads, forest framing, and no facilities of any kind. Campsite guides at Mahal know the way and will pair it with Girmal or the U-turn point for guests wanting a fuller falls day.",
   "highlights": [
-    "Bamboo-forest trail with a monsoon river crossing",
-    "The campsite's own quiet cascade — no crowds, no stalls",
-    "Completes a Mahal overnight with Girmal 8 km away"
+    "The 'Mahal waterfall' of campsite word-of-mouth, under its own name",
+    "Part of the Subir belt's four-fall cluster",
+    "Pairs with Girmal and the U-turn point from Mahal"
   ],
   "history_legend": null,
-  "attributes": { "river": "Purna" },
+  "attributes": {},
   "location": {
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 40 },
-    "coordinates": { "lat": 20.94, "lng": 73.72, "precision": "area" },
+    "nearest_town": { "name": "Ahwa", "distance_km": 25 },
+    "coordinates": { "lat": 20.892, "lng": 73.6526, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 40 }
+    "distances_km": { "ahwa": 25 }
   },
   "access": {
     "modes": {
-      "road": "To Mahal eco campsite via the Ahwa–Subir forest roads; the waterfall is on foot from there",
+      "road": "Village roads in the Subir belt between the Mahal–Girmal side and Godadiya; ask at Subir or the Mahal campsite",
       "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
-      "air": "Surat (~160 km)"
+      "air": "Surat (~130 km)"
     },
-    "last_mile": "Forest trail from the campsite with a stream/river crossing; timing varies with flow",
-    "road_condition": "Narrow forest tar to the campsite; the rest is trail",
-    "parking": { "available": true, "fee": 0, "notes": "Park at the campsite" }
+    "last_mile": "Short forest walk from the road end; slippery in the rains",
+    "road_condition": "Rural tar with rough patches",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the road end" }
   },
   "visit": {
     "timings": [],
     "fees": [],
-    "booking": { "required": false, "url": null, "notes": "No fee for the falls; the campsite and sanctuary have their own entry arrangements" },
-    "duration_min": 150,
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 120,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Walk it with a campsite guide — trails braid inside the sanctuary and crossings shift with flow."
+    "notes": "Open forest site; go with a campsite guide if you are staying at Mahal."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10],
     "avoid_months": [2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "Runs with the rains; by late winter the stream is a trickle and the walk is the point."
+    "notes": "Runs with the rains; a trickle by winter's end."
   },
   "experience": {
     "activities": ["nature-walk", "trekking", "photography", "picnic"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Bamboo corridors on the way in are as photogenic as the fall; the crossing shoots best mid-morning."
+    "photography_notes": "Forest gloom rewards steady hands; the fall reads best with bamboo kept in frame."
   },
   "amenities": {
-    "food": "Campsite kitchen at Mahal (order ahead); nothing on the trail",
-    "toilets": "basic",
+    "food": "None — the Mahal campsite kitchen (order ahead) or Subir are nearest",
+    "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Campsite guides available — strongly recommended inside the sanctuary",
+    "guides": "Mahal campsite guides know the falls; recommended",
     "ev_charging": false,
     "stay_nearby": ["dang-mahal-eco-campsite"]
   },
   "safety": {
     "warnings": [
-      "Do not attempt the river crossing in spate — turn back and try the next day",
-      "Leech protection in peak monsoon; grip footwear always",
-      "This is sanctuary interior — stay with your guide and on the trail"
+      "Do not cross swollen streams on the approach in spate",
+      "Leech protection and grip footwear through the monsoon window"
     ],
-    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~40 km)", "police": "Ahwa PS", "notes": null }
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~25 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Book a Mahal campsite night and do the falls as the morning walk",
-    "Ask the campsite staff which fall is running — flow braids change with every wet spell"
+    "From a Mahal stay, do Girmal and the U-turn point one day and the Karanjwa–Milan–Bhalkhet belt the next",
+    "Ask for 'Karanjwa dhodh' — the 'Mahal waterfall' name only works at the campsite"
   ],
-  "faqs": [],
+  "faqs": [
+    {
+      "q": "Is Karanjwa the same as 'Mahal waterfall'?",
+      "a": "Yes — one falls, two names. 'Mahal waterfall' is campsite shorthand; Karanjwa is what the map and villages call it, a drive south-west of the campsite itself."
+    }
+  ],
   "nearby": [
-    { "id": "dang-mahal-eco-campsite", "distance_km": 2, "note": "The trailhead" },
-    { "id": "dang-girmal-falls", "distance_km": 8 },
-    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 3 }
+    { "id": "dang-milan-falls", "distance_km": 7 },
+    { "id": "dang-bhalkhet-falls", "distance_km": 10 },
+    { "id": "dang-girmal-falls", "distance_km": 15 },
+    { "id": "dang-mahal-eco-campsite", "distance_km": 15, "note": "The stay that gave the falls its nickname" }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Mahal Waterfall, Dang — Purna's Trail Cascade",
-    "meta_description": "The waterfall walk from Mahal eco campsite in Purna sanctuary: river crossing, guide advice, season window and pairing with Girmal."
+    "meta_title": "Karanjwa (Mahal) Waterfall, Dang — Subir Belt Falls",
+    "meta_description": "Karanjwa waterfall — the 'Mahal waterfall' of campsite word-of-mouth: where it actually is, the walk-in, and the Subir-belt falls cluster."
   },
   "provenance": {
     "created": "2026-08-09",
-    "last_verified": null,
-    "confidence": "low",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
     "sources": [
-      { "title": "Purna Wildlife Sanctuary — 'a trail that leads to a river crossing and some lovely hidden waterfalls' (Mahal campsite)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
+      { "title": "Google Maps — place 'Karanjwa waterfall' (20.8920, 73.6526); identified by the maintainer as the falls known at Mahal campsite as 'Mahal waterfall'", "url": "https://www.google.com/maps/place/Karanjwa+waterfall/@20.8920022,73.652561,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Purna Wildlife Sanctuary — campsite-trail waterfalls mention (the source of the 'Mahal waterfall' nickname)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "access.last_mile", "visit.notes", "amenities.guides"]
+    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.guides"]
   }
 }

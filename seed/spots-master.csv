@@ -1,4 +1,4 @@
-id,name,category,cluster,tier,outside_district,notes
+﻿id,name,category,cluster,tier,outside_district,notes
 dang-saputara-lake,Saputara Lake,lake,saputara,1,false,Boat Club folded in
 dang-sunset-point,Sunset Point (Gandhi Shikhar),viewpoint,saputara,1,false,
 dang-sunrise-point,Sunrise Point (Valley View Point),viewpoint,saputara,1,false,
@@ -73,7 +73,7 @@ narmada-mandan-lake,Mandan Lake View,lake,rajpipla,3,false,Karjan reservoir bank
 narmada-barkhadi-falls,Barkhadi Falls,waterfall,rajpipla,3,false,Devsatra belt; 2 km walk from Barkhadi school
 dang-u-turn-point,U Turn Eco Tourism Point,viewpoint,dang-interior,3,false,Gira hairpin deck; EDC restaurant + Girli Lodges
 dang-bhalkhet-falls,Bhalkhet Waterfall,waterfall,dang-interior,3,false,Godadiya/Subir belt; plus-code located
-dang-mahal-falls,Mahal Waterfall,waterfall,dang-interior,3,false,Campsite trail fall; river crossing
+dang-mahal-falls,Karanjwa Waterfall,waterfall,dang-interior,3,false,aka Mahal waterfall; Subir belt; maintainer-pinned
 dang-gaumukh-falls,Gaumukh Waterfalls (Songadh),waterfall,dang-interior,3,true,OD: Songadh (Tapi); temple + fall
 dang-medha-falls,Medha Waterfall,waterfall,dang-interior,3,true,OD: Songadh (Tapi); Jamkhadi; multi-tier
 narmada-kesharva-falls,Kesharva Waterfall,waterfall,rajpipla,3,false,Bathing tiers 24 km W of Rajpipla
@@ -86,3 +86,17 @@ dang-janki-van,Janki Van,garden,waghai,3,true,OD: Vansda (Navsari); Ramayana-the
 dang-dev-van-falls,Dev Van Waterfall,waterfall,dang-interior,3,false,aka Wonder Waterfall (reels); Subir belt; maintainer-pinned
 dang-bhambhi-falls,Bhambhi Waterfall,waterfall,dang-interior,3,false,aka Bhambai; eastern border forest; maintainer-pinned
 dang-songadh-fort,Songadh Fort,fort,dang-interior,3,true,OD: Songadh (Tapi); Gaekwad first stronghold; maintainer-pinned
+dang-milan-falls,Milan Waterfall,waterfall,dang-interior,3,false,Subir belt; resolved awaiting-a-pin item; maintainer-pinned
+dang-kunda-falls,Kunda Waterfall,waterfall,dang-interior,3,false,6 km S of Ahwa; maintainer-pinned
+dang-dhulda-falls,Dhulda Waterfall,waterfall,dang-interior,3,false,W of Girmal country; maintainer-pinned
+dang-soul-to-prakriti-falls,Soul to Prakriti Waterfall,waterfall,dang-interior,3,false,Near Medha; coined map name; maintainer-pinned
+dang-mayadevi-temple,Mayadevi Temple,temple,dang-interior,3,false,NW forest shrine + fair; maintainer-pinned
+dang-temburgartha-dam,Temburgartha Dam,dam,dang-interior,3,false,S of Ahwa; sunset/net point folded in; maintainer-pinned
+dang-valley-of-wasurna,Valley of Wasurna,viewpoint,dang-interior,3,false,SW valley vista; maintainer-pinned
+dang-svtis-falls,Svtis Waterfall,waterfall,dang-interior,3,false,Name likely garbled on map; maintainer-pinned
+dang-chikhalda-falls,Chikhalda Waterfall,waterfall,dang-interior,3,false,SW pocket anchor; Vadla ni vadi grove folded in
+dang-ritu-falls,Ritu Waterfall,waterfall,dang-interior,3,false,Chikhalda sibling 1 km; maintainer-pinned
+dang-baaj-falls,Baaj Waterfall,waterfall,waghai,3,false,Falls + village view point; near Koshmal
+dang-chirai-falls,Chirai Waterfalls,waterfall,waghai,3,false,Far SW toward Vansda border; maintainer-pinned
+dang-advait-falls,Advait Waterfall,waterfall,waghai,3,false,Vangan twin; border line; maintainer-pinned
+dang-vangan-falls,Vangan Waterfall (Ankada Dhodh),waterfall,waghai,3,true,OD: Vansda (Navsari); Gandavle hill folded in
