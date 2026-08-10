@@ -5,6 +5,7 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- `dang-songadh-fort` (2026-08-10, maintainer-pinned) — the Gaekwad dynasty's first stronghold above Songadh town (OD: Tapi), heritage anchor for the Gaumukh–Medha forest day. Corpus: 86 → 87.
 - `dang-dev-van-falls` and `dang-bhambhi-falls` (2026-08-10) — both maintainer-pinned. Dev Van is the falls the reels call 'Wonder Waterfall' (Subir belt, 5 km from Bhalkhet — closing the last open item from the 2026-08-09 awaiting-a-pin list besides Milan); Bhambhi (map name Bhambai) is the far-eastern border-forest trek. Corpus: 84 → 86.
 
 ### Fixed

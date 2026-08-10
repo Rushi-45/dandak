@@ -9,9 +9,9 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 
 | District | T1 | T2 | T3 | Total |
 |---|---|---|---|---|
-| Dang | 12 | 13 | 21 | 46 |
+| Dang | 12 | 13 | 22 | 47 |
 | Narmada | 10 | 14 | 16 | 40 |
-| **Total** | **22** | **27** | **37** | **86** |
+| **Total** | **22** | **27** | **38** | **87** |
 
 *2026-08-09: seven "pinch-in" additions (map-pin-grade remote spots) appended below and in the seed — all Tier-3, all flagged for ground-truthing.*
 
@@ -65,6 +65,7 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative seed — **owner rev
 | `dang-janki-van` | Janki Van | garden | waghai | 3 | OD: Vansda (Navsari); Ramayana-themed forest garden at Bhinar |
 | `dang-dev-van-falls` | Dev Van Waterfall | waterfall | dang-interior | 3 | aka 'Wonder Waterfall'; Subir belt; maintainer-pinned |
 | `dang-bhambhi-falls` | Bhambhi Waterfall | waterfall | dang-interior | 3 | aka Bhambai; eastern border forest; maintainer-pinned |
+| `dang-songadh-fort` | Songadh Fort | fort | dang-interior | 3 | OD: Songadh (Tapi); Gaekwads' first stronghold; maintainer-pinned |
 
 ## Narmada (32)
 
