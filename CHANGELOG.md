@@ -4,6 +4,9 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 
 ## [Unreleased]
 
+### Added
+- Six of the maintainer's own photographs (2026-08-10, `license: own`), identified by him from the inbox: `dang-pandav-caves` gains its first image ever (the braided fall beside the caves), `dang-gira-falls` gains a dawn shot from the rock shelf above plus a full-width spate panorama (the CC BY-SA Commons image kept as a third entry), and `dang-anjan-kund` gains the cave scarp with its saffron flag, the full drop into the amphitheatre, and the paddy-and-hills approach. 24 records now carry imagery. Two further frames were withheld at his request because family members are identifiable, and a foreground group was cropped out of the Pandav Caves image.
+
 ## [1.1.0] — 2026-08-10
 
 The traveller's release: the corpus grew 64 → 106 spots in three days, driven by the maintainer's own Google Maps contributions (pins and photos), an OpenStreetMap coordinate sweep, and YouTube-vlog mining. Every awaiting-a-pin item and candidate-pool row is resolved. Three new itineraries cover the newly documented belts (Subir falls circuit, Ahwa south-west loop, Songadh forest day); GeoJSON and stats exports regenerated; API version meta bumped to 1.1.0.

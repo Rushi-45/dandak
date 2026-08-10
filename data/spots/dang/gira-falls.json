@@ -96,6 +96,18 @@
   "media": {
     "images": [
       {
+        "url": "/images/spots/dang-gira-falls.jpg",
+        "license": "own",
+        "caption": "Dawn over the falls from the rock shelf above, the river running full and brown",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/dang-gira-falls-2.jpg",
+        "license": "own",
+        "caption": "The full width of the curtain in monsoon spate, from downstream",
+        "credit": "Rushi Chudasama"
+      },
+      {
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Gira_Water_Fall_saputara.JPG",
         "license": "cc-by-sa",
         "caption": "Gira Falls in monsoon flow",
