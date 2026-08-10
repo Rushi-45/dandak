@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "dang-bhambhi-falls",
+  "slug": "bhambhi-falls",
+  "name": { "en": "Bhambhi Waterfall" },
+  "aliases": ["Bhambai Waterfall", "Bhambi Waterfall", "Bhambhi Dhodh"],
+  "category": "waterfall",
+  "subcategories": [],
+  "tags": ["monsoon", "offbeat", "nature", "trekking", "photography"],
+  "cluster": "dang-interior",
+  "status": "active",
+  "district": "dang",
+  "summary": "A forest waterfall in Dang's far east by the Maharashtra border — a trekkers' find beyond Ahwa that the vlogs rate among the district's prettiest.",
+  "description": "Bhambhi hides in the least-travelled corner of an already quiet district: the forest country east of Ahwa where Dang runs out against the Maharashtra line. The falls drop through proper jungle — the approach is a trek through forest rather than a stroll from parking — and the few trekking vlogs that have reached it come back calling it one of Dang's hidden best.\n\nThat scarcity is the character. There are no facilities, no stalls, no season staff — only village guidance from the border hamlets and whatever the monsoon has given the stream. Combine it with the Don–Anjani plateau on the drive back west for a full border-country day.\n\nSpellings wobble between Bhambhi, Bhambi and the map's Bhambai; they are one place. Ask for the dhodh by any of them in the villages and fingers will point the same way.",
+  "highlights": [
+    "Deep-forest falls in Dang's untouristed eastern corner",
+    "A genuine trek-in — jungle paths, not parking lots",
+    "Pairs with the Don–Anjani plateau for a border-country day"
+  ],
+  "history_legend": null,
+  "attributes": {},
+  "location": {
+    "taluka": "Ahwa",
+    "admin_district": null,
+    "outside_district": false,
+    "nearest_town": { "name": "Ahwa", "distance_km": 35 },
+    "coordinates": { "lat": 20.7859, "lng": 73.9314, "precision": "approximate" },
+    "altitude_m": null,
+    "distances_km": { "ahwa": 35, "saputara": 65 }
+  },
+  "access": {
+    "modes": {
+      "road": "East from Ahwa toward the border villages; the last stretch is rural track — ask locally for the trailhead",
+      "rail": "No practical railhead; Waghai/Bilimora serve the district",
+      "air": "Surat (~170 km)"
+    },
+    "last_mile": "Forest trek from the road end; slippery and unmarked in the rains",
+    "road_condition": "Rural tar then track; slow going in monsoon",
+    "parking": { "available": true, "fee": 0, "notes": "Informal, at the trailhead village" }
+  },
+  "visit": {
+    "timings": [],
+    "fees": [],
+    "booking": { "required": false, "url": null, "notes": null },
+    "duration_min": 150,
+    "best_time_of_day": "morning",
+    "weekly_closure": null,
+    "notes": "A trekking outing — start early, be out of the forest with daylight to spare."
+  },
+  "seasonality": {
+    "best_months": [7, 8, 9, 10],
+    "avoid_months": [12, 1, 2, 3, 4, 5],
+    "monsoon_dependent": true,
+    "notes": "Monsoon-fed like all the belt's falls; July–September is the show."
+  },
+  "experience": {
+    "activities": ["trekking", "nature-walk", "photography"],
+    "difficulty": "moderate",
+    "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
+    "photography_notes": "Forest gloom argues for steady hands or a mini-tripod; the falls read best with the jungle frame kept in."
+  },
+  "amenities": {
+    "food": "None anywhere near — carry the day's food and water from Ahwa",
+    "toilets": "none",
+    "drinking_water": false,
+    "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "weak" },
+    "guides": "Take one from the trailhead village — paths braid and nothing is signed",
+    "ev_charging": false,
+    "stay_nearby": []
+  },
+  "safety": {
+    "warnings": [
+      "Border-country forest with no network — never trek alone",
+      "Leeches and slick rock through the monsoon window",
+      "Flow surges after rain; keep off the fall's apron in spate"
+    ],
+    "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~35 km)", "police": "Ahwa PS", "notes": null }
+  },
+  "tips": [
+    "Combine with Don hill and Anjan Kund on the drive back for the full eastern day",
+    "Any spelling works locally — Bhambhi, Bhambi, Bhambai — it is one dhodh",
+    "This is one to skip in active heavy rain; the trek out matters more than the view in"
+  ],
+  "faqs": [],
+  "nearby": [
+    { "id": "dang-don-hill", "distance_km": 25, "note": "The plateau on the drive back west" },
+    { "id": "dang-birsa-falls", "distance_km": 28 }
+  ],
+  "itineraries": [],
+  "media": { "images": [], "videos": [] },
+  "seo": {
+    "meta_title": "Bhambhi Waterfall, Dang — The Border Forest Falls",
+    "meta_description": "Bhambhi (Bhambai) waterfall in eastern Dang: the forest trek, monsoon window, guide advice and pairing with the Don plateau."
+  },
+  "provenance": {
+    "created": "2026-08-10",
+    "last_verified": "2026-08-10",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Google Maps — place 'Bhambai waterfall' (20.7859, 73.9314); identified by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Bhambai+waterfall/@20.7859335,73.9313833,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Exploring Bhambhi Waterfall — Hidden Gem in Dang District (vlog)", "url": "https://www.youtube.com/watch?v=BExShGCwsFI", "publisher": "YouTube (NikunjTravelogy)", "accessed": "2026-08-10" }
+    ],
+    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+  }
+}

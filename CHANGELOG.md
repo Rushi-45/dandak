@@ -5,6 +5,10 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
+- `dang-dev-van-falls` and `dang-bhambhi-falls` (2026-08-10) — both maintainer-pinned. Dev Van is the falls the reels call 'Wonder Waterfall' (Subir belt, 5 km from Bhalkhet — closing the last open item from the 2026-08-09 awaiting-a-pin list besides Milan); Bhambhi (map name Bhambai) is the far-eastern border-forest trek. Corpus: 84 → 86.
+
+### Fixed
+- `dang-medha-falls` — the maintainer confirms 'Ekwa Golan Waterfalls' is the same falls: alias added, coordinates corrected to the map pin (21.0873, 73.7118), Songadh/Surat distances updated; the Ekva Golan candidate-pool row is retired.
 - `dang-janki-van` (2026-08-10) — the Ramayana-themed forest garden at Bhinar near Unai (OD: Vansda, Navsari), found by mining five local YouTube channels the maintainer supplied. Ten themed groves, the 'tree library', Monday closure; sits naturally in the Waghai-belt day. Corpus: 83 → 84. The channel harvest also upgraded the Wonder-waterfall lead (its vlog description places it in Vyara taluka, Tapi) and added Bhambhi, Ekva Golan, Kaka-Kaki, Kadam/Pilva Dungar and Unai to the spec-08 candidate pool.
 - `narmada-chhatwada-falls` (2026-08-10) — the "Chhatawada waterfall" that was on the awaiting-a-pin list since 2026-08-09, resolved by the maintainer: village pin (Chhatwada 393145), the falls' map name ('Handi waterfall', 21.7677/73.4279) and an own-photo hero of the step in full spate. Pairs with Kesharva 9 km away. Corpus: 82 → 83; 22 records with imagery.
 - Maintainer photo for `dang-gaumukh-falls` (the spring-fed cascade over the fluted rock) — 23 records with imagery.
