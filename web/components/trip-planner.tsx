@@ -11,7 +11,8 @@ import {
 import { useRouter, useSearchParams } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
-import { TripMap, type TripMapStop } from "@/components/trip-map";
+import { TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
+import { fetchRoadRoute, type RoadLeg } from "@/lib/road-route";
 import { categoryMeta } from "@/lib/ui";
 import { MONTHS } from "@/lib/format";
 import {
@@ -351,8 +352,98 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
 // ------------------------------------------------------------------ result
 
+const NO_LEGS: Record<number, RoadLeg> = {};
+
+/** Drop waypoints that repeat the previous one — a day's end node is usually its last stop. */
+function dedupeWaypoints(pts: [number, number][]): [number, number][] {
+  const out: [number, number][] = [];
+  for (const p of pts) {
+    const last = out[out.length - 1];
+    if (!last || Math.hypot((last[0] - p[0]) * 111, (last[1] - p[1]) * 104) > 0.05) out.push(p);
+  }
+  return out;
+}
+
 function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month: number }) {
   const stops = plan.days.flatMap((d) => d.stops);
+
+  // Stamped with the plan they belong to, so a stale set is ignored by
+  // derivation rather than cleared by a setState in the effect body.
+  const planKey = useMemo(
+    () =>
+      `${plan.from.key}>${plan.to.key}|` +
+      plan.days.map((d) => `${d.day}:${d.stops.map((s) => s.spot.id).join(",")}`).join("|"),
+    [plan]
+  );
+  const [routed, setRouted] = useState<{ key: string; legs: Record<number, RoadLeg> }>({
+    key: "",
+    legs: {},
+  });
+  const legs = routed.key === planKey ? routed.legs : NO_LEGS;
+
+  /**
+   * Ask OSRM for each day's real road path. Debounced because the form replans
+   * on every pill click, and aborted on change so a slow answer for last
+   * second's plan can never paint over this one.
+   */
+  useEffect(() => {
+    const ctrl = new AbortController();
+    let live = true;
+    const timer = setTimeout(async () => {
+      for (const d of plan.days) {
+        const first = plan.days[0] === d;
+        const waypoints = dedupeWaypoints([
+          [first ? plan.from.lat : d.startNode.lat, first ? plan.from.lng : d.startNode.lng],
+          ...d.stops.map((s) => [s.spot.lat, s.spot.lng] as [number, number]),
+          [d.endNode.lat, d.endNode.lng],
+        ]);
+        const leg = await fetchRoadRoute(waypoints, ctrl.signal);
+        if (!live) return;
+        if (leg) {
+          setRouted((prev) => ({
+            key: planKey,
+            legs: prev.key === planKey ? { ...prev.legs, [d.day]: leg } : { [d.day]: leg },
+          }));
+        }
+      }
+    }, 500);
+    return () => {
+      live = false;
+      ctrl.abort();
+      clearTimeout(timer);
+    };
+  }, [plan, planKey]);
+
+  const routes: DayRoutes = useMemo(() => {
+    const r: DayRoutes = {};
+    for (const [day, leg] of Object.entries(legs)) r[Number(day)] = leg.points;
+    return r;
+  }, [legs]);
+
+  /**
+   * Take OSRM's distance, keep our own driving time.
+   *
+   * OSRM's car profile drives the posted speed limit, which put this corridor at
+   * 72 km/h; Google reckons about 40 for the same road, and our speed model —
+   * regressed from the dataset's own road figures — agrees. So each day's
+   * measured kilometres are re-timed at the speed our model implied for that
+   * day, which keeps distance and duration consistent with each other.
+   */
+  const dayMinutes = (d: PlanResult["days"][number]) => {
+    const leg = legs[d.day];
+    if (!leg) return d.driveMin;
+    const kmh = d.driveMin > 0 && d.driveKm > 0 ? d.driveKm / (d.driveMin / 60) : 38;
+    return Math.round((leg.km / kmh) * 60);
+  };
+
+  // only trust the measured totals once every day has come back
+  const measured =
+    plan.days.length > 0 && plan.days.every((d) => legs[d.day])
+      ? {
+          km: plan.days.reduce((s, d) => s + legs[d.day].km, 0),
+          min: plan.days.reduce((s, d) => s + dayMinutes(d), 0),
+        }
+      : null;
 
   const mapStops: TripMapStop[] = useMemo(() => {
     const list: TripMapStop[] = stops.map((s) => ({
@@ -431,10 +522,10 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
           {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops
         </span>
         <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400">
-          ~{Math.round(plan.totalKm)} km
+          {measured ? `${Math.round(measured.km)} km` : `~${Math.round(plan.totalKm)} km`}
         </span>
         <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400">
-          {hhmm(plan.totalDriveMin)} driving
+          {hhmm(measured ? measured.min : plan.totalDriveMin)} driving
         </span>
         <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400">
           {hhmm(plan.totalVisitMin)} at places
@@ -455,7 +546,7 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
       )}
 
       <div className="mt-6">
-        <TripMap stops={mapStops} durationDays={days} />
+        <TripMap stops={mapStops} durationDays={days} routes={routes} />
       </div>
 
       {plan.days.map((d) => (
@@ -467,8 +558,11 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
             <h2 className="font-serif text-2xl font-black italic text-stone-100">Day {d.day}</h2>
           </div>
           <p className="mt-2 text-xs text-stone-500">
-            {d.startNode.name} → {d.endNode.name} · ~{Math.round(d.driveKm)} km ·{" "}
-            {hhmm(d.driveMin)} driving · {hhmm(d.visitMin)} at places
+            {d.startNode.name} → {d.endNode.name} ·{" "}
+            {legs[d.day]
+              ? `${Math.round(legs[d.day].km)} km · ${hhmm(dayMinutes(d))}`
+              : `~${Math.round(d.driveKm)} km · ${hhmm(d.driveMin)}`}{" "}
+            driving · {hhmm(d.visitMin)} at places
           </p>
 
           {d.transitLeg && (
@@ -533,11 +627,13 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
       <section className="mt-10 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-sm text-stone-400">
         <p>
           <strong className="font-semibold text-stone-200">How this was built:</strong> stops are
-          chosen for least detour from your route, then ordered to cut driving. Distances come from
-          the dataset&rsquo;s own road figures where we have them ({plan.curatedLegs} leg
-          {plan.curatedLegs === 1 ? "" : "s"} here) and are estimated from straight-line distance
-          otherwise ({plan.estimatedLegs}) — no routing service is involved, so treat the times as
-          planning numbers, not promises.
+          chosen for least detour from your route, then ordered to cut driving — using the
+          dataset&rsquo;s own road figures where we have them ({plan.curatedLegs} leg
+          {plan.curatedLegs === 1 ? "" : "s"} here) and straight-line estimates otherwise (
+          {plan.estimatedLegs}).{" "}
+          {measured
+            ? "The line on the map and the distances above are the real road route from OpenStreetMap. Driving times are ours, not the router's — its default speed limits are far too optimistic for these ghat roads."
+            : "The map is still fetching the real road route; until it lands, distances are estimates and the line is drawn straight."}
         </p>
         {plan.excludedBySeason > 0 && (
           <p className="mt-2 text-xs text-stone-500">

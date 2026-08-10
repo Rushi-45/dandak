@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
 import { TracingBeam } from "@/components/tracing-beam";
-import { TripMap, type TripMapStop } from "@/components/trip-map";
+import { TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
+import routeData from "@/lib/routes.json";
 import { formatMonths } from "@/lib/format";
 import { getItineraries, getItinerary, getSpotById, getSpotImagePath } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
@@ -57,6 +58,14 @@ export default async function ItineraryPage({ params }: { params: Params }) {
     })
     .filter((s): s is TripMapStop => s !== null);
 
+  // Road geometry baked by scripts/fetch-routes.mjs. JSON keys are strings, and
+  // a trip missing from the file simply falls back to straight lines.
+  const baked = (routeData.routes as Record<string, Record<string, number[][]>>)[slug];
+  const routes: DayRoutes = {};
+  for (const [day, points] of Object.entries(baked ?? {})) {
+    routes[Number(day)] = points as [number, number][];
+  }
+
   return (
     <article className="relative mx-auto max-w-3xl px-4 py-12">
       <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
@@ -91,7 +100,7 @@ export default async function ItineraryPage({ params }: { params: Params }) {
       {it.notes && <p className="mt-4 text-lg leading-relaxed text-stone-400">{it.notes}</p>}
 
       <div className="mt-8">
-        <TripMap stops={mapStops} durationDays={it.duration_days} />
+        <TripMap stops={mapStops} durationDays={it.duration_days} routes={routes} />
       </div>
 
       <TracingBeam className="mt-12">

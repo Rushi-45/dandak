@@ -7,8 +7,9 @@ const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";
  * Esri place-name overlay that rides along with satellite only, since the other
  * bases carry their own labels. Shared by every map on the site.
  *
- * `base` picks the starting layer: route maps open on Roads, because a route is
- * about roads; discovery maps open on Satellite.
+ * Every map opens on Roads: without them a reader cannot tell how any two pins
+ * connect, which is the whole question a travel map has to answer. Pass
+ * `base: "satellite"` for a map where the imagery is the point.
  *
  * Why roads are a base layer rather than an overlay on the imagery: Esri's
  * transparent reference layers (World Transportation, World Reference Overlay,
@@ -45,7 +46,7 @@ export function addBaseLayers(
     attribution: CARTO_ATTR,
   });
 
-  const onRoads = opts.base === "roads";
+  const onRoads = opts.base !== "satellite";
   (onRoads ? roads : satellite).addTo(map);
 
   const placeLabels = L.tileLayer(

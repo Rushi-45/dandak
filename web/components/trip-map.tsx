@@ -22,9 +22,14 @@ export interface TripMapStop {
   note?: string;
 }
 
+/** Road geometry per day number: [[lat, lng], …] following the actual roads. */
+export type DayRoutes = Record<number, [number, number][]>;
+
 interface TripMapProps {
   stops: TripMapStop[];
   durationDays: number;
+  /** Absent or partial is fine — any day without geometry falls back to a straight line. */
+  routes?: DayRoutes;
 }
 
 const DAY_STROKE = ["#34d399", "#fbbf24", "#38bdf8", "#f472b6", "#a78bfa"];
@@ -36,7 +41,7 @@ const DAY_TEXT = [
   "text-violet-300 ring-violet-400/30 bg-violet-400/10",
 ];
 
-export function TripMap({ stops, durationDays }: TripMapProps) {
+export function TripMap({ stops, durationDays, routes }: TripMapProps) {
   const divRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMap_ | null>(null);
   const [failed, setFailed] = useState(false);
@@ -50,8 +55,14 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
   // render would tear the map down constantly) nor run once (the planner changes
   // its route in place). This key changes exactly when the drawn route changes.
   const routeKey = useMemo(
-    () => stops.map((s) => `${s.day}:${s.order}:${s.id}:${s.lat},${s.lng}`).join("|"),
-    [stops]
+    () =>
+      stops.map((s) => `${s.day}:${s.order}:${s.id}:${s.lat},${s.lng}`).join("|") +
+      // road geometry usually arrives after the first paint, so it has to redraw
+      "#" +
+      Object.entries(routes ?? {})
+        .map(([d, pts]) => `${d}:${pts.length}`)
+        .join(","),
+    [stops, routes]
   );
 
   // Stops that sit within ~400 m of one another (U-Turn Point and the Mahal
@@ -92,13 +103,18 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
         if (cancelled || !divRef.current || mapRef.current) return;
 
         const map = L.map(divRef.current, { scrollWheelZoom: false });
-        // a route map opens on the road network; imagery is a click away
-        addBaseLayers(L, map, { base: "roads" });
+        addBaseLayers(L, map);
 
         byDay.forEach((list, i) => {
           const color = DAY_STROKE[i % DAY_STROKE.length];
-          if (list.length >= 2) {
-            const line = list.map((s) => posOf(s));
+          const road = routes?.[i + 1];
+          const line: [number, number][] | null =
+            road && road.length >= 2
+              ? road
+              : list.length >= 2
+                ? list.map((s) => posOf(s) as [number, number])
+                : null;
+          if (line) {
             L.polyline(line, { color, weight: 5, opacity: 0.35 }).addTo(map);
             L.polyline(line, { color, weight: 2.5, opacity: 0.95 }).addTo(map);
           }
@@ -146,7 +162,10 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
             .addTo(map);
         }
 
-        map.fitBounds(L.latLngBounds(stops.map((s) => posOf(s))).pad(0.15));
+        // include the road geometry, or a route that swings wide gets cropped
+        const bounds = L.latLngBounds(stops.map((s) => posOf(s)));
+        for (const pts of Object.values(routes ?? {})) for (const p of pts) bounds.extend(p);
+        map.fitBounds(bounds.pad(0.15));
         mapRef.current = map;
         dispose = keepMapSized(map, divRef.current);
       } catch {
@@ -167,6 +186,7 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
   const gmapsUrl = (list: TripMapStop[]) =>
     `https://www.google.com/maps/dir/${list.map((s) => `${s.lat},${s.lng}`).join("/")}`;
   const anyApprox = stops.some((s) => s.approx);
+  const hasRoads = Object.values(routes ?? {}).some((p) => p.length >= 2);
 
   return (
     <div className="relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02]">
@@ -188,7 +208,9 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/[0.06] px-5 py-3.5">
         <p className="text-[11px] text-stone-500">
-          Lines connect stops directly, not along roads
+          {hasRoads
+            ? "Lines follow driving routes from OpenStreetMap"
+            : "Lines connect stops directly, not along roads"}
           {anyApprox && " · some pins are approximate"}
           {nudged && " · overlapping stops nudged apart"}
         </p>
