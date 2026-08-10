@@ -11,6 +11,7 @@ import souImg from "@/public/images/statue-of-unity.jpg";
 import lakeImg from "@/public/images/saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
 import damImg from "@/public/images/sardar-sarovar-dam.jpg";
+import shabariImg from "@/public/images/spots/dang-shabari-dham.jpg";
 
 const TICKER = [
   "Monsoon waterfalls",
@@ -214,7 +215,7 @@ export default function Home() {
 
         {/* == Mood collections ============================== */}
         <FadeIn>
-          <section className="border-t border-white/[0.06] py-14">
+          <section id="moods" className="scroll-mt-20 border-t border-white/[0.06] py-14">
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-emerald-300">
               Pick a mood
             </p>
@@ -260,28 +261,43 @@ export default function Home() {
               <TiltCard className="h-[440px]">
               <Link
                 href="/itineraries/dang-ramayana-trail"
-                className="group relative flex h-full flex-col justify-end overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.14] via-orange-400/[0.06] to-transparent p-6 ring-1 ring-amber-300/15 transition-colors hover:ring-amber-300/35"
+                className="group relative flex h-full flex-col justify-end overflow-hidden rounded-[2rem] ring-1 ring-amber-300/15 transition-colors hover:ring-amber-300/35"
               >
+                <Image
+                  src={shabariImg}
+                  alt="The Shabari Dham temple at Subir under monsoon cloud"
+                  placeholder="blur"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover object-[60%_center] transition-transform duration-[1.2s] ease-out group-hover:scale-110"
+                />
+                {/* amber wash keeps the legends card its own thing */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#150c02]/95 via-[#150c02]/55 to-amber-400/[0.12]" />
                 <p
                   aria-hidden
-                  className="pointer-events-none absolute -right-6 -top-10 select-none font-serif text-[11rem] font-black italic leading-none text-amber-200/[0.07] transition-colors duration-500 group-hover:text-amber-200/[0.12]"
+                  className="pointer-events-none absolute -right-6 -top-10 select-none font-serif text-[11rem] font-black italic leading-none text-amber-100/[0.14] transition-colors duration-500 group-hover:text-amber-100/[0.22]"
                 >
                   राम
                 </p>
                 <Meteors />
-                <span className="w-fit rounded-full bg-amber-400/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-200 ring-1 ring-amber-300/30">
-                  Living geography
+                <div className="relative p-6">
+                  <span className="inline-block w-fit rounded-full bg-amber-400/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-amber-100 ring-1 ring-amber-300/40 backdrop-blur">
+                    Living geography
+                  </span>
+                  <h3 className="mt-3 font-serif text-3xl font-black italic text-stone-50">
+                    Walk with legends
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                    Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan — the epics
+                    mapped onto living hills, told as tradition, not fact.
+                  </p>
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-amber-300/80">
+                    Shabari Dham · Pampa · Anjan Kund · Kabirvad
+                  </p>
+                </div>
+                <span className="absolute right-4 top-4 rounded-md bg-black/40 px-2 py-1 text-[9px] text-stone-400 backdrop-blur-md">
+                  📷 સતિષચંદ્ર · CC BY-SA
                 </span>
-                <h3 className="mt-3 font-serif text-3xl font-black italic text-stone-50">
-                  Walk with legends
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                  Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan — the epics mapped
-                  onto living hills, told as tradition, not fact.
-                </p>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-amber-300/80">
-                  Shabari Dham · Pampa · Anjan Kund · Kabirvad
-                </p>
               </Link>
               </TiltCard>
 

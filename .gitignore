@@ -6,3 +6,8 @@ __pycache__/
 Thumbs.db
 scratch/
 dist/
+
+# Maintainer's raw photo drop-zone: originals stay local, only the
+# resized/credited copies under web/public/images/ get committed.
+photos-inbox/*
+!photos-inbox/README.txt
