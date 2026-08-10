@@ -30,6 +30,21 @@ const DISTRICT_COLOR: Record<string, string> = {
   narmada: "#38bdf8",
 };
 
+// Key base towns, always labelled regardless of zoom (registry hub coordinates).
+const TOWNS: { name: string; lat: number; lng: number }[] = [
+  { name: "Saputara", lat: 20.575, lng: 73.757 },
+  { name: "Ahwa", lat: 20.757, lng: 73.686 },
+  { name: "Waghai", lat: 20.772, lng: 73.499 },
+  { name: "Subir", lat: 20.845, lng: 73.74 },
+  { name: "Vansda", lat: 20.758, lng: 73.365 },
+  { name: "Songadh", lat: 21.169, lng: 73.564 },
+  { name: "Rajpipla", lat: 21.866, lng: 73.502 },
+  { name: "Ekta Nagar", lat: 21.838, lng: 73.719 },
+  { name: "Dediapada", lat: 21.633, lng: 73.612 },
+  { name: "Sagbara", lat: 21.473, lng: 73.772 },
+  { name: "Poicha", lat: 21.976, lng: 73.534 },
+];
+
 export function RealMap({ markers, categories }: LeafletMapProps) {
   const divRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMap_ | null>(null);
@@ -77,6 +92,33 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
           { position: "topright" }
         )
         .addTo(map);
+
+      // Place-name tiles (cities/towns/villages) ride along with the satellite
+      // layer only - Terrain and Dark already carry their own labels.
+      const placeLabels = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+        { maxZoom: 17, attribution: "Labels © Esri" }
+      );
+      placeLabels.addTo(map);
+      map.on("baselayerchange", (e) => {
+        const name = (e as unknown as { name: string }).name;
+        if (name.includes("Satellite")) placeLabels.addTo(map);
+        else map.removeLayer(placeLabels);
+      });
+
+      // Our base towns, always visible in the site's own type.
+      for (const t of TOWNS) {
+        L.marker([t.lat, t.lng], {
+          icon: L.divIcon({
+            className: "dk-town",
+            html: `<span class="dk-town-dot"></span>${t.name}`,
+            iconSize: [0, 0],
+            iconAnchor: [-6, 6],
+          }),
+          interactive: false,
+          keyboard: false,
+        }).addTo(map);
+      }
 
       // Real district boundaries (OSM) as dashed overlays.
       const present = new Set(markers.map((m) => m.district));
