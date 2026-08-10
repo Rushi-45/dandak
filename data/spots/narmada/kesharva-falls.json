@@ -95,7 +95,35 @@
     { "id": "narmada-karjan-reservoir", "distance_km": 32 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "/images/spots/narmada-kesharva-falls.jpg",
+        "license": "own",
+        "caption": "The falls spilling over their rounded lip into the pool",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/narmada-kesharva-falls-2.jpg",
+        "license": "own",
+        "caption": "The drop and the deep green pool below it",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/narmada-kesharva-falls-3.jpg",
+        "license": "own",
+        "caption": "Close under the fall, the pool filling the foreground",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/narmada-kesharva-falls-4.jpg",
+        "license": "own",
+        "caption": "Monsoon cloud stacking over the falls",
+        "credit": "Rushi Chudasama"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Kesharva Waterfall, Narmada — Rajpipla's Bathing Falls",
     "meta_description": "Kesharva waterfall near Rajpipla: the 1 km field walk, tiered pools you can soak in, the deep-pool warning and best monsoon window."

@@ -84,7 +84,23 @@
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 22 }
   ],
   "itineraries": ["dang-ramayana-trail"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "/images/spots/dang-pampa-sarovar.jpg",
+        "license": "own",
+        "caption": "The water pouring over the rock shelf in monsoon spate",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/dang-pampa-sarovar-2.jpg",
+        "license": "own",
+        "caption": "The weir running full, seen from the rock ledge below",
+        "credit": "Rushi Chudasama"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Pampa Sarovar, Dang — Shabari's Pond",
     "meta_description": "Pampa Sarovar near Subir: the Ramayana-linked pond paired with Shabari Dham — access, season and visit notes."

@@ -93,7 +93,23 @@
     { "id": "dang-gaumukh-falls", "distance_km": 15, "note": "Temple falls across the Tapi line" }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "/images/spots/dang-chimer-falls.jpg",
+        "license": "own",
+        "caption": "The twin streams dropping the full height into the pool below",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/dang-chimer-falls-2.jpg",
+        "license": "own",
+        "caption": "The whole fall from the forest viewpoint across the valley",
+        "credit": "Rushi Chudasama"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Chimer (Chichkund) Falls — Dang's Contested Giant",
     "meta_description": "The ~100 m Chimer falls on Dang's northern rim: four cascades, an unofficial tallest-in-Gujarat claim, and a farm-path approach."

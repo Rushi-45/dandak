@@ -12,7 +12,7 @@ A structured, verifiable tourism dataset for the **Dang** and **Narmada** distri
 |---|---|
 | Dataset release | **v1.1.0** (2026-08-10) |
 | Phase | 6 complete — pipeline phases 0–6 all shipped; post-v1 expansion ongoing |
-| Data records | 106 spots (91 verified: T1 100%, T2 81%) + 48 companions (2 districts, 12 itineraries, 8 events, 16 stays, 10 foods); 24 spots with imagery (CC/Commons + maintainer's own) |
+| Data records | 106 spots (91 verified: T1 100%, T2 81%) + 48 companions (2 districts, 12 itineraries, 8 events, 16 stays, 10 foods); 28 spots with imagery (CC/Commons + maintainer's own) |
 | Exports | GeoJSON (`exports/geojson/`), stats snapshot (`exports/STATS.md`) |
 
 ## Spec index

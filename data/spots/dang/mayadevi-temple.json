@@ -10,7 +10,7 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A Devi shrine in Dang's north-western forest country — quiet most of the year, a living centre of the district's adivasi devotion on its fair days.",
+  "summary": "A Devi shrine on a broad rocky river in Dang's north-west — quiet most of the year, a living centre of the district's adivasi devotion on its fair days.",
   "description": "Mayadevi's temple sits in the forest-and-field country of north-western Dang, between the Waghai belt and the Subir falls cluster. Like most of the district's shrines it runs on two clocks: village-quiet through the ordinary year, and thronged when its fair days come around, when the goddess's following across the surrounding hamlets converges in the way Dang's adivasi devotion does — loud, musical and brief.\n\nFor travellers it works as the cultural stop on a western-interior loop — Mayadevi, then the Bhalkhet–Milan falls country east of it — and as a reminder that the district's living religion is its own attraction, distinct from the Ramayana geography of the Shabari sites.",
   "highlights": [
     "A working Devi shrine of the district's adivasi tradition",
@@ -84,7 +84,29 @@
     { "id": "dang-girmal-falls", "distance_km": 25 }
   ],
   "itineraries": [],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [
+      {
+        "url": "/images/spots/dang-mayadevi-temple.jpg",
+        "license": "own",
+        "caption": "The broad rock shelves and rapids of the river beside the shrine",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/dang-mayadevi-temple-2.jpg",
+        "license": "own",
+        "caption": "The weir running full below the green hills",
+        "credit": "Rushi Chudasama"
+      },
+      {
+        "url": "/images/spots/dang-mayadevi-temple-3.jpg",
+        "license": "own",
+        "caption": "The river cutting between rock shelves after rain",
+        "credit": "Rushi Chudasama"
+      }
+    ],
+    "videos": []
+  },
   "seo": {
     "meta_title": "Mayadevi Temple, Dang — Forest Shrine & Fair",
     "meta_description": "The Mayadevi temple in north-western Dang: the living adivasi shrine, its fair days, and pairing with the Subir falls belt."
@@ -94,7 +116,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Mayadevi Temple' (20.9298, 73.5332); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Mayadevi+Temple/@20.9297924,73.5331867,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps — place 'Mayadevi Temple' (20.9298, 73.5332); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Mayadevi+Temple/@20.9297924,73.5331867,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Maintainer's own photographs of the site (2 Aug 2025), which establish the riverside setting — broad rock shelves, a weir and monsoon rapids beside the shrine", "publisher": "Rushi Chudasama", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["history_legend", "location.taluka", "location.distances_km", "visit.notes"]
   }
