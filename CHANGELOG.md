@@ -5,7 +5,7 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 ## [Unreleased]
 
 ### Added
-- Fifteen more maintainer photographs (2026-08-10) after decoding the inbox's HEIC files: **first images ever** for `dang-chimer-falls` (the twin streams and the viewpoint across the valley), `dang-pampa-sarovar` (the shelf and weir in spate) and `narmada-kesharva-falls` (four frames of the drop and its pool); `dang-mayadevi-temple` gains three river frames; `dang-gira-falls` gains the dusk multi-tier curtain — the best frame in the batch — which takes over as its hero, with the dawn, spate and moonrise views behind it. 28 records now carry imagery. Two frames were skipped at the maintainer's request.
+- Sixteen more maintainer photographs (2026-08-10) after decoding the inbox's HEIC files — `dang-anjan-kund` also gains a fourth own frame (the stream and hill line below the site): **first images ever** for `dang-chimer-falls` (the twin streams and the viewpoint across the valley), `dang-pampa-sarovar` (the shelf and weir in spate) and `narmada-kesharva-falls` (four frames of the drop and its pool); `dang-mayadevi-temple` gains three river frames; `dang-gira-falls` gains the dusk multi-tier curtain — the best frame in the batch — which takes over as its hero, with the dawn, spate and moonrise views behind it. 28 records now carry imagery. Two frames were skipped at the maintainer's request.
 
 ### Changed
 - `dang-mayadevi-temple`: the maintainer's own photographs establish the shrine's riverside setting (broad rock shelves, a weir, monsoon rapids), so the summary says so and the evidence is recorded as a source.
