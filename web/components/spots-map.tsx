@@ -2,6 +2,13 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import geoRaw from "@/lib/geo.json";
+
+interface GeoData {
+  districts: { name: string; rings: [number, number][][] }[];
+  rivers: { name: string; segments: [number, number][][] }[];
+}
+const geo = geoRaw as unknown as GeoData;
 
 export interface SpotMarker {
   id: string;
@@ -30,11 +37,21 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
   const [category, setCategory] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
-  const { H, positions } = useMemo(() => {
-    const midLat = markers.reduce((a, s) => a + s.lat, 0) / markers.length;
+  const { H, positions, districtPaths, riverPaths } = useMemo(() => {
+    // The frame fits the real district shapes plus every marker (OD spots
+    // sit honestly outside their district's boundary).
+    const present = new Set(markers.map((m) => m.district));
+    const shapes = geo.districts.filter((d) => present.has(d.name));
+    const boundaryPts = shapes.flatMap((d) => d.rings.flat());
+    const all = [
+      ...markers.map((m) => [m.lat, m.lng] as [number, number]),
+      ...boundaryPts,
+    ];
+
+    const midLat = all.reduce((a, p) => a + p[0], 0) / all.length;
     const kx = Math.cos((midLat * Math.PI) / 180);
-    const xs = markers.map((s) => s.lng * kx);
-    const ys = markers.map((s) => s.lat);
+    const xs = all.map((p) => p[1] * kx);
+    const ys = all.map((p) => p[0]);
     const minX = Math.min(...xs);
     const maxX = Math.max(...xs);
     const minY = Math.min(...ys);
@@ -43,20 +60,37 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
     const dy = Math.max(maxY - minY, 0.05);
     // Height follows the real bbox shape, clamped to stay screen-friendly.
     const height = Math.min(Math.max((dy / dx) * W, 420), 980);
-    const pad = 40;
+    const pad = 34;
     const scale = Math.min((W - pad * 2) / dx, (height - pad * 2) / dy);
     const ox = (W - dx * scale) / 2;
     const oy = (height - dy * scale) / 2;
+    const proj = ([lat, lng]: [number, number]) => ({
+      x: ox + (lng * kx - minX) * scale,
+      y: oy + (maxY - lat) * scale,
+    });
+
+    const toPath = (pts: [number, number][], close: boolean) =>
+      pts
+        .map((p, i) => {
+          const { x, y } = proj(p);
+          return `${i === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+        })
+        .join(" ") + (close ? " Z" : "");
+
+    const dPaths = shapes.map((d) => ({
+      name: d.name,
+      d: d.rings.map((r) => toPath(r, true)).join(" "),
+    }));
+    const rPaths = geo.rivers.flatMap((r) =>
+      r.segments.map((seg, i) => ({ key: `${r.name}-${i}`, d: toPath(seg, false) }))
+    );
 
     // Spiral fan-out: dense clusters (the SoU complex packs ~15 spots into
     // a square kilometre) bloom into readable rings instead of one smudge.
     const placed: { x: number; y: number }[] = [];
     const pts = new Map<string, { x: number; y: number }>();
     for (const s of markers) {
-      const base = {
-        x: ox + (s.lng * kx - minX) * scale,
-        y: oy + (maxY - s.lat) * scale,
-      };
+      const base = proj([s.lat, s.lng]);
       let p = base;
       for (let t = 0; t < 24; t++) {
         const clash = placed.some((q) => Math.hypot(q.x - p.x, q.y - p.y) < 13);
@@ -68,7 +102,7 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
       placed.push(p);
       pts.set(s.id, p);
     }
-    return { H: height, positions: pts };
+    return { H: height, positions: pts, districtPaths: dPaths, riverPaths: rPaths };
   }, [markers]);
 
   const shown = category ? markers.filter((m) => m.category === category) : markers;
@@ -115,6 +149,31 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
               <line key={`h${i}`} x1={0} y1={(H / 10) * (i + 1)} x2={W} y2={(H / 10) * (i + 1)} />
             ))}
           </g>
+
+          {/* real district land, from OpenStreetMap */}
+          {districtPaths.map((d) => (
+            <path
+              key={d.name}
+              d={d.d}
+              fill={d.name === "dang" ? "rgba(52,211,153,0.055)" : "rgba(56,189,248,0.05)"}
+              stroke={d.name === "dang" ? "rgba(52,211,153,0.35)" : "rgba(56,189,248,0.33)"}
+              strokeWidth="1.4"
+              strokeLinejoin="round"
+            />
+          ))}
+
+          {/* rivers */}
+          {riverPaths.map((r) => (
+            <path
+              key={r.key}
+              d={r.d}
+              fill="none"
+              stroke="rgba(96,165,250,0.4)"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          ))}
           <g transform={`translate(${W - 30}, 34)`} className="select-none">
             <text textAnchor="middle" fontSize="12" fontWeight="700" fill="rgba(214,211,209,0.45)">
               N
@@ -125,8 +184,8 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
 
         {markers.map((s) => {
           const { x, y } = positions.get(s.id)!;
-          const left = (x / W) * 100;
-          const top = (y / H) * 100;
+          const left = +((x / W) * 100).toFixed(4);
+          const top = +((y / H) * 100).toFixed(4);
           const active = !category || s.category === category;
           const isHover = hovered === s.id;
           const flip = top < 12;
@@ -187,7 +246,16 @@ export function SpotsMap({ markers, categories }: SpotsMapProps) {
           </span>
         </div>
         <p className="text-[11px] text-stone-600">
-          Schematic positions · hover a dot, click through to the record
+          Hover a dot, click through · boundaries & rivers ©{" "}
+          <a
+            href="https://www.openstreetmap.org/copyright"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-stone-700 underline-offset-2 hover:text-stone-400"
+          >
+            OpenStreetMap
+          </a>{" "}
+          contributors
         </p>
       </div>
     </div>

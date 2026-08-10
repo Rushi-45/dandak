@@ -187,8 +187,8 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
         {/* stop nodes as HTML so they stay crisp, hoverable and linkable */}
         {stops.map((s) => {
           const { x, y } = at(s);
-          const left = (x / W) * 100;
-          const top = (y / H) * 100;
+          const left = +((x / W) * 100).toFixed(4);
+          const top = +((y / H) * 100).toFixed(4);
           const color = DAY_TEXT[(s.day - 1) % DAY_TEXT.length];
           const isHover = hovered === `${s.day}-${s.order}`;
           const flip = top < 28; // tooltip below the node near the top edge, so it never clips
