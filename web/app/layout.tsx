@@ -49,6 +49,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <Link href="/map" className="transition-colors hover:text-emerald-300">
                   Map
                 </Link>
+                <Link href="/plan" className="transition-colors hover:text-emerald-300">
+                  Plan
+                </Link>
                 <Link href="/events" className="transition-colors hover:text-emerald-300">
                   Events
                 </Link>

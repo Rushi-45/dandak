@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { StopCard } from "@/components/stop-card";
 import { TracingBeam } from "@/components/tracing-beam";
 import { TripMap, type TripMapStop } from "@/components/trip-map";
-import { categoryLabel, formatMonths } from "@/lib/format";
+import { formatMonths } from "@/lib/format";
 import { getItineraries, getItinerary, getSpotById, getSpotImagePath } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
 
@@ -117,50 +117,19 @@ export default async function ItineraryPage({ params }: { params: Params }) {
                 {stops.map((stop, idx) => {
                   const spot = getSpotById(stop.spot_id);
                   if (!spot) return null;
-                  const img = getSpotImagePath(spot.id);
-                  const meta = categoryMeta(spot.category);
-                  const hours = Math.round((stop.duration_min / 60) * 10) / 10;
                   return (
                     <FadeIn key={`${stop.day}-${stop.order}`} delay={idx * 0.05}>
-                      <Link
-                        href={`/spots/${spot.district}/${spot.slug}`}
-                        className="group flex gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400/30 hover:bg-white/[0.05]"
-                      >
-                        {img ? (
-                          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl">
-                            <Image
-                              src={img}
-                              alt=""
-                              fill
-                              sizes="80px"
-                              className="object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                          </div>
-                        ) : (
-                          <div className={`flex h-20 w-20 shrink-0 items-center justify-center rounded-xl text-3xl ring-1 ${meta.chip}`}>
-                            <span aria-hidden>{meta.emoji}</span>
-                          </div>
-                        )}
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center gap-2 text-[11px]">
-                            <span className="font-bold text-emerald-300">#{stop.order}</span>
-                            <span className={`rounded-full px-2 py-0.5 font-medium ring-1 ${meta.chip}`}>
-                              {meta.emoji} {categoryLabel(spot.category)}
-                            </span>
-                            <span className="text-stone-500">
-                              ~{hours >= 1 ? `${hours} hr` : `${stop.duration_min} min`}
-                            </span>
-                          </div>
-                          <h3 className="mt-1.5 font-serif text-lg font-black leading-snug text-stone-100 group-hover:text-emerald-200">
-                            {spot.name.en}
-                          </h3>
-                          {stop.note && (
-                            <p className="mt-1 text-xs leading-relaxed text-stone-400">
-                              → {stop.note}
-                            </p>
-                          )}
-                        </div>
-                      </Link>
+                      <StopCard
+                        stop={{
+                          order: stop.order,
+                          name: spot.name.en,
+                          category: spot.category,
+                          durationMin: stop.duration_min,
+                          href: `/spots/${spot.district}/${spot.slug}`,
+                          image: getSpotImagePath(spot.id),
+                          note: stop.note,
+                        }}
+                      />
                     </FadeIn>
                   );
                 })}

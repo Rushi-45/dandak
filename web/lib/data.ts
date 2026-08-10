@@ -1,5 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
+import {
+  buildPlannerIndex,
+  type RawSpotForPlanner,
+  type RawStayForPlanner,
+} from "./planner-index";
+import type { PlannerData } from "./planner";
 
 // The dataset lives at the repo root; the app reads it at build time.
 const DATA_DIR = path.resolve(process.cwd(), "..", "data");
@@ -193,6 +199,7 @@ function readDir<T>(dir: string): T[] {
 }
 
 let spotsCache: Spot[] | null = null;
+let plannerCache: PlannerData | null = null;
 
 export function getAllSpots(): Spot[] {
   if (!spotsCache) {
@@ -303,6 +310,29 @@ export function getSpotGallery(spot: Spot): GalleryItem[] {
 export function getFoodImagePath(foodId: string): string | null {
   const p = path.join(process.cwd(), "public", "images", "food", `${foodId}.jpg`);
   return fs.existsSync(p) ? `/images/food/${foodId}.jpg` : null;
+}
+
+/**
+ * The planner's payload: every spot, hub and stay, slimmed to what the algorithm
+ * actually reads. `summary` and `description` are omitted deliberately — they are
+ * most of the weight of the /spots payload and the planner never renders them.
+ *
+ * The mapping itself lives in ./planner-index (no node:fs), so the browser, the
+ * server and `node --test` all share one implementation.
+ */
+export function getPlannerIndex(): PlannerData {
+  if (!plannerCache) {
+    const registry = readJson<{ hubs: Record<string, Record<string, [number, number]>> }>(
+      path.join(process.cwd(), "..", "scripts", "registry.json")
+    );
+    plannerCache = buildPlannerIndex(
+      getAllSpots() as unknown as RawSpotForPlanner[],
+      readDir<RawStayForPlanner>("stays"),
+      registry,
+      (id) => getSpotImagePath(id) !== null
+    );
+  }
+  return plannerCache;
 }
 
 /** Slim a full Spot down to the card contract (adds the local image path). */

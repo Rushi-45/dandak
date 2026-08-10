@@ -248,6 +248,15 @@ body {
   font-weight: 800;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
+/* Trip start/finish: an emoji, not a numbered stop. Dashed ring so it reads as
+   a boundary of the route rather than a place we are recommending. */
+.dk-stop-endpoint {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-style: dashed;
+  background: rgba(8, 12, 11, 0.96);
+}
 .dk-pin {
   display: flex;
   align-items: center;

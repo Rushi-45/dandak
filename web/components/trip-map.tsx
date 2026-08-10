@@ -6,8 +6,9 @@ import { addBaseLayers, keepMapSized } from "@/components/map-base";
 
 export interface TripMapStop {
   id: string;
-  district: string;
-  slug: string;
+  /** absent for trip endpoints — a hub town has no record page to open */
+  district?: string;
+  slug?: string;
   name: string;
   lat: number;
   lng: number;
@@ -15,6 +16,10 @@ export interface TripMapStop {
   order: number;
   emoji: string;
   approx: boolean;
+  /** endpoints draw their emoji instead of a stop number and never link */
+  kind?: "stop" | "endpoint";
+  /** overrides the "Day N · stop N" popup subtitle */
+  note?: string;
 }
 
 interface TripMapProps {
@@ -39,6 +44,14 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
   const days = Array.from({ length: durationDays }, (_, i) => i + 1);
   const byDay = days.map((d) =>
     stops.filter((s) => s.day === d).sort((a, b) => a.order - b.order)
+  );
+
+  // The Leaflet effect below cannot depend on `stops` (a new array identity every
+  // render would tear the map down constantly) nor run once (the planner changes
+  // its route in place). This key changes exactly when the drawn route changes.
+  const routeKey = useMemo(
+    () => stops.map((s) => `${s.day}:${s.order}:${s.id}:${s.lat},${s.lng}`).join("|"),
+    [stops]
   );
 
   // Stops that sit within ~400 m of one another (U-Turn Point and the Mahal
@@ -102,14 +115,21 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
 
         for (const s of stops) {
           const color = DAY_STROKE[(s.day - 1) % DAY_STROKE.length];
+          const isEndpoint = s.kind === "endpoint";
+          const link =
+            s.district && s.slug
+              ? `<a href="/spots/${s.district}/${s.slug}">Open the record →</a>`
+              : "";
           L.marker(posOf(s), {
             icon: L.divIcon({
               className: "dk-stop-wrap",
-              html: `<span class="dk-stop" style="border-color:${color};color:${color}">${s.order}</span>`,
+              html: `<span class="dk-stop${isEndpoint ? " dk-stop-endpoint" : ""}" style="border-color:${color};color:${color}">${
+                isEndpoint ? s.emoji : s.order
+              }</span>`,
               iconSize: [36, 36],
               iconAnchor: [18, 18],
             }),
-            zIndexOffset: 500,
+            zIndexOffset: isEndpoint ? 400 : 500,
             riseOnHover: true,
             title: s.name,
           })
@@ -117,8 +137,8 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
             .bindPopup(
               `<div class="dk-pop">` +
                 `<p class="dk-pop-title">${s.emoji} ${s.name}</p>` +
-                `<p class="dk-pop-sub">Day ${s.day} · stop ${s.order}</p>` +
-                `<a href="/spots/${s.district}/${s.slug}">Open the record →</a>` +
+                `<p class="dk-pop-sub">${s.note ?? `Day ${s.day} · stop ${s.order}`}</p>` +
+                link +
                 `</div>`,
               { closeButton: false }
             )
@@ -139,7 +159,7 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
       mapRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [routeKey]);
 
   if (stops.length < 2 || failed) return null;
 
