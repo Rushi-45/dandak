@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SpotsMap, type SpotMarker } from "@/components/spots-map";
+import { RealMap, type SpotMarker } from "@/components/leaflet-map";
 import { categoryLabel } from "@/lib/format";
 import { getAllSpots } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
@@ -52,13 +52,14 @@ export default function MapPage() {
       </p>
 
       <div className="mt-8">
-        <SpotsMap markers={markers} categories={categories} />
+        <RealMap markers={markers} categories={categories} />
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-stone-600">
-        Positions are schematic — most interior records carry approximate or area-level
-        coordinates (it's the standing item on the verification ledger). For turn-by-turn
-        navigation, open any spot's record or use the Google Maps buttons on trip pages.
+        Switch layers (top right) between satellite, terrain and dark. Interior positions can be
+        approximate or area-level — it's the standing item on the verification ledger, and each
+        record's provenance tells you how exact its pin is. For turn-by-turn navigation, use the
+        Google Maps buttons on trip pages.
       </p>
     </div>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { SpotCard } from "@/components/spot-card";
-import { SpotsMap, type SpotMarker } from "@/components/spots-map";
+import { RealMap, type SpotMarker } from "@/components/leaflet-map";
 import { MONTHS, categoryLabel } from "@/lib/format";
 import { getAllSpots, getDistrict, getEvents, getFoods, getSpotById, toCardData } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
@@ -107,7 +107,7 @@ export default async function DistrictPage({ params }: { params: Params }) {
           {d.name.en} on the map
         </h2>
         <div className="mt-5">
-          <SpotsMap markers={markers} categories={categories} />
+          <RealMap markers={markers} categories={categories} />
         </div>
       </section>
 
