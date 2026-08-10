@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { TracingBeam } from "@/components/tracing-beam";
+import { TripMap, type TripMapStop } from "@/components/trip-map";
 import { categoryLabel, formatMonths } from "@/lib/format";
 import { getItineraries, getItinerary, getSpotById, getSpotImagePath } from "@/lib/data";
 import { categoryMeta } from "@/lib/ui";
@@ -35,6 +36,26 @@ export default async function ItineraryPage({ params }: { params: Params }) {
   if (!it) notFound();
 
   const days = Array.from({ length: it.duration_days }, (_, i) => i + 1);
+
+  const mapStops: TripMapStop[] = it.stops
+    .map((stop) => {
+      const spot = getSpotById(stop.spot_id);
+      if (!spot) return null;
+      const c = spot.location.coordinates;
+      return {
+        id: spot.id,
+        district: spot.district,
+        slug: spot.slug,
+        name: spot.name.en,
+        lat: c.lat,
+        lng: c.lng,
+        day: stop.day,
+        order: stop.order,
+        emoji: categoryMeta(spot.category).emoji,
+        approx: c.precision !== "exact",
+      };
+    })
+    .filter((s): s is TripMapStop => s !== null);
 
   return (
     <article className="relative mx-auto max-w-3xl px-4 py-12">
@@ -68,6 +89,10 @@ export default async function ItineraryPage({ params }: { params: Params }) {
         {it.title}
       </h1>
       {it.notes && <p className="mt-4 text-lg leading-relaxed text-stone-400">{it.notes}</p>}
+
+      <div className="mt-8">
+        <TripMap stops={mapStops} durationDays={it.duration_days} />
+      </div>
 
       <TracingBeam className="mt-12">
         {days.map((day) => {
