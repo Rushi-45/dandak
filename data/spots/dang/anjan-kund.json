@@ -127,7 +127,9 @@
       }
     ],
     "videos": [
-      { "url": "/videos/dang-anjan-kund-1.mp4", "title": "The fall off the Anjani scarp in monsoon", "source": "Rushi Chudasama (own footage)" }
+      { "url": "/videos/dang-anjan-kund-1.mp4", "title": "The fall off the Anjani scarp in monsoon", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-anjan-kund-2.mp4", "title": "The full drop seen from the boulders below", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-anjan-kund-3.mp4", "title": "Meadow and hill country on the road in", "source": "Rushi Chudasama (own footage)" }
     ]
   },
   "seo": {

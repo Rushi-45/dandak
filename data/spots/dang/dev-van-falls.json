@@ -93,7 +93,13 @@
     { "id": "dang-girmal-falls", "distance_km": 20 }
   ],
   "itineraries": ["subir-falls-circuit"],
-  "media": { "images": [], "videos": [] },
+  "media": {
+    "images": [],
+    "videos": [
+      { "url": "/videos/dang-dev-van-falls-1.mp4", "title": "The fall dropping into its rock pool", "source": "Rushi Chudasama (own footage)" },
+      { "url": "/videos/dang-dev-van-falls-2.mp4", "title": "The shallow pool below the drop", "source": "Rushi Chudasama (own footage)" }
+    ]
+  },
   "seo": {
     "meta_title": "Dev Van (Wonder) Waterfall, Dang — Monsoon Guide",
     "meta_description": "Dev Van waterfall — the reels' 'Wonder Waterfall' — in Dang's Subir belt: the short walk-in, monsoon window, and pairing with Bhalkhet."
