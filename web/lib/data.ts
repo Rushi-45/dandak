@@ -241,6 +241,64 @@ export function getSpotImagePath(spotId: string): string | null {
   return fs.existsSync(p) ? `/images/spots/${spotId}.jpg` : null;
 }
 
+export interface GalleryItem {
+  type: "image" | "video";
+  src: string;
+  poster?: string;
+  caption?: string | null;
+  credit?: string | null;
+  license?: string | null;
+  sourceUrl?: string | null;
+}
+
+/**
+ * Everything visual we hold for a spot, in display order: the staged hero,
+ * then any numbered extras that exist on disk (id-2.jpg, id-3.jpg …), then the
+ * clips. Captions and credits come from the record's media.images by index —
+ * the staging convention keeps the two aligned.
+ */
+export function getSpotGallery(spot: Spot): GalleryItem[] {
+  const items: GalleryItem[] = [];
+  const dir = path.join(process.cwd(), "public", "images", "spots");
+  const meta = (i: number) => spot.media.images[i];
+
+  if (fs.existsSync(path.join(dir, `${spot.id}.jpg`))) {
+    const m = meta(0);
+    items.push({
+      type: "image",
+      src: `/images/spots/${spot.id}.jpg`,
+      caption: m?.caption,
+      credit: m?.credit,
+      license: m?.license,
+      sourceUrl: m?.source_url,
+    });
+  }
+  for (let i = 2; i <= 8; i++) {
+    const file = `${spot.id}-${i}.jpg`;
+    if (!fs.existsSync(path.join(dir, file))) continue;
+    const m = meta(i - 1);
+    items.push({
+      type: "image",
+      src: `/images/spots/${file}`,
+      caption: m?.caption,
+      credit: m?.credit,
+      license: m?.license,
+      sourceUrl: m?.source_url,
+    });
+  }
+  for (const v of spot.media.videos ?? []) {
+    items.push({
+      type: "video",
+      src: v.url,
+      poster: v.url.replace(/\.mp4$/, ".jpg"),
+      caption: v.title,
+      credit: v.source,
+      license: "own",
+    });
+  }
+  return items;
+}
+
 /** Local image for a food record, if one has been staged under public/images/food. */
 export function getFoodImagePath(foodId: string): string | null {
   const p = path.join(process.cwd(), "public", "images", "food", `${foodId}.jpg`);

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { MediaGallery } from "@/components/media-gallery";
 import { SpotMap } from "@/components/spot-map";
 import { Spotlight } from "@/components/spotlight";
-import { VideoStrip } from "@/components/video-strip";
 import { TextGenerate } from "@/components/text-generate";
 import { TracingBeam } from "@/components/tracing-beam";
 import {
@@ -14,7 +13,7 @@ import {
   getAllSpots,
   getSpot,
   getSpotById,
-  getSpotImagePath,
+  getSpotGallery,
   type Spot,
 } from "@/lib/data";
 import { categoryMeta, CONFIDENCE_META } from "@/lib/ui";
@@ -106,8 +105,7 @@ export default async function SpotPage({ params }: { params: Params }) {
   const conf = CONFIDENCE_META[spot.provenance.confidence];
   const paragraphs = spot.description?.split("\n\n") ?? [];
   const verified = spot.provenance.last_verified;
-  const heroImg = getSpotImagePath(spot.id);
-  const heroMedia = spot.media.images[0];
+  const gallery = getSpotGallery(spot);
 
   return (
     <article className="relative mx-auto max-w-3xl px-4 py-12">
@@ -150,35 +148,8 @@ export default async function SpotPage({ params }: { params: Params }) {
         <TextGenerate text={spot.summary} />
       </p>
 
-      {/* Hero photo */}
-      {heroImg && (
-        <div className="relative mt-8 h-72 overflow-hidden rounded-[2rem] ring-1 ring-white/10 sm:h-96">
-          <Image
-            src={heroImg}
-            alt={heroMedia?.caption ?? spot.name.en}
-            fill
-            priority
-            sizes="(min-width: 768px) 736px, 100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080c0b]/75 via-transparent to-transparent" />
-          {heroMedia?.caption && (
-            <p className="absolute bottom-3 left-4 max-w-[70%] text-xs text-stone-300">
-              {heroMedia.caption}
-            </p>
-          )}
-          {heroMedia?.credit && (
-            <a
-              href={heroMedia.source_url ?? "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-3 right-3 rounded-md bg-black/40 px-2 py-1 text-[10px] text-stone-400 backdrop-blur-md transition-colors hover:text-emerald-300"
-            >
-              📷 {heroMedia.credit} · {heroMedia.license === "cc-by" ? "CC BY" : "CC BY-SA"}
-            </a>
-          )}
-        </div>
-      )}
+      {/* Photographs and clips */}
+      <MediaGallery items={gallery} title={spot.name.en} />
 
       {/* Quick facts */}
       <Spotlight>
@@ -277,9 +248,6 @@ export default async function SpotPage({ params }: { params: Params }) {
           )}
         </section>
       </FadeIn>
-
-      {/* Short clips */}
-      <VideoStrip videos={spot.media.videos ?? []} />
 
       {/* Where it is */}
       <section className="mt-12">
