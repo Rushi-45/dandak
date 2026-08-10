@@ -121,15 +121,19 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
     for (const s of markers) {
       if (category && s.category !== category) continue;
       const color = DISTRICT_COLOR[s.district] ?? "#34d399";
-      L.circleMarker([s.lat, s.lng], {
-        radius: 7,
-        color,
-        weight: 2,
-        opacity: 0.95,
-        fillColor: color,
-        fillOpacity: 0.45,
+      // A divIcon rather than a circleMarker: the 32 px wrapper is an easy
+      // click/tap target while the visible dot stays small.
+      L.marker([s.lat, s.lng], {
+        icon: L.divIcon({
+          className: "dk-dot-wrap",
+          html: `<span class="dk-dot" style="border-color:${color};background:${color}59"></span>`,
+          iconSize: [32, 32],
+          iconAnchor: [16, 16],
+        }),
+        riseOnHover: true,
+        title: s.name,
       })
-        .bindTooltip(`${s.emoji} ${s.name}`, { direction: "top", offset: [0, -6] })
+        .bindTooltip(`${s.emoji} ${s.name}`, { direction: "top", offset: [0, -12] })
         .bindPopup(
           `<div class="dk-pop">` +
             `<p class="dk-pop-title">${s.emoji} ${s.name}</p>` +

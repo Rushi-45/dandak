@@ -105,12 +105,14 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
             icon: L.divIcon({
               className: "dk-stop-wrap",
               html: `<span class="dk-stop" style="border-color:${color};color:${color}">${s.order}</span>`,
-              iconSize: [26, 26],
-              iconAnchor: [13, 13],
+              iconSize: [36, 36],
+              iconAnchor: [18, 18],
             }),
             zIndexOffset: 500,
+            riseOnHover: true,
+            title: s.name,
           })
-            .bindTooltip(`${s.emoji} ${s.name}`, { direction: "top", offset: [0, -12] })
+            .bindTooltip(`${s.emoji} ${s.name}`, { direction: "top", offset: [0, -16] })
             .bindPopup(
               `<div class="dk-pop">` +
                 `<p class="dk-pop-title">${s.emoji} ${s.name}</p>` +

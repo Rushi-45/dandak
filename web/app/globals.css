@@ -260,3 +260,35 @@ body {
   font-size: 14px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
+
+/* map dots: small visible dot, generous invisible hit area */
+.dk-dot-wrap {
+  background: none !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dk-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.dk-dot-wrap:hover .dk-dot,
+.dk-dot-wrap:focus-visible .dk-dot {
+  transform: scale(1.5);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.55), 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+.dk-stop-wrap { cursor: pointer; }
+.dk-stop { transition: transform 0.15s ease; }
+.dk-stop-wrap:hover .dk-stop { transform: scale(1.25); }
+.dk-stop-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
