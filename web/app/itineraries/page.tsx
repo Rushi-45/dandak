@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
+import { RouteThumb, type RouteThumbStop } from "@/components/route-thumb";
 import { formatMonths } from "@/lib/format";
-import { getItineraries } from "@/lib/data";
+import { getItineraries, getSpotById } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Trips & Itineraries",
@@ -20,6 +21,16 @@ const PARTY_LABEL: Record<string, string> = {
 
 export default function ItinerariesPage() {
   const itineraries = getItineraries();
+
+  const thumbStops = (slug: string): RouteThumbStop[] =>
+    (itineraries.find((i) => i.slug === slug)?.stops ?? [])
+      .map((stop) => {
+        const spot = getSpotById(stop.spot_id);
+        if (!spot) return null;
+        const c = spot.location.coordinates;
+        return { lat: c.lat, lng: c.lng, day: stop.day, order: stop.order };
+      })
+      .filter((s): s is RouteThumbStop => s !== null);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14">
@@ -54,6 +65,9 @@ export default function ItinerariesPage() {
                   {it.stops.length} stops
                 </span>
                 <span className="ml-auto text-stone-500">{PARTY_LABEL[it.party] ?? it.party}</span>
+              </div>
+              <div className="mt-4 h-20 overflow-hidden rounded-xl border border-white/[0.05] bg-black/25 transition-colors duration-300 group-hover:border-emerald-400/20">
+                <RouteThumb stops={thumbStops(it.slug)} />
               </div>
               <h2 className="mt-4 font-serif text-2xl font-black leading-snug text-stone-100 transition-colors group-hover:text-emerald-200">
                 {it.title}

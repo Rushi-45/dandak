@@ -191,6 +191,7 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
           const top = (y / H) * 100;
           const color = DAY_TEXT[(s.day - 1) % DAY_TEXT.length];
           const isHover = hovered === `${s.day}-${s.order}`;
+          const flip = top < 28; // tooltip below the node near the top edge, so it never clips
           return (
             <div
               key={`${s.day}-${s.order}`}
@@ -210,7 +211,11 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
                 {s.order}
               </Link>
               {isHover && (
-                <div className="pointer-events-none absolute left-1/2 top-0 z-20 w-max max-w-[200px] -translate-x-1/2 -translate-y-[calc(100%+10px)] rounded-xl border border-white/10 bg-[#0b1210]/95 px-3 py-2 text-center shadow-xl backdrop-blur">
+                <div
+                  className={`pointer-events-none absolute left-1/2 z-20 w-max max-w-[200px] -translate-x-1/2 rounded-xl border border-white/10 bg-[#0b1210]/95 px-3 py-2 text-center shadow-xl backdrop-blur ${
+                    flip ? "top-full translate-y-[10px]" : "top-0 -translate-y-[calc(100%+10px)]"
+                  }`}
+                >
                   <p className="text-xs font-bold leading-snug text-stone-100">
                     {s.emoji} {s.name}
                   </p>
