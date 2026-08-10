@@ -91,7 +91,7 @@
     { "id": "dang-girmal-falls", "distance_km": 15 },
     { "id": "dang-mahal-eco-campsite", "distance_km": 15, "note": "The stay that gave the falls its nickname" }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Karanjwa (Mahal) Waterfall, Dang — Subir Belt Falls",

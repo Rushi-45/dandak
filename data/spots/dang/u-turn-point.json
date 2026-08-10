@@ -86,7 +86,7 @@
     { "id": "dang-mahal-eco-campsite", "distance_km": 10 },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 12 }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "U Turn Point, Dang — The Gira Hairpin Viewpoint",

@@ -87,7 +87,7 @@
     { "id": "dang-shivghat", "distance_km": 12 },
     { "id": "dang-don-hill", "distance_km": 15, "note": "The plateau — continue south-east" }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Temburgartha Dam, Dang — Ahwa's Sunset Water",

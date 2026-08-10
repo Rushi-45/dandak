@@ -23,7 +23,7 @@ export async function GET(
     return NextResponse.json({ error: "not_found" }, { status: 404, headers: CORS });
   }
   return NextResponse.json(
-    { meta: { dataset: "dandak", version: "1.0.0" }, data: spot },
+    { meta: { dataset: "dandak", version: "1.1.0" }, data: spot },
     { headers: CORS }
   );
 }

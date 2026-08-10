@@ -6,8 +6,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          73.72,
-          20.8
+          73.4507,
+          20.6834
+        ]
+      },
+      "properties": {
+        "id": "dang-advait-falls",
+        "name": "Advait Waterfall",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Vangan's neighbour fall on the Dang–Navsari line — Advait drops a kilometre from the Ankada Dhodh, doubling the Vansda-side outing.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8164,
+          20.7118
         ]
       },
       "properties": {
@@ -24,10 +53,10 @@
           "offbeat",
           "nature"
         ],
-        "precision": "area",
+        "precision": "exact",
         "summary": "A forest kund and cave on Anjani hill held locally as Hanuman's birthplace — a short trek into Dang's Ramayana geography.",
         "monsoon_dependent": false,
-        "confidence": "low"
+        "confidence": "medium"
       }
     },
     {
@@ -64,6 +93,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.5459,
+          20.7053
+        ]
+      },
+      "properties": {
+        "id": "dang-baaj-falls",
+        "name": "Baaj Waterfall",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography",
+          "sunset"
+        ],
+        "precision": "approximate",
+        "summary": "Baaj village's falls and ridge-top view point on the Waghai side — a fall, a vista and, close by, the Koshmal forest country in one stop.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.68,
           20.92
         ]
@@ -91,8 +150,267 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          73.8,
-          20.87
+          73.5913,
+          20.9103
+        ]
+      },
+      "properties": {
+        "id": "dang-bhalkhet-falls",
+        "name": "Bhalkhet Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A monsoon waterfall in the Godadiya village country of Subir taluka — a local-crowd trekking spot west of the Girmal belt.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9314,
+          20.7859
+        ]
+      },
+      "properties": {
+        "id": "dang-bhambhi-falls",
+        "name": "Bhambhi Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A forest waterfall in Dang's far east by the Maharashtra border — a trekkers' find beyond Ahwa that the vlogs rate among the district's prettiest.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.75,
+          20.82
+        ]
+      },
+      "properties": {
+        "id": "dang-birsa-falls",
+        "name": "Birsa Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "A reels-famous forest cascade between Ahwa and Don — a waterfall that exists mostly as a map pin, monsoon videos and word of mouth.",
+        "monsoon_dependent": true,
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5965,
+          20.6928
+        ]
+      },
+      "properties": {
+        "id": "dang-chikhalda-falls",
+        "name": "Chikhalda Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The anchor fall of Dang's south-western pocket — Chikhalda drops by its village, with the Vadla ni vadi banyan grove beside the approach.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.62,
+          21.05
+        ]
+      },
+      "properties": {
+        "id": "dang-chimer-falls",
+        "name": "Chimer (Chichkund) Falls",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "photography",
+          "nature",
+          "trekking"
+        ],
+        "precision": "area",
+        "summary": "Four cascades off a ~100 m escarpment on Dang's northern rim — locally claimed as Gujarat's tallest waterfall, and almost entirely unvisited.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5279,
+          20.6518
+        ]
+      },
+      "properties": {
+        "id": "dang-chirai-falls",
+        "name": "Chirai Waterfalls",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The far corner of the Waghai-side falls country — Chirai drops in the forest toward the Vansda border, the loop's last and loneliest stop.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6167,
+          20.9169
+        ]
+      },
+      "properties": {
+        "id": "dang-dev-van-falls",
+        "name": "Dev Van Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The falls reels call 'Wonder Waterfall' — Dev Van's monsoon drop in the Subir forest belt, a short forest walk from the Godadiya country roads.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6596,
+          20.9503
+        ]
+      },
+      "properties": {
+        "id": "dang-dhulda-falls",
+        "name": "Dhulda Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A village waterfall west of the Girmal country — Dhulda rounds out the Subir belt's falls cluster on the quiet side of the forest roads.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.833,
+          20.7146
+        ]
+      },
+      "properties": {
+        "id": "dang-don-falls",
+        "name": "Don Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "trekking"
+        ],
+        "precision": "approximate",
+        "summary": "Don village's own monsoon waterfall — a 1–2 km walk to a pool-bottomed drop, with changing rooms at the base and a genuinely rough approach road.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8183,
+          20.7128
         ]
       },
       "properties": {
@@ -110,7 +428,7 @@
           "photography",
           "tribal-culture"
         ],
-        "precision": "area",
+        "precision": "exact",
         "summary": "A quiet tribal village on one of Gujarat's highest plateaus — grass meadows, ridge walks and valley views without Saputara's crowds.",
         "monsoon_dependent": false,
         "confidence": "medium"
@@ -149,8 +467,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          73.533,
-          20.751
+          73.6396,
+          21.1223
+        ]
+      },
+      "properties": {
+        "id": "dang-gaumukh-falls",
+        "name": "Gaumukh Waterfalls (Songadh)",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "pilgrimage",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A seasonal forest waterfall with a small Gaumukh temple, ~15 km from Songadh just over the Dang–Tapi line — rugged approach, monsoon-only flow.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4916,
+          20.7378
         ]
       },
       "properties": {
@@ -168,7 +516,7 @@
           "family",
           "picnic"
         ],
-        "precision": "approximate",
+        "precision": "exact",
         "summary": "Dang's most visited waterfall — a broad ~23 m (75 ft) curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
         "monsoon_dependent": true,
         "confidence": "medium"
@@ -179,8 +527,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          73.83,
-          20.95
+          73.7207,
+          20.97
         ]
       },
       "properties": {
@@ -197,7 +545,7 @@
           "nature",
           "picnic"
         ],
-        "precision": "approximate",
+        "precision": "exact",
         "summary": "Gujarat's tallest waterfall — a roughly 30 m plunge on the Gira river deep in interior Dang, thundering from July to October.",
         "monsoon_dependent": true,
         "confidence": "medium"
@@ -293,6 +641,95 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.333,
+          20.8
+        ]
+      },
+      "properties": {
+        "id": "dang-janki-van",
+        "name": "Janki Van",
+        "category": "garden",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "mythology",
+          "nature",
+          "family",
+          "kids",
+          "picnic",
+          "offbeat"
+        ],
+        "precision": "approximate",
+        "summary": "A Ramayana-themed forest garden at Bhinar near Unai — ten sacred groves, a tribal hut and tens of thousands of trees where Sita is said to have stayed.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.63,
+          20.76
+        ]
+      },
+      "properties": {
+        "id": "dang-kadam-dungar",
+        "name": "Kadam Dungar",
+        "category": "viewpoint",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "tribal-culture",
+          "pilgrimage",
+          "sunset",
+          "trekking"
+        ],
+        "precision": "area",
+        "summary": "An 800-metre hill off the Ahwa–Waghai road — one of Dang's high points, sacred to the Adivasi villages around it, with sunset views over the whole belt.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.75,
+          21.05
+        ]
+      },
+      "properties": {
+        "id": "dang-kaka-kaki-falls",
+        "name": "Kaka-Kaki Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "area",
+        "summary": "A three-step fall of 200-plus feet on the Gujarat–Maharashtra border forest near Gusrangam — among south Gujarat's tallest, and its least visited.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.512,
           20.776
         ]
@@ -313,6 +750,63 @@
         "precision": "area",
         "summary": "Forest-department campsite on the Ambika river near Waghai — riverside cottages, nature trails and an easy first taste of Dang's forests.",
         "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55,
+          20.7
+        ]
+      },
+      "properties": {
+        "id": "dang-koshmal-falls",
+        "name": "Koshmal Falls (Bhigu Dhodh)",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "trekking",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "The Waghai belt's secret — a forceful monsoon fall past Dungarda village, where a local guide is essential and the forest department posts warnings.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7176,
+          20.7446
+        ]
+      },
+      "properties": {
+        "id": "dang-kunda-falls",
+        "name": "Kunda Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Ahwa's own waterfall — Kunda drops in the forest edge barely six kilometres south of the district headquarters, the town's quick monsoon fix.",
+        "monsoon_dependent": true,
         "confidence": "medium"
       }
     },
@@ -370,6 +864,150 @@
         "precision": "area",
         "summary": "Forest-department cottages on the Purna river deep inside Purna sanctuary — the base for dawn walks, river mornings and real forest nights.",
         "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6526,
+          20.892
+        ]
+      },
+      "properties": {
+        "id": "dang-mahal-falls",
+        "name": "Karanjwa Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "picnic"
+        ],
+        "precision": "approximate",
+        "summary": "Karanjwa — the falls the Mahal-campsite crowd calls 'Mahal waterfall' — a monsoon drop in the Subir belt between the Girmal country and Bhalkhet.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6819,
+          20.6771
+        ]
+      },
+      "properties": {
+        "id": "dang-maharaychond-forest",
+        "name": "Maharaychond Forest",
+        "category": "park",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "picnic",
+          "offbeat",
+          "family",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A picnic forest in the village country south of Ahwa — shade, birdsong and spread-a-mat ground on the Wasurna side of the district.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5332,
+          20.9298
+        ]
+      },
+      "properties": {
+        "id": "dang-mayadevi-temple",
+        "name": "Mayadevi Temple",
+        "category": "temple",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "tribal-culture",
+          "offbeat",
+          "nature"
+        ],
+        "precision": "approximate",
+        "summary": "A Devi shrine in Dang's north-western forest country — quiet most of the year, a living centre of the district's adivasi devotion on its fair days.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7118,
+          21.0873
+        ]
+      },
+      "properties": {
+        "id": "dang-medha-falls",
+        "name": "Medha Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A multi-tiered cascade in the Songadh forests near Jamkhadi — a 15–20 minute jungle trek, free entry, and locals call it Gujarat's Dudhsagar.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6131,
+          20.888
+        ]
+      },
+      "properties": {
+        "id": "dang-milan-falls",
+        "name": "Milan Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The Subir belt's third falls — Milan sits between Bhalkhet and Dev Van, a monsoon drop the web never documented until its map pin surfaced.",
+        "monsoon_dependent": true,
         "confidence": "medium"
       }
     },
@@ -462,6 +1100,65 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.75,
+          20.66
+        ]
+      },
+      "properties": {
+        "id": "dang-pandav-caves",
+        "name": "Pandav Caves & Waterfall",
+        "category": "religious-site",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "mythology",
+          "offbeat",
+          "trekking",
+          "monsoon",
+          "nature"
+        ],
+        "precision": "area",
+        "summary": "A cave shrine of Pandava exile lore with a monsoon waterfall beside it — reached by a rough 1.5–3 km trek from Javatla village off the Ahwa road.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4,
+          20.7
+        ]
+      },
+      "properties": {
+        "id": "dang-pilva-dungar",
+        "name": "Pilva Dungar",
+        "category": "viewpoint",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "trekking",
+          "tribal-culture",
+          "monsoon",
+          "adventure"
+        ],
+        "precision": "area",
+        "summary": "'The last hill of Gujarat' at Chorvani near Vansda — a monsoon-green dungar with the Pindhara Dev shrine, loved by trekkers and off-roaders alike.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.7,
           20.93
         ]
@@ -512,6 +1209,65 @@
         "summary": "Saputara's cable car glides from the lake side across the valley to the Sunset Point ridge — ten scenic minutes each way.",
         "monsoon_dependent": false,
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.65,
+          21
+        ]
+      },
+      "properties": {
+        "id": "dang-raja-rani-falls",
+        "name": "Raja Rani Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography",
+          "wildlife"
+        ],
+        "precision": "area",
+        "summary": "Twin jungle falls deep in Purna sanctuary — Raja and Rani drop within sight of each other, earned by a proper monsoon forest trek.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5886,
+          20.6875
+        ]
+      },
+      "properties": {
+        "id": "dang-ritu-falls",
+        "name": "Ritu Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Chikhalda's kilometre-away sibling in the south-western pocket — a second small monsoon drop for the same village outing.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
       }
     },
     {
@@ -717,6 +1473,64 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.553,
+          21.1692
+        ]
+      },
+      "properties": {
+        "id": "dang-songadh-fort",
+        "name": "Songadh Fort",
+        "category": "fort",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "history",
+          "heritage",
+          "trekking",
+          "offbeat",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The Gaekwads' first hill stronghold above Songadh town — gate, ramparts and long Tapi-country views up a short stepped climb from the bazaar.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6931,
+          21.083
+        ]
+      },
+      "properties": {
+        "id": "dang-soul-to-prakriti-falls",
+        "name": "Soul to Prakriti Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A forest fall two kilometres from Medha's cascades on the Dang–Tapi line — the border belt's quiet extra drop, name and all.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.757,
           20.576
         ]
@@ -802,6 +1616,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.6224,
+          20.6787
+        ]
+      },
+      "properties": {
+        "id": "dang-svtis-falls",
+        "name": "Svtis Waterfall",
+        "category": "waterfall",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Svtis waterfall between the Wasurna valley and the Chikhalda pocket — a small monsoon drop that extends the south-western loop by one stop.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.766,
           20.58
         ]
@@ -831,6 +1674,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.7164,
+          20.7031
+        ]
+      },
+      "properties": {
+        "id": "dang-temburgartha-dam",
+        "name": "Temburgartha Dam",
+        "category": "dam",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "picnic",
+          "sunset",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A small dam and reservoir ten kilometres south of Ahwa — evening water views, and the ridge beside it doubles as the local sunset (and phone-signal) point.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.763,
           20.582
         ]
@@ -851,6 +1723,122 @@
         "summary": "A roadside rise overlooking Saputara's rooftops, lake and plateau bowl — the postcard-of-the-town shot in one stop.",
         "monsoon_dependent": false,
         "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71,
+          20.95
+        ]
+      },
+      "properties": {
+        "id": "dang-u-turn-point",
+        "name": "U Turn Eco Tourism Point",
+        "category": "viewpoint",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "nature",
+          "photography",
+          "offbeat",
+          "family"
+        ],
+        "precision": "area",
+        "summary": "The forest-department deck above the Gira river's full hairpin bend on the Girmal approach — the interior drive's classic tea-and-view halt.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.393,
+          20.876
+        ]
+      },
+      "properties": {
+        "id": "dang-unai-mata-temple",
+        "name": "Unai Mata Temple & Hot Springs",
+        "category": "temple",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "pilgrimage",
+          "mythology",
+          "family",
+          "popular",
+          "heritage"
+        ],
+        "precision": "area",
+        "summary": "The hot-spring temple of Ushnamba Mata at Unai — Rama's arrow raised the boiling kund in the telling, and pilgrims have bathed in it ever since.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6688,
+          20.6874
+        ]
+      },
+      "properties": {
+        "id": "dang-valley-of-wasurna",
+        "name": "Valley of Wasurna",
+        "category": "viewpoint",
+        "cluster": "dang-interior",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "nature",
+          "offbeat",
+          "photography",
+          "monsoon",
+          "picnic"
+        ],
+        "precision": "approximate",
+        "summary": "A valley vista in the village country south of Ahwa — green bowls, field terraces and forest ridges where almost nobody stops.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4372,
+          20.6839
+        ]
+      },
+      "properties": {
+        "id": "dang-vangan-falls",
+        "name": "Vangan Waterfall (Ankada Dhodh)",
+        "category": "waterfall",
+        "cluster": "waghai",
+        "district": "dang",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "The Ankada Dhodh at Vangan village near Vansda — a vlog-discovered border fall, with the Gandavle hill viewpoint above the same village.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
       }
     },
     {

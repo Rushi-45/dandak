@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { getAllSpots } from "@/lib/data";
 
 export const dynamic = "force-static";
@@ -8,7 +8,7 @@ const CORS = {
   "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
 };
 
-/** GET /api/spots — slim list of all spots. Filter client-side; full records at /api/spots/{district}/{slug}. */
+/** GET /api/spots â€” slim list of all spots. Filter client-side; full records at /api/spots/{district}/{slug}. */
 export function GET() {
   const spots = getAllSpots().map((s) => ({
     id: s.id,
@@ -32,7 +32,7 @@ export function GET() {
     {
       meta: {
         dataset: "dandak",
-        version: "1.0.0",
+        version: "1.1.0",
         count: spots.length,
         license: "Data compiled from public sources; verify volatile facts. Images CC BY / CC BY-SA via Wikimedia Commons.",
         source: "https://github.com/Rushi-45/dandak",

@@ -82,7 +82,7 @@
     { "id": "dang-chikhalda-falls", "distance_km": 5 },
     { "id": "dang-ritu-falls", "distance_km": 4 }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Svtis Waterfall, Dang — The Pocket's Unnamed Drop",

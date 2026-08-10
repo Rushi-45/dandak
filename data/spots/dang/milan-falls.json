@@ -85,7 +85,7 @@
     { "id": "dang-dev-van-falls", "distance_km": 5 },
     { "id": "dang-mahal-falls", "distance_km": 7, "note": "Karanjwa, the belt's fourth fall" }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Milan Waterfall, Dang — The Subir Belt's Hidden Third",

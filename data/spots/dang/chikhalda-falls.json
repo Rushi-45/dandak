@@ -85,7 +85,7 @@
     { "id": "dang-svtis-falls", "distance_km": 5 },
     { "id": "dang-baaj-falls", "distance_km": 8 }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Chikhalda Waterfall, Dang — The South-West Pocket",

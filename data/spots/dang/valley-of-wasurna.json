@@ -85,7 +85,7 @@
     { "id": "dang-svtis-falls", "distance_km": 7 },
     { "id": "dang-chikhalda-falls", "distance_km": 10 }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Valley of Wasurna, Dang — The South-West's Open Vista",

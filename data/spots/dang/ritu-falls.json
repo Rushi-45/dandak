@@ -83,7 +83,7 @@
     { "id": "dang-svtis-falls", "distance_km": 4 },
     { "id": "dang-baaj-falls", "distance_km": 9 }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Ritu Waterfall, Dang — Chikhalda's Sibling Fall",

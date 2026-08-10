@@ -87,7 +87,7 @@
     { "id": "dang-girmal-falls", "distance_km": 25, "note": "The interior-day pairing" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Bhalkhet Waterfall, Dang — Subir's Local Falls",

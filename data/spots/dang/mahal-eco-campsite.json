@@ -94,7 +94,7 @@
     { "id": "dang-girmal-falls", "distance_km": 8, "note": "Gujarat's tallest falls are just across the forest" },
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": {
     "images": [
       {

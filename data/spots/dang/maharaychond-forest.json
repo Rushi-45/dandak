@@ -85,7 +85,7 @@
     { "id": "dang-temburgartha-dam", "distance_km": 6 },
     { "id": "dang-kunda-falls", "distance_km": 10 }
   ],
-  "itineraries": [],
+  "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Maharaychond Forest, Dang — The Picnic Woods",

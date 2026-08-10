@@ -98,7 +98,7 @@
     { "id": "dang-don-hill", "distance_km": 60, "note": "Pairs for a full day via the interior roads" },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 10 }
   ],
-  "itineraries": ["monsoon-waterfall-circuit"],
+  "itineraries": ["monsoon-waterfall-circuit", "subir-falls-circuit"],
   "media": {
     "images": [
       {

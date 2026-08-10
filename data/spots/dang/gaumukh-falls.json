@@ -86,7 +86,7 @@
     { "id": "dang-songadh-fort", "distance_km": 17, "note": "The Gaekwad fort — the day's heritage anchor" },
     { "id": "dang-chimer-falls", "distance_km": 15, "note": "Across the district line in Dang" }
   ],
-  "itineraries": [],
+  "itineraries": ["songadh-forest-day"],
   "media": {
     "images": [
       {

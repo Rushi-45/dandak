@@ -87,7 +87,7 @@
     { "id": "dang-gaumukh-falls", "distance_km": 15, "note": "Same forest belt" },
     { "id": "dang-chimer-falls", "distance_km": 18 }
   ],
-  "itineraries": [],
+  "itineraries": ["songadh-forest-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Medha Waterfall, Songadh — Gujarat's Dudhsagar",

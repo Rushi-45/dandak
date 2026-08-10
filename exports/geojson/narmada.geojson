@@ -33,6 +33,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.6289,
+          21.8161
+        ]
+      },
+      "properties": {
+        "id": "narmada-barkhadi-falls",
+        "name": "Barkhadi Falls",
+        "category": "waterfall",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "trekking",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A village-trail monsoon waterfall south-east of Rajpipla — an easy 2 km walk from Barkhadi's school through fields and stream crossings.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.705,
           21.835
         ]
@@ -89,6 +119,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.4279,
+          21.7677
+        ]
+      },
+      "properties": {
+        "id": "narmada-chhatwada-falls",
+        "name": "Chhatwada Waterfall",
+        "category": "waterfall",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "A broad low cascade in monsoon spate by Chhatwada village — quiet company for Kesharva falls in the belt west of Rajpipla.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.708,
           21.847
         ]
@@ -136,6 +195,36 @@
         ],
         "precision": "approximate",
         "summary": "Principal shrine of Yaha Mogi, the great mother goddess of the region's tribal communities — its annual fair draws lakhs to Sagbara.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64,
+          21.8
+        ]
+      },
+      "properties": {
+        "id": "narmada-devsatra-hills",
+        "name": "Devsatra Hills",
+        "category": "viewpoint",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "offbeat",
+          "trekking",
+          "nature",
+          "monsoon",
+          "photography",
+          "weekend-getaway"
+        ],
+        "precision": "area",
+        "summary": "The green hill country above Barkhadi village — a trek to ridgetop views, a small Shiv shrine and a monsoon waterfall, vlogged as Rajpipla's hill station.",
         "monsoon_dependent": false,
         "confidence": "medium"
       }
@@ -284,6 +373,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.4747,
+          21.6114
+        ]
+      },
+      "properties": {
+        "id": "narmada-ghanikhut-falls",
+        "name": "Ghanikhut Waterfall",
+        "category": "waterfall",
+        "cluster": "dediapada-belt",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "family",
+          "picnic",
+          "photography"
+        ],
+        "precision": "approximate",
+        "summary": "Broad cascades at Ghanikhut village near Netrang — drive almost to the water, which makes it the belt's easiest family waterfall.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.505,
           21.867
         ]
@@ -304,6 +423,34 @@
         "summary": "Rajpipla's town goddess — the royal family's Harsiddhi Mata shrine, busiest and brightest through Navratri.",
         "monsoon_dependent": false,
         "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6,
+          21.8
+        ]
+      },
+      "properties": {
+        "id": "narmada-juna-ghanta-falls",
+        "name": "Juna Ghanta Waterfall",
+        "category": "waterfall",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic"
+        ],
+        "precision": "area",
+        "summary": "A remote cascade on a Karjan-reservoir stream near Pratap Nagar — the Rajpipla belt's own pinch-in waterfall, pairing naturally with Mandan Lake.",
+        "monsoon_dependent": true,
+        "confidence": "low"
       }
     },
     {
@@ -397,6 +544,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.2723,
+          21.6737
+        ]
+      },
+      "properties": {
+        "id": "narmada-kadia-dungar-caves",
+        "name": "Kadia Dungar Caves",
+        "category": "monument",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "history",
+          "heritage",
+          "offbeat",
+          "trekking",
+          "mythology",
+          "photography"
+        ],
+        "precision": "exact",
+        "summary": "Seven rock-cut Buddhist caves of the 1st–2nd century AD on a forested hill near Jhagadia — lion pillars, a brick stupa, and a stiff climb.",
+        "monsoon_dependent": false,
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           73.578,
           21.8
         ]
@@ -418,6 +595,66 @@
         "summary": "A quiet reservoir in the hills south-east of Rajpipla — sunset water views and picnic spots, with public access rules worth checking first.",
         "monsoon_dependent": false,
         "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3742,
+          21.7805
+        ]
+      },
+      "properties": {
+        "id": "narmada-kesharva-falls",
+        "name": "Kesharva Waterfall",
+        "category": "waterfall",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "monsoon",
+          "offbeat",
+          "nature",
+          "picnic",
+          "family",
+          "photography"
+        ],
+        "precision": "exact",
+        "summary": "A tiered bathing waterfall near Kesharva village west of Rajpipla — a 1 km walk through black-soil fields to falls you can actually get into.",
+        "monsoon_dependent": true,
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6,
+          21.77
+        ]
+      },
+      "properties": {
+        "id": "narmada-mandan-lake",
+        "name": "Mandan Lake View",
+        "category": "lake",
+        "cluster": "rajpipla",
+        "district": "narmada",
+        "status": "active",
+        "tags": [
+          "nature",
+          "picnic",
+          "photography",
+          "boating",
+          "monsoon",
+          "offbeat"
+        ],
+        "precision": "area",
+        "summary": "The Karjan reservoir at its most scenic — hill-ringed water off Mandan village, 16 km from Rajpipla, with cheap boat rides and roasted-corn stalls.",
+        "monsoon_dependent": false,
+        "confidence": "medium"
       }
     },
     {

@@ -92,7 +92,7 @@
     { "id": "dang-milan-falls", "distance_km": 5 },
     { "id": "dang-girmal-falls", "distance_km": 20 }
   ],
-  "itineraries": [],
+  "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Dev Van (Wonder) Waterfall, Dang — Monsoon Guide",

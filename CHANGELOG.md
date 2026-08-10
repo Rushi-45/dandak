@@ -4,7 +4,12 @@ Dataset versioning per [spec 06](specs/06-pipeline-and-workflow.md#versioning--r
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-08-10
+
+The traveller's release: the corpus grew 64 → 106 spots in three days, driven by the maintainer's own Google Maps contributions (pins and photos), an OpenStreetMap coordinate sweep, and YouTube-vlog mining. Every awaiting-a-pin item and candidate-pool row is resolved. Three new itineraries cover the newly documented belts (Subir falls circuit, Ahwa south-west loop, Songadh forest day); GeoJSON and stats exports regenerated; API version meta bumped to 1.1.0.
+
 ### Added
+- Three itineraries for the new belts: `subir-falls-circuit` (2 days, Mahal overnight), `ahwa-southwest-loop` (1 day, family-friendly) and `songadh-forest-day` (1 day from Surat, with the Kaka-Kaki hard-mode swap noted). 18 spot records wired to them. Companions: 45 → 48.
 - The candidate pool cleared (2026-08-10, all names maintainer-verified): `dang-kaka-kaki-falls` (the border forest's claimed 200-footer near Gusrangam — guide-essential), `dang-unai-mata-temple` (the Rama's-arrow hot springs, official Utsav festival listing, 6 km from Janki Van), `dang-kadam-dungar` (800 m sacred hill on the Ahwa–Waghai road) and `dang-pilva-dungar` ('the last hill of Gujarat' at Chorvani, with the Pindhara Dev shrine). `dang-svtis-falls` and `dang-soul-to-prakriti-falls` restored — the maintainer verified both names are genuinely in use. Corpus: 100 → 106.
 - `vanvihar-stay-home` added to the stays companion set (village homestay by Temburgartha dam) — 16 stays. Don Village Homestays' coordinates corrected to the relocated village.
 - `dang-maharaychond-forest` (2026-08-10) — the picnic forest south of Ahwa, unlocked by the maintainer's one-line description; wired into the south-western circuit (Wasurna vista, Temburgartha dam).

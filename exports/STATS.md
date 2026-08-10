@@ -1,26 +1,20 @@
-# Dandak Dataset — Release Stats (v1.0.0, 2026-08-08)
+﻿=== Saputara-Narmada dataset stats ===
 
-## Corpus
+Seed: 106 spots (dang 66 / narmada 40) | tiers: T1 22, T2 27, T3 57
+Drafted: 106/106 | T1 22/22, T2 27/27, T3 57/57
+Confidence: high 12, medium 80, low 14
+Verified: 91/106; stale per cadence (sou-complex 90d / others 180d): 0
 
-| Metric | Value |
-|---|---|
-| Spot records | 64 (Dang 32 / Narmada 32) |
-| Tier coverage | T1 22/22 · T2 27/27 · T3 15/15 |
-| Verified (`last_verified` stamped) | 48/64 — T1 100%, T2 81% |
-| Confidence mix | high 11 · medium 40 · low 13 |
-| Companion records | 44 — 2 districts, 9 itineraries, 8 events, 15 stays, 10 foods |
-| Machine schemas | 6 (spot, district, itinerary, event, stay, food) |
-| Validation | 0 errors, 0 warnings (L1 schema · L2 referential · L3 lints) |
-| GeoJSON exports | dang 32 · narmada 32 · all-spots 64 features |
+needs_verification leaderboard:
+   73  location.coordinates
+   61  location.distances_km
+   37  visit.timings
+   29  access.last_mile
+   25  visit.fees
+   22  location.taluka
+   20  amenities.mobile_network
+    7  access.road
+    6  status
+    6  history_legend
 
-## Open verification ledger (top paths)
-
-| Count | Path |
-|---|---|
-| 60 | `location.coordinates` — awaiting a dedicated map pass |
-| 27 | `visit.timings` |
-| 24 | `location.distances_km` |
-| 22 | `visit.fees` |
-| 6 | `status` (verify-existence T3 spots) |
-
-Regenerate anytime: `npm run stats` · `npm run export:geojson` · `npm run validate`
+Next up (tier order): 
