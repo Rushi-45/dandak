@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { Map as LeafletMap_ } from "leaflet";
-import { addBaseLayers, precisionRadius } from "@/components/map-base";
+import { addBaseLayers, keepMapSized, precisionRadius } from "@/components/map-base";
 
 interface SpotMapProps {
   name: string;
@@ -25,6 +25,7 @@ export function SpotMap({ name, emoji, lat, lng, precision }: SpotMapProps) {
 
   useEffect(() => {
     let cancelled = false;
+    let dispose: (() => void) | undefined;
     (async () => {
       try {
         const L = (await import("leaflet")).default;
@@ -60,12 +61,14 @@ export function SpotMap({ name, emoji, lat, lng, precision }: SpotMapProps) {
         }).addTo(map);
 
         mapRef.current = map;
+        dispose = keepMapSized(map, divRef.current);
       } catch {
         if (!cancelled) setFailed(true);
       }
     })();
     return () => {
       cancelled = true;
+      dispose?.();
       mapRef.current?.remove();
       mapRef.current = null;
     };

@@ -292,3 +292,23 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* Touch devices get Apple-guideline 44px tap targets: an invisible
+   pseudo-element extends the hit area beyond the icon box. Pointer events
+   on it bubble to the marker, so the whole 44px square is tappable. */
+@media (pointer: coarse), (max-width: 640px) {
+  .dk-dot-wrap::before,
+  .dk-stop-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+  }
+  .dk-stop-wrap::before {
+    inset: -4px;
+  }
+  .dk-dot {
+    width: 17px;
+    height: 17px;
+  }
+}

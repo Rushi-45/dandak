@@ -51,6 +51,30 @@ export function addBaseLayers(
   return { satellite, terrain, dark, placeLabels };
 }
 
+/**
+ * Leaflet measures its container once at init. If the container's size settles
+ * later — web fonts landing, a phone rotating, a responsive reflow — tiles come
+ * out blank or half-drawn. This re-measures on a tick and on every resize.
+ * Returns a disposer for the effect cleanup.
+ */
+export function keepMapSized(map: LeafletMap_, el: HTMLElement) {
+  const invalidate = () => map.invalidateSize({ animate: false });
+  const t1 = setTimeout(invalidate, 0);
+  const t2 = setTimeout(invalidate, 400);
+  let ro: ResizeObserver | undefined;
+  if (typeof ResizeObserver !== "undefined") {
+    ro = new ResizeObserver(invalidate);
+    ro.observe(el);
+  }
+  window.addEventListener("orientationchange", invalidate);
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    ro?.disconnect();
+    window.removeEventListener("orientationchange", invalidate);
+  };
+}
+
 /** Honest uncertainty radius (metres) for a record's coordinate precision. */
 export function precisionRadius(precision: string): number | null {
   if (precision === "approximate") return 900;

@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Map as LeafletMap_ } from "leaflet";
-import { addBaseLayers } from "@/components/map-base";
+import { addBaseLayers, keepMapSized } from "@/components/map-base";
 
 export interface TripMapStop {
   id: string;
@@ -72,6 +72,7 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
   useEffect(() => {
     if (stops.length < 2) return;
     let cancelled = false;
+    let dispose: (() => void) | undefined;
     (async () => {
       try {
         const L = (await import("leaflet")).default;
@@ -126,12 +127,14 @@ export function TripMap({ stops, durationDays }: TripMapProps) {
 
         map.fitBounds(L.latLngBounds(stops.map((s) => posOf(s))).pad(0.15));
         mapRef.current = map;
+        dispose = keepMapSized(map, divRef.current);
       } catch {
         if (!cancelled) setFailed(true);
       }
     })();
     return () => {
       cancelled = true;
+      dispose?.();
       mapRef.current?.remove();
       mapRef.current = null;
     };

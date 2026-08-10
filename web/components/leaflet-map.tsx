@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { LayerGroup, Map as LeafletMap_, LatLngExpression } from "leaflet";
-import { addBaseLayers } from "@/components/map-base";
+import { addBaseLayers, keepMapSized } from "@/components/map-base";
 import geoRaw from "@/lib/geo.json";
 
 interface GeoData {
@@ -53,6 +53,7 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
   const LRef = useRef<typeof import("leaflet") | null>(null);
   const [ready, setReady] = useState(false);
   const [category, setCategory] = useState<string | null>(null);
+  const disposeSizerRef = useRef<(() => void) | null>(null);
 
   // Boot Leaflet once, client-side only.
   useEffect(() => {
@@ -102,10 +103,13 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
       const bounds = L.latLngBounds(markers.map((m) => [m.lat, m.lng] as [number, number]));
       map.fitBounds(bounds.pad(0.06));
       mapRef.current = map;
+      disposeSizerRef.current = keepMapSized(map, divRef.current);
       setReady(true);
     })();
     return () => {
       cancelled = true;
+      disposeSizerRef.current?.();
+      disposeSizerRef.current = null;
       mapRef.current?.remove();
       mapRef.current = null;
     };
