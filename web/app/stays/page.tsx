@@ -33,7 +33,11 @@ function StayCard({ stay }: { stay: Stay }) {
   const official = stay.booking.url?.includes("ecotourismforest.gujarat.gov.in");
 
   return (
-    <article className="relative overflow-hidden rounded-[1.75rem] border border-white/[0.07] bg-white/[0.02] p-6 sm:p-7">
+    <article
+      id={stay.id}
+      /* scroll-mt clears the sticky header when a /stays#id link lands here */
+      className="relative scroll-mt-24 overflow-hidden rounded-[1.75rem] border border-white/[0.07] bg-white/[0.02] p-6 target:border-emerald-400/40 target:bg-emerald-400/[0.05] sm:p-7"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-emerald-400/[0.06] blur-2xl"

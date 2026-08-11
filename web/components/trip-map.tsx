@@ -20,6 +20,10 @@ export interface TripMapStop {
   kind?: "stop" | "endpoint" | "bed";
   /** overrides the "Day N · stop N" popup subtitle */
   note?: string;
+  /** where the popup's link goes; defaults to this spot's own record */
+  href?: string;
+  /** popup link text, when href is set */
+  hrefLabel?: string;
 }
 
 /** Road geometry per day number: [[lat, lng], …] following the actual roads. */
@@ -135,10 +139,10 @@ export function TripMap({ stops, durationDays, routes }: TripMapProps) {
           const isBed = s.kind === "bed";
           const isGlyph = isBed || s.kind === "endpoint";
           const extra = isBed ? " dk-stop-bed" : s.kind === "endpoint" ? " dk-stop-endpoint" : "";
-          const link =
-            s.district && s.slug
-              ? `<a href="/spots/${s.district}/${s.slug}">Open the record →</a>`
-              : "";
+          const target = s.href ?? (s.district && s.slug ? `/spots/${s.district}/${s.slug}` : null);
+          const link = target
+            ? `<a href="${target}">${s.hrefLabel ?? "Open the record"} →</a>`
+            : "";
           L.marker(posOf(s), {
             icon: L.divIcon({
               className: "dk-stop-wrap",

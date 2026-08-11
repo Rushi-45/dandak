@@ -452,13 +452,17 @@ function RouteRow({
           Rest
         </span>
       )}
-      {href && <span className="shrink-0 text-xs text-stone-600">→</span>}
+      {href && (
+        <span className="shrink-0 text-[11px] font-semibold text-stone-600 transition-colors group-hover:text-emerald-300">
+          Open <span aria-hidden>→</span>
+        </span>
+      )}
     </>
   );
 
-  const className = `flex items-center gap-3 px-5 py-2.5 ${
+  const className = `group flex items-center gap-3 px-5 py-2.5 ${
     rest ? "bg-amber-400/[0.04]" : ""
-  } ${href ? "transition-colors hover:bg-white/[0.03]" : ""}`;
+  } ${href ? "cursor-pointer transition-colors hover:bg-white/[0.03]" : ""}`;
 
   return (
     <li>
@@ -661,6 +665,8 @@ function PlanView({
           approx: true,
           kind: "bed",
           note: `Night ${d.day} — where you sleep`,
+          href: `/stays#${bed.stay.id}`,
+          hrefLabel: "Open this stay",
         });
       }
     }
@@ -772,6 +778,7 @@ function PlanView({
                       PRICE_BAND_LABEL[bed.stay.priceBand] ?? bed.stay.priceBand
                     }`}
                     color={color}
+                    href={`/stays#${bed.stay.id}`}
                     rest
                   />
                 )}
