@@ -24,10 +24,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 30 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 39 },
     "coordinates": { "lat": 20.93, "lng": 73.7, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 30, "waghai": 45, "saputara": 80, "surat": 140 }
+    "distances_km": { "ahwa": 39, "waghai": 56, "saputara": 81, "surat": 124 }
   },
   "access": {
     "modes": {

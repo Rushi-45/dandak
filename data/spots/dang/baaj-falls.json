@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 12 },
     "coordinates": { "lat": 20.7053, "lng": 73.5459, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 12, "ahwa": 20 }
+    "distances_km": { "waghai": 12, "ahwa": 44 }
   },
   "access": {
     "modes": {
@@ -82,7 +82,7 @@
   "faqs": [],
   "nearby": [
     { "id": "dang-koshmal-falls", "distance_km": 3, "note": "The Bhigu Dhodh forest trek next door" },
-    { "id": "dang-chikhalda-falls", "distance_km": 8 },
+    { "id": "dang-chikhalda-falls", "distance_km": 8.6 },
     { "id": "dang-chirai-falls", "distance_km": 9 }
   ],
   "itineraries": [],
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — 'Baaj Water Fall' (20.7053, 73.5459), 'Baaj Village View Point' (20.7140, 73.5470) and an unnamed fall (20.6904, 73.5444); maintainer-supplied, visited", "url": "https://www.google.com/maps/place/Baaj+Water+Fall/@20.7053174,73.5459409,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

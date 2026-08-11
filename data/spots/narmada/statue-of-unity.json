@@ -33,7 +33,7 @@
     "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 4 },
     "coordinates": { "lat": 21.838, "lng": 73.7191, "precision": "exact" },
     "altitude_m": null,
-    "distances_km": { "ekta-nagar": 4, "rajpipla": 25, "vadodara": 90, "bharuch": 85, "surat": 150, "ahmedabad": 200 }
+    "distances_km": { "ekta-nagar": 4, "rajpipla": 30, "vadodara": 93, "bharuch": 97, "surat": 158, "ahmedabad": 198 }
   },
   "access": {
     "modes": {
@@ -134,6 +134,6 @@
       { "title": "Statue of Unity Ticket Price 2026 — Full Breakdown", "url": "https://statueofunity.in/statue-of-unity-ticket-price-2026-breakdown/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
       { "title": "Statue of Unity Ticket Price, Timings & Booking Guide (2026)", "url": "https://theunitytourism.com/blog/statue-of-unity-ticket-price-timings-and-booking-guide-(2026)", "publisher": "theunitytourism.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["amenities.ev_charging", "location.distances_km"]
+    "needs_verification": ["amenities.ev_charging"]
   }
 }

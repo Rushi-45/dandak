@@ -23,10 +23,10 @@
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 28 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 32 },
     "coordinates": { "lat": 20.888, "lng": 73.6131, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 28, "waghai": 28 }
+    "distances_km": { "ahwa": 32, "waghai": 26 }
   },
   "access": {
     "modes": {
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — place 'Milan waterfall' (20.8880, 73.6131); supplied by the maintainer, who has visited — resolving the dataset's oldest awaiting-a-pin item", "url": "https://www.google.com/maps/place/Milan+waterfall/@20.887985,73.6131257,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

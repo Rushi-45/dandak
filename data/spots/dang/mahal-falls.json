@@ -23,10 +23,10 @@
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 25 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 26 },
     "coordinates": { "lat": 20.892, "lng": 73.6526, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 25 }
+    "distances_km": { "ahwa": 26 }
   },
   "access": {
     "modes": {
@@ -110,6 +110,6 @@
       { "title": "Google Maps — place 'Karanjwa waterfall' (20.8920, 73.6526); identified by the maintainer as the falls known at Mahal campsite as 'Mahal waterfall'", "url": "https://www.google.com/maps/place/Karanjwa+waterfall/@20.8920022,73.652561,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
       { "title": "Purna Wildlife Sanctuary — campsite-trail waterfalls mention (the source of the 'Mahal waterfall' nickname)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.guides"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.guides"]
   }
 }

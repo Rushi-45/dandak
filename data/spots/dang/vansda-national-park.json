@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 8 },
     "coordinates": { "lat": 20.77, "lng": 73.455, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "waghai": 8, "bilimora": 50, "saputara": 60, "surat": 100 }
+    "distances_km": { "waghai": 8, "bilimora": 58, "saputara": 58, "surat": 97 }
   },
   "access": {
     "modes": {

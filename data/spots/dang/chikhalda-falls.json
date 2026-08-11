@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 16 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 54 },
     "coordinates": { "lat": 20.6928, "lng": 73.5965, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 16, "waghai": 20 }
+    "distances_km": { "ahwa": 54, "waghai": 22 }
   },
   "access": {
     "modes": {
@@ -83,7 +83,7 @@
   "nearby": [
     { "id": "dang-ritu-falls", "distance_km": 1, "note": "The pocket's second fall" },
     { "id": "dang-svtis-falls", "distance_km": 5 },
-    { "id": "dang-baaj-falls", "distance_km": 8 }
+    { "id": "dang-baaj-falls", "distance_km": 8.6 }
   ],
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — 'Chikhalda waterfall' (20.6928, 73.5965) with the 'Vadla ni vadi' grove pin (20.6946, 73.5917) beside it; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chikhalda+waterfall/@20.692826,73.596482,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

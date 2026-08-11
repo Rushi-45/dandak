@@ -24,10 +24,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 27 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 20 },
     "coordinates": { "lat": 20.66, "lng": 73.75, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 27, "waghai": 60 }
+    "distances_km": { "ahwa": 20, "waghai": 52 }
   },
   "access": {
     "modes": {
@@ -117,6 +117,6 @@
     "sources": [
       { "title": "Pandava Cave & Waterfall, Dang — Safar Gujarat", "url": "https://en.safargujarat.com/pandav-caves-waterfall-dang-distance-timings-entry-fee/", "publisher": "safargujarat.com", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "access.last_mile"]
+    "needs_verification": ["location.coordinates", "access.last_mile"]
   }
 }

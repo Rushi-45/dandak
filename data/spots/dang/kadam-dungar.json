@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 12 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 8.9 },
     "coordinates": { "lat": 20.76, "lng": 73.63, "precision": "area" },
     "altitude_m": 800,
-    "distances_km": { "ahwa": 12, "waghai": 20 }
+    "distances_km": { "ahwa": 8.9, "waghai": 23 }
   },
   "access": {
     "modes": {
@@ -100,6 +100,6 @@
       { "title": "Kadam Dungar, Waghai, Dangs — ~20 km from Waghai on the Ahwa road; 800+ m; sacred to local Adivasis", "url": "https://darpan.blog/travel/kadam-dungar-waghai-dangs/", "publisher": "darpan.blog", "accessed": "2026-08-10" },
       { "title": "Kadam dungar, Dang, Gujarat — overview", "url": "https://www.gujaratplaces.in/2021/09/kadam-dungar-dang-gujarat.html", "publisher": "gujaratplaces.in", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.elevation_m", "access.last_mile"]
+    "needs_verification": ["location.coordinates", "attributes.elevation_m", "access.last_mile"]
   }
 }

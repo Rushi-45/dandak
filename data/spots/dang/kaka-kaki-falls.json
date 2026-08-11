@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Songadh", "distance_km": 35 },
     "coordinates": { "lat": 21.05, "lng": 73.75, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "surat": 115, "ahwa": 65 }
+    "distances_km": { "surat": 133, "ahwa": 50 }
   },
   "access": {
     "modes": {
@@ -100,6 +100,6 @@
       { "title": "Kaka-Kaki Waterfall in Tapi District — 200-foot fall near Gusrangam; approaches via Keshbandh/Borzar/Biliamba, 4–5 km trek", "url": "https://blog.nrigujarati.co.in/kaka-kaki-waterfall-in-tapi-district-explore-gujarats-magnificent-200-foot-natural-wonder-surrounded-by-dense-forests/", "publisher": "nrigujarati.co.in", "accessed": "2026-08-10" },
       { "title": "Kaka Kaki waterfall — 'the most mysterious waterfall of Dang' (vlog)", "url": "https://www.youtube.com/watch?v=Osb0XydOQlM", "publisher": "YouTube", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "attributes.height_m", "access.last_mile"]
+    "needs_verification": ["location.coordinates", "attributes.height_m", "access.last_mile"]
   }
 }

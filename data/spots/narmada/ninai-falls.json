@@ -24,10 +24,10 @@
     "taluka": "Dediapada",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Dediapada", "distance_km": 35 },
+    "nearest_town": { "name": "Dediapada", "distance_km": 33 },
     "coordinates": { "lat": 21.6669, "lng": 73.8219, "precision": "exact" },
     "altitude_m": null,
-    "distances_km": { "dediapada": 35, "rajpipla": 90, "surat": 143 }
+    "distances_km": { "dediapada": 33, "rajpipla": 76, "surat": 167 }
   },
   "access": {
     "modes": {

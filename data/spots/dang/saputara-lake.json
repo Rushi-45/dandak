@@ -24,10 +24,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Saputara", "distance_km": 0.5 },
+    "nearest_town": { "name": "Saputara", "distance_km": 1 },
     "coordinates": { "lat": 20.5712, "lng": 73.755, "precision": "approximate" },
     "altitude_m": 975,
-    "distances_km": { "saputara": 1, "ahwa": 50, "nashik": 80, "surat": 160, "mumbai": 250 }
+    "distances_km": { "saputara": 1, "ahwa": 43, "nashik": 80, "surat": 154, "mumbai": 256 }
   },
   "access": {
     "modes": {
@@ -120,6 +120,6 @@
       { "title": "Saputara Lake — Timings, Entry Fee, Boating", "url": "https://www.trawell.in/gujarat/saputara/saputara-lake", "publisher": "trawell.in", "accessed": "2026-08-08" },
       { "title": "Saputara Lake — Boating Timings, Ticket Price", "url": "https://en.safargujarat.com/saputara-lake-distance-ticket-price-boating-timings/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "access.parking.fee"]
+    "needs_verification": ["location.coordinates", "access.parking.fee"]
   }
 }

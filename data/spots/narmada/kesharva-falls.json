@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Rajpipla", "distance_km": 24 },
     "coordinates": { "lat": 21.7805, "lng": 73.3742, "precision": "exact" },
     "altitude_m": null,
-    "distances_km": { "rajpipla": 24, "vadodara": 80 }
+    "distances_km": { "rajpipla": 24, "vadodara": 81 }
   },
   "access": {
     "modes": {
@@ -138,6 +138,6 @@
       { "title": "Kesharva Waterfall: Soak yourself in positivity — trip report (24 km/35 min from Rajpipla, 80 km from Vadodara, 1 km trail)", "url": "https://safarwithsasha.com/our_trips/kesharva-waterfall-soak-yourself-in-positivity/", "publisher": "safarwithsasha.com", "accessed": "2026-08-09" },
       { "title": "Kesharva Waterfall — map place pin (21.7805, 73.3742)", "url": "https://maps.app.goo.gl/ApNcXXCkqfV5w4wg8", "publisher": "Google Maps (link published by safarwithsasha.com)", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.taluka", "location.admin_district", "location.distances_km", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "location.admin_district", "amenities.mobile_network"]
   }
 }

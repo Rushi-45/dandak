@@ -24,10 +24,10 @@
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 45 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 37 },
     "coordinates": { "lat": 20.95, "lng": 73.71, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 45, "saputara": 60 }
+    "distances_km": { "ahwa": 37, "saputara": 79 }
   },
   "access": {
     "modes": {

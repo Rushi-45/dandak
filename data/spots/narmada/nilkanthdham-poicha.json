@@ -24,10 +24,10 @@
     "taluka": "Nandod",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Rajpipla", "distance_km": 20 },
+    "nearest_town": { "name": "Rajpipla", "distance_km": 44 },
     "coordinates": { "lat": 21.976, "lng": 73.534, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "poicha": 1, "rajpipla": 20, "ekta-nagar": 40, "vadodara": 80 }
+    "distances_km": { "poicha": 1, "rajpipla": 44, "ekta-nagar": 38, "vadodara": 62 }
   },
   "access": {
     "modes": {
@@ -89,8 +89,8 @@
   ],
   "nearby": [
     { "id": "narmada-kabirvad", "distance_km": 45, "note": "Boat access from the Bharuch side; classic same-day pairing" },
-    { "id": "narmada-rajvant-palace", "distance_km": 20 },
-    { "id": "narmada-statue-of-unity", "distance_km": 40 }
+    { "id": "narmada-rajvant-palace", "distance_km": 45 },
+    { "id": "narmada-statue-of-unity", "distance_km": 39 }
   ],
   "itineraries": ["narmada-faith-day"],
   "media": {
@@ -117,6 +117,6 @@
       { "title": "Plan Your Visit — Shri Nilkanthdham, Poicha", "url": "https://nilkanthdham.org/visit.html", "publisher": "nilkanthdham.org (official)", "accessed": "2026-08-08" },
       { "title": "Nilkanth Dham Poicha — Ticket Price, Timings & Room Booking", "url": "https://blog.yatradham.org/nilkanth-dham-poicha/", "publisher": "yatradham.org", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km"]
+    "needs_verification": ["location.coordinates"]
   }
 }

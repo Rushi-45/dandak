@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Vyara", "distance_km": 25 },
     "coordinates": { "lat": 21.03, "lng": 73.4, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "waghai": 35, "surat": 90, "saputara": 85 }
+    "distances_km": { "waghai": 35, "surat": 79, "saputara": 105 }
   },
   "access": {
     "modes": {
@@ -97,6 +97,6 @@
     "sources": [
       { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.fees", "location.coordinates"]
   }
 }

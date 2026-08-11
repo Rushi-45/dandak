@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Saputara", "distance_km": 6 },
     "coordinates": { "lat": 20.586, "lng": 73.701, "precision": "approximate" },
     "altitude_m": 1097,
-    "distances_km": { "saputara": 6, "nashik": 75 }
+    "distances_km": { "saputara": 6, "nashik": 92 }
   },
   "access": {
     "modes": {

@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 28 },
     "coordinates": { "lat": 20.9298, "lng": 73.5332, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 28, "ahwa": 40 }
+    "distances_km": { "waghai": 28, "ahwa": 47 }
   },
   "access": {
     "modes": {
@@ -121,6 +121,6 @@
       { "title": "Google Maps — place 'Mayadevi Temple' (20.9298, 73.5332); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Mayadevi+Temple/@20.9297924,73.5331867,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
       { "title": "Maintainer's own photographs of the site (2 Aug 2025), which establish the riverside setting — broad rock shelves, a weir and monsoon rapids beside the shrine", "publisher": "Rushi Chudasama", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["history_legend", "location.taluka", "location.distances_km", "visit.notes"]
+    "needs_verification": ["history_legend", "location.taluka", "visit.notes"]
   }
 }

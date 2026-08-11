@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Songadh", "distance_km": 2 },
     "coordinates": { "lat": 21.1692, "lng": 73.553, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "surat": 90, "ahwa": 65, "waghai": 70 }
+    "distances_km": { "surat": 84, "ahwa": 72, "waghai": 66 }
   },
   "access": {
     "modes": {
@@ -106,6 +106,6 @@
       { "title": "Songadh — Wikipedia (town and fort background)", "url": "https://en.wikipedia.org/wiki/Songadh", "publisher": "Wikipedia", "accessed": "2026-08-10" },
       { "title": "Google Maps — 'Fort Songadh' (21.1692, 73.5530) with 'Songadh Killa' and 'Fort darwaja' pins; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Fort+Songadh/@21.169168,73.5530236,17z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["history_legend", "location.distances_km", "visit.timings", "amenities.mobile_network"]
+    "needs_verification": ["history_legend", "visit.timings", "amenities.mobile_network"]
   }
 }

@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "nearest_town": { "name": "Saputara", "distance_km": 2.5 },
     "coordinates": { "lat": 20.568, "lng": 73.741, "precision": "approximate" },
     "altitude_m": 1000,
-    "distances_km": { "saputara": 2.5, "nashik": 80, "surat": 160 }
+    "distances_km": { "saputara": 2.5, "nashik": 82, "surat": 155 }
   },
   "access": {
     "modes": {
@@ -116,6 +116,6 @@
       { "title": "14 Top Places to Visit in Saputara Hill Station (2026)", "url": "https://thetriptimes.in/blog/best-places-to-visit-in-saputara", "publisher": "thetriptimes.in", "accessed": "2026-08-08" },
       { "title": "20 Best Places to Visit in Saputara", "url": "https://www.trawell.in/gujarat/saputara/places-to-visit-things-to-do", "publisher": "trawell.in", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.fees", "location.coordinates"]
   }
 }

@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 20 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 13 },
     "coordinates": { "lat": 20.82, "lng": 73.75, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 20 }
+    "distances_km": { "ahwa": 13 }
   },
   "access": {
     "modes": {
@@ -98,6 +98,6 @@
       { "title": "Birsa Waterfall, The Dangs — listing", "url": "https://indiasthan.com/place/gujarat/388194/birsa-waterfall", "publisher": "indiasthan.com", "accessed": "2026-08-09" },
       { "title": "Birsa Waterfall — Trip.com attraction listing", "url": "https://www.trip.com/travel-guide/attraction/dang/birsa-waterfall-136974891/", "publisher": "trip.com", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "access.road", "access.last_mile", "visit.timings"]
+    "needs_verification": ["location.coordinates", "access.road", "access.last_mile", "visit.timings"]
   }
 }

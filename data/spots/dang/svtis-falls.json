@@ -22,10 +22,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 14 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 48 },
     "coordinates": { "lat": 20.6787, "lng": 73.6224, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 14 }
+    "distances_km": { "ahwa": 48 }
   },
   "access": {
     "modes": {
@@ -95,6 +95,6 @@
     "sources": [
       { "title": "Google Maps — place 'Svtis Waterfall' (20.6787, 73.6224); supplied by the maintainer, who has visited and verified the name", "url": "https://www.google.com/maps/place/Svtis+Waterfall/@20.6787146,73.6223795,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile"]
+    "needs_verification": ["location.taluka", "access.last_mile"]
   }
 }

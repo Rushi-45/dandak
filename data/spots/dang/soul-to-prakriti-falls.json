@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Songadh", "distance_km": 25 },
     "coordinates": { "lat": 21.083, "lng": 73.6931, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 60, "surat": 105 }
+    "distances_km": { "ahwa": 58, "surat": 101 }
   },
   "access": {
     "modes": {
@@ -96,6 +96,6 @@
     "sources": [
       { "title": "Google Maps — place 'Soul to prakriti Waterfall' (21.0830, 73.6931); supplied by the maintainer, who has visited and verified the name", "url": "https://www.google.com/maps/place/Soul+to+prakriti+Waterfall/@21.082986,73.693108,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.admin_district", "location.distances_km"]
+    "needs_verification": ["location.taluka", "location.admin_district"]
   }
 }

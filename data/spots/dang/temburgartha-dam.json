@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 10 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 12 },
     "coordinates": { "lat": 20.7031, "lng": 73.7164, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 10 }
+    "distances_km": { "ahwa": 12 }
   },
   "access": {
     "modes": {
@@ -100,6 +100,6 @@
     "sources": [
       { "title": "Google Maps — 'Temburgartha dam sites' (20.7031, 73.7164) with the adjoining 'Sunset point. Net point.' (20.7041, 73.7219) and 'Vanvihar stay home' pins; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Temburgartha+dam+sites/@20.7031098,73.716419,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.distances_km", "attributes.purpose", "amenities.mobile_network"]
+    "needs_verification": ["attributes.purpose", "amenities.mobile_network"]
   }
 }

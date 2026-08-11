@@ -24,10 +24,10 @@
     "taluka": "Dediapada",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Dediapada", "distance_km": 10 },
+    "nearest_town": { "name": "Dediapada", "distance_km": 7.3 },
     "coordinates": { "lat": 21.65, "lng": 73.55, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "dediapada": 10, "rajpipla": 50, "ekta-nagar": 60 }
+    "distances_km": { "dediapada": 7.3, "rajpipla": 39, "ekta-nagar": 67 }
   },
   "access": {
     "modes": {
@@ -118,6 +118,6 @@
       { "title": "Zarwani Waterfalls, Kevadiya — sanctuary entry fees", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
       { "title": "Zarwani Waterfall Gujarat Guide 2026", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.timings", "attributes.area_km2", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.timings", "attributes.area_km2", "location.coordinates"]
   }
 }

@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Unai", "distance_km": 6 },
     "coordinates": { "lat": 20.8, "lng": 73.333, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 25, "saputara": 75, "surat": 95 }
+    "distances_km": { "waghai": 25, "saputara": 73, "surat": 82 }
   },
   "access": {
     "modes": {

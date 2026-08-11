@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 8 },
     "coordinates": { "lat": 21.86, "lng": 73.67, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ekta-nagar": 8, "rajpipla": 22, "vadodara": 85 }
+    "distances_km": { "ekta-nagar": 7.9, "rajpipla": 19, "vadodara": 91 }
   },
   "access": {
     "modes": {
@@ -88,7 +88,7 @@
     }
   ],
   "nearby": [
-    { "id": "narmada-statue-of-unity", "distance_km": 8 },
+    { "id": "narmada-statue-of-unity", "distance_km": 9.5 },
     { "id": "narmada-zarwani-falls", "distance_km": 15 },
     { "id": "narmada-garudeshwar", "distance_km": 12 }
   ],
@@ -106,6 +106,6 @@
       { "title": "Khalwani River Rafting & Eco-Tourism Kevadia Guide 2026", "url": "https://chalbanjare.com/place/khalwani-river-rafting-and-eco-tourism", "publisher": "chalbanjare.com", "accessed": "2026-08-08" },
       { "title": "Khalwani River Rafting Booking — Statue of Unity", "url": "https://www.statueofunitybooking.com/khalwani-river-rafting/", "publisher": "statueofunitybooking.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.fees", "attributes.operator", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.fees", "attributes.operator", "location.coordinates"]
   }
 }

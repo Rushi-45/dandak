@@ -33,6 +33,39 @@ Status: Draft v0.1 · Last updated: 2026-08-08 · Normative
 
 **Conflict rule:** when sources disagree, prefer the hierarchy; if still ambiguous, state the range in prose ("₹30–50 depending on season"), keep the path in `needs_verification`, and cap confidence at `medium`.
 
+## Routed road distances (2026-08-11 pass)
+
+`location.distances_km` and `nearby[].distance_km` are **road km** (spec 02). They were
+originally hand-estimated, and 61 records carried `location.distances_km` under
+`needs_verification`. They are now derived by routing on OpenStreetMap via OSRM —
+`node scripts/audit-distances.mjs`, `--apply` to write, `--refresh` to re-fetch.
+
+This is the provenance record for that derivation, kept here rather than as a source
+entry appended to 81 records, where it would have buried the change itself. Geometry and
+distances are © OpenStreetMap contributors, ODbL; the maps credit OSM on every page.
+
+The script does **not** route everything, because three things make routing wrong here:
+
+| Guard | Why |
+|---|---|
+| Snap gaps are never added back | OSRM moves each pin to the nearest routable road. Adding both endpoints' gaps double-counts whenever two pins sit in the same unmapped pocket — it turned Saputara Lake → Nageshwar temple, genuinely 0.3 km, into 5 km. Road distance is instead clamped up to the straight line between the real pins. |
+| Pins >2 km from any routable road are skipped (174 values) | Girmal's pin is `exact`, taken from an OSM node, and still snaps 3.4 km: the pin is right, the access track just is not in the drivable network. Routing there measures a different place. |
+| Same-cluster and sub-4 km hops are skipped (203 values) | Inside the Statue of Unity precinct and Saputara town people walk or take the shuttle, and cars are restricted. OSRM must send a car around the one-way visitor loop, calling Miyawaki Forest → the Statue 9.8 km against a lived 2 km. |
+
+195 values changed across 81 records; 126 of 169 by under 20%. `location.distances_km`
+was cleared from `needs_verification` on 40 records. Spot checks were corroborated against
+Valhalla, an independent engine, which agreed with OSRM to within 0.5 km on every case —
+including Ahwa → Shabari Dham, 15 km routed against 30 curated.
+
+The L3 plausibility ceiling in `validate.mjs` moved from 3× to 6× straight-line as a
+result: dissected ghat terrain genuinely exceeds 3×. Ahwa → Chikhalda Falls is 12 km
+straight and 54 km by road, the route swinging 10 km east and 8 km south around the
+ridges, with both ends snapping within 116 m of a road.
+
+**Open:** skipped values still rest on hand estimates, and routed values inherit any error
+in their pin — only 8 of 106 coordinates are `exact`. A coordinate-verification pass should
+be followed by re-running this script.
+
 ## Re-verification cadence
 
 | Scope | Cadence |

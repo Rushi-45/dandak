@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 20 },
     "coordinates": { "lat": 20.6518, "lng": 73.5279, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 20, "ahwa": 25 }
+    "distances_km": { "waghai": 20, "ahwa": 50 }
   },
   "access": {
     "modes": {
@@ -97,6 +97,6 @@
     "sources": [
       { "title": "Google Maps — place 'Chirai Waterfalls' (20.6518, 73.5279); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chirai+Waterfalls/@20.6518045,73.5279422,14z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

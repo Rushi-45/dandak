@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 13 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 41 },
     "coordinates": { "lat": 20.6771, "lng": 73.6819, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 13 }
+    "distances_km": { "ahwa": 41 }
   },
   "access": {
     "modes": {
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — place 'Maharaychond forest' (20.6771, 73.6819); supplied and described as a picnic forest by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Maharaychond+forest/@20.6771199,73.6819185,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "amenities.mobile_network"]
   }
 }

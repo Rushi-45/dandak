@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Rajpipla", "distance_km": 1 },
     "coordinates": { "lat": 21.87, "lng": 73.5, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "rajpipla": 1, "ekta-nagar": 25, "vadodara": 70, "bharuch": 75 }
+    "distances_km": { "rajpipla": 1, "ekta-nagar": 30, "vadodara": 77, "bharuch": 67 }
   },
   "access": {
     "modes": {
@@ -87,7 +87,7 @@
   "nearby": [
     { "id": "narmada-harsiddhi-mata-temple", "distance_km": 2 },
     { "id": "narmada-rajpipla-heritage-walk", "distance_km": 1 },
-    { "id": "narmada-statue-of-unity", "distance_km": 25 }
+    { "id": "narmada-statue-of-unity", "distance_km": 31 }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },

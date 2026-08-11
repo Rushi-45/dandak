@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 3 },
     "coordinates": { "lat": 20.776, "lng": 73.512, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "waghai": 3, "ahwa": 33, "saputara": 52, "surat": 105 }
+    "distances_km": { "waghai": 3, "ahwa": 30, "saputara": 55, "surat": 104 }
   },
   "access": {
     "modes": {

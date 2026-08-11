@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 12 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 44 },
     "coordinates": { "lat": 20.6874, "lng": 73.6688, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 12 }
+    "distances_km": { "ahwa": 44 }
   },
   "access": {
     "modes": {
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — place 'Valley of Wasurna' (20.6874, 73.6688); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Valley+of+Wasurna/@20.6874361,73.6687921,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "amenities.mobile_network"]
   }
 }

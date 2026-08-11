@@ -7,6 +7,10 @@ Thumbs.db
 scratch/
 dist/
 
+# Derived, re-fetchable: the routed distance matrix behind scripts/audit-distances.mjs.
+# Delete it or pass --refresh to re-fetch from OSRM.
+scripts/.distance-cache.json
+
 # Maintainer's raw photo drop-zone: originals stay local, only the
 # resized/credited copies under web/public/images/ get committed.
 photos-inbox/*

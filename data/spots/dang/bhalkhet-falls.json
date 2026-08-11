@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Subir", "distance_km": 22 },
     "coordinates": { "lat": 20.9103, "lng": 73.5913, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 30, "waghai": 28 }
+    "distances_km": { "ahwa": 36, "waghai": 30 }
   },
   "access": {
     "modes": {
@@ -101,6 +101,6 @@
       { "title": "Bhalkhet Waterfall in Subir, Dang — listing", "url": "https://www.justdial.com/Daang/Bhalkhet-Waterfall-Divadyawan-Subir/9999P2673-2673-231205025619-Q3V9_BZDET", "publisher": "justdial.com", "accessed": "2026-08-09" },
       { "title": "Bhalket waterfall, Dang — listing (address plus-code WH6R+4GW, Godadiya 394715; decoded to 20.9103, 73.5913)", "url": "https://www.trip.com/travel-guide/attraction/dang/bhalket-waterfall-144566556/", "publisher": "trip.com", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "access.road", "access.last_mile"]
+    "needs_verification": ["location.coordinates", "access.road", "access.last_mile"]
   }
 }

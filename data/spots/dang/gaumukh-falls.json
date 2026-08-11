@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Songadh", "distance_km": 15 },
     "coordinates": { "lat": 21.1223, "lng": 73.6396, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 65, "waghai": 75, "surat": 105 }
+    "distances_km": { "ahwa": 67, "waghai": 61, "surat": 97 }
   },
   "access": {
     "modes": {
@@ -112,6 +112,6 @@
       { "title": "Gaumukh Waterfalls, Songadh — reviews and photos (dry-season shots included)", "url": "https://www.tripadvisor.com/Attraction_Review-g2009278-d15136194-Reviews-Gaumukh_Waterfalls-Songadh_Tapi_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-09" },
       { "title": "Gaumukh Waterfall in Songadh — overview (~15 km from Songadh, rugged forest path, small temple)", "url": "https://mindtrip.ai/attraction/songadh-gujarat/gaumukh-waterfall/at-TaZoecaM", "publisher": "mindtrip.ai", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km", "access.road_condition", "history_legend"]
+    "needs_verification": ["location.coordinates", "access.road_condition", "history_legend"]
   }
 }

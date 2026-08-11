@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Ekta Nagar (Kevadia)", "distance_km": 2 },
     "coordinates": { "lat": 21.845, "lng": 73.705, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "ekta-nagar": 2, "rajpipla": 25, "vadodara": 90 }
+    "distances_km": { "ekta-nagar": 2, "rajpipla": 23, "vadodara": 93 }
   },
   "access": {
     "modes": {

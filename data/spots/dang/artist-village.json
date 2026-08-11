@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Saputara", "distance_km": 1.5 },
     "coordinates": { "lat": 20.577, "lng": 73.762, "precision": "area" },
     "altitude_m": 980,
-    "distances_km": { "saputara": 1.5, "ahwa": 49 }
+    "distances_km": { "saputara": 1.5, "ahwa": 44 }
   },
   "access": {
     "modes": {

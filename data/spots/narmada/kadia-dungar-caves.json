@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Jhagadia", "distance_km": 20 },
     "coordinates": { "lat": 21.6737, "lng": 73.2723, "precision": "exact" },
     "altitude_m": null,
-    "distances_km": { "ankleshwar": 35, "bharuch": 40, "rajpipla": 50 }
+    "distances_km": { "ankleshwar": 37, "bharuch": 40, "rajpipla": 50 }
   },
   "access": {
     "modes": {
@@ -89,7 +89,7 @@
   ],
   "nearby": [
     { "id": "narmada-kesharva-falls", "distance_km": 25, "note": "Monsoon pairing across the district line" },
-    { "id": "narmada-kabirvad", "distance_km": 45 }
+    { "id": "narmada-kabirvad", "distance_km": 53 }
   ],
   "itineraries": [],
   "media": {
@@ -117,6 +117,6 @@
       { "title": "Kadia Dungar Buddhist Cave, Bharuch", "url": "https://gujarattourism.com/central-zone/bharuch/kadia-dungar-caves.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-09" },
       { "title": "Kadia Dungar Caves — District Bharuch", "url": "https://bharuch.nic.in/gallery/kadia-dungar-caves/", "publisher": "bharuch.nic.in (official)", "accessed": "2026-08-09" }
     ],
-    "needs_verification": ["location.distances_km", "visit.timings", "amenities.guides"]
+    "needs_verification": ["visit.timings", "amenities.guides"]
   }
 }

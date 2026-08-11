@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Waghai", "distance_km": 2 },
     "coordinates": { "lat": 20.786, "lng": 73.505, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "waghai": 2, "ahwa": 32, "saputara": 51, "surat": 104, "bilimora": 52 }
+    "distances_km": { "waghai": 2, "ahwa": 28, "saputara": 56, "surat": 105, "bilimora": 65 }
   },
   "access": {
     "modes": {
@@ -104,6 +104,6 @@
       { "title": "Waghai Botanical Gardens — Gujarat Tourism", "url": "https://gujarattourism.com/south-zone/dang/waghai-botanical-gardens.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
       { "title": "Waghai Botanical Garden — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/waghai-botanical-garden", "publisher": "trawell.in", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.fees", "location.coordinates"]
   }
 }

@@ -131,7 +131,14 @@ for (const { meta, rec } of parsed) {
     }
     if (co && typeof km === "number") {
       const straight = haversineKm([co.lat, co.lng], hubTable[hub]);
-      if (straight >= 5 && (km < 0.8 * straight || km > 3 * straight))
+      // 3x was the old ceiling, set when these numbers were hand-estimated. Now
+      // that they are routed on OpenStreetMap, dissected ghat terrain genuinely
+      // exceeds it: Ahwa to Chikhalda Falls is 12 km straight and 54 km by road
+      // (4.5x), the route swinging 10 km east and 8 km south around the ridges,
+      // with both ends snapping within 116 m of a road and Valhalla agreeing to
+      // 0.1 km. Poicha to Rajpipla is 3.4x because the Narmada is in between.
+      // The lower bound is the one that still catches impossible values.
+      if (straight >= 5 && (km < 0.8 * straight || km > 6 * straight))
         report("warn", rel, `L3 distance to ${hub} (${km} km) implausible vs ~${straight.toFixed(0)} km straight-line`);
     }
   }

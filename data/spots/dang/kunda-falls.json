@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 6 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 3.6 },
     "coordinates": { "lat": 20.7446, "lng": 73.7176, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 6 }
+    "distances_km": { "ahwa": 3.6 }
   },
   "access": {
     "modes": {
@@ -97,6 +97,6 @@
     "sources": [
       { "title": "Google Maps — place 'Kunda waterfall' (20.7446, 73.7176); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Kunda+waterfall/@20.7445836,73.7176247,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

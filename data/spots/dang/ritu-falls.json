@@ -22,10 +22,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 17 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 55 },
     "coordinates": { "lat": 20.6875, "lng": 73.5886, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 17 }
+    "distances_km": { "ahwa": 55 }
   },
   "access": {
     "modes": {
@@ -81,7 +81,7 @@
   "nearby": [
     { "id": "dang-chikhalda-falls", "distance_km": 1 },
     { "id": "dang-svtis-falls", "distance_km": 4 },
-    { "id": "dang-baaj-falls", "distance_km": 9 }
+    { "id": "dang-baaj-falls", "distance_km": 10 }
   ],
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
@@ -96,6 +96,6 @@
     "sources": [
       { "title": "Google Maps — place 'Ritu waterfall' (20.6875, 73.5886); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Ritu+waterfall/@20.6875375,73.5886406,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

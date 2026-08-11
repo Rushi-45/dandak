@@ -23,10 +23,10 @@
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Ahwa", "distance_km": 35 },
+    "nearest_town": { "name": "Ahwa", "distance_km": 52 },
     "coordinates": { "lat": 20.9503, "lng": 73.6596, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "ahwa": 35 }
+    "distances_km": { "ahwa": 52 }
   },
   "access": {
     "modes": {
@@ -98,6 +98,6 @@
     "sources": [
       { "title": "Google Maps — place 'Dhulda Water Fall' (20.9503, 73.6596); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Dhulda+Water+Fall/@20.950313,73.659578,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
-    "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
+    "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }
 }

@@ -27,7 +27,7 @@
     "nearest_town": { "name": "Subir", "distance_km": 4 },
     "coordinates": { "lat": 20.842, "lng": 73.762, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "subir": 4, "ahwa": 30, "saputara": 70 }
+    "distances_km": { "subir": 4, "ahwa": 15, "saputara": 57 }
   },
   "access": {
     "modes": {

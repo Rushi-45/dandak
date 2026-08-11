@@ -24,10 +24,10 @@
     "taluka": "Jhagadia (Bharuch)",
     "admin_district": "Bharuch",
     "outside_district": true,
-    "nearest_town": { "name": "Bharuch", "distance_km": 30 },
+    "nearest_town": { "name": "Bharuch", "distance_km": 23 },
     "coordinates": { "lat": 21.865, "lng": 73.085, "precision": "approximate" },
     "altitude_m": null,
-    "distances_km": { "bharuch": 30, "ankleshwar": 40, "vadodara": 70, "poicha": 75 }
+    "distances_km": { "bharuch": 23, "ankleshwar": 33, "vadodara": 59, "poicha": 75 }
   },
   "access": {
     "modes": {
@@ -116,6 +116,6 @@
       { "title": "Kabirvad — Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/bharuch/kabirvad.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
       { "title": "Kabirvad in Bharuch — History, Timings, Ticket Prices", "url": "https://www.theindia.co.in/places/kabirvad", "publisher": "theindia.co.in", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km"]
+    "needs_verification": ["location.coordinates"]
   }
 }

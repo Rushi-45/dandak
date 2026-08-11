@@ -23,10 +23,10 @@
     "taluka": "Subir",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Subir", "distance_km": 6 },
+    "nearest_town": { "name": "Subir", "distance_km": 1.9 },
     "coordinates": { "lat": 20.855, "lng": 73.755, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "subir": 6, "ahwa": 28, "saputara": 68 }
+    "distances_km": { "subir": 1.9, "ahwa": 18, "saputara": 60 }
   },
   "access": {
     "modes": {
@@ -110,6 +110,6 @@
     "last_verified": null,
     "confidence": "medium",
     "sources": [],
-    "needs_verification": ["location.coordinates", "location.distances_km"]
+    "needs_verification": ["location.coordinates"]
   }
 }

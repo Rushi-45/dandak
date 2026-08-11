@@ -24,10 +24,10 @@
     "taluka": "Dediapada",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Dediapada", "distance_km": 20 },
+    "nearest_town": { "name": "Dediapada", "distance_km": 17 },
     "coordinates": { "lat": 21.585, "lng": 73.51, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "dediapada": 20, "rajpipla": 45, "ekta-nagar": 65 }
+    "distances_km": { "dediapada": 17, "rajpipla": 44, "ekta-nagar": 72 }
   },
   "access": {
     "modes": {
@@ -106,6 +106,6 @@
     "sources": [
       { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["visit.fees", "location.coordinates", "location.distances_km"]
+    "needs_verification": ["visit.fees", "location.coordinates"]
   }
 }

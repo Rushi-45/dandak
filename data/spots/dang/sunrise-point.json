@@ -23,10 +23,10 @@
     "taluka": "Ahwa",
     "admin_district": null,
     "outside_district": false,
-    "nearest_town": { "name": "Saputara", "distance_km": 2 },
+    "nearest_town": { "name": "Saputara", "distance_km": 2.5 },
     "coordinates": { "lat": 20.583, "lng": 73.772, "precision": "approximate" },
     "altitude_m": 990,
-    "distances_km": { "saputara": 2.5, "ahwa": 48, "nashik": 82 }
+    "distances_km": { "saputara": 2.5, "ahwa": 45, "nashik": 85 }
   },
   "access": {
     "modes": {
@@ -104,6 +104,6 @@
       { "title": "Sunrise Point, Saputara — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d2633726-Reviews-Sunrise_Point-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" },
       { "title": "Places to Visit in Saputara", "url": "https://www.holidify.com/places/saputara/sightseeing-and-things-to-do.html", "publisher": "holidify.com", "accessed": "2026-08-08" }
     ],
-    "needs_verification": ["location.coordinates", "location.distances_km"]
+    "needs_verification": ["location.coordinates"]
   }
 }

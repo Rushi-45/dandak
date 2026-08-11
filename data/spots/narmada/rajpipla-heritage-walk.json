@@ -26,7 +26,7 @@
     "nearest_town": { "name": "Rajpipla", "distance_km": 0.5 },
     "coordinates": { "lat": 21.866, "lng": 73.502, "precision": "area" },
     "altitude_m": null,
-    "distances_km": { "rajpipla": 0.5, "ekta-nagar": 25, "vadodara": 70 }
+    "distances_km": { "rajpipla": 0.5, "ekta-nagar": 29, "vadodara": 78 }
   },
   "access": {
     "modes": {
