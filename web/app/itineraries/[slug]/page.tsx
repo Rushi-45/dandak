@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { JsonLd } from "@/components/json-ld";
 import { StopCard } from "@/components/stop-card";
 import { TracingBeam } from "@/components/tracing-beam";
 import { TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
 import routeData from "@/lib/routes.json";
 import { formatMonths } from "@/lib/format";
 import { getItineraries, getItinerary, getSpotById, getSpotImagePath } from "@/lib/data";
+import { abs } from "@/lib/site";
 import { categoryMeta } from "@/lib/ui";
 
 type Params = Promise<{ slug: string }>;
@@ -20,7 +22,31 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { slug } = await params;
   const it = getItinerary(slug);
   if (!it) return {};
-  return { title: it.title, description: it.notes ?? undefined };
+  const description =
+    it.notes ??
+    `A ${it.duration_days}-day route through ${it.districts.join(" and ")} with ${it.stops.length} stops.`;
+  const first = it.stops.map((s) => getSpotById(s.spot_id)).find(Boolean);
+  const image = first ? getSpotImagePath(first.id) : null;
+  const path = `/itineraries/${it.slug}`;
+
+  return {
+    title: it.title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "article",
+      url: path,
+      title: it.title,
+      description,
+      images: image ? [{ url: image, alt: it.title }] : undefined,
+    },
+    twitter: {
+      card: image ? "summary_large_image" : "summary",
+      title: it.title,
+      description,
+      images: image ? [image] : undefined,
+    },
+  };
 }
 
 const PARTY_LABEL: Record<string, string> = {
@@ -68,6 +94,46 @@ export default async function ItineraryPage({ params }: { params: Params }) {
 
   return (
     <article className="relative mx-auto max-w-3xl px-4 py-12">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TouristTrip",
+              name: it.title,
+              description: it.notes ?? undefined,
+              url: abs(`/itineraries/${it.slug}`),
+              touristType: it.party,
+              itinerary: {
+                "@type": "ItemList",
+                numberOfItems: mapStops.length,
+                itemListElement: mapStops.map((s, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "TouristAttraction",
+                    name: s.name,
+                    url: abs(`/spots/${s.district}/${s.slug}`),
+                  },
+                })),
+              },
+              isPartOf: { "@id": abs("/#website") },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Trips", item: abs("/itineraries") },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: it.title,
+                  item: abs(`/itineraries/${it.slug}`),
+                },
+              ],
+            },
+          ],
+        }}
+      />
       <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
 
       <nav className="text-xs text-stone-500">

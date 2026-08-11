@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
+import { JsonLd } from "@/components/json-ld";
 import { MediaGallery } from "@/components/media-gallery";
 import { SpotMap } from "@/components/spot-map";
 import { Spotlight } from "@/components/spotlight";
@@ -14,9 +15,11 @@ import {
   getSpot,
   getSpotById,
   getSpotGallery,
+  getSpotImagePath,
   getStaysNearSpot,
   type Spot,
 } from "@/lib/data";
+import { abs } from "@/lib/site";
 import { categoryMeta, CONFIDENCE_META, stayTypeMeta } from "@/lib/ui";
 
 type Params = Promise<{ district: string; slug: string }>;
@@ -29,9 +32,29 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { district, slug } = await params;
   const spot = getSpot(district, slug);
   if (!spot) return {};
+  const title = spot.seo.meta_title ?? spot.name.en;
+  const description = spot.seo.meta_description ?? spot.summary;
+  const image = getSpotImagePath(spot.id);
+  const path = `/spots/${spot.district}/${spot.slug}`;
+
   return {
-    title: spot.seo.meta_title ?? spot.name.en,
-    description: spot.seo.meta_description ?? spot.summary,
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: "article",
+      url: path,
+      title,
+      description,
+      // a link to a waterfall should preview the waterfall
+      images: image ? [{ url: image, alt: spot.name.en }] : undefined,
+    },
+    twitter: {
+      card: image ? "summary_large_image" : "summary",
+      title,
+      description,
+      images: image ? [image] : undefined,
+    },
   };
 }
 
@@ -109,8 +132,74 @@ export default async function SpotPage({ params }: { params: Params }) {
   const stays = getStaysNearSpot(spot);
   const gallery = getSpotGallery(spot);
 
+  const path = `/spots/${spot.district}/${spot.slug}`;
+  const image = getSpotImagePath(spot.id);
+  const free =
+    spot.visit.fees !== null &&
+    (spot.visit.fees.length === 0 || spot.visit.fees.every((f) => f.amount_inr === 0));
+
   return (
     <article className="relative mx-auto max-w-3xl px-4 py-12">
+      {/*
+        Only what the page shows and the dataset knows. No fee claim unless
+        visit.fees is populated, no opening hours (timings exist on barely half
+        the corpus), and coordinates go out with the precision we recorded.
+      */}
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TouristAttraction",
+              "@id": abs(`${path}#place`),
+              name: spot.name.en,
+              description: spot.summary,
+              url: abs(path),
+              ...(image ? { image: abs(image) } : {}),
+              ...(spot.visit.fees !== null ? { isAccessibleForFree: free } : {}),
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: spot.location.coordinates.lat,
+                longitude: spot.location.coordinates.lng,
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressRegion: "Gujarat",
+                addressCountry: "IN",
+                ...(spot.location.taluka ? { addressLocality: spot.location.taluka } : {}),
+              },
+              ...(spot.tags.length ? { keywords: spot.tags.join(", ") } : {}),
+              isPartOf: { "@id": abs("/#website") },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Spots", item: abs("/spots") },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: spot.district === "dang" ? "Dang" : "Narmada",
+                  item: abs(`/districts/${spot.district}`),
+                },
+                { "@type": "ListItem", position: 3, name: spot.name.en, item: abs(path) },
+              ],
+            },
+            // the answers below are on the page verbatim, which is the condition
+            ...(spot.faqs.length
+              ? [
+                  {
+                    "@type": "FAQPage",
+                    mainEntity: spot.faqs.map((f) => ({
+                      "@type": "Question",
+                      name: f.q,
+                      acceptedAnswer: { "@type": "Answer", text: f.a },
+                    })),
+                  },
+                ]
+              : []),
+          ],
+        }}
+      />
       {/* page glow */}
       <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
       <TracingBeam>

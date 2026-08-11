@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist } from "next/font/google";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { MotionProvider } from "@/components/motion-provider";
+import { SITE, abs } from "@/lib/site";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
@@ -17,18 +19,66 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: {
-    default: "Dandak — Dang & Narmada Travel Guide",
+    default: SITE.title,
     template: "%s | Dandak",
   },
-  description:
-    "Waterfalls, forests, the Statue of Unity and living tribal heritage — a verified travel dataset for Gujarat's Dang and Narmada districts.",
+  description: SITE.description,
+  applicationName: SITE.name,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    locale: SITE.locale,
+    url: SITE.url,
+    title: SITE.title,
+    description: SITE.description,
+    images: [{ url: SITE.ogImage, width: 1920, height: 1080, alt: "Don hill, interior Dang" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.title,
+    description: SITE.description,
+    images: [SITE.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  category: "travel",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background text-stone-200">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": abs("/#website"),
+                url: SITE.url,
+                name: SITE.name,
+                description: SITE.description,
+                inLanguage: "en-IN",
+                publisher: { "@id": abs("/#publisher") },
+              },
+              {
+                "@type": "Organization",
+                "@id": abs("/#publisher"),
+                name: SITE.name,
+                url: SITE.url,
+                description:
+                  "An open, provenance-tracked tourism dataset for the Dandakaranya belt of Gujarat.",
+                sameAs: ["https://github.com/Rushi-45/dandak"],
+              },
+            ],
+          }}
+        />
         <MotionProvider>
           <div className="h-px bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent" />
           <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#080c0b]/75 backdrop-blur-xl">
