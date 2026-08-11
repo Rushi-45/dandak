@@ -435,6 +435,46 @@ export default async function SpotPage({ params }: { params: Params }) {
         </FadeIn>
       )}
 
+      {/* Written, source-tracked prose that until now rendered nowhere. This is the
+          canonical home for it — area pages excerpt and link back here. */}
+      {(spot.access?.road_condition ||
+        spot.access?.parking?.notes ||
+        spot.seasonality?.notes ||
+        spot.visit?.notes ||
+        spot.experience?.photography_notes ||
+        spot.amenities?.food ||
+        spot.amenities?.toilets ||
+        spot.amenities?.guides) && (
+        <FadeIn>
+          <section className="mt-12">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              Practical detail
+            </h2>
+            <dl className="mt-4 space-y-4 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
+              {[
+                { label: "The road", value: spot.access?.road_condition },
+                { label: "Parking", value: spot.access?.parking?.notes },
+                { label: "Season", value: spot.seasonality?.notes },
+                { label: "Visiting", value: spot.visit?.notes },
+                { label: "Photography", value: spot.experience?.photography_notes },
+                { label: "Food", value: spot.amenities?.food },
+                { label: "Toilets", value: spot.amenities?.toilets },
+                { label: "Guides", value: spot.amenities?.guides },
+              ]
+                .filter((r) => typeof r.value === "string" && r.value.trim().length > 0)
+                .map((r) => (
+                  <div key={r.label}>
+                    <dt className="text-[10px] font-bold uppercase tracking-widest text-stone-500">
+                      {r.label}
+                    </dt>
+                    <dd className="mt-1 text-sm leading-relaxed text-stone-300">{r.value}</dd>
+                  </div>
+                ))}
+            </dl>
+          </section>
+        </FadeIn>
+      )}
+
       {/* Part of these trips */}
       {trips.length > 0 && (
         <FadeIn>

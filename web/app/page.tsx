@@ -18,6 +18,13 @@ import shabariImg from "@/public/images/spots/dang-shabari-dham.jpg";
 // which the layout deliberately no longer sets for everyone.
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 
+/**
+ * "In season right now" reads the clock, and this route is prerendered — so the
+ * month was frozen at whenever the site last built, and would have advertised
+ * August waterfalls in December. Regenerate daily so the claim stays true.
+ */
+export const revalidate = 86400;
+
 const TICKER = [
   "Monsoon waterfalls",
   "182 m of Sardar",
@@ -207,9 +214,12 @@ export default function Home() {
                 <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[#080c0b] to-transparent" />
                 <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[#080c0b] to-transparent" />
                 <div className="animate-marquee flex w-max gap-4 px-4 pb-2 [animation-duration:55s] group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+                  {/* toCardData, not the raw record: SpotCard reads `image`, which only
+                      toCardData resolves — so all 20 of these rendered image-less while
+                      every other grid on the page had photos. */}
                   {[...inSeason, ...inSeason].map((spot, i) => (
                     <div key={`${spot.id}-${i}`} className="w-[300px] shrink-0">
-                      <SpotCard spot={spot} />
+                      <SpotCard spot={toCardData(spot)} />
                     </div>
                   ))}
                 </div>

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { MotionProvider } from "@/components/motion-provider";
 import { SITE, abs } from "@/lib/site";
-import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
 const geistSans = Geist({

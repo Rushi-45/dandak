@@ -1,3 +1,7 @@
+// Imported here rather than in the root layout: as a global it put ~18 KB gz of
+// render-blocking CSS on every page, including the homepage, which has no map.
+// Every map component goes through this module, so this is the one place needed.
+import "leaflet/dist/leaflet.css";
 import type { Map as LeafletMap_ } from "leaflet";
 
 const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";

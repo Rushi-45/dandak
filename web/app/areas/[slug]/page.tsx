@@ -76,20 +76,37 @@ function Section({
   );
 }
 
-/** A written note attached to the place it describes — the unrendered prose, finally shown. */
+/**
+ * First sentence only, with the rest on the spot's own page.
+ *
+ * The spot page is the canonical home for a spot's prose — it is about that
+ * spot. Printing these notes in full here as well would put the same paragraphs
+ * at two URLs and make the site compete with itself, which is the thing every
+ * facet page gets wrong. An excerpt plus a link is the honest shape: enough to
+ * be useful in aggregate, and a reason to open the record.
+ */
+function excerpt(text: string, max = 180): string {
+  const stop = text.search(/[.!?](\s|$)/);
+  const first = stop > 0 ? text.slice(0, stop + 1) : text;
+  return first.length > max ? `${first.slice(0, max).trimEnd()}…` : first;
+}
+
 function NoteList({ items }: { items: { spot: Spot; text: string }[] }) {
   return (
-    <div className="mt-4 space-y-3">
+    <div className="mt-4 space-y-2.5">
       {items.map(({ spot, text }) => (
-        <div key={spot.id} className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
-          <Link
-            href={`/spots/${spot.district}/${spot.slug}`}
-            className="font-serif text-base font-black text-stone-100 transition-colors hover:text-emerald-200"
-          >
+        <Link
+          key={spot.id}
+          href={`/spots/${spot.district}/${spot.slug}`}
+          className="group block rounded-2xl border border-white/[0.07] bg-white/[0.02] p-4 transition-colors hover:border-emerald-400/30 hover:bg-white/[0.04]"
+        >
+          <span className="font-serif text-base font-black text-stone-100 group-hover:text-emerald-200">
             {spot.name.en}
-          </Link>
-          <p className="mt-1.5 text-sm leading-relaxed text-stone-400">{text}</p>
-        </div>
+          </span>
+          <span className="mt-1 block text-sm leading-relaxed text-stone-400">
+            {excerpt(text)}
+          </span>
+        </Link>
       ))}
     </div>
   );
