@@ -256,6 +256,19 @@ body {
   filter: brightness(2.3) contrast(1.25) saturate(1.3);
 }
 
+/* A bed, not a sight. Wider than a stop, square-ish, and filled in the day's
+   colour so it reads as a pause in the route rather than another thing to see. */
+.dk-stop-bed {
+  width: 34px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(8, 12, 11, 0.96);
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.7),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.06);
+}
+
 /* Trip start/finish: an emoji, not a numbered stop. Dashed ring so it reads as
    a boundary of the route rather than a place we are recommending. */
 .dk-stop-endpoint {

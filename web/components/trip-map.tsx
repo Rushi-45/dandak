@@ -16,8 +16,8 @@ export interface TripMapStop {
   order: number;
   emoji: string;
   approx: boolean;
-  /** endpoints draw their emoji instead of a stop number and never link */
-  kind?: "stop" | "endpoint";
+  /** endpoints and beds draw their emoji instead of a stop number and never link */
+  kind?: "stop" | "endpoint" | "bed";
   /** overrides the "Day N · stop N" popup subtitle */
   note?: string;
 }
@@ -32,7 +32,7 @@ interface TripMapProps {
   routes?: DayRoutes;
 }
 
-const DAY_STROKE = ["#34d399", "#fbbf24", "#38bdf8", "#f472b6", "#a78bfa"];
+export const DAY_STROKE = ["#34d399", "#fbbf24", "#38bdf8", "#f472b6", "#a78bfa"];
 const DAY_TEXT = [
   "text-emerald-300 ring-emerald-400/30 bg-emerald-400/10",
   "text-amber-300 ring-amber-400/30 bg-amber-400/10",
@@ -132,7 +132,9 @@ export function TripMap({ stops, durationDays, routes }: TripMapProps) {
 
         for (const s of stops) {
           const color = DAY_STROKE[(s.day - 1) % DAY_STROKE.length];
-          const isEndpoint = s.kind === "endpoint";
+          const isBed = s.kind === "bed";
+          const isGlyph = isBed || s.kind === "endpoint";
+          const extra = isBed ? " dk-stop-bed" : s.kind === "endpoint" ? " dk-stop-endpoint" : "";
           const link =
             s.district && s.slug
               ? `<a href="/spots/${s.district}/${s.slug}">Open the record →</a>`
@@ -140,13 +142,13 @@ export function TripMap({ stops, durationDays, routes }: TripMapProps) {
           L.marker(posOf(s), {
             icon: L.divIcon({
               className: "dk-stop-wrap",
-              html: `<span class="dk-stop${isEndpoint ? " dk-stop-endpoint" : ""}" style="border-color:${color};color:${color}">${
-                isEndpoint ? s.emoji : s.order
+              html: `<span class="dk-stop${extra}" style="border-color:${color};color:${color}">${
+                isGlyph ? s.emoji : s.order
               }</span>`,
               iconSize: [36, 36],
               iconAnchor: [18, 18],
             }),
-            zIndexOffset: isEndpoint ? 400 : 500,
+            zIndexOffset: isGlyph ? 400 : 500,
             riseOnHover: true,
             title: s.name,
           })

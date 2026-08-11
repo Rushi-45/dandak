@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  Fragment,
   useCallback,
   useEffect,
   useMemo,
@@ -11,7 +12,7 @@ import {
 import { useRouter, useSearchParams } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
-import { TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
+import { DAY_STROKE, TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
 import { fetchRoadRoute, type RoadLeg } from "@/lib/road-route";
 import Link from "next/link";
 import { categoryMeta, PRICE_BAND_LABEL, stayTypeMeta } from "@/lib/ui";
@@ -415,6 +416,63 @@ const MATCH_LABEL: Record<string, string> = {
   coords: "nearest bed",
 };
 
+/** One line of the route list. `rest` marks a night, which reads differently from a sight. */
+function RouteRow({
+  glyph,
+  title,
+  sub,
+  color,
+  href,
+  rest,
+}: {
+  glyph: string;
+  title: string;
+  sub: string;
+  color: string;
+  href?: string;
+  rest?: boolean;
+}) {
+  const body = (
+    <>
+      <span
+        aria-hidden
+        className={`flex shrink-0 items-center justify-center border-2 text-[11px] font-bold ${
+          rest ? "h-7 w-9 rounded-lg" : "h-7 w-7 rounded-full"
+        }`}
+        style={{ borderColor: color, color }}
+      >
+        {glyph}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block truncate text-sm font-semibold text-stone-200">{title}</span>
+        <span className="block truncate text-[11px] text-stone-500">{sub}</span>
+      </span>
+      {rest && (
+        <span className="shrink-0 rounded-full bg-amber-400/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-300 ring-1 ring-amber-400/25">
+          Rest
+        </span>
+      )}
+      {href && <span className="shrink-0 text-xs text-stone-600">→</span>}
+    </>
+  );
+
+  const className = `flex items-center gap-3 px-5 py-2.5 ${
+    rest ? "bg-amber-400/[0.04]" : ""
+  } ${href ? "transition-colors hover:bg-white/[0.03]" : ""}`;
+
+  return (
+    <li>
+      {href ? (
+        <Link href={href} className={className}>
+          {body}
+        </Link>
+      ) : (
+        <div className={className}>{body}</div>
+      )}
+    </li>
+  );
+}
+
 /** Drop waypoints that repeat the previous one — a day's end node is usually its last stop. */
 function dedupeWaypoints(pts: [number, number][]): [number, number][] {
   const out: [number, number][] = [];
@@ -601,8 +659,8 @@ function PlanView({
           order: 500 + d.day, // after that day's stops, before the finish marker
           emoji: "🛏️",
           approx: true,
-          kind: "endpoint",
-          note: `Night ${d.day}`,
+          kind: "bed",
+          note: `Night ${d.day} — where you sleep`,
         });
       }
     }
@@ -675,6 +733,56 @@ function PlanView({
       <div className="mt-6">
         <TripMap stops={mapStops} durationDays={days} routes={routes} />
       </div>
+
+      {/* The whole route in order. A map answers "where"; this answers "then what",
+          and it is the only place a night reads as a night rather than a marker. */}
+      <section className="mt-4 overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02]">
+        <p className="border-b border-white/[0.06] px-5 py-3 text-[11px] font-bold uppercase tracking-[0.2em] text-stone-500">
+          The whole route
+        </p>
+        <ol className="divide-y divide-white/[0.05]">
+          <RouteRow
+            glyph="🚩"
+            title={plan.from.name}
+            sub="Trip starts here"
+            color="#78716c"
+          />
+          {plan.days.map((d) => {
+            const color = DAY_STROKE[(d.day - 1) % DAY_STROKE.length];
+            const bed = bedFor(d.day);
+            return (
+              <Fragment key={d.day}>
+                {d.stops.map((s) => (
+                  <RouteRow
+                    key={s.spot.id}
+                    glyph={String(s.order)}
+                    title={s.spot.name}
+                    sub={`Day ${d.day} · ${categoryMeta(s.spot.category).emoji} ${
+                      s.driveKmFromPrev > 0 ? `${Math.round(s.driveKmFromPrev)} km · ` : ""
+                    }${hhmm(s.spot.durationMin)} here`}
+                    color={color}
+                    href={`/spots/${s.spot.district}/${s.spot.slug}`}
+                  />
+                ))}
+                {bed && (
+                  <RouteRow
+                    glyph="🛏️"
+                    title={bed.stay.name}
+                    sub={`Night ${d.day} · ${stayTypeMeta(bed.stay.type).label} · ${
+                      PRICE_BAND_LABEL[bed.stay.priceBand] ?? bed.stay.priceBand
+                    }`}
+                    color={color}
+                    rest
+                  />
+                )}
+              </Fragment>
+            );
+          })}
+          {!plan.isLoop && (
+            <RouteRow glyph="🏁" title={plan.to.name} sub="Trip ends here" color="#78716c" />
+          )}
+        </ol>
+      </section>
 
       {plan.days.map((d) => (
         <section key={d.day} className="mt-10">
