@@ -201,7 +201,7 @@ export function RealMap({ markers, categories }: LeafletMapProps) {
           </span>
         </div>
         <p className="text-[11px] text-stone-600">
-          Interior positions can be approximate — each record's ledger tells you how exact
+          Interior positions can be approximate — each record&rsquo;s ledger tells you how exact
         </p>
       </div>
     </div>

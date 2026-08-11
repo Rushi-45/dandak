@@ -8,10 +8,14 @@ import { TiltCard } from "@/components/tilt-card";
 import { Meteors } from "@/components/meteors";
 import { getAllSpots, getDistrict, getEvents, getItineraries, getSpotById, toCardData } from "@/lib/data";
 import { formatMonths, MONTHS } from "@/lib/format";
-import souImg from "@/public/images/statue-of-unity.jpg";
-import lakeImg from "@/public/images/saputara-lake.jpg";
+// Static imports, because placeholder="blur" needs one. These point at the
+// spots/ copies: three of the four top-level files were byte-identical
+// duplicates of a spots/ image, so they shipped twice and Vercel optimised
+// each twice. gira-falls.jpg is genuinely a different, larger crop, so it stays.
+import souImg from "@/public/images/spots/narmada-statue-of-unity.jpg";
+import lakeImg from "@/public/images/spots/dang-saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
-import damImg from "@/public/images/sardar-sarovar-dam.jpg";
+import damImg from "@/public/images/spots/narmada-sardar-sarovar-dam.jpg";
 import shabariImg from "@/public/images/spots/dang-shabari-dham.jpg";
 
 // Title and description come from the root layout; this only claims the canonical,

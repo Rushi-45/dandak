@@ -48,8 +48,9 @@ export default function MapPage() {
         </span>
       </h1>
       <p className="mt-3 max-w-xl text-sm text-stone-500">
-        All {markers.length} documented spots across Dang and Narmada, plotted from the dataset's
-        own coordinates. Filter by category, hover for names, click through to the full record.
+        All {markers.length} documented spots across Dang and Narmada, plotted from the
+        dataset&rsquo;s own coordinates. Filter by category, hover for names, click through to the
+        full record.
       </p>
 
       <div className="mt-8">
@@ -58,8 +59,9 @@ export default function MapPage() {
 
       <p className="mt-4 text-xs leading-relaxed text-stone-600">
         Switch layers (top right) between dark, roads, satellite and terrain. Interior positions can be
-        approximate or area-level — it's the standing item on the verification ledger, and each
-        record's provenance tells you how exact its pin is. For turn-by-turn navigation, use the
+        approximate or area-level — it&rsquo;s the standing item on the verification ledger, and
+        each record&rsquo;s provenance tells you how exact its pin is. For turn-by-turn navigation,
+        use the
         Google Maps buttons on trip pages.
       </p>
     </div>

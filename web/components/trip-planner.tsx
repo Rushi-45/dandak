@@ -9,7 +9,7 @@ import {
   useState,
   useSyncExternalStore,
 } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
 import { DAY_STROKE, TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
@@ -190,7 +190,6 @@ function hhmm(min: number): string {
 // ------------------------------------------------------------------ planner
 
 export function TripPlanner({ data }: { data: PlannerData }) {
-  const router = useRouter();
   const params = useSearchParams();
   const options = useMemo(() => buildOptions(data), [data]);
 
@@ -235,7 +234,16 @@ export function TripPlanner({ data }: { data: PlannerData }) {
     [from, to, days, month, must]
   );
 
-  // the URL is the only persistence this feature has — keep it in step
+  /**
+   * The URL is the only persistence this feature has — keep it in step.
+   *
+   * window.history.replaceState rather than router.replace: the planner rewrites
+   * the URL on every pill click and every keystroke in the must-visit box, and
+   * router.replace treats each as a navigation, fetching an RSC payload for a
+   * page whose content never changes. Next integrates replaceState with the
+   * router and keeps useSearchParams in sync, so this is the same behaviour
+   * without the round-trips.
+   */
   useEffect(() => {
     if (!month) return;
     const q = new URLSearchParams(encodePlan(input));
@@ -246,8 +254,8 @@ export function TripPlanner({ data }: { data: PlannerData }) {
         .join(",");
       if (picks) q.set("beds", picks);
     }
-    router.replace(`/plan?${q.toString()}`, { scroll: false });
-  }, [input, month, router, withBeds, bedChoice]);
+    window.history.replaceState(null, "", `/plan?${q.toString()}`);
+  }, [input, month, withBeds, bedChoice]);
 
   const plan: PlanResult | null = useMemo(
     () => (month ? planTrip(input, data) : null),

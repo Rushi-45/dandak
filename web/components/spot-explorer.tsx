@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, m } from "motion/react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { SpotCard, type SpotCardData } from "@/components/spot-card";
 import { categoryMeta } from "@/lib/ui";
 
@@ -26,18 +26,39 @@ function labelize(s: string) {
   return s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+/**
+ * The district named by /spots#dang.
+ *
+ * A fragment is never sent to the server, so the server can only ever render
+ * "all" — which is why this cannot be a lazy useState initialiser without a
+ * hydration mismatch, and why setting it from an effect was the previous
+ * approach. useSyncExternalStore is the supported way to hold a value that
+ * legitimately differs between server and client, and subscribing to
+ * hashchange means arriving from another page's #dang link now works while
+ * the page is already open, which the one-shot effect never did.
+ */
+type DistrictTab = "all" | "dang" | "narmada";
+
+const subscribeHash = (onChange: () => void) => {
+  window.addEventListener("hashchange", onChange);
+  return () => window.removeEventListener("hashchange", onChange);
+};
+const hashDistrict = (): DistrictTab => {
+  const h = window.location.hash.replace("#", "");
+  return h === "dang" || h === "narmada" ? h : "all";
+};
+const serverDistrict = (): DistrictTab => "all";
+
 export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
-  const [district, setDistrict] = useState<"all" | "dang" | "narmada">("all");
+  // null until the reader picks a tab, so the #dang deep link keeps working
+  const [districtChoice, setDistrict] = useState<DistrictTab | null>(null);
   const [category, setCategory] = useState<string | null>(null);
   const [tags, setTags] = useState<string[]>([]);
   const [query, setQuery] = useState("");
   const [ph, setPh] = useState(0);
 
-  // deep links: /spots#dang preselects the district tab
-  useEffect(() => {
-    const h = window.location.hash.replace("#", "");
-    if (h === "dang" || h === "narmada") setDistrict(h);
-  }, []);
+  const fromHash = useSyncExternalStore(subscribeHash, hashDistrict, serverDistrict);
+  const district = districtChoice ?? fromHash;
 
   useEffect(() => {
     const t = setInterval(() => setPh((v) => (v + 1) % PLACEHOLDERS.length), 2800);
