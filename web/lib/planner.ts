@@ -56,6 +56,9 @@ export interface PlannerStay {
   lat: number | null;
   lng: number | null;
   bookingUrl: string | null;
+  /** the published tariff line — the single most useful thing when choosing a bed */
+  bookingNotes: string | null;
+  contact: string | null;
 }
 
 export interface PlannerData {
@@ -104,7 +107,8 @@ export interface PlannedDay {
   driveMin: number;
   visitMin: number;
   transitLeg: { fromName: string; toName: string; km: number; min: number } | null;
-  stay: { stay: PlannerStay; matchedOn: "cluster" | "nearest-spot" | "coords" } | null;
+  /** empty on the final day — you go home rather than sleep */
+  stays: StayOption[];
 }
 
 export interface Excluded {
@@ -545,33 +549,61 @@ export function orderRadial(base: Node, interior: Node[]): Node[] {
 
 // ---------------------------------------------------------------- stays
 
-export function suggestStay(
-  dayEnd: Node,
-  stays: PlannerStay[]
-): { stay: PlannerStay; matchedOn: "cluster" | "nearest-spot" | "coords" } | null {
-  if (!stays.length) return null;
-  const spotId = dayEnd.spot?.id ?? null;
+export type StayMatch = "at-the-spot" | "nearest-spot" | "cluster" | "coords";
 
-  if (spotId) {
-    const byNearest = stays.find((s) => s.spotId === spotId || s.nearestSpotIds.includes(spotId));
-    if (byNearest) return { stay: byNearest, matchedOn: "nearest-spot" };
+export interface StayOption {
+  stay: PlannerStay;
+  matchedOn: StayMatch;
+  /** null for the handful of stays with no coordinates, e.g. the Tent Cities */
+  km: number | null;
+}
+
+/**
+ * Beds for the end of a day, best match first.
+ *
+ * Returns several rather than one: a night is a choice, and the corpus now has
+ * a government campsite, a homestay and a hotel within reach of the same
+ * evening. Match quality leads, then distance, then id so the list is stable
+ * across coordinate-fix commits.
+ */
+export function suggestStays(
+  dayEnd: Node,
+  stays: PlannerStay[],
+  limit = 3
+): StayOption[] {
+  const spotId = dayEnd.spot?.id ?? null;
+  const RANK: Record<StayMatch, number> = {
+    "at-the-spot": 0,
+    "nearest-spot": 1,
+    cluster: 2,
+    coords: 3,
+  };
+
+  const found: (StayOption & { rank: number })[] = [];
+  for (const stay of stays) {
+    const km =
+      stay.lat !== null && stay.lng !== null
+        ? haversineKm(dayEnd, { lat: stay.lat, lng: stay.lng })
+        : null;
+
+    let matchedOn: StayMatch | null = null;
+    if (spotId && stay.spotId === spotId) matchedOn = "at-the-spot";
+    else if (spotId && stay.nearestSpotIds.includes(spotId)) matchedOn = "nearest-spot";
+    else if (dayEnd.cluster && stay.cluster === dayEnd.cluster) matchedOn = "cluster";
+    else if (km !== null && km <= 60) matchedOn = "coords";
+    if (!matchedOn) continue;
+
+    found.push({ stay, matchedOn, km, rank: RANK[matchedOn] });
   }
-  if (dayEnd.cluster) {
-    const byCluster = stays.filter((s) => s.cluster === dayEnd.cluster);
-    if (byCluster.length) return { stay: byCluster[0], matchedOn: "cluster" };
-  }
-  const withCoords = stays.filter((s) => s.lat !== null && s.lng !== null);
-  if (!withCoords.length) return null;
-  let best = withCoords[0];
-  let bestKm = Infinity;
-  for (const s of withCoords) {
-    const km = haversineKm(dayEnd, { lat: s.lat!, lng: s.lng! });
-    if (km < bestKm) {
-      bestKm = km;
-      best = s;
-    }
-  }
-  return bestKm <= 60 ? { stay: best, matchedOn: "coords" } : null;
+
+  // A null distance can only come from an explicit match — the coords branch
+  // requires coordinates to fire at all — so it means "this record asserts it
+  // serves the spot", not "unreachable". Sorting it last would bury the Tent
+  // Cities, which have no coordinates and are the obvious bed at the Statue.
+  found.sort(
+    (a, b) => a.rank - b.rank || (a.km ?? 0) - (b.km ?? 0) || a.stay.id.localeCompare(b.stay.id)
+  );
+  return found.slice(0, limit).map(({ stay, matchedOn, km }) => ({ stay, matchedOn, km }));
 }
 
 // ------------------------------------------------------------- URL state
@@ -658,7 +690,7 @@ export function packDays(
       driveMin: dayDrive,
       visitMin: dayVisit,
       transitLeg: transit,
-      stay: dayIndex < days ? suggestStay(endNode, stays) : null,
+      stays: dayIndex < days ? suggestStays(endNode, stays) : [],
     });
     dayIndex++;
     dayStops = [];

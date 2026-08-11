@@ -13,7 +13,8 @@ import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
 import { TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
 import { fetchRoadRoute, type RoadLeg } from "@/lib/road-route";
-import { categoryMeta } from "@/lib/ui";
+import Link from "next/link";
+import { categoryMeta, PRICE_BAND_LABEL, stayTypeMeta } from "@/lib/ui";
 import { MONTHS } from "@/lib/format";
 import {
   decodePlan,
@@ -354,6 +355,14 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
 const NO_LEGS: Record<number, RoadLeg> = {};
 
+/** Say why a bed is being offered, so a 40 km "nearby" option is not a surprise. */
+const MATCH_LABEL: Record<string, string> = {
+  "at-the-spot": "at this stop",
+  "nearest-spot": "serves this stop",
+  cluster: "same area",
+  coords: "nearest bed",
+};
+
 /** Drop waypoints that repeat the previous one — a day's end node is usually its last stop. */
 function dedupeWaypoints(pts: [number, number][]): [number, number][] {
   const out: [number, number][] = [];
@@ -597,28 +606,65 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
             ))}
           </div>
 
-          {d.stay && (
-            <p className="mt-4 rounded-2xl border border-white/[0.07] bg-gradient-to-br from-emerald-400/[0.06] to-transparent p-4 text-sm text-stone-400">
-              🛏 <strong className="font-semibold text-stone-200">Sleep near here:</strong>{" "}
-              {d.stay.stay.name}
-              <span className="text-stone-500">
-                {" "}
-                ({d.stay.stay.type.replace(/-/g, " ")}, {d.stay.stay.priceBand})
-              </span>
-              {d.stay.stay.bookingUrl && (
-                <>
-                  {" · "}
-                  <a
-                    href={d.stay.stay.bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-emerald-300 hover:text-emerald-200"
-                  >
-                    booking ↗
-                  </a>
-                </>
-              )}
-            </p>
+          {d.stays.length > 0 && (
+            <div className="mt-5 rounded-2xl border border-white/[0.07] bg-gradient-to-br from-emerald-400/[0.06] to-transparent p-5">
+              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-emerald-300">
+                🛏 Where to sleep after day {d.day}
+              </p>
+              <div className="mt-3 space-y-2.5">
+                {d.stays.map((opt) => {
+                  const type = stayTypeMeta(opt.stay.type);
+                  return (
+                    <div
+                      key={opt.stay.id}
+                      className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3.5"
+                    >
+                      <div className="flex flex-wrap items-center gap-2 text-[11px]">
+                        <span className={`rounded-full px-2 py-0.5 font-semibold ring-1 ${type.chip}`}>
+                          {type.emoji} {type.label}
+                        </span>
+                        <span className="text-stone-500">
+                          {PRICE_BAND_LABEL[opt.stay.priceBand] ?? opt.stay.priceBand}
+                        </span>
+                        <span className="text-stone-600">{MATCH_LABEL[opt.matchedOn]}</span>
+                        {opt.km !== null && opt.km >= 1 && (
+                          <span className="text-stone-600">· ~{Math.round(opt.km)} km away</span>
+                        )}
+                      </div>
+                      <p className="mt-1.5 font-serif text-base font-black text-stone-100">
+                        {opt.stay.name}
+                      </p>
+                      {opt.stay.bookingNotes && (
+                        <p className="mt-1 text-xs leading-relaxed text-stone-500">
+                          {opt.stay.bookingNotes}
+                        </p>
+                      )}
+                      <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+                        {opt.stay.bookingUrl && (
+                          <a
+                            href={opt.stay.bookingUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold text-emerald-300 transition-colors hover:text-emerald-200"
+                          >
+                            Book ↗
+                          </a>
+                        )}
+                        {opt.stay.contact && (
+                          <span className="text-stone-500">{opt.stay.contact}</span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <p className="mt-3 text-[11px] text-stone-600">
+                Distances are straight-line from where the day ends.{" "}
+                <Link href="/stays" className="text-stone-500 underline hover:text-emerald-300">
+                  See every documented bed →
+                </Link>
+              </p>
+            </div>
           )}
         </section>
       ))}

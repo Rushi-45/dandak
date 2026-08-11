@@ -45,7 +45,8 @@ export interface RawStayForPlanner {
   spot_id: string | null;
   coordinates: { lat: number; lng: number } | null;
   nearest_spots?: { id: string; distance_km: number }[];
-  booking?: { url?: string | null };
+  booking?: { url?: string | null; notes?: string | null };
+  contact?: string | null;
 }
 
 export function toPlannerSpot(s: RawSpotForPlanner, hasPhoto: boolean): PlannerSpot {
@@ -84,6 +85,8 @@ export function toPlannerStay(s: RawStayForPlanner): PlannerStay {
     lat: s.coordinates?.lat ?? null,
     lng: s.coordinates?.lng ?? null,
     bookingUrl: s.booking?.url ?? null,
+    bookingNotes: s.booking?.notes ?? null,
+    contact: s.contact ?? null,
   };
 }
 

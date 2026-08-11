@@ -21,7 +21,7 @@ import {
   encodePlan,
   decodePlan,
   resolveNode,
-  suggestStay,
+  suggestStays,
   USABLE_DAY_MIN,
   MAX_STOPS_PER_DAY,
   type PlannerData,
@@ -263,8 +263,30 @@ test("no spot is ever visited twice, and orders are globally sequential", () => 
 
 test("Tent City is reachable even though it has no coordinates", () => {
   const soU = resolveNode("s:narmada-statue-of-unity", data)!;
-  const s = suggestStay(soU, data.stays);
-  assert.ok(s, "expected a stay suggestion near the Statue of Unity");
+  const options = suggestStays(soU, data.stays);
+  assert.ok(options.length > 0, "expected stay suggestions near the Statue of Unity");
+  assert.ok(
+    options.some((o) => o.stay.type === "tent-city"),
+    `expected a tent city among them, got: ${options.map((o) => o.stay.name).join(", ")}`
+  );
+});
+
+test("a night offers a choice, not a single bed", () => {
+  // the corpus now has a government campsite, a homestay and a hotel within
+  // reach of the same evening — a plan that names one of them is hiding two
+  const plan = planTrip(
+    { from: "h:surat", to: "h:saputara", days: 3, month: 8, must: [] },
+    data
+  )!;
+  const nights = plan.days.slice(0, -1);
+  assert.ok(nights.length > 0, "a 3-day trip should have nights to sleep through");
+  for (const d of nights) {
+    assert.ok(d.stays.length > 0, `day ${d.day} ends with nowhere to sleep`);
+    const ids = d.stays.map((s) => s.stay.id);
+    assert.equal(new Set(ids).size, ids.length, `day ${d.day} repeats a bed`);
+  }
+  // and the last day sends you home rather than to a hotel
+  assert.equal(plan.days[plan.days.length - 1].stays.length, 0);
 });
 
 // -------------------------------------------------------------- URL state
