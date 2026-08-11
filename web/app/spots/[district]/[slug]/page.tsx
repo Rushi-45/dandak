@@ -14,6 +14,7 @@ import {
   getSpot,
   getSpotById,
   getSpotGallery,
+  getStaysNearSpot,
   type Spot,
 } from "@/lib/data";
 import { categoryMeta, CONFIDENCE_META } from "@/lib/ui";
@@ -33,6 +34,16 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description: spot.seo.meta_description ?? spot.summary,
   };
 }
+
+const STAY_TYPE_LABEL: Record<string, string> = {
+  "eco-campsite": "🏕 forest campsite",
+  homestay: "🏡 homestay",
+  guesthouse: "🛏 guesthouse",
+  hotel: "🏨 hotel",
+  resort: "🌿 resort",
+  "tent-city": "⛺ tent city",
+  dharamshala: "🛕 dharamshala",
+};
 
 const DAY_NAMES: Record<string, string> = {
   mon: "Monday",
@@ -105,6 +116,7 @@ export default async function SpotPage({ params }: { params: Params }) {
   const conf = CONFIDENCE_META[spot.provenance.confidence];
   const paragraphs = spot.description?.split("\n\n") ?? [];
   const verified = spot.provenance.last_verified;
+  const stays = getStaysNearSpot(spot);
   const gallery = getSpotGallery(spot);
 
   return (
@@ -324,6 +336,57 @@ export default async function SpotPage({ params }: { params: Params }) {
                 <div key={f.q} className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
                   <h3 className="text-sm font-bold text-stone-100">{f.q}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-400">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* Where to sleep */}
+      {stays.length > 0 && (
+        <FadeIn>
+          <section className="mt-12">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              Where to sleep
+            </h2>
+            <div className="mt-4 space-y-3">
+              {stays.map(({ stay, km }) => (
+                <div
+                  key={stay.id}
+                  className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5"
+                >
+                  <div className="flex flex-wrap items-center gap-2 text-[11px]">
+                    <span className="rounded-full bg-emerald-400/10 px-2 py-0.5 font-semibold text-emerald-300 ring-1 ring-emerald-400/25">
+                      {STAY_TYPE_LABEL[stay.type] ?? stay.type.replace(/-/g, " ")}
+                    </span>
+                    <span className="text-stone-500">{stay.price_band}</span>
+                    {km !== null && km > 0 && <span className="text-stone-600">· ~{km} km away</span>}
+                  </div>
+                  <h3 className="mt-1.5 font-serif text-lg font-black leading-snug text-stone-100">
+                    {stay.name}
+                  </h3>
+                  {stay.notes && (
+                    <p className="mt-1.5 text-sm leading-relaxed text-stone-400">{stay.notes}</p>
+                  )}
+                  {stay.booking.notes && (
+                    <p className="mt-2 text-xs leading-relaxed text-stone-500">
+                      {stay.booking.notes}
+                    </p>
+                  )}
+                  <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
+                    {stay.booking.url && (
+                      <a
+                        href={stay.booking.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-bold text-emerald-300 transition-colors hover:text-emerald-200"
+                      >
+                        Book on the Forest Department portal ↗
+                      </a>
+                    )}
+                    {stay.contact && <span className="text-stone-500">{stay.contact}</span>}
+                  </div>
                 </div>
               ))}
             </div>

@@ -9,8 +9,8 @@
   "spot_id": "dang-kilad-nature-campsite",
   "coordinates": { "lat": 20.776, "lng": 73.512, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; school groups block-book in season" },
-  "contact": null,
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=ofGvAhDE50kLcoYfg9NpZA%253d%253d", "notes": "Forest Department portal prices by tent grade and party size: white-house tents from ₹600 for two, forest tents from ₹650, deluxe from ₹1000, twin bungalow from ₹1950, Asopalav bungalow from ₹2400. School groups block-book in season." },
+  "contact": "Kilad-ecots@gujarat.gov.in · 02631-220246",
   "amenities": ["riverside cottages and dorms", "mess meals when booked", "nature-education trails"],
   "nearest_spots": [
     { "id": "dang-gira-falls", "distance_km": 4 },
@@ -24,7 +24,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "Kilad Camping Site — Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
-      { "title": "Kilad Campsite", "url": "https://kiladcampsite.com/", "publisher": "kiladcampsite.com", "accessed": "2026-08-08" }
+      { "title": "Kilad Campsite", "url": "https://kiladcampsite.com/", "publisher": "kiladcampsite.com", "accessed": "2026-08-08" },
+      { "title": "Kilad Campsite — site page, tariffs and contact (Nani Waghai, Ta. Vansda, Dist. Navsari)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=ofGvAhDE50kLcoYfg9NpZA%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

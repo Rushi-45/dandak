@@ -9,8 +9,8 @@
   "spot_id": "dang-mahal-eco-campsite",
   "coordinates": { "lat": 20.947, "lng": 73.71, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; winter weekends fill weeks ahead" },
-  "contact": null,
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUVeEvaL64CSF3UaGpX6WQ%253d%253d", "notes": "Forest Department portal lists Dangi huts from ₹1650, log huts from ₹2700 and suites from ₹3500 a night. Winter weekends fill weeks ahead." },
+  "contact": "Mahal-ecots@gujarat.gov.in · 02631-220203",
   "amenities": ["riverside cottages and tents", "mess meals when booked", "dawn guided walks", "inside Purna sanctuary"],
   "nearest_spots": [
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 0 },
@@ -23,7 +23,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "Mahal Eco Tourism Campsite", "url": "https://mahalcampsite.com/", "publisher": "mahalcampsite.com", "accessed": "2026-08-08" },
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Mahal Campsite — site page, tariffs and contact (Eco Tourism Development Society Sawardakasad, Ta. Subir)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUVeEvaL64CSF3UaGpX6WQ%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

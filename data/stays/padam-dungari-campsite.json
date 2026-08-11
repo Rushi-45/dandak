@@ -9,8 +9,8 @@
   "spot_id": "dang-padam-dungari",
   "coordinates": { "lat": 21.03, "lng": 73.4, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; technically in Tapi district but part of the same forest circuit" },
-  "contact": null,
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=%252fH0OaaPBJvJ85TLIA10LPg%253d%253d", "notes": "Forest Department portal lists AC cottages from ₹1800, non-AC from ₹1000, tents from ₹800 and a 14-bed dormitory at ₹3500, plus a ₹20-50 entry fee. Technically in Tapi district but part of the same forest circuit." },
+  "contact": "Padamdungari-ecots@gujarat.gov.in · 9106455413",
   "amenities": ["riverside cottages and tents", "mess meals when booked", "trails"],
   "nearest_spots": [
     { "id": "dang-padam-dungari", "distance_km": 0 },
@@ -22,7 +22,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Padam Dungari — site page, tariffs and contact (Padamdungari Eco Tourism Committee, TA Dolvan, Dist. Tapi)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=%252fH0OaaPBJvJ85TLIA10LPg%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

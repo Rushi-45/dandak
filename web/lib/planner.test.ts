@@ -63,7 +63,7 @@ const spot = (id: string) => {
 test("index loads the whole corpus", () => {
   assert.equal(data.spots.length, 106);
   assert.ok(data.hubs.length >= 15, `expected the hub table, got ${data.hubs.length}`);
-  assert.equal(data.stays.length, 16);
+  assert.equal(data.stays.length, 20);
 });
 
 // ---------------------------------------------------------------- geometry

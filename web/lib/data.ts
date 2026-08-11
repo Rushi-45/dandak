@@ -312,6 +312,56 @@ export function getFoodImagePath(foodId: string): string | null {
   return fs.existsSync(p) ? `/images/food/${foodId}.jpg` : null;
 }
 
+export interface Stay {
+  id: string;
+  slug: string;
+  name: string;
+  type: string;
+  district: "dang" | "narmada";
+  cluster: string | null;
+  spot_id: string | null;
+  coordinates: { lat: number; lng: number; precision: string } | null;
+  price_band: string;
+  booking: { mode: string; url: string | null; notes: string | null };
+  contact: string | null;
+  amenities: string[];
+  nearest_spots: { id: string; distance_km: number }[];
+  notes: string | null;
+}
+
+let staysCache: Stay[] | null = null;
+
+export function getStays(): Stay[] {
+  if (!staysCache) {
+    staysCache = readDir<Stay>("stays").sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return staysCache;
+}
+
+/**
+ * Beds near a spot, nearest first.
+ *
+ * Every spot record carries `access.stay_nearby`, but it is empty on all 106 of
+ * them — so this reads the relationship from the other end, where the data
+ * actually lives: each stay lists its own `nearest_spots`. Falls back to sharing
+ * a cluster, which is how a Saputara spot finds the Saputara hotel belt.
+ */
+export function getStaysNearSpot(spot: Spot, limit = 4): { stay: Stay; km: number | null }[] {
+  const direct: { stay: Stay; km: number | null }[] = [];
+  const sameCluster: { stay: Stay; km: number | null }[] = [];
+
+  for (const stay of getStays()) {
+    const edge = stay.nearest_spots?.find((n) => n.id === spot.id);
+    if (edge || stay.spot_id === spot.id) {
+      direct.push({ stay, km: edge ? edge.distance_km : 0 });
+    } else if (stay.cluster && stay.cluster === spot.cluster) {
+      sameCluster.push({ stay, km: null });
+    }
+  }
+  direct.sort((a, b) => (a.km ?? 0) - (b.km ?? 0));
+  return [...direct, ...sameCluster].slice(0, limit);
+}
+
 /**
  * The planner's payload: every spot, hub and stay, slimmed to what the algorithm
  * actually reads. `summary` and `description` are omitted deliberately — they are

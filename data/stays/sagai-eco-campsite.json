@@ -9,8 +9,8 @@
   "spot_id": "narmada-sagai-malsamot",
   "coordinates": { "lat": 21.585, "lng": 73.51, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/", "notes": "Gujarat Forest Department eco-tourism portal; monsoon weekends fill early" },
-  "contact": null,
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=XN50Ie31NBQmjvZHtMgSKw%253d%253d", "notes": "Forest Department portal lists 3 rooms from ₹1000 a night and a 30-bed dormitory at ₹7500. Monsoon weekends fill early." },
+  "contact": "Sagai-ecots@gujarat.gov.in · 7016861567",
   "amenities": ["cottages and tents", "mess meals when booked", "guided trails", "Malsamot plateau access"],
   "nearest_spots": [
     { "id": "narmada-sagai-malsamot", "distance_km": 0 },
@@ -23,7 +23,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Sagai-Samot — site page, tariffs and contact (Parisariya Pravasan Vikas Mandal, Ta. Dediapada)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=XN50Ie31NBQmjvZHtMgSKw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "maa-shabari-farmhouse",
+  "slug": "maa-shabari-farmhouse",
+  "name": "Maa Shabari Farm House & Resort, Subir",
+  "type": "resort",
+  "district": "dang",
+  "cluster": "dang-interior",
+  "spot_id": null,
+  "coordinates": { "lat": 20.845, "lng": 73.74, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "phone", "url": null, "notes": "Phone booking; food and accommodation both. Numbers come from a traveller writeup rather than an official listing, so confirm before building a plan around it." },
+  "contact": "+91 93776 59082 · +91 94261 64526 · 02631-290442",
+  "amenities": ["rooms with meals", "farm setting outside Subir", "handy for Shabari Dham and Pampa Sarovar"],
+  "nearest_spots": [
+    { "id": "dang-pampa-sarovar", "distance_km": 6 },
+    { "id": "dang-shabari-dham", "distance_km": 7 },
+    { "id": "dang-purna-wildlife-sanctuary", "distance_km": 10 }
+  ],
+  "notes": "The practical bed on the Subir side, which otherwise has none — it puts the Ramayana-trail sites and the Purna sanctuary gate within a short morning drive instead of an hour from Ahwa.",
+  "provenance": {
+    "created": "2026-08-11",
+    "last_verified": null,
+    "confidence": "low",
+    "sources": [
+      { "title": "Where To Stay In Dang — Accommodation Options in Dangs Region", "url": "https://darpan.blog/travel/stay-in-dang/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
+    ],
+    "needs_verification": ["contact", "coordinates", "amenities", "price_band"]
+  }
+}

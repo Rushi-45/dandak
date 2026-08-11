@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "devinamal-campsite",
+  "slug": "devinamal-campsite",
+  "name": "Devinamal Eco Campsite, Ahwa",
+  "type": "eco-campsite",
+  "district": "dang",
+  "cluster": "dang-interior",
+  "spot_id": null,
+  "coordinates": { "lat": 20.71, "lng": 73.71, "precision": "area" },
+  "price_band": "budget",
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUjarSmw2usetBTF80QCLw%253d%253d", "notes": "Forest Department portal lists cottage rooms from ₹800 and wooden rooms from ₹2000 a night; run by the local Eco Tourism Committee, so meals are arranged rather than ordered." },
+  "contact": "Devinamal-ecots@gujarat.gov.in · 02631-220343",
+  "amenities": ["cottage rooms with attached bath", "wooden rooms", "committee-cooked meals on request", "walking and trekking from the gate", "Khapri river nearby"],
+  "nearest_spots": [
+    { "id": "dang-temburgartha-dam", "distance_km": 1 },
+    { "id": "dang-kunda-falls", "distance_km": 4 },
+    { "id": "dang-maharaychond-forest", "distance_km": 5 }
+  ],
+  "notes": "The Forest Department's own bed nearest to Ahwa — 7 km out on the Saputara road and 3 km off it, ringed by forest above the Khapri. Cheapest roofed night in interior Dang, and the closest thing to a base for the Ahwa-side waterfalls.",
+  "provenance": {
+    "created": "2026-08-11",
+    "last_verified": "2026-08-11",
+    "confidence": "medium",
+    "sources": [
+      { "title": "Devinamal Campsite — site page, tariffs and contact", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUjarSmw2usetBTF80QCLw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" },
+      { "title": "Devinamal Campsite — Eco Tourism Center in Dang, Gujarat", "url": "https://darpan.blog/travel/devinamal-campsite-eco-tourism-center-in-dang-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
+    ],
+    "needs_verification": ["coordinates", "amenities"]
+  }
+}
