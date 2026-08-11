@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/fade-in";
@@ -12,6 +13,10 @@ import lakeImg from "@/public/images/saputara-lake.jpg";
 import giraImg from "@/public/images/gira-falls.jpg";
 import damImg from "@/public/images/sardar-sarovar-dam.jpg";
 import shabariImg from "@/public/images/spots/dang-shabari-dham.jpg";
+
+// Title and description come from the root layout; this only claims the canonical,
+// which the layout deliberately no longer sets for everyone.
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const TICKER = [
   "Monsoon waterfalls",

@@ -26,7 +26,11 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   applicationName: SITE.name,
-  alternates: { canonical: "/" },
+  // No canonical here on purpose. Metadata is inherited, so a canonical on the
+  // root layout makes every page that does not override it claim to be the
+  // homepage — which told Google that /spots, /stays, /map, /events,
+  // /itineraries, /plan and both districts were all duplicates of "/". Each
+  // page declares its own; see app/page.tsx for the homepage's.
   openGraph: {
     type: "website",
     siteName: SITE.name,

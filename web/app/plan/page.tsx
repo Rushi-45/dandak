@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Plan your own trip",
   description:
     "Tell us where you start, where you finish and when you are travelling — get a day-by-day route through Dang and Narmada built from the whole dataset.",
+  alternates: { canonical: "/plan" },
 };
 
 export default function PlanPage() {

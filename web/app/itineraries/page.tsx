@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Trips & Itineraries",
   description:
     "Ready-made routes through Dang and Narmada — monsoon waterfall circuits, Statue of Unity days, Ramayana trails and offbeat forest loops.",
+  alternates: { canonical: "/itineraries" },
 };
 
 const PARTY_LABEL: Record<string, string> = {

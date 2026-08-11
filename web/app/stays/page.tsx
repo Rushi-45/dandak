@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Where to sleep",
   description:
     "Every documented bed across Dang and Narmada — Forest Department campsites with their official tariffs, the Statue of Unity tent cities, village homestays and the town lodges in between.",
+  alternates: { canonical: "/stays" },
 };
 
 const DISTRICT_LABEL: Record<string, string> = { dang: "Dang", narmada: "Narmada" };

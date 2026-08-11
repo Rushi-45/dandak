@@ -19,7 +19,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const { id } = await params;
   if (id !== "dang" && id !== "narmada") return {};
   const d = getDistrict(id);
-  return { title: `${d.name.en} District`, description: d.headline };
+  return {
+    title: `${d.name.en} District`,
+    description: d.headline,
+    alternates: { canonical: `/districts/${id}` },
+  };
 }
 
 const RAIN_STYLE: Record<string, string> = {

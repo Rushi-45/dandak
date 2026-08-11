@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Events & Seasons",
   description:
     "Dang Darbar, the Devmogra fair, Saputara's monsoon festival and the season windows that shape a Dang–Narmada trip.",
+  alternates: { canonical: "/events" },
 };
 
 const TYPE_STYLE: Record<string, string> = {

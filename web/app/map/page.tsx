@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "The Map",
   description:
     "Every documented spot in Dang and Narmada on one schematic map — filter by category, hover for names, click through to full records.",
+  alternates: { canonical: "/map" },
 };
 
 export default function MapPage() {

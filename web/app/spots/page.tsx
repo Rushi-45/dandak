@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "All Spots",
   description:
     "Search and filter every documented place in Dang and Narmada districts — waterfalls, viewpoints, temples, sanctuaries and the Statue of Unity campus.",
+  alternates: { canonical: "/spots" },
 };
 
 export default function SpotsPage() {
