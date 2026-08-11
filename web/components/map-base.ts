@@ -7,9 +7,12 @@ const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";
  * Esri place-name overlay that rides along with satellite only, since the other
  * bases carry their own labels. Shared by every map on the site.
  *
- * Every map opens on Roads: without them a reader cannot tell how any two pins
- * connect, which is the whole question a travel map has to answer. Pass
- * `base: "satellite"` for a map where the imagery is the point.
+ * Every map opens on Dark, which is the near-black CARTO basemap lifted by a CSS
+ * filter (see .dk-map-dark). Raw, its roads are drawn so faintly over this region
+ * that the layer reads as empty — the geometry is all there, just barely visible,
+ * so brightness and contrast are all it needed. That keeps the site's palette and
+ * still answers the question a travel map exists to answer: how do these two pins
+ * connect. Pass `base` for a map where imagery or a familiar light map is better.
  *
  * Why roads are a base layer rather than an overlay on the imagery: Esri's
  * transparent reference layers (World Transportation, World Reference Overlay,
@@ -24,7 +27,7 @@ const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";
 export function addBaseLayers(
   L: typeof import("leaflet"),
   map: LeafletMap_,
-  opts: { control?: boolean; base?: "satellite" | "roads" } = {}
+  opts: { control?: boolean; base?: "satellite" | "roads" | "dark" } = {}
 ) {
   const satellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
@@ -41,28 +44,31 @@ export function addBaseLayers(
     maxZoom: 16,
     attribution: "© OpenStreetMap contributors, SRTM · © OpenTopoMap (CC-BY-SA)",
   });
+  // className lands on the tile container only, so the filter never touches the
+  // route lines or markers drawn in the panes above it.
   const dark = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
     maxZoom: 19,
     attribution: CARTO_ATTR,
+    className: "dk-map-dark",
   });
 
-  const onRoads = opts.base !== "satellite";
-  (onRoads ? roads : satellite).addTo(map);
+  const chosen = opts.base ?? "dark";
+  ({ satellite, roads, dark }[chosen] ?? dark).addTo(map);
 
   const placeLabels = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
     { maxZoom: 17, attribution: "Labels © Esri" }
   );
-  if (!onRoads) placeLabels.addTo(map);
+  if (chosen === "satellite") placeLabels.addTo(map);
 
   if (opts.control !== false) {
     L.control
       .layers(
         {
-          "🛰 Satellite": satellite,
-          "🛣 Roads": roads,
-          "⛰ Terrain": terrain,
           "🌒 Dark": dark,
+          "🛣 Roads": roads,
+          "🛰 Satellite": satellite,
+          "⛰ Terrain": terrain,
         },
         undefined,
         { position: "topright" }
