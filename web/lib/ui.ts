@@ -29,6 +29,54 @@ export function categoryMeta(category: string) {
   );
 }
 
+/** Stay type → visual identity. Shared by /stays and the spot pages so a bed reads the same everywhere. */
+export const STAY_TYPE_META: Record<string, { emoji: string; label: string; chip: string }> = {
+  "eco-campsite": {
+    emoji: "🏕️",
+    label: "forest campsite",
+    chip: "bg-lime-400/10 text-lime-300 ring-lime-400/30",
+  },
+  homestay: {
+    emoji: "🏡",
+    label: "homestay",
+    chip: "bg-amber-400/10 text-amber-300 ring-amber-400/30",
+  },
+  guesthouse: {
+    emoji: "🛏️",
+    label: "guesthouse",
+    chip: "bg-sky-400/10 text-sky-300 ring-sky-400/30",
+  },
+  hotel: { emoji: "🏨", label: "hotel", chip: "bg-stone-400/10 text-stone-300 ring-stone-400/30" },
+  resort: { emoji: "🌿", label: "resort", chip: "bg-teal-400/10 text-teal-300 ring-teal-400/30" },
+  "tent-city": {
+    emoji: "⛺",
+    label: "tent city",
+    chip: "bg-violet-400/10 text-violet-300 ring-violet-400/30",
+  },
+  dharamshala: {
+    emoji: "🪔",
+    label: "dharamshala",
+    chip: "bg-orange-400/10 text-orange-300 ring-orange-400/30",
+  },
+};
+
+export function stayTypeMeta(type: string) {
+  return (
+    STAY_TYPE_META[type] ?? {
+      emoji: "🛏️",
+      label: type.replace(/-/g, " "),
+      chip: "bg-stone-400/10 text-stone-300 ring-stone-400/30",
+    }
+  );
+}
+
+export const PRICE_BAND_LABEL: Record<string, string> = {
+  budget: "Budget",
+  mid: "Mid-range",
+  premium: "Premium",
+  luxury: "Luxury",
+};
+
 export const CONFIDENCE_META: Record<string, { label: string; cls: string }> = {
   high: { label: "Verified", cls: "bg-emerald-400/10 text-emerald-300 ring-emerald-400/30" },
   medium: { label: "Researched", cls: "bg-amber-400/10 text-amber-300 ring-amber-400/30" },

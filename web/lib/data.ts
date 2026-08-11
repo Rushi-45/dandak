@@ -327,6 +327,13 @@ export interface Stay {
   amenities: string[];
   nearest_spots: { id: string; distance_km: number }[];
   notes: string | null;
+  provenance: {
+    created: string;
+    last_verified: string | null;
+    confidence: "high" | "medium" | "low";
+    sources: { title: string; url: string; publisher: string; accessed: string }[];
+    needs_verification: string[];
+  };
 }
 
 let staysCache: Stay[] | null = null;

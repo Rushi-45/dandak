@@ -32,14 +32,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MotionProvider>
           <div className="h-px bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent" />
           <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#080c0b]/75 backdrop-blur-xl">
-            <div className="mx-auto flex w-full max-w-6xl items-center gap-6 px-4 py-3.5">
+            <div className="mx-auto flex w-full max-w-6xl items-center gap-4 px-4 py-3.5 sm:gap-6">
               <Link
                 href="/"
-                className="bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text font-serif text-xl font-black italic tracking-tight text-transparent"
+                className="shrink-0 bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text font-serif text-xl font-black italic tracking-tight text-transparent"
               >
                 dandak
               </Link>
-              <nav className="flex items-center gap-4 text-sm text-stone-400 sm:gap-5">
+              {/* Six links no longer fit a 390px phone. Scroll the nav rather than
+                  drop a section from it — [&>a]:shrink-0 stops flex squeezing them. */}
+              <nav className="no-scrollbar flex min-w-0 items-center gap-4 overflow-x-auto text-sm text-stone-400 [&>a]:shrink-0 sm:gap-5">
                 <Link href="/spots" className="transition-colors hover:text-emerald-300">
                   Spots
                 </Link>
@@ -51,6 +53,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 </Link>
                 <Link href="/plan" className="transition-colors hover:text-emerald-300">
                   Plan
+                </Link>
+                <Link href="/stays" className="transition-colors hover:text-emerald-300">
+                  Stays
                 </Link>
                 <Link href="/events" className="transition-colors hover:text-emerald-300">
                   Events

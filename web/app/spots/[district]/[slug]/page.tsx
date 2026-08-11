@@ -17,7 +17,7 @@ import {
   getStaysNearSpot,
   type Spot,
 } from "@/lib/data";
-import { categoryMeta, CONFIDENCE_META } from "@/lib/ui";
+import { categoryMeta, CONFIDENCE_META, stayTypeMeta } from "@/lib/ui";
 
 type Params = Promise<{ district: string; slug: string }>;
 
@@ -34,16 +34,6 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description: spot.seo.meta_description ?? spot.summary,
   };
 }
-
-const STAY_TYPE_LABEL: Record<string, string> = {
-  "eco-campsite": "🏕 forest campsite",
-  homestay: "🏡 homestay",
-  guesthouse: "🛏 guesthouse",
-  hotel: "🏨 hotel",
-  resort: "🌿 resort",
-  "tent-city": "⛺ tent city",
-  dharamshala: "🛕 dharamshala",
-};
 
 const DAY_NAMES: Record<string, string> = {
   mon: "Monday",
@@ -357,8 +347,10 @@ export default async function SpotPage({ params }: { params: Params }) {
                   className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5"
                 >
                   <div className="flex flex-wrap items-center gap-2 text-[11px]">
-                    <span className="rounded-full bg-emerald-400/10 px-2 py-0.5 font-semibold text-emerald-300 ring-1 ring-emerald-400/25">
-                      {STAY_TYPE_LABEL[stay.type] ?? stay.type.replace(/-/g, " ")}
+                    <span
+                      className={`rounded-full px-2 py-0.5 font-semibold ring-1 ${stayTypeMeta(stay.type).chip}`}
+                    >
+                      {stayTypeMeta(stay.type).emoji} {stayTypeMeta(stay.type).label}
                     </span>
                     <span className="text-stone-500">{stay.price_band}</span>
                     {km !== null && km > 0 && <span className="text-stone-600">· ~{km} km away</span>}
