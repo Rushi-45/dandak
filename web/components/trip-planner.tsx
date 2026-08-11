@@ -199,6 +199,8 @@ export function TripPlanner({ data }: { data: PlannerData }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const initialParams = useMemo(() => new URLSearchParams(params.toString()), []);
 
   const [from, setFrom] = useState(initial.input?.from ?? "h:surat");
   const [to, setTo] = useState(initial.input?.to ?? "h:saputara");
@@ -206,6 +208,23 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   const [monthChoice, setMonth] = useState<number | null>(initial.input?.month || null);
   const [must, setMust] = useState<string[]>(initial.input?.must ?? []);
   const [mustQuery, setMustQuery] = useState("");
+
+  /**
+   * Beds are opt-in. Off, they are a suggestion under each day; on, the chosen
+   * one joins the route — a marker on the map, a waypoint the road line runs
+   * through, and the point the next morning starts from. Kept out of PlanInput
+   * so the algorithm stays pure and deterministic; these only shape what is
+   * drawn. decodePlan ignores unknown params, so they ride the same URL.
+   */
+  const [withBeds, setWithBeds] = useState(() => initialParams.get("bed") === "1");
+  const [bedChoice, setBedChoice] = useState<Record<number, string>>(() => {
+    const picks: Record<number, string> = {};
+    for (const part of (initialParams.get("beds") ?? "").split(",").filter(Boolean)) {
+      const [day, id] = part.split(":");
+      if (day && id) picks[Number(day)] = id;
+    }
+    return picks;
+  });
 
   const today = useSyncExternalStore(neverChanges, clientMonth, serverMonth);
   const month = monthChoice ?? today;
@@ -218,8 +237,16 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   // the URL is the only persistence this feature has — keep it in step
   useEffect(() => {
     if (!month) return;
-    router.replace(`/plan?${encodePlan(input)}`, { scroll: false });
-  }, [input, month, router]);
+    const q = new URLSearchParams(encodePlan(input));
+    if (withBeds) {
+      q.set("bed", "1");
+      const picks = Object.entries(bedChoice)
+        .map(([day, id]) => `${day}:${id}`)
+        .join(",");
+      if (picks) q.set("beds", picks);
+    }
+    router.replace(`/plan?${q.toString()}`, { scroll: false });
+  }, [input, month, router, withBeds, bedChoice]);
 
   const plan: PlanResult | null = useMemo(
     () => (month ? planTrip(input, data) : null),
@@ -336,6 +363,22 @@ export function TripPlanner({ data }: { data: PlannerData }) {
             )}
           </div>
         </div>
+
+        <label className="mt-6 flex cursor-pointer items-start gap-3 rounded-xl border border-white/[0.09] bg-white/[0.03] p-4 transition-colors hover:border-emerald-400/40">
+          <input
+            type="checkbox"
+            checked={withBeds}
+            onChange={(e) => setWithBeds(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-emerald-400"
+          />
+          <span className="text-sm text-stone-300">
+            Book a bed into the route
+            <span className="mt-0.5 block text-xs text-stone-500">
+              Adds each night&rsquo;s stay to the map and the driving line, and starts the next
+              morning from there. You pick which one.
+            </span>
+          </span>
+        </label>
       </div>
 
       {initial.dropped.length > 0 && (
@@ -346,7 +389,16 @@ export function TripPlanner({ data }: { data: PlannerData }) {
         </p>
       )}
 
-      {plan && <PlanView plan={plan} days={days} month={month} />}
+      {plan && (
+        <PlanView
+          plan={plan}
+          days={days}
+          month={month}
+          withBeds={withBeds}
+          bedChoice={bedChoice}
+          onPickBed={(day, id) => setBedChoice((prev) => ({ ...prev, [day]: id }))}
+        />
+      )}
     </>
   );
 }
@@ -373,16 +425,48 @@ function dedupeWaypoints(pts: [number, number][]): [number, number][] {
   return out;
 }
 
-function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month: number }) {
+function PlanView({
+  plan,
+  days,
+  month,
+  withBeds,
+  bedChoice,
+  onPickBed,
+}: {
+  plan: PlanResult;
+  days: number;
+  month: number;
+  withBeds: boolean;
+  bedChoice: Record<number, string>;
+  onPickBed: (day: number, stayId: string) => void;
+}) {
   const stops = plan.days.flatMap((d) => d.stops);
+
+  /**
+   * The bed chosen for each night, defaulting to the best match. A pick made
+   * for an earlier plan may name a stay that is no longer offered, so fall
+   * back rather than show nothing. Beds with no coordinates (the Tent Cities)
+   * cannot join the route, but stay selectable.
+   */
+  const bedFor = useCallback(
+    (day: number) => {
+      const d = plan.days.find((x) => x.day === day);
+      if (!withBeds || !d?.stays.length) return null;
+      const picked = d.stays.find((o) => o.stay.id === bedChoice[day]);
+      return picked ?? d.stays[0];
+    },
+    [plan, withBeds, bedChoice]
+  );
 
   // Stamped with the plan they belong to, so a stale set is ignored by
   // derivation rather than cleared by a setState in the effect body.
+  // beds are waypoints too, so a changed bed must invalidate the routed legs
   const planKey = useMemo(
     () =>
       `${plan.from.key}>${plan.to.key}|` +
-      plan.days.map((d) => `${d.day}:${d.stops.map((s) => s.spot.id).join(",")}`).join("|"),
-    [plan]
+      plan.days.map((d) => `${d.day}:${d.stops.map((s) => s.spot.id).join(",")}`).join("|") +
+      `|beds:${withBeds ? plan.days.map((d) => bedFor(d.day)?.stay.id ?? "-").join(",") : "off"}`,
+    [plan, withBeds, bedFor]
   );
   const [routed, setRouted] = useState<{ key: string; legs: Record<number, RoadLeg> }>({
     key: "",
@@ -401,10 +485,24 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
     const timer = setTimeout(async () => {
       for (const d of plan.days) {
         const first = plan.days[0] === d;
+        // sleeping somewhere means the day ends there and the next one starts there
+        const bed = bedFor(d.day);
+        const prevBed = bedFor(d.day - 1);
+        const startFrom: [number, number] =
+          prevBed?.stay.lat != null && prevBed.stay.lng != null
+            ? [prevBed.stay.lat, prevBed.stay.lng]
+            : first
+              ? [plan.from.lat, plan.from.lng]
+              : [d.startNode.lat, d.startNode.lng];
+        const endAt: [number, number] =
+          bed?.stay.lat != null && bed.stay.lng != null
+            ? [bed.stay.lat, bed.stay.lng]
+            : [d.endNode.lat, d.endNode.lng];
+
         const waypoints = dedupeWaypoints([
-          [first ? plan.from.lat : d.startNode.lat, first ? plan.from.lng : d.startNode.lng],
+          startFrom,
           ...d.stops.map((s) => [s.spot.lat, s.spot.lng] as [number, number]),
-          [d.endNode.lat, d.endNode.lng],
+          endAt,
         ]);
         const leg = await fetchRoadRoute(waypoints, ctrl.signal);
         if (!live) return;
@@ -421,7 +519,7 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
       ctrl.abort();
       clearTimeout(timer);
     };
-  }, [plan, planKey]);
+  }, [plan, planKey, bedFor]);
 
   const routes: DayRoutes = useMemo(() => {
     const r: DayRoutes = {};
@@ -489,6 +587,26 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
         note: "Trip starts here",
       });
     }
+    // a bed you have chosen belongs on the map — it is where the day actually ends
+    if (withBeds) {
+      for (const d of plan.days) {
+        const bed = bedFor(d.day);
+        if (!bed || bed.stay.lat == null || bed.stay.lng == null) continue;
+        list.push({
+          id: `bed-${d.day}-${bed.stay.id}`,
+          name: bed.stay.name,
+          lat: bed.stay.lat,
+          lng: bed.stay.lng,
+          day: d.day,
+          order: 500 + d.day, // after that day's stops, before the finish marker
+          emoji: "🛏️",
+          approx: true,
+          kind: "endpoint",
+          note: `Night ${d.day}`,
+        });
+      }
+    }
+
     if (!plan.isLoop && !clashes(plan.to.lat, plan.to.lng)) {
       list.push({
         id: `${plan.to.key}-end`,
@@ -504,7 +622,7 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
       });
     }
     return list;
-  }, [plan, stops]);
+  }, [plan, stops, withBeds, bedFor]);
 
   const monthName = month ? MONTHS[month - 1] : "";
 
@@ -610,15 +728,49 @@ function PlanView({ plan, days, month }: { plan: PlanResult; days: number; month
             <div className="mt-5 rounded-2xl border border-white/[0.07] bg-gradient-to-br from-emerald-400/[0.06] to-transparent p-5">
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-emerald-300">
                 🛏 Where to sleep after day {d.day}
+                {withBeds && (
+                  <span className="ml-2 font-sans normal-case tracking-normal text-stone-500">
+                    — pick one and it joins the route
+                  </span>
+                )}
               </p>
               <div className="mt-3 space-y-2.5">
                 {d.stays.map((opt) => {
                   const type = stayTypeMeta(opt.stay.type);
+                  const chosen = withBeds && bedFor(d.day)?.stay.id === opt.stay.id;
+                  const mappable = opt.stay.lat != null && opt.stay.lng != null;
                   return (
                     <div
                       key={opt.stay.id}
-                      className="rounded-xl border border-white/[0.07] bg-white/[0.03] p-3.5"
+                      role={withBeds ? "button" : undefined}
+                      tabIndex={withBeds ? 0 : undefined}
+                      onClick={withBeds ? () => onPickBed(d.day, opt.stay.id) : undefined}
+                      onKeyDown={
+                        withBeds
+                          ? (e) => {
+                              if (e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                onPickBed(d.day, opt.stay.id);
+                              }
+                            }
+                          : undefined
+                      }
+                      className={`rounded-xl border p-3.5 transition-colors ${
+                        chosen
+                          ? "border-emerald-400/50 bg-emerald-400/[0.08]"
+                          : "border-white/[0.07] bg-white/[0.03]"
+                      } ${withBeds ? "cursor-pointer hover:border-emerald-400/40" : ""}`}
                     >
+                      {withBeds && (
+                        <p className="mb-1.5 text-[11px] font-bold text-emerald-300">
+                          {chosen ? "✓ Sleeping here" : "Choose this one"}
+                          {chosen && !mappable && (
+                            <span className="ml-2 font-normal text-stone-500">
+                              — no coordinates on record, so it cannot join the drawn route
+                            </span>
+                          )}
+                        </p>
+                      )}
                       <div className="flex flex-wrap items-center gap-2 text-[11px]">
                         <span className={`rounded-full px-2 py-0.5 font-semibold ring-1 ${type.chip}`}>
                           {type.emoji} {type.label}
