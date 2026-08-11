@@ -405,5 +405,12 @@ export function toCardData(s: Spot) {
     seasonality: { monsoon_dependent: s.seasonality.monsoon_dependent },
     provenance: { confidence: s.provenance.confidence },
     image: getSpotImagePath(s.id),
+    /**
+     * Free to enter. Derived, not tagged: the `free-entry` tag exists in the
+     * registry vocabulary but is applied to zero of the 106 records, so the
+     * explorer's "Free entry" chip silently emptied the grid — while 72 spots
+     * are in fact free (66 with an empty fee list, 6 with all-zero fees).
+     */
+    free: s.visit.fees !== null && !s.visit.fees.some((f) => f.amount_inr > 0),
   };
 }

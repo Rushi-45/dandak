@@ -15,6 +15,8 @@ export interface SpotCardData {
   seasonality: { monsoon_dependent: boolean | null };
   provenance: { confidence: "high" | "medium" | "low" };
   image?: string | null;
+  /** derived from visit.fees, not from tags — see toCardData */
+  free?: boolean;
 }
 
 const confidenceDot: Record<string, string> = {

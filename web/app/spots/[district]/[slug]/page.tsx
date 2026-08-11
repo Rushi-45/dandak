@@ -14,11 +14,13 @@ import {
   getAllSpots,
   getSpot,
   getSpotById,
+  getItinerary,
   getSpotGallery,
   getSpotImagePath,
   getStaysNearSpot,
   type Spot,
 } from "@/lib/data";
+import { areaForCluster } from "@/lib/areas";
 import { abs } from "@/lib/site";
 import { categoryMeta, CONFIDENCE_META, stayTypeMeta } from "@/lib/ui";
 
@@ -134,6 +136,11 @@ export default async function SpotPage({ params }: { params: Params }) {
 
   const path = `/spots/${spot.district}/${spot.slug}`;
   const image = getSpotImagePath(spot.id);
+  const area = areaForCluster(spot.cluster);
+  // 49 records carry this and nothing read it until now
+  const trips = spot.itineraries
+    .map((slug) => getItinerary(slug))
+    .filter((i): i is NonNullable<typeof i> => Boolean(i));
   const free =
     spot.visit.fees !== null &&
     (spot.visit.fees.length === 0 || spot.visit.fees.every((f) => f.amount_inr === 0));
@@ -217,10 +224,16 @@ export default async function SpotPage({ params }: { params: Params }) {
           <span aria-hidden>{meta.emoji}</span>
           {categoryLabel(spot.category)}
         </span>
-        {spot.cluster && (
-          <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400">
-            {categoryLabel(spot.cluster)}
-          </span>
+        {/* Was categoryLabel(cluster), which title-cased the raw id into "Sou Complex"
+            and "Dang Interior". The real labels live in the registry — and this is
+            now the link into the area page rather than a dead chip. */}
+        {area && (
+          <Link
+            href={`/areas/${area.slug}`}
+            className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-stone-400 transition-colors hover:border-emerald-400/40 hover:text-emerald-200"
+          >
+            {area.title}
+          </Link>
         )}
         {spot.seasonality.monsoon_dependent && (
           <span className="rounded-full bg-cyan-400/10 px-3 py-1 font-semibold text-cyan-300 ring-1 ring-cyan-400/30">
@@ -416,6 +429,44 @@ export default async function SpotPage({ params }: { params: Params }) {
                   <h3 className="text-sm font-bold text-stone-100">{f.q}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-400">{f.a}</p>
                 </div>
+              ))}
+            </div>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* Part of these trips */}
+      {trips.length > 0 && (
+        <FadeIn>
+          <section className="mt-12">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
+              On these routes
+            </h2>
+            <div className="mt-4 space-y-3">
+              {trips.map((t) => (
+                <Link
+                  key={t.slug}
+                  href={`/itineraries/${t.slug}`}
+                  className="group flex items-center gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400/30 hover:bg-white/[0.05]"
+                >
+                  <span className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/25">
+                    <span className="font-serif text-lg font-black leading-none">
+                      {t.duration_days}
+                    </span>
+                    <span className="text-[9px] font-bold uppercase tracking-wide">
+                      {t.duration_days > 1 ? "days" : "day"}
+                    </span>
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block font-serif text-lg font-black leading-snug text-stone-100 group-hover:text-emerald-200">
+                      {t.title}
+                    </span>
+                    <span className="block text-xs text-stone-500">
+                      {t.stops.length} stops · {t.districts.join(" · ")}
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-xs text-stone-600">→</span>
+                </Link>
               ))}
             </div>
           </section>

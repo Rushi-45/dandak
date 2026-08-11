@@ -7,6 +7,7 @@ import { SpotCard } from "@/components/spot-card";
 import { RealMap, type SpotMarker } from "@/components/leaflet-map";
 import { MONTHS, categoryLabel } from "@/lib/format";
 import { getAllSpots, getDistrict, getEvents, getFoodImagePath, getFoods, getSpotById, toCardData } from "@/lib/data";
+import { AREAS } from "@/lib/areas";
 import { categoryMeta } from "@/lib/ui";
 
 type Params = Promise<{ id: string }>;
@@ -103,6 +104,38 @@ export default async function DistrictPage({ params }: { params: Params }) {
           >
             All {d.name.en} spots →
           </Link>
+        </section>
+      </FadeIn>
+
+      {/* Areas — every spot belongs to exactly one, so this covers the district
+          with no overlap and gives the deeper pages their inbound links. */}
+      <FadeIn>
+        <section className="mt-14">
+          <h2 className={`text-xs font-bold uppercase tracking-widest ${accent}`}>
+            {d.name.en} by area
+          </h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {AREAS.filter((a) => a.district === id).map((a) => {
+              const n = getAllSpots().filter(
+                (s) => s.cluster && a.clusters.includes(s.cluster)
+              ).length;
+              return (
+                <Link
+                  key={a.slug}
+                  href={`/areas/${a.slug}`}
+                  className="group rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5 transition-all hover:-translate-y-0.5 hover:border-emerald-400/30 hover:bg-white/[0.04]"
+                >
+                  <p className="font-serif text-lg font-black text-stone-100 group-hover:text-emerald-200">
+                    {a.title}
+                  </p>
+                  <p className="mt-1 text-[11px] font-bold uppercase tracking-widest text-stone-600">
+                    {n} places
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-400">{a.blurb}</p>
+                </Link>
+              );
+            })}
+          </div>
         </section>
       </FadeIn>
 

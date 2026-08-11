@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { AREAS } from "@/lib/areas";
 import { getAllSpots, getItineraries } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
@@ -37,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       // the ones we have photographed and verified are the ones worth ranking
       priority: s.provenance.confidence === "high" ? 0.8 : 0.6,
+    })),
+    ...AREAS.map((a) => ({
+      url: `${SITE.url}/areas/${a.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     })),
     ...itineraries.map((i) => ({
       url: `${SITE.url}/itineraries/${i.slug}`,

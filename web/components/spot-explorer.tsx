@@ -55,7 +55,11 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
     return spots.filter((s) => {
       if (district !== "all" && s.district !== district) return false;
       if (category && s.category !== category) return false;
-      if (tags.length && !tags.every((t) => s.tags.includes(t))) return false;
+      // "free-entry" is derived from visit.fees rather than tagged — the tag
+      // exists in the vocabulary but is on zero records, so this chip used to
+      // empty the grid while 72 spots are in fact free. See toCardData.
+      if (tags.length && !tags.every((t) => (t === "free-entry" ? s.free : s.tags.includes(t))))
+        return false;
       if (q) {
         const hay = `${s.name.en} ${s.summary} ${s.category} ${s.cluster ?? ""} ${s.district} ${s.tags.join(" ")}`.toLowerCase();
         if (!hay.includes(q)) return false;
