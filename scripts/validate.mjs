@@ -143,6 +143,26 @@ for (const { meta, rec } of parsed) {
     }
   }
 
+  /**
+   * media.images is paired with the staged files BY INDEX (see getSpotGallery in
+   * web/lib/data.ts), so a count mismatch is an attribution hazard, not an
+   * untidiness: the next photo staged for this spot silently inherits whatever
+   * credit and licence the surplus entry carries. Two records drifted this way
+   * when photographs were discarded but their entries were left behind.
+   */
+  const declaredImages = (rec.media?.images ?? []).length;
+  if (declaredImages > 0) {
+    const dir = join(ROOT, "web", "public", "images", "spots");
+    let staged = existsSync(join(dir, `${rec.id}.jpg`)) ? 1 : 0;
+    for (let i = 2; i <= 8; i++) if (existsSync(join(dir, `${rec.id}-${i}.jpg`))) staged++;
+    if (staged !== declaredImages)
+      report(
+        "warn",
+        rel,
+        `L3 media.images declares ${declaredImages} image(s) but ${staged} are staged — the extra credit will attach to the next photo added`
+      );
+  }
+
   if (typeof rec.summary === "string" && rec.summary.length > registry.lints.summaryTargetChars)
     report("warn", rel, `L3 summary over ${registry.lints.summaryTargetChars} chars`);
 
