@@ -10,7 +10,8 @@
     "validate:strict": "node scripts/validate.mjs --strict",
     "stats": "node scripts/stats.mjs",
     "export:geojson": "node scripts/export-geojson.mjs",
-    "fetch:routes": "node scripts/fetch-routes.mjs"
+    "fetch:routes": "node scripts/fetch-routes.mjs",
+    "photo-backlog": "node scripts/photo-backlog.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1"

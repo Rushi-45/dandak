@@ -18,6 +18,8 @@ Around a third of the spots — the interior Dang waterfalls especially — cite
 | Site | 247 prerendered pages, live at [dandak.vercel.app](https://dandak.vercel.app) |
 | Exports | GeoJSON (`exports/geojson/`), stats snapshot (`exports/STATS.md`) |
 
+**Biggest gap: photographs.** 78 of the 106 spots have none, including 17 that no publisher has ever written up. [`docs/photo-backlog.md`](docs/photo-backlog.md) lists them grouped into field trips and ordered by road distance from each base town; regenerate it with `npm run photo-backlog`.
+
 ## Spec index
 
 | Spec | Contents |
@@ -47,7 +49,8 @@ data/
   spots/narmada/
   itineraries/  events/  stays/  food/
 exports/                ← GeoJSON + stats snapshot (regenerable)
-scripts/                ← validate, stats, export-geojson
+docs/                   ← derived working documents (photo backlog)
+scripts/                ← validate, stats, export-geojson, photo-backlog
 web/                    ← Next.js app consuming ../data (npm run dev inside web/)
 ```
 
