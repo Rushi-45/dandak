@@ -10,6 +10,8 @@
     "test": "node --test lib/planner.test.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "leaflet": "^1.9.4",
     "motion": "^13.0.0",
     "next": "16.3.0",

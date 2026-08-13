@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist } from "next/font/google";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { JsonLd } from "@/components/json-ld";
 import { MotionProvider } from "@/components/motion-provider";
 import { SITE, abs } from "@/lib/site";
@@ -166,6 +168,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </div>
           </footer>
         </MotionProvider>
+        {/*
+          Outside MotionProvider and last in the body: these mount after the
+          page and must never be in the way of it. Both no-op in development and
+          on any host that is not Vercel, so local runs stay clean and nothing
+          is sent while working offline.
+        */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
