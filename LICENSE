@@ -1,0 +1,47 @@
+dandak — licensing
+==================
+
+This repository holds four kinds of material under three licences. They are not
+interchangeable: the photographs in particular carry obligations that came with
+them from their original authors and cannot be relicensed here. Check the table
+before reusing anything.
+
+| What                                | Where                                              | Licence                            |
+|-------------------------------------|----------------------------------------------------|------------------------------------|
+| Source code                         | `web/`, `scripts/`, `schema/`                      | MIT — full text below              |
+| The dataset, specs and exports      | `data/`, `specs/`, `exports/`, `seed/`             | CC BY-SA 4.0 — see `LICENSE-DATA`  |
+| Geometry derived from OpenStreetMap | `web/lib/geo.json`, `web/lib/routes.json`, coordinates traced from OSM | ODbL 1.0 — see `LICENSE-DATA` |
+| Photographs and video               | `web/public/images/`, `web/public/videos/`         | per file — see `LICENSE-DATA`      |
+
+Facts are not copyrightable, and this dataset states facts. The publishers cited
+in each record's `provenance.sources` are credited as the source of a fact, not
+as the source of text: their words are not reproduced and nothing here purports
+to relicense their work.
+
+GitHub's licence detector will report "Other" for this repository. That is the
+honest answer for a repository that is genuinely under three licences, and is
+preferred here over a single label that would be wrong about the photographs.
+
+
+MIT License (source code only)
+------------------------------
+
+Copyright (c) 2026 Rushi Chudasama
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

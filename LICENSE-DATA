@@ -1,0 +1,121 @@
+dandak — licensing for the dataset, geometry and media
+======================================================
+
+Companion to `LICENSE`, which covers the source code under MIT. This file covers
+everything that is not code. Three distinct regimes apply; the third is the one
+most people get wrong, because those obligations are inherited and cannot be
+waived by this repository.
+
+
+1. The dataset, specifications and exports
+------------------------------------------
+
+Covers: `data/`, `specs/`, `exports/`, `seed/`, and the editorial prose in `web/`
+that describes places (area introductions, guide copy).
+
+Licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+licence (CC BY-SA 4.0).
+
+    https://creativecommons.org/licenses/by-sa/4.0/
+
+You are free to share and adapt this material, including commercially, provided
+you attribute it and license your adaptations under the same terms. Suggested
+attribution:
+
+    Data from the dandak dataset by Rushi Chudasama, CC BY-SA 4.0
+    https://github.com/Rushi-45/dandak
+
+ShareAlike is deliberate rather than incidental. This dataset was assembled from
+sources that themselves share alike — OpenStreetMap, Wikimedia Commons — and the
+same terms are what let its photographs sit alongside its prose without conflict.
+
+Note that the dataset's structure is expressed in `provenance` on every record:
+a confidence level, the sources behind the claim, and a `needs_verification`
+ledger. That structure is part of what is licensed. If you republish records,
+republish the provenance with them; a claim from this dataset stripped of its
+confidence level is a claim this project did not make.
+
+
+2. Geometry derived from OpenStreetMap
+--------------------------------------
+
+Covers: `web/lib/geo.json` (district boundaries and river courses, from the
+Overpass API), `web/lib/routes.json` (road route geometry, from OSRM), and any
+coordinate in `data/` traced from OSM rather than observed directly.
+
+Licensed under the Open Database License 1.0 (ODbL).
+
+    https://opendatacommons.org/licenses/odbl/1-0/
+
+    © OpenStreetMap contributors
+
+ODbL's share-alike attaches to derived databases, so this carve-out survives
+reuse: extract the boundaries or the route geometry into your own product and
+the ODbL travels with them, independently of the CC BY-SA covering the rest.
+Both files carry a `_license` field stating this at their head — keep it.
+
+Routing geometry was produced by OSRM (`router.project-osrm.org`) operating over
+OSM data, so it is an OSM derivative even though no OSM file was downloaded.
+
+
+3. Photographs and video
+------------------------
+
+Covers: `web/public/images/`, `web/public/videos/`.
+
+**Licensed individually, per file.** There is no blanket licence for this
+directory and none may be assumed. Each image is declared in its spot record
+under `media.images`, and each entry carries the licence, the credit and a
+`source_url` back to the original:
+
+    {
+      "url": "https://upload.wikimedia.org/...",
+      "license": "cc-by-sa",
+      "caption": "Hatgadh village and hills seen from the fort",
+      "credit": "Dinesh Valke",
+      "source_url": "https://commons.wikimedia.org/wiki/File:..."
+    }
+
+The licence values in use are:
+
+| Value      | Meaning                                                          |
+|------------|------------------------------------------------------------------|
+| `own`      | Photographed by Rushi Chudasama; released under CC BY-SA 4.0     |
+| `cc-by-sa` | Wikimedia Commons contributor, CC BY-SA — credit and share alike |
+| `cc-by`    | Wikimedia Commons contributor, CC BY — credit required           |
+| `cc0`      | Public domain dedication, no conditions                          |
+
+All video under `web/public/videos/` is the maintainer's own footage, declared
+in `media.videos` with `source: "Rushi Chudasama (own footage)"`, and is released
+under CC BY-SA 4.0 on the same terms as the dataset.
+
+**If you reuse a photograph, carry its credit.** The `credit` field names a real
+person who licensed their work on the condition that they are named. Dropping it
+is a licence violation against that photographer, not against this project.
+
+Entries pair with staged files strictly by index — `media.images[0]` describes
+`<spot-id>.jpg`, `media.images[1]` describes `<spot-id>-2.jpg`, and so on. The
+`url` field records where a file came from and is never used for matching. A
+surplus entry therefore hands its credit to the next photograph added, which is
+an attribution hazard rather than an untidiness; `scripts/validate.mjs` fails the
+build on a count mismatch for exactly this reason.
+
+
+4. What is not licensed here
+----------------------------
+
+Every record cites its sources in `provenance.sources` — government portals,
+travel publishers, blogs, Google Maps, YouTube. Those citations establish where
+a fact was checked. They do not transfer any rights in the cited work, and no
+text from them is reproduced. Their content remains theirs.
+
+
+5. No warranty
+--------------
+
+This material is provided as-is. Fees, timings, road conditions and booking
+arrangements in this belt change without notice, and several records are stamped
+with a confidence level below `high` precisely because they could not be
+independently confirmed. Verify volatile details before you travel or before you
+depend on them in a product. Nothing here is a guarantee of safety, access or
+accuracy.
