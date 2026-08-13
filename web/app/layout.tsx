@@ -50,6 +50,19 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
+  /**
+   * Search Console / Bing verification, from the environment rather than the
+   * source. A *.vercel.app subdomain cannot be verified by DNS — we do not own
+   * the zone — so the meta tag is the route. Set GOOGLE_SITE_VERIFICATION (and
+   * BING_SITE_VERIFICATION) in the Vercel project and redeploy; no code change,
+   * and the tokens stay out of a public repo.
+   */
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : {},
+  },
   category: "travel",
 };
 
