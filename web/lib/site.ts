@@ -12,8 +12,13 @@ export const SITE = {
   title: "Dandak — Dang & Narmada Travel Guide",
   description:
     "Waterfalls, forests, the Statue of Unity and living tribal heritage — a verified, source-tracked travel guide to Gujarat's Dang and Narmada districts.",
-  /** 1920×1080, the ratio link previews actually want */
-  ogImage: "/images/spots/dang-don-hill.jpg",
+  /**
+   * A purpose-built 1200×630 crop, which is the size link previews actually
+   * want. This used to point at a full spot photograph: crawlers and chat apps
+   * fetch the URL directly, so next/image never touched it and every preview
+   * pulled 1.3 MB to render a card a few hundred pixels wide.
+   */
+  ogImage: "/images/og-default.jpg",
   locale: "en_IN",
 } as const;
 

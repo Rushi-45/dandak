@@ -25,7 +25,15 @@ const confidenceDot: Record<string, string> = {
   low: "bg-stone-300",
 };
 
-export function SpotCard({ spot }: { spot: SpotCardData }) {
+/**
+ * `priority` on the first few cards of a grid.
+ *
+ * Every card image was lazy, so on /spots — a page that is nothing but a grid —
+ * the LCP element was discovered only after CSS and JS had parsed, with no
+ * preload hint at all. The cards above the fold should be eager; the other
+ * hundred should not.
+ */
+export function SpotCard({ spot, priority }: { spot: SpotCardData; priority?: boolean }) {
   const meta = categoryMeta(spot.category);
   return (
     <Link
@@ -41,6 +49,7 @@ export function SpotCard({ spot }: { spot: SpotCardData }) {
             src={spot.image}
             alt=""
             fill
+            priority={priority}
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />

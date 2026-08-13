@@ -204,7 +204,7 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
       {filtered.length > 0 ? (
         <div className="group/cards mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
-            {filtered.map((spot) => (
+            {filtered.map((spot, i) => (
               <m.div
                 key={`${spot.district}-${spot.slug}`}
                 layout
@@ -213,7 +213,8 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
               >
-                <SpotCard spot={spot} />
+                {/* the first row on the widest grid — the LCP candidates */}
+                <SpotCard spot={spot} priority={i < 3} />
               </m.div>
             ))}
           </AnimatePresence>
