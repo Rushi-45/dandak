@@ -169,6 +169,37 @@ function Pill({
 }
 
 /**
+ * The plan already lives in the URL, so sharing it only ever needed one button.
+ * Telling people to copy the address bar was asking them to do the work by hand.
+ *
+ * navigator.clipboard is unavailable on insecure origins and can be refused, so
+ * the failure path selects nothing and simply says so rather than pretending.
+ */
+function CopyPlanLink() {
+  const [state, setState] = useState<"idle" | "done" | "failed">("idle");
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setState("done");
+    } catch {
+      setState("failed");
+    }
+    setTimeout(() => setState("idle"), 2500);
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={copy}
+      className="rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+    >
+      {state === "done" ? "Link copied" : state === "failed" ? "Copy failed, use the address bar" : "Copy link to this plan"}
+    </button>
+  );
+}
+
+/**
  * Today's month, without baking it into the prerendered HTML.
  *
  * /plan is static, so reading the clock during render would freeze the build
@@ -485,6 +516,35 @@ function RouteRow({
   );
 }
 
+/**
+ * A day's driving order as a Google Maps directions link.
+ *
+ * The planner's whole output is a sequence of places to drive between, and until
+ * now the only way to act on it was to retype every stop into a maps app. This
+ * hands the same waypoints over in one tap.
+ *
+ * The Maps URL API takes at most 9 intermediate waypoints. Days here top out at
+ * about five stops, but the cap is real, so surplus middle points are dropped
+ * rather than silently mangling the link; the endpoints always survive.
+ */
+const MAPS_WAYPOINT_CAP = 9;
+
+function googleMapsUrl(pts: [number, number][]): string | null {
+  if (pts.length < 2) return null;
+  const fmt = (p: [number, number]) => `${p[0].toFixed(5)},${p[1].toFixed(5)}`;
+  const origin = pts[0];
+  const destination = pts[pts.length - 1];
+  const middle = pts.slice(1, -1).slice(0, MAPS_WAYPOINT_CAP);
+  const q = new URLSearchParams({
+    api: "1",
+    origin: fmt(origin),
+    destination: fmt(destination),
+    travelmode: "driving",
+  });
+  if (middle.length) q.set("waypoints", middle.map(fmt).join("|"));
+  return `https://www.google.com/maps/dir/?${q.toString()}`;
+}
+
 /** Drop waypoints that repeat the previous one: a day's end node is usually its last stop. */
 function dedupeWaypoints(pts: [number, number][]): [number, number][] {
   const out: [number, number][] = [];
@@ -528,6 +588,35 @@ function PlanView({
     [plan, withBeds, bedChoice]
   );
 
+  /**
+   * A day's points in driving order, shared by the router and the maps link so
+   * the two can never describe different journeys. Sleeping somewhere means the
+   * day ends there and the next one starts there.
+   */
+  const waypointsFor = useCallback(
+    (d: (typeof plan.days)[number]): [number, number][] => {
+      const first = plan.days[0] === d;
+      const bed = bedFor(d.day);
+      const prevBed = bedFor(d.day - 1);
+      const startFrom: [number, number] =
+        prevBed?.stay.lat != null && prevBed.stay.lng != null
+          ? [prevBed.stay.lat, prevBed.stay.lng]
+          : first
+            ? [plan.from.lat, plan.from.lng]
+            : [d.startNode.lat, d.startNode.lng];
+      const endAt: [number, number] =
+        bed?.stay.lat != null && bed.stay.lng != null
+          ? [bed.stay.lat, bed.stay.lng]
+          : [d.endNode.lat, d.endNode.lng];
+      return dedupeWaypoints([
+        startFrom,
+        ...d.stops.map((s) => [s.spot.lat, s.spot.lng] as [number, number]),
+        endAt,
+      ]);
+    },
+    [plan, bedFor]
+  );
+
   // Stamped with the plan they belong to, so a stale set is ignored by
   // derivation rather than cleared by a setState in the effect body.
   // beds are waypoints too, so a changed bed must invalidate the routed legs
@@ -554,27 +643,7 @@ function PlanView({
     let live = true;
     const timer = setTimeout(async () => {
       for (const d of plan.days) {
-        const first = plan.days[0] === d;
-        // sleeping somewhere means the day ends there and the next one starts there
-        const bed = bedFor(d.day);
-        const prevBed = bedFor(d.day - 1);
-        const startFrom: [number, number] =
-          prevBed?.stay.lat != null && prevBed.stay.lng != null
-            ? [prevBed.stay.lat, prevBed.stay.lng]
-            : first
-              ? [plan.from.lat, plan.from.lng]
-              : [d.startNode.lat, d.startNode.lng];
-        const endAt: [number, number] =
-          bed?.stay.lat != null && bed.stay.lng != null
-            ? [bed.stay.lat, bed.stay.lng]
-            : [d.endNode.lat, d.endNode.lng];
-
-        const waypoints = dedupeWaypoints([
-          startFrom,
-          ...d.stops.map((s) => [s.spot.lat, s.spot.lng] as [number, number]),
-          endAt,
-        ]);
-        const leg = await fetchRoadRoute(waypoints, ctrl.signal);
+        const leg = await fetchRoadRoute(waypointsFor(d), ctrl.signal);
         if (!live) return;
         if (leg) {
           setRouted((prev) => ({
@@ -589,7 +658,7 @@ function PlanView({
       ctrl.abort();
       clearTimeout(timer);
     };
-  }, [plan, planKey, bedFor]);
+  }, [plan, planKey, waypointsFor]);
 
   const routes: DayRoutes = useMemo(() => {
     const r: DayRoutes = {};
@@ -801,11 +870,24 @@ function PlanView({
 
       {plan.days.map((d) => (
         <section key={d.day} className="mt-10">
-          <div className="flex items-baseline gap-3">
+          <div className="flex flex-wrap items-baseline gap-3">
             <span className="font-serif text-5xl font-black text-stroke">
               {String(d.day).padStart(2, "0")}
             </span>
             <h2 className="font-serif text-2xl font-black italic text-stone-100">Day {d.day}</h2>
+            {(() => {
+              const href = googleMapsUrl(waypointsFor(d));
+              return href ? (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto shrink-0 self-center rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+                >
+                  Drive this day ↗
+                </a>
+              ) : null;
+            })()}
           </div>
           <p className="mt-2 text-xs text-stone-500">
             {d.startNode.name} → {d.endNode.name} ·{" "}
@@ -967,9 +1049,14 @@ function PlanView({
           </p>
         )}
         <p className="mt-2 text-xs text-stone-500">
-          Every stop links to its full record, timings, fees, seasons, safety and sources. Copy
-          the address bar to share this exact plan.
+          Every stop links to its full record, timings, fees, seasons, safety and sources.
         </p>
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <CopyPlanLink />
+          <span className="text-xs text-stone-600">
+            The whole plan is in the URL, so the link reopens exactly this.
+          </span>
+        </div>
       </section>
     </div>
   );
