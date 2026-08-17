@@ -162,6 +162,9 @@ export default async function SpotPage({ params }: { params: Params }) {
               "@type": "TouristAttraction",
               "@id": abs(`${path}#place`),
               name: spot.name.en,
+              // aliases are how locals search — "Mahal waterfall", "Bhigu Dhodh",
+              // "Ankada Dhodh" — and nothing emitted them until now
+              ...(spot.aliases.length ? { alternateName: spot.aliases } : {}),
               description: spot.summary,
               url: abs(path),
               ...(image ? { image: abs(image) } : {}),
@@ -253,6 +256,12 @@ export default async function SpotPage({ params }: { params: Params }) {
       <p className="mt-4 text-lg leading-relaxed text-stone-400">
         <TextGenerate text={spot.summary} />
       </p>
+      {/* the names locals actually use; also emitted as alternateName above */}
+      {spot.aliases.length > 0 && (
+        <p className="mt-2 text-xs text-stone-600">
+          Also called <span className="text-stone-500">{spot.aliases.join(", ")}</span>
+        </p>
+      )}
 
       {/* Photographs and clips. MediaGallery renders nothing when there are none,
           which left 78 of 106 pages jumping from the summary straight to the

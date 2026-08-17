@@ -100,7 +100,9 @@ export default function EventsPage() {
                 </div>
 
                 <h2 className="mt-3 font-serif text-2xl font-black text-stone-100 sm:text-3xl">
-                  {e.name.en}
+                  <Link href={`/events/${e.slug}`} className="transition-colors hover:text-amber-200">
+                    {e.name.en}
+                  </Link>
                 </h2>
                 <p className="mt-1 text-xs text-stone-500">{e.timing.recurrence}</p>
                 <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-400">
@@ -125,6 +127,12 @@ export default function EventsPage() {
                   )}
                   {!spot && e.place && <span className="text-stone-500">📍 {e.place}</span>}
                   {e.tips[0] && <span className="text-stone-500">💡 {e.tips[0]}</span>}
+                  <Link
+                    href={`/events/${e.slug}`}
+                    className="ml-auto shrink-0 font-bold text-amber-300 transition-colors hover:text-amber-200"
+                  >
+                    Full guide →
+                  </Link>
                 </div>
                 </div>
               </article>

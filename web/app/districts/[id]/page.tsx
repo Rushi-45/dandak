@@ -257,9 +257,10 @@ export default async function DistrictPage({ params }: { params: Params }) {
                 const img = getFoodImagePath(f.id);
                 const credit = f.media?.images?.[0]?.credit;
                 return (
-                  <div
+                  <Link
                     key={f.id}
-                    className="overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.03] transition-colors hover:border-rose-300/25"
+                    href={`/food/${f.slug}`}
+                    className="block overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.03] transition-colors hover:border-rose-300/25"
                   >
                     {img && (
                       <div className="relative h-36 w-full">
@@ -297,10 +298,15 @@ export default async function DistrictPage({ params }: { params: Params }) {
                         </p>
                       )}
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
+            <p className="mt-4 text-xs">
+              <Link href="/food" className="font-semibold text-rose-300 transition-colors hover:text-rose-200">
+                Every dish and where to try it →
+              </Link>
+            </p>
           </section>
         </FadeIn>
       )}

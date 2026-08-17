@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { AREAS } from "@/lib/areas";
-import { getAllSpots, getItineraries } from "@/lib/data";
+import { getAllSpots, getEvents, getFoods, getItineraries } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
 /**
@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${SITE.url}/stays`, changeFrequency: "monthly", priority: 0.8 },
       { url: `${SITE.url}/map`, changeFrequency: "monthly", priority: 0.7 },
       { url: `${SITE.url}/events`, changeFrequency: "monthly", priority: 0.7 },
+      { url: `${SITE.url}/food`, changeFrequency: "monthly", priority: 0.7 },
       { url: `${SITE.url}/districts/dang`, changeFrequency: "monthly", priority: 0.8 },
       { url: `${SITE.url}/districts/narmada`, changeFrequency: "monthly", priority: 0.8 },
     ] as const
@@ -50,6 +51,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: today,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    ...getEvents().map((e) => ({
+      url: `${SITE.url}/events/${e.slug}`,
+      lastModified: today,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...getFoods().map((f) => ({
+      url: `${SITE.url}/food/${f.slug}`,
+      lastModified: today,
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
   ];
 }

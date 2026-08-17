@@ -240,6 +240,14 @@ export function getFoods(): Food[] {
   return readDir<Food>("food").sort((a, b) => a.name.en.localeCompare(b.name.en));
 }
 
+export function getFood(slug: string): Food | undefined {
+  return getFoods().find((f) => f.slug === slug);
+}
+
+export function getEvent(slug: string): EventRec | undefined {
+  return getEvents().find((e) => e.slug === slug);
+}
+
 export { MONTHS, formatMonths, categoryLabel } from "./format";
 
 /** Local card/hero image for a spot, if one has been staged under public/images/spots. */

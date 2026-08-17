@@ -128,6 +128,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <Link href="/events" className="transition-colors hover:text-emerald-300">
                   Events
                 </Link>
+                <Link href="/food" className="transition-colors hover:text-emerald-300">
+                  Food
+                </Link>
                 <Link href="/districts/dang" className="hidden transition-colors hover:text-emerald-300 sm:block">
                   Dang
                 </Link>
