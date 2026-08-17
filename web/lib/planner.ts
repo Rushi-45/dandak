@@ -27,6 +27,8 @@ export interface PlannerSpot {
   category: string;
   cluster: string | null;
   durationMin: number;
+  /** "mon".."sun" when the place has a fixed closing day (18 records, the SoU cluster) */
+  weeklyClosure: string | null;
   bestMonths: number[];
   avoidMonths: number[];
   monsoonDependent: boolean;
@@ -671,6 +673,45 @@ export function decodePlan(
     .filter((id) => data.spots.some((s) => s.id === id) && !must.includes(id))
     .slice(0, 30);
   return { input: { from, to, days, month, must: must.slice(0, 5), avoid }, dropped };
+}
+
+// ------------------------------------------------------ closure warnings
+
+const WEEKDAY_KEYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"] as const;
+
+export interface ClosureWarning {
+  day: number;
+  /** local date of that plan day */
+  date: Date;
+  /** "mon".."sun" */
+  weekday: string;
+  spotNames: string[];
+}
+
+/**
+ * Which plan days land on a stop's weekly closing day.
+ *
+ * Deliberately not part of planTrip: the algorithm plans by month and stays
+ * pure, while a start date is optional trip metadata like the bed choice. Kept
+ * as its own pure function so it can be tested with fixed dates and rendered
+ * only when the traveller has given a date.
+ *
+ * The caller passes a LOCAL date (new Date(y, m-1, d)), never a "YYYY-MM-DD"
+ * string fed to the Date constructor — that parses as UTC midnight, and in any
+ * timezone west of Greenwich getDay() would then answer for the day before.
+ */
+export function closureWarnings(days: PlannedDay[], startDate: Date): ClosureWarning[] {
+  const out: ClosureWarning[] = [];
+  for (const d of days) {
+    const date = new Date(startDate);
+    date.setDate(date.getDate() + (d.day - 1));
+    const weekday = WEEKDAY_KEYS[date.getDay()];
+    const spotNames = d.stops
+      .filter((s) => s.spot.weeklyClosure === weekday)
+      .map((s) => s.spot.name);
+    if (spotNames.length) out.push({ day: d.day, date, weekday, spotNames });
+  }
+  return out;
 }
 
 // --------------------------------------------------------------- packing

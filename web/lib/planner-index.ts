@@ -25,7 +25,7 @@ export interface RawSpotForPlanner {
     distances_km?: Record<string, number> | null;
   };
   access?: { last_mile?: string | null };
-  visit: { duration_min: number };
+  visit: { duration_min: number; weekly_closure?: string | null };
   seasonality: {
     best_months: number[];
     avoid_months: number[];
@@ -61,6 +61,7 @@ export function toPlannerSpot(s: RawSpotForPlanner, hasPhoto: boolean): PlannerS
     category: s.category,
     cluster: s.cluster ?? null,
     durationMin: s.visit.duration_min,
+    weeklyClosure: s.visit.weekly_closure ?? null,
     bestMonths: s.seasonality.best_months ?? [],
     avoidMonths: s.seasonality.avoid_months ?? [],
     monsoonDependent: Boolean(s.seasonality.monsoon_dependent),

@@ -25,6 +25,8 @@ import {
   type PlanInput,
   type PlannerData,
   type PlanResult,
+  closureWarnings,
+  type ClosureWarning,
 } from "@/lib/planner";
 
 // ------------------------------------------------------------------ options
@@ -238,6 +240,16 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   const [to, setTo] = useState(initial.input?.to ?? "h:saputara");
   const [days, setDays] = useState(initial.input?.days ?? 2);
   const [monthChoice, setMonth] = useState<number | null>(initial.input?.month || null);
+  /**
+   * Optional start date, "YYYY-MM-DD" or "". Trip metadata like the bed choice,
+   * not planner input: the algorithm plans by month and stays pure, the date
+   * only unlocks day-of-week closure warnings (18 spots close on Mondays).
+   * Rides the URL as on=, the same pattern as bed/beds.
+   */
+  const [startDate, setStartDate] = useState<string>(() => {
+    const v = initialParams.get("on") ?? "";
+    return /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : "";
+  });
   const [must, setMust] = useState<string[]>(initial.input?.must ?? []);
   const [avoid, setAvoid] = useState<string[]>(initial.input?.avoid ?? []);
   const [mustQuery, setMustQuery] = useState("");
@@ -260,7 +272,8 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   });
 
   const today = useSyncExternalStore(neverChanges, clientMonth, serverMonth);
-  const month = monthChoice ?? today;
+  // a concrete date knows its month; the pills are the fallback, today the default
+  const month = startDate ? Number(startDate.slice(5, 7)) : (monthChoice ?? today);
 
   const input: PlanInput = useMemo(
     () => ({ from, to, days, month, must, avoid }),
@@ -280,6 +293,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   useEffect(() => {
     if (!month) return;
     const q = new URLSearchParams(encodePlan(input));
+    if (startDate) q.set("on", startDate);
     if (withBeds) {
       q.set("bed", "1");
       const picks = Object.entries(bedChoice)
@@ -288,7 +302,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
       if (picks) q.set("beds", picks);
     }
     window.history.replaceState(null, "", `/plan?${q.toString()}`);
-  }, [input, month, withBeds, bedChoice]);
+  }, [input, month, withBeds, bedChoice, startDate]);
 
   /**
    * planTrip is pure and fast on small inputs but not uniformly so: measured
@@ -309,6 +323,17 @@ export function TripPlanner({ data }: { data: PlannerData }) {
     () => (month ? planTrip(deferredInput, data) : null),
     [deferredInput, month, data]
   );
+
+  /**
+   * Day-of-week closures, only when a date was given. Parsed into a LOCAL date
+   * by parts: new Date("YYYY-MM-DD") is UTC midnight, and west of Greenwich
+   * getDay() would answer for the day before.
+   */
+  const closures = useMemo(() => {
+    if (!plan || !startDate) return [];
+    const [y, m, d] = startDate.split("-").map(Number);
+    return closureWarnings(plan.days, new Date(y, m - 1, d));
+  }, [plan, startDate]);
 
   const toggleMust = useCallback((id: string) => {
     setMust((m) => (m.includes(id) ? m.filter((x) => x !== id) : [...m, id].slice(0, 5)));
@@ -374,10 +399,46 @@ export function TripPlanner({ data }: { data: PlannerData }) {
             </p>
             <div className="mt-2 flex flex-wrap gap-1.5">
               {MONTHS.map((m, i) => (
-                <Pill key={m} active={month === i + 1} onClick={() => setMonth(i + 1)}>
+                <Pill
+                  key={m}
+                  active={month === i + 1}
+                  onClick={() => {
+                    // a pill press while a date is set means "forget the date":
+                    // otherwise the pill would look dead, overridden by the date
+                    setStartDate("");
+                    setMonth(i + 1);
+                  }}
+                >
                   {m}
                 </Pill>
               ))}
+            </div>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <label
+                htmlFor="plan-start-date"
+                className="text-[10px] font-bold uppercase tracking-[0.18em] text-stone-500"
+              >
+                Starting on{" "}
+                <span className="normal-case tracking-normal text-stone-600">
+                  · optional, unlocks closing-day warnings
+                </span>
+              </label>
+              <input
+                id="plan-start-date"
+                type="date"
+                value={startDate}
+                onChange={(e) => setStartDate(e.target.value)}
+                className="rounded-xl border border-white/[0.09] bg-white/[0.04] px-3 py-1.5 text-sm text-stone-200 [color-scheme:dark]"
+              />
+              {startDate && (
+                <button
+                  type="button"
+                  onClick={() => setStartDate("")}
+                  className="text-xs text-stone-500 underline decoration-white/20 underline-offset-4 hover:text-stone-300"
+                >
+                  clear
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -473,6 +534,8 @@ export function TripPlanner({ data }: { data: PlannerData }) {
             bedChoice={bedChoice}
             onPickBed={(day, id) => setBedChoice((prev) => ({ ...prev, [day]: id }))}
             onSkip={skipSpot}
+            closures={closures}
+            startDate={startDate || null}
           />
         </div>
       )}
@@ -507,6 +570,22 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 // ------------------------------------------------------------------ result
 
 const NO_LEGS: Record<number, RoadLeg> = {};
+
+const WEEKDAY_LABEL: Record<string, string> = {
+  sun: "Sunday",
+  mon: "Monday",
+  tue: "Tuesday",
+  wed: "Wednesday",
+  thu: "Thursday",
+  fri: "Friday",
+  sat: "Saturday",
+};
+
+/** "A" | "A and B" | "A, B and C" */
+function listNames(names: string[]): string {
+  if (names.length <= 1) return names[0] ?? "";
+  return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+}
 
 /** Say why a bed is being offered, so a 40 km "nearby" option is not a surprise. */
 const MATCH_LABEL: Record<string, string> = {
@@ -624,6 +703,8 @@ function PlanView({
   bedChoice,
   onPickBed,
   onSkip,
+  closures,
+  startDate,
 }: {
   plan: PlanResult;
   days: number;
@@ -632,6 +713,9 @@ function PlanView({
   bedChoice: Record<number, string>;
   onPickBed: (day: number, stayId: string) => void;
   onSkip: (spotId: string) => void;
+  closures: ClosureWarning[];
+  /** "YYYY-MM-DD" when the traveller gave one */
+  startDate: string | null;
 }) {
   const stops = plan.days.flatMap((d) => d.stops);
 
@@ -839,6 +923,17 @@ function PlanView({
   }, [plan, stops, withBeds, bedFor]);
 
   const monthName = month ? MONTHS[month - 1] : "";
+  const closureFor = (day: number) => closures.find((c) => c.day === day);
+  // "starting Mon, 14 Sept" beats "planned for Sep" once a date is known
+  const startLabel = useMemo(() => {
+    if (!startDate) return null;
+    const [y, m, d] = startDate.split("-").map(Number);
+    return new Date(y, m - 1, d).toLocaleDateString("en-IN", {
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+    });
+  }, [startDate]);
 
   if (!stops.length) {
     return (
@@ -865,8 +960,9 @@ function PlanView({
           {plan.from.name} → {plan.to.name}
         </p>
         <p className="text-[11px]">
-          {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops · planned
-          for {monthName} · dandak.vercel.app/plan
+          {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops ·{" "}
+          {startLabel ? `starting ${startLabel}` : `planned for ${monthName}`} ·
+          dandak.vercel.app/plan
         </p>
       </div>
 
@@ -982,6 +1078,21 @@ function PlanView({
               : `~${Math.round(d.driveKm)} km · ${hhmm(d.driveMin)}`}{" "}
             driving · {hhmm(d.visitMin)} at places
           </p>
+
+          {/* The trust warning. Deliberately NOT no-print: on paper, mid-trip,
+              is exactly where "it's shut today" matters most. */}
+          {(() => {
+            const c = closureFor(d.day);
+            if (!c) return null;
+            const w = WEEKDAY_LABEL[c.weekday] ?? c.weekday;
+            return (
+              <p className="mt-3 rounded-2xl border border-amber-400/20 bg-amber-400/[0.06] p-4 text-sm leading-relaxed text-amber-200">
+                ⚠ Day {c.day} lands on a {w}: {listNames(c.spotNames)}{" "}
+                {c.spotNames.length === 1 ? "closes" : "close"} on {w}s. Shift the start date, or
+                skip {c.spotNames.length === 1 ? "it" : "them"}.
+              </p>
+            );
+          })()}
 
           {d.transitLeg && (
             <p className="mt-3 rounded-2xl border border-sky-400/15 bg-sky-400/[0.05] p-4 text-sm leading-relaxed text-stone-300">

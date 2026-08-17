@@ -20,6 +20,7 @@ import {
   driveMinutes,
   encodePlan,
   decodePlan,
+  closureWarnings,
   resolveNode,
   suggestStays,
   USABLE_DAY_MIN,
@@ -375,4 +376,41 @@ test("a must-visit beats a skip, in the algorithm and in the URL", () => {
   );
   assert.deepEqual(input!.must, ["dang-gira-falls"]);
   assert.deepEqual(input!.avoid, []); // the conflict and the unknown id both dropped
+});
+
+// ------------------------------------------------------- closure warnings
+
+test("a Monday start flags the SoU cluster's closing day, other days stay quiet", () => {
+  // jungle safari closes on Mondays in the dataset; force it onto day 1
+  const plan = planTrip(
+    {
+      from: "h:ekta-nagar",
+      to: "h:ekta-nagar",
+      days: 2,
+      month: 11,
+      must: ["narmada-jungle-safari"],
+    },
+    data
+  )!;
+  assert.ok(
+    plan.days[0].stops.some((s) => s.spot.id === "narmada-jungle-safari"),
+    "precondition: the must-visit landed on day 1"
+  );
+
+  // find a Monday deterministically rather than trusting calendar arithmetic
+  const monday = new Date(2026, 10, 1); // local, never a UTC-parsed string
+  while (monday.getDay() !== 1) monday.setDate(monday.getDate() + 1);
+
+  const onMonday = closureWarnings(plan.days, monday);
+  assert.ok(
+    onMonday.some((w) => w.day === 1 && w.spotNames.includes("Jungle Safari (Sardar Patel Zoological Park)")),
+    "day 1 on a Monday must warn about the safari"
+  );
+
+  // start on Tuesday instead: day 1 is fine, and a warning may only appear if
+  // some later day both lands on Monday and contains a mon-closing stop
+  const tuesday = new Date(monday);
+  tuesday.setDate(tuesday.getDate() + 1);
+  const onTuesday = closureWarnings(plan.days, tuesday);
+  assert.ok(!onTuesday.some((w) => w.day === 1), "day 1 on a Tuesday must not warn");
 });
