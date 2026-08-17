@@ -313,6 +313,7 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
   });
   const [must, setMust] = useState<string[]>(initial.input?.must ?? []);
   const [avoid, setAvoid] = useState<string[]>(initial.input?.avoid ?? []);
+  const [pace, setPace] = useState<"easy" | "packed">(initial.input?.pace ?? "easy");
   const [mustQuery, setMustQuery] = useState("");
 
   /**
@@ -337,8 +338,8 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
   const month = startDate ? Number(startDate.slice(5, 7)) : (monthChoice ?? today);
 
   const input: PlanInput = useMemo(
-    () => ({ from, to, days, month, must, avoid }),
-    [from, to, days, month, must, avoid]
+    () => ({ from, to, days, month, must, avoid, pace }),
+    [from, to, days, month, must, avoid, pace]
   );
 
   /**
@@ -504,6 +505,22 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
                 </Pill>
               ))}
             </div>
+            <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.18em] text-stone-500">
+              Pace
+            </p>
+            <div className="mt-2 flex gap-1.5">
+              <Pill active={pace === "easy"} onClick={() => setPace("easy")}>
+                Easy
+              </Pill>
+              <Pill active={pace === "packed"} onClick={() => setPace("packed")}>
+                Packed
+              </Pill>
+            </div>
+            <p className="mt-1.5 max-w-[180px] text-[11px] leading-snug text-stone-600">
+              {pace === "packed"
+                ? "Early starts, ~11-hour days, more places. Visits stay unhurried."
+                : "~9-hour days with time to linger."}
+            </p>
           </div>
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-stone-500">
@@ -661,6 +678,7 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
             onSkip={skipSpot}
             closures={closures}
             startDate={startDate || null}
+            packedPace={deferredInput.pace === "packed"}
           />
         </div>
       )}
@@ -830,6 +848,7 @@ function PlanView({
   onSkip,
   closures,
   startDate,
+  packedPace,
 }: {
   plan: PlanResult;
   days: number;
@@ -841,6 +860,8 @@ function PlanView({
   closures: ClosureWarning[];
   /** "YYYY-MM-DD" when the traveller gave one */
   startDate: string | null;
+  /** longer days, more stops; the printed sheet should say so */
+  packedPace: boolean;
 }) {
   const stops = plan.days.flatMap((d) => d.stops);
 
@@ -1086,8 +1107,8 @@ function PlanView({
         </p>
         <p className="text-[11px]">
           {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops ·{" "}
-          {startLabel ? `starting ${startLabel}` : `planned for ${monthName}`} ·
-          dandak.vercel.app/plan
+          {startLabel ? `starting ${startLabel}` : `planned for ${monthName}`}
+          {packedPace ? " · packed pace" : ""} · dandak.vercel.app/plan
         </p>
       </div>
 

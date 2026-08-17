@@ -25,6 +25,8 @@ import {
   resolveNode,
   suggestStays,
   USABLE_DAY_MIN,
+  PACKED_DAY_MIN,
+  PACKED_MAX_STOPS_PER_DAY,
   MAX_STOPS_PER_DAY,
   type PlannerData,
 } from "./planner.ts";
@@ -301,6 +303,7 @@ test("plan state round-trips through the URL", () => {
     month: 8,
     must: ["dang-gira-falls"],
     avoid: ["dang-girmal-falls"], // decodePlan always returns the field, so the round-trip must carry it
+    pace: "packed" as const, // same reason; "easy" stays out of the URL, so exercise the one that rides it
   };
   const { input: back, dropped } = decodePlan(encodePlan(input), data);
   assert.deepEqual(back, input);
@@ -481,5 +484,34 @@ test("a December Saputara weekend ends day 1 at an evening spot and opens a day 
   );
   for (const d of plan.days) {
     assert.ok(d.visitMin + d.driveMin <= USABLE_DAY_MIN, `day ${d.day} broke the budget after reordering`);
+  }
+});
+
+// ------------------------------------------------------------------- pace
+
+test("packed pace covers at least as much and never breaks its own longer day", () => {
+  for (const [from, to, days, month] of [
+    ["h:surat", "h:saputara", 2, 8],
+    ["h:ahwa", "h:ahwa", 1, 8],
+    ["h:vadodara", "h:ekta-nagar", 2, 11],
+  ] as [string, string, number, number][]) {
+    const easy = planTrip({ from, to, days, month, must: [] }, data)!;
+    const packed = planTrip({ from, to, days, month, must: [], pace: "packed" }, data)!;
+    const count = (p: typeof easy) => p.days.reduce((n, d) => n + d.stops.length, 0);
+    assert.ok(
+      count(packed) >= count(easy),
+      `${from}->${to} ${days}d: packed found ${count(packed)} vs easy ${count(easy)}`
+    );
+    for (const d of packed.days) {
+      assert.ok(
+        d.visitMin + d.driveMin <= PACKED_DAY_MIN,
+        `packed day ${d.day} runs ${d.visitMin + d.driveMin} of ${PACKED_DAY_MIN} min`
+      );
+      assert.ok(d.stops.length <= PACKED_MAX_STOPS_PER_DAY, `packed day ${d.day} over the stop cap`);
+    }
+    // easy remains bound by the easy budget: the default did not quietly change
+    for (const d of easy.days) {
+      assert.ok(d.visitMin + d.driveMin <= USABLE_DAY_MIN, `easy day ${d.day} broke the easy budget`);
+    }
   }
 });
