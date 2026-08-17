@@ -11,7 +11,7 @@
   "status": "active",
   "district": "narmada",
   "summary": "More idea than attraction: the Japanese dense-planting method demonstrated as a fast-grown native mini-forest with walkways.",
-  "description": "The Miyawaki Forest demonstrates the eponymous Japanese technique: native species planted extremely densely so they race each other upward, producing in a few years a thicket that behaves like decades-old forest. The campus plot pairs the young dense stands with walkways and boards explaining the method's logic: soil prep, species mixing, accelerated succession.\n\nIt is a fifteen-to-thirty-minute educational stroll, honest about being a demonstration rather than a destination. Ecology-curious visitors and students get the most from it; as the stand matures it should earn its place on shade alone.",
+  "description": "The Miyawaki Forest demonstrates the eponymous Japanese technique: native species planted extremely densely so they race each other upward, producing in a few years a thicket that behaves like decades-old forest. The campus plot pairs the young dense stands with walkways and boards explaining the method's logic: soil prep, species mixing, accelerated succession.\n\nThe claim the method makes is specific, and it is the reason the plot exists. Planting this tightly is said to produce a stand roughly thirty times denser than conventional forestry, and to get there in two or three years rather than the twenty or thirty a traditional planting needs. The campus lays it out in themed sections, native flora, timber, fruit and medicinal, alongside a mixed Miyawaki block and an orientation centre, so the demonstration is legible rather than just green.\n\nIt is a fifteen-to-thirty-minute educational stroll, honest about being a demonstration rather than a destination. Ecology-curious visitors and students get the most from it; as the stand matures it should earn its place on shade alone.",
   "highlights": [
     "Working demo of the Miyawaki dense-planting method",
     "Native-species mini-forest growing at speed",
@@ -91,7 +91,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "PM dedicates Maze Garden and Miyawaki Forest in Ekta Nagar (Oct 2022)", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1872060", "publisher": "PIB (official)", "accessed": "2026-08-08" }
+      { "title": "PM dedicates Maze Garden and Miyawaki Forest in Ekta Nagar (Oct 2022)", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1872060", "publisher": "PIB (official)", "accessed": "2026-08-08" },
+      { "title": "Miyawaki Forest and Maze Garden at the Statue of Unity — method, density claim and themed sections", "url": "https://organiser.org/2022/10/30/97460/bharat/gujarat-miyawaki-forest-maze-garden-to-be-new-attractions-at-statue-of-unity-here-is-you-all-you-need-to-know/", "publisher": "organiser.org", "accessed": "2026-08-17" }
     ],
     "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
   }

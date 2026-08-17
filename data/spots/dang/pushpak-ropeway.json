@@ -11,7 +11,7 @@
   "status": "active",
   "district": "dang",
   "summary": "Ten scenic minutes each way, lake side to the Sunset Point ridge.",
-  "description": "Small gondolas strung across the valley between the lake side and the ridge near Sunset Point. The Pushpak ropeway is Saputara's signature ride. The crossing takes around ten minutes each way, and the mid-span view, lake on one side, wooded valley dropping away on the other, is one most visitors would otherwise never see.\n\nFor many, the ropeway doubles as transport: it is the easy way to reach Sunset Point without the stepped climb, which makes it popular with older visitors and families with small children. Queues build in the hour before sunset and through May and Diwali holidays; mid-morning rides are walk-on. Cabins pause in high wind and during lightning, which mostly matters in June–July.\n\nBuy a return ticket unless you specifically plan to walk down the Sunset Point steps, a pleasant descent of twenty-odd minutes that pairs well with a one-way ride up.",
+  "description": "Small gondolas strung across the valley between the lake side and the ridge near Sunset Point. The Pushpak ropeway is Saputara's signature ride. The crossing takes around ten minutes each way, and the mid-span view, lake on one side, wooded valley dropping away on the other, is one most visitors would otherwise never see.\n\nThe lift itself is a detachable mono-cable gondola running six carriers of four seats each, and construction on it began as far back as 1987, which makes it one of the older tourist ropeways in the state. Published ride times disagree, between five and seven minutes in the technical listing and closer to ten in visitor accounts, so treat the crossing as under quarter of an hour either way.\n\nFor many, the ropeway doubles as transport: it is the easy way to reach Sunset Point without the stepped climb, which makes it popular with older visitors and families with small children. Queues build in the hour before sunset and through May and Diwali holidays; mid-morning rides are walk-on. Cabins pause in high wind and during lightning, which mostly matters in June–July.\n\nBuy a return ticket unless you specifically plan to walk down the Sunset Point steps, a pleasant descent of twenty-odd minutes that pairs well with a one-way ride up.",
   "highlights": [
     "Mid-air view over Saputara lake and valley",
     "Easiest access to Sunset Point for elderly visitors",
@@ -101,7 +101,8 @@
     "confidence": "high",
     "sources": [
       { "title": "Table Land & Ropeway, Saputara, Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/table-land-ropeway", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Saputara Ropeway: One of India's Most Scenic Cable Car Rides", "url": "https://www.storiesbysoumya.com/saputara-ropeway-pushpak-gujarat/", "publisher": "storiesbysoumya.com", "accessed": "2026-08-08" }
+      { "title": "Saputara Ropeway: One of India's Most Scenic Cable Car Rides", "url": "https://www.storiesbysoumya.com/saputara-ropeway-pushpak-gujarat/", "publisher": "storiesbysoumya.com", "accessed": "2026-08-08" },
+      { "title": "Saputara ropeway — mono-cable detachable gondola, 6 carriers of 4, construction from 1987, 5–7 minute listed trip", "url": "https://en.wikipedia.org/wiki/Saputara_ropeway", "publisher": "Wikipedia", "accessed": "2026-08-17" }
     ],
     "needs_verification": ["location.coordinates"]
   }

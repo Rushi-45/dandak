@@ -11,7 +11,7 @@
   "status": "active",
   "district": "narmada",
   "summary": "Host-plant gardens alive with free-flying butterflies near the Statue of Unity, best in the first sunny hours of the morning.",
-  "description": "The Butterfly Garden plants its way to its residents. Beds of host and nectar species (citrus, milkweeds, lantana relatives, curry-leaf) keep local butterfly populations breeding on site rather than behind netting. On a warm, sunny mid-morning the paths flicker with them; on an overcast afternoon you will mostly see plants, which is the honest trade of a living exhibit.\n\nInterpretation boards cover life cycles and species; kids get caterpillar-hunting on the host plants with a little guidance. It is a light, pleasant forty minutes that lands best with children and macro photographers, folded into the jetty-zone loop with the Cactus Garden next door.",
+  "description": "The Butterfly Garden plants its way to its residents. Beds of host and nectar species (citrus, milkweeds, lantana relatives, curry-leaf) keep local butterfly populations breeding on site rather than behind netting. On a warm, sunny mid-morning the paths flicker with them; on an overcast afternoon you will mostly see plants, which is the honest trade of a living exhibit.\n\nGujarat Tourism records ten acres planted with 150 species of nectar and larval host plants, supporting more than seventy species of butterfly. The distinction is the whole design: host plants are where eggs go and caterpillars feed, so this is a breeding habitat rather than a display cage, and the population it holds is a local one.\n\nInterpretation boards cover life cycles and species; kids get caterpillar-hunting on the host plants with a little guidance. It is a light, pleasant forty minutes that lands best with children and macro photographers, folded into the jetty-zone loop with the Cactus Garden next door.",
   "highlights": [
     "Free-flying butterflies on living host plants",
     "Life-cycle spotting for kids, eggs to chrysalis",
@@ -95,7 +95,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Ticket Price 2026, Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" }
+      { "title": "Statue of Unity Ticket Price 2026, Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" },
+      { "title": "Butterfly Garden, Narmada — area, butterfly and host-plant species counts", "url": "https://gujarattourism.com/central-zone/narmada/butterfly-garden.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-17" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }

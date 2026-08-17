@@ -11,7 +11,7 @@
   "status": "active",
   "district": "narmada",
   "summary": "Nightly laser projection and sound show that turns the Statue of Unity into a canvas for Sardar Patel's story, the campus's evening set piece.",
-  "description": "After sunset on operating days, projectors and lasers wash the Statue of Unity in colour while a narrated soundtrack tells Sardar Patel's life and the statue's making, the monument itself as a 182-metre screen. Seating and standing areas face the statue from the show plaza; the spectacle runs roughly half an hour and lands hardest with first-time visitors and children.\n\nEntry arrangements have varied between being included with day tickets and separately managed seating, check current rules when booking. No show on Mondays (the campus closes), and weather can cancel. Arrive early on weekends: the good sightlines go 45 minutes before start, and exit traffic afterwards is its own event.",
+  "description": "After sunset on operating days, projectors and lasers wash the Statue of Unity in colour while a narrated soundtrack tells Sardar Patel's life and the statue's making, the monument itself as a 182-metre screen. Seating and standing areas face the statue from the show plaza; the spectacle runs roughly half an hour and lands hardest with first-time visitors and children.\n\nThe hardware is the reason it works at that scale. The projection mapping is thrown by 51 Christie laser projectors standing roughly 600 metres back, rigged by Christie's Indian partner alongside a German laser-show producer, and the show has run in the evenings since Gujarati new year in 2018, when it was free to watch. Mapping onto a curved bronze figure rather than a flat facade is what makes the statue appear to move.\n\nEntry arrangements have varied between being included with day tickets and separately managed seating, check current rules when booking. No show on Mondays (the campus closes), and weather can cancel. Arrive early on weekends: the good sightlines go 45 minutes before start, and exit traffic afterwards is its own event.",
   "highlights": [
     "Laser projection across the 182 m statue",
     "Narrated Sardar Patel story, ~30 minutes",
@@ -100,7 +100,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "Statue of Unity, Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Timings 2026, Entry Hours, Laser Show", "url": "https://statueofunity.in/statue-of-unity-timings-entry-laser-show-2026/", "publisher": "statueofunity.in", "accessed": "2026-08-08" }
+      { "title": "Statue of Unity Timings 2026, Entry Hours, Laser Show", "url": "https://statueofunity.in/statue-of-unity-timings-entry-laser-show-2026/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity projection-mapping show — 51 projectors at 600 m, 30 minutes, running since Gujarati new year 2018", "url": "https://deshgujarat.com/2018/11/15/statue-of-unity-projection-mapping-show-known-as-laset-show-to-get-a-more-organized-shape-in-coming-days-the-free-of-charge-30-minute-show-going-on-regular-in-the-evening-since-gujarati-new-year-day/", "publisher": "DeshGujarat", "accessed": "2026-08-17" }
     ],
     "needs_verification": ["visit.fees", "visit.booking.notes"]
   }

@@ -11,7 +11,7 @@
   "status": "active",
   "district": "narmada",
   "summary": "Hundreds of cactus and succulent species under domes and over dunes near the Statue of Unity. Oddly photogenic, and genuinely educational.",
-  "description": "A large geodesic dome and landscaped outdoor beds hold hundreds of cactus and succulent species from the Americas, Africa and beyond, barrels, columns, agaves, euphorbias, arranged in gravel dunescapes that photograph like a set. It is the SoU campus's most distinctive side attraction. Interpretation panels do honest botanical work on how these plants engineer survival.\n\nIt is compact (an hour covers it), shaded in the dome, and different enough from the campus's flower-and-lawn defaults to stay memorable. Children tend to love the sheer weirdness of the shapes. Combine it with the neighbouring jetty-zone attractions rather than making a separate trip.",
+  "description": "A large geodesic dome and landscaped outdoor beds hold hundreds of cactus and succulent species from the Americas, Africa and beyond, barrels, columns, agaves, euphorbias, arranged in gravel dunescapes that photograph like a set. It is the SoU campus's most distinctive side attraction. Interpretation panels do honest botanical work on how these plants engineer survival.\n\nGujarat Tourism puts the scale at twenty-five acres of open ground with an 836-square-metre dome at its centre, and the collection at six lakh plants across 450 species drawn from seventeen countries, mostly the Americas and Africa. The stated intent is a desert ecosystem set down in a landscape defined by water, which is a fair description of how it reads a few hundred metres from the Narmada.\n\nIt is compact (an hour covers it), shaded in the dome, and different enough from the campus's flower-and-lawn defaults to stay memorable. Children tend to love the sheer weirdness of the shapes. Combine it with the neighbouring jetty-zone attractions rather than making a separate trip.",
   "highlights": [
     "Geodesic dome of exotic cacti and succulents",
     "Dunescape beds built for photography",
@@ -96,7 +96,8 @@
     "confidence": "medium",
     "sources": [
       { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Ticket Price 2026, Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" }
+      { "title": "Statue of Unity Ticket Price 2026, Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" },
+      { "title": "Cactus Garden, Narmada — area, dome size, species and plant counts", "url": "https://gujarattourism.com/central-zone/narmada/cactus-garden.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-17" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }
