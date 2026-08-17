@@ -14,6 +14,7 @@ import { useSearchParams } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { StopCard } from "@/components/stop-card";
 import { DAY_STROKE, TripMap, type DayRoutes, type TripMapStop } from "@/components/trip-map";
+import { buildGpx } from "@/lib/gpx";
 import { fetchRoadRoute, type RoadLeg } from "@/lib/road-route";
 import Link from "next/link";
 import { categoryMeta, PRICE_BAND_LABEL, stayTypeMeta } from "@/lib/ui";
@@ -1263,6 +1264,51 @@ function PlanView({
             className="rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
           >
             Print or save as PDF
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              /*
+               * The interior has no signal, so the plan has to leave the
+               * browser. A GPX opens in OsmAnd / Organic Maps, offline-first,
+               * with each day as a track (the real road geometry when OSRM has
+               * answered, the straight chain otherwise, the same fallback the
+               * map draws) and every stop as a numbered waypoint.
+               */
+              const xml = buildGpx(
+                `${plan.from.name} to ${plan.to.name} · dandak`,
+                plan.days.map((d) => ({
+                  day: d.day,
+                  points: legs[d.day]?.points ?? waypointsFor(d),
+                  stops: d.stops.map((s) => ({
+                    order: s.order,
+                    name: s.spot.name,
+                    lat: s.spot.lat,
+                    lng: s.spot.lng,
+                  })),
+                }))
+              );
+              const url = URL.createObjectURL(new Blob([xml], { type: "application/gpx+xml" }));
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = "dandak-plan.gpx";
+              a.click();
+              URL.revokeObjectURL(url);
+            }}
+            className="rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+          >
+            Download GPX for offline maps
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              // built at click time so the URL is never stale
+              const text = `${plan.from.name} to ${plan.to.name} · ${plan.days.length} day${plan.days.length > 1 ? "s" : ""} · ${stops.length} stops · ${window.location.href}`;
+              window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+            }}
+            className="rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+          >
+            Share on WhatsApp
           </button>
           <span className="text-xs text-stone-600">
             The whole plan is in the URL, so the link reopens exactly this.
