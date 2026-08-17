@@ -1164,12 +1164,28 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     return true;
   });
 
-  // 2. reach filter, corridor offset, or radius for loops
-  const maxOffsetKm = isLoop
-    ? days === 1
-      ? 45
-      : 70
-    : Math.min(days === 1 ? 25 : 45, Math.max(days === 1 ? 10 : 15, corridorKm * (days === 1 ? 0.2 : 0.25)));
+  // 2. reach filter, corridor offset for A-to-B, the clock for loops
+  const maxOffsetKm = Math.min(
+    days === 1 ? 25 : 45,
+    Math.max(days === 1 ? 10 : 15, corridorKm * (days === 1 ? 0.2 : 0.25))
+  );
+
+  /*
+   * Loops used to use a flat radius, 45 km for one day and 70 beyond, which
+   * read as generous from Ahwa and was a wall from Surat: the nearest
+   * documented spot is 79 road-km out, so "Surat to Surat" answered "nothing
+   * fits" no matter how many days were offered. The wall is now the same rule
+   * the packer enforces. A spot belongs to a day loop if driving out and back
+   * plus the visit fits the day; an overnight loop only needs the outbound to
+   * leave a quarter of a day for seeing things, because you sleep out rather
+   * than return. Distance still does the RANKING, so nearer places fill the
+   * plan first and the far edge appears only when time genuinely allows it.
+   */
+  const loopFits = (spot: PlannerSpot, node: Node) => {
+    const outMin = driveMinutes(from, node, month || 1);
+    if (days === 1) return outMin * 2 + stopCostMinutes(spot, dwellFactor) <= dayMin;
+    return outMin <= dayMin * 0.75;
+  };
 
   const reachable = eligible
     .map((s) => {
@@ -1181,7 +1197,11 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
       const { t, offsetKm } = projectOntoCorridor(n, from, to);
       return { spot: s, node: n, t, offsetKm: Math.max(0, offsetKm - coordSlackKm(s)) };
     })
-    .filter((c) => c.offsetKm <= maxOffsetKm && (isLoop || (c.t > -0.15 && c.t < 1.15)));
+    .filter((c) =>
+      isLoop
+        ? loopFits(c.spot, c.node)
+        : c.offsetKm <= maxOffsetKm && c.t > -0.15 && c.t < 1.15
+    );
 
   // 3. selection, lexicographic rank, diversity-aware, accepted while time allows
   const clusterCount = new Map<string, number>();

@@ -544,3 +544,28 @@ test("rushed pace round-trips the URL", () => {
   const { input: bogus } = decodePlan("from=h:surat&to=h:saputara&days=2&month=8&pace=frantic", data);
   assert.equal(bogus!.pace, "easy"); // unknown paces fall back to the default
 });
+
+// ---------------------------------------------------- loops from far bases
+
+test("a loop from a gateway city answers instead of 'nothing fits'", () => {
+  // the nearest documented spot is 79 road-km from Surat; the old flat 45/70 km
+  // loop radius made every spot unreachable and the planner shrugged
+  const oneDay = planTrip({ from: "h:surat", to: "h:surat", days: 1, month: 8, must: [] }, data)!;
+  const twoDay = planTrip({ from: "h:surat", to: "h:surat", days: 2, month: 8, must: [] }, data)!;
+  const count = (p: typeof oneDay) => p.days.reduce((n, d) => n + d.stops.length, 0);
+
+  assert.ok(count(oneDay) >= 1, "a Surat day loop must reach something");
+  assert.ok(count(twoDay) > count(oneDay), "more days must widen a gateway loop");
+  for (const p of [oneDay, twoDay]) {
+    for (const d of p.days) {
+      assert.ok(
+        d.visitMin + d.driveMin <= USABLE_DAY_MIN,
+        `gateway loop day ${d.day} runs ${d.visitMin + d.driveMin} min`
+      );
+    }
+  }
+
+  // the belt-town loops that always worked must not have changed shape
+  const ahwa = planTrip({ from: "h:ahwa", to: "h:ahwa", days: 1, month: 8, must: [] }, data)!;
+  assert.ok(count(ahwa) >= 2, "an Ahwa day loop keeps its local stops");
+});
