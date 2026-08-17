@@ -21,6 +21,7 @@ import {
   encodePlan,
   decodePlan,
   closureWarnings,
+  timeOfDayPass,
   resolveNode,
   suggestStays,
   USABLE_DAY_MIN,
@@ -413,4 +414,72 @@ test("a Monday start flags the SoU cluster's closing day, other days stay quiet"
   tuesday.setDate(tuesday.getDate() + 1);
   const onTuesday = closureWarnings(plan.days, tuesday);
   assert.ok(!onTuesday.some((w) => w.day === 1), "day 1 on a Tuesday must not warn");
+});
+
+// ---------------------------------------------------- time-of-day ordering
+
+test("the time-of-day pass moves an evening stop to the end of its day", () => {
+  // hand-build a day that is deliberately wrong: sunset point FIRST
+  const ids = ["dang-sunset-point", "dang-echo-point", "dang-table-point"];
+  const nodes = ids.map((id) => resolveNode(`s:${id}`, data)!);
+  const from = resolveNode("h:saputara", data)!;
+  const wrongDay = {
+    day: 1,
+    stops: nodes.map((n, i) => ({
+      spot: n.spot!,
+      day: 1,
+      order: i + 1,
+      arriveAfterMin: 0,
+      driveMinFromPrev: 0,
+      driveKmFromPrev: 0,
+      distanceSource: "estimated" as const,
+      seasonTier: "ok" as const,
+      seasonNote: null,
+    })),
+    startNode: from,
+    endNode: nodes[2],
+    driveKm: 0,
+    driveMin: 0,
+    visitMin: 0,
+    transitLeg: null,
+    stays: [],
+  };
+  const fixed = timeOfDayPass(
+    { days: [wrongDay], dropped: [], curatedLegs: 0, estimatedLegs: 0 },
+    from,
+    from, // a loop: the final leg returns to base
+    1,
+    11,
+    data.stays
+  );
+  const slugs = fixed.days[0].stops.map((s) => s.spot.slug);
+  assert.equal(slugs[slugs.length - 1], "sunset-point", `evening stop must land last, got ${slugs.join(" > ")}`);
+  assert.deepEqual(
+    fixed.days[0].stops.map((s) => s.order),
+    [1, 2, 3],
+    "stop numbering is redone after the reorder"
+  );
+});
+
+test("a December Saputara weekend ends day 1 at an evening spot and opens a day at dawn", () => {
+  // pins live behaviour: the plan carries sunset-hinted and dawn-hinted stops,
+  // and the pass must respect both without breaking the day budget
+  const plan = planTrip({ from: "h:saputara", to: "h:saputara", days: 2, month: 12, must: [] }, data)!;
+  const d1 = plan.days[0].stops;
+  assert.ok(d1.length >= 2, "day 1 should have stops");
+  const last = d1[d1.length - 1].spot;
+  assert.ok(
+    last.bestTime === "evening" || last.bestTime === "night",
+    `day 1 should end on an evening stop, ends on ${last.slug} (${last.bestTime})`
+  );
+  const dawnDay = plan.days.find((d) => d.stops.some((s) => s.spot.bestTime === "early-morning"));
+  assert.ok(dawnDay, "the plan should reach a dawn-hinted stop in December");
+  assert.equal(
+    dawnDay!.stops[0].spot.bestTime,
+    "early-morning",
+    "a day holding a dawn stop must open with it"
+  );
+  for (const d of plan.days) {
+    assert.ok(d.visitMin + d.driveMin <= USABLE_DAY_MIN, `day ${d.day} broke the budget after reordering`);
+  }
 });

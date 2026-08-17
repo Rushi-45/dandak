@@ -29,6 +29,8 @@ export interface PlannerSpot {
   durationMin: number;
   /** "mon".."sun" when the place has a fixed closing day (18 records, the SoU cluster) */
   weeklyClosure: string | null;
+  /** "early-morning" | "morning" | "afternoon" | "evening" | "night" | null */
+  bestTime: string | null;
   bestMonths: number[];
   avoidMonths: number[];
   monsoonDependent: boolean;
@@ -675,6 +677,204 @@ export function decodePlan(
   return { input: { from, to, days, month, must: must.slice(0, 5), avoid }, dropped };
 }
 
+// ---------------------------------------------------- time-of-day ordering
+
+/**
+ * How many extra minutes of driving a nicer time-of-day order is allowed to
+ * cost. Fifteen: enough to swap neighbours, never enough to wreck a day.
+ */
+export const TIME_OF_DAY_DRIVE_CAP_MIN = 15;
+
+/**
+ * Only the strong hints act. "morning" covers 66 of 106 records and forcing
+ * them all first would thrash every plan; "early-morning" (12) and
+ * "evening"/"night" (18) are the ones a traveller actually regrets missing —
+ * Sunset Point at 10am is a correct route and a wrong trip.
+ */
+const wantsFirst = (s: PlannerSpot) => s.bestTime === "early-morning";
+const wantsLast = (s: PlannerSpot) => s.bestTime === "evening" || s.bestTime === "night";
+
+/**
+ * Reorder each packed day so sunset stops land last and dawn stops first, when
+ * that costs at most TIME_OF_DAY_DRIVE_CAP_MIN of extra driving.
+ *
+ * Runs AFTER packDays because day membership must not change — only the order
+ * within a day. Two consequences shape the implementation:
+ *
+ * - An intermediate day ends wherever its last stop is: that is where you
+ *   sleep and where the next morning starts. Reordering changes the endNode,
+ *   so every day downstream is re-laid-out with fresh legs, arrive times, bed
+ *   suggestions and transit callouts, and the global stop numbering is redone.
+ *
+ * - The drive cap is scored against the day's chain PLUS the bridge into the
+ *   next day's first stop (or the trip end). Without the bridge, a permutation
+ *   could end the day somewhere cheap for today and expensive for tomorrow,
+ *   and the cap would leak across midnight.
+ *
+ * Permutations are enumerated (≤ 7 stops → ≤ 5040) against a precomputed pair
+ * matrix, the same trick that took Held-Karp from 107 ms to 11: driveMinutes
+ * is trigonometry and must not run inside the loop. Days with no strong hint
+ * are laid out unchanged, and identity wins every tie, so plans without
+ * evening or dawn stops come out byte-identical.
+ */
+export function timeOfDayPass(
+  packed: PackResult,
+  from: Node,
+  to: Node,
+  days: number,
+  month: number,
+  staysArr: PlannerStay[]
+): PackResult {
+  const driveMonth = month || 1;
+  const out: PlannedDay[] = [];
+  let cursor: Node = from;
+  let order = 0;
+  let curatedLegs = 0;
+  let estimatedLegs = 0;
+
+  for (let di = 0; di < packed.days.length; di++) {
+    const d = packed.days[di];
+    const isFinal = di === packed.days.length - 1;
+    let nodes = d.stops.map((s) => nodeOf(s.spot));
+
+    const hinted = nodes.some((n) => wantsFirst(n.spot!) || wantsLast(n.spot!));
+    if (nodes.length >= 2 && hinted) {
+      // the leg that keeps the cap honest across midnight
+      const bridge: Node = isFinal ? to : (packed.days[di + 1]?.stops[0] ? nodeOf(packed.days[di + 1].stops[0].spot) : to);
+      const pts: Node[] = [cursor, ...nodes, bridge];
+      const B = pts.length - 1;
+      const m: number[][] = pts.map(() => new Array(pts.length).fill(0));
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = 0; j < pts.length; j++) {
+          if (i !== j) m[i][j] = driveMinutes(pts[i], pts[j], driveMonth);
+        }
+      }
+
+      const n = nodes.length;
+      const driveOf = (perm: number[]) => {
+        let t = m[0][perm[0]];
+        for (let i = 1; i < n; i++) t += m[perm[i - 1]][perm[i]];
+        return t + m[perm[n - 1]][B];
+      };
+      const penaltyOf = (perm: number[]) => {
+        let p = 0;
+        for (let i = 0; i < n; i++) {
+          const s = pts[perm[i]].spot!;
+          if (wantsFirst(s) && i !== 0) p++;
+          if (wantsLast(s) && i !== n - 1) p++;
+        }
+        return p;
+      };
+
+      const identity = nodes.map((_, i) => i + 1);
+      const basePen = penaltyOf(identity);
+      const baseDrive = driveOf(identity);
+      // The day's own drive excludes the bridge on intermediate days (the
+      // bridge is tomorrow's first leg); on the final day the bridge IS the
+      // drive home and packDays counts it inside the day.
+      const dayDriveOf = (perm: number[]) => driveOf(perm) - (isFinal ? 0 : m[perm[n - 1]][B]);
+      const visitTotal = nodes.reduce((s, x) => s + stopCostMinutes(x.spot!), 0);
+      // never break the packer's hard day budget; a day already over it
+      // (must-visits can do that) must at least not get worse
+      const dayBudget = Math.max(USABLE_DAY_MIN, visitTotal + dayDriveOf(identity));
+
+      if (basePen > 0) {
+        let chosen = identity;
+        let chosenPen = basePen;
+        let chosenDrive = baseDrive;
+        // Heap's algorithm: one working array, swaps only. The naive recursive
+        // build allocated two arrays per node visited, ~100k allocations per
+        // hinted day, and quadrupled planTrip's worst case.
+        const work = identity.slice();
+        const consider = () => {
+          const pen = penaltyOf(work);
+          if (pen > chosenPen) return;
+          const dr = driveOf(work);
+          if (dr > baseDrive + TIME_OF_DAY_DRIVE_CAP_MIN) return;
+          if (visitTotal + dayDriveOf(work) > dayBudget) return;
+          if (pen < chosenPen || (pen === chosenPen && chosenPen < basePen && dr < chosenDrive)) {
+            chosen = work.slice();
+            chosenPen = pen;
+            chosenDrive = dr;
+          }
+        };
+        const heaps = (k: number) => {
+          if (k === 1) {
+            consider();
+            return;
+          }
+          for (let i = 0; i < k; i++) {
+            heaps(k - 1);
+            if (i < k - 1) {
+              const j = k % 2 === 0 ? i : 0;
+              const t = work[j];
+              work[j] = work[k - 1];
+              work[k - 1] = t;
+            }
+          }
+        };
+        heaps(n);
+        if (chosenPen < basePen) nodes = chosen.map((i) => pts[i]);
+      }
+    }
+
+    // lay the day back out: packDays' own leg maths, over the (re)ordered stops
+    const dayStart = cursor;
+    const stops: PlannedStop[] = [];
+    let dayVisit = 0;
+    let dayDrive = 0;
+    let dayKm = 0;
+    let transit: PlannedDay["transitLeg"] = null;
+    for (const node of nodes) {
+      const spot = node.spot!;
+      const leg = legDistanceKm(cursor, node);
+      const drive = driveMinutes(cursor, node, driveMonth);
+      if (leg.source === "estimated") estimatedLegs++;
+      else curatedLegs++;
+      if (drive >= TRANSIT_LEG_MIN) {
+        transit = { fromName: cursor.name, toName: node.name, km: Math.round(leg.km), min: drive };
+      }
+      order++;
+      stops.push({
+        spot,
+        day: d.day,
+        order,
+        arriveAfterMin: dayVisit + dayDrive + drive,
+        driveMinFromPrev: drive,
+        driveKmFromPrev: Math.round(leg.km),
+        distanceSource: leg.source,
+        seasonTier: month ? seasonTier(spot, month) : "ok",
+        seasonNote: month ? seasonNote(spot, month) : null,
+      });
+      dayVisit += stopCostMinutes(spot);
+      dayDrive += drive;
+      dayKm += leg.km;
+      cursor = node;
+    }
+    let endNode: Node = isFinal ? to : stops.length ? cursor : d.endNode;
+    if (isFinal) {
+      const finalLeg = legDistanceKm(cursor, to);
+      dayKm += finalLeg.km;
+      dayDrive += driveMinutes(cursor, to, driveMonth);
+      endNode = to;
+    }
+    out.push({
+      day: d.day,
+      stops,
+      startNode: dayStart,
+      endNode,
+      driveKm: Math.round(dayKm),
+      driveMin: dayDrive,
+      visitMin: dayVisit,
+      transitLeg: transit,
+      stays: d.day < days ? suggestStays(endNode, staysArr) : [],
+    });
+    cursor = endNode;
+  }
+
+  return { days: out, dropped: packed.dropped, curatedLegs, estimatedLegs };
+}
+
 // ------------------------------------------------------ closure warnings
 
 const WEEKDAY_KEYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"] as const;
@@ -996,9 +1196,18 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
 
   // 4. final ordering, 5. pack into days, the same packer the fit gate used
   const ordered = routeOf(chosen);
-  const packed = packDays(from, ordered, to, days, month, data.stays, mustIds);
+  const packed = timeOfDayPass(
+    packDays(from, ordered, to, days, month, data.stays, mustIds),
+    from,
+    to,
+    days,
+    month,
+    data.stays
+  );
   const plannedDays = packed.days;
   const dropped = packed.dropped;
+  // the pass may have reordered within days; measure the chain that is actually planned
+  const finalOrdered = plannedDays.flatMap((d) => d.stops.map((s) => nodeOf(s.spot)));
 
   if (!plannedDays.some((d) => d.stops.length)) {
     warnings.push(
@@ -1013,7 +1222,7 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
 
   return {
     days: plannedDays,
-    totalKm: Math.round(chainKm([from, ...ordered, to])),
+    totalKm: Math.round(chainKm([from, ...finalOrdered, to])),
     totalDriveMin: plannedDays.reduce((s, d) => s + d.driveMin, 0),
     totalVisitMin: plannedDays.reduce((s, d) => s + d.visitMin, 0),
     excluded,
