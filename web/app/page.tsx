@@ -283,7 +283,7 @@ export default function Home() {
                     Chase the monsoon
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                    Gira, Girmal, Zarwani, Ninai, {waterfalls} waterfalls at full throat, and the
+                    Gira, Girmal, Zarwani, Ninai: {waterfalls} waterfalls at full throat, and the
                     forests running neon green.
                   </p>
                 </div>
@@ -324,7 +324,7 @@ export default function Home() {
                     Walk with legends
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                    Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan, the epics
+                    Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan: the epics
                     mapped onto living hills, told as tradition, not fact.
                   </p>
                   <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-amber-300/80">

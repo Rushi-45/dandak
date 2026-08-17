@@ -43,7 +43,7 @@ export const AREAS: Area[] = [
     intro: [
       "Everything south and east of Ahwa is what people mean by interior Dang: a dissected plateau of teak and bamboo where the roads follow ridgelines because the valleys are too steep to build in. It holds more of this dataset than anywhere else, and almost none of it appears in a tourism brochure.",
       "The arithmetic of the place is unforgiving. Ahwa to Chikhalda Falls is 12 km as the crow flies and 54 km by road, because you descend to a valley road and come back up the far side. Fuel up in Ahwa; there are no pumps on the interior stretch. Distances here punish optimism more than anywhere else in either district.",
-      "It is also where the payoff is. Girmal is the tallest fall in Gujarat, Don sits at the highest village, and a dozen falls in these pages, Chikhalda, Ritu, Baaj, Chirai, Advait, are documented here and almost nowhere else on the internet.",
+      "It is also where the payoff is. Girmal is the tallest fall in Gujarat, Don sits at the highest village, and a dozen falls in these pages (Chikhalda, Ritu, Baaj, Chirai, Advait) are documented here and almost nowhere else on the internet.",
     ],
   },
   {
