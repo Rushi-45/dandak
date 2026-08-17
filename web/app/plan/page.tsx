@@ -42,7 +42,18 @@ export default function PlanPage() {
             <div className="h-64 animate-pulse rounded-3xl border border-white/[0.07] bg-white/[0.02]" />
           }
         >
-          <TripPlanner data={data} />
+          <TripPlanner
+            data={data}
+            /* Slim stop-id sets for the 12 hand-written trips, so a generated
+               plan can point at the one that already covers most of it — the
+               curated pages carry day notes and prose the generator cannot. */
+            trips={itineraries.map((i) => ({
+              slug: i.slug,
+              title: i.title,
+              days: i.duration_days,
+              spotIds: i.stops.map((s) => s.spot_id),
+            }))}
+          />
         </Suspense>
       </div>
     </div>

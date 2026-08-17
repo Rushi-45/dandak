@@ -224,7 +224,28 @@ function hhmm(min: number): string {
 
 // ------------------------------------------------------------------ planner
 
-export function TripPlanner({ data }: { data: PlannerData }) {
+/** One curated itinerary, slimmed to what plan-matching needs. */
+export interface TripSummary {
+  slug: string;
+  title: string;
+  days: number;
+  spotIds: string[];
+}
+
+/**
+ * One-tap example plans. The blank form is the entry experience, and a form
+ * teaches nothing; these do. Loops (from == to) are deliberate — "what fits in
+ * a day from here" is the commonest real question. Each press also clears
+ * must/avoid so the example is the example, not the example plus leftovers.
+ */
+const PRESETS: { label: string; from: string; to: string; days: number }[] = [
+  { label: "A day around Ahwa", from: "h:ahwa", to: "h:ahwa", days: 1 },
+  { label: "SoU in a day", from: "h:ekta-nagar", to: "h:ekta-nagar", days: 1 },
+  { label: "Surat weekend in the hills", from: "h:surat", to: "h:saputara", days: 2 },
+  { label: "The full belt", from: "h:surat", to: "h:rajpipla", days: 5 },
+];
+
+export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSummary[] }) {
   const params = useSearchParams();
   const options = useMemo(() => buildOptions(data), [data]);
 
@@ -336,6 +357,32 @@ export function TripPlanner({ data }: { data: PlannerData }) {
     return closureWarnings(plan.days, new Date(y, m - 1, d));
   }, [plan, startDate]);
 
+  /**
+   * Does a hand-written itinerary already cover most of this plan? Scored by
+   * containment (shared stops / plan stops), not Jaccard: measured against
+   * real generated plans, Jaccard tops out at 0.38 here because it punishes
+   * the curated trip for its extra stops, which is backwards — those extras
+   * are day notes and prose the generator cannot write, i.e. the reason to
+   * link at all. Fires at half-covered with at least two shared stops.
+   */
+  const tripMatch = useMemo(() => {
+    if (!plan) return null;
+    const ids = new Set(plan.days.flatMap((d) => d.stops.map((s) => s.spot.id)));
+    if (ids.size < 2) return null;
+    let best: TripSummary | null = null;
+    let bestScore = 0;
+    for (const t of trips) {
+      const set = new Set(t.spotIds);
+      const shared = [...ids].filter((id) => set.has(id)).length;
+      const score = shared >= 2 ? shared / ids.size : 0;
+      if (score > bestScore) {
+        bestScore = score;
+        best = t;
+      }
+    }
+    return best && bestScore >= 0.5 ? best : null;
+  }, [plan, trips]);
+
   const toggleMust = useCallback((id: string) => {
     setMust((m) => (m.includes(id) ? m.filter((x) => x !== id) : [...m, id].slice(0, 5)));
   }, []);
@@ -368,6 +415,31 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
   return (
     <>
+      {/* one-tap examples, so the blank form teaches itself */}
+      <div className="no-print mb-4 flex flex-wrap items-center gap-2">
+        <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-stone-500">
+          Try one
+        </span>
+        {PRESETS.map((p) => {
+          const active = from === p.from && to === p.to && days === p.days;
+          return (
+            <Pill
+              key={p.label}
+              active={active}
+              onClick={() => {
+                setFrom(p.from);
+                setTo(p.to);
+                setDays(p.days);
+                setMust([]);
+                setAvoid([]);
+              }}
+            >
+              {p.label}
+            </Pill>
+          );
+        })}
+      </div>
+
       {/* ------------------------------------------------------------ form */}
       <div className="no-print rounded-3xl border border-white/[0.07] bg-white/[0.02] p-5 sm:p-6">
         <div className="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end">
@@ -525,6 +597,19 @@ export function TripPlanner({ data }: { data: PlannerData }) {
           }
           aria-busy={replanning || undefined}
         >
+          {tripMatch && (
+            <p className="mt-8 rounded-2xl border border-emerald-400/15 bg-emerald-400/[0.05] p-4 text-sm leading-relaxed text-stone-300">
+              ✍ This is close to our hand-written{" "}
+              <Link
+                href={`/itineraries/${tripMatch.slug}`}
+                className="font-semibold text-emerald-300 underline decoration-emerald-400/30 underline-offset-4 hover:text-emerald-200"
+              >
+                {tripMatch.title}
+              </Link>
+              , which carries day notes and detail the generator cannot write.
+            </p>
+          )}
+
           {/* deferred, not live: these describe the plan being shown, and during
               the replan gap the live values belong to the next one */}
           <PlanView
