@@ -11,7 +11,8 @@
     "stats": "node scripts/stats.mjs",
     "export:geojson": "node scripts/export-geojson.mjs",
     "fetch:routes": "node scripts/fetch-routes.mjs",
-    "photo-backlog": "node scripts/photo-backlog.mjs"
+    "photo-backlog": "node scripts/photo-backlog.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1"

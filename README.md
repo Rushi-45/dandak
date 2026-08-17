@@ -50,7 +50,7 @@ data/
   itineraries/  events/  stays/  food/
 exports/                ← GeoJSON + stats snapshot (regenerable)
 docs/                   ← derived working documents (photo backlog)
-scripts/                ← validate, stats, export-geojson, photo-backlog
+scripts/                ← validate, stats, export-geojson, photo-backlog, indexnow
 web/                    ← Next.js app consuming ../data (npm run dev inside web/)
 ```
 
