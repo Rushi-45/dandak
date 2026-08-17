@@ -84,6 +84,8 @@ export interface PlanInput {
   days: number; // 1..5
   month: number; // 1..12
   must: string[]; // spot ids
+  /** spot ids the traveller skipped ("not this one"); optional so old links and tests stay valid */
+  avoid?: string[];
 }
 
 export interface PlannedStop {
@@ -641,6 +643,7 @@ export function encodePlan(input: PlanInput): string {
   p.set("days", String(input.days));
   p.set("month", String(input.month));
   if (input.must.length) p.set("must", input.must.join(","));
+  if (input.avoid?.length) p.set("avoid", input.avoid.join(","));
   return p.toString();
 }
 
@@ -660,7 +663,14 @@ export function decodePlan(
   const wanted = (p.get("must") ?? "").split(",").filter(Boolean);
   const must = wanted.filter((id) => data.spots.some((s) => s.id === id));
   const dropped = wanted.filter((id) => !must.includes(id));
-  return { input: { from, to, days, month, must: must.slice(0, 5) }, dropped };
+  // Skips: unknown ids are a silent no-op (skipping a spot that does not exist
+  // needs no warning), and a must-visit beats a skip. Capped to bound the URL.
+  const avoid = (p.get("avoid") ?? "")
+    .split(",")
+    .filter(Boolean)
+    .filter((id) => data.spots.some((s) => s.id === id) && !must.includes(id))
+    .slice(0, 30);
+  return { input: { from, to, days, month, must: must.slice(0, 5), avoid }, dropped };
 }
 
 // --------------------------------------------------------------- packing
@@ -842,9 +852,14 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
 
   // 1. eligibility
   const mustIds = new Set(mustSpots.map((s) => s.id));
+  // "Not this one": skipped spots leave the pool before selection ever sees
+  // them. A must-visit beats a skip, because demanding a place is a stronger
+  // statement than waving one away — decodePlan also enforces this, but inputs
+  // built in code can carry the conflict too.
+  const avoidIds = new Set((input.avoid ?? []).filter((id) => !mustIds.has(id)));
   let excludedBySeason = 0;
   const eligible = data.spots.filter((s) => {
-    if (endpointIds.has(s.id) || mustIds.has(s.id)) return false;
+    if (endpointIds.has(s.id) || mustIds.has(s.id) || avoidIds.has(s.id)) return false;
     if (!month) return true;
     const tier = seasonTier(s, month);
     if (tier === "closed") {

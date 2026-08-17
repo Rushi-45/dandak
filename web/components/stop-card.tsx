@@ -78,20 +78,40 @@ function Body({ stop }: { stop: StopCardData }) {
 const SHELL =
   "group flex gap-4 rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 transition-all duration-300";
 
-export function StopCard({ stop }: { stop: StopCardData }) {
-  if (!stop.href) {
-    return (
-      <div className={SHELL}>
-        <Body stop={stop} />
-      </div>
-    );
-  }
-  return (
+/**
+ * `onSkip` renders a small "not this one" control. It sits as an absolutely
+ * positioned SIBLING of the link, never inside it: a button inside an anchor is
+ * invalid HTML and the click would navigate. Only the trip planner passes it;
+ * the curated itineraries render this card server-side without it, which is why
+ * this module can stay free of "use client".
+ */
+export function StopCard({ stop, onSkip }: { stop: StopCardData; onSkip?: () => void }) {
+  const card = !stop.href ? (
+    <div className={SHELL}>
+      <Body stop={stop} />
+    </div>
+  ) : (
     <Link
       href={stop.href}
       className={`${SHELL} hover:-translate-y-0.5 hover:border-emerald-400/30 hover:bg-white/[0.05]`}
     >
       <Body stop={stop} />
     </Link>
+  );
+
+  if (!onSkip) return card;
+  return (
+    <div className="relative">
+      {card}
+      <button
+        type="button"
+        onClick={onSkip}
+        aria-label={`Skip ${stop.name} and replan without it`}
+        title="Skip this stop"
+        className="no-print absolute right-2.5 top-2.5 rounded-full border border-white/[0.08] bg-[#0b1210]/85 px-2 py-0.5 text-[10px] font-semibold text-stone-500 transition-colors hover:border-red-400/40 hover:text-red-300"
+      >
+        Skip ×
+      </button>
+    </div>
   );
 }

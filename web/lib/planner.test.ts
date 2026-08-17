@@ -298,6 +298,7 @@ test("plan state round-trips through the URL", () => {
     days: 2,
     month: 8,
     must: ["dang-gira-falls"],
+    avoid: ["dang-girmal-falls"], // decodePlan always returns the field, so the round-trip must carry it
   };
   const { input: back, dropped } = decodePlan(encodePlan(input), data);
   assert.deepEqual(back, input);
@@ -334,4 +335,44 @@ test("planning is deterministic", () => {
     a.days.flatMap((d) => d.stops.map((s) => s.spot.id)),
     b.days.flatMap((d) => d.stops.map((s) => s.spot.id))
   );
+});
+
+// ------------------------------------------------------------- skip a stop
+
+test("a skipped stop leaves the plan and frees its time for a replacement", () => {
+  const base = planTrip({ from: "h:surat", to: "h:saputara", days: 2, month: 8, must: [] }, data)!;
+  const baseIds = base.days.flatMap((d) => d.stops.map((s) => s.spot.id));
+  const skipped = baseIds[0];
+
+  const re = planTrip(
+    { from: "h:surat", to: "h:saputara", days: 2, month: 8, must: [], avoid: [skipped] },
+    data
+  )!;
+  const reIds = re.days.flatMap((d) => d.stops.map((s) => s.spot.id));
+
+  assert.ok(!reIds.includes(skipped), "the skipped stop must not come back");
+  // the freed time pulls in at least one place the base plan did not have
+  assert.ok(reIds.some((id) => !baseIds.includes(id)), "a replacement should fill the gap");
+});
+
+test("a must-visit beats a skip, in the algorithm and in the URL", () => {
+  const plan = planTrip(
+    {
+      from: "h:ahwa",
+      to: "h:waghai",
+      days: 1,
+      month: 8,
+      must: ["dang-gira-falls"],
+      avoid: ["dang-gira-falls"],
+    },
+    data
+  )!;
+  assert.ok(plan.days.flatMap((d) => d.stops).some((s) => s.spot.id === "dang-gira-falls"));
+
+  const { input } = decodePlan(
+    "from=h:ahwa&to=h:waghai&days=1&month=8&must=dang-gira-falls&avoid=dang-gira-falls,dang-nowhere",
+    data
+  );
+  assert.deepEqual(input!.must, ["dang-gira-falls"]);
+  assert.deepEqual(input!.avoid, []); // the conflict and the unknown id both dropped
 });

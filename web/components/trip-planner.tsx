@@ -239,6 +239,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   const [days, setDays] = useState(initial.input?.days ?? 2);
   const [monthChoice, setMonth] = useState<number | null>(initial.input?.month || null);
   const [must, setMust] = useState<string[]>(initial.input?.must ?? []);
+  const [avoid, setAvoid] = useState<string[]>(initial.input?.avoid ?? []);
   const [mustQuery, setMustQuery] = useState("");
 
   /**
@@ -262,8 +263,8 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   const month = monthChoice ?? today;
 
   const input: PlanInput = useMemo(
-    () => ({ from, to, days, month, must }),
-    [from, to, days, month, must]
+    () => ({ from, to, days, month, must, avoid }),
+    [from, to, days, month, must, avoid]
   );
 
   /**
@@ -311,6 +312,16 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
   const toggleMust = useCallback((id: string) => {
     setMust((m) => (m.includes(id) ? m.filter((x) => x !== id) : [...m, id].slice(0, 5)));
+  }, []);
+
+  /**
+   * "Not this one." Skipping a must-visit also un-demands it — that is what the
+   * traveller means — and the planner replans without the spot via the input
+   * memo, so URL sync and the deferred transition come for free.
+   */
+  const skipSpot = useCallback((id: string) => {
+    setMust((m) => m.filter((x) => x !== id));
+    setAvoid((a) => (a.includes(id) ? a : [...a, id]));
   }, []);
 
   const mustMatches = useMemo(() => {
@@ -461,7 +472,32 @@ export function TripPlanner({ data }: { data: PlannerData }) {
             withBeds={withBeds}
             bedChoice={bedChoice}
             onPickBed={(day, id) => setBedChoice((prev) => ({ ...prev, [day]: id }))}
+            onSkip={skipSpot}
           />
+        </div>
+      )}
+
+      {/* Skipped stops must stay visible, or a mis-tap silently loses a place
+          with no way back. Restoring is the same chip, inverted. */}
+      {avoid.length > 0 && (
+        <div className="no-print mt-6 flex flex-wrap items-center gap-2 text-xs">
+          <span className="font-semibold text-stone-500">Skipped by you:</span>
+          {avoid.map((id) => {
+            const s = data.spots.find((x) => x.id === id);
+            if (!s) return null;
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => setAvoid((a) => a.filter((x) => x !== id))}
+                title="Bring this stop back"
+                className="rounded-full border border-white/[0.09] bg-white/[0.03] px-2.5 py-1 text-stone-400 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+              >
+                {s.name} ×
+              </button>
+            );
+          })}
+          <span className="text-stone-600">tap one to bring it back</span>
         </div>
       )}
     </>
@@ -587,6 +623,7 @@ function PlanView({
   withBeds,
   bedChoice,
   onPickBed,
+  onSkip,
 }: {
   plan: PlanResult;
   days: number;
@@ -594,6 +631,7 @@ function PlanView({
   withBeds: boolean;
   bedChoice: Record<number, string>;
   onPickBed: (day: number, stayId: string) => void;
+  onSkip: (spotId: string) => void;
 }) {
   const stops = plan.days.flatMap((d) => d.stops);
 
@@ -963,6 +1001,7 @@ function PlanView({
                   #{s.order} {s.spot.name} · {s.spot.lat.toFixed(4)}, {s.spot.lng.toFixed(4)}
                 </p>
                 <StopCard
+                  onSkip={() => onSkip(s.spot.id)}
                   stop={{
                     order: s.order,
                     name: s.spot.name,
