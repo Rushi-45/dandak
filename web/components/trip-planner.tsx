@@ -1104,7 +1104,9 @@ function PlanView({
         <p className="mt-2 text-sm text-stone-500">
           {plan.excludedBySeason > 0
             ? `${plan.excludedBySeason} places are shut in ${monthName}. Try more days, a wider pair of endpoints, or another month.`
-            : "Try more days or endpoints further apart, everything nearby is already on the way."}
+            : pace === "easy"
+              ? "Try more days, or the packed pace: from a far base the drive can eat the whole easy day."
+              : "Try more days or endpoints further apart, everything nearby is already on the way."}
         </p>
       </div>
     );

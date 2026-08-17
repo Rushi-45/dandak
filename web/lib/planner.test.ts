@@ -569,3 +569,26 @@ test("a loop from a gateway city answers instead of 'nothing fits'", () => {
   const ahwa = planTrip({ from: "h:ahwa", to: "h:ahwa", days: 1, month: 8, must: [] }, data)!;
   assert.ok(count(ahwa) >= 2, "an Ahwa day loop keeps its local stops");
 });
+
+test("overnight loops from Ahmedabad and Mumbai sleep out instead of answering nothing", () => {
+  // the packer used to charge the ride home on whatever day the last stop
+  // landed, so a far loop had to fit out + visit + back into day one no
+  // matter how many days were offered — these two were empty at every count
+  for (const hub of ["h:ahmedabad", "h:mumbai"]) {
+    const plan = planTrip({ from: hub, to: hub, days: 3, month: 8, must: [] }, data)!;
+    const stops = plan.days.reduce((n, d) => n + d.stops.length, 0);
+    assert.ok(stops >= 2, `${hub} 3-day loop found only ${stops} stops`);
+    for (const d of plan.days) {
+      assert.ok(
+        d.visitMin + d.driveMin <= USABLE_DAY_MIN,
+        `${hub} day ${d.day} runs ${d.visitMin + d.driveMin} min — the return day must fit too`
+      );
+    }
+    // a day trip that cannot fit the easy clock stays honestly empty, and the
+    // packed pace is the documented way to force it
+    const easy1 = planTrip({ from: hub, to: hub, days: 1, month: 8, must: [] }, data)!;
+    const packed1 = planTrip({ from: hub, to: hub, days: 1, month: 8, must: [], pace: "packed" }, data)!;
+    assert.equal(easy1.days.reduce((n, d) => n + d.stops.length, 0), 0);
+    assert.ok(packed1.days.reduce((n, d) => n + d.stops.length, 0) >= 1);
+  }
+});

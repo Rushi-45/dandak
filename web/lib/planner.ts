@@ -1022,13 +1022,14 @@ export function packDays(
     const leg = legDistanceKm(cursor, node);
     const drive = driveMinutes(cursor, node, driveMonth);
     const cost = stopCostMinutes(spot, dwellFactor);
-    // Whichever day ends the trip still has to reach the finish; earlier days
-    // just end where they end and you sleep there. Without reserving it, the
-    // last day silently ran an hour over. Recomputed after a day closes, since
-    // closing changes which day this is. 
-    const isFinalStop = node === ordered[ordered.length - 1];
-    const tailFor = (idx: number) =>
-      idx === days || isFinalStop ? driveMinutes(node, to, driveMonth) : 0;
+    // Only the LAST ALLOWED day reserves the ride to the finish; earlier days
+    // end where they end and you sleep there, even when this is the route's
+    // final stop — the return can happen tomorrow. Charging the tail on
+    // whatever day the last stop landed (the old rule) meant a far loop had to
+    // fit out, visit and back into day one no matter how many days were
+    // offered, which is why Ahmedabad and Mumbai loops came back empty while
+    // their nearest spots were three hours out with days to spare.
+    const tailFor = (idx: number) => (idx === days ? driveMinutes(node, to, driveMonth) : 0);
     const wouldBe = dayVisit + dayDrive + drive + cost + tailFor(dayIndex);
 
     const required = mustIds.has(spot.id);
@@ -1074,6 +1075,14 @@ export function packDays(
     cursor = node;
   }
 
+  // The ride home. Same day when it fits or when this is already the last
+  // allowed day; otherwise sleep where the day ended and give the return its
+  // own day — that is what an overnight loop from a far city IS. The reach
+  // filter caps how far out a loop sleeps, so a return-only day always fits.
+  const homeDrive = driveMinutes(cursor, to, driveMonth);
+  if (dayIndex < days && dayStops.length && dayVisit + dayDrive + homeDrive > dayMin) {
+    closeDay(cursor);
+  }
   const finalLeg = legDistanceKm(cursor, to);
   dayKm += finalLeg.km;
   dayDrive += driveMinutes(cursor, to, driveMonth);
