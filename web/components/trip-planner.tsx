@@ -3,6 +3,7 @@
 import {
   Fragment,
   useCallback,
+  useDeferredValue,
   useEffect,
   useMemo,
   useRef,
@@ -288,9 +289,24 @@ export function TripPlanner({ data }: { data: PlannerData }) {
     window.history.replaceState(null, "", `/plan?${q.toString()}`);
   }, [input, month, withBeds, bedChoice]);
 
+  /**
+   * planTrip is pure and fast on small inputs but not uniformly so: measured
+   * against this dataset it runs under 2 ms for a one-day plan and up to about
+   * 107 ms for some four-day endpoint pairs, and it is synchronous. Run
+   * directly off the click it blocks the pill from even repainting, which on a
+   * mid-range phone at three to five times this cost is a visible stall.
+   *
+   * Deferring it lets React paint the pressed pill first with the previous
+   * plan still on screen, then compute the new plan at lower priority where it
+   * can be interrupted by the next click. `replanning` is that gap, used to
+   * mark the result stale rather than leaving the old numbers looking current.
+   */
+  const deferredInput = useDeferredValue(input);
+  const replanning = deferredInput !== input;
+
   const plan: PlanResult | null = useMemo(
-    () => (month ? planTrip(input, data) : null),
-    [input, month, data]
+    () => (month ? planTrip(deferredInput, data) : null),
+    [deferredInput, month, data]
   );
 
   const toggleMust = useCallback((id: string) => {
@@ -430,14 +446,23 @@ export function TripPlanner({ data }: { data: PlannerData }) {
       )}
 
       {plan && (
-        <PlanView
-          plan={plan}
-          days={days}
-          month={month}
-          withBeds={withBeds}
-          bedChoice={bedChoice}
-          onPickBed={(day, id) => setBedChoice((prev) => ({ ...prev, [day]: id }))}
-        />
+        <div
+          className={
+            replanning ? "opacity-50 transition-opacity duration-150" : "transition-opacity"
+          }
+          aria-busy={replanning || undefined}
+        >
+          {/* deferred, not live: these describe the plan being shown, and during
+              the replan gap the live values belong to the next one */}
+          <PlanView
+            plan={plan}
+            days={deferredInput.days}
+            month={deferredInput.month}
+            withBeds={withBeds}
+            bedChoice={bedChoice}
+            onPickBed={(day, id) => setBedChoice((prev) => ({ ...prev, [day]: id }))}
+          />
+        </div>
       )}
     </>
   );
@@ -641,16 +666,26 @@ function PlanView({
   useEffect(() => {
     const ctrl = new AbortController();
     let live = true;
-    const timer = setTimeout(async () => {
+    const timer = setTimeout(() => {
+      /*
+       * All days at once. These are independent requests, and awaiting them in
+       * a loop made a five-day plan five serial round trips: at the ~0.5s OSRM
+       * is answering in, that was about two and a half seconds before the real
+       * line finished drawing, for no reason other than the shape of the loop.
+       *
+       * Deliberately not Promise.all: each day commits as it lands, so day one
+       * paints while day five is still in flight, rather than the map staying
+       * straight until the slowest request returns. fetchRoadRoute resolves
+       * null on failure and never rejects, so there is nothing to catch.
+       */
       for (const d of plan.days) {
-        const leg = await fetchRoadRoute(waypointsFor(d), ctrl.signal);
-        if (!live) return;
-        if (leg) {
+        fetchRoadRoute(waypointsFor(d), ctrl.signal).then((leg) => {
+          if (!live || !leg) return;
           setRouted((prev) => ({
             key: planKey,
             legs: prev.key === planKey ? { ...prev.legs, [d.day]: leg } : { [d.day]: leg },
           }));
-        }
+        });
       }
     }, 500);
     return () => {

@@ -461,17 +461,43 @@ export function solveExact(start: Node, interior: Node[], end: Node, month: numb
   const n = interior.length;
   if (n <= 1) return interior;
   const size = 1 << n;
-  const cost = (a: Node, b: Node) => driveMinutes(a, b, month);
+
+  /*
+   * Every pair cost, once, up front.
+   *
+   * Held-Karp visits O(2^n * n^2) transitions and this used to call
+   * driveMinutes at each one, recomputing the same haversine, road factor and
+   * leg speed for the same pair of places thousands of times over. At n = 9
+   * that is roughly 41,000 evaluations of trigonometry against 121 distinct
+   * pairs. Profiling a four-day plan put 70% of planTrip's time in
+   * haversineKm, roadFactorFor and legSpeedKmh, all of it reached from here.
+   *
+   * The matrix is (n+2)^2 and the solver below is then pure array lookups.
+   * Both directions are computed rather than mirroring one triangle, because
+   * legDistanceKm can answer from curated road figures that are not guaranteed
+   * to be symmetric.
+   */
+  const nodes = [start, ...interior, end];
+  const S = 0;
+  const E = n + 1;
+  const m: number[][] = Array.from({ length: n + 2 }, () => new Array(n + 2).fill(0));
+  for (let i = 0; i < n + 2; i++) {
+    for (let j = 0; j < n + 2; j++) {
+      if (i !== j) m[i][j] = driveMinutes(nodes[i], nodes[j], month);
+    }
+  }
+
   const dp: number[][] = Array.from({ length: size }, () => new Array(n).fill(Infinity));
   const parent: number[][] = Array.from({ length: size }, () => new Array(n).fill(-1));
-  for (let i = 0; i < n; i++) dp[1 << i][i] = cost(start, interior[i]);
+  for (let i = 0; i < n; i++) dp[1 << i][i] = m[S][i + 1];
   for (let mask = 1; mask < size; mask++) {
     for (let last = 0; last < n; last++) {
       if (!(mask & (1 << last)) || dp[mask][last] === Infinity) continue;
+      const row = m[last + 1];
       for (let next = 0; next < n; next++) {
         if (mask & (1 << next)) continue;
         const nm = mask | (1 << next);
-        const cand = dp[mask][last] + cost(interior[last], interior[next]);
+        const cand = dp[mask][last] + row[next + 1];
         if (cand < dp[nm][next]) {
           dp[nm][next] = cand;
           parent[nm][next] = last;
@@ -483,7 +509,7 @@ export function solveExact(start: Node, interior: Node[], end: Node, month: numb
   let best = Infinity;
   let bestLast = 0;
   for (let last = 0; last < n; last++) {
-    const total = dp[full][last] + cost(interior[last], end);
+    const total = dp[full][last] + m[last + 1][E];
     if (total < best) {
       best = total;
       bestLast = last;
