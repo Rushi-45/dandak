@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/fade-in";
 import { JsonLd } from "@/components/json-ld";
 import { MediaGallery } from "@/components/media-gallery";
+import { SectionHeading } from "@/components/section-heading";
 import { SpotMap } from "@/components/spot-map";
+import { SpotPlaceholder } from "@/components/spot-placeholder";
 import { Spotlight } from "@/components/spotlight";
 import { TextGenerate } from "@/components/text-generate";
 import { TracingBeam } from "@/components/tracing-beam";
@@ -252,8 +254,34 @@ export default async function SpotPage({ params }: { params: Params }) {
         <TextGenerate text={spot.summary} />
       </p>
 
-      {/* Photographs and clips */}
-      <MediaGallery items={gallery} title={spot.name.en} />
+      {/* Photographs and clips. MediaGallery renders nothing when there are none,
+          which left 78 of 106 pages jumping from the summary straight to the
+          quick facts with no visual anchor at all. The placeholder holds that
+          space and says plainly that the photograph is missing — the repo is
+          public, so this is also the honest place to invite one. */}
+      {gallery.length > 0 ? (
+        <MediaGallery items={gallery} title={spot.name.en} />
+      ) : (
+        <div className="relative mt-8 h-56 overflow-hidden rounded-[2rem] ring-1 ring-white/10 sm:h-72">
+          <SpotPlaceholder
+            seed={spot.id}
+            name={spot.name.en}
+            category={spot.category}
+            className="h-full w-full"
+          />
+          <p className="absolute bottom-5 left-6 text-xs text-stone-500">
+            No photograph yet ·{" "}
+            <a
+              href="https://github.com/Rushi-45/dandak/blob/main/docs/photo-backlog.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-400 underline decoration-white/20 underline-offset-4 transition-colors hover:text-emerald-300"
+            >
+              contribute one
+            </a>
+          </p>
+        </div>
+      )}
 
       {/* Quick facts */}
       <Spotlight>
@@ -278,9 +306,19 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Description */}
       {paragraphs.length > 0 && (
         <FadeIn>
-          <section className="mt-12">
+          {/* The opening paragraph carries the page. Setting it larger and
+              lighter gives the prose somewhere to start rather than presenting
+              a thousand words at one uniform size. */}
+          <section className="mt-12 max-w-[68ch]">
             {paragraphs.map((p, i) => (
-              <p key={i} className="mt-4 leading-relaxed text-stone-300 first:mt-0">
+              <p
+                key={i}
+                className={
+                  i === 0
+                    ? "text-[1.0625rem] leading-[1.75] text-stone-200 sm:text-lg"
+                    : "mt-5 leading-[1.75] text-stone-300"
+                }
+              >
                 {p}
               </p>
             ))}
@@ -292,9 +330,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {spot.highlights && spot.highlights.length > 0 && (
         <FadeIn>
           <section className="mt-12 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-              Highlights
-            </h2>
+            <SectionHeading>Highlights</SectionHeading>
             <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
               {spot.highlights.map((h) => (
                 <li key={h} className="flex gap-2.5 text-sm leading-snug text-stone-300">
@@ -311,10 +347,12 @@ export default async function SpotPage({ params }: { params: Params }) {
       {spot.history_legend && (
         <FadeIn>
           <section className="mt-12 overflow-hidden rounded-2xl border border-amber-400/15 bg-gradient-to-br from-amber-400/[0.08] to-transparent p-6">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-amber-300">
-              History &amp; lore
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-stone-300">{spot.history_legend}</p>
+            <SectionHeading accent="amber">History &amp; lore</SectionHeading>
+            {/* Set in the serif, not at 14px. This is the most evocative writing
+                on the page and it was the smallest text in the section. */}
+            <p className="mt-4 max-w-[62ch] font-serif text-lg leading-[1.7] text-stone-200/90">
+              {spot.history_legend}
+            </p>
           </section>
         </FadeIn>
       )}
@@ -355,9 +393,7 @@ export default async function SpotPage({ params }: { params: Params }) {
 
       {/* Where it is */}
       <section className="mt-12">
-        <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-          Where it is
-        </h2>
+        <SectionHeading>Where it is</SectionHeading>
         <div className="mt-4">
           <SpotMap
             name={spot.name.en}
@@ -372,9 +408,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Getting there */}
       <FadeIn>
         <section className="mt-12 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-            Getting there
-          </h2>
+          <SectionHeading>Getting there</SectionHeading>
           <div className="mt-4 space-y-2.5 text-sm leading-relaxed text-stone-400">
             {spot.access.modes.road && (
               <p>
@@ -420,9 +454,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {spot.faqs.length > 0 && (
         <FadeIn>
           <section className="mt-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-              Questions people ask
-            </h2>
+            <SectionHeading>Questions people ask</SectionHeading>
             <div className="mt-4 space-y-4">
               {spot.faqs.map((f) => (
                 <div key={f.q} className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5">
@@ -447,9 +479,7 @@ export default async function SpotPage({ params }: { params: Params }) {
         spot.amenities?.guides) && (
         <FadeIn>
           <section className="mt-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-              Practical detail
-            </h2>
+            <SectionHeading>Practical detail</SectionHeading>
             <dl className="mt-4 space-y-4 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6">
               {[
                 { label: "The road", value: spot.access?.road_condition },
@@ -479,9 +509,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {trips.length > 0 && (
         <FadeIn>
           <section className="mt-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-              On these routes
-            </h2>
+            <SectionHeading>On these routes</SectionHeading>
             <div className="mt-4 space-y-3">
               {trips.map((t) => (
                 <Link
@@ -517,9 +545,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {stays.length > 0 && (
         <FadeIn>
           <section className="mt-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">
-              Where to sleep
-            </h2>
+            <SectionHeading>Where to sleep</SectionHeading>
             <div className="mt-4 space-y-3">
               {stays.map(({ stay, km }) => (
                 <div
@@ -570,7 +596,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {spot.nearby.length > 0 && (
         <FadeIn>
           <section className="mt-12">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-300">Nearby</h2>
+            <SectionHeading>Nearby</SectionHeading>
             <div className="mt-4 flex flex-wrap gap-2">
               {spot.nearby.map((n) => {
                 const near = getSpotById(n.id);

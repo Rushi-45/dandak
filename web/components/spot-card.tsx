@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SpotPlaceholder } from "@/components/spot-placeholder";
 import { categoryLabel } from "@/lib/format";
 import { categoryMeta } from "@/lib/ui";
 
@@ -43,19 +44,31 @@ export function SpotCard({ spot, priority }: { spot: SpotCardData; priority?: bo
       {/* corner glow on hover */}
       <div className="pointer-events-none absolute -right-16 -top-16 z-10 h-32 w-32 rounded-full bg-emerald-400/0 blur-2xl transition-colors duration-500 group-hover:bg-emerald-400/15" />
 
-      {spot.image && (
-        <div className="relative -mx-5 -mt-5 mb-4 h-40 overflow-hidden">
-          <Image
-            src={spot.image}
-            alt=""
-            fill
-            priority={priority}
-            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+      {/* Every card gets the same 160px block, photographed or not. Gating this
+          on `spot.image` left 78 of 106 cards starting at the category chip,
+          which made the grid look broken rather than sparse. */}
+      <div className="relative -mx-5 -mt-5 mb-4 h-40 overflow-hidden">
+        {spot.image ? (
+          <>
+            <Image
+              src={spot.image}
+              alt=""
+              fill
+              priority={priority}
+              sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#101513] via-transparent to-transparent" />
+          </>
+        ) : (
+          <SpotPlaceholder
+            seed={`${spot.district}-${spot.slug}`}
+            name={spot.name.en}
+            category={spot.category}
+            className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#101513] via-transparent to-transparent" />
-        </div>
-      )}
+        )}
+      </div>
 
       <div className="mb-3 flex items-center gap-2 text-xs">
         <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-medium ring-1 ${meta.chip}`}>

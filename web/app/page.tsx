@@ -105,42 +105,59 @@ export default function Home() {
             Dang &amp; Narmada · Gujarat
           </p>
 
-          <h1 className="mt-6 max-w-4xl font-serif text-6xl font-black leading-[0.95] tracking-tight text-stone-50 sm:text-8xl">
+          {/* 60px was too big for a 390px phone: "The forest belt" overflowed the
+              content box and <main> has overflow-x-clip, so it was silently
+              sliced mid-word rather than scrolling. Start smaller and climb. */}
+          <h1 className="mt-6 max-w-4xl font-serif text-[2.5rem] font-black leading-[0.95] tracking-tight text-stone-50 sm:text-7xl lg:text-8xl">
             The forest belt{" "}
             <span className="block bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200 bg-clip-text italic text-transparent">
               of the epics.
             </span>
           </h1>
 
+          {/* Two explicit blocks rather than a <br />. The flip word is a
+              whitespace-nowrap inline-block, so on a 390px phone it could not
+              share a line with the lead-in and broke the paragraph apart. */}
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-300">
-            This is the land of{" "}
-            <FlipWords
-              words={[
-                "monsoon waterfalls",
-                "leopard forests",
-                "Ramayana trails",
-                "meadow villages",
-                "one colossal statue",
-              ]}
-              className="font-serif text-xl font-black italic text-emerald-300"
-            />
-            <br />— every place documented with{" "}
-            <span className="text-amber-300">receipts</span>.
+            <span className="block">
+              This is the land of{" "}
+              {/* Own line on a phone. The phrase is whitespace-nowrap by design —
+                  it must not break mid-flip — and the longest one reaches the
+                  right edge at 390px, where overflow-x-clip would slice it. */}
+              <span className="block sm:inline">
+                <FlipWords
+                  words={[
+                    "monsoon waterfalls",
+                    "leopard forests",
+                    "Ramayana trails",
+                    "meadow villages",
+                    "one colossal statue",
+                  ]}
+                  className="font-serif text-xl font-black italic text-emerald-300"
+                />
+              </span>
+            </span>
+            <span className="block">
+              — every place documented with <span className="text-amber-300">receipts</span>.
+            </span>
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          {/* Stacked on phones. Side by side the two buttons need ~400px against
+              358px of content width, and they were running off the edge into
+              the clip rather than wrapping. */}
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Link href="/spots" className="group relative inline-flex overflow-hidden rounded-xl p-[1.5px]">
               <span
                 aria-hidden
                 className="absolute inset-[-1000%] animate-[spin_3.5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#34d399_0%,#115e59_25%,#fbbf24_50%,#115e59_75%,#34d399_100%)] motion-reduce:animate-none"
               />
-              <span className="relative inline-flex items-center rounded-[10.5px] bg-[#06110d] px-6 py-3 text-sm font-bold text-emerald-200 transition-colors group-hover:bg-[#0a1a14] group-hover:text-emerald-100">
+              <span className="relative inline-flex w-full items-center justify-center rounded-[10.5px] bg-[#06110d] px-6 py-3 text-sm font-bold text-emerald-200 transition-colors group-hover:bg-[#0a1a14] group-hover:text-emerald-100">
                 Explore {spots.length} places →
               </span>
             </Link>
             <Link
               href="/spots#dang"
-              className="rounded-xl border border-white/20 bg-white/[0.06] px-6 py-3 text-sm font-semibold text-stone-200 backdrop-blur transition-colors hover:border-emerald-300/50 hover:text-emerald-200"
+              className="rounded-xl border border-white/20 bg-white/[0.06] px-6 py-3 text-center text-sm font-semibold text-stone-200 backdrop-blur transition-colors hover:border-emerald-300/50 hover:text-emerald-200"
             >
               Start with Saputara
             </Link>
