@@ -19,13 +19,16 @@ export default function PlanPage() {
     <div className="relative mx-auto max-w-3xl px-4 py-12">
       <div className="pointer-events-none absolute -top-10 right-0 h-64 w-64 rounded-full bg-emerald-500/10 blur-[90px]" />
 
-      <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-stone-500">
+      {/* The framing sells the planner to someone deciding whether to use it.
+          On paper the decision is made and the trip is what matters, so this
+          block goes and the printed sheet opens on the route itself. */}
+      <p className="no-print text-[11px] font-bold uppercase tracking-[0.2em] text-stone-500">
         Build your own
       </p>
-      <h1 className="mt-3 font-serif text-4xl font-black leading-[1.05] tracking-tight text-stone-50 sm:text-5xl">
+      <h1 className="no-print mt-3 font-serif text-4xl font-black leading-[1.05] tracking-tight text-stone-50 sm:text-5xl">
         Where are you starting, and where do you have to be?
       </h1>
-      <p className="mt-4 text-lg leading-relaxed text-stone-400">
+      <p className="no-print mt-4 text-lg leading-relaxed text-stone-400">
         The {itineraries.length} trips we wrote by hand reach {covered} of these{" "}
         {data.spots.length} places. Give us two points on the map and a month, and we will build a
         route through the rest, using the same road distances, visit lengths and season notes

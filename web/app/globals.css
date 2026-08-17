@@ -348,3 +348,104 @@ body {
     height: 17px;
   }
 }
+
+/* --- Print --------------------------------------------------------------
+   A planned route is least useful exactly where you need it: this dataset's
+   own records note that Temburgartha's ridge doubles as the local phone
+   signal point. So /plan has to survive leaving the network, which means
+   paper or a PDF on the phone.
+
+   The site is near-black by design, which is the wrong way round for ink, so
+   this flattens everything to black on white rather than trying to override
+   several hundred Tailwind colour utilities one at a time. Structure is then
+   put back deliberately: borders as light rules, the serif kept for headings.
+   Anything interactive (the form, the map, the buttons) is dropped, since
+   none of it does anything on paper. */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  body {
+    background-image: none !important;
+  }
+
+  /* Undo the scroll animations. FadeIn starts at opacity 0 and only animates
+     when the element scrolls into view, so without this every day section the
+     reader had not reached prints as a blank space. Same for the transforms. */
+  *,
+  *::before,
+  *::after {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* flatten the dark theme; keep only the type */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    background-image: none !important;
+    color: #111 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  /* borders survive as hairlines so the cards still read as cards */
+  [class*="border"],
+  [class*="ring-"] {
+    border-color: #d4d4d4 !important;
+  }
+
+  /* The site chrome and everything you cannot press on paper. Matched loosely
+     rather than by child path: MotionProvider renders a fragment, so the header
+     is a direct child of body, not of a wrapper div. */
+  body header,
+  body footer,
+  .no-print {
+    display: none !important;
+  }
+
+  /* map tiles are raster, dark, and may not even be loaded when printing */
+  .leaflet-container {
+    display: none !important;
+  }
+
+  /* the ghost numerals are drawn as an outline on dark; on white they vanish */
+  .text-stroke {
+    -webkit-text-stroke: 0 !important;
+    color: #111 !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  /* one day per sheet where the paper allows it */
+  .print-day {
+    break-before: page;
+  }
+  .print-day:first-of-type {
+    break-before: auto;
+  }
+  .print-keep {
+    break-inside: avoid;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* shown only on paper */
+.print-only {
+  display: none;
+}

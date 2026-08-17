@@ -316,7 +316,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   return (
     <>
       {/* ------------------------------------------------------------ form */}
-      <div className="rounded-3xl border border-white/[0.07] bg-white/[0.02] p-5 sm:p-6">
+      <div className="no-print rounded-3xl border border-white/[0.07] bg-white/[0.02] p-5 sm:p-6">
         <div className="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end">
           <NodePicker label="Starting from" value={from} options={options} onChange={setFrom} />
           <button
@@ -784,6 +784,19 @@ function PlanView({
 
   return (
     <div className="mt-10">
+      {/* Paper loses the site header, so the sheet has to say what it is and
+          which trip it describes. Printed month included: this plan is only
+          correct for the month it was built for. */}
+      <div className="print-only mb-4 border-b pb-2">
+        <p className="font-serif text-xl font-black">
+          {plan.from.name} → {plan.to.name}
+        </p>
+        <p className="text-[11px]">
+          {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops · planned
+          for {monthName} · dandak.vercel.app/plan
+        </p>
+      </div>
+
       {/* headline numbers */}
       <div className="flex flex-wrap items-center gap-2 text-xs">
         <span className="rounded-full bg-emerald-400/10 px-3 py-1 font-bold text-emerald-300 ring-1 ring-emerald-400/25">
@@ -813,7 +826,7 @@ function PlanView({
         </ul>
       )}
 
-      <div className="mt-6">
+      <div className="no-print mt-6">
         <TripMap stops={mapStops} durationDays={days} routes={routes} />
       </div>
 
@@ -869,7 +882,7 @@ function PlanView({
       </section>
 
       {plan.days.map((d) => (
-        <section key={d.day} className="mt-10">
+        <section key={d.day} className="print-day mt-10">
           <div className="flex flex-wrap items-baseline gap-3">
             <span className="font-serif text-5xl font-black text-stroke">
               {String(d.day).padStart(2, "0")}
@@ -882,7 +895,7 @@ function PlanView({
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-auto shrink-0 self-center rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+                  className="no-print ml-auto shrink-0 self-center rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
                 >
                   Drive this day ↗
                 </a>
@@ -908,6 +921,12 @@ function PlanView({
           <div className="mt-5 space-y-3">
             {d.stops.map((s, idx) => (
               <FadeIn key={s.spot.id} delay={idx * 0.05}>
+                {/* On paper the map is gone, so the coordinates have to be on the
+                    page: they are the one thing that still works with no signal,
+                    typed into an offline maps app or a GPS. */}
+                <p className="print-only text-[11px]">
+                  #{s.order} {s.spot.name} · {s.spot.lat.toFixed(4)}, {s.spot.lng.toFixed(4)}
+                </p>
                 <StopCard
                   stop={{
                     order: s.order,
@@ -1051,8 +1070,15 @@ function PlanView({
         <p className="mt-2 text-xs text-stone-500">
           Every stop links to its full record, timings, fees, seasons, safety and sources.
         </p>
-        <div className="mt-4 flex flex-wrap items-center gap-2">
+        <div className="no-print mt-4 flex flex-wrap items-center gap-2">
           <CopyPlanLink />
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="rounded-full border border-white/[0.09] bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-stone-300 transition-colors hover:border-emerald-400/40 hover:text-emerald-300"
+          >
+            Print or save as PDF
+          </button>
           <span className="text-xs text-stone-600">
             The whole plan is in the URL, so the link reopens exactly this.
           </span>
