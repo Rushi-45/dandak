@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Compact museum of Dangi life — masks, instruments, house models and household tools that decode the villages you drive past in Dang.",
-  "description": "The Tribal Museum near Saputara's bus stand is small, old-fashioned and genuinely useful: an hour here reframes the rest of a Dang trip. Its galleries collect the material culture of the district's communities — Bhil, Kunbi, Warli and others — through wedding costumes, dance masks, bamboo and gourd instruments, fishing traps, agricultural tools, and scaled models of traditional homesteads.\n\nThe displays are captioned simply, and the collection's strength is its specificity: the same drum shapes, grain stores and carved house-posts appear in living villages along the Ahwa and Waghai roads once you know to look. Sections on Dangi festivals give context for the Dang Darbar held at Ahwa each year before Holi.\n\nIt is an indoor, level visit that works in any weather — a sensible slot for a rainy monsoon hour or the hot early afternoon. Photography rules vary by gallery; ask at the counter.",
+  "summary": "Compact museum of Dangi life, masks, instruments, house models and household tools that decode the villages you drive past in Dang.",
+  "description": "The Tribal Museum near Saputara's bus stand is small, old-fashioned and genuinely useful: an hour here reframes the rest of a Dang trip. Its galleries collect the material culture of the district's communities, Bhil, Kunbi, Warli and others, through wedding costumes, dance masks, bamboo and gourd instruments, fishing traps, agricultural tools, and scaled models of traditional homesteads.\n\nThe displays are captioned simply, and the collection's strength is its specificity: the same drum shapes, grain stores and carved house-posts appear in living villages along the Ahwa and Waghai roads once you know to look. Sections on Dangi festivals give context for the Dang Darbar held at Ahwa each year before Holi.\n\nIt is an indoor, level visit that works in any weather, a sensible slot for a rainy monsoon hour or the hot early afternoon. Photography rules vary by gallery; ask at the counter.",
   "highlights": [
     "Masks, instruments and costumes of Dang's communities",
     "Models of traditional Dangi homesteads",
@@ -51,13 +51,13 @@
     "best_months": [],
     "avoid_months": [],
     "monsoon_dependent": false,
-    "notes": "Indoor and season-proof — the standard rainy-hour stop in Saputara."
+    "notes": "Indoor and season-proof, the standard rainy-hour stop in Saputara."
   },
   "experience": {
     "activities": ["museum-visit"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
-    "photography_notes": "Gallery photography rules vary — ask at the counter before shooting."
+    "photography_notes": "Gallery photography rules vary, ask at the counter before shooting."
   },
   "amenities": {
     "food": "None inside; tea and snack shops within a short walk",
@@ -73,7 +73,7 @@
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
   },
   "tips": [
-    "Visit before exploring interior Dang — the exhibits make village details legible",
+    "Visit before exploring interior Dang: the exhibits make village details legible",
     "Pairs well with the Artist Village for crafts you can actually buy"
   ],
   "faqs": [
@@ -90,7 +90,7 @@
   "itineraries": ["saputara-classic-1-day", "saputara-waghai-2-day", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Saputara Tribal Museum — Dangi Culture in an Hour",
+    "meta_title": "Saputara Tribal Museum, Dangi Culture in an Hour",
     "meta_description": "What's inside Saputara's Tribal Museum: Dangi masks, instruments and house models. Timings, fee and visit tips."
   },
   "provenance": {
@@ -98,8 +98,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Saputara Tribal Museum — Timings, Entry Fee, History", "url": "https://www.trawell.in/gujarat/saputara/saputara-tribal-museum", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Saputara Tribal Museum — History, Entry Fee & Timings", "url": "https://www.gujaratexpert.com/blog/saputara-tribal-museum/", "publisher": "gujaratexpert.com", "accessed": "2026-08-08" }
+      { "title": "Saputara Tribal Museum, Timings, Entry Fee, History", "url": "https://www.trawell.in/gujarat/saputara/saputara-tribal-museum", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Saputara Tribal Museum, History, Entry Fee & Timings", "url": "https://www.gujaratexpert.com/blog/saputara-tribal-museum/", "publisher": "gujaratexpert.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.weekly_closure", "location.coordinates"]
   }

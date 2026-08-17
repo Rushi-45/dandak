@@ -3,7 +3,7 @@
 import { m, useScroll, useSpring, useTransform } from "motion/react";
 import { useRef, type ReactNode } from "react";
 
-/** Aceternity-style tracing beam — a gradient line that draws itself as you read. */
+/** Aceternity-style tracing beam, a gradient line that draws itself as you read. */
 export function TracingBeam({ children, className = "" }: { children: ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.35", "end 0.75"] });

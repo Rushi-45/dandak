@@ -13,9 +13,9 @@ interface SpotMapProps {
 }
 
 const PRECISION_NOTE: Record<string, string> = {
-  exact: "Exact pin — verified coordinates",
-  approximate: "Approximate pin — the circle is the margin",
-  area: "Area-level pin — somewhere in the circle; ask locally",
+  exact: "Exact pin, verified coordinates",
+  approximate: "Approximate pin. The circle is the margin",
+  area: "Area-level pin, somewhere in the circle; ask locally",
 };
 
 export function SpotMap({ name, emoji, lat, lng, precision }: SpotMapProps) {

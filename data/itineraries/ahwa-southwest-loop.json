@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "ahwa-southwest-loop",
   "slug": "ahwa-southwest-loop",
-  "title": "Ahwa's South-West Loop — Falls, Valley & Sunset Dam",
+  "title": "Ahwa's South-West Loop. Falls, Valley & Sunset Dam",
   "duration_days": 1,
   "districts": ["dang"],
   "themes": ["monsoon", "offbeat", "nature", "picnic"],
@@ -10,16 +10,16 @@
   "base_hub": "ahwa",
   "party": "family",
   "stops": [
-    { "day": 1, "order": 1, "spot_id": "dang-kunda-falls", "duration_min": 45, "note": "Ahwa's own falls, six kilometres out — the warm-up" },
+    { "day": 1, "order": 1, "spot_id": "dang-kunda-falls", "duration_min": 45, "note": "Ahwa's own falls, six kilometres out, the warm-up" },
     { "day": 1, "order": 2, "spot_id": "dang-chikhalda-falls", "duration_min": 75, "note": "The pocket's anchor, with the Vadla ni vadi banyan grove beside it" },
-    { "day": 1, "order": 3, "spot_id": "dang-ritu-falls", "duration_min": 30, "note": "One kilometre on — the easy double" },
+    { "day": 1, "order": 3, "spot_id": "dang-ritu-falls", "duration_min": 30, "note": "One kilometre on, the easy double" },
     { "day": 1, "order": 4, "spot_id": "dang-svtis-falls", "duration_min": 45, "note": "The loop's third drop" },
     { "day": 1, "order": 5, "spot_id": "dang-valley-of-wasurna", "duration_min": 30, "note": "The one open vista in a closed-forest district" },
     { "day": 1, "order": 6, "spot_id": "dang-maharaychond-forest", "duration_min": 75, "note": "Late picnic under the canopy" },
-    { "day": 1, "order": 7, "spot_id": "dang-temburgartha-dam", "duration_min": 60, "note": "Sunset from the ridge — where the phone signal returns" }
+    { "day": 1, "order": 7, "spot_id": "dang-temburgartha-dam", "duration_min": 60, "note": "Sunset from the ridge, where the phone signal returns" }
   ],
   "day_notes": [
-    { "day": 1, "note": "A gentle village-roads loop entirely within 20 km of Ahwa — the district's newest-documented pocket. Nothing on the route sells anything: carry the picnic, water and fuel from Ahwa. Everything here is village land; walk field edges, leave the groves as found." }
+    { "day": 1, "note": "A gentle village-roads loop entirely within 20 km of Ahwa, the district's newest-documented pocket. Nothing on the route sells anything: carry the picnic, water and fuel from Ahwa. Everything here is village land; walk field edges, leave the groves as found." }
   ],
   "total_drive_km": 70,
   "notes": "The family-friendliest of the interior days: short walks, a banyan-grove lunch, and a sunset with chai on the dam ridge. Monsoon for the falls; the valley, forest and dam still work into early winter.",

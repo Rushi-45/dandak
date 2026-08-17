@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "The world's tallest statue — Sardar Patel at 182 m above the Narmada, with a 153 m viewing gallery, museum, and a full day of campus attractions.",
-  "description": "The Statue of Unity is the anchor of everything at Ekta Nagar (formerly Kevadia): a 182-metre bronze-clad figure of Sardar Vallabhbhai Patel facing the Sardar Sarovar dam across the Narmada. Scale is the whole experience — the statue reads as a landmark from kilometres out, and grows steadily more improbable as the approach walkways deliver you to its base.\n\nThe standard visit runs: entry plaza and museum/audio-visual gallery at the base, then the high-speed lifts to the viewing gallery at 153 metres — inside the statue's chest — for a river-and-ridge panorama that takes in the dam, the Valley of Flowers and the Satpura and Vindhya edges. Tickets are slot-based and sell out on weekends and holidays; the viewing gallery has its own (higher) ticket tier and is the part worth planning around. Evenings add a laser-and-sound show on most nights.\n\nBudget realistically: with security lines, internal distances and the museum, the statue alone is a half day, and the surrounding campus — Valley of Flowers, Jungle Safari, glow garden and more — can fill two. Mondays the entire complex closes for maintenance. Book online in advance; on-ground ticket queues in peak season are long and sometimes futile.",
+  "summary": "The world's tallest statue, Sardar Patel at 182 m above the Narmada, with a 153 m viewing gallery, museum, and a full day of campus attractions.",
+  "description": "The Statue of Unity is the anchor of everything at Ekta Nagar (formerly Kevadia): a 182-metre bronze-clad figure of Sardar Vallabhbhai Patel facing the Sardar Sarovar dam across the Narmada. Scale is the whole experience, the statue reads as a landmark from kilometres out, and grows steadily more improbable as the approach walkways deliver you to its base.\n\nThe standard visit runs: entry plaza and museum/audio-visual gallery at the base, then the high-speed lifts to the viewing gallery at 153 metres, inside the statue's chest, for a river-and-ridge panorama that takes in the dam, the Valley of Flowers and the Satpura and Vindhya edges. Tickets are slot-based and sell out on weekends and holidays; the viewing gallery has its own (higher) ticket tier and is the part worth planning around. Evenings add a laser-and-sound show on most nights.\n\nBudget realistically: with security lines, internal distances and the museum, the statue alone is a half day, and the surrounding campus, Valley of Flowers, Jungle Safari, glow garden and more, can fill two. Mondays the entire complex closes for maintenance. Book online in advance; on-ground ticket queues in peak season are long and sometimes futile.",
   "highlights": [
     "World's tallest statue at 182 m",
     "Viewing gallery at 153 m inside the statue's chest",
@@ -19,7 +19,7 @@
     "Evening laser-and-sound show most nights",
     "Anchor of a two-day campus of attractions"
   ],
-  "history_legend": "Built to honour Sardar Vallabhbhai Patel, independent India's first deputy prime minister, who led the integration of the princely states. Designed by sculptor Ram V. Sutar and inaugurated on 31 October 2018 — Patel's birth anniversary, marked nationally as Unity Day with events at the site.",
+  "history_legend": "Built to honour Sardar Vallabhbhai Patel, independent India's first deputy prime minister, who led the integration of the princely states. Designed by sculptor Ram V. Sutar and inaugurated on 31 October 2018, Patel's birth anniversary, marked nationally as Unity Day with events at the site.",
   "attributes": {
     "height_m": 182,
     "opened_year": 2018,
@@ -41,15 +41,15 @@
       "rail": "Ekta Nagar station (~4 km) has direct trains from Ahmedabad, Mumbai and other cities; shuttles and autos cover the last leg",
       "air": "Vadodara (~90 km) is the practical airport; Surat and Ahmedabad also work"
     },
-    "last_mile": "E-bus or long walkway from the parking/ticket zones; lifts inside the statue to the viewing gallery — the site is ramp-and-lift accessible",
-    "road_condition": "Excellent — the approach roads are among the best in the state",
+    "last_mile": "E-bus or long walkway from the parking/ticket zones; lifts inside the statue to the viewing gallery. The site is ramp-and-lift accessible",
+    "road_condition": "Excellent. The approach roads are among the best in the state",
     "parking": { "available": true, "fee": null, "notes": "Large designated lots; shuttle transfer to the precinct" }
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Slot-based entry; last tickets ~17:00, gallery closes ~17:30; laser show from ~19:00 on operating days" }],
     "fees": [
       { "type": "entry", "amount_inr": 150, "note": "Adult base ticket (grounds + museum); verified Aug 2026" },
-      { "type": "combo", "amount_inr": 380, "note": "Adult viewing-gallery ticket (child ~₹230); express and multi-attraction combos exist — portal is authoritative" }
+      { "type": "combo", "amount_inr": 380, "note": "Adult viewing-gallery ticket (child ~₹230); express and multi-attraction combos exist. Portal is authoritative" }
     ],
     "booking": { "required": true, "url": "https://www.soutickets.in/", "notes": "Book viewing-gallery slots days ahead for weekends and holiday weeks" },
     "duration_min": 240,
@@ -80,17 +80,17 @@
   },
   "safety": {
     "warnings": [
-      "Do not plan a Monday visit — the complex is fully closed",
+      "Do not plan a Monday visit: the complex is fully closed",
       "Viewing-gallery slots sell out; without an advance booking you may only get grounds access",
-      "Long sun-exposed walkways — hats and water in summer"
+      "Long sun-exposed walkways, hats and water in summer"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar area facilities; civil hospital at Rajpipla (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": "On-site security and first-aid posts throughout the precinct" }
   },
   "tips": [
-    "Book the earliest slot and do the viewing gallery first — queues triple by noon",
+    "Book the earliest slot and do the viewing gallery first, queues triple by noon",
     "Weekdays outside holiday weeks feel like a different, calmer place",
     "Pair the statue day with Valley of Flowers and the laser show; leave the safari for day two",
-    "Ekta Nagar station itself is worth ten minutes — it's built as a showcase"
+    "Ekta Nagar station itself is worth ten minutes, it's built as a showcase"
   ],
   "faqs": [
     {
@@ -122,7 +122,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Statue of Unity, Ekta Nagar — Complete Visit Guide",
+    "meta_title": "Statue of Unity, Ekta Nagar, Complete Visit Guide",
     "meta_description": "Tickets, viewing-gallery slots, Monday closure, best season and one-vs-two-day plans for the Statue of Unity at Ekta Nagar (Kevadia)."
   },
   "provenance": {
@@ -130,8 +130,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Statue of Unity — Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Ticket Price 2026 — Full Breakdown", "url": "https://statueofunity.in/statue-of-unity-ticket-price-2026-breakdown/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity, Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Ticket Price 2026, Full Breakdown", "url": "https://statueofunity.in/statue-of-unity-ticket-price-2026-breakdown/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
       { "title": "Statue of Unity Ticket Price, Timings & Booking Guide (2026)", "url": "https://theunitytourism.com/blog/statue-of-unity-ticket-price-timings-and-booking-guide-(2026)", "publisher": "theunitytourism.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["amenities.ev_charging"]

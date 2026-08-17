@@ -173,7 +173,7 @@ function Pill({
  *
  * /plan is static, so reading the clock during render would freeze the build
  * month into the page and mismatch on hydration. useSyncExternalStore renders 0
- * on the server, then swaps to the real month on the client — the supported way
+ * on the server, then swaps to the real month on the client, the supported way
  * to hold a value that legitimately differs between the two.
  */
 const neverChanges = () => () => {};
@@ -211,7 +211,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
   /**
    * Beds are opt-in. Off, they are a suggestion under each day; on, the chosen
-   * one joins the route — a marker on the map, a waypoint the road line runs
+   * one joins the route, a marker on the map, a waypoint the road line runs
    * through, and the point the next morning starts from. Kept out of PlanInput
    * so the algorithm stays pure and deterministic; these only shape what is
    * drawn. decodePlan ignores unknown params, so they ride the same URL.
@@ -235,7 +235,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
   );
 
   /**
-   * The URL is the only persistence this feature has — keep it in step.
+   * The URL is the only persistence this feature has: keep it in step.
    *
    * window.history.replaceState rather than router.replace: the planner rewrites
    * the URL on every pill click and every keystroke in the must-visit box, and
@@ -326,7 +326,7 @@ export function TripPlanner({ data }: { data: PlannerData }) {
 
         <div className="mt-6">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-stone-500">
-            Must visit <span className="normal-case tracking-normal text-stone-600">— optional, up to 5</span>
+            Must visit <span className="normal-case tracking-normal text-stone-600">· optional, up to 5</span>
           </p>
           {must.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
@@ -485,7 +485,7 @@ function RouteRow({
   );
 }
 
-/** Drop waypoints that repeat the previous one — a day's end node is usually its last stop. */
+/** Drop waypoints that repeat the previous one: a day's end node is usually its last stop. */
 function dedupeWaypoints(pts: [number, number][]): [number, number][] {
   const out: [number, number][] = [];
   for (const p of pts) {
@@ -601,8 +601,8 @@ function PlanView({
    * Take OSRM's distance, keep our own driving time.
    *
    * OSRM's car profile drives the posted speed limit, which put this corridor at
-   * 72 km/h; Google reckons about 40 for the same road, and our speed model —
-   * regressed from the dataset's own road figures — agrees. So each day's
+   * 72 km/h; Google reckons about 40 for the same road, and our speed model,
+   * regressed from the dataset's own road figures, agrees. So each day's
    * measured kilometres are re-timed at the speed our model implied for that
    * day, which keeps distance and duration consistent with each other.
    */
@@ -637,7 +637,7 @@ function PlanView({
       kind: "stop" as const,
     }));
     // Endpoints bracket the route: order 0 sorts before every stop, 999 after.
-    // Skip one that lands on top of a real stop — the Statue of Unity shares the
+    // Skip one that lands on top of a real stop, the Statue of Unity shares the
     // Ekta Nagar hub's coordinates exactly, and Saputara Lake is 1 km from the
     // Saputara hub, so drawing both just buries the numbered marker.
     const clashes = (lat: number, lng: number) =>
@@ -657,7 +657,7 @@ function PlanView({
         note: "Trip starts here",
       });
     }
-    // a bed you have chosen belongs on the map — it is where the day actually ends
+    // a bed you have chosen belongs on the map: it is where the day actually ends
     if (withBeds) {
       for (const d of plan.days) {
         const bed = bedFor(d.day);
@@ -672,7 +672,7 @@ function PlanView({
           emoji: "🛏️",
           approx: true,
           kind: "bed",
-          note: `Night ${d.day} — where you sleep`,
+          note: `Night ${d.day}, where you sleep`,
           href: `/stays#${bed.stay.id}`,
           hrefLabel: "Open this stay",
         });
@@ -707,7 +707,7 @@ function PlanView({
         <p className="mt-2 text-sm text-stone-500">
           {plan.excludedBySeason > 0
             ? `${plan.excludedBySeason} places are shut in ${monthName}. Try more days, a wider pair of endpoints, or another month.`
-            : "Try more days or endpoints further apart — everything nearby is already on the way."}
+            : "Try more days or endpoints further apart, everything nearby is already on the way."}
         </p>
       </div>
     );
@@ -853,7 +853,7 @@ function PlanView({
                 🛏 Where to sleep after day {d.day}
                 {withBeds && (
                   <span className="ml-2 font-sans normal-case tracking-normal text-stone-500">
-                    — pick one and it joins the route
+                    · pick one and it joins the route
                   </span>
                 )}
               </p>
@@ -889,7 +889,7 @@ function PlanView({
                           {chosen ? "✓ Sleeping here" : "Choose this one"}
                           {chosen && !mappable && (
                             <span className="ml-2 font-normal text-stone-500">
-                              — no coordinates on record, so it cannot join the drawn route
+                              (no coordinates on record, so it cannot join the drawn route)
                             </span>
                           )}
                         </p>
@@ -948,12 +948,12 @@ function PlanView({
       <section className="mt-10 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 text-sm text-stone-400">
         <p>
           <strong className="font-semibold text-stone-200">How this was built:</strong> stops are
-          chosen for least detour from your route, then ordered to cut driving — using the
+          chosen for least detour from your route, then ordered to cut driving, using the
           dataset&rsquo;s own road figures where we have them ({plan.curatedLegs} leg
           {plan.curatedLegs === 1 ? "" : "s"} here) and straight-line estimates otherwise (
           {plan.estimatedLegs}).{" "}
           {measured
-            ? "The line on the map and the distances above are the real road route from OpenStreetMap. Driving times are ours, not the router's — its default speed limits are far too optimistic for these ghat roads."
+            ? "The line on the map and the distances above are the real road route from OpenStreetMap. Driving times are ours, not the router's: its default speed limits are far too optimistic for these ghat roads."
             : "The map is still fetching the real road route; until it lands, distances are estimates and the line is drawn straight."}
         </p>
         {plan.excludedBySeason > 0 && (
@@ -961,16 +961,13 @@ function PlanView({
             {plan.excludedBySeason} place{plan.excludedBySeason === 1 ? " was" : "s were"} left out
             because {monthName} is the wrong month for {plan.excludedBySeason === 1 ? "it" : "them"}
             {plan.excluded.length > 0 && (
-              <>
-                {" "}
-                — including {plan.excluded.slice(0, 3).map((e) => e.name).join(", ")}
-              </>
+              <>, including {plan.excluded.slice(0, 3).map((e) => e.name).join(", ")}</>
             )}
             .
           </p>
         )}
         <p className="mt-2 text-xs text-stone-500">
-          Every stop links to its full record — timings, fees, seasons, safety and sources. Copy
+          Every stop links to its full record, timings, fees, seasons, safety and sources. Copy
           the address bar to share this exact plan.
         </p>
       </section>

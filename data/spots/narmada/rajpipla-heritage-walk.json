@@ -10,14 +10,14 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "A self-guided wander through Rajpipla's princely leftovers — clock tower, gates, palace facades and bazaar streets that remember a capital.",
-  "description": "Rajpipla's old town rewards an hour on foot: this was the capital of a serious princely state, and its fabric still says so — a landmark clock tower over the bazaar crossing, town gates, temple spires, the facades of minor palaces and civic buildings from the Gohil rulers' building spree, and street after street of wooden-balconied shopfronts running their third century of commerce.\n\nThere is no formal trail, ticket or plaque programme; the walk is self-assembled, which is half the charm. Start at the clock tower, drift the bazaar toward the palaces, and let chai stops set the pace. Mornings give clean light and open shops; Navratri and wedding seasons give the streets their best energy.\n\nPair it with Rajvant Palace and Harsiddhi Mata for the complete Rajpipla half-day — the town works as a heritage counterweight to Ekta Nagar's spectacle.",
+  "summary": "A self-guided wander through Rajpipla's princely leftovers, clock tower, gates, palace facades and bazaar streets that remember a capital.",
+  "description": "Rajpipla's old town rewards an hour on foot: this was the capital of a serious princely state, and its fabric still says so, a landmark clock tower over the bazaar crossing, town gates, temple spires, the facades of minor palaces and civic buildings from the Gohil rulers' building spree, and street after street of wooden-balconied shopfronts running their third century of commerce.\n\nThere is no formal trail, ticket or plaque programme; the walk is self-assembled, which is half the charm. Start at the clock tower, drift the bazaar toward the palaces, and let chai stops set the pace. Mornings give clean light and open shops; Navratri and wedding seasons give the streets their best energy.\n\nPair it with Rajvant Palace and Harsiddhi Mata for the complete Rajpipla half-day: the town works as a heritage counterweight to Ekta Nagar's spectacle.",
   "highlights": [
     "Clock tower and bazaar streets of a princely capital",
     "Palace and civic facades of the Gohil era",
     "Self-guided, free, and genuinely untouristed"
   ],
-  "history_legend": "Rajpipla state, under its Gohil Rajput dynasty, was among Gujarat's wealthier princely states — its early-20th-century rulers built palaces, schools and civic works whose facades still frame the old town.",
+  "history_legend": "Rajpipla state, under its Gohil Rajput dynasty, was among Gujarat's wealthier princely states, its early-20th-century rulers built palaces, schools and civic works whose facades still frame the old town.",
   "attributes": {},
   "location": {
     "taluka": "Nandod",
@@ -34,7 +34,7 @@
       "rail": "Ekta Nagar station (~25 km); Ankleshwar Jn (~70 km)",
       "air": "Vadodara (~70 km)"
     },
-    "last_mile": "The walk itself — level town streets",
+    "last_mile": "The walk itself, level town streets",
     "road_condition": "Town streets; watch traffic in the bazaar",
     "parking": { "available": true, "fee": 0, "notes": "Street parking off the bazaar spine" }
   },
@@ -45,7 +45,7 @@
     "duration_min": 90,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Shops close for afternoon lull roughly 13:00–16:00 — walk mornings or evenings."
+    "notes": "Shops close for afternoon lull roughly 13:00–16:00, walk mornings or evenings."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -57,7 +57,7 @@
     "activities": ["sightseeing", "photography", "shopping", "village-tour"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Morning side-light on the clock tower and balconied facades; ask before photographing shopkeepers — most say yes with a smile."
+    "photography_notes": "Morning side-light on the clock tower and balconied facades; ask before photographing shopkeepers, most say yes with a smile."
   },
   "amenities": {
     "food": "Bazaar snacks, sweet shops and small restaurants throughout",
@@ -70,12 +70,12 @@
   },
   "safety": {
     "warnings": [
-      "Bazaar traffic is two-wheeler dense — walk single file with kids"
+      "Bazaar traffic is two-wheeler dense, walk single file with kids"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~1 km)", "police": "Rajpipla town PS", "notes": null }
   },
   "tips": [
-    "Start at the clock tower, end at a sweet shop — the town's own routine",
+    "Start at the clock tower, end at a sweet shop, the town's own routine",
     "Combine with Rajvant Palace and Harsiddhi Mata for the full half-day"
   ],
   "faqs": [],
@@ -86,7 +86,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Rajpipla Old Town Walk — Heritage Notes",
+    "meta_title": "Rajpipla Old Town Walk, Heritage Notes",
     "meta_description": "A self-guided heritage walk through Rajpipla: clock tower, princely facades, bazaar streets and timing tips."
   },
   "provenance": {

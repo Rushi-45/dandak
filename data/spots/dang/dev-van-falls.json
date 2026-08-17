@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "The falls reels call 'Wonder Waterfall' — Dev Van's monsoon drop in the Subir forest belt, a short forest walk from the Godadiya country roads.",
-  "description": "Dev Van is the waterfall that travels the internet under a stage name: vloggers christened it 'Wonder Waterfall — one of the most beautiful waterfalls of Dang', and the reels rarely mention that the map knows it as Dev Van. It sits in the same Subir-belt forest country as Bhalkhet, barely three kilometres away, which makes the pair an easy double for anyone already deep on the Godadiya roads.\n\nThe fall itself is a classic Dang monsoon drop — full white curtain against black rock in August, framed close by forest — reached by a short walk in from the road end. Like every fall in this belt it has no facilities, no signage worth trusting, and a season that begins and ends with the rains.\n\nIts two names cause real confusion in listings — some file it under Vyara because the northern approach comes from that side — so ask locally for 'Dev Van dhodh' and you will be pointed right.",
+  "summary": "The falls reels call 'Wonder Waterfall'. Dev Van's monsoon drop in the Subir forest belt, a short forest walk from the Godadiya country roads.",
+  "description": "Dev Van is the waterfall that travels the internet under a stage name: vloggers christened it 'Wonder Waterfall, one of the most beautiful waterfalls of Dang', and the reels rarely mention that the map knows it as Dev Van. It sits in the same Subir-belt forest country as Bhalkhet, barely three kilometres away, which makes the pair an easy double for anyone already deep on the Godadiya roads.\n\nThe fall itself is a classic Dang monsoon drop, full white curtain against black rock in August, framed close by forest, reached by a short walk in from the road end. Like every fall in this belt it has no facilities, no signage worth trusting, and a season that begins and ends with the rains.\n\nIts two names cause real confusion in listings, some file it under Vyara because the northern approach comes from that side, so ask locally for 'Dev Van dhodh' and you will be pointed right.",
   "highlights": [
     "The 'Wonder Waterfall' of the reels, under its map name",
     "Full monsoon curtain a short forest walk from the road",
@@ -51,16 +51,16 @@
     "best_months": [7, 8, 9, 10],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "A monsoon waterfall — the curtain needs the rains and thins fast after October."
+    "notes": "A monsoon waterfall. The curtain needs the rains and thins fast after October."
   },
   "experience": {
     "activities": ["trekking", "nature-walk", "photography", "picnic"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "The full curtain reads best late morning; spray drifts wide in peak flow — keep lenses covered."
+    "photography_notes": "The full curtain reads best late morning; spray drifts wide in peak flow. Keep lenses covered."
   },
   "amenities": {
-    "food": "None — carry everything; nearest food at Subir or Ahwa",
+    "food": "None. Carry everything; nearest food at Subir or Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -70,21 +70,21 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock at the base is slick — grip footwear only",
+      "Wet rock at the base is slick, grip footwear only",
       "Flow surges after upstream rain; stay off mid-stream rocks",
-      "No network to speak of — keep daylight margins"
+      "No network to speak of: keep daylight margins"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~30 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Do it with Bhalkhet falls — five kilometres apart on the same belt roads",
+    "Do it with Bhalkhet falls, five kilometres apart on the same belt roads",
     "Ask for 'Dev Van dhodh' locally; the 'Wonder' name draws blank looks",
     "Weekdays keep it to herders and birds; reels have found the weekends"
   ],
   "faqs": [
     {
       "q": "Is Dev Van the same as Wonder Waterfall?",
-      "a": "Yes — 'Wonder Waterfall' is the social-media name; Dev Van is what the map and the villages call it. Some listings also misfile it under Vyara because of the northern approach road."
+      "a": "Yes. 'Wonder Waterfall' is the social-media name; Dev Van is what the map and the villages call it. Some listings also misfile it under Vyara because of the northern approach road."
     }
   ],
   "nearby": [
@@ -101,16 +101,16 @@
     ]
   },
   "seo": {
-    "meta_title": "Dev Van (Wonder) Waterfall, Dang — Monsoon Guide",
-    "meta_description": "Dev Van waterfall — the reels' 'Wonder Waterfall' — in Dang's Subir belt: the short walk-in, monsoon window, and pairing with Bhalkhet."
+    "meta_title": "Dev Van (Wonder) Waterfall, Dang, Monsoon Guide",
+    "meta_description": "Dev Van waterfall, the reels' 'Wonder Waterfall', in Dang's Subir belt: the short walk-in, monsoon window, and pairing with Bhalkhet."
   },
   "provenance": {
     "created": "2026-08-10",
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Dev Van Waterfall' (20.9169, 73.6167); identified as 'Wonder Waterfall' by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Dev+Van+Waterfall/@20.9169019,73.6167217,17z", "publisher": "Google Maps", "accessed": "2026-08-10" },
-      { "title": "Wonder Waterfall — One of the most Beautiful Waterfall Of Dang District (vlog)", "url": "https://www.youtube.com/watch?v=mrjWIEEVEUg", "publisher": "YouTube (NikunjTravelogy)", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Dev Van Waterfall' (20.9169, 73.6167); identified as 'Wonder Waterfall' by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Dev+Van+Waterfall/@20.9169019,73.6167217,17z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Wonder Waterfall, One of the most Beautiful Waterfall Of Dang District (vlog)", "url": "https://www.youtube.com/watch?v=mrjWIEEVEUg", "publisher": "YouTube (NikunjTravelogy)", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
   }

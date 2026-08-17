@@ -23,7 +23,7 @@ import shabariImg from "@/public/images/spots/dang-shabari-dham.jpg";
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 /**
- * "In season right now" reads the clock, and this route is prerendered — so the
+ * "In season right now" reads the clock, and this route is prerendered, so the
  * month was frozen at whenever the site last built, and would have advertised
  * August waterfalls in December. Regenerate daily so the claim stays true.
  */
@@ -66,7 +66,7 @@ export default function Home() {
     })
     .slice(0, 10);
 
-  // Events landing this month or next — again computed, not curated.
+  // Events landing this month or next, again computed, not curated.
   const nextMonth = (month % 12) + 1;
   const upcoming = getEvents()
     .filter((e) => e.timing.typical_months.some((m) => m === month || m === nextMonth))
@@ -121,8 +121,8 @@ export default function Home() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-300">
             <span className="block">
               This is the land of{" "}
-              {/* Own line on a phone. The phrase is whitespace-nowrap by design —
-                  it must not break mid-flip — and the longest one reaches the
+              {/* Own line on a phone. The phrase is whitespace-nowrap by design:
+                  it must not break mid-flip, and the longest one reaches the
                   right edge at 390px, where overflow-x-clip would slice it. */}
               <span className="block sm:inline">
                 <FlipWords
@@ -138,7 +138,7 @@ export default function Home() {
               </span>
             </span>
             <span className="block">
-              — every place documented with <span className="text-amber-300">receipts</span>.
+              Every place documented with <span className="text-amber-300">receipts</span>.
             </span>
           </p>
 
@@ -223,7 +223,7 @@ export default function Home() {
                     <span className="text-amber-300">.</span>
                   </h2>
                   <p className="mt-2 text-sm text-stone-500">
-                    Computed from every place&apos;s <code className="text-emerald-300/80">best_months</code> — the
+                    Computed from every place&apos;s <code className="text-emerald-300/80">best_months</code>, the
                     dataset decides, not vibes.
                   </p>
                 </div>
@@ -236,7 +236,7 @@ export default function Home() {
                 <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[#080c0b] to-transparent" />
                 <div className="animate-marquee flex w-max gap-4 px-4 pb-2 [animation-duration:55s] group-hover:[animation-play-state:paused] motion-reduce:animate-none">
                   {/* toCardData, not the raw record: SpotCard reads `image`, which only
-                      toCardData resolves — so all 20 of these rendered image-less while
+                      toCardData resolves, so all 20 of these rendered image-less while
                       every other grid on the page had photos. */}
                   {[...inSeason, ...inSeason].map((spot, i) => (
                     <div key={`${spot.id}-${i}`} className="w-[300px] shrink-0">
@@ -283,7 +283,7 @@ export default function Home() {
                     Chase the monsoon
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                    Gira, Girmal, Zarwani, Ninai — {waterfalls} waterfalls at full throat, and the
+                    Gira, Girmal, Zarwani, Ninai, {waterfalls} waterfalls at full throat, and the
                     forests running neon green.
                   </p>
                 </div>
@@ -293,7 +293,7 @@ export default function Home() {
               </Link>
               </TiltCard>
 
-              {/* Legends — editorial card */}
+              {/* Legends, editorial card */}
               <TiltCard className="h-[440px]">
               <Link
                 href="/itineraries/dang-ramayana-trail"
@@ -324,7 +324,7 @@ export default function Home() {
                     Walk with legends
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                    Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan — the epics
+                    Shabari&apos;s berries, Anjani&apos;s cave, Kabir&apos;s banyan, the epics
                     mapped onto living hills, told as tradition, not fact.
                   </p>
                   <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-amber-300/80">
@@ -360,7 +360,7 @@ export default function Home() {
                     The grand campus
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                    The statue, the dam, a jungle safari and a glow garden — India&apos;s biggest
+                    The statue, the dam, a jungle safari and a glow garden, India&apos;s biggest
                     tourism build, one ticket portal.
                   </p>
                 </div>
@@ -373,7 +373,7 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* == District 01 — Dang ============================ */}
+        {/* == District 01, Dang ============================ */}
         <FadeIn>
           <section className="relative border-t border-white/[0.06] py-14">
             <div className="relative overflow-hidden rounded-[2rem] ring-1 ring-white/10">
@@ -424,7 +424,7 @@ export default function Home() {
           </section>
         </FadeIn>
 
-        {/* == District 02 — Narmada ========================= */}
+        {/* == District 02, Narmada ========================= */}
         <FadeIn>
           <section className="relative border-t border-white/[0.06] py-14">
             <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-amber-400/[0.13] via-emerald-400/[0.05] to-transparent p-7 ring-1 ring-white/10 sm:p-12">
@@ -569,7 +569,7 @@ export default function Home() {
             <h2 className="relative mx-auto mt-5 max-w-3xl font-serif text-4xl font-black italic leading-snug text-stone-100 sm:text-5xl">
               “The forest the epics wandered{" "}
               <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200 bg-clip-text text-transparent">
-                still stands — and still floods every monsoon.
+                still stands, and still floods every monsoon.
               </span>”
             </h2>
             <p className="relative mx-auto mt-5 max-w-xl text-sm leading-relaxed text-stone-400">

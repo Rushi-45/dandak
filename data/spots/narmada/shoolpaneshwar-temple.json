@@ -10,15 +10,15 @@
   "cluster": "ekta-nagar-area",
   "status": "active",
   "district": "narmada",
-  "summary": "The re-established Shiva shrine of a temple submerged by the Sardar Sarovar reservoir — riverside darshan at Gora with deep Narmada lore.",
-  "description": "Shoolpaneshwar Mahadev carries one of the Narmada valley's more poignant stories: the original ancient shrine — a stop on the river's parikrama circuit for centuries — went under the Sardar Sarovar reservoir as the dam rose, and the deity was ceremonially re-established in a new temple at Gora village on the bank downstream. The current structure is modern; the devotion, the name and the river are the continuity.\n\nThe temple gives the sanctuary its name, and its riverside setting keeps the old rhythm: morning and evening aartis, Shravan-month crowds, parikrama pilgrims passing through with their bundles. For visitors doing the Ekta Nagar circuit it pairs naturally with Garudeshwar as a half-day of river devotion, ten minutes apart.\n\nThe lore holds that Shiva stood here with his trishul (shoola) — hence the name — and Narmada tradition ranks the site among the river's significant tirthas.",
+  "summary": "The re-established Shiva shrine of a temple submerged by the Sardar Sarovar reservoir, riverside darshan at Gora with deep Narmada lore.",
+  "description": "Shoolpaneshwar Mahadev carries one of the Narmada valley's more poignant stories: the original ancient shrine, a stop on the river's parikrama circuit for centuries, went under the Sardar Sarovar reservoir as the dam rose, and the deity was ceremonially re-established in a new temple at Gora village on the bank downstream. The current structure is modern; the devotion, the name and the river are the continuity.\n\nThe temple gives the sanctuary its name, and its riverside setting keeps the old rhythm: morning and evening aartis, Shravan-month crowds, parikrama pilgrims passing through with their bundles. For visitors doing the Ekta Nagar circuit it pairs naturally with Garudeshwar as a half-day of river devotion, ten minutes apart.\n\nThe lore holds that Shiva stood here with his trishul (shoola), hence the name, and Narmada tradition ranks the site among the river's significant tirthas.",
   "highlights": [
     "Successor shrine of the reservoir-submerged original",
     "Named source of Shoolpaneshwar sanctuary",
     "Riverside aartis and parikrama-pilgrim traffic",
     "Pairs with Garudeshwar, ten minutes away"
   ],
-  "history_legend": "The original Shoolpaneshwar temple, an ancient tirtha on the Narmada parikrama, was submerged by the Sardar Sarovar reservoir; the deity was re-installed at Gora. Tradition derives the name from Shiva bearing his trishul here — Shoolpani, the trident-holder.",
+  "history_legend": "The original Shoolpaneshwar temple, an ancient tirtha on the Narmada parikrama, was submerged by the Sardar Sarovar reservoir; the deity was re-installed at Gora. Tradition derives the name from Shiva bearing his trishul here, Shoolpani, the trident-holder.",
   "attributes": { "deity": "Shiva (Shoolpaneshwar Mahadev)", "main_festival": "Mahashivratri; Shravan month" },
   "location": {
     "taluka": "Garudeshwar",
@@ -71,19 +71,19 @@
   },
   "safety": {
     "warnings": [
-      "River bathing only at the ghat steps — currents are strong",
+      "River bathing only at the ghat steps: currents are strong",
       "Steps are slick in monsoon"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~30 km)", "police": "Garudeshwar PS", "notes": null }
   },
   "tips": [
     "Do Garudeshwar and this temple as one riverside half-day",
-    "Ask about the original temple — the submergence story is the visit's depth"
+    "Ask about the original temple: the submergence story is the visit's depth"
   ],
   "faqs": [
     {
       "q": "Is this the original ancient temple?",
-      "a": "No — the ancient shrine lies under the reservoir. This is its formally re-established successor at Gora, which continues the tirtha's tradition and name."
+      "a": "No. The ancient shrine lies under the reservoir. This is its formally re-established successor at Gora, which continues the tirtha's tradition and name."
     }
   ],
   "nearby": [
@@ -94,7 +94,7 @@
   "itineraries": ["dediapada-offbeat-loop", "narmada-faith-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Shoolpaneshwar Mahadev Temple, Gora — Guide",
+    "meta_title": "Shoolpaneshwar Mahadev Temple, Gora, Guide",
     "meta_description": "The re-established Shoolpaneshwar Shiva temple near Ekta Nagar: the submergence story, darshan timings and river setting."
   },
   "provenance": {

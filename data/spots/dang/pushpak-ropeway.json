@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Saputara's cable car glides from the lake side across the valley to the Sunset Point ridge — ten scenic minutes each way.",
-  "description": "The Pushpak ropeway is Saputara's signature ride: small gondolas strung across the valley between the lake side and the ridge near Sunset Point. The crossing takes around ten minutes each way, and the mid-span view — lake on one side, wooded valley dropping away on the other — is one most visitors would otherwise never see.\n\nFor many, the ropeway doubles as transport: it is the easy way to reach Sunset Point without the stepped climb, which makes it popular with older visitors and families with small children. Queues build in the hour before sunset and through May and Diwali holidays; mid-morning rides are walk-on. Cabins pause in high wind and during lightning, which mostly matters in June–July.\n\nBuy a return ticket unless you specifically plan to walk down the Sunset Point steps — a pleasant descent of twenty-odd minutes that pairs well with a one-way ride up.",
+  "summary": "Saputara's cable car glides from the lake side across the valley to the Sunset Point ridge, ten scenic minutes each way.",
+  "description": "The Pushpak ropeway is Saputara's signature ride: small gondolas strung across the valley between the lake side and the ridge near Sunset Point. The crossing takes around ten minutes each way, and the mid-span view, lake on one side, wooded valley dropping away on the other, is one most visitors would otherwise never see.\n\nFor many, the ropeway doubles as transport: it is the easy way to reach Sunset Point without the stepped climb, which makes it popular with older visitors and families with small children. Queues build in the hour before sunset and through May and Diwali holidays; mid-morning rides are walk-on. Cabins pause in high wind and during lightning, which mostly matters in June–July.\n\nBuy a return ticket unless you specifically plan to walk down the Sunset Point steps, a pleasant descent of twenty-odd minutes that pairs well with a one-way ride up.",
   "highlights": [
     "Mid-air view over Saputara lake and valley",
     "Easiest access to Sunset Point for elderly visitors",
@@ -70,7 +70,7 @@
   },
   "safety": {
     "warnings": [
-      "Service suspends in high wind or lightning — do not count on the last ride down in stormy weather",
+      "Service suspends in high wind or lightning: do not count on the last ride down in stormy weather",
       "Hold children's hands on the boarding platform"
     ],
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
@@ -92,15 +92,15 @@
   "itineraries": ["saputara-classic-1-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Pushpak Ropeway, Saputara — Cable Car Guide",
-    "meta_description": "Fares, timings and queue tips for Saputara's Pushpak ropeway — the scenic cable-car link between the lake and Sunset Point."
+    "meta_title": "Pushpak Ropeway, Saputara, Cable Car Guide",
+    "meta_description": "Fares, timings and queue tips for Saputara's Pushpak ropeway, the scenic cable-car link between the lake and Sunset Point."
   },
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Table Land & Ropeway, Saputara — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/table-land-ropeway", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Table Land & Ropeway, Saputara, Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/saputara/table-land-ropeway", "publisher": "trawell.in", "accessed": "2026-08-08" },
       { "title": "Saputara Ropeway: One of India's Most Scenic Cable Car Rides", "url": "https://www.storiesbysoumya.com/saputara-ropeway-pushpak-gujarat/", "publisher": "storiesbysoumya.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]

@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A village waterfall west of the Girmal country — Dhulda rounds out the Subir belt's falls cluster on the quiet side of the forest roads.",
-  "description": "Dhulda hangs off the western side of the Girmal country: a village-land monsoon fall a few kilometres from the U-turn point's river bend, on lanes that see herders more than visitors. It slots into the Subir belt's growing falls circuit — Girmal and the U-turn deck to its east, Karanjwa, Milan, Bhalkhet and Dev Van strung to its south-west — without any of their small fame.\n\nThe terms are the belt's usual: short walk in, monsoon-only flow, no facilities, and village directions worth more than any map. Go in the rains or not at all.",
+  "summary": "A village waterfall west of the Girmal country. Dhulda rounds out the Subir belt's falls cluster on the quiet side of the forest roads.",
+  "description": "Dhulda hangs off the western side of the Girmal country: a village-land monsoon fall a few kilometres from the U-turn point's river bend, on lanes that see herders more than visitors. It slots into the Subir belt's growing falls circuit, Girmal and the U-turn deck to its east, Karanjwa, Milan, Bhalkhet and Dev Van strung to its south-west, without any of their small fame.\n\nThe terms are the belt's usual: short walk in, monsoon-only flow, no facilities, and village directions worth more than any map. Go in the rains or not at all.",
   "highlights": [
     "The Girmal country's quiet western fall",
     "Links the U-turn point to the Subir falls cluster",
@@ -60,7 +60,7 @@
     "photography_notes": "Village fields give the falls a rare open foreground for the belt."
   },
   "amenities": {
-    "food": "None — Subir or Ahwa have the nearest food",
+    "food": "None. Subir or Ahwa have the nearest food",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -70,25 +70,25 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is slick — grip footwear",
+      "Wet rock is slick, grip footwear",
       "Flow surges after upstream rain"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~35 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
     "Fold into the Girmal–U-turn day as the detour nobody else makes",
-    "Walk field edges — the approach crosses standing crops in season"
+    "Walk field edges, the approach crosses standing crops in season"
   ],
   "faqs": [],
   "nearby": [
     { "id": "dang-u-turn-point", "distance_km": 8 },
     { "id": "dang-girmal-falls", "distance_km": 10 },
-    { "id": "dang-mahal-falls", "distance_km": 10, "note": "Karanjwa — next fall south" }
+    { "id": "dang-mahal-falls", "distance_km": 10, "note": "Karanjwa. Next fall south" }
   ],
   "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Dhulda Waterfall, Dang — The Girmal Country's Quiet Fall",
+    "meta_title": "Dhulda Waterfall, Dang. The Girmal Country's Quiet Fall",
     "meta_description": "Dhulda waterfall west of Girmal in Dang's Subir belt: the village walk-in, monsoon window and falls-circuit pairings."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Dhulda Water Fall' (20.9503, 73.6596); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Dhulda+Water+Fall/@20.950313,73.659578,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps. Place 'Dhulda Water Fall' (20.9503, 73.6596); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Dhulda+Water+Fall/@20.950313,73.659578,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

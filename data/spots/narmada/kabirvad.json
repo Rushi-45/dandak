@@ -10,15 +10,15 @@
   "cluster": "poicha",
   "status": "active",
   "district": "narmada",
-  "summary": "An island in the Narmada covered by a single colossal banyan linked to sant Kabir — reached by a short boat crossing, unlike anywhere else in Gujarat.",
-  "description": "Kabirvad is a botanical event with a shrine at its heart: a river island in the Narmada near Shuklatirth where one banyan tree has spent centuries becoming a forest — trunks begetting trunks across hectares until 'the tree' means everything the eye can hold. Tradition ties it to sant Kabir, the fifteenth-century mystic-poet, who is said to have stayed here; a Kabir temple sits within the canopy and gives the island its devotional pulse.\n\nThe visit begins with a short boat crossing from the ghat — diesel launches shuttle constantly on busy days — and then you simply walk into the tree: pillared halls of aerial roots, filtered light, langurs overhead, pilgrims and picnickers below. Full moon days, Kabir Jayanti and winter weekends run busiest; weekday mornings feel primeval.\n\nAdministratively the island falls in Bharuch district, but it pairs so naturally with Poicha and the Statue of Unity circuit that no sensible Narmada itinerary omits it. Respect the tree — no climbing, no carving — and the shrine's plain Kabirpanthi etiquette.",
+  "summary": "An island in the Narmada covered by a single colossal banyan linked to sant Kabir, reached by a short boat crossing, unlike anywhere else in Gujarat.",
+  "description": "Kabirvad is a botanical event with a shrine at its heart: a river island in the Narmada near Shuklatirth where one banyan tree has spent centuries becoming a forest, trunks begetting trunks across hectares until 'the tree' means everything the eye can hold. Tradition ties it to sant Kabir, the fifteenth-century mystic-poet, who is said to have stayed here; a Kabir temple sits within the canopy and gives the island its devotional pulse.\n\nThe visit begins with a short boat crossing from the ghat, diesel launches shuttle constantly on busy days, and then you simply walk into the tree: pillared halls of aerial roots, filtered light, langurs overhead, pilgrims and picnickers below. Full moon days, Kabir Jayanti and winter weekends run busiest; weekday mornings feel primeval.\n\nAdministratively the island falls in Bharuch district, but it pairs so naturally with Poicha and the Statue of Unity circuit that no sensible Narmada itinerary omits it. Respect the tree, no climbing, no carving, and the shrine's plain Kabirpanthi etiquette.",
   "highlights": [
     "A single banyan spread across hectares of island",
     "Boat crossing on the Narmada to reach it",
     "Kabir temple within the canopy",
     "Pillared root-halls unlike anywhere in Gujarat"
   ],
-  "history_legend": "Tradition holds that Kabir stayed on this island and that the banyan grew from a twig he used — the tree as the saint's living relic. Kabirpanthi devotion keeps the shrine; the banyan itself, among India's largest, keeps the argument for the legend.",
+  "history_legend": "Tradition holds that Kabir stayed on this island and that the banyan grew from a twig he used, the tree as the saint's living relic. Kabirpanthi devotion keeps the shrine; the banyan itself, among India's largest, keeps the argument for the legend.",
   "attributes": { "canopy_m2": 17520, "canopy_perimeter_m": 641 },
   "location": {
     "taluka": "Jhagadia (Bharuch)",
@@ -46,7 +46,7 @@
     "duration_min": 120,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Crossings suspend when the river runs high after heavy releases — check locally in monsoon."
+    "notes": "Crossings suspend when the river runs high after heavy releases, check locally in monsoon."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -58,7 +58,7 @@
     "activities": ["boating", "darshan", "nature-walk", "photography", "picnic"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Wide lens for the root halls; shafted light mid-morning. Include people for scale — the tree defeats bare frames."
+    "photography_notes": "Wide lens for the root halls; shafted light mid-morning. Include people for scale, the tree defeats bare frames."
   },
   "amenities": {
     "food": "Stalls at the ghat and simple vendors on the island in season",
@@ -72,7 +72,7 @@
   "safety": {
     "warnings": [
       "Wear the life jackets when offered on the crossing",
-      "No swimming off the island — the Narmada's currents are serious",
+      "No swimming off the island: the Narmada's currents are serious",
       "Watch footing on root tangles; ankles turn easily"
     ],
     "emergency": { "nearest_hospital": "Bharuch civil hospital (~30 km)", "police": "Shuklatirth-side PS", "notes": null }
@@ -85,7 +85,7 @@
   "faqs": [
     {
       "q": "How big is the Kabirvad banyan really?",
-      "a": "The canopy covers about 17,520 m² (4.3 acres) with a perimeter of 641 m — among India's largest banyans, and floods keep reshaping it. In person the honest answer is 'bigger than you can photograph'."
+      "a": "The canopy covers about 17,520 m² (4.3 acres) with a perimeter of 641 m. Among India's largest banyans, and floods keep reshaping it. In person the honest answer is 'bigger than you can photograph'."
     }
   ],
   "nearby": [
@@ -105,7 +105,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Kabirvad Banyan Island — Boat & Visit Guide",
+    "meta_title": "Kabirvad Banyan Island, Boat & Visit Guide",
     "meta_description": "Reaching Kabirvad's giant banyan by boat: fares, timings, the Kabir legend and pairing with Poicha."
   },
   "provenance": {
@@ -113,8 +113,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Kabirvad — Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/bharuch/kabirvad.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
-      { "title": "Kabirvad in Bharuch — History, Timings, Ticket Prices", "url": "https://www.theindia.co.in/places/kabirvad", "publisher": "theindia.co.in", "accessed": "2026-08-08" }
+      { "title": "Kabirvad, Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/bharuch/kabirvad.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Kabirvad in Bharuch, History, Timings, Ticket Prices", "url": "https://www.theindia.co.in/places/kabirvad", "publisher": "theindia.co.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]
   }

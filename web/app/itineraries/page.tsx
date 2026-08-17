@@ -8,7 +8,7 @@ import { getItineraries, getSpotById } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Trips & Itineraries",
   description:
-    "Ready-made routes through Dang and Narmada — monsoon waterfall circuits, Statue of Unity days, Ramayana trails and offbeat forest loops.",
+    "Ready-made routes through Dang and Narmada, monsoon waterfall circuits, Statue of Unity days, Ramayana trails and offbeat forest loops.",
   alternates: { canonical: "/itineraries" },
 };
 
@@ -45,7 +45,7 @@ export default function ItinerariesPage() {
         </span>
       </h1>
       <p className="mt-3 max-w-xl text-sm text-stone-500">
-        {itineraries.length} itineraries built from the dataset — every stop links to a documented
+        {itineraries.length} itineraries built from the dataset, every stop links to a documented
         place with timings, fees and seasons.
       </p>
 

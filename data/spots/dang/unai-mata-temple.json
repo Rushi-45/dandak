@@ -10,13 +10,13 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "The hot-spring temple of Ushnamba Mata at Unai — Rama's arrow raised the boiling kund in the telling, and pilgrims have bathed in it ever since.",
-  "description": "Unai closes the gap between geology and epic: natural hot springs rise beside the goddess Ushnamba — Unai — Mata's temple, and the local telling gives them the Dandakaranya origin this whole belt shares. Rama, asked by Lakshmana to relieve the ailing sage Sharbhang, loosed an arrow into the ground; hot water rose, the goddess appeared amid it, and the sage's bath cured him. The Gujarati 'nahi/nai' — bathe — is folded into the town's very name.\n\nThe kunds still steam, the bath is still taken for its curative reputation, and the temple runs a full pilgrim day from seven in the morning to eight at night, peaking at Navratri — the temple's mahotsav is listed on the national festival portal — and Makar Sankranti. This is the region's most popular stop that this dataset's travellers usually drive straight past on the Waghai–Vansda road.\n\nPair it with Janki Van six kilometres away: the Sita-stayed-here garden and the Rama's-arrow springs make one mythology afternoon on the district's western edge.",
+  "summary": "The hot-spring temple of Ushnamba Mata at Unai, Rama's arrow raised the boiling kund in the telling, and pilgrims have bathed in it ever since.",
+  "description": "Unai closes the gap between geology and epic: natural hot springs rise beside the goddess Ushnamba, Unai, Mata's temple, and the local telling gives them the Dandakaranya origin this whole belt shares. Rama, asked by Lakshmana to relieve the ailing sage Sharbhang, loosed an arrow into the ground; hot water rose, the goddess appeared amid it, and the sage's bath cured him. The Gujarati 'nahi/nai', bathe, is folded into the town's very name.\n\nThe kunds still steam, the bath is still taken for its curative reputation, and the temple runs a full pilgrim day from seven in the morning to eight at night, peaking at Navratri, the temple's mahotsav is listed on the national festival portal, and Makar Sankranti. This is the region's most popular stop that this dataset's travellers usually drive straight past on the Waghai–Vansda road.\n\nPair it with Janki Van six kilometres away: the Sita-stayed-here garden and the Rama's-arrow springs make one mythology afternoon on the district's western edge.",
   "highlights": [
     "Natural hot-spring kunds beside the goddess's shrine",
     "The Rama's-arrow origin legend of the Dandakaranya belt",
     "Navratri mahotsav listed on the national festival portal",
-    "Six kilometres from Janki Van — the mythology afternoon"
+    "Six kilometres from Janki Van, the mythology afternoon"
   ],
   "history_legend": "Lord Rama, at Lakshmana's urging, shot an arrow into the earth to raise hot water for the ailing sage Sharbhang; Ushnamba Mata manifested amid the springs, and the sage's bath cured him. The town's name folds in the Gujarati for bathing, and the goddess is Unai Mata to the whole region.",
   "attributes": { "deity": "Ushnamba (Unai) Mata", "hot_springs": true },
@@ -46,7 +46,7 @@
     "duration_min": 90,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Navratri and Makar Sankranti are the peaks — expect fair-scale crowds then."
+    "notes": "Navratri and Makar Sankranti are the peaks. Expect fair-scale crowds then."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2, 3],
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "The spring water is genuinely hot — test before immersing, and mind children at the kund edges",
+      "The spring water is genuinely hot, test before immersing, and mind children at the kund edges",
       "Festival crowds are dense; keep valuables close"
     ],
     "emergency": { "nearest_hospital": "CHC Vansda (~10 km)", "police": "Unai outpost / Vansda PS", "notes": null }
@@ -79,23 +79,23 @@
   "tips": [
     "Pair with Janki Van for the western mythology afternoon",
     "Winter mornings give steaming kunds and thin crowds",
-    "Festival days are the spectacle — go early or go patient"
+    "Festival days are the spectacle, go early or go patient"
   ],
   "faqs": [
     {
       "q": "Can visitors bathe in the hot springs?",
-      "a": "Yes — bathing in the kunds is the tradition, credited with curative properties since the sage Sharbhang's legend. Facilities are pilgrim-basic; carry your own towel and modest bathing wear."
+      "a": "Yes, bathing in the kunds is the tradition, credited with curative properties since the sage Sharbhang's legend. Facilities are pilgrim-basic; carry your own towel and modest bathing wear."
     }
   ],
   "nearby": [
-    { "id": "dang-janki-van", "distance_km": 6, "note": "The Sita garden — one mythology afternoon" },
+    { "id": "dang-janki-van", "distance_km": 6, "note": "The Sita garden, one mythology afternoon" },
     { "id": "dang-vansda-national-park", "distance_km": 12 },
     { "id": "dang-waghai-botanical-garden", "distance_km": 22 }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Unai Mata Temple — The Hot Springs of Rama's Arrow",
+    "meta_title": "Unai Mata Temple, The Hot Springs of Rama's Arrow",
     "meta_description": "Unai Mata's hot-spring temple near Vansda: the legend, the kunds, timings, festival peaks and the Janki Van pairing."
   },
   "provenance": {
@@ -103,8 +103,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Shri Unnai Mata Mandir Navratri Mahotsav, Navsari — festival listing", "url": "https://utsav.gov.in/view-event/shri-unnai-mata-mandir-navratri-mahotsav-navsari-1", "publisher": "utsav.gov.in (official)", "accessed": "2026-08-10" },
-      { "title": "Unai Mata Temple and Hot Water Spring, Unai — history, legend and timings (07:00–20:00)", "url": "https://gujaratdarshanguide.com/unai-mata-temple-and-hot-water-spring-unai-navsari/", "publisher": "gujaratdarshanguide.com", "accessed": "2026-08-10" }
+      { "title": "Shri Unnai Mata Mandir Navratri Mahotsav, Navsari, festival listing", "url": "https://utsav.gov.in/view-event/shri-unnai-mata-mandir-navratri-mahotsav-navsari-1", "publisher": "utsav.gov.in (official)", "accessed": "2026-08-10" },
+      { "title": "Unai Mata Temple and Hot Water Spring, Unai, history, legend and timings (07:00–20:00)", "url": "https://gujaratdarshanguide.com/unai-mata-temple-and-hot-water-spring-unai-navsari/", "publisher": "gujaratdarshanguide.com", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.coordinates", "visit.timings", "history_legend"]
   }

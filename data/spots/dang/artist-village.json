@@ -11,7 +11,7 @@
   "status": "active",
   "district": "dang",
   "summary": "A working craft centre outside Saputara where Warli painting and bamboo work are made, taught and sold by the artists themselves.",
-  "description": "Gandharvapur Artist Village, on the road out of Saputara, is a working answer to the question every Tribal Museum visitor asks: where is this culture now? Here artists make and sell Warli paintings, bamboo craft, masks and terracotta, and — this is the part worth planning for — run hands-on sessions where visitors paint their own Warli piece under instruction.\n\nThe village grew around the long effort of local artists to keep Dangi and Warli craft economically alive, and it operates as workshop first, shop second. Prices are fair and the money lands with the makers; a painting bought here, with the painter explaining the story grammar of circles, triangles and stick figures, beats anything from a highway emporium.\n\nSessions and stock vary with the season and the artists' calendars — mornings on weekdays are the calm window. Photograph people and works-in-progress only with permission; it is a workplace, not an exhibit.",
+  "description": "Gandharvapur Artist Village, on the road out of Saputara, is a working answer to the question every Tribal Museum visitor asks: where is this culture now? Here artists make and sell Warli paintings, bamboo craft, masks and terracotta, and, this is the part worth planning for, run hands-on sessions where visitors paint their own Warli piece under instruction.\n\nThe village grew around the long effort of local artists to keep Dangi and Warli craft economically alive, and it operates as workshop first, shop second. Prices are fair and the money lands with the makers; a painting bought here, with the painter explaining the story grammar of circles, triangles and stick figures, beats anything from a highway emporium.\n\nSessions and stock vary with the season and the artists' calendars: mornings on weekdays are the calm window. Photograph people and works-in-progress only with permission; it is a workplace, not an exhibit.",
   "highlights": [
     "Warli painting workshops you can join",
     "Bamboo craft, masks and terracotta sold by makers",
@@ -65,7 +65,7 @@
     "toilets": "basic",
     "drinking_water": false,
     "mobile_network": { "jio": "good", "airtel": "ok", "vi": "ok", "bsnl": "ok" },
-    "guides": "The artists themselves — better than any guide",
+    "guides": "The artists themselves, better than any guide",
     "ev_charging": false,
     "stay_nearby": []
   },
@@ -75,13 +75,13 @@
   },
   "tips": [
     "Do the Tribal Museum first, then buy here with context",
-    "A small Warli canvas takes about an hour in a workshop — good rainy-day slot",
+    "A small Warli canvas takes about an hour in a workshop, good rainy-day slot",
     "Carry cash; digital payments work but connectivity wobbles"
   ],
   "faqs": [
     {
       "q": "Are the workshops suitable for children?",
-      "a": "Yes — Warli's basic vocabulary is simple shapes, and artists are patient teachers. Kids leave with their own painting."
+      "a": "Yes. Warli's basic vocabulary is simple shapes, and artists are patient teachers. Kids leave with their own painting."
     }
   ],
   "nearby": [
@@ -91,8 +91,8 @@
   "itineraries": ["saputara-classic-1-day", "tribal-culture-trail"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Artist Village Gandharvapur, Saputara — Warli Crafts",
-    "meta_description": "Warli painting workshops and direct-from-artist crafts at Saputara's Gandharvapur Artist Village — timings and tips."
+    "meta_title": "Artist Village Gandharvapur, Saputara, Warli Crafts",
+    "meta_description": "Warli painting workshops and direct-from-artist crafts at Saputara's Gandharvapur Artist Village, timings and tips."
   },
   "provenance": {
     "created": "2026-08-08",

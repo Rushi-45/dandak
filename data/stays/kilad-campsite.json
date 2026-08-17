@@ -17,15 +17,15 @@
     { "id": "dang-waghai-botanical-garden", "distance_km": 3 },
     { "id": "dang-vansda-national-park", "distance_km": 9 }
   ],
-  "notes": "The gentlest forest stay in Dang and the perfect base for an early Vansda NP gate slot — Ambika river steps from the cottages.",
+  "notes": "The gentlest forest stay in Dang and the perfect base for an early Vansda NP gate slot, Ambika river steps from the cottages.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Kilad Camping Site — Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Kilad Camping Site, Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
       { "title": "Kilad Campsite", "url": "https://kiladcampsite.com/", "publisher": "kiladcampsite.com", "accessed": "2026-08-08" },
-      { "title": "Kilad Campsite — site page, tariffs and contact (Nani Waghai, Ta. Vansda, Dist. Navsari)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=ofGvAhDE50kLcoYfg9NpZA%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
+      { "title": "Kilad Campsite, site page, tariffs and contact (Nani Waghai, Ta. Vansda, Dist. Navsari)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=ofGvAhDE50kLcoYfg9NpZA%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

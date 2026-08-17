@@ -6,7 +6,7 @@
   "type": "dish",
   "veg": true,
   "districts": ["dang", "narmada"],
-  "description": "The staple of the hills: dense, dark flatbread of nagli (finger millet/ragi), patted thick and roasted on clay or iron, eaten with garlic-chilli chutney, curd or whatever the season's shaak is. Nagli grows on Dang's rain-fed slopes and carries the region's nutrition on its back — iron-rich, filling, and at its best hot off a village chulha with white butter. Homestay and campsite meals serve it as a matter of course; ask for it at small eateries and you'll be understood immediately.",
+  "description": "The staple of the hills: dense, dark flatbread of nagli (finger millet/ragi), patted thick and roasted on clay or iron, eaten with garlic-chilli chutney, curd or whatever the season's shaak is. Nagli grows on Dang's rain-fed slopes and carries the region's nutrition on its back, iron-rich, filling, and at its best hot off a village chulha with white butter. Homestay and campsite meals serve it as a matter of course; ask for it at small eateries and you'll be understood immediately.",
   "where_to_try": [
     { "name": "Nahari Restaurant", "place": "Ahwa (20.7603, 73.6910)" },
     { "name": "Forest campsite messes (Mahal, Kilad, Sagai)", "place": "Dang & Narmada interiors" },
@@ -14,13 +14,13 @@
     { "name": "Local thali eateries", "place": "Ahwa and Dediapada" }
   ],
   "season": null,
-  "cultural_note": "Nagli is the crop of the adivasi hill farm — the rotla is everyday food, not a restaurant invention, and being offered one at a home is straightforward hospitality.",
+  "cultural_note": "Nagli is the crop of the adivasi hill farm. The rotla is everyday food, not a restaurant invention, and being offered one at a home is straightforward hospitality.",
   "media": {
     "images": [
       {
         "url": "/images/food/nagli-rotla.jpg",
         "license": "own",
-        "caption": "A Dangi thali at Nahari Restaurant, Ahwa — nagli rotla with kadhi, dal, shaak, papad and rice",
+        "caption": "A Dangi thali at Nahari Restaurant, Ahwa, nagli rotla with kadhi, dal, shaak, papad and rice",
         "credit": "Rushi Chudasama"
       }
     ]

@@ -16,13 +16,13 @@
     { "id": "narmada-zarwani-falls", "distance_km": 1 },
     { "id": "narmada-statue-of-unity", "distance_km": 13 }
   ],
-  "notes": "The closest real-forest night to the SoU campus — sanctuary rules apply (daylight movement, no alcohol, generator-scheduled power).",
+  "notes": "The closest real-forest night to the SoU campus, sanctuary rules apply (daylight movement, no alcohol, generator-scheduled power).",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

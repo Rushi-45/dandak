@@ -223,7 +223,7 @@ export default async function ItineraryPage({ params }: { params: Params }) {
             {" "}· <strong className="font-semibold text-stone-200">Themes:</strong> {it.themes.join(", ")}
           </p>
           <p className="mt-2 text-xs text-stone-500">
-            Every stop links to its full record — timings, fees, seasons, safety and sources.
+            Every stop links to its full record, timings, fees, seasons, safety and sources.
           </p>
         </section>
       </FadeIn>

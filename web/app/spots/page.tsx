@@ -6,7 +6,7 @@ import { getAllSpots, toCardData } from "@/lib/data";
 export const metadata: Metadata = {
   title: "All Spots",
   description:
-    "Search and filter every documented place in Dang and Narmada districts — waterfalls, viewpoints, temples, sanctuaries and the Statue of Unity campus.",
+    "Search and filter every documented place in Dang and Narmada districts, waterfalls, viewpoints, temples, sanctuaries and the Statue of Unity campus.",
   alternates: { canonical: "/spots" },
 };
 
@@ -23,7 +23,7 @@ export default function SpotsPage() {
         </span>
       </h1>
       <p className="mt-2 max-w-xl text-sm text-stone-500">
-        {spots.length} documented places across Dang and Narmada — search anything, or filter by
+        {spots.length} documented places across Dang and Narmada, search anything, or filter by
         district, kind and mood.
       </p>
 

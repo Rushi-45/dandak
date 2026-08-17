@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "Vangan's neighbour fall on the Dang–Navsari line — Advait drops a kilometre from the Ankada Dhodh, doubling the Vansda-side outing.",
-  "description": "Advait shares its forest with Vangan's Ankada Dhodh, a kilometre and a half east along the same border-country stream system where Dang runs out against Vansda taluka. The two pins make one outing: whichever fall the season favours, the other is a short walk of the same lanes away.\n\nThe record rests on the pin and a traveller's visit; which side of the district line it technically falls on is genuinely unclear and flagged accordingly. Practically it belongs to the Vansda–Waghai orbit — pair it with the national park or Janki Van for the full western day.",
+  "summary": "Vangan's neighbour fall on the Dang–Navsari line. Advait drops a kilometre from the Ankada Dhodh, doubling the Vansda-side outing.",
+  "description": "Advait shares its forest with Vangan's Ankada Dhodh, a kilometre and a half east along the same border-country stream system where Dang runs out against Vansda taluka. The two pins make one outing: whichever fall the season favours, the other is a short walk of the same lanes away.\n\nThe record rests on the pin and a traveller's visit; which side of the district line it technically falls on is genuinely unclear and flagged accordingly. Practically it belongs to the Vansda–Waghai orbit, pair it with the national park or Janki Van for the full western day.",
   "highlights": [
     "Twin outing with Vangan's Ankada Dhodh",
     "Border-country forest on the Vansda side",
@@ -57,10 +57,10 @@
     "activities": ["trekking", "nature-walk", "photography"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Forest-framed drops — overcast light suits them."
+    "photography_notes": "Forest-framed drops, overcast light suits them."
   },
   "amenities": {
-    "food": "None — Vansda or Waghai have the nearest food",
+    "food": "None. Vansda or Waghai have the nearest food",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
@@ -70,24 +70,24 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is slick — grip footwear",
+      "Wet rock is slick, grip footwear",
       "Flow surges after rain"
     ],
     "emergency": { "nearest_hospital": "CHC Vansda (~15 km)", "police": "Vansda PS", "notes": null }
   },
   "tips": [
-    "Always pair with Vangan — the pins are a short walk apart",
+    "Always pair with Vangan: the pins are a short walk apart",
     "Fold Janki Van or the national park into the same western day"
   ],
   "faqs": [],
   "nearby": [
-    { "id": "dang-vangan-falls", "distance_km": 2, "note": "The Ankada Dhodh — twin outing" },
+    { "id": "dang-vangan-falls", "distance_km": 2, "note": "The Ankada Dhodh, twin outing" },
     { "id": "dang-vansda-national-park", "distance_km": 14 }
   ],
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Advait Waterfall — Vangan's Twin on the Border",
+    "meta_title": "Advait Waterfall, Vangan's Twin on the Border",
     "meta_description": "Advait waterfall by Vangan's Ankada Dhodh on the Dang–Navsari line: the twin-falls outing and the western-day pairings."
   },
   "provenance": {
@@ -95,7 +95,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Advait waterfall' (20.6834, 73.4507); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Advait+waterfall/@20.6833548,73.4506628,14z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Advait waterfall' (20.6834, 73.4507); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Advait+waterfall/@20.6833548,73.4506628,14z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "location.admin_district", "location.distances_km", "access.last_mile"]
   }

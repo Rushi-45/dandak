@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Saputara's classic evening ritual — a west-facing ridge reached by ropeway or a stepped climb, with layered Sahyadri views at dusk.",
-  "description": "Sunset Point, also called Gandhi Shikhar, is the ridge where Saputara gathers every clear evening. The drop-off faces west over a broad sweep of the Sahyadri foothills, and on good days the ranges recede in three or four visible layers before the sun goes down between them. It is the single most photographed frame in the town.\n\nThere are two ways up: the Pushpak ropeway glides across the valley from near the lake and deposits you close to the top, or a stepped path climbs from the road in twenty to thirty minutes at an easy pace. Most visitors ride up and walk down. The viewing area has railings, a few snack vendors in season, and enough space that even weekend crowds spread out — though the prime railing spots go fast in the last half hour before sunset.\n\nMonsoon evenings are a gamble: cloud can swallow the view entirely, or break open into the best light of the year. October to February gives the most reliable sightlines, with the post-monsoon green still on the hills through November.",
+  "summary": "Saputara's classic evening ritual, a west-facing ridge reached by ropeway or a stepped climb, with layered Sahyadri views at dusk.",
+  "description": "Sunset Point, also called Gandhi Shikhar, is the ridge where Saputara gathers every clear evening. The drop-off faces west over a broad sweep of the Sahyadri foothills, and on good days the ranges recede in three or four visible layers before the sun goes down between them. It is the single most photographed frame in the town.\n\nThere are two ways up: the Pushpak ropeway glides across the valley from near the lake and deposits you close to the top, or a stepped path climbs from the road in twenty to thirty minutes at an easy pace. Most visitors ride up and walk down. The viewing area has railings, a few snack vendors in season, and enough space that even weekend crowds spread out, though the prime railing spots go fast in the last half hour before sunset.\n\nMonsoon evenings are a gamble: cloud can swallow the view entirely, or break open into the best light of the year. October to February gives the most reliable sightlines, with the post-monsoon green still on the hills through November.",
   "highlights": [
     "Widest west-facing view in Saputara",
     "Reachable by ropeway or a 20–30 min stepped climb",
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [],
-    "fees": [{ "type": "entry", "amount_inr": 35, "note": "Reported by 2026 guides — possibly a seasonal/maintenance charge; historically free. Conflicting reports" }],
+    "fees": [{ "type": "entry", "amount_inr": 35, "note": "Reported by 2026 guides. Possibly a seasonal/maintenance charge; historically free. Conflicting reports" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 90,
     "best_time_of_day": "evening",
@@ -70,20 +70,20 @@
   },
   "safety": {
     "warnings": [
-      "Head back before dark — the stepped path has no lighting",
+      "Head back before dark: the stepped path has no lighting",
       "Do not climb beyond the railings for photos"
     ],
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
   },
   "tips": [
     "Ride the ropeway up and walk down for the best of both",
-    "Elderly visitors should prefer the ropeway — the steps are steady but long",
+    "Elderly visitors should prefer the ropeway: the steps are steady but long",
     "Weekend railing spots fill 30–40 min before sunset"
   ],
   "faqs": [
     {
       "q": "Can I see the sunset in monsoon?",
-      "a": "It is hit or miss — cloud cover often blocks the horizon in July–August, but post-shower breaks can be dramatic. October onward is far more reliable."
+      "a": "It is hit or miss, cloud cover often blocks the horizon in July–August, but post-shower breaks can be dramatic. October onward is far more reliable."
     }
   ],
   "nearby": [
@@ -105,7 +105,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Sunset Point (Gandhi Shikhar), Saputara — Guide",
+    "meta_title": "Sunset Point (Gandhi Shikhar), Saputara, Guide",
     "meta_description": "How to reach Saputara's Sunset Point by ropeway or steps, the best months for clear views, and photography timing tips."
   },
   "provenance": {

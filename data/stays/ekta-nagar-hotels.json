@@ -9,14 +9,14 @@
   "spot_id": null,
   "coordinates": { "lat": 21.845, "lng": 73.72, "precision": "area" },
   "price_band": "mid",
-  "booking": { "mode": "ota", "url": null, "notes": "Branded and independent hotels around Ekta Nagar town and the station; standard OTA booking. Inventory has grown fast — compare current options rather than relying on legacy lists" },
+  "booking": { "mode": "ota", "url": null, "notes": "Branded and independent hotels around Ekta Nagar town and the station; standard OTA booking. Inventory has grown fast, compare current options rather than relying on legacy lists" },
   "contact": null,
   "amenities": ["range from budget to 4-star", "campus shuttle proximity", "restaurants"],
   "nearest_spots": [
     { "id": "narmada-statue-of-unity", "distance_km": 4 },
     { "id": "narmada-unity-glow-garden", "distance_km": 2 }
   ],
-  "notes": "A pointer record, not one property: the town's hotel stock spans budget lodges to premium chains. Diwali–New Year weeks sell out — book with your attraction slots.",
+  "notes": "A pointer record, not one property: the town's hotel stock spans budget lodges to premium chains. Diwali–New Year weeks sell out, book with your attraction slots.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": null,

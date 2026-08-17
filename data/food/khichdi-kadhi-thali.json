@@ -6,7 +6,7 @@
   "type": "dish",
   "veg": true,
   "districts": ["narmada"],
-  "description": "The honest workhorse meal of the Narmada belt: soft khichdi with a tempered Gujarati kadhi, rotla or thepla, a seasonal shaak, papad and chhaas. Pilgrim kitchens perfected it — the bhojanalayas at Poicha and the temple-town eateries of Garudeshwar serve versions by the thousand — and every Rajpipla thali house runs its own. After a day of campus walking or forest roads, it is exactly what the body votes for.",
+  "description": "The honest workhorse meal of the Narmada belt: soft khichdi with a tempered Gujarati kadhi, rotla or thepla, a seasonal shaak, papad and chhaas. Pilgrim kitchens perfected it, the bhojanalayas at Poicha and the temple-town eateries of Garudeshwar serve versions by the thousand, and every Rajpipla thali house runs its own. After a day of campus walking or forest roads, it is exactly what the body votes for.",
   "where_to_try": [
     { "name": "Nilkanthdham bhojanalaya", "place": "Poicha" },
     { "name": "Thali houses", "place": "Rajpipla" },

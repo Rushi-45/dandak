@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "subir-falls-circuit",
   "slug": "subir-falls-circuit",
-  "title": "The Subir Falls Circuit — Girmal to Dev Van",
+  "title": "The Subir Falls Circuit, Girmal to Dev Van",
   "duration_days": 2,
   "districts": ["dang"],
   "themes": ["monsoon", "offbeat", "nature", "trekking"],
@@ -10,20 +10,20 @@
   "base_hub": "ahwa",
   "party": "friends",
   "stops": [
-    { "day": 1, "order": 1, "spot_id": "dang-u-turn-point", "duration_min": 30, "note": "The Gira hairpin from the deck — chai while the cloud decides" },
-    { "day": 1, "order": 2, "spot_id": "dang-girmal-falls", "duration_min": 90, "note": "Gujarat's tallest, three kilometres on — the circuit's anchor" },
+    { "day": 1, "order": 1, "spot_id": "dang-u-turn-point", "duration_min": 30, "note": "The Gira hairpin from the deck, chai while the cloud decides" },
+    { "day": 1, "order": 2, "spot_id": "dang-girmal-falls", "duration_min": 90, "note": "Gujarat's tallest, three kilometres on, the circuit's anchor" },
     { "day": 1, "order": 3, "spot_id": "dang-dhulda-falls", "duration_min": 60, "note": "The quiet western fall nobody else detours for" },
-    { "day": 1, "order": 4, "spot_id": "dang-mahal-eco-campsite", "duration_min": 120, "note": "Check in, river walk, forest night — the circuit's bed" },
-    { "day": 2, "order": 5, "spot_id": "dang-mahal-falls", "duration_min": 90, "note": "Karanjwa — the falls the campsite calls its own" },
+    { "day": 1, "order": 4, "spot_id": "dang-mahal-eco-campsite", "duration_min": 120, "note": "Check in, river walk, forest night, the circuit's bed" },
+    { "day": 2, "order": 5, "spot_id": "dang-mahal-falls", "duration_min": 90, "note": "Karanjwa. The falls the campsite calls its own" },
     { "day": 2, "order": 6, "spot_id": "dang-milan-falls", "duration_min": 60, "note": "The belt's once-unfindable third" },
-    { "day": 2, "order": 7, "spot_id": "dang-bhalkhet-falls", "duration_min": 75, "note": "Godadiya's curtain — five kilometres on" },
+    { "day": 2, "order": 7, "spot_id": "dang-bhalkhet-falls", "duration_min": 75, "note": "Godadiya's curtain, five kilometres on" },
     { "day": 2, "order": 8, "spot_id": "dang-dev-van-falls", "duration_min": 75, "note": "Finish at the falls the reels call Wonder" }
   ],
   "day_notes": [
-    { "day": 1, "note": "Ahwa to Subir to the Nishana check-post country: viewpoint, the big falls, the quiet one, then Mahal's bamboo forest for the night. Book the campsite ahead on the forest portal; fuel up in Ahwa — there are no pumps on the interior stretch." },
-    { "day": 2, "note": "The four-falls morning: Karanjwa, Milan, Bhalkhet and Dev Van sit within a dozen kilometres of village roads. None has facilities; carry the day's food and water from the campsite and ask each village for the path — local directions beat every map here." }
+    { "day": 1, "note": "Ahwa to Subir to the Nishana check-post country: viewpoint, the big falls, the quiet one, then Mahal's bamboo forest for the night. Book the campsite ahead on the forest portal; fuel up in Ahwa: there are no pumps on the interior stretch." },
+    { "day": 2, "note": "The four-falls morning: Karanjwa, Milan, Bhalkhet and Dev Van sit within a dozen kilometres of village roads. None has facilities; carry the day's food and water from the campsite and ask each village for the path, local directions beat every map here." }
   ],
   "total_drive_km": 150,
-  "notes": "The densest waterfall cluster in the district, almost all of it documented nowhere else. Strictly a monsoon circuit — July to early October — and strictly a daylight one; grip footwear throughout.",
+  "notes": "The densest waterfall cluster in the district, almost all of it documented nowhere else. Strictly a monsoon circuit, July to early October, and strictly a daylight one; grip footwear throughout.",
   "provenance": { "created": "2026-08-10", "last_reviewed": "2026-08-10" }
 }

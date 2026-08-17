@@ -1,12 +1,12 @@
 /**
- * Trip planner — pure, dependency-free, runs in the browser.
+ * Trip planner: pure, dependency-free, runs in the browser. 
  *
  * No React, no node:fs, no network. Everything here is a pure function so it can
- * be unit-tested with `node --test` and imported by a client component.
+ * be unit-tested with `node --test` and imported by a client component. 
  *
  * The constants are regressed from the dataset itself (224 curated road-distance
- * pairs and the twelve hand-built itineraries), not guessed — see the comments
- * on each block.
+ * pairs and the twelve hand-built itineraries), not guessed: see the comments
+ * on each block. 
  */
 
 // ---------------------------------------------------------------- types
@@ -56,7 +56,7 @@ export interface PlannerStay {
   lat: number | null;
   lng: number | null;
   bookingUrl: string | null;
-  /** the published tariff line — the single most useful thing when choosing a bed */
+  /** the published tariff line, the single most useful thing when choosing a bed */
   bookingNotes: string | null;
   contact: string | null;
 }
@@ -89,7 +89,7 @@ export interface PlanInput {
 export interface PlannedStop {
   spot: PlannerSpot;
   day: number;
-  order: number; // GLOBALLY sequential across days — matches all 12 curated itineraries
+  order: number; // GLOBALLY sequential across days, matches all 12 curated itineraries
   arriveAfterMin: number;
   driveMinFromPrev: number;
   driveKmFromPrev: number;
@@ -107,7 +107,7 @@ export interface PlannedDay {
   driveMin: number;
   visitMin: number;
   transitLeg: { fromName: string; toName: string; km: number; min: number } | null;
-  /** empty on the final day — you go home rather than sleep */
+  /** empty on the final day, you go home rather than sleep */
   stays: StayOption[];
 }
 
@@ -135,10 +135,10 @@ export interface PlanResult {
 // ------------------------------------------------------------ constants
 
 /**
- * Road factor by cluster — regressed from the 224 curated (road km, straight-line km)
+ * Road factor by cluster, regressed from the 224 curated (road km, straight-line km)
  * pairs already in the dataset. The global median is 1.45; the interior and ghat
  * clusters run 1.62–1.85. A flat 1.35 sits at the 35th percentile and underestimates
- * every interior leg.
+ * every interior leg. 
  */
 export const ROAD_FACTOR: Record<string, number> = {
   "sou-complex": 1.2,
@@ -153,7 +153,7 @@ export const ROAD_FACTOR: Record<string, number> = {
 export const ROAD_FACTOR_DEFAULT = 1.55;
 export const ROAD_FACTOR_HIGHWAY = 1.25;
 
-/** Hubs that sit on national highways — legs touching them move much faster. */
+/** Hubs that sit on national highways, legs touching them move much faster. */
 const HIGHWAY_HUBS = new Set([
   "surat",
   "vadodara",
@@ -176,7 +176,7 @@ export const LOCAL_END_KM = 12;
 /**
  * Day budget anchored to the twelve hand-built itineraries: their visit-minutes per
  * day run 180–465 (mean 320) and no day exceeds 8 stops. 540 wall-clock minutes
- * (09:00–18:00) minus 75 for lunch, fuel and parking.
+ * (09:00–18:00) minus 75 for lunch, fuel and parking. 
  */
 export const USABLE_DAY_MIN = 465;
 export const STOP_OVERHEAD_MIN = 10;
@@ -188,20 +188,20 @@ export const CATEGORY_SOFT_CAP = 3; // the actual fix for "twelve gardens"
 /**
  * Fatigue: each place already taken from the same cluster (or category) makes the
  * next one *look* further away by this many 5 km buckets. Without it, a loop's
- * ranking is pure radius — which is pure cluster-ranking — and a Saputara day trip
- * returns five town gardens while Girmal and Gira never surface.
+ * ranking is pure radius, which is pure cluster-ranking, and a Saputara day trip
+ * returns five town gardens while Girmal and Gira never surface. 
  */
 export const CLUSTER_FATIGUE_BUCKETS = 2; // ≈10 km of apparent detour per repeat
 export const CATEGORY_FATIGUE_BUCKETS = 1; // ≈5 km
 /**
- * In its season, a monsoon waterfall is worth driving for — that is the entire
+ * In its season, a monsoon waterfall is worth driving for, that is the entire
  * reason people come to Dang in July. Without this, near-town gardens always
- * outrank Girmal and Gira and a monsoon plan contains no falls at all.
+ * outrank Girmal and Gira and a monsoon plan contains no falls at all. 
  */
 export const SEASON_PEAK_BUCKET_DISCOUNT = 3; // ≈15 km of forgiven detour
 export const TRANSIT_LEG_MIN = 90; // a drive this long is called out, not hidden
 
-/** 98 of 106 coordinates carry real positional uncertainty — budget for it. */
+/** 98 of 106 coordinates carry real positional uncertainty, budget for it. */
 export const PRECISION_SLACK_KM: Record<Precision, number> = {
   exact: 0,
   approximate: 2,
@@ -227,7 +227,7 @@ export function haversineKm(a: { lat: number; lng: number }, b: { lat: number; l
   return 2 * R * Math.asin(Math.sqrt(s));
 }
 
-/** Decimal places of a coordinate — two records sit on a ~11 km grid (1 dp). */
+/** Decimal places of a coordinate: two records sit on a ~11 km grid (1 dp). */
 function decimals(n: number): number {
   const s = String(n);
   const i = s.indexOf(".");
@@ -243,9 +243,9 @@ export function coordSlackKm(spot: Pick<PlannerSpot, "precision" | "lat" | "lng"
 }
 
 /**
- * Where a point falls along the start→end corridor.
+ * Where a point falls along the start→end corridor. 
  * `t` is deliberately unclamped so callers can see spots that sit past the end
- * (t > 1) or behind the start (t < 0). Degenerate (loop) input returns t = 0.
+ * (t > 1) or behind the start (t < 0). Degenerate (loop) input returns t = 0. 
  */
 export function projectOntoCorridor(
   p: { lat: number; lng: number },
@@ -300,8 +300,8 @@ export function legSpeedKmh(a: Node, b: Node, month: number): number {
 
 /**
  * Leg distance, preferring the project's own curated road figures:
- *   1. `nearby[]` — 286 curated spot-to-spot edges
- *   2. `distances_km` — when one end IS that hub
+ *   1. `nearby[]`, 286 curated spot-to-spot edges
+ *   2. `distances_km`, when one end IS that hub
  *   3. haversine × road factor, clamped to at least the straight line
  *      (three records currently claim road km *below* straight-line)
  */
@@ -310,7 +310,7 @@ export function legDistanceKm(a: Node, b: Node): { km: number; source: DistanceS
 
   if (a.spot && b.spot) {
     const edge =
-      a.spot.nearby.find((n) => n.id === b.spot!.id) ??
+      a.spot.nearby.find((n) => n.id === b.spot!.id) ?? 
       b.spot.nearby.find((n) => n.id === a.spot!.id);
     if (edge) return { km: Math.max(edge.km, straight), source: "curated-nearby" };
   }
@@ -328,10 +328,10 @@ export function legDistanceKm(a: Node, b: Node): { km: number; source: DistanceS
 /**
  * A long leg is not slow all the way. Ekta Nagar to Saputara is 261 km of mostly
  * state highway with forest road at each end; charging the whole thing at the
- * interior speed priced it at 13 hours and produced a "day" of 900 minutes.
+ * interior speed priced it at 13 hours and produced a "day" of 900 minutes. 
  *
  * So: the first and last stretch run at the local speed the clusters imply, and
- * anything beyond that runs at highway speed.
+ * anything beyond that runs at highway speed. 
  */
 export function driveMinutes(a: Node, b: Node, month: number): number {
   const { km } = legDistanceKm(a, b);
@@ -354,8 +354,8 @@ export function stopCostMinutes(spot: PlannerSpot): number {
 
 /**
  * Four tiers, because hard-excluding everything outside `best_months` would drop
- * the Sardar Sarovar dam in December — it is open, ticketed and floodlit all year;
- * only the overflow is seasonal. Only genuinely-shut places are excluded.
+ * the Sardar Sarovar dam in December: it is open, ticketed and floodlit all year;
+ * only the overflow is seasonal. Only genuinely-shut places are excluded. 
  */
 export function seasonTier(spot: PlannerSpot, month: number): SeasonTier {
   const avoided = spot.avoidMonths.includes(month);
@@ -371,7 +371,7 @@ export function seasonNote(spot: PlannerSpot, month: number): string | null {
   const m = MONTH_NAMES[month - 1];
   if (tier === "weak") {
     return spot.monsoonDependent
-      ? `Likely dry in ${m} — this one runs with the monsoon`
+      ? `Likely dry in ${m}: this one runs with the monsoon`
       : `${m} is not its season`;
   }
   if (tier === "closed") return `Closed or not worth it in ${m}`;
@@ -392,8 +392,8 @@ export function notabilityScore(spot: PlannerSpot, month: number): number {
 
 /**
  * Lexicographic rank. Offsets are bucketed to 5 km bands first because 73 of 106
- * records self-declare their coordinates unverified — ranking on raw metres would
- * reshuffle every plan whenever a coordinate is corrected.
+ * records self-declare their coordinates unverified, ranking on raw metres would
+ * reshuffle every plan whenever a coordinate is corrected. 
  */
 export interface RankKey {
   offsetBucket: number;
@@ -529,7 +529,7 @@ export function twoOpt(start: Node, interior: Node[], end: Node, month: number):
 
 export function orderRoute(start: Node, interior: Node[], end: Node, month: number): Node[] {
   if (interior.length <= 1) return interior;
-  // corridor order first — monotone along the route, so the map never self-crosses
+  // corridor order first, monotone along the route, so the map never self-crosses
   const seeded = interior
     .map((n) => ({ n, t: projectOntoCorridor(n, start, end).t }))
     .sort((a, b) => a.t - b.t)
@@ -539,7 +539,7 @@ export function orderRoute(start: Node, interior: Node[], end: Node, month: numb
     : twoOpt(start, seeded, end, month);
 }
 
-/** Loop trips have no corridor — sweep around the base instead. */
+/** Loop trips have no corridor, sweep around the base instead. */
 export function orderRadial(base: Node, interior: Node[]): Node[] {
   return interior
     .map((n) => ({ n, a: Math.atan2(n.lat - base.lat, n.lng - base.lng) }))
@@ -559,12 +559,12 @@ export interface StayOption {
 }
 
 /**
- * Beds for the end of a day, best match first.
+ * Beds for the end of a day, best match first. 
  *
  * Returns several rather than one: a night is a choice, and the corpus now has
  * a government campsite, a homestay and a hotel within reach of the same
  * evening. Match quality leads, then distance, then id so the list is stable
- * across coordinate-fix commits.
+ * across coordinate-fix commits. 
  */
 export function suggestStays(
   dayEnd: Node,
@@ -596,10 +596,10 @@ export function suggestStays(
     found.push({ stay, matchedOn, km, rank: RANK[matchedOn] });
   }
 
-  // A null distance can only come from an explicit match — the coords branch
-  // requires coordinates to fire at all — so it means "this record asserts it
+  // A null distance can only come from an explicit match, the coords branch
+  // requires coordinates to fire at all, so it means "this record asserts it
   // serves the spot", not "unreachable". Sorting it last would bury the Tent
-  // Cities, which have no coordinates and are the obvious bed at the Statue.
+  // Cities, which have no coordinates and are the obvious bed at the Statue. 
   found.sort(
     (a, b) => a.rank - b.rank || (a.km ?? 0) - (b.km ?? 0) || a.stay.id.localeCompare(b.stay.id)
   );
@@ -647,13 +647,13 @@ export interface PackResult {
 }
 
 /**
- * Walk an ordered route and cut it into days.
+ * Walk an ordered route and cut it into days. 
  *
  * Extracted so that selection can gate on the *actual* packing. Gating on a
  * pooled `days × USABLE_DAY_MIN` budget instead lets a stop pass selection and
- * then get dropped here — which is how a 2-day Surat trip ended up with two
+ * then get dropped here, which is how a 2-day Surat trip ended up with two
  * stops and a warning about places that "fitted the route but not the clock",
- * while day one ran at two-thirds capacity. Time is not fungible across days.
+ * while day one ran at two-thirds capacity. Time is not fungible across days. 
  */
 export function packDays(
   from: Node,
@@ -662,7 +662,7 @@ export function packDays(
   days: number,
   month: number,
   stays: PlannerStay[],
-  /** spot ids the traveller demanded — placed even when they wreck the day */
+  /** spot ids the traveller demanded, placed even when they wreck the day */
   mustIds: Set<string> = new Set()
 ): PackResult {
   const driveMonth = month || 1; // 0 means "month not chosen"; speeds still need one
@@ -709,7 +709,7 @@ export function packDays(
     // Whichever day ends the trip still has to reach the finish; earlier days
     // just end where they end and you sleep there. Without reserving it, the
     // last day silently ran an hour over. Recomputed after a day closes, since
-    // closing changes which day this is.
+    // closing changes which day this is. 
     const isFinalStop = node === ordered[ordered.length - 1];
     const tailFor = (idx: number) =>
       idx === days || isFinalStop ? driveMinutes(node, to, driveMonth) : 0;
@@ -721,14 +721,14 @@ export function packDays(
       if (dayIndex < days) {
         closeDay(cursor);
       } else if (!required) {
-        // last day is full — drop the tail rather than emit a 12-hour day
+        // last day is full: drop the tail rather than emit a 12-hour day
         dropped.push(spot.name);
         continue;
       }
     }
     // A day's first stop used to bypass the budget entirely, which is how a
     // 261 km transfer became a single-stop 15-hour day. If it does not fit an
-    // empty day it does not fit any day.
+    // empty day it does not fit any day. 
     if (!required && !dayStops.length && drive + cost + tailFor(dayIndex) > USABLE_DAY_MIN) {
       dropped.push(spot.name);
       continue;
@@ -806,11 +806,11 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     const detour = mustVisitDetourKm(m, from, to);
     if (detour > Math.max(60, corridorKm * 0.6)) {
       warnings.push(
-        `${m.name} adds roughly ${Math.round(detour)} km of driving to this route — consider another day or a different endpoint.`
+        `${m.name} adds roughly ${Math.round(detour)} km of driving to this route, consider another day or a different endpoint.`
       );
     }
     if (month && seasonTier(m, month) !== "peak" && seasonTier(m, month) !== "ok") {
-      warnings.push(`${m.name}: ${seasonNote(m, month) ?? "out of season"} — kept because you asked for it.`);
+      warnings.push(`${m.name}: ${seasonNote(m, month) ?? "out of season"}, kept because you asked for it.`);
     }
   }
 
@@ -829,7 +829,7 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     return true;
   });
 
-  // 2. reach filter — corridor offset, or radius for loops
+  // 2. reach filter, corridor offset, or radius for loops
   const maxOffsetKm = isLoop
     ? days === 1
       ? 45
@@ -848,7 +848,7 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     })
     .filter((c) => c.offsetKm <= maxOffsetKm && (isLoop || (c.t > -0.15 && c.t < 1.15)));
 
-  // 3. selection — lexicographic rank, diversity-aware, accepted while time allows
+  // 3. selection, lexicographic rank, diversity-aware, accepted while time allows
   const clusterCount = new Map<string, number>();
   const categoryCount = new Map<string, number>();
   const clusterCap = (isLoop ? CLUSTER_ANCHOR_CAP : CLUSTER_SOFT_CAP) * days;
@@ -858,14 +858,14 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
   const chosen: Node[] = [...seedNodes];
   const routeOf = (nodes: Node[]) =>
     isLoop ? orderRadial(from, nodes) : orderRoute(from, nodes, to, month || 1);
-  /** Accept only what survives the real packer — see packDays. */
+  /** Accept only what survives the real packer: see packDays. */
   const fits = (nodes: Node[]) =>
     packDays(from, routeOf(nodes), to, days, month, data.stays, mustIds).dropped.length === 0;
 
   /**
    * Greedy selection, re-ranked every round. Ranking has to be dynamic: fatigue
-   * depends on what has already been picked, so a static sort cannot express it.
-   * n ≈ 100 and picks ≤ 35, so the O(n²) is irrelevant.
+   * depends on what has already been picked, so a static sort cannot express it. 
+   * n ≈ 100 and picks ≤ 35, so the O(n²) is irrelevant. 
    */
   const remaining = reachable.slice();
   while (chosen.length < MAX_STOPS_PER_DAY * days && remaining.length) {
@@ -905,14 +905,14 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     if (bestIdx === -1) break;
 
     const cand = remaining.splice(bestIdx, 1)[0];
-    if (!fits([...chosen, cand.node])) continue; // budget only shrinks — skip for good
+    if (!fits([...chosen, cand.node])) continue; // budget only shrinks, skip for good
     chosen.push(cand.node);
     const cl = cand.spot.cluster ?? "none";
     clusterCount.set(cl, (clusterCount.get(cl) ?? 0) + 1);
     categoryCount.set(cand.spot.category, (categoryCount.get(cand.spot.category) ?? 0) + 1);
   }
 
-  // 4. final ordering, 5. pack into days — the same packer the fit gate used
+  // 4. final ordering, 5. pack into days, the same packer the fit gate used
   const ordered = routeOf(chosen);
   const packed = packDays(from, ordered, to, days, month, data.stays, mustIds);
   const plannedDays = packed.days;
@@ -920,12 +920,12 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
 
   if (!plannedDays.some((d) => d.stops.length)) {
     warnings.push(
-      "Nothing fits between those two points in the time available — try more days, or endpoints further apart."
+      "Nothing fits between those two points in the time available, try more days, or endpoints further apart."
     );
   }
   if (dropped.length) {
     warnings.push(
-      `${dropped.length} more place${dropped.length > 1 ? "s" : ""} would have fitted the route but not the clock — add a day to reach ${dropped.slice(0, 2).join(" and ")}.`
+      `${dropped.length} more place${dropped.length > 1 ? "s" : ""} would have fitted the route but not the clock. Add a day to reach ${dropped.slice(0, 2).join(" and ")}.`
     );
   }
 

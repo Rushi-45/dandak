@@ -10,10 +10,10 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Chikhalda's kilometre-away sibling in the south-western pocket — a second small monsoon drop for the same village outing.",
-  "description": "Ritu is the second half of the Chikhalda outing: a small monsoon fall a kilometre from its better-pinned sibling, in the village country where Dang's south-west runs toward the Waghai side. Nobody has written about it; the pin and a traveller's visit are the record.\n\nSee Chikhalda's entry for the pocket's practicalities — the two share roads, season and the same happy absence of everything commercial.",
+  "summary": "Chikhalda's kilometre-away sibling in the south-western pocket. A second small monsoon drop for the same village outing.",
+  "description": "Ritu is the second half of the Chikhalda outing: a small monsoon fall a kilometre from its better-pinned sibling, in the village country where Dang's south-west runs toward the Waghai side. Nobody has written about it; the pin and a traveller's visit are the record.\n\nSee Chikhalda's entry for the pocket's practicalities, the two share roads, season and the same happy absence of everything commercial.",
   "highlights": [
-    "One kilometre from Chikhalda — the pocket's easy double",
+    "One kilometre from Chikhalda, the pocket's easy double",
     "Undocumented village falls at their quietest"
   ],
   "history_legend": null,
@@ -56,10 +56,10 @@
     "activities": ["sightseeing", "picnic", "nature-walk", "photography"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Small-scale falls — go close and low rather than wide."
+    "photography_notes": "Small-scale falls. Go close and low rather than wide."
   },
   "amenities": {
-    "food": "None — carry everything",
+    "food": "None. Carry everything",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -69,13 +69,13 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is slick — grip footwear",
+      "Wet rock is slick, grip footwear",
       "Flow rises with each spell; keep children in hand"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~17 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Always pair with Chikhalda — one outing, two drops and the banyan grove"
+    "Always pair with Chikhalda: one outing, two drops and the banyan grove"
   ],
   "faqs": [],
   "nearby": [
@@ -86,7 +86,7 @@
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Ritu Waterfall, Dang — Chikhalda's Sibling Fall",
+    "meta_title": "Ritu Waterfall, Dang. Chikhalda's Sibling Fall",
     "meta_description": "Ritu waterfall in Dang's south-western pocket: the kilometre-away double of Chikhalda falls."
   },
   "provenance": {
@@ -94,7 +94,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Ritu waterfall' (20.6875, 73.5886); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Ritu+waterfall/@20.6875375,73.5886406,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Ritu waterfall' (20.6875, 73.5886); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Ritu+waterfall/@20.6875375,73.5886406,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

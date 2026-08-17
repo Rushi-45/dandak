@@ -10,14 +10,14 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A seasonal forest waterfall with a small Gaumukh temple, ~15 km from Songadh just over the Dang–Tapi line — rugged approach, monsoon-only flow.",
-  "description": "Gaumukh keeps the old formula of hill shrines everywhere: a cow-mouth spout, a small temple, and a seasonal waterfall in deep forest — here on the wooded border country where the Dang jungle runs over the district line into Songadh taluka of Tapi. The approach is a rugged forest road and path of the kind that keeps casual traffic away; what arrives is mostly local pilgrim-picnic traffic, heaviest on monsoon Sundays and Shravan days.\n\nThe waterfall is honest about its season: reviewers photograph it dry outside the rains, and the temple-and-forest quiet is the fallback attraction then. In August the fall, the spout and the stream all run and the forest closes green overhead.\n\nFor this dataset's travellers it works as the northern extension of an interior-Dang day — the Ahwa–Subir–Songadh road passes close — or as a pairing with Medha waterfall on the Songadh side.",
+  "summary": "A seasonal forest waterfall with a small Gaumukh temple, ~15 km from Songadh just over the Dang–Tapi line. Rugged approach, monsoon-only flow.",
+  "description": "Gaumukh keeps the old formula of hill shrines everywhere: a cow-mouth spout, a small temple, and a seasonal waterfall in deep forest, here on the wooded border country where the Dang jungle runs over the district line into Songadh taluka of Tapi. The approach is a rugged forest road and path of the kind that keeps casual traffic away; what arrives is mostly local pilgrim-picnic traffic, heaviest on monsoon Sundays and Shravan days.\n\nThe waterfall is honest about its season: reviewers photograph it dry outside the rains, and the temple-and-forest quiet is the fallback attraction then. In August the fall, the spout and the stream all run and the forest closes green overhead.\n\nFor this dataset's travellers it works as the northern extension of an interior-Dang day, the Ahwa–Subir–Songadh road passes close, or as a pairing with Medha waterfall on the Songadh side.",
   "highlights": [
     "Waterfall-and-temple pairing in deep border forest",
     "Rugged approach that keeps crowds thin",
     "Pairs with Medha falls for a Songadh monsoon day"
   ],
-  "history_legend": "The Gaumukh name — 'cow's mouth' — attaches to the spring-spout shrine tradition found across India; the small temple here serves the surrounding forest villages.",
+  "history_legend": "The Gaumukh name, 'cow's mouth', attaches to the spring-spout shrine tradition found across India; the small temple here serves the surrounding forest villages.",
   "attributes": {},
   "location": {
     "taluka": "Songadh (Tapi)",
@@ -30,12 +30,12 @@
   },
   "access": {
     "modes": {
-      "road": "From Songadh via the Don Gaumukh approach road — rugged forest driving for the last stretch",
+      "road": "From Songadh via the Don Gaumukh approach road, rugged forest driving for the last stretch",
       "rail": "Songadh/Vyara side railheads on the Surat–Bhusawal line",
       "air": "Surat (~105 km)"
     },
     "last_mile": "Forest path from the road end to the temple and fall",
-    "road_condition": "Rugged and slow beyond the tar — high clearance helps, especially in rain",
+    "road_condition": "Rugged and slow beyond the tar, high clearance helps, especially in rain",
     "parking": { "available": true, "fee": 0, "notes": "Informal clearing near the temple approach" }
   },
   "visit": {
@@ -51,7 +51,7 @@
     "best_months": [7, 8, 9],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "Strictly monsoon-fed — reviewers photograph it dry by late autumn."
+    "notes": "Strictly monsoon-fed, reviewers photograph it dry by late autumn."
   },
   "experience": {
     "activities": ["trekking", "darshan", "photography", "nature-walk"],
@@ -64,26 +64,26 @@
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
-    "guides": "Not needed — the path is single and local visitors show the way",
+    "guides": "Not needed. The path is single and local visitors show the way",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "The rugged approach road punishes low cars — judge it before committing",
+      "The rugged approach road punishes low cars, judge it before committing",
       "Wet rock at the fall and spout is slippery; mind children near the stream"
     ],
     "emergency": { "nearest_hospital": "CHC Songadh (~15 km)", "police": "Songadh PS", "notes": null }
   },
   "tips": [
     "Combine with Medha waterfall for the full Songadh forest day",
-    "Skip it outside July–September — the fall will be dry",
+    "Skip it outside July–September: the fall will be dry",
     "Weekdays avoid the pilgrim-picnic rush"
   ],
   "faqs": [],
   "nearby": [
     { "id": "dang-medha-falls", "distance_km": 15, "note": "The Songadh pairing" },
-    { "id": "dang-songadh-fort", "distance_km": 17, "note": "The Gaekwad fort — the day's heritage anchor" },
+    { "id": "dang-songadh-fort", "distance_km": 17, "note": "The Gaekwad fort, the day's heritage anchor" },
     { "id": "dang-chimer-falls", "distance_km": 15, "note": "Across the district line in Dang" }
   ],
   "itineraries": ["songadh-forest-day"],
@@ -100,7 +100,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Gaumukh Waterfalls, Songadh — Temple in the Forest",
+    "meta_title": "Gaumukh Waterfalls, Songadh, Temple in the Forest",
     "meta_description": "Gaumukh waterfall and temple near Songadh on the Dang–Tapi border: rugged approach, monsoon-only flow, and pairing with Medha falls."
   },
   "provenance": {
@@ -108,9 +108,9 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Gaumukh Waterfalls, Don Goumukh Approach Road, Songadh — Mappls place (pin 21.122336, 73.639629)", "url": "https://www.mappls.com/pyf4fq", "publisher": "Mappls / MapmyIndia", "accessed": "2026-08-09" },
-      { "title": "Gaumukh Waterfalls, Songadh — reviews and photos (dry-season shots included)", "url": "https://www.tripadvisor.com/Attraction_Review-g2009278-d15136194-Reviews-Gaumukh_Waterfalls-Songadh_Tapi_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-09" },
-      { "title": "Gaumukh Waterfall in Songadh — overview (~15 km from Songadh, rugged forest path, small temple)", "url": "https://mindtrip.ai/attraction/songadh-gujarat/gaumukh-waterfall/at-TaZoecaM", "publisher": "mindtrip.ai", "accessed": "2026-08-09" }
+      { "title": "Gaumukh Waterfalls, Don Goumukh Approach Road, Songadh, Mappls place (pin 21.122336, 73.639629)", "url": "https://www.mappls.com/pyf4fq", "publisher": "Mappls / MapmyIndia", "accessed": "2026-08-09" },
+      { "title": "Gaumukh Waterfalls, Songadh, reviews and photos (dry-season shots included)", "url": "https://www.tripadvisor.com/Attraction_Review-g2009278-d15136194-Reviews-Gaumukh_Waterfalls-Songadh_Tapi_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-09" },
+      { "title": "Gaumukh Waterfall in Songadh, overview (~15 km from Songadh, rugged forest path, small temple)", "url": "https://mindtrip.ai/attraction/songadh-gujarat/gaumukh-waterfall/at-TaZoecaM", "publisher": "mindtrip.ai", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "access.road_condition", "history_legend"]
   }

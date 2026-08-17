@@ -6,12 +6,12 @@
   "type": "dish",
   "veg": true,
   "districts": ["dang", "narmada"],
-  "description": "Purple yam — kand — is winter's tuber across these hills: roasted in embers, cut into spiced fry-ups, or folded into festive dishes. The forest belt grows several wild and cultivated tubers, and winter markets in Ahwa, Waghai and Rajpipla stack them alongside the season's produce. Simple stalls do kand chips and roasted slices with chilli-salt; homes do it best.",
+  "description": "Purple yam, kand, is winter's tuber across these hills: roasted in embers, cut into spiced fry-ups, or folded into festive dishes. The forest belt grows several wild and cultivated tubers, and winter markets in Ahwa, Waghai and Rajpipla stack them alongside the season's produce. Simple stalls do kand chips and roasted slices with chilli-salt; homes do it best.",
   "where_to_try": [
     { "name": "Winter market stalls", "place": "Ahwa, Waghai, Rajpipla" },
     { "name": "Village meals", "place": "Interior Dang" }
   ],
   "season": "Winter (November–February)",
-  "cultural_note": "Tubers are old forest-food security — kand's place at winter festivals long predates its city-thali cameo.",
+  "cultural_note": "Tubers are old forest-food security, kand's place at winter festivals long predates its city-thali cameo.",
   "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
 }

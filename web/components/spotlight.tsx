@@ -3,7 +3,7 @@
 import { m, useMotionTemplate, useMotionValue } from "motion/react";
 import type { PointerEvent, ReactNode } from "react";
 
-/** Card-spotlight wrapper — an emerald glow follows the pointer across children. */
+/** Card-spotlight wrapper, an emerald glow follows the pointer across children. */
 export function Spotlight({ children, className = "" }: { children: ReactNode; className?: string }) {
   const x = useMotionValue(-300);
   const y = useMotionValue(-300);

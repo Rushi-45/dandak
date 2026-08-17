@@ -10,15 +10,15 @@
   "cluster": "poicha",
   "status": "active",
   "district": "narmada",
-  "summary": "A vast Swaminarayan temple-and-exhibition complex on the Narmada bank at Poicha — ornate shrines, ghats, themed displays and evening lighting.",
-  "description": "Nilkanthdham at Poicha is less a temple than a devotional campus: a sprawling Swaminarayan complex built on the west bank of the Narmada, combining an ornately carved main mandir with ghats on the river, large murtis, fountain courts, and a series of themed exhibition walks on scripture and values. Scale and polish are the signature — everything is big, clean, and organised for high visitor volumes.\n\nFor pilgrims the anchor is darshan and a dip or aarti at the river ghats; for everyone else the complex works as a half-day of unhurried wandering, especially toward evening when the lighting comes on and the river breeze rises. Weekends and festival days draw very large family crowds from across Gujarat; weekday mornings are calm. Entry to the complex is free, with nominal tickets for some exhibition sections, and food courts and prasad counters handle the basics.\n\nIt pairs naturally with Kabirvad — the giant banyan island a boat-hop across the river system to the south-west — and sits under an hour from both Rajpipla and Ekta Nagar, making it an easy add to a Statue of Unity trip.",
+  "summary": "A vast Swaminarayan temple-and-exhibition complex on the Narmada bank at Poicha, ornate shrines, ghats, themed displays and evening lighting.",
+  "description": "Nilkanthdham at Poicha is less a temple than a devotional campus: a sprawling Swaminarayan complex built on the west bank of the Narmada, combining an ornately carved main mandir with ghats on the river, large murtis, fountain courts, and a series of themed exhibition walks on scripture and values. Scale and polish are the signature, everything is big, clean, and organised for high visitor volumes.\n\nFor pilgrims the anchor is darshan and a dip or aarti at the river ghats; for everyone else the complex works as a half-day of unhurried wandering, especially toward evening when the lighting comes on and the river breeze rises. Weekends and festival days draw very large family crowds from across Gujarat; weekday mornings are calm. Entry to the complex is free, with nominal tickets for some exhibition sections, and food courts and prasad counters handle the basics.\n\nIt pairs naturally with Kabirvad, the giant banyan island a boat-hop across the river system to the south-west, and sits under an hour from both Rajpipla and Ekta Nagar, making it an easy add to a Statue of Unity trip.",
   "highlights": [
     "Ornate Swaminarayan mandir on the Narmada bank",
     "River ghats with evening aarti atmosphere",
     "Themed exhibition walks suit families",
     "Free entry; polished, high-capacity campus"
   ],
-  "history_legend": "The complex is a modern devotional project of the Swaminarayan tradition, developed at Poicha on the Narmada — a river the sampradaya's founder, Sahajanand Swami (Nilkanth Varni in his ascetic youth, hence the name), is held to have travelled during his wanderings.",
+  "history_legend": "The complex is a modern devotional project of the Swaminarayan tradition, developed at Poicha on the Narmada, a river the sampradaya's founder, Sahajanand Swami (Nilkanth Varni in his ascetic youth, hence the name), is held to have travelled during his wanderings.",
   "attributes": { "deity": "Swaminarayan (Nilkanth Varni)", "tradition": "Swaminarayan", "dress_code": "Modest dress; shoulders and knees covered advisable" },
   "location": {
     "taluka": "Nandod",
@@ -58,7 +58,7 @@
     "activities": ["darshan", "sightseeing", "photography"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
-    "photography_notes": "Evening illumination over the river is the frame; photography rules inside shrine halls are posted — follow them."
+    "photography_notes": "Evening illumination over the river is the frame; photography rules inside shrine halls are posted, follow them."
   },
   "amenities": {
     "food": "Large bhojanalaya and food courts on campus; strictly vegetarian",
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "Use only the designated ghat sections for river access — currents are strong beyond",
+      "Use only the designated ghat sections for river access: currents are strong beyond",
       "Festival-day crowds require patience with children and elderly visitors"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~20 km)", "police": "Local PS via campus security", "notes": "Campus runs its own first-aid and lost-and-found desks" }
@@ -84,7 +84,7 @@
   "faqs": [
     {
       "q": "Is entry really free?",
-      "a": "Yes — the complex and mandir are free; a few exhibition attractions charge nominal tickets, and donations are voluntary."
+      "a": "Yes. The complex and mandir are free; a few exhibition attractions charge nominal tickets, and donations are voluntary."
     }
   ],
   "nearby": [
@@ -106,7 +106,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Nilkanthdham Poicha — Temple Complex Guide",
+    "meta_title": "Nilkanthdham Poicha, Temple Complex Guide",
     "meta_description": "Visiting Nilkanthdham Swaminarayan complex at Poicha: darshan timings, free entry, river ghats, exhibitions and evening lighting."
   },
   "provenance": {
@@ -114,8 +114,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Plan Your Visit — Shri Nilkanthdham, Poicha", "url": "https://nilkanthdham.org/visit.html", "publisher": "nilkanthdham.org (official)", "accessed": "2026-08-08" },
-      { "title": "Nilkanth Dham Poicha — Ticket Price, Timings & Room Booking", "url": "https://blog.yatradham.org/nilkanth-dham-poicha/", "publisher": "yatradham.org", "accessed": "2026-08-08" }
+      { "title": "Plan Your Visit, Shri Nilkanthdham, Poicha", "url": "https://nilkanthdham.org/visit.html", "publisher": "nilkanthdham.org (official)", "accessed": "2026-08-08" },
+      { "title": "Nilkanth Dham Poicha, Ticket Price, Timings & Room Booking", "url": "https://blog.yatradham.org/nilkanth-dham-poicha/", "publisher": "yatradham.org", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]
   }

@@ -10,14 +10,14 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Lakeside Shiva temple woven into Saputara's serpent-worship roots — small, active, and busiest during Shravan and festival evenings.",
-  "description": "The Nageshwar Mahadev temple sits by Saputara Lake, and its dedication is the town's name explained: Saputara derives from the local words for 'abode of serpents', and the naga alongside Shiva here continues a serpent-reverence that long predates the resort town. Dangi communities have marked festivals at the lakeside shrine for generations, and it remains a working temple first — morning and evening aartis, Shravan-month crowds, Mahashivratri as the big day.\n\nFor visitors the temple is a short, pleasant fold-in to the lakefront circuit: darshan takes minutes, the lakeside setting earns a pause, and on festival evenings the lamp-lit shrine against the water is quietly lovely. Dress and behave as at any active temple; footwear stays outside.",
+  "summary": "Lakeside Shiva temple woven into Saputara's serpent-worship roots, small, active, and busiest during Shravan and festival evenings.",
+  "description": "The Nageshwar Mahadev temple sits by Saputara Lake, and its dedication is the town's name explained: Saputara derives from the local words for 'abode of serpents', and the naga alongside Shiva here continues a serpent-reverence that long predates the resort town. Dangi communities have marked festivals at the lakeside shrine for generations, and it remains a working temple first, morning and evening aartis, Shravan-month crowds, Mahashivratri as the big day.\n\nFor visitors the temple is a short, pleasant fold-in to the lakefront circuit: darshan takes minutes, the lakeside setting earns a pause, and on festival evenings the lamp-lit shrine against the water is quietly lovely. Dress and behave as at any active temple; footwear stays outside.",
   "highlights": [
     "The serpent link behind Saputara's own name",
     "Working lakeside shrine with daily aartis",
     "Shravan and Mahashivratri are the big occasions"
   ],
-  "history_legend": "Saputara's name is commonly traced to 'abode of serpents', and serpent veneration at this lakeside site is held locally to precede the modern town entirely — the naga image here is the continuity, whatever the current structure's age.",
+  "history_legend": "Saputara's name is commonly traced to 'abode of serpents', and serpent veneration at this lakeside site is held locally to precede the modern town entirely. The naga image here is the continuity, whatever the current structure's age.",
   "attributes": { "deity": "Shiva (Nageshwar Mahadev)", "main_festival": "Mahashivratri; Shravan month" },
   "location": {
     "taluka": "Ahwa",
@@ -70,12 +70,12 @@
   },
   "safety": {
     "warnings": [
-      "Footwear stays outside — paving is hot underfoot on summer afternoons"
+      "Footwear stays outside, paving is hot underfoot on summer afternoons"
     ],
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
   },
   "tips": [
-    "Fold it into the lakefront evening — aarti time if you can",
+    "Fold it into the lakefront evening: aarti time if you can",
     "Visit early on Shravan Mondays or accept the queue"
   ],
   "faqs": [],
@@ -87,15 +87,15 @@
   "media": { "images": [], "videos": [] },
   "seo": {
     "meta_title": "Nageshwar Mahadev Temple, Saputara",
-    "meta_description": "Saputara's lakeside Shiva temple and the serpent lore behind the town's name — darshan timings and visit notes."
+    "meta_description": "Saputara's lakeside Shiva temple and the serpent lore behind the town's name, darshan timings and visit notes."
   },
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Nageshwar Mahadev Temple, Saputara — Tripadvisor", "url": "https://www.tripadvisor.com/Attraction_Review-g1156008-d2625819-Reviews-or10-Nageshwar_Mahadev_Temple-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-08" },
-      { "title": "Places to Visit in Saputara — Thomas Cook", "url": "https://www.thomascook.in/india-tourism/places-to-visit-in-saputara", "publisher": "thomascook.in", "accessed": "2026-08-08" }
+      { "title": "Nageshwar Mahadev Temple, Saputara, Tripadvisor", "url": "https://www.tripadvisor.com/Attraction_Review-g1156008-d2625819-Reviews-or10-Nageshwar_Mahadev_Temple-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.com", "accessed": "2026-08-08" },
+      { "title": "Places to Visit in Saputara, Thomas Cook", "url": "https://www.thomascook.in/india-tourism/places-to-visit-in-saputara", "publisher": "thomascook.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]
   }

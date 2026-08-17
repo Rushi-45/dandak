@@ -10,15 +10,15 @@
   "cluster": "dediapada-belt",
   "status": "active",
   "district": "narmada",
-  "summary": "Six hundred square kilometres of hill forest along the Narmada's south bank — sloth bear country with waterfalls, treks and eco-campsites.",
-  "description": "Shoolpaneshwar is the big wild space of the Narmada district: roughly six hundred square kilometres of moist deciduous forest and bamboo climbing from the river's south bank into the Satpura edges, touching the Maharashtra border. It wraps around much of what visitors come this way for — Zarwani and Ninai falls both lie within or on its skirts — but the sanctuary proper rewards those who go deeper.\n\nThis is sloth bear country first, with leopard, hyena, barking deer, four-horned antelope, giant and flying squirrels, and a bird list that keeps binoculars busy from crested serpent eagles to winter flycatchers. Sightings follow sanctuary rules of luck and effort: dawn drives on the internal roads, guided walks from the eco-campsites at Zarwani or the Dediapada side, and patience. The forest itself — huge bamboo brakes, perennial streams, tribal hamlets along the boundary — is the dependable spectacle.\n\nEntry works through forest-department check posts (Dediapada and the Ekta Nagar side), with permits, fees and guide arrangements at the gate. October to March is the season that makes sense; monsoon access is restricted and summer is punishing.",
+  "summary": "Six hundred square kilometres of hill forest along the Narmada's south bank, sloth bear country with waterfalls, treks and eco-campsites.",
+  "description": "Shoolpaneshwar is the big wild space of the Narmada district: roughly six hundred square kilometres of moist deciduous forest and bamboo climbing from the river's south bank into the Satpura edges, touching the Maharashtra border. It wraps around much of what visitors come this way for, Zarwani and Ninai falls both lie within or on its skirts, but the sanctuary proper rewards those who go deeper.\n\nThis is sloth bear country first, with leopard, hyena, barking deer, four-horned antelope, giant and flying squirrels, and a bird list that keeps binoculars busy from crested serpent eagles to winter flycatchers. Sightings follow sanctuary rules of luck and effort: dawn drives on the internal roads, guided walks from the eco-campsites at Zarwani or the Dediapada side, and patience. The forest itself, huge bamboo brakes, perennial streams, tribal hamlets along the boundary, is the dependable spectacle.\n\nEntry works through forest-department check posts (Dediapada and the Ekta Nagar side), with permits, fees and guide arrangements at the gate. October to March is the season that makes sense; monsoon access is restricted and summer is punishing.",
   "highlights": [
     "One of Gujarat's largest sanctuaries at ~600 km²",
     "Sloth bear, leopard and a serious bird list",
     "Contains Zarwani falls; Ninai sits on its edge",
     "Eco-campsites for nights inside the forest"
   ],
-  "history_legend": "The sanctuary takes its name from the old Shoolpaneshwar Mahadev shrine on the Narmada — the original temple site was submerged by the Sardar Sarovar reservoir and re-established on the bank at Gora.",
+  "history_legend": "The sanctuary takes its name from the old Shoolpaneshwar Mahadev shrine on the Narmada. The original temple site was submerged by the Sardar Sarovar reservoir and re-established on the bank at Gora.",
   "attributes": { "area_km2": 608, "key_species": ["sloth bear", "leopard", "giant flying squirrel", "four-horned antelope", "crested serpent eagle"], "entry_permit": "Forest-department permit at Dediapada / Ekta Nagar-side check posts" },
   "location": {
     "taluka": "Dediapada",
@@ -40,7 +40,7 @@
     "parking": { "available": true, "fee": 0, "notes": "At check posts and campsites" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "07:00", "close": "17:00", "note": "Daylight entry by permit; indicative — hours set by range offices" }],
+    "timings": [{ "days": "all", "open": "07:00", "close": "17:00", "note": "Daylight entry by permit; indicative, hours set by range offices" }],
     "fees": [{ "type": "entry", "amount_inr": 50, "note": "Per person, plus vehicle charge (~₹400 car / ₹220 bike) at check posts such as Thawadia; guide fees separate" }],
     "booking": { "required": false, "url": null, "notes": "Day permits at the gate; campsite stays book via the forest department's eco-tourism channels" },
     "duration_min": 300,
@@ -58,10 +58,10 @@
     "activities": ["safari", "jungle-trail", "trekking", "birdwatching", "camping", "photography", "nature-walk"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Dark under canopy — fast glass or high ISO; bamboo corridors give clean sightlines for bird photography in the first hour of light."
+    "photography_notes": "Dark under canopy. Fast glass or high ISO; bamboo corridors give clean sightlines for bird photography in the first hour of light."
   },
   "amenities": {
-    "food": "Only at campsites when booked; Dediapada has the nearest reliable meals — carry supplies",
+    "food": "Only at campsites when booked; Dediapada has the nearest reliable meals. Carry supplies",
     "toilets": "basic",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "Sloth bears are genuinely dangerous at close range — never walk unguided",
+      "Sloth bears are genuinely dangerous at close range, never walk unguided",
       "Exit before the check-post deadline; no night movement inside",
       "Carry all water; streams are not treated"
     ],
@@ -79,13 +79,13 @@
   },
   "tips": [
     "Base at an eco-campsite (Zarwani, Sagai or Dediapada-side) and build around a dawn walk",
-    "Combine with Ninai falls in early October — flow plus open forest access",
+    "Combine with Ninai falls in early October: flow plus open forest access",
     "Binoculars beat cameras here; bring both if you can"
   ],
   "faqs": [
     {
       "q": "Is there a vehicle safari like Gir?",
-      "a": "No formal safari fleet — you drive permitted tracks in your own vehicle with a guide, or walk guided trails. It is a quieter, harder, more rewarding kind of sanctuary."
+      "a": "No formal safari fleet, you drive permitted tracks in your own vehicle with a guide, or walk guided trails. It is a quieter, harder, more rewarding kind of sanctuary."
     }
   ],
   "nearby": [
@@ -107,15 +107,15 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Shoolpaneshwar Wildlife Sanctuary — Visit Guide",
-    "meta_description": "Permits, seasons, sloth bears and eco-campsites in Shoolpaneshwar sanctuary — Narmada district's 600 km² of hill forest."
+    "meta_title": "Shoolpaneshwar Wildlife Sanctuary, Visit Guide",
+    "meta_description": "Permits, seasons, sloth bears and eco-campsites in Shoolpaneshwar sanctuary, Narmada district's 600 km² of hill forest."
   },
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Zarwani Waterfalls, Kevadiya — sanctuary entry fees", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Zarwani Waterfalls, Kevadiya, sanctuary entry fees", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
       { "title": "Zarwani Waterfall Gujarat Guide 2026", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "attributes.area_km2", "location.coordinates"]

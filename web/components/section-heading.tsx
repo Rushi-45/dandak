@@ -3,7 +3,7 @@
  *
  * The spot pages carry the longest prose in the project and had eleven sections
  * all set as the same 12px uppercase label. With every heading at identical
- * weight there is no hierarchy to scan — a reader looking for "Getting there"
+ * weight there is no hierarchy to scan, a reader looking for "Getting there"
  * has to read all eleven. This gives the page-level sections a serif voice that
  * matches the h1, and leaves the small uppercase style to do what it is good at:
  * labelling things *inside* a card, one level down.

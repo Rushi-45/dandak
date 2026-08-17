@@ -13,7 +13,7 @@ const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";
  *
  * Every map opens on Dark, which is the near-black CARTO basemap lifted by a CSS
  * filter (see .dk-map-dark). Raw, its roads are drawn so faintly over this region
- * that the layer reads as empty — the geometry is all there, just barely visible,
+ * that the layer reads as empty: the geometry is all there, just barely visible,
  * so brightness and contrast are all it needed. That keeps the site's palette and
  * still answers the question a travel map exists to answer: how do these two pins
  * connect. Pass `base` for a map where imagery or a familiar light map is better.
@@ -21,7 +21,7 @@ const CARTO_ATTR = "© OpenStreetMap contributors · © CARTO";
  * Why roads are a base layer rather than an overlay on the imagery: Esri's
  * transparent reference layers (World Transportation, World Reference Overlay,
  * Light Gray Reference) all return Esri's 872-byte empty tile over Narmada and
- * over the Dang interior — the two districts this site covers — so they are
+ * over the Dang interior, the two districts this site covers, so they are
  * useless here. OpenStreetMap has the roads, but publishes no key-free
  * *transparent* road tileset, and blending an opaque light one onto the imagery
  * does not survive contact with dark forest: multiply only darkens, so a yellow
@@ -37,7 +37,7 @@ export function addBaseLayers(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     {
       maxZoom: 17,
-      attribution: "Tiles © Esri — Esri, Maxar, Earthstar Geographics, GIS User Community",
+      attribution: "Tiles © Esri, Esri, Maxar, Earthstar Geographics, GIS User Community",
     }
   );
   const roads = L.tileLayer(
@@ -91,7 +91,7 @@ export function addBaseLayers(
 
 /**
  * Leaflet measures its container once at init. If the container's size settles
- * later — web fonts landing, a phone rotating, a responsive reflow — tiles come
+ * later, web fonts landing, a phone rotating, a responsive reflow, tiles come
  * out blank or half-drawn. This re-measures on a tick and on every resize.
  * Returns a disposer for the effect cleanup.
  */

@@ -9,7 +9,7 @@
   "spot_id": null,
   "coordinates": { "lat": 21.7424, "lng": 73.4926, "precision": "approximate" },
   "price_band": "budget",
-  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=9WIJDCGgcfw3AOsP9JgcBg%253d%253d", "notes": "Forest Department portal lists 3 rooms from ₹1000 and 2 tents from ₹500 a night. Small site — the whole place books out on long weekends." },
+  "booking": { "mode": "official-portal", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=9WIJDCGgcfw3AOsP9JgcBg%253d%253d", "notes": "Forest Department portal lists 3 rooms from ₹1000 and 2 tents from ₹500 a night. Small site, the whole place books out on long weekends." },
   "contact": "vishalkhadi-ecots@gujarat.gov.in · 9724948910",
   "amenities": ["cottages with attached bath", "tents", "forest walks", "state buses from Rajpipla each morning"],
   "nearest_spots": [
@@ -23,7 +23,7 @@
     "last_verified": "2026-08-11",
     "confidence": "medium",
     "sources": [
-      { "title": "Vishal Khadi — site page, tariffs and contact", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=9WIJDCGgcfw3AOsP9JgcBg%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" },
+      { "title": "Vishal Khadi, site page, tariffs and contact", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=9WIJDCGgcfw3AOsP9JgcBg%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" },
       { "title": "Vishal Khadi Eco Campsite", "url": "https://gujarattourism.com/central-zone/narmada/vishal-khadi-eco-campsite.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]

@@ -10,15 +10,15 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Hilltop temple near Subir marking the spot where, by local tradition, Shabari offered wild berries to Ram — a key Ramayana site in Dang.",
-  "description": "Shabari Dham sits on a low forested hill near Subir village, at the place Dang's tradition identifies with one of the Ramayana's most loved episodes: the elderly ascetic Shabari tasting wild ber before offering the sweetest to Ram. The temple itself is modern and modest — the point is the association, the setting, and the view over the surrounding forest from the hilltop.\n\nInside, the shrine depicts Ram, Lakshman and Shabari; around it, the complex has grown gradually since the site rose to prominence in the mid-2000s, when a major Shabari Kumbh gathering was held in the area. Pilgrim traffic is steady rather than heavy — weekends, Ram Navami and the winter months see the most movement, and the site pairs naturally with Pampa Sarovar a few kilometres away, the pond linked to the same narrative cycle.\n\nFor non-pilgrims it still earns a stop on an interior-Dang loop: an easy hilltop, a living piece of the region's oral tradition, and a window into how the Ramayana is mapped onto the Dang landscape by the communities who live in it.",
+  "summary": "Hilltop temple near Subir marking the spot where, by local tradition, Shabari offered wild berries to Ram, a key Ramayana site in Dang.",
+  "description": "Shabari Dham sits on a low forested hill near Subir village, at the place Dang's tradition identifies with one of the Ramayana's most loved episodes: the elderly ascetic Shabari tasting wild ber before offering the sweetest to Ram. The temple itself is modern and modest: the point is the association, the setting, and the view over the surrounding forest from the hilltop.\n\nInside, the shrine depicts Ram, Lakshman and Shabari; around it, the complex has grown gradually since the site rose to prominence in the mid-2000s, when a major Shabari Kumbh gathering was held in the area. Pilgrim traffic is steady rather than heavy: weekends, Ram Navami and the winter months see the most movement, and the site pairs naturally with Pampa Sarovar a few kilometres away, the pond linked to the same narrative cycle.\n\nFor non-pilgrims it still earns a stop on an interior-Dang loop: an easy hilltop, a living piece of the region's oral tradition, and a window into how the Ramayana is mapped onto the Dang landscape by the communities who live in it.",
   "highlights": [
     "Dang's principal Ramayana-linked pilgrimage site",
     "Hilltop shrine of Ram, Lakshman and Shabari",
     "Pairs with Pampa Sarovar nearby",
     "Steady, unhurried pilgrim atmosphere"
   ],
-  "history_legend": "Local and regional tradition holds this hill to be where Shabari, the Bhil ascetic of the Ramayana, waited for Ram and offered him ber fruit she had tasted for sweetness. The identification gained wide currency in the 2000s, and a large Shabari Kumbh gathering in 2006 fixed the site on the pilgrimage map. It is devotional geography — cherished locally, not archaeology.",
+  "history_legend": "Local and regional tradition holds this hill to be where Shabari, the Bhil ascetic of the Ramayana, waited for Ram and offered him ber fruit she had tasted for sweetness. The identification gained wide currency in the 2000s, and a large Shabari Kumbh gathering in 2006 fixed the site on the pilgrimage map. It is devotional geography, cherished locally, not archaeology.",
   "attributes": { "deity": "Ram with Shabari", "main_festival": "Ram Navami; annual Shabridham Mela each January", "built_year": 2004 },
   "location": {
     "taluka": "Subir",
@@ -72,7 +72,7 @@
   "safety": {
     "warnings": [
       "Steps get slippery in monsoon",
-      "Footwear is removed at the shrine — carry socks for hot paving in summer"
+      "Footwear is removed at the shrine: carry socks for hot paving in summer"
     ],
     "emergency": { "nearest_hospital": "PHC Subir; Civil Hospital Ahwa (~25 km)", "police": "Subir PS", "notes": null }
   },
@@ -106,7 +106,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Shabari Dham, Dang — Ramayana Pilgrimage Site",
+    "meta_title": "Shabari Dham, Dang, Ramayana Pilgrimage Site",
     "meta_description": "Visiting Shabari Dham near Subir: the Shabari–Ram tradition, darshan timings, access and pairing with Pampa Sarovar."
   },
   "provenance": {
@@ -114,7 +114,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Shabridham Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Shabridham Mela, Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
       { "title": "Shabari Dham Temple, Subir, Ahwa", "url": "https://darpan.blog/travel/shabari-dham-subir-ahwa-the-story-of-lord-rama-ber-shabari/", "publisher": "darpan.blog", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]

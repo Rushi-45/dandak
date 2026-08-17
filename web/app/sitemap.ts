@@ -5,7 +5,7 @@ import { SITE } from "@/lib/site";
 
 /**
  * Every page the site wants found. The dataset already tracks when a record was
- * last verified, so lastModified is a real date rather than build time — which
+ * last verified, so lastModified is a real date rather than build time, which
  * means a crawler re-reads what actually changed instead of the whole corpus.
  */
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -10,8 +10,8 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "A quiet reservoir in the hills south-east of Rajpipla — sunset water views and picnic spots, with public access rules worth checking first.",
-  "description": "The Karjan dam impounds a Narmada tributary in the low hills beyond Rajpipla, and its reservoir gives the area a water-and-hills panorama that locals use for evening drives and picnics — the fields-and-forest drive out being part of the appeal. Post-monsoon, with the reservoir full and the hills green, the vantage points along the approach are genuinely pretty.\n\nAs with most working dams, how close the public gets varies with security posture: viewpoints and the picnic-friendly banks are the realistic target, not the dam crest. Facilities are minimal to none — this is a carry-your-own-chai outing for travellers who have done Rajpipla's headline stops and want an unhurried hour by water.",
+  "summary": "A quiet reservoir in the hills south-east of Rajpipla, sunset water views and picnic spots, with public access rules worth checking first.",
+  "description": "The Karjan dam impounds a Narmada tributary in the low hills beyond Rajpipla, and its reservoir gives the area a water-and-hills panorama that locals use for evening drives and picnics, the fields-and-forest drive out being part of the appeal. Post-monsoon, with the reservoir full and the hills green, the vantage points along the approach are genuinely pretty.\n\nAs with most working dams, how close the public gets varies with security posture: viewpoints and the picnic-friendly banks are the realistic target, not the dam crest. Facilities are minimal to none: this is a carry-your-own-chai outing for travellers who have done Rajpipla's headline stops and want an unhurried hour by water.",
   "highlights": [
     "Reservoir-and-hills views post-monsoon",
     "Quiet picnic banks locals favour",
@@ -45,7 +45,7 @@
     "duration_min": 90,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "Dam-adjacent access rules vary — respect barriers and signage; the banks and viewpoints are the visit."
+    "notes": "Dam-adjacent access rules vary, respect barriers and signage; the banks and viewpoints are the visit."
   },
   "seasonality": {
     "best_months": [9, 10, 11, 12, 1],
@@ -60,7 +60,7 @@
     "photography_notes": "Sunset over the water from the eastern banks; winter mornings bring waterbirds."
   },
   "amenities": {
-    "food": "None — carry everything from Rajpipla",
+    "food": "None. Carry everything from Rajpipla",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
@@ -70,7 +70,7 @@
   },
   "safety": {
     "warnings": [
-      "No swimming — reservoir depths and slopes are treacherous",
+      "No swimming: reservoir depths and slopes are treacherous",
       "Respect all dam-security barriers; photography restrictions may apply near the structure"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~18 km)", "police": "Rajpipla rural PS", "notes": null }
@@ -90,7 +90,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Karjan Reservoir, Rajpipla — Sunset Drive",
+    "meta_title": "Karjan Reservoir, Rajpipla, Sunset Drive",
     "meta_description": "The Karjan dam reservoir near Rajpipla: viewpoints, picnic banks, access caveats and best months."
   },
   "provenance": {

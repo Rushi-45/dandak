@@ -1,12 +1,12 @@
 /**
- * Builds the planner's slim index from already-parsed dataset records.
+ * Builds the planner's slim index from already-parsed dataset records. 
  *
  * Deliberately takes parsed JSON rather than reading disk, so the same mapping
- * serves the server (lib/data.ts) and the test runner without duplication —
- * and so this module stays free of node:fs and safe to reason about.
+ * serves the server (lib/data.ts) and the test runner without duplication,
+ * and so this module stays free of node:fs and safe to reason about. 
  *
  * Summary and description are omitted on purpose: they dominate the existing
- * /spots client payload, and the planner never shows them.
+ * /spots client payload, and the planner never shows them. 
  */
 import type { PlannerData, PlannerSpot, PlannerStay, PlannerHub, Precision, Confidence } from "./planner";
 
@@ -90,7 +90,7 @@ export function toPlannerStay(s: RawStayForPlanner): PlannerStay {
   };
 }
 
-/** Hub display names — the registry only holds kebab keys and coordinates. */
+/** Hub display names: the registry only holds kebab keys and coordinates. */
 export function hubLabel(key: string): string {
   const special: Record<string, string> = { "ekta-nagar": "Ekta Nagar (Kevadia)" };
   return special[key] ?? key.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -106,7 +106,7 @@ export function buildPlannerIndex(
     .filter((s) => s.location?.coordinates)
     .map((s) => toPlannerSpot(s, hasPhoto(s.id)));
 
-  // hubs are declared per district and overlap (surat, vadodara…) — dedupe by key
+  // hubs are declared per district and overlap (surat, vadodara…), dedupe by key
   const hubMap = new Map<string, PlannerHub>();
   for (const table of Object.values(registry.hubs ?? {})) {
     for (const [key, coords] of Object.entries(table)) {

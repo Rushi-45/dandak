@@ -17,14 +17,14 @@
     { "id": "dang-kunda-falls", "distance_km": 4 },
     { "id": "dang-maharaychond-forest", "distance_km": 5 }
   ],
-  "notes": "The Forest Department's own bed nearest to Ahwa — 7 km out on the Saputara road and 3 km off it, ringed by forest above the Khapri. Cheapest roofed night in interior Dang, and the closest thing to a base for the Ahwa-side waterfalls.",
+  "notes": "The Forest Department's own bed nearest to Ahwa, 7 km out on the Saputara road and 3 km off it, ringed by forest above the Khapri. Cheapest roofed night in interior Dang, and the closest thing to a base for the Ahwa-side waterfalls.",
   "provenance": {
     "created": "2026-08-11",
     "last_verified": "2026-08-11",
     "confidence": "medium",
     "sources": [
-      { "title": "Devinamal Campsite — site page, tariffs and contact", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUjarSmw2usetBTF80QCLw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" },
-      { "title": "Devinamal Campsite — Eco Tourism Center in Dang, Gujarat", "url": "https://darpan.blog/travel/devinamal-campsite-eco-tourism-center-in-dang-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
+      { "title": "Devinamal Campsite, site page, tariffs and contact", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUjarSmw2usetBTF80QCLw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" },
+      { "title": "Devinamal Campsite, Eco Tourism Center in Dang, Gujarat", "url": "https://darpan.blog/travel/devinamal-campsite-eco-tourism-center-in-dang-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

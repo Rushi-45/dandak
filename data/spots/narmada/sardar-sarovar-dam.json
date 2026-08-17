@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "Designated viewpoints over one of the world's largest concrete gravity dams — at full monsoon release, the most dramatic sight at Ekta Nagar.",
-  "description": "The Sardar Sarovar dam is the reason Ekta Nagar exists, and the public viewpoints above it deliver one of the most memorable engineering panoramas in India: the long concrete wall across the Narmada, the reservoir stretching upstream toward the horizon, and — when gates are open in a good monsoon — a controlled cascade whose spray and noise carry to the terraces.\n\nAccess is via designated view points on the heights flanking the dam, reached by road within the managed SoU zone; arrangements and which terraces are open vary with security posture and season, so treat the details as changeable. The classic frame pairs the dam with the Statue of Unity downstream — from the right terrace you get both in one sweep.\n\nTiming matters more here than anywhere else on the campus: in August–September after strong rains the dam is a spectacle; in dry months it is a vast, silent wall and a fine view, but a different experience. Ask locally whether gates are releasing before you prioritise it.",
+  "summary": "Designated viewpoints over one of the world's largest concrete gravity dams, at full monsoon release, the most dramatic sight at Ekta Nagar.",
+  "description": "The Sardar Sarovar dam is the reason Ekta Nagar exists, and the public viewpoints above it deliver one of the most memorable engineering panoramas in India: the long concrete wall across the Narmada, the reservoir stretching upstream toward the horizon, and, when gates are open in a good monsoon, a controlled cascade whose spray and noise carry to the terraces.\n\nAccess is via designated view points on the heights flanking the dam, reached by road within the managed SoU zone; arrangements and which terraces are open vary with security posture and season, so treat the details as changeable. The classic frame pairs the dam with the Statue of Unity downstream, from the right terrace you get both in one sweep.\n\nTiming matters more here than anywhere else on the campus: in August–September after strong rains the dam is a spectacle; in dry months it is a vast, silent wall and a fine view, but a different experience. Ask locally whether gates are releasing before you prioritise it.",
   "highlights": [
     "Panorama over one of the world's largest gravity dams",
     "Monsoon gate releases are the campus's most dramatic sight",
@@ -41,11 +41,11 @@
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "08:00", "close": "18:00", "note": "Follows the SoU campus pattern; viewpoint access rules vary" }],
     "fees": [],
-    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Public terraces work via SoU-area ticketing; closer dam visits require permission via the SSNNL official site (sardarsarovardam.org) — arrangements change" },
+    "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Public terraces work via SoU-area ticketing; closer dam visits require permission via the SSNNL official site (sardarsarovardam.org), arrangements change" },
     "duration_min": 60,
     "best_time_of_day": "afternoon",
     "weekly_closure": "mon",
-    "notes": "Gate releases depend on reservoir levels — August–September after heavy rain is the best bet."
+    "notes": "Gate releases depend on reservoir levels. August–September after heavy rain is the best bet."
   },
   "seasonality": {
     "best_months": [8, 9, 10],
@@ -70,19 +70,19 @@
   },
   "safety": {
     "warnings": [
-      "Respect barriers absolutely — this is monitored critical infrastructure",
+      "Respect barriers absolutely: this is monitored critical infrastructure",
       "Drones are prohibited across the dam zone"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~28 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
   "tips": [
-    "Ask at your hotel or the ticket office whether gates are releasing — it changes the visit's priority entirely",
+    "Ask at your hotel or the ticket office whether gates are releasing, it changes the visit's priority entirely",
     "Combine with the Statue of Unity viewing gallery for the top-down view of the same scene"
   ],
   "faqs": [
     {
       "q": "Can you walk on the dam itself?",
-      "a": "No — public access is to designated viewpoints on the flanking heights, not the dam crest. Security rules on which terraces open can change without notice."
+      "a": "No. Public access is to designated viewpoints on the flanking heights, not the dam crest. Security rules on which terraces open can change without notice."
     }
   ],
   "nearby": [
@@ -103,7 +103,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Sardar Sarovar Dam Viewpoints — Ekta Nagar Guide",
+    "meta_title": "Sardar Sarovar Dam Viewpoints, Ekta Nagar Guide",
     "meta_description": "When the Sardar Sarovar dam is worth prioritising, how viewpoint access works at Ekta Nagar, and the best months for gate releases."
   },
   "provenance": {
@@ -111,8 +111,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Dam & Reservoir — Sardar Sarovar Narmada Nigam Limited", "url": "https://sardarsarovardam.org/dam-reservoir.aspx", "publisher": "SSNNL (official)", "accessed": "2026-08-08" },
-      { "title": "Sardar Sarovar Dam — Wikipedia", "url": "https://en.wikipedia.org/wiki/Sardar_Sarovar_Dam", "publisher": "Wikipedia", "accessed": "2026-08-08" }
+      { "title": "Dam & Reservoir, Sardar Sarovar Narmada Nigam Limited", "url": "https://sardarsarovardam.org/dam-reservoir.aspx", "publisher": "SSNNL (official)", "accessed": "2026-08-08" },
+      { "title": "Sardar Sarovar Dam, Wikipedia", "url": "https://en.wikipedia.org/wiki/Sardar_Sarovar_Dam", "publisher": "Wikipedia", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }

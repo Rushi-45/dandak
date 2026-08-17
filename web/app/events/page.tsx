@@ -54,7 +54,7 @@ export default function EventsPage() {
       </h1>
       <p className="mt-3 max-w-xl text-sm text-stone-500">
         Fairs measured in lakhs of pilgrims, a monsoon festival on a hill-station lake, and the
-        peak-season windows worth planning around — or around which to plan your escape.
+        peak-season windows worth planning around, or around which to plan your escape.
       </p>
 
       <div className="mt-12 space-y-5">

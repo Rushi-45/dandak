@@ -10,8 +10,8 @@
   "cluster": "ekta-nagar-area",
   "status": "active",
   "district": "narmada",
-  "summary": "White-water rafting on a dam-fed stretch of the Narmada near Ekta Nagar — a guided run through forested gorge with beginner-friendly rapids.",
-  "description": "The rafting operation near Khalwani runs on a short, lively stretch of the Narmada downstream of the dam complex, where regulated releases keep water moving through a green, rocky corridor. The run covers a few kilometres with a string of small-to-medium rapids — enough splash to feel real, tame enough for first-timers — book-ended by calm sections where the gorge scenery does the work.\n\nSessions are fully guided: safety briefing, helmets, life jackets and a guide in every raft, with batches running through the day from the base camp. Because flow depends on dam releases rather than raw monsoon, the season here is unusually long by Indian rafting standards, though operators pause when releases are too strong or too weak. Age and fitness rules apply (children below the operator's cutoff and non-swimmers with medical conditions sit out).\n\nAs an add-on to a Statue of Unity trip it is the obvious half-day of actual adventure — book a morning slot, get wet, and be back for an afternoon attraction.",
+  "summary": "White-water rafting on a dam-fed stretch of the Narmada near Ekta Nagar. A guided run through forested gorge with beginner-friendly rapids.",
+  "description": "The rafting operation near Khalwani runs on a short, lively stretch of the Narmada downstream of the dam complex, where regulated releases keep water moving through a green, rocky corridor. The run covers a few kilometres with a string of small-to-medium rapids, enough splash to feel real, tame enough for first-timers, book-ended by calm sections where the gorge scenery does the work.\n\nSessions are fully guided: safety briefing, helmets, life jackets and a guide in every raft, with batches running through the day from the base camp. Because flow depends on dam releases rather than raw monsoon, the season here is unusually long by Indian rafting standards, though operators pause when releases are too strong or too weak. Age and fitness rules apply (children below the operator's cutoff and non-swimmers with medical conditions sit out).\n\nAs an add-on to a Statue of Unity trip it is the obvious half-day of actual adventure: book a morning slot, get wet, and be back for an afternoon attraction.",
   "highlights": [
     "Beginner-friendly rapids in a forested Narmada gorge",
     "Fully guided runs with safety kit provided",
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "15:30", "note": "Batch slots through the day; subject to release levels and light" }],
-    "fees": [{ "type": "rafting", "amount_inr": 1000, "note": "Per adult including gear and guide; shorter eco-activities at Khalwani cost less — portals quote ₹300–1000 by package" }],
+    "fees": [{ "type": "rafting", "amount_inr": 1000, "note": "Per adult including gear and guide; shorter eco-activities at Khalwani cost less, portals quote ₹300–1000 by package" }],
     "booking": { "required": true, "url": null, "notes": "Book a slot ahead on weekends; walk-ins possible midweek" },
     "duration_min": 150,
     "best_time_of_day": "morning",
@@ -57,34 +57,34 @@
     "activities": ["rafting", "photography"],
     "difficulty": "moderate",
     "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
-    "photography_notes": "Operators usually sell photo/video packages shot from the bank — your own camera stays in the locker unless it's an action cam with a mount."
+    "photography_notes": "Operators usually sell photo/video packages shot from the bank. Your own camera stays in the locker unless it's an action cam with a mount."
   },
   "amenities": {
     "food": "Basic refreshments at the base camp; proper meals in Ekta Nagar",
     "toilets": "basic",
     "drinking_water": true,
     "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
-    "guides": "Included — every raft runs with a trained guide",
+    "guides": "Included. Every raft runs with a trained guide",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Follow the guide's commands exactly — the rapids are friendly only when the raft is",
-      "Age band is 14–55 with declared fitness — say so at booking, not at the put-in",
+      "Follow the guide's commands exactly: the rapids are friendly only when the raft is",
+      "Age band is 14–55 with declared fitness, say so at booking, not at the put-in",
       "Runs suspend during extreme dam releases; respect a cancelled slot"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~22 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": "Operators carry rescue kayakers/throw-bags per license terms" }
   },
   "tips": [
     "Morning slots have the best light in the gorge and leave the afternoon for SoU attractions",
-    "Wear quick-dry clothes and strap-on sandals — flip-flops don't survive rapids",
+    "Wear quick-dry clothes and strap-on sandals, flip-flops don't survive rapids",
     "Ask the operator which rapid grade the day's release is producing before bringing nervous first-timers"
   ],
   "faqs": [
     {
       "q": "Is the rafting safe for complete beginners?",
-      "a": "Yes at normal release levels — rapids are modest, briefings thorough, and guides handle the raft. The operator's age and health rules are the real gate; respect them."
+      "a": "Yes at normal release levels. Rapids are modest, briefings thorough, and guides handle the raft. The operator's age and health rules are the real gate; respect them."
     }
   ],
   "nearby": [
@@ -95,7 +95,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "River Rafting at Khalwani, Ekta Nagar — Guide",
+    "meta_title": "River Rafting at Khalwani, Ekta Nagar, Guide",
     "meta_description": "Booking, rates, season and safety for white-water rafting on the Narmada near the Statue of Unity at Khalwani."
   },
   "provenance": {
@@ -104,7 +104,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "Khalwani River Rafting & Eco-Tourism Kevadia Guide 2026", "url": "https://chalbanjare.com/place/khalwani-river-rafting-and-eco-tourism", "publisher": "chalbanjare.com", "accessed": "2026-08-08" },
-      { "title": "Khalwani River Rafting Booking — Statue of Unity", "url": "https://www.statueofunitybooking.com/khalwani-river-rafting/", "publisher": "statueofunitybooking.com", "accessed": "2026-08-08" }
+      { "title": "Khalwani River Rafting Booking, Statue of Unity", "url": "https://www.statueofunitybooking.com/khalwani-river-rafting/", "publisher": "statueofunitybooking.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "attributes.operator", "location.coordinates"]
   }

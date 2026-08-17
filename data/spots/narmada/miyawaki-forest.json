@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A demonstration of the Japanese dense-planting method — a fast-grown native mini-forest with walkways, more idea than attraction.",
-  "description": "The Miyawaki Forest demonstrates the eponymous Japanese technique: native species planted extremely densely so they race each other upward, producing in a few years a thicket that behaves like decades-old forest. The campus plot pairs the young dense stands with walkways and boards explaining the method's logic — soil prep, species mixing, accelerated succession.\n\nIt is a fifteen-to-thirty-minute educational stroll, honest about being a demonstration rather than a destination. Ecology-curious visitors and students get the most from it; as the stand matures it should earn its place on shade alone.",
+  "summary": "A demonstration of the Japanese dense-planting method, a fast-grown native mini-forest with walkways, more idea than attraction.",
+  "description": "The Miyawaki Forest demonstrates the eponymous Japanese technique: native species planted extremely densely so they race each other upward, producing in a few years a thicket that behaves like decades-old forest. The campus plot pairs the young dense stands with walkways and boards explaining the method's logic: soil prep, species mixing, accelerated succession.\n\nIt is a fifteen-to-thirty-minute educational stroll, honest about being a demonstration rather than a destination. Ecology-curious visitors and students get the most from it; as the stand matures it should earn its place on shade alone.",
   "highlights": [
     "Working demo of the Miyawaki dense-planting method",
     "Native-species mini-forest growing at speed",
@@ -57,7 +57,7 @@
     "activities": ["nature-walk", "sightseeing"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
-    "photography_notes": "Density-contrast shots — the packed stand against open lawn — tell the story."
+    "photography_notes": "Density-contrast shots, the packed stand against open lawn, tell the story."
   },
   "amenities": {
     "food": "Kiosks on the circuit",
@@ -73,7 +73,7 @@
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
   "tips": [
-    "Tack it onto a neighbouring attraction — it doesn't need its own slot"
+    "Tack it onto a neighbouring attraction: it doesn't need its own slot"
   ],
   "faqs": [],
   "nearby": [
@@ -83,7 +83,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Miyawaki Forest, Ekta Nagar — Demo Plot",
+    "meta_title": "Miyawaki Forest, Ekta Nagar, Demo Plot",
     "meta_description": "The Miyawaki-method mini-forest at the SoU campus: what the technique is and what to expect."
   },
   "provenance": {

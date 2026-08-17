@@ -10,12 +10,12 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "The forest-department deck above the Gira river's full hairpin bend on the Girmal approach — the interior drive's classic tea-and-view halt.",
-  "description": "A few kilometres before Girmal falls, the Gira river swings through a complete U-turn in its forested valley, and the forest department has built the viewpoint exactly above the bend. The geometry is the show: the river arrives, wraps around a wooded spur and leaves the way it came, with ridgelines stacking behind it — in monsoon the whole loop runs brown-white under moving cloud, and Gujarat Tourism's own material rates the spot a highlight of the Dangs.\n\nIt has grown into the interior loop's natural halt. An Eco-Development Committee restaurant serves food through the peak monsoon season (tea and coffee only in the off months), and the small Girli Lodges next to it offer four basic rooms with attached bathrooms at around ₹500 a night — worth knowing if you want to sleep beside the bend rather than drive back to Ahwa.\n\nCome en route Girmal rather than as a destination in itself: ten minutes for the view and chai, longer if the cloud theatre is running. The deck is railed and easy for all ages.",
+  "summary": "The forest-department deck above the Gira river's full hairpin bend on the Girmal approach, the interior drive's classic tea-and-view halt.",
+  "description": "A few kilometres before Girmal falls, the Gira river swings through a complete U-turn in its forested valley, and the forest department has built the viewpoint exactly above the bend. The geometry is the show: the river arrives, wraps around a wooded spur and leaves the way it came, with ridgelines stacking behind it, in monsoon the whole loop runs brown-white under moving cloud, and Gujarat Tourism's own material rates the spot a highlight of the Dangs.\n\nIt has grown into the interior loop's natural halt. An Eco-Development Committee restaurant serves food through the peak monsoon season (tea and coffee only in the off months), and the small Girli Lodges next to it offer four basic rooms with attached bathrooms at around ₹500 a night: worth knowing if you want to sleep beside the bend rather than drive back to Ahwa.\n\nCome en route Girmal rather than as a destination in itself: ten minutes for the view and chai, longer if the cloud theatre is running. The deck is railed and easy for all ages.",
   "highlights": [
     "Full U-turn of the Gira river seen from directly above",
     "Eco-Development Committee restaurant in season",
-    "Girli Lodges — four basic rooms by the viewpoint",
+    "Girli Lodges, four basic rooms by the viewpoint",
     "The natural halt on the Girmal falls approach"
   ],
   "history_legend": null,
@@ -31,11 +31,11 @@
   },
   "access": {
     "modes": {
-      "road": "On the Girmal approach: Ahwa to Subir, on to Nishana check-post, then the Girmal village road — the viewpoint comes before the falls",
+      "road": "On the Girmal approach: Ahwa to Subir, on to Nishana check-post, then the Girmal village road. The viewpoint comes before the falls",
       "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
       "air": "Surat (~160 km)"
     },
-    "last_mile": "Roadside viewpoint — steps from parking to the railed deck",
+    "last_mile": "Roadside viewpoint, steps from parking to the railed deck",
     "road_condition": "Single-lane forest road with rough patches after the check-post",
     "parking": { "available": true, "fee": 0, "notes": "Roadside pull-off at the deck" }
   },
@@ -58,10 +58,10 @@
     "activities": ["sightseeing", "photography"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Wide frames take the whole hairpin; monsoon mist opens and closes the view in minutes — wait it out with chai."
+    "photography_notes": "Wide frames take the whole hairpin; monsoon mist opens and closes the view in minutes, wait it out with chai."
   },
   "amenities": {
-    "food": "Eco-Development Committee restaurant at the deck — meals in peak monsoon, tea/coffee otherwise",
+    "food": "Eco-Development Committee restaurant at the deck, meals in peak monsoon, tea/coffee otherwise",
     "toilets": "basic",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "ok" },
@@ -71,13 +71,13 @@
   },
   "safety": {
     "warnings": [
-      "Stay behind the railing — the drop to the river bend is sheer",
+      "Stay behind the railing: the drop to the river bend is sheer",
       "The approach road is single-lane; park fully off the carriageway"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~45 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Do it as the pause on the Girmal run — falls first if light matters to you, chai here after",
+    "Do it as the pause on the Girmal run: falls first if light matters to you, chai here after",
     "Girli Lodges' four rooms make an offbeat overnight if Mahal campsite is full"
   ],
   "faqs": [],
@@ -89,7 +89,7 @@
   "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "U Turn Point, Dang — The Gira Hairpin Viewpoint",
+    "meta_title": "U Turn Point, Dang, The Gira Hairpin Viewpoint",
     "meta_description": "The U Turn eco tourism point near Girmal falls: the Gira river's full hairpin from above, season notes, restaurant and Girli Lodges."
   },
   "provenance": {
@@ -97,9 +97,9 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Gujarat Tourism — 'The point where river Gira takes a complete U-turn enroute Girmal Waterfall'", "url": "https://x.com/GujaratTourism/status/1552495681775882242", "publisher": "Gujarat Tourism (official, X)", "accessed": "2026-08-09" },
-      { "title": "Girmal Waterfalls, Dangs & U Point — route, restaurant and Girli Lodges details", "url": "https://darpan.blog/travel/girmal-waterfalls-dangs-u-point-highest-waterfall-in-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-09" },
-      { "title": "U Turn Eco Tourism Point — listing", "url": "https://wanderlog.com/place/details/6873638/u-turn-eco-tourism-point", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
+      { "title": "Gujarat Tourism. 'The point where river Gira takes a complete U-turn enroute Girmal Waterfall'", "url": "https://x.com/GujaratTourism/status/1552495681775882242", "publisher": "Gujarat Tourism (official, X)", "accessed": "2026-08-09" },
+      { "title": "Girmal Waterfalls, Dangs & U Point, route, restaurant and Girli Lodges details", "url": "https://darpan.blog/travel/girmal-waterfalls-dangs-u-point-highest-waterfall-in-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-09" },
+      { "title": "U Turn Eco Tourism Point, listing", "url": "https://wanderlog.com/place/details/6873638/u-turn-eco-tourism-point", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "visit.timings", "amenities.food"]
   }

@@ -9,9 +9,9 @@
 export const SITE = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dandak.vercel.app",
   name: "Dandak",
-  title: "Dandak — Dang & Narmada Travel Guide",
+  title: "Dandak, Dang & Narmada Travel Guide",
   description:
-    "Waterfalls, forests, the Statue of Unity and living tribal heritage — a verified, source-tracked travel guide to Gujarat's Dang and Narmada districts.",
+    "Waterfalls, forests, the Statue of Unity and living tribal heritage, a verified, source-tracked travel guide to Gujarat's Dang and Narmada districts.",
   /**
    * A purpose-built 1200×630 crop, which is the size link previews actually
    * want. This used to point at a full spot photograph: crawlers and chat apps

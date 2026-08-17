@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Saputara's little apiculture stop — hive demonstrations, bee lore and forest honey to take home; check it's operating before you plan around it.",
-  "description": "The Honey Bee Centre is one of Saputara's original small attractions: a demonstration apiary where visitors see working hive frames behind glass, hear the basics of bee society and apiculture, and buy forest honey — Dang's multifloral forest honey being the genuine product worth carrying home.\n\nIt is a twenty-minute stop that lands best with children, folded between the lake and museum. Operations have run at varying energy over the years depending on the managing agency and season, so treat it as an opportunistic halt rather than an anchor — and if it is shut, honey from reputable local shops fills the same bag.",
+  "summary": "Saputara's little apiculture stop, hive demonstrations, bee lore and forest honey to take home; check it's operating before you plan around it.",
+  "description": "The Honey Bee Centre is one of Saputara's original small attractions: a demonstration apiary where visitors see working hive frames behind glass, hear the basics of bee society and apiculture, and buy forest honey, Dang's multifloral forest honey being the genuine product worth carrying home.\n\nIt is a twenty-minute stop that lands best with children, folded between the lake and museum. Operations have run at varying energy over the years depending on the managing agency and season, so treat it as an opportunistic halt rather than an anchor, and if it is shut, honey from reputable local shops fills the same bag.",
   "highlights": [
     "Glass-front hive demonstrations",
     "Dang forest honey for sale",
@@ -39,13 +39,13 @@
     "parking": { "available": true, "fee": 0, "notes": "Street parking" }
   },
   "visit": {
-    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative and variable — confirm locally" }],
+    "timings": [{ "days": "all", "open": "09:00", "close": "18:00", "note": "Indicative and variable, confirm locally" }],
     "fees": [{ "type": "entry", "amount_inr": 10, "note": "Token entry where charged" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 30,
     "best_time_of_day": "afternoon",
     "weekly_closure": null,
-    "notes": "Operating status has varied over the years — verify before planning around it."
+    "notes": "Operating status has varied over the years, verify before planning around it."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -86,7 +86,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Honey Bee Centre, Saputara — Quick Stop",
+    "meta_title": "Honey Bee Centre, Saputara, Quick Stop",
     "meta_description": "Saputara's bee demonstration centre: what's there, forest honey buying tips, and why to confirm it's open."
   },
   "provenance": {

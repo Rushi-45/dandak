@@ -2,7 +2,7 @@
 
 import { m } from "motion/react";
 
-/** Aceternity-style text generate — words de-blur into place one by one. */
+/** Aceternity-style text generate, words de-blur into place one by one. */
 export function TextGenerate({
   text,
   className = "",

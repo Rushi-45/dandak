@@ -16,15 +16,15 @@
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 0 },
     { "id": "dang-girmal-falls", "distance_km": 25 }
   ],
-  "notes": "The definitive Dang forest night — Purna river at the doorstep, leopard country beyond the fence, generator-scheduled everything.",
+  "notes": "The definitive Dang forest night, Purna river at the doorstep, leopard country beyond the fence, generator-scheduled everything.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
       { "title": "Mahal Eco Tourism Campsite", "url": "https://mahalcampsite.com/", "publisher": "mahalcampsite.com", "accessed": "2026-08-08" },
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
-      { "title": "Mahal Campsite — site page, tariffs and contact (Eco Tourism Development Society Sawardakasad, Ta. Subir)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUVeEvaL64CSF3UaGpX6WQ%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Mahal Campsite, site page, tariffs and contact (Eco Tourism Development Society Sawardakasad, Ta. Subir)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=bUVeEvaL64CSF3UaGpX6WQ%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

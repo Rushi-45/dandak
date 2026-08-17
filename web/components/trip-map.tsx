@@ -6,7 +6,7 @@ import { addBaseLayers, keepMapSized } from "@/components/map-base";
 
 export interface TripMapStop {
   id: string;
-  /** absent for trip endpoints — a hub town has no record page to open */
+  /** absent for trip endpoints: a hub town has no record page to open */
   district?: string;
   slug?: string;
   name: string;
@@ -32,7 +32,7 @@ export type DayRoutes = Record<number, [number, number][]>;
 interface TripMapProps {
   stops: TripMapStop[];
   durationDays: number;
-  /** Absent or partial is fine — any day without geometry falls back to a straight line. */
+  /** Absent or partial is fine: any day without geometry falls back to a straight line. */
   routes?: DayRoutes;
 }
 
@@ -71,7 +71,7 @@ export function TripMap({ stops, durationDays, routes }: TripMapProps) {
 
   // Stops that sit within ~400 m of one another (U-Turn Point and the Mahal
   // campsite are 350 m apart) would hide each other's numbers, so nudge them
-  // apart by ~350 m — an order of magnitude less than these records' own
+  // apart by ~350 m, an order of magnitude less than these records' own
   // coordinate uncertainty, and the footer says so when it happens.
   const { at, nudged } = useMemo(() => {
     const placed: [number, number][] = [];

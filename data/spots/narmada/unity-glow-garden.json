@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "An after-dark park of illuminated sculptures, light tunnels and glowing installations — the SoU campus's designated evening hour.",
-  "description": "The Unity Glow Garden switches on when the rest of the campus winds down: walkways through large illuminated installations — animal figures, flowers, arches, light tunnels, themed tableaux — built from LED frameworks and glowing panels. It is unabashed spectacle, calibrated for families and cameras, and it solves the evening problem for visitors staying overnight at Ekta Nagar.\n\nEntries run in evening sessions; weekends and holiday weeks queue hard after dinner. Photographs outperform reality if you steady your phone — take the slow walk, let the kids run the tunnels, and cap the night with it after the laser show. Displays refresh periodically, so repeat visitors usually find new set pieces.",
+  "summary": "An after-dark park of illuminated sculptures, light tunnels and glowing installations, the SoU campus's designated evening hour.",
+  "description": "The Unity Glow Garden switches on when the rest of the campus winds down: walkways through large illuminated installations, animal figures, flowers, arches, light tunnels, themed tableaux, built from LED frameworks and glowing panels. It is unabashed spectacle, calibrated for families and cameras, and it solves the evening problem for visitors staying overnight at Ekta Nagar.\n\nEntries run in evening sessions; weekends and holiday weeks queue hard after dinner. Photographs outperform reality if you steady your phone: take the slow walk, let the kids run the tunnels, and cap the night with it after the laser show. Displays refresh periodically, so repeat visitors usually find new set pieces.",
   "highlights": [
     "Light tunnels and large glowing installations",
     "The campus's main after-dark attraction",
@@ -57,7 +57,7 @@
     "activities": ["sightseeing", "photography", "show"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": true },
-    "photography_notes": "Steady your phone against railings for the tunnels; keep flash off — it kills the glow."
+    "photography_notes": "Steady your phone against railings for the tunnels; keep flash off, it kills the glow."
   },
   "amenities": {
     "food": "Snack kiosks inside; dinner options back in Ekta Nagar",
@@ -86,8 +86,8 @@
   "itineraries": ["sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Unity Glow Garden, Ekta Nagar — Evening Guide",
-    "meta_description": "Session timings, tickets and photo tips for the Unity Glow Garden — the Statue of Unity campus after dark."
+    "meta_title": "Unity Glow Garden, Ekta Nagar, Evening Guide",
+    "meta_description": "Session timings, tickets and photo tips for the Unity Glow Garden, the Statue of Unity campus after dark."
   },
   "provenance": {
     "created": "2026-08-08",
@@ -95,7 +95,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
-      { "title": "Unity Glow Garden — Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/glow-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
+      { "title": "Unity Glow Garden, Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/glow-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }

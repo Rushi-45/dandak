@@ -10,12 +10,12 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "The Waghai belt's secret — a forceful monsoon fall past Dungarda village, where a local guide is essential and the forest department posts warnings.",
-  "description": "Bhigu Dhodh, the waterfall at Koshmal village, is what Gira Falls was before the parking lot: a serious monsoon cascade twenty kilometres from Waghai that almost nobody outside the surrounding villages visits. The route runs from Waghai toward Bhenskatri on SH-171, right after the river bridge at Dungarda, then uphill twenty minutes to a village with no tourist setup whatsoever.\n\nFrom the road it is about a thirty-minute walk to the falls — and despite a visible trail, first-timers reliably lose it, which is why a local guide is not a nicety but a requirement. The forest department has posted warning signage after past incidents; the rocks and the flow deserve the caution. One practical trap: mainstream maps place the village wrong — search for 'Kusmal' and confirm with people, not pins.\n\nJuly to September is the window. Expect a proper drenching-green Dang experience, carried entirely on your own supplies and judgement.",
+  "summary": "The Waghai belt's secret. A forceful monsoon fall past Dungarda village, where a local guide is essential and the forest department posts warnings.",
+  "description": "Bhigu Dhodh, the waterfall at Koshmal village, is what Gira Falls was before the parking lot: a serious monsoon cascade twenty kilometres from Waghai that almost nobody outside the surrounding villages visits. The route runs from Waghai toward Bhenskatri on SH-171, right after the river bridge at Dungarda, then uphill twenty minutes to a village with no tourist setup whatsoever.\n\nFrom the road it is about a thirty-minute walk to the falls, and despite a visible trail, first-timers reliably lose it, which is why a local guide is not a nicety but a requirement. The forest department has posted warning signage after past incidents; the rocks and the flow deserve the caution. One practical trap: mainstream maps place the village wrong, search for 'Kusmal' and confirm with people, not pins.\n\nJuly to September is the window. Expect a proper drenching-green Dang experience, carried entirely on your own supplies and judgement.",
   "highlights": [
     "Forceful monsoon fall with near-zero footfall",
     "Twenty minutes uphill past Dungarda, then a 30-min walk",
-    "Local guide essential — the trail misleads first-timers",
+    "Local guide essential, the trail misleads first-timers",
     "Forest-department warnings mark the real risk"
   ],
   "history_legend": null,
@@ -46,7 +46,7 @@
     "duration_min": 150,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Unmanaged site; forest-department warning boards apply — daylight only."
+    "notes": "Unmanaged site; forest-department warning boards apply, daylight only."
   },
   "seasonality": {
     "best_months": [7, 8, 9],
@@ -58,34 +58,34 @@
     "activities": ["trekking", "photography", "nature-walk"],
     "difficulty": "moderate",
     "suitable_for": { "kids": false, "elderly": false, "wheelchair": false },
-    "photography_notes": "Full-flow frames from the trail's last bend; protect gear — spray zone is wide in August."
+    "photography_notes": "Full-flow frames from the trail's last bend; protect gear. Spray zone is wide in August."
   },
   "amenities": {
-    "food": "None — provision fully at Waghai",
+    "food": "None, provision fully at Waghai",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Hire in Koshmal village — essential, not optional",
+    "guides": "Hire in Koshmal village, essential, not optional",
     "ev_charging": false,
     "stay_nearby": ["dang-kilad-nature-campsite"]
   },
   "safety": {
     "warnings": [
-      "Heed the forest-department warning boards — there have been incidents here",
+      "Heed the forest-department warning boards: there have been incidents here",
       "Do not enter the flow or cross wet rock shelves",
       "Go in a group with a village guide and daylight margin"
     ],
     "emergency": { "nearest_hospital": "CHC Waghai (~20 km)", "police": "Waghai PS", "notes": null }
   },
   "tips": [
-    "Maps mislead here — search 'Kusmal' and then trust people over pins",
+    "Maps mislead here, search 'Kusmal' and then trust people over pins",
     "Combine with Gira Falls for a tame-vs-wild waterfall double",
     "Kilad campsite makes the natural overnight base"
   ],
   "faqs": [
     {
       "q": "Why do I need a guide if there's a trail?",
-      "a": "The trail looks obvious and still loses first-timers — and the forest department's warnings exist because of past incidents. A village guide costs little and removes both problems."
+      "a": "The trail looks obvious and still loses first-timers, and the forest department's warnings exist because of past incidents. A village guide costs little and removes both problems."
     }
   ],
   "nearby": [
@@ -96,7 +96,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Koshmal Falls (Bhigu Dhodh) — Waghai's Secret",
+    "meta_title": "Koshmal Falls (Bhigu Dhodh), Waghai's Secret",
     "meta_description": "Reaching Bhigu Dhodh at Koshmal village: the Dungarda route, the guide rule, forest warnings and the July–September window."
   },
   "provenance": {
@@ -104,7 +104,7 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Koshmal Waterfalls — Hidden Treasure in Dangs", "url": "https://darpan.blog/travel/koshmal-waterfalls-hidden-treasure-dangs/", "publisher": "darpan.blog", "accessed": "2026-08-09" }
+      { "title": "Koshmal Waterfalls, Hidden Treasure in Dangs", "url": "https://darpan.blog/travel/koshmal-waterfalls-hidden-treasure-dangs/", "publisher": "darpan.blog", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "visit.timings", "access.last_mile"]
   }

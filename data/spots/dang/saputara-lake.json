@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Saputara's centrepiece — a calm hilltop lake with pedal and row boating, garden-lined banks, and the town's liveliest evening scene.",
-  "description": "Saputara Lake sits at the heart of Gujarat's only hill station, a man-made waterbody ringed by gardens, snack stalls and the low wooded hills of the Sahyadris. Almost every Saputara itinerary begins or ends here: mornings are quiet enough for a lakeside walk, while evenings bring boat queues, candy-floss vendors and families out for the cool air that made this town a summer refuge in the first place.\n\nThe boat club on the eastern bank runs pedal boats and rowing boats in fair weather, and the flat promenade makes for an easy loop on foot. The Lake Garden and Nageshwar Mahadev temple sit right on the shore, so the lake works well as an anchor — park once and cover three or four sights on foot. Water levels are highest and the surrounding green most vivid from July through November; in peak summer the lake shrinks but the town's climate stays kinder than the plains below.\n\nExpect real crowds on May weekends, Diwali week and around Christmas–New Year, when boating queues can stretch past half an hour. If you want the lake to yourself, come before 09:00.",
+  "summary": "Saputara's centrepiece, a calm hilltop lake with pedal and row boating, garden-lined banks, and the town's liveliest evening scene.",
+  "description": "Saputara Lake sits at the heart of Gujarat's only hill station, a man-made waterbody ringed by gardens, snack stalls and the low wooded hills of the Sahyadris. Almost every Saputara itinerary begins or ends here: mornings are quiet enough for a lakeside walk, while evenings bring boat queues, candy-floss vendors and families out for the cool air that made this town a summer refuge in the first place.\n\nThe boat club on the eastern bank runs pedal boats and rowing boats in fair weather, and the flat promenade makes for an easy loop on foot. The Lake Garden and Nageshwar Mahadev temple sit right on the shore, so the lake works well as an anchor, park once and cover three or four sights on foot. Water levels are highest and the surrounding green most vivid from July through November; in peak summer the lake shrinks but the town's climate stays kinder than the plains below.\n\nExpect real crowds on May weekends, Diwali week and around Christmas–New Year, when boating queues can stretch past half an hour. If you want the lake to yourself, come before 09:00.",
   "highlights": [
     "Pedal and row boating on a hilltop lake",
     "Flat lakeside promenade linking gardens and temple",
@@ -42,7 +42,7 @@
   "visit": {
     "timings": [],
     "fees": [
-      { "type": "boating", "amount_inr": 300, "note": "4-seat pedal boat, ~30 min; per-seat row/pedal options ₹25–35 — rates vary by boat type" }
+      { "type": "boating", "amount_inr": 300, "note": "4-seat pedal boat, ~30 min; per-seat row/pedal options ₹25–35, rates vary by boat type" }
     ],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 90,
@@ -74,13 +74,13 @@
   "safety": {
     "warnings": [
       "Stay off the lake edge outside railed sections, especially with children",
-      "Life jackets are provided for boating — insist on them"
+      "Life jackets are provided for boating, insist on them"
     ],
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
   },
   "tips": [
     "Park once near the boat club and cover Lake Garden and Nageshwar temple on foot",
-    "Boating queues on holiday weekends run 30+ minutes — go before 10:00",
+    "Boating queues on holiday weekends run 30+ minutes, go before 10:00",
     "Carry a light jacket after sunset even in summer"
   ],
   "faqs": [
@@ -109,7 +109,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Saputara Lake — Boating & Lakefront Guide",
+    "meta_title": "Saputara Lake, Boating & Lakefront Guide",
     "meta_description": "Boating rates, timings, best season and crowd tips for Saputara Lake, the lakeside heart of Gujarat's only hill station."
   },
   "provenance": {
@@ -117,8 +117,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Saputara Lake — Timings, Entry Fee, Boating", "url": "https://www.trawell.in/gujarat/saputara/saputara-lake", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Saputara Lake — Boating Timings, Ticket Price", "url": "https://en.safargujarat.com/saputara-lake-distance-ticket-price-boating-timings/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+      { "title": "Saputara Lake, Timings, Entry Fee, Boating", "url": "https://www.trawell.in/gujarat/saputara/saputara-lake", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Saputara Lake, Boating Timings, Ticket Price", "url": "https://en.safargujarat.com/saputara-lake-distance-ticket-price-boating-timings/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates", "access.parking.fee"]
   }

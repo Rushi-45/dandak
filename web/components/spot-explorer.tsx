@@ -30,7 +30,7 @@ function labelize(s: string) {
  * The district named by /spots#dang.
  *
  * A fragment is never sent to the server, so the server can only ever render
- * "all" — which is why this cannot be a lazy useState initialiser without a
+ * "all", which is why this cannot be a lazy useState initialiser without a
  * hydration mismatch, and why setting it from an effect was the previous
  * approach. useSyncExternalStore is the supported way to hold a value that
  * legitimately differs between server and client, and subscribing to
@@ -76,7 +76,7 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
     return spots.filter((s) => {
       if (district !== "all" && s.district !== district) return false;
       if (category && s.category !== category) return false;
-      // "free-entry" is derived from visit.fees rather than tagged — the tag
+      // "free-entry" is derived from visit.fees rather than tagged, the tag
       // exists in the vocabulary but is on zero records, so this chip used to
       // empty the grid while 72 spots are in fact free. See toCardData.
       if (tags.length && !tags.every((t) => (t === "free-entry" ? s.free : s.tags.includes(t))))
@@ -213,7 +213,7 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
               >
-                {/* the first row on the widest grid — the LCP candidates */}
+                {/* the first row on the widest grid, the LCP candidates */}
                 <SpotCard spot={spot} priority={i < 3} />
               </m.div>
             ))}
@@ -225,7 +225,7 @@ export function SpotExplorer({ spots }: { spots: SpotCardData[] }) {
             Nothing in the forest matches that.
           </p>
           <p className="mt-2 text-sm text-stone-500">
-            Try fewer filters — or a different word for it.
+            Try fewer filters, or a different word for it.
           </p>
           <button
             onClick={clearAll}

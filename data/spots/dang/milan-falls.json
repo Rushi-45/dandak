@@ -10,11 +10,11 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "The Subir belt's third falls — Milan sits between Bhalkhet and Dev Van, a monsoon drop the web never documented until its map pin surfaced.",
-  "description": "Milan spent a year on this dataset's 'searched but not found' list: no article, no listing, no spelling of the name led anywhere. The map pin — supplied by a traveller who has stood at it — finally placed it exactly where the belt's other secrets live: the Godadiya–Subir forest country, three kilometres from Bhalkhet and five from Dev Van, making a tight triangle of falls that share the same roads, the same rains and the same near-total absence from tourism literature.\n\nExpect the belt's standard terms: a monsoon-fed drop reached by a short walk from village roads, no facilities, no signage, and flow that lives and dies with the wet spells. Ask for 'Milan dhodh' in the surrounding hamlets — as with its neighbours, local directions beat any map.",
+  "summary": "The Subir belt's third falls. Milan sits between Bhalkhet and Dev Van, a monsoon drop the web never documented until its map pin surfaced.",
+  "description": "Milan spent a year on this dataset's 'searched but not found' list: no article, no listing, no spelling of the name led anywhere. The map pin, supplied by a traveller who has stood at it, finally placed it exactly where the belt's other secrets live: the Godadiya–Subir forest country, three kilometres from Bhalkhet and five from Dev Van, making a tight triangle of falls that share the same roads, the same rains and the same near-total absence from tourism literature.\n\nExpect the belt's standard terms: a monsoon-fed drop reached by a short walk from village roads, no facilities, no signage, and flow that lives and dies with the wet spells. Ask for 'Milan dhodh' in the surrounding hamlets, as with its neighbours, local directions beat any map.",
   "highlights": [
     "Completes the Bhalkhet–Dev Van–Milan falls triangle",
-    "Zero web footprint — a genuinely local waterfall",
+    "Zero web footprint, a genuinely local waterfall",
     "Same belt roads as its better-known neighbours"
   ],
   "history_legend": null,
@@ -60,7 +60,7 @@
     "photography_notes": "Forest-framed falls; overcast monsoon light flatters the dark rock."
   },
   "amenities": {
-    "food": "None — carry everything; nearest food at Subir or Ahwa",
+    "food": "None. Carry everything; nearest food at Subir or Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -70,7 +70,7 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is slick — grip footwear only",
+      "Wet rock is slick, grip footwear only",
       "Flow surges after upstream rain; stay off the apron in spate"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~28 km)", "police": "Ahwa PS", "notes": null }
@@ -88,7 +88,7 @@
   "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Milan Waterfall, Dang — The Subir Belt's Hidden Third",
+    "meta_title": "Milan Waterfall, Dang, The Subir Belt's Hidden Third",
     "meta_description": "Milan waterfall in Dang's Subir belt: the undocumented monsoon falls between Bhalkhet and Dev Van, finally pinned."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Milan waterfall' (20.8880, 73.6131); supplied by the maintainer, who has visited — resolving the dataset's oldest awaiting-a-pin item", "url": "https://www.google.com/maps/place/Milan+waterfall/@20.887985,73.6131257,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Milan waterfall' (20.8880, 73.6131); supplied by the maintainer, who has visited, resolving the dataset's oldest awaiting-a-pin item", "url": "https://www.google.com/maps/place/Milan+waterfall/@20.887985,73.6131257,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

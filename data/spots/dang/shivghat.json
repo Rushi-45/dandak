@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A riverside Shiva shrine and bathing ghat on the Ahwa–Saputara road — a shady halt where road, river and a small temple meet.",
-  "description": "Shivghat is the kind of stop Dang's interior roads offer without announcing: a small Shiva shrine at a river crossing on the Ahwa–Saputara stretch, with stone steps to the water, big shade trees, and — in monsoon — the river running loud enough to make tea taste better at the adjacent stall. Local families treat it as a bathing and picnic ghat; Shravan brings modest devotional traffic.\n\nFor travellers it is a fifteen-minute leg-stretch that delivers more atmosphere than several ticketed stops: temple bell, water over rock, forest on both banks. Flow shrinks to pools by late winter.",
+  "summary": "A riverside Shiva shrine and bathing ghat on the Ahwa–Saputara road, a shady halt where road, river and a small temple meet.",
+  "description": "Shivghat is the kind of stop Dang's interior roads offer without announcing: a small Shiva shrine at a river crossing on the Ahwa–Saputara stretch, with stone steps to the water, big shade trees, and, in monsoon, the river running loud enough to make tea taste better at the adjacent stall. Local families treat it as a bathing and picnic ghat; Shravan brings modest devotional traffic.\n\nFor travellers it is a fifteen-minute leg-stretch that delivers more atmosphere than several ticketed stops: temple bell, water over rock, forest on both banks. Flow shrinks to pools by late winter.",
   "highlights": [
     "Riverside shrine and bathing steps",
     "Shady tea-stall halt on the Ahwa road",
@@ -51,7 +51,7 @@
     "best_months": [7, 8, 9, 10, 11],
     "avoid_months": [4, 5],
     "monsoon_dependent": true,
-    "notes": "The river is the show — monsoon through early winter."
+    "notes": "The river is the show, monsoon through early winter."
   },
   "experience": {
     "activities": ["darshan", "picnic", "photography"],
@@ -70,13 +70,13 @@
   },
   "safety": {
     "warnings": [
-      "Bathe only at the steps in gentle flow — monsoon current is deceptive",
+      "Bathe only at the steps in gentle flow: monsoon current is deceptive",
       "Rocks are slick year-round"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~5 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Natural tea-break on the Ahwa–Saputara run — time it that way"
+    "Natural tea-break on the Ahwa–Saputara run, time it that way"
   ],
   "faqs": [],
   "nearby": [
@@ -86,7 +86,7 @@
   "itineraries": ["monsoon-waterfall-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Shivghat, Dang — Riverside Halt",
+    "meta_title": "Shivghat, Dang, Riverside Halt",
     "meta_description": "Shivghat on the Ahwa–Saputara road: riverside shrine, bathing steps and the monsoon halt worth making."
   },
   "provenance": {

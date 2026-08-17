@@ -6,7 +6,7 @@ import { getItineraries, getPlannerIndex } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Plan your own trip",
   description:
-    "Tell us where you start, where you finish and when you are travelling — get a day-by-day route through Dang and Narmada built from the whole dataset.",
+    "Tell us where you start, where you finish and when you are travelling: get a day-by-day route through Dang and Narmada built from the whole dataset.",
   alternates: { canonical: "/plan" },
 };
 
@@ -28,7 +28,7 @@ export default function PlanPage() {
       <p className="mt-4 text-lg leading-relaxed text-stone-400">
         The {itineraries.length} trips we wrote by hand reach {covered} of these{" "}
         {data.spots.length} places. Give us two points on the map and a month, and we will build a
-        route through the rest — using the same road distances, visit lengths and season notes
+        route through the rest, using the same road distances, visit lengths and season notes
         that every record already carries.
       </p>
 

@@ -16,13 +16,13 @@
     { "id": "narmada-river-rafting-khalwani", "distance_km": 1 },
     { "id": "narmada-statue-of-unity", "distance_km": 8 }
   ],
-  "notes": "Sleep beside the rafting stretch and take the first batch of the morning — the practical adventure-stay of the campus area.",
+  "notes": "Sleep beside the rafting stretch and take the first batch of the morning. The practical adventure-stay of the campus area.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

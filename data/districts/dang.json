@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "dang",
   "name": { "en": "Dang" },
-  "headline": "Gujarat's only hill country — forest, waterfalls and living adivasi culture in the Sahyadris.",
-  "overview": "Dang is unlike anywhere else in Gujarat: a small, almost entirely forested district folded into the northern Sahyadris, where the state's only hill station (Saputara) sits at nearly a thousand metres and the rain falls harder than anywhere else in Gujarat. Teak and bamboo forest covers most of the map, the Purna, Gira and Ambika rivers cut it into green valleys, and the population is overwhelmingly adivasi — Bhil, Kunbi, Warli and other communities whose festivals, crafts and village rhythms are as much the district's identity as its waterfalls.\n\nFor travellers, Dang splits naturally into three: the Saputara plateau with its lake, viewpoints and hotels; the Waghai belt at the foot of the ghat with Gira Falls, the botanical garden and Vansda National Park next door; and the interior — Girmal Falls, Don's meadows, Purna sanctuary and the Shabari Dham circuit — where distances stretch, mobile signal fades, and the forest takes over. Monsoon (July–September) is the district at full volume; October–February is green, cool and comfortable; summer stays kinder here than the plains below.\n\nDang rewards unhurried travel: fuel up at Ahwa or Waghai, carry cash, and let the ghat roads set the pace.",
+  "headline": "Gujarat's only hill country, forest, waterfalls and living adivasi culture in the Sahyadris.",
+  "overview": "Dang is unlike anywhere else in Gujarat: a small, almost entirely forested district folded into the northern Sahyadris, where the state's only hill station (Saputara) sits at nearly a thousand metres and the rain falls harder than anywhere else in Gujarat. Teak and bamboo forest covers most of the map, the Purna, Gira and Ambika rivers cut it into green valleys, and the population is overwhelmingly adivasi, Bhil, Kunbi, Warli and other communities whose festivals, crafts and village rhythms are as much the district's identity as its waterfalls.\n\nFor travellers, Dang splits naturally into three: the Saputara plateau with its lake, viewpoints and hotels; the Waghai belt at the foot of the ghat with Gira Falls, the botanical garden and Vansda National Park next door; and the interior, Girmal Falls, Don's meadows, Purna sanctuary and the Shabari Dham circuit, where distances stretch, mobile signal fades, and the forest takes over. Monsoon (July–September) is the district at full volume; October–February is green, cool and comfortable; summer stays kinder here than the plains below.\n\nDang rewards unhurried travel: fuel up at Ahwa or Waghai, carry cash, and let the ghat roads set the pace.",
   "hero_spots": [
     "dang-saputara-lake",
     "dang-sunset-point",
@@ -15,9 +15,9 @@
   ],
   "hubs": [
     { "name": "Saputara", "type": "town", "coordinates": { "lat": 20.575, "lng": 73.757 }, "notes": "Hill-station base with the district's hotel stock" },
-    { "name": "Ahwa", "type": "town", "coordinates": { "lat": 20.757, "lng": 73.686 }, "notes": "District headquarters; fuel, hospital, market — the interior's pivot" },
+    { "name": "Ahwa", "type": "town", "coordinates": { "lat": 20.757, "lng": 73.686 }, "notes": "District headquarters; fuel, hospital, market, the interior's pivot" },
     { "name": "Waghai", "type": "town", "coordinates": { "lat": 20.772, "lng": 73.499 }, "notes": "Foot of the ghat; gateway from the Surat/Bilimora side" },
-    { "name": "Waghai railway station", "type": "railhead", "notes": "Heritage narrow-gauge from Bilimora; limited service — check before relying on it" },
+    { "name": "Waghai railway station", "type": "railhead", "notes": "Heritage narrow-gauge from Bilimora; limited service, check before relying on it" },
     { "name": "Bilimora Junction", "type": "railhead", "coordinates": { "lat": 20.769, "lng": 72.961 }, "notes": "Nearest broad-gauge railhead (~110 km from Saputara)" },
     { "name": "Surat airport", "type": "airport", "coordinates": { "lat": 21.17, "lng": 72.831 }, "notes": "~160 km from Saputara" },
     { "name": "Nashik airport", "type": "airport", "coordinates": { "lat": 19.997, "lng": 73.79 }, "notes": "~90 km from Saputara via the Maharashtra side" }
@@ -27,13 +27,13 @@
     "rail": "Bilimora Jn (Mumbai–Ahmedabad line) is the practical railhead; the Bilimora–Waghai narrow-gauge heritage line runs limited services. Nashik Road station works for the Maharashtra approach.",
     "air": "Surat (~160 km) and Nashik (~90 km) are the closest airports; Mumbai (~250 km) for wider connections."
   },
-  "local_transport": "Shared jeeps are the true public transport of interior Dang, radiating from Ahwa and Waghai on market rhythms. Autos cover Saputara town; local taxis and sightseeing jeeps handle the standard circuits. App cabs do not operate here — arrange returns before heading into the interior, and expect no fuel pumps beyond Ahwa, Waghai and Saputara.",
+  "local_transport": "Shared jeeps are the true public transport of interior Dang, radiating from Ahwa and Waghai on market rhythms. Autos cover Saputara town; local taxis and sightseeing jeeps handle the standard circuits. App cabs do not operate here, arrange returns before heading into the interior, and expect no fuel pumps beyond Ahwa, Waghai and Saputara.",
   "weather_by_month": [
     { "month": 1, "temp_min_c": 8, "temp_max_c": 26, "rain": "none", "notes": "Cold, clear mornings on the plateau" },
     { "month": 2, "temp_min_c": 10, "temp_max_c": 29, "rain": "none" },
     { "month": 3, "temp_min_c": 14, "temp_max_c": 33, "rain": "none" },
     { "month": 4, "temp_min_c": 18, "temp_max_c": 35, "rain": "none", "notes": "Haze builds; forest browns" },
-    { "month": 5, "temp_min_c": 20, "temp_max_c": 35, "rain": "low", "notes": "Saputara's peak season — far cooler than the plains" },
+    { "month": 5, "temp_min_c": 20, "temp_max_c": 35, "rain": "low", "notes": "Saputara's peak season, far cooler than the plains" },
     { "month": 6, "temp_min_c": 21, "temp_max_c": 31, "rain": "moderate", "notes": "Monsoon arrives mid-month" },
     { "month": 7, "temp_min_c": 20, "temp_max_c": 26, "rain": "heavy", "notes": "Wettest weeks; waterfalls at full force" },
     { "month": 8, "temp_min_c": 20, "temp_max_c": 25, "rain": "heavy", "notes": "Mist, leeches and green everywhere" },
@@ -52,11 +52,11 @@
   "festivals": ["dang-darbar", "saputara-monsoon-festival", "shabridham-mela", "saputara-winter-peak"],
   "foods": ["nagli-rotla", "vaas-nu-shaak", "dangi-desi-chicken", "kand", "mahua-sweets", "dang-forest-honey", "saputara-strawberries", "nagli-papad", "chikoo"],
   "tips": [
-    "Fuel and cash exist only at Saputara, Ahwa and Waghai — plan the interior accordingly",
+    "Fuel and cash exist only at Saputara, Ahwa and Waghai, plan the interior accordingly",
     "BSNL and Jio survive furthest into the interior; assume dead zones beyond Ahwa",
-    "Monsoon driving means ghat fog and slow trucks — add buffer to every leg",
+    "Monsoon driving means ghat fog and slow trucks: add buffer to every leg",
     "Book forest campsites (Mahal, Kilad) via the official eco-tourism portal well ahead of winter weekends",
-    "Respect village norms when photographing — ask first, especially at festivals"
+    "Respect village norms when photographing, ask first, especially at festivals"
   ],
   "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
 }

@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A calm Narmada boat ride with the Statue of Unity growing off the bow — the water-level angle no viewpoint on land can give.",
-  "description": "The Ekta Cruise runs sightseeing boats on the still stretch of the Narmada below the statue, turning the campus's headline monument into a waterline experience: the statue first as a figure on the horizon, then filling the sky as the boat closes in. Rides run from the jetty area near Shreshtha Bharat Bhavan and loop the viewing stretch in roughly half an hour.\n\nIt is an easy, all-ages add-on rather than an adventure — flat water, seated ride, life jackets issued. Late-afternoon departures get the warm light on the statue's face; mornings get calmer water. Operations have varied over the years with river conditions and operator arrangements, so confirm the cruise is running and where exactly it boards when you plan — and expect suspensions when dam releases push the river up.",
+  "summary": "A calm Narmada boat ride with the Statue of Unity growing off the bow. The water-level angle no viewpoint on land can give.",
+  "description": "The Ekta Cruise runs sightseeing boats on the still stretch of the Narmada below the statue, turning the campus's headline monument into a waterline experience: the statue first as a figure on the horizon, then filling the sky as the boat closes in. Rides run from the jetty area near Shreshtha Bharat Bhavan and loop the viewing stretch in roughly half an hour.\n\nIt is an easy, all-ages add-on rather than an adventure, flat water, seated ride, life jackets issued. Late-afternoon departures get the warm light on the statue's face; mornings get calmer water. Operations have varied over the years with river conditions and operator arrangements, so confirm the cruise is running and where exactly it boards when you plan, and expect suspensions when dam releases push the river up.",
   "highlights": [
     "Water-level views of the Statue of Unity",
     "Calm ~30-minute seated ride, all ages",
@@ -45,7 +45,7 @@
     "duration_min": 60,
     "best_time_of_day": "afternoon",
     "weekly_closure": "mon",
-    "notes": "Operations pause during high releases and rough weather — confirm on the day. As of Aug 2026 the existing ~200-passenger cruise runs conditionally; a new 600-passenger vessel is launched but awaiting SOUADTGA certification, expected in service around Oct 2026."
+    "notes": "Operations pause during high releases and rough weather, confirm on the day. As of Aug 2026 the existing ~200-passenger cruise runs conditionally; a new 600-passenger vessel is launched but awaiting SOUADTGA certification, expected in service around Oct 2026."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -70,19 +70,19 @@
   },
   "safety": {
     "warnings": [
-      "Wear the life jacket for the full ride — enforced",
+      "Wear the life jacket for the full ride, enforced",
       "Rides suspend at short notice on high river levels; keep plans flexible"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
   "tips": [
     "Book the golden-hour departure and keep the glow garden for after",
-    "Confirm operations that morning — river releases cancel batches"
+    "Confirm operations that morning, river releases cancel batches"
   ],
   "faqs": [
     {
       "q": "Is the cruise scary for non-swimmers?",
-      "a": "No — it's a flat-water sightseeing loop with life jackets issued to everyone. The only real risk is a cancelled slot on high-release days."
+      "a": "No, it's a flat-water sightseeing loop with life jackets issued to everyone. The only real risk is a cancelled slot on high-release days."
     }
   ],
   "nearby": [
@@ -93,7 +93,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Ekta Cruise, Statue of Unity — Boat Ride Guide",
+    "meta_title": "Ekta Cruise, Statue of Unity, Boat Ride Guide",
     "meta_description": "The Narmada boat ride below the Statue of Unity: fares, timings, best light and when operations pause."
   },
   "provenance": {
@@ -102,7 +102,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "Statue of Unity Launches a 600-Passenger Luxury Cruise on the Narmada (Aug 2026)", "url": "https://www.travelerstoday.com/articles/60766/20260806/statue-unity-launches-600-passenger-luxury-cruise-narmada-river.htm", "publisher": "travelerstoday.com", "accessed": "2026-08-08" },
-      { "title": "Ekta Cruise — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g2435016-d23725172-Reviews-Ekta_Cruise-Kevadia_Narmada_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
+      { "title": "Ekta Cruise, Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g2435016-d23725172-Reviews-Ekta_Cruise-Kevadia_Narmada_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]
   }

@@ -10,14 +10,14 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Hilltop fort remains linked to Dang's Bhil kings — a forest trek to ramparts few tourists have ever heard of.",
-  "description": "Rupgadh carries a piece of history most of Gujarat has forgotten: Dang was never formally annexed — its Bhil and Kunbi kings signed lease agreements with the British and drew political pensions, a arrangement honoured to this day at the annual Dang Darbar in Ahwa. Rupgadh's hilltop remains — rampart lines, gate fragments, water tanks — are held locally as a stronghold of those Dangi rajas.\n\nThe visit is a forest trek: an interior drive to the base village, then one to two hours of climbing on paths that braid with cattle trails. Take a local guide; navigation and courtesy both require it. The reward is ruins with a story, ridgeline views over unbroken forest, and the near-certainty of having the hill to yourselves.\n\nRoute details and current path conditions need verification — treat plans as flexible and go in the dry months.",
+  "summary": "Hilltop fort remains linked to Dang's Bhil kings. A forest trek to ramparts few tourists have ever heard of.",
+  "description": "Rupgadh carries a piece of history most of Gujarat has forgotten: Dang was never formally annexed, its Bhil and Kunbi kings signed lease agreements with the British and drew political pensions, a arrangement honoured to this day at the annual Dang Darbar in Ahwa. Rupgadh's hilltop remains, rampart lines, gate fragments, water tanks, are held locally as a stronghold of those Dangi rajas.\n\nThe visit is a forest trek: an interior drive to the base village, then one to two hours of climbing on paths that braid with cattle trails. Take a local guide; navigation and courtesy both require it. The reward is ruins with a story, ridgeline views over unbroken forest, and the near-certainty of having the hill to yourselves.\n\nRoute details and current path conditions need verification, treat plans as flexible and go in the dry months.",
   "highlights": [
     "Stronghold lore of Dang's pension-holding Bhil kings",
     "Rampart remains and water tanks on the summit",
     "Forest ridge views, zero crowds"
   ],
-  "history_legend": "Dang's five hereditary chiefs — Bhil and Kunbi kings — leased their forests to the British rather than lose them, and their successors still receive ceremonial political pensions at the annual Dang Darbar. Local tradition counts Rupgadh among their strongholds; documentation is thin, the connection is living.",
+  "history_legend": "Dang's five hereditary chiefs, Bhil and Kunbi kings, leased their forests to the British rather than lose them, and their successors still receive ceremonial political pensions at the annual Dang Darbar. Local tradition counts Rupgadh among their strongholds; documentation is thin, the connection is living.",
   "attributes": { "era": "Dangi Bhil chieftainship", "trek_time_min": 90 },
   "location": {
     "taluka": "Ahwa",
@@ -30,7 +30,7 @@
   },
   "access": {
     "modes": {
-      "road": "Interior roads from Ahwa toward the base village — ask locally; signage is absent",
+      "road": "Interior roads from Ahwa toward the base village. Ask locally; signage is absent",
       "rail": "No practical railhead",
       "air": "Surat (~150 km)"
     },
@@ -60,24 +60,24 @@
     "photography_notes": "Ridgeline light is best before 09:00; the ruins need context frames more than close-ups."
   },
   "amenities": {
-    "food": "None — carry from Ahwa",
+    "food": "None. Carry from Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Hire at the base village — for route and for respect",
+    "guides": "Hire at the base village, for route and for respect",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Go in a group with a local guide — paths braid and phones die here",
+      "Go in a group with a local guide, paths braid and phones die here",
       "Carry 2+ litres of water per person",
       "Old structures are unstable; do not climb the walls"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~25 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Ask about Dang Darbar and the kings — the fort makes sense inside that story",
+    "Ask about Dang Darbar and the kings: the fort makes sense inside that story",
     "Pair the day with Shivghat on the drive back to Ahwa"
   ],
   "faqs": [],
@@ -88,7 +88,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Rupgadh Fort, Dang — Bhil Kings' Hill",
+    "meta_title": "Rupgadh Fort, Dang, Bhil Kings' Hill",
     "meta_description": "Trekking to Rupgadh fort in interior Dang: the Bhil kings' story, route reality and dry-season planning."
   },
   "provenance": {

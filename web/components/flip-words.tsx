@@ -3,7 +3,7 @@
 import { AnimatePresence, m } from "motion/react";
 import { useEffect, useState } from "react";
 
-/** Aceternity-style flip words — cycles through phrases with a blur-slide. */
+/** Aceternity-style flip words, cycles through phrases with a blur-slide. */
 export function FlipWords({
   words,
   interval = 2600,

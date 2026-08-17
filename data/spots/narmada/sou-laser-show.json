@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "Nightly laser projection and sound show that turns the Statue of Unity into a canvas for Sardar Patel's story — the campus's evening set piece.",
-  "description": "After sunset on operating days, projectors and lasers wash the Statue of Unity in colour while a narrated soundtrack tells Sardar Patel's life and the statue's making — the monument itself as a 182-metre screen. Seating and standing areas face the statue from the show plaza; the spectacle runs roughly half an hour and lands hardest with first-time visitors and children.\n\nEntry arrangements have varied between being included with day tickets and separately managed seating — check current rules when booking. No show on Mondays (the campus closes), and weather can cancel. Arrive early on weekends: the good sightlines go 45 minutes before start, and exit traffic afterwards is its own event.",
+  "summary": "Nightly laser projection and sound show that turns the Statue of Unity into a canvas for Sardar Patel's story, the campus's evening set piece.",
+  "description": "After sunset on operating days, projectors and lasers wash the Statue of Unity in colour while a narrated soundtrack tells Sardar Patel's life and the statue's making, the monument itself as a 182-metre screen. Seating and standing areas face the statue from the show plaza; the spectacle runs roughly half an hour and lands hardest with first-time visitors and children.\n\nEntry arrangements have varied between being included with day tickets and separately managed seating, check current rules when booking. No show on Mondays (the campus closes), and weather can cancel. Arrive early on weekends: the good sightlines go 45 minutes before start, and exit traffic afterwards is its own event.",
   "highlights": [
     "Laser projection across the 182 m statue",
     "Narrated Sardar Patel story, ~30 minutes",
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "19:00", "close": "20:00", "note": "Start time shifts with sunset and season; single or double shows per evening" }],
-    "fees": [{ "type": "show", "amount_inr": 0, "note": "Historically included with entry tickets; separate/managed seating has applied at times — confirm current arrangement" }],
+    "fees": [{ "type": "show", "amount_inr": 0, "note": "Historically included with entry tickets; separate/managed seating has applied at times, confirm current arrangement" }],
     "booking": { "required": null, "url": "https://www.soutickets.in/", "notes": "Check whether the show needs its own slot when you book day tickets" },
     "duration_min": 60,
     "best_time_of_day": "night",
@@ -51,7 +51,7 @@
     "best_months": [10, 11, 12, 1, 2],
     "avoid_months": [],
     "monsoon_dependent": false,
-    "notes": "Winter evenings are comfortable and clear; carry a layer — the plaza gets breezy."
+    "notes": "Winter evenings are comfortable and clear; carry a layer. The plaza gets breezy."
   },
   "experience": {
     "activities": ["show", "photography", "sightseeing"],
@@ -64,7 +64,7 @@
     "toilets": "good",
     "drinking_water": true,
     "mobile_network": { "jio": "good", "airtel": "good", "vi": "ok", "bsnl": "ok" },
-    "guides": "Not applicable — narrated show",
+    "guides": "Not applicable, narrated show",
     "ev_charging": null,
     "stay_nearby": []
   },
@@ -81,7 +81,7 @@
   "faqs": [
     {
       "q": "Is the laser show included in the entry ticket?",
-      "a": "It has been bundled with day tickets for long stretches, with managed seating at times — the arrangement changes, so confirm on the official portal when booking."
+      "a": "It has been bundled with day tickets for long stretches, with managed seating at times, the arrangement changes, so confirm on the official portal when booking."
     }
   ],
   "nearby": [
@@ -91,7 +91,7 @@
   "itineraries": ["sou-express-1-day", "sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Statue of Unity Laser Show — Timings & Tips",
+    "meta_title": "Statue of Unity Laser Show, Timings & Tips",
     "meta_description": "The SoU laser light and sound show: start times, ticket arrangement, weekend crowd strategy and photo notes."
   },
   "provenance": {
@@ -99,8 +99,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Statue of Unity — Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Timings 2026 — Entry Hours, Laser Show", "url": "https://statueofunity.in/statue-of-unity-timings-entry-laser-show-2026/", "publisher": "statueofunity.in", "accessed": "2026-08-08" }
+      { "title": "Statue of Unity, Visiting Hours", "url": "https://statueofunity.in/visiting-hours/", "publisher": "statueofunity.in", "accessed": "2026-08-08" },
+      { "title": "Statue of Unity Timings 2026, Entry Hours, Laser Show", "url": "https://statueofunity.in/statue-of-unity-timings-entry-laser-show-2026/", "publisher": "statueofunity.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "visit.booking.notes"]
   }

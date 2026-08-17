@@ -227,7 +227,7 @@ export default async function SpotPage({ params }: { params: Params }) {
           {categoryLabel(spot.category)}
         </span>
         {/* Was categoryLabel(cluster), which title-cased the raw id into "Sou Complex"
-            and "Dang Interior". The real labels live in the registry — and this is
+            and "Dang Interior". The real labels live in the registry, and this is
             now the link into the area page rather than a dead chip. */}
         {area && (
           <Link
@@ -257,7 +257,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       {/* Photographs and clips. MediaGallery renders nothing when there are none,
           which left 78 of 106 pages jumping from the summary straight to the
           quick facts with no visual anchor at all. The placeholder holds that
-          space and says plainly that the photograph is missing — the repo is
+          space and says plainly that the photograph is missing: the repo is
           public, so this is also the honest place to invite one. */}
       {gallery.length > 0 ? (
         <MediaGallery items={gallery} title={spot.name.en} />
@@ -468,7 +468,7 @@ export default async function SpotPage({ params }: { params: Params }) {
       )}
 
       {/* Written, source-tracked prose that until now rendered nowhere. This is the
-          canonical home for it — area pages excerpt and link back here. */}
+          canonical home for it, area pages excerpt and link back here. */}
       {(spot.access?.road_condition ||
         spot.access?.parking?.notes ||
         spot.seasonality?.notes ||
@@ -641,7 +641,7 @@ export default async function SpotPage({ params }: { params: Params }) {
                 ) : (
                   s.title
                 )}
-                {s.publisher ? <span className="text-stone-600"> — {s.publisher}</span> : ""}
+                {s.publisher ? <span className="text-stone-600">, {s.publisher}</span> : ""}
               </li>
             ))}
           </ul>

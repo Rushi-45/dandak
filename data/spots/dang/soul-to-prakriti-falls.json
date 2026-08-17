@@ -10,10 +10,10 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A forest fall two kilometres from Medha's cascades on the Dang–Tapi line — the border belt's quiet extra drop, name and all.",
-  "description": "Soul to Prakriti marks a real drop in the forest country of the northern border belt, barely two kilometres from the Medha (Ekva Golan) cascades — the name confirmed by a traveller who has visited. Treat the two as one outing: the same forest roads, the same monsoon window, the same mist-hung hills that make this belt the district line's best-kept stretch.\n\nNo written source describes it beyond the pin; expect the belt's standard bargain — real beauty, zero facilities — and take local guidance for the walk in.",
+  "summary": "A forest fall two kilometres from Medha's cascades on the Dang–Tapi line. The border belt's quiet extra drop, name and all.",
+  "description": "Soul to Prakriti marks a real drop in the forest country of the northern border belt, barely two kilometres from the Medha (Ekva Golan) cascades. The name confirmed by a traveller who has visited. Treat the two as one outing: the same forest roads, the same monsoon window, the same mist-hung hills that make this belt the district line's best-kept stretch.\n\nNo written source describes it beyond the pin; expect the belt's standard bargain, real beauty, zero facilities, and take local guidance for the walk in.",
   "highlights": [
-    "Two kilometres from Medha falls — one outing, two drops",
+    "Two kilometres from Medha falls: one outing, two drops",
     "The border belt's mist-and-forest setting",
     "Completely undocumented beyond its map pin"
   ],
@@ -57,26 +57,26 @@
     "activities": ["trekking", "nature-walk", "photography"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Mist moves through this belt all monsoon — work the clearings."
+    "photography_notes": "Mist moves through this belt all monsoon. Work the clearings."
   },
   "amenities": {
-    "food": "None — carry from Songadh side",
+    "food": "None. Carry from Songadh side",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
-    "guides": "Take local guidance — paths are unmarked",
+    "guides": "Take local guidance. Paths are unmarked",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Unmarked forest paths — do not explore alone",
+      "Unmarked forest paths: do not explore alone",
       "Slick rock and surging flow through the monsoon"
     ],
     "emergency": { "nearest_hospital": "CHC Songadh (~25 km)", "police": "Songadh PS", "notes": null }
   },
   "tips": [
-    "Do it with Medha falls — the pins are two kilometres apart"
+    "Do it with Medha falls: the pins are two kilometres apart"
   ],
   "faqs": [],
   "nearby": [
@@ -86,7 +86,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Soul to Prakriti Waterfall — Medha's Undocumented Neighbour",
+    "meta_title": "Soul to Prakriti Waterfall, Medha's Undocumented Neighbour",
     "meta_description": "The unnamed-in-person falls two kilometres from Medha on the Dang–Tapi line: what the pin shows and how to pair the two."
   },
   "provenance": {
@@ -94,7 +94,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Soul to prakriti Waterfall' (21.0830, 73.6931); supplied by the maintainer, who has visited and verified the name", "url": "https://www.google.com/maps/place/Soul+to+prakriti+Waterfall/@21.082986,73.693108,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Soul to prakriti Waterfall' (21.0830, 73.6931); supplied by the maintainer, who has visited and verified the name", "url": "https://www.google.com/maps/place/Soul+to+prakriti+Waterfall/@21.082986,73.693108,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "location.admin_district"]
   }

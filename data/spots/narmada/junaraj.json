@@ -10,14 +10,14 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "The hill site of Rajpipla's original capital — scattered ruins in forested country south of the modern town, for history-minded explorers.",
-  "description": "Before Rajpipla was Rajpipla, the Gohil capital sat in the safer hill country to the south — Junaraj, 'the old realm', whose scattered remains (gate fragments, wall lines, temple and stepwell traces by local account) sit in forested terrain that has largely reclaimed them. The state shifted its seat to the present town centuries ago; the old site kept the name and lost the roofs.\n\nThis is an explorer's entry: what stands, how far one walks, and how findable the remains are all need ground verification, and local guidance from the nearest village is essential. The draw is atmosphere — capital-turned-forest — and the drive through genuinely pretty country beyond Karjan reservoir. Dry months only; expect nothing in the way of facilities, signage or company.",
+  "summary": "The hill site of Rajpipla's original capital, scattered ruins in forested country south of the modern town, for history-minded explorers.",
+  "description": "Before Rajpipla was Rajpipla, the Gohil capital sat in the safer hill country to the south. Junaraj, 'the old realm', whose scattered remains (gate fragments, wall lines, temple and stepwell traces by local account) sit in forested terrain that has largely reclaimed them. The state shifted its seat to the present town centuries ago; the old site kept the name and lost the roofs.\n\nThis is an explorer's entry: what stands, how far one walks, and how findable the remains are all need ground verification, and local guidance from the nearest village is essential. The draw is atmosphere, capital-turned-forest, and the drive through genuinely pretty country beyond Karjan reservoir. Dry months only; expect nothing in the way of facilities, signage or company.",
   "highlights": [
     "Site of the Gohil dynasty's original hill capital",
     "Ruins being reclaimed by forest",
     "Explorer-grade outing beyond Karjan reservoir"
   ],
-  "history_legend": "Rajpipla's Gohil rulers held their early capital in these defensible hills before moving to the plains-edge site of the present town; Junaraj kept the name — 'old realm' — and local memory keeps the map of what stood where.",
+  "history_legend": "Rajpipla's Gohil rulers held their early capital in these defensible hills before moving to the plains-edge site of the present town; Junaraj kept the name, 'old realm', and local memory keeps the map of what stood where.",
   "attributes": { "era": "Early Rajpipla state (Gohil dynasty)" },
   "location": {
     "taluka": "Nandod",
@@ -45,7 +45,7 @@
     "duration_min": 180,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Unmanaged site — daylight-only, group visits with local guidance."
+    "notes": "Unmanaged site, daylight-only, group visits with local guidance."
   },
   "seasonality": {
     "best_months": [11, 12, 1, 2],
@@ -60,24 +60,24 @@
     "photography_notes": "Ruin-and-root frames in raking morning light; carry everything in a daypack."
   },
   "amenities": {
-    "food": "None — provision fully in Rajpipla",
+    "food": "None, provision fully in Rajpipla",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Arrange in the nearest village — non-negotiable",
+    "guides": "Arrange in the nearest village, non-negotiable",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
       "Go in a group with a local guide; terrain and remains are unmanaged",
-      "Old masonry is unstable — no climbing",
+      "Old masonry is unstable, no climbing",
       "Carry water for the full outing"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~20 km)", "police": "Rajpipla rural PS", "notes": null }
   },
   "tips": [
-    "Combine with the Karjan reservoir drive — same direction",
+    "Combine with the Karjan reservoir drive, same direction",
     "Ask at Rajvant Palace's museum about Junaraj first; context transforms the ruins"
   ],
   "faqs": [],
@@ -99,7 +99,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Junaraj — Old Rajpipla's Hill Capital",
+    "meta_title": "Junaraj, Old Rajpipla's Hill Capital",
     "meta_description": "Exploring Junaraj, the forested site of Rajpipla's original capital: what's known, verification caveats and how to attempt it."
   },
   "provenance": {
@@ -107,7 +107,7 @@
     "last_verified": null,
     "confidence": "low",
     "sources": [
-      { "title": "Junaraj-Gujarat-India.jpg — Commons photo (geotagged in the Karjan belt) showing the site's temples part-submerged in the reservoir backwater", "url": "https://commons.wikimedia.org/wiki/File:Junaraj-Gujarat-India.jpg", "publisher": "Wikimedia Commons / Urvish Chaudhari", "accessed": "2026-08-09" }
+      { "title": "Junaraj-Gujarat-India.jpg, Commons photo (geotagged in the Karjan belt) showing the site's temples part-submerged in the reservoir backwater", "url": "https://commons.wikimedia.org/wiki/File:Junaraj-Gujarat-India.jpg", "publisher": "Wikimedia Commons / Urvish Chaudhari", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["status", "location.coordinates", "location.distances_km", "access.last_mile", "history_legend"]
   }

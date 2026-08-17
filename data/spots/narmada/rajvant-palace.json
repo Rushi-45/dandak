@@ -10,15 +10,15 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "Rajpipla's European-style royal palace — colonnaded halls, royal memorabilia and film-shoot lawns, now run as a heritage resort with a museum wing.",
-  "description": "Rajvant Palace, also called Vijay Palace, is the showpiece of Rajpipla's royal past: an early-twentieth-century palace in confident European classical style — domes, Corinthian columns, high colonnaded verandahs — set in lawns above the Karjan river's low country. Built for the Gohil Rajput rulers of Rajpipla state, it stayed with the family after independence and now runs as a heritage resort whose public side includes a museum wing of royal photographs, furniture, trophies and costume.\n\nRajpipla's princely history is more colourful than the town's size suggests — Maharaja Vijaysinhji, its most famous ruler, won the 1934 Epsom Derby with his horse Windsor Lad, still India's only Derby-winning owner. Rooms of memorabilia carry that era, and Bollywood knows the palace well: its lawns and staircases appear regularly in film and television shoots, which occasionally close sections to visitors.\n\nAs a stop, it pairs the museum hour with a walk through the grounds, and works as a heritage-flavoured contrast to the engineering spectacle at Ekta Nagar, forty minutes away.",
+  "summary": "Rajpipla's European-style royal palace, colonnaded halls, royal memorabilia and film-shoot lawns, now run as a heritage resort with a museum wing.",
+  "description": "Rajvant Palace, also called Vijay Palace, is the showpiece of Rajpipla's royal past: an early-twentieth-century palace in confident European classical style, domes, Corinthian columns, high colonnaded verandahs, set in lawns above the Karjan river's low country. Built for the Gohil Rajput rulers of Rajpipla state, it stayed with the family after independence and now runs as a heritage resort whose public side includes a museum wing of royal photographs, furniture, trophies and costume.\n\nRajpipla's princely history is more colourful than the town's size suggests, Maharaja Vijaysinhji, its most famous ruler, won the 1934 Epsom Derby with his horse Windsor Lad, still India's only Derby-winning owner. Rooms of memorabilia carry that era, and Bollywood knows the palace well: its lawns and staircases appear regularly in film and television shoots, which occasionally close sections to visitors.\n\nAs a stop, it pairs the museum hour with a walk through the grounds, and works as a heritage-flavoured contrast to the engineering spectacle at Ekta Nagar, forty minutes away.",
   "highlights": [
     "European classical palace of the Rajpipla royals",
     "Museum wing with royal memorabilia",
     "Lawns familiar from countless film shoots",
     "Easy 40-minute pairing with Ekta Nagar"
   ],
-  "history_legend": "Rajpipla state was ruled by the Gohil Rajput dynasty for centuries before merging with India in 1948. Vijay/Rajvant Palace was raised in 1910 by Maharana Chhatrasinhji for the young Vijaysinhji — who grew up to win the 1934 Epsom Derby with Windsor Lad, still India's only Derby-winning owner.",
+  "history_legend": "Rajpipla state was ruled by the Gohil Rajput dynasty for centuries before merging with India in 1948. Vijay/Rajvant Palace was raised in 1910 by Maharana Chhatrasinhji for the young Vijaysinhji, who grew up to win the 1934 Epsom Derby with Windsor Lad, still India's only Derby-winning owner.",
   "attributes": { "era": "1910", "built_by": "Maharana Chhatrasinhji, for Vijaysinhji" },
   "location": {
     "taluka": "Nandod",
@@ -46,7 +46,7 @@
     "duration_min": 90,
     "best_time_of_day": "afternoon",
     "weekly_closure": null,
-    "notes": "Call ahead if the museum matters to your plan — shoot-day closures are unannounced."
+    "notes": "Call ahead if the museum matters to your plan. Shoot-day closures are unannounced."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2],
@@ -58,7 +58,7 @@
     "activities": ["sightseeing", "museum-visit", "photography"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Late-afternoon light warms the west façade; interiors need permission — ask at the desk."
+    "photography_notes": "Late-afternoon light warms the west façade; interiors need permission, ask at the desk."
   },
   "amenities": {
     "food": "Resort restaurant on site; Rajpipla town eateries minutes away",
@@ -75,13 +75,13 @@
   },
   "tips": [
     "Combine with Harsiddhi Mata temple and an old-town walk for a Rajpipla half-day",
-    "Ask about the Derby story at the museum — the memorabilia makes more sense with it",
+    "Ask about the Derby story at the museum: the memorabilia makes more sense with it",
     "Staying a night here is the easy way to see Ekta Nagar without its hotel crush"
   ],
   "faqs": [
     {
       "q": "Can non-guests visit the palace?",
-      "a": "Yes — the museum wing and grounds are ticketed for day visitors, subject to event and shoot closures. The private residential wings stay off-limits."
+      "a": "Yes. The museum wing and grounds are ticketed for day visitors, subject to event and shoot closures. The private residential wings stay off-limits."
     }
   ],
   "nearby": [
@@ -92,7 +92,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Rajvant Palace, Rajpipla — Heritage Visit Guide",
+    "meta_title": "Rajvant Palace, Rajpipla, Heritage Visit Guide",
     "meta_description": "Rajpipla's Vijay/Rajvant Palace: museum entry, timings, the 1934 Derby story and pairing it with the Statue of Unity."
   },
   "provenance": {
@@ -100,7 +100,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Rajavant Palace — District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" }
+      { "title": "Rajavant Palace, District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
   }

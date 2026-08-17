@@ -17,14 +17,14 @@
     { "id": "narmada-harsiddhi-mata-temple", "distance_km": 2 },
     { "id": "narmada-statue-of-unity", "distance_km": 25 }
   ],
-  "notes": "Sleeping in the 1910 palace is the quiet way to do the SoU circuit — 25 min from the campus without its hotel crush.",
+  "notes": "Sleeping in the 1910 palace is the quiet way to do the SoU circuit, 25 min from the campus without its hotel crush.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Rajavant Palace — District Narmada", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
-      { "title": "Rajvant Palace Resort — Cvent listing", "url": "https://www.cvent.com/venues/rajpipla/resort/rajvant-palace-resort/venue-7101ca9b-52b5-4c55-ac5a-bbc2cbb408b8", "publisher": "cvent.com", "accessed": "2026-08-08" }
+      { "title": "Rajavant Palace, District Narmada", "url": "https://narmada.nic.in/tourist-place/rajavant-palace/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
+      { "title": "Rajvant Palace Resort, Cvent listing", "url": "https://www.cvent.com/venues/rajpipla/resort/rajvant-palace-resort/venue-7101ca9b-52b5-4c55-ac5a-bbc2cbb408b8", "publisher": "cvent.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["contact", "price_band"]
   }

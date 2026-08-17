@@ -4,7 +4,7 @@
  * `tint` is the same hue as the chip, as a raw hex rather than a class, because
  * SpotPlaceholder paints SVG strokes and gradient stops with it. Tailwind cannot
  * generate a class from a runtime value, and an arbitrary-value class built by
- * template string would be purged — so the placeholder uses inline style and
+ * template string would be purged, so the placeholder uses inline style and
  * takes the colour from here. Keep the two in sync: `tint` should be the -300
  * shade the chip's text uses.
  */

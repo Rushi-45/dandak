@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "A wooded knoll above Saputara town with walking paths and quiet town-and-valley views — the low-key alternative to the headline points.",
-  "description": "Governor's Hill rises gently over Saputara's south side, a wooded knoll whose name is a leftover of the colonial habit of reserving the best breeze for administrators. Paths wind up through trees to clearings that look over the town's rooftops, the lake glinting between them, and the valley beyond.\n\nIt is the least programmed of Saputara's viewpoints — no stalls, no pony rides, often nobody at all — which makes it the choice for a quiet walk when the rim-road points are running at holiday volume. The climb is short and shaded, comfortable for anyone who can manage twenty minutes of gentle uphill. Development plans have touched the hill in recent years (walkway and viewing-structure work has been reported); expect some built elements and check locally for current access if the walk matters to your plan.",
+  "summary": "A wooded knoll above Saputara town with walking paths and quiet town-and-valley views, the low-key alternative to the headline points.",
+  "description": "Governor's Hill rises gently over Saputara's south side, a wooded knoll whose name is a leftover of the colonial habit of reserving the best breeze for administrators. Paths wind up through trees to clearings that look over the town's rooftops, the lake glinting between them, and the valley beyond.\n\nIt is the least programmed of Saputara's viewpoints, no stalls, no pony rides, often nobody at all, which makes it the choice for a quiet walk when the rim-road points are running at holiday volume. The climb is short and shaded, comfortable for anyone who can manage twenty minutes of gentle uphill. Development plans have touched the hill in recent years (walkway and viewing-structure work has been reported); expect some built elements and check locally for current access if the walk matters to your plan.",
   "highlights": [
     "Shaded walking paths over the town",
     "Lake-and-rooftop views from the clearings",
@@ -87,7 +87,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Governor's Hill, Saputara — Quiet Walks",
+    "meta_title": "Governor's Hill, Saputara, Quiet Walks",
     "meta_description": "Governor's Hill in Saputara: the shaded walking alternative to the busy viewpoints, with town and lake views."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "Governor's Hill Tourism (Saputara)", "url": "https://travelsetu.com/guide/governor-s-hill-tourism", "publisher": "travelsetu.com", "accessed": "2026-08-08" },
-      { "title": "Saputara Adventure Park (at Governor Hill) — Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d8700374-Reviews-Saputara_Adventure_Park-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
+      { "title": "Saputara Adventure Park (at Governor Hill), Tripadvisor", "url": "https://www.tripadvisor.in/Attraction_Review-g1156008-d8700374-Reviews-Saputara_Adventure_Park-Saputara_Dangs_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates", "visit.notes", "access.last_mile"]
   }

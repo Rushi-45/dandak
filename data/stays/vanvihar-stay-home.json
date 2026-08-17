@@ -9,7 +9,7 @@
   "spot_id": "dang-temburgartha-dam",
   "coordinates": { "lat": 20.7103, "lng": 73.7095, "precision": "approximate" },
   "price_band": "budget",
-  "booking": { "mode": "walk-in", "url": null, "notes": "A village stay home by the Temburgartha dam pocket south of Ahwa — mapped but not listed on any booking platform. Ask locally or via Ahwa contacts, and confirm before building an overnight around it" },
+  "booking": { "mode": "walk-in", "url": null, "notes": "A village stay home by the Temburgartha dam pocket south of Ahwa, mapped but not listed on any booking platform. Ask locally or via Ahwa contacts, and confirm before building an overnight around it" },
   "contact": null,
   "amenities": ["village rooms", "home-cooked meals on request", "dam and sunset ridge nearby"],
   "nearest_spots": [
@@ -17,13 +17,13 @@
     { "id": "dang-kunda-falls", "distance_km": 6 },
     { "id": "dang-valley-of-wasurna", "distance_km": 5 }
   ],
-  "notes": "The only bed in the Temburgartha–Wasurna pocket — stay here to catch the dam's sunset ridge and the south-western falls circuit without the drive back to Ahwa.",
+  "notes": "The only bed in the Temburgartha–Wasurna pocket. Stay here to catch the dam's sunset ridge and the south-western falls circuit without the drive back to Ahwa.",
   "provenance": {
     "created": "2026-08-10",
     "last_verified": null,
     "confidence": "low",
     "sources": [
-      { "title": "Google Maps — place 'Vanvihar stay home' (20.7103, 73.7095); supplied by the maintainer", "url": "https://www.google.com/maps/place/Vanvihar+stay+home/@20.7102938,73.709513,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps. Place 'Vanvihar stay home' (20.7103, 73.7095); supplied by the maintainer", "url": "https://www.google.com/maps/place/Vanvihar+stay+home/@20.7102938,73.709513,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["booking.notes", "contact", "amenities", "price_band"]
   }

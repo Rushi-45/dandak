@@ -10,10 +10,10 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Ahwa's own waterfall — Kunda drops in the forest edge barely six kilometres south of the district headquarters, the town's quick monsoon fix.",
-  "description": "Kunda is the waterfall Ahwa keeps for itself: a monsoon drop in the forest country immediately south of town, close enough that it works as an evening outing rather than an expedition. For travellers based in Ahwa it is the zero-effort taste of what the district's remoter belts do at scale — and for everyone else it is the consolation stop when the deep-forest falls are out of reach on a short trip.\n\nExpect local picnic crowds on August weekends and near-solitude otherwise. As everywhere in Dang, the season is the story: July to October or nothing.",
+  "summary": "Ahwa's own waterfall. Kunda drops in the forest edge barely six kilometres south of the district headquarters, the town's quick monsoon fix.",
+  "description": "Kunda is the waterfall Ahwa keeps for itself: a monsoon drop in the forest country immediately south of town, close enough that it works as an evening outing rather than an expedition. For travellers based in Ahwa it is the zero-effort taste of what the district's remoter belts do at scale, and for everyone else it is the consolation stop when the deep-forest falls are out of reach on a short trip.\n\nExpect local picnic crowds on August weekends and near-solitude otherwise. As everywhere in Dang, the season is the story: July to October or nothing.",
   "highlights": [
-    "Six kilometres from Ahwa — the district's most accessible interior fall",
+    "Six kilometres from Ahwa: the district's most accessible interior fall",
     "Evening-outing scale; no expedition required",
     "Quiet on weekdays even at monsoon peak"
   ],
@@ -45,7 +45,7 @@
     "duration_min": 60,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "Ahwa's evening spot in season — mornings are quieter."
+    "notes": "Ahwa's evening spot in season. Mornings are quieter."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10],
@@ -57,7 +57,7 @@
     "activities": ["sightseeing", "picnic", "photography", "nature-walk"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Golden-hour light works — the fall faces the evening sun in season."
+    "photography_notes": "Golden-hour light works. The fall faces the evening sun in season."
   },
   "amenities": {
     "food": "Ahwa town, six kilometres away, has everything",
@@ -87,7 +87,7 @@
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Kunda Waterfall — Ahwa's Own Monsoon Falls",
+    "meta_title": "Kunda Waterfall. Ahwa's Own Monsoon Falls",
     "meta_description": "Kunda waterfall six kilometres from Ahwa: the district headquarters' evening falls, season window and pairings."
   },
   "provenance": {
@@ -95,7 +95,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Kunda waterfall' (20.7446, 73.7176); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Kunda+waterfall/@20.7445836,73.7176247,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Kunda waterfall' (20.7446, 73.7176); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Kunda+waterfall/@20.7445836,73.7176247,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

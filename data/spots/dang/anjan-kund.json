@@ -10,14 +10,14 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A forest kund and cave on Anjani hill held locally as Hanuman's birthplace — a short trek into Dang's Ramayana geography.",
-  "description": "Anjan Kund extends Dang's Ramayana map beyond the Shabari sites: a spring-fed kund and cave shrine on Anjani Parvat, held in local tradition to be where Anjani gave birth to Hanuman. The claim is contested by other regions of India — as Hanuman birthplaces famously are — but Dang's version comes with an atmospheric setting: forest slopes, a rock pool that holds water into the dry months, a seasonal waterfall off the cave scarp, and a cave where pilgrims leave sindoor and coconuts.\n\nReaching it is a small adventure — a rough approach road and then a forest footpath climb of twenty to forty minutes depending on the route taken. Hanuman Jayanti and Shravan Saturdays bring local pilgrim traffic; most other days you will have the hillside to yourself apart from herders.\n\nCombine it with the Shabari Dham circuit for a half-day of Dang's sacred geography. Facilities are effectively nil — water, footwear and daylight margins are your responsibility.",
+  "summary": "A forest kund and cave on Anjani hill held locally as Hanuman's birthplace, a short trek into Dang's Ramayana geography.",
+  "description": "Anjan Kund extends Dang's Ramayana map beyond the Shabari sites: a spring-fed kund and cave shrine on Anjani Parvat, held in local tradition to be where Anjani gave birth to Hanuman. The claim is contested by other regions of India, as Hanuman birthplaces famously are, but Dang's version comes with an atmospheric setting: forest slopes, a rock pool that holds water into the dry months, a seasonal waterfall off the cave scarp, and a cave where pilgrims leave sindoor and coconuts.\n\nReaching it is a small adventure, a rough approach road and then a forest footpath climb of twenty to forty minutes depending on the route taken. Hanuman Jayanti and Shravan Saturdays bring local pilgrim traffic; most other days you will have the hillside to yourself apart from herders.\n\nCombine it with the Shabari Dham circuit for a half-day of Dang's sacred geography. Facilities are effectively nil: water, footwear and daylight margins are your responsibility.",
   "highlights": [
-    "Dang's claimed Hanuman birthplace — kund and cave shrine",
+    "Dang's claimed Hanuman birthplace, kund and cave shrine",
     "Forest footpath trek of 20–40 minutes",
     "Near-solitude outside festival days"
   ],
-  "history_legend": "Local tradition holds Anjani Parvat as the site where Anjani bore Hanuman; the kund is her bathing pool in the telling. Other regions — from Anjaneri near Nashik to sites in Karnataka — hold rival claims. Dang's version belongs to the same living Ramayana geography as Shabari Dham and Pampa Sarovar.",
+  "history_legend": "Local tradition holds Anjani Parvat as the site where Anjani bore Hanuman; the kund is her bathing pool in the telling. Other regions, from Anjaneri near Nashik to sites in Karnataka, hold rival claims. Dang's version belongs to the same living Ramayana geography as Shabari Dham and Pampa Sarovar.",
   "attributes": { "deity": "Hanuman / Anjani Mata" },
   "location": {
     "taluka": "Ahwa",
@@ -30,7 +30,7 @@
   },
   "access": {
     "modes": {
-      "road": "Via the Don village road from Ahwa (~33 km to Don); the caves and kund are on Don's own plateau — ask in the village for the path",
+      "road": "Via the Don village road from Ahwa (~33 km to Don); the caves and kund are on Don's own plateau, ask in the village for the path",
       "rail": "No practical railhead",
       "air": "Surat (~150 km)"
     },
@@ -60,11 +60,11 @@
     "photography_notes": "The kund pool and cave mouth shoot best mid-morning when light reaches the slope."
   },
   "amenities": {
-    "food": "None — carry everything; nearest food at Ahwa",
+    "food": "None. Carry everything; nearest food at Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "A local from the base village is worth the small fee — paths braid",
+    "guides": "A local from the base village is worth the small fee, paths braid",
     "ev_charging": false,
     "stay_nearby": []
   },
@@ -77,7 +77,7 @@
   },
   "tips": [
     "Fold into the Shabari Dham–Pampa Sarovar circuit for a sacred-geography half day",
-    "Ask directions in Ahwa rather than trusting maps blindly — the trailhead is unsigned"
+    "Ask directions in Ahwa rather than trusting maps blindly: the trailhead is unsigned"
   ],
   "faqs": [
     {
@@ -126,7 +126,7 @@
     ]
   },
   "seo": {
-    "meta_title": "Anjan Kund, Dang — Hanuman Lore Trek",
+    "meta_title": "Anjan Kund, Dang, Hanuman Lore Trek",
     "meta_description": "Trekking to Anjan Kund on Anjani Parvat in Dang: the local Hanuman-birthplace tradition, route notes and season."
   },
   "provenance": {
@@ -134,7 +134,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "OpenStreetMap — 'Anjani Caves & Waterfall' (node 11425667070; pinned in the same local mapping session as the verified Gira and Girmal nodes)", "url": "https://www.openstreetmap.org/node/11425667070", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
+      { "title": "OpenStreetMap, 'Anjani Caves & Waterfall' (node 11425667070; pinned in the same local mapping session as the verified Gira and Girmal nodes)", "url": "https://www.openstreetmap.org/node/11425667070", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.distances_km", "access.road", "access.last_mile"]
   }

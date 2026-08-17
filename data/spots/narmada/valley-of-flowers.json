@@ -10,10 +10,10 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "Riverside flower gardens along the Narmada below the Statue of Unity — curated beds, lawns and photo spots best in the cool months.",
-  "description": "The Valley of Flowers spreads along the Narmada's banks near the statue: a long ribbon of curated flowerbeds, lawns, themed gardens and sculpture-dotted walks, planted at a scale that only makes sense next to a 182-metre statue. It is a landscaped showpiece rather than a wild meadow — expect seasonal bedding in bold blocks of colour, topiary, selfie installations and buggy routes rather than trails.\n\nAs a break between the campus's ticketed headliners it works well: the river keeps a breeze moving, the statue looms over the treeline for the signature photo, and children can run without a queue in sight. Bloom quality tracks the cool season — November to February is the peak, with fresh planting after the monsoon; by late spring the beds thin out.\n\nGo golden-hour if you can: the statue picks up warm light from across the river and the crowds thin as tour buses rotate to the laser show.",
+  "summary": "Riverside flower gardens along the Narmada below the Statue of Unity, curated beds, lawns and photo spots best in the cool months.",
+  "description": "The Valley of Flowers spreads along the Narmada's banks near the statue: a long ribbon of curated flowerbeds, lawns, themed gardens and sculpture-dotted walks, planted at a scale that only makes sense next to a 182-metre statue. It is a landscaped showpiece rather than a wild meadow: expect seasonal bedding in bold blocks of colour, topiary, selfie installations and buggy routes rather than trails.\n\nAs a break between the campus's ticketed headliners it works well: the river keeps a breeze moving, the statue looms over the treeline for the signature photo, and children can run without a queue in sight. Bloom quality tracks the cool season: November to February is the peak, with fresh planting after the monsoon; by late spring the beds thin out.\n\nGo golden-hour if you can: the statue picks up warm light from across the river and the crowds thin as tour buses rotate to the laser show.",
   "highlights": [
-    "Statue of Unity rising over the flowerbeds — the signature frame",
+    "Statue of Unity rising over the flowerbeds, the signature frame",
     "Riverside lawns and buggy-friendly walks",
     "Peak bloom November–February"
   ],
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": ["tue", "wed", "thu", "fri", "sat", "sun"], "open": "09:00", "close": "17:30", "note": "Closed Mondays with the campus" }],
-    "fees": [{ "type": "entry", "amount_inr": 0, "note": "No separate fee — access included with SoU-area ticketing. Verified Aug 2026" }],
+    "fees": [{ "type": "entry", "amount_inr": 0, "note": "No separate fee, access included with SoU-area ticketing. Verified Aug 2026" }],
     "booking": { "required": false, "url": "https://www.soutickets.in/", "notes": "Same portal as other campus tickets when sold separately" },
     "duration_min": 90,
     "best_time_of_day": "evening",
@@ -71,18 +71,18 @@
   "safety": {
     "warnings": [
       "Stay on paths near the river edge",
-      "Sun-exposed in the afternoon — hats for children"
+      "Sun-exposed in the afternoon, hats for children"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
   "tips": [
     "Slot it for golden hour between the statue and the laser show",
-    "Buggies are worth it with elderly visitors — the ribbon is longer than it looks"
+    "Buggies are worth it with elderly visitors: the ribbon is longer than it looks"
   ],
   "faqs": [
     {
       "q": "Is this like the Himalayan Valley of Flowers?",
-      "a": "No — it's a landscaped garden showcase, not an alpine meadow. Judge it as a riverside park with the statue as backdrop and it delivers."
+      "a": "No, it's a landscaped garden showcase, not an alpine meadow. Judge it as a riverside park with the statue as backdrop and it delivers."
     }
   ],
   "nearby": [
@@ -93,7 +93,7 @@
   "itineraries": ["sou-express-1-day", "sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Valley of Flowers, Ekta Nagar — Visit Guide",
+    "meta_title": "Valley of Flowers, Ekta Nagar, Visit Guide",
     "meta_description": "Best months, timings and photo spots for the Valley of Flowers (Bharat Van) beside the Statue of Unity."
   },
   "provenance": {
@@ -101,7 +101,7 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Valley of Flowers, Kevadiya — Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/kevadiya/valley-of-flowers", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Valley of Flowers, Kevadiya, Timings, Entry Fee", "url": "https://www.trawell.in/gujarat/kevadiya/valley-of-flowers", "publisher": "trawell.in", "accessed": "2026-08-08" },
       { "title": "Valley of Flowers Kevadia (Bharat Van) Guide 2026", "url": "https://chalbanjare.com/faq/valley-of-flowers-kevadia", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]

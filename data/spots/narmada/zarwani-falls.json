@@ -10,8 +10,8 @@
   "cluster": "ekta-nagar-area",
   "status": "active",
   "district": "narmada",
-  "summary": "A forest waterfall inside Shoolpaneshwar sanctuary, 30 minutes from Ekta Nagar — rocky gorge, shallow pools and a proper jungle feel.",
-  "description": "Zarwani is the Statue of Unity area's escape hatch into real forest: a waterfall tucked into a rocky gorge inside the Shoolpaneshwar Wildlife Sanctuary, reached by a short forest road off the Rajpipla–Ekta Nagar side. The fall itself is modest in height but full of character — water sliding and dropping through sculpted black rock into shallow pools, dense canopy overhead, and the sanctuary's birdlife loud in the gaps.\n\nEntry is managed at a forest check post (small fee, daylight hours), and the final approach is a walk along the stream bed — uneven, wet, and slippery enough to demand proper footwear. In monsoon and just after, the flow is strong and the gorge runs green; by late winter it quiets to a trickle-fed stream, still pleasant as a forest walk.\n\nThe forest department's Zarwani eco-campsite sits nearby for those who want a night in the sanctuary. Weekends pull day-trippers from the SoU crowds; weekday mornings you may share the gorge with nobody but langurs.",
+  "summary": "A forest waterfall inside Shoolpaneshwar sanctuary, 30 minutes from Ekta Nagar, rocky gorge, shallow pools and a proper jungle feel.",
+  "description": "Zarwani is the Statue of Unity area's escape hatch into real forest: a waterfall tucked into a rocky gorge inside the Shoolpaneshwar Wildlife Sanctuary, reached by a short forest road off the Rajpipla–Ekta Nagar side. The fall itself is modest in height but full of character, water sliding and dropping through sculpted black rock into shallow pools, dense canopy overhead, and the sanctuary's birdlife loud in the gaps.\n\nEntry is managed at a forest check post (small fee, daylight hours), and the final approach is a walk along the stream bed, uneven, wet, and slippery enough to demand proper footwear. In monsoon and just after, the flow is strong and the gorge runs green; by late winter it quiets to a trickle-fed stream, still pleasant as a forest walk.\n\nThe forest department's Zarwani eco-campsite sits nearby for those who want a night in the sanctuary. Weekends pull day-trippers from the SoU crowds; weekday mornings you may share the gorge with nobody but langurs.",
   "highlights": [
     "Waterfall gorge inside Shoolpaneshwar sanctuary",
     "30-minute hop from the Statue of Unity zone",
@@ -46,7 +46,7 @@
     "duration_min": 120,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Exit before the check-post closing time — it is enforced."
+    "notes": "Exit before the check-post closing time. It is enforced."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10, 11],
@@ -58,10 +58,10 @@
     "activities": ["sightseeing", "photography", "nature-walk", "picnic", "birdwatching"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "The sculpted black rock rewards slow shutters — carry a small tripod and an ND filter; canopy keeps light low all day."
+    "photography_notes": "The sculpted black rock rewards slow shutters. Carry a small tripod and an ND filter; canopy keeps light low all day."
   },
   "amenities": {
-    "food": "None past the check post — carry snacks and water; meals in Ekta Nagar",
+    "food": "None past the check post. Carry snacks and water; meals in Ekta Nagar",
     "toilets": "basic",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
@@ -71,21 +71,21 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is treacherous — proper grip footwear, not sandals",
+      "Wet rock is treacherous, proper grip footwear, not sandals",
       "Do not enter deep pools; undertows form in monsoon flow",
-      "This is a wildlife sanctuary — no loud music, no litter, exit by closing"
+      "This is a wildlife sanctuary, no loud music, no litter, exit by closing"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~40 km)", "police": "Ekta Nagar (Kevadia) PS; forest check post on site", "notes": null }
   },
   "tips": [
     "Weekday mornings are near-private; weekends fill by 11:00",
     "Combine with Garudeshwar or the rafting base for a full off-campus day",
-    "Keep a dry change of clothes in the car — you will get wet"
+    "Keep a dry change of clothes in the car: you will get wet"
   ],
   "faqs": [
     {
       "q": "Can you swim at Zarwani?",
-      "a": "Shallow pool-wading happens in lean flow, but swimming is unsafe and discouraged — monsoon currents are strong and rescue is far away. Treat it as a walk-and-watch waterfall."
+      "a": "Shallow pool-wading happens in lean flow, but swimming is unsafe and discouraged. Monsoon currents are strong and rescue is far away. Treat it as a walk-and-watch waterfall."
     }
   ],
   "nearby": [
@@ -107,7 +107,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Zarwani Waterfall, Ekta Nagar — Forest Guide",
+    "meta_title": "Zarwani Waterfall, Ekta Nagar, Forest Guide",
     "meta_description": "How to reach Zarwani falls inside Shoolpaneshwar sanctuary: check-post entry, the stream-bed walk, best months and safety."
   },
   "provenance": {
@@ -115,8 +115,8 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Zarwani Waterfalls, Kevadiya — Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Zarwani Waterfall Gujarat Guide 2026 — Timings, Entry Fee, Trek", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
+      { "title": "Zarwani Waterfalls, Kevadiya, Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/kevadiya/zarwani-waterfalls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Zarwani Waterfall Gujarat Guide 2026, Timings, Entry Fee, Trek", "url": "https://chalbanjare.com/faq/zarwani-waterfall", "publisher": "chalbanjare.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates"]
   }

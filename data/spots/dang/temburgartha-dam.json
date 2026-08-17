@@ -10,11 +10,11 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A small dam and reservoir ten kilometres south of Ahwa — evening water views, and the ridge beside it doubles as the local sunset (and phone-signal) point.",
-  "description": "Temburgartha is Ahwa's water-and-sunset outing: a small irrigation dam south of town whose reservoir gives the forest country a rare open horizon. Locals drive out for the evening — the adjoining ridge is pinned on the map, with pleasing honesty, as 'Sunset point. Net point.': the spot where the view opens up and, just as usefully, where phone signal returns in a belt that mostly has none.\n\nIt is a picnic-and-pause place rather than a sight — banks, water, hills, chai from a flask — and it pairs with Kunda waterfall on the same side of town for Ahwa's easy half-day. The usual dam courtesies apply: viewpoints and banks are the visit, not the structure.\n\nA village homestay, Vanvihar, sits a kilometre north — currently the only bed in this pocket of the district.",
+  "summary": "A small dam and reservoir ten kilometres south of Ahwa, evening water views, and the ridge beside it doubles as the local sunset (and phone-signal) point.",
+  "description": "Temburgartha is Ahwa's water-and-sunset outing: a small irrigation dam south of town whose reservoir gives the forest country a rare open horizon. Locals drive out for the evening: the adjoining ridge is pinned on the map, with pleasing honesty, as 'Sunset point. Net point.': the spot where the view opens up and, just as usefully, where phone signal returns in a belt that mostly has none.\n\nIt is a picnic-and-pause place rather than a sight, banks, water, hills, chai from a flask, and it pairs with Kunda waterfall on the same side of town for Ahwa's easy half-day. The usual dam courtesies apply: viewpoints and banks are the visit, not the structure.\n\nA village homestay, Vanvihar, sits a kilometre north, currently the only bed in this pocket of the district.",
   "highlights": [
     "Open reservoir horizon in closed forest country",
-    "The local sunset point — and the belt's phone-signal spot",
+    "The local sunset point, and the belt's phone-signal spot",
     "Pairs with Kunda falls for Ahwa's easy half-day"
   ],
   "history_legend": null,
@@ -45,7 +45,7 @@
     "duration_min": 90,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "Respect any barriers near the dam structure — the banks and ridge are the visit."
+    "notes": "Respect any barriers near the dam structure. The banks and ridge are the visit."
   },
   "seasonality": {
     "best_months": [8, 9, 10, 11, 12, 1],
@@ -60,7 +60,7 @@
     "photography_notes": "Sunset over the water from the ridge; winter mornings bring waterbirds to the shallows."
   },
   "amenities": {
-    "food": "None — carry from Ahwa",
+    "food": "None. Carry from Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
@@ -70,27 +70,27 @@
   },
   "safety": {
     "warnings": [
-      "No swimming — reservoir depths and slopes are treacherous",
+      "No swimming: reservoir depths and slopes are treacherous",
       "The ridge edge is unfenced; mind children at sunset"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~10 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Kunda falls in the afternoon, the dam ridge for sunset — Ahwa's easy double",
+    "Kunda falls in the afternoon, the dam ridge for sunset, Ahwa's easy double",
     "Vanvihar stay home, a kilometre north, is the pocket's only homestay if you want to wake up here",
-    "The ridge is where your phone comes back to life — locals call it the net point for a reason"
+    "The ridge is where your phone comes back to life, locals call it the net point for a reason"
   ],
   "faqs": [],
   "nearby": [
     { "id": "dang-kunda-falls", "distance_km": 7 },
     { "id": "dang-maharaychond-forest", "distance_km": 6, "note": "The picnic woods on the Wasurna side" },
     { "id": "dang-shivghat", "distance_km": 12 },
-    { "id": "dang-don-hill", "distance_km": 15, "note": "The plateau — continue south-east" }
+    { "id": "dang-don-hill", "distance_km": 15, "note": "The plateau, continue south-east" }
   ],
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Temburgartha Dam, Dang — Ahwa's Sunset Water",
+    "meta_title": "Temburgartha Dam, Dang, Ahwa's Sunset Water",
     "meta_description": "Temburgartha dam south of Ahwa: reservoir banks, the sunset-and-signal ridge, Vanvihar homestay and the Kunda falls pairing."
   },
   "provenance": {
@@ -98,7 +98,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — 'Temburgartha dam sites' (20.7031, 73.7164) with the adjoining 'Sunset point. Net point.' (20.7041, 73.7219) and 'Vanvihar stay home' pins; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Temburgartha+dam+sites/@20.7031098,73.716419,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, 'Temburgartha dam sites' (20.7031, 73.7164) with the adjoining 'Sunset point. Net point.' (20.7041, 73.7219) and 'Vanvihar stay home' pins; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Temburgartha+dam+sites/@20.7031098,73.716419,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["attributes.purpose", "amenities.mobile_network"]
   }

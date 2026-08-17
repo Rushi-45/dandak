@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "The far corner of the Waghai-side falls country — Chirai drops in the forest toward the Vansda border, the loop's last and loneliest stop.",
-  "description": "Chirai closes out the western falls loop: a forest drop in the corner where Dang runs toward the Vansda border country, a stretch that even the district's own weekend traffic rarely reaches. The pin and a traveller's visit are the record; the reward, in season, is a monsoon waterfall with a decent chance of having it entirely to yourself.\n\nBaaj and its view point sit a few kilometres north-east on the same lanes; Vansda National Park's forests are just over the western line. Standard pocket rules — carry everything, go with the rains, ask the villages.",
+  "summary": "The far corner of the Waghai-side falls country. Chirai drops in the forest toward the Vansda border, the loop's last and loneliest stop.",
+  "description": "Chirai closes out the western falls loop: a forest drop in the corner where Dang runs toward the Vansda border country, a stretch that even the district's own weekend traffic rarely reaches. The pin and a traveller's visit are the record; the reward, in season, is a monsoon waterfall with a decent chance of having it entirely to yourself.\n\nBaaj and its view point sit a few kilometres north-east on the same lanes; Vansda National Park's forests are just over the western line. Standard pocket rules: carry everything, go with the rains, ask the villages.",
   "highlights": [
     "The western loop's loneliest fall",
     "Forest country running toward the Vansda border",
@@ -45,7 +45,7 @@
     "duration_min": 90,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Open forest; daylight only, and tell someone your plan — this corner is empty."
+    "notes": "Open forest; daylight only, and tell someone your plan. This corner is empty."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10],
@@ -57,20 +57,20 @@
     "activities": ["trekking", "nature-walk", "photography"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Deep-forest gloom — fast glass or steady hands."
+    "photography_notes": "Deep-forest gloom, fast glass or steady hands."
   },
   "amenities": {
-    "food": "None anywhere near — carry the day's supplies",
+    "food": "None anywhere near. Carry the day's supplies",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Take a villager — the last stretch is unmarked forest",
+    "guides": "Take a villager. The last stretch is unmarked forest",
     "ev_charging": false,
     "stay_nearby": ["dang-kilad-nature-campsite"]
   },
   "safety": {
     "warnings": [
-      "Near-zero network and no traffic — never go alone",
+      "Near-zero network and no traffic, never go alone",
       "Slick rock and leeches through the monsoon window"
     ],
     "emergency": { "nearest_hospital": "CHC Waghai (~20 km)", "police": "Waghai PS", "notes": null }
@@ -87,7 +87,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Chirai Waterfalls, Dang — The Western Loop's Last Stop",
+    "meta_title": "Chirai Waterfalls, Dang, The Western Loop's Last Stop",
     "meta_description": "Chirai waterfalls toward the Vansda border: Dang's loneliest western fall, its season and the Baaj–Koshmal pairing."
   },
   "provenance": {
@@ -95,7 +95,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Chirai Waterfalls' (20.6518, 73.5279); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chirai+Waterfalls/@20.6518045,73.5279422,14z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Chirai Waterfalls' (20.6518, 73.5279); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chirai+Waterfalls/@20.6518045,73.5279422,14z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

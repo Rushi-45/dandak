@@ -10,12 +10,12 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "A broad low cascade in monsoon spate by Chhatwada village — quiet company for Kesharva falls in the belt west of Rajpipla.",
-  "description": "Chhatwada is the second falls of the Kesharva belt: a broad, low cascade — mapped locally as 'Handi waterfall' — where the village river drops over a rock step and turns brown-white with every wet spell. It is a spate waterfall in the most literal sense: the show is the volume, not the height, and in August the whole step disappears under churning floodwater.\n\nThe falls sit about a kilometre and a half from Chhatwada village, some twenty kilometres west of Rajpipla on the same country roads that serve Kesharva — the two pair naturally, nine kilometres apart, for a half-day of the belt's monsoon water. Facilities are none; viewing is from the rocks above the step, and the usual spate rules apply doubly here because the flow rises with almost no warning.\n\nLike Kesharva, this is village land that stays clean because visitors have so far kept it that way.",
+  "summary": "A broad low cascade in monsoon spate by Chhatwada village. Quiet company for Kesharva falls in the belt west of Rajpipla.",
+  "description": "Chhatwada is the second falls of the Kesharva belt: a broad, low cascade, mapped locally as 'Handi waterfall', where the village river drops over a rock step and turns brown-white with every wet spell. It is a spate waterfall in the most literal sense: the show is the volume, not the height, and in August the whole step disappears under churning floodwater.\n\nThe falls sit about a kilometre and a half from Chhatwada village, some twenty kilometres west of Rajpipla on the same country roads that serve Kesharva, the two pair naturally, nine kilometres apart, for a half-day of the belt's monsoon water. Facilities are none; viewing is from the rocks above the step, and the usual spate rules apply doubly here because the flow rises with almost no warning.\n\nLike Kesharva, this is village land that stays clean because visitors have so far kept it that way.",
   "highlights": [
     "Broad rock-step cascade that runs huge in spate",
     "Pairs with Kesharva falls 9 km away",
-    "Village setting — no gates, no crowds, no stalls"
+    "Village setting, no gates, no crowds, no stalls"
   ],
   "history_legend": null,
   "attributes": {},
@@ -45,7 +45,7 @@
     "duration_min": 90,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "A spate waterfall — it is at its best, and most dangerous, in the days right after heavy rain."
+    "notes": "A spate waterfall. It is at its best, and most dangerous, in the days right after heavy rain."
   },
   "seasonality": {
     "best_months": [7, 8, 9],
@@ -57,10 +57,10 @@
     "activities": ["sightseeing", "picnic", "photography", "nature-walk"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Shoot from the high rocks above the step — the brown-white churn reads best with something green in frame for scale."
+    "photography_notes": "Shoot from the high rocks above the step, the brown-white churn reads best with something green in frame for scale."
   },
   "amenities": {
-    "food": "None — carry everything from Rajpipla",
+    "food": "None. Carry everything from Rajpipla",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
@@ -70,19 +70,19 @@
   },
   "safety": {
     "warnings": [
-      "Spate flow rises with little warning — stay off the step and the mid-river rocks in the rains",
+      "Spate flow rises with little warning: stay off the step and the mid-river rocks in the rains",
       "No barriers, no lifeguards; watch children on the wet rock above the drop"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~20 km)", "police": "Rajpipla rural PS", "notes": null }
   },
   "tips": [
-    "Do it with Kesharva falls — nine kilometres apart, one monsoon half-day",
+    "Do it with Kesharva falls, nine kilometres apart, one monsoon half-day",
     "Go a day or two after heavy rain for the full spate without the peak danger",
-    "Carry out what you carry in — the belt's falls are clean because visitors keep them so"
+    "Carry out what you carry in: the belt's falls are clean because visitors keep them so"
   ],
   "faqs": [],
   "nearby": [
-    { "id": "narmada-kesharva-falls", "distance_km": 9, "note": "The belt's bathing falls — natural pairing" },
+    { "id": "narmada-kesharva-falls", "distance_km": 9, "note": "The belt's bathing falls, natural pairing" },
     { "id": "narmada-rajvant-palace", "distance_km": 20 },
     { "id": "narmada-kadia-dungar-caves", "distance_km": 30 }
   ],
@@ -100,7 +100,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Chhatwada (Handi) Waterfall — Rajpipla's Spate Falls",
+    "meta_title": "Chhatwada (Handi) Waterfall. Rajpipla's Spate Falls",
     "meta_description": "Chhatwada waterfall near Rajpipla: the broad rock-step cascade by the village, its monsoon-spate window, and pairing with Kesharva."
   },
   "provenance": {
@@ -108,7 +108,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Handi waterfall' (21.7677, 73.4279) by Chhatwada village 393145; visited and photographed by the maintainer", "url": "https://maps.app.goo.gl/W3oWGvt1UgapAbX47", "publisher": "Google Maps (maintainer's contribution link)", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Handi waterfall' (21.7677, 73.4279) by Chhatwada village 393145; visited and photographed by the maintainer", "url": "https://maps.app.goo.gl/W3oWGvt1UgapAbX47", "publisher": "Google Maps (maintainer's contribution link)", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "location.admin_district", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
   }

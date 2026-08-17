@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "The Ankada Dhodh at Vangan village near Vansda — a vlog-discovered border fall, with the Gandavle hill viewpoint above the same village.",
-  "description": "Vangan's Ankada Dhodh had a small vlog moment — 'newly discovered beautiful location, sixteen kilometres from Vansda' — and the map has since caught up with pins for the falls, its twin Advait a short walk east, and the Gandavle hill above the village for those who want a viewpoint with their waterfall. Administratively this is Vansda taluka of Navsari; experientially it belongs to the same western forest orbit as Vansda National Park and Janki Van.\n\nExpect a village-lane approach, a forest walk in, and monsoon-only flow. The Gandavle climb is the add-on for clear days — village fields and border forest from above.",
+  "summary": "The Ankada Dhodh at Vangan village near Vansda. A vlog-discovered border fall, with the Gandavle hill viewpoint above the same village.",
+  "description": "Vangan's Ankada Dhodh had a small vlog moment, 'newly discovered beautiful location, sixteen kilometres from Vansda', and the map has since caught up with pins for the falls, its twin Advait a short walk east, and the Gandavle hill above the village for those who want a viewpoint with their waterfall. Administratively this is Vansda taluka of Navsari; experientially it belongs to the same western forest orbit as Vansda National Park and Janki Van.\n\nExpect a village-lane approach, a forest walk in, and monsoon-only flow. The Gandavle climb is the add-on for clear days, village fields and border forest from above.",
   "highlights": [
     "The vlogs' 'newly discovered' Ankada Dhodh",
     "Advait falls and the Gandavle hill viewpoint in the same village",
@@ -70,8 +70,8 @@
   },
   "safety": {
     "warnings": [
-      "Wet rock is slick — grip footwear",
-      "The Gandavle slopes are open — avoid in lightning weather"
+      "Wet rock is slick, grip footwear",
+      "The Gandavle slopes are open, avoid in lightning weather"
     ],
     "emergency": { "nearest_hospital": "CHC Vansda (~16 km)", "police": "Vansda PS", "notes": null }
   },
@@ -88,7 +88,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Vangan Waterfall (Ankada Dhodh) — Vansda's Border Fall",
+    "meta_title": "Vangan Waterfall (Ankada Dhodh). Vansda's Border Fall",
     "meta_description": "The Ankada Dhodh at Vangan near Vansda: the falls, Advait next door, the Gandavle hill above, and the western-day pairings."
   },
   "provenance": {
@@ -96,8 +96,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — 'Vangan waterfall (Ankada dhodh)' (20.6839, 73.4372) with the 'Vangan Gandavle Hill' pin (20.6996, 73.4396); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Vangan+waterfall+(Ankada+dhodh)/@20.68394,73.437232,14z", "publisher": "Google Maps", "accessed": "2026-08-10" },
-      { "title": "Vangan Waterfall (Aakda Dhodh) — 'newly discovered... about 16 km from Vansda' (vlog)", "url": "https://www.youtube.com/watch?v=yd4XPNc--1s", "publisher": "YouTube", "accessed": "2026-08-10" }
+      { "title": "Google Maps, 'Vangan waterfall (Ankada dhodh)' (20.6839, 73.4372) with the 'Vangan Gandavle Hill' pin (20.6996, 73.4396); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Vangan+waterfall+(Ankada+dhodh)/@20.68394,73.437232,14z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Vangan Waterfall (Aakda Dhodh), 'newly discovered... about 16 km from Vansda' (vlog)", "url": "https://www.youtube.com/watch?v=yd4XPNc--1s", "publisher": "YouTube", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.distances_km", "access.last_mile", "amenities.mobile_network"]
   }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "saputara-waghai-2-day",
   "slug": "saputara-waghai-2-day",
-  "title": "Saputara + Waghai Belt — Two Easy Days",
+  "title": "Saputara + Waghai Belt, Two Easy Days",
   "duration_days": 2,
   "districts": ["dang"],
   "themes": ["family", "nature", "monsoon", "weekend-getaway"],
@@ -20,9 +20,9 @@
   ],
   "day_notes": [
     { "day": 1, "note": "Saputara's core, unhurried. Dinner and overnight in the hotel belt." },
-    { "day": 2, "note": "Descend the ghat (~50 km, allow 75–90 min with viewpoints), do the Waghai trio, lunch in Waghai town, and exit toward Surat/Bilimora — or climb back for a second Saputara night." }
+    { "day": 2, "note": "Descend the ghat (~50 km, allow 75–90 min with viewpoints), do the Waghai trio, lunch in Waghai town, and exit toward Surat/Bilimora, or climb back for a second Saputara night." }
   ],
   "total_drive_km": 120,
-  "notes": "In October–March, Vansda National Park (10 min from Waghai) upgrades day 2 — gate pass at the Kilad-village entry.",
+  "notes": "In October–March, Vansda National Park (10 min from Waghai) upgrades day 2, gate pass at the Kilad-village entry.",
   "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
 }

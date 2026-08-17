@@ -16,7 +16,7 @@ export interface SpotCardData {
   seasonality: { monsoon_dependent: boolean | null };
   provenance: { confidence: "high" | "medium" | "low" };
   image?: string | null;
-  /** derived from visit.fees, not from tags — see toCardData */
+  /** derived from visit.fees, not from tags: see toCardData */
   free?: boolean;
 }
 
@@ -29,7 +29,7 @@ const confidenceDot: Record<string, string> = {
 /**
  * `priority` on the first few cards of a grid.
  *
- * Every card image was lazy, so on /spots — a page that is nothing but a grid —
+ * Every card image was lazy, so on /spots: a page that is nothing but a grid,
  * the LCP element was discovered only after CSS and JS had parsed, with no
  * preload hint at all. The cards above the fold should be eager; the other
  * hundred should not.

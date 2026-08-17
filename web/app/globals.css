@@ -41,7 +41,7 @@ body {
   -webkit-text-stroke: 1.5px rgba(231, 229, 228, 0.14);
 }
 
-/* Cinematic slow drift on hero imagery — top-anchored so heads never crop */
+/* Cinematic slow drift on hero imagery, top-anchored so heads never crop */
 @keyframes kenburns {
   0% {
     transform: scale(1);
@@ -255,7 +255,7 @@ body {
 /* Lifting CARTO dark_all enough to see its roads used to wash the sea out to a
    flat mid-grey: brightness(2.3) took water from ~0.17 luma to ~0.36, which read
    as a dead panel down the west of every map that includes the coast.
-   Less brightness with more contrast separates the two instead of raising both —
+   Less brightness with more contrast separates the two instead of raising both:
    road lines land in much the same place (~0.51) while water drops to ~0.20 and
    land goes nearly black. Check the coast west of Navsari after changing these. */
 .dk-map-dark {

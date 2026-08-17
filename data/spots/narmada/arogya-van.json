@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A wellness-themed garden of medicinal plants near the Statue of Unity — Ayurvedic plots, yoga spaces and calm landscaped walks.",
-  "description": "Arogya Van organises a garden around the idea of health: plots of medicinal and aromatic plants arranged by therapeutic theme, water features, sculpture, indoor interpretation on Ayurveda and yoga traditions, and lawns designed for stillness rather than selfies — though the landscaping gets its share of those too.\n\nIt is one of the campus's calmer tickets, suited to the afternoon lull between the statue and the evening attractions. Plant labels reward the curious; a wellness centre section offers therapies at extra cost when operational. Treat it as a decompression hour — the point is the pace.",
+  "summary": "A wellness-themed garden of medicinal plants near the Statue of Unity, Ayurvedic plots, yoga spaces and calm landscaped walks.",
+  "description": "Arogya Van organises a garden around the idea of health: plots of medicinal and aromatic plants arranged by therapeutic theme, water features, sculpture, indoor interpretation on Ayurveda and yoga traditions, and lawns designed for stillness rather than selfies, though the landscaping gets its share of those too.\n\nIt is one of the campus's calmer tickets, suited to the afternoon lull between the statue and the evening attractions. Plant labels reward the curious; a wellness centre section offers therapies at extra cost when operational. Treat it as a decompression hour: the point is the pace.",
   "highlights": [
     "Medicinal and aromatic plant plots by theme",
     "Calmest landscaped space on the campus",
@@ -84,7 +84,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Arogya Van, Ekta Nagar — Wellness Garden",
+    "meta_title": "Arogya Van, Ekta Nagar, Wellness Garden",
     "meta_description": "Arogya Van at the Statue of Unity campus: medicinal-plant plots, calm walks, tickets and timing."
   },
   "provenance": {

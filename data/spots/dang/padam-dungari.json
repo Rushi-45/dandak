@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "Forest-department campsite on the Ambika river in the hills near Vyara — riverside cottages and trails that pair with the Waghai belt.",
-  "description": "Padam Dungari sits just over the district line in Tapi, but travellers treat it as part of the same forest country as Waghai: an eco-campsite where the Ambika river comes off the Dang hills through a wooded valley, with cottages, tents, a riverside stretch made for slow mornings, and trails into the surrounding forest. It is among south Gujarat's better-known forest stays, popular with Surat weekenders.\n\nThe formula matches its Dang siblings — forest-department simplicity, mess meals when booked, guided walks on request — with somewhat easier access from the plains. Monsoon brings the river up and the crowds in; winter is calm and better for birds. Book ahead through the department's eco-tourism channels for any weekend.",
+  "summary": "Forest-department campsite on the Ambika river in the hills near Vyara, riverside cottages and trails that pair with the Waghai belt.",
+  "description": "Padam Dungari sits just over the district line in Tapi, but travellers treat it as part of the same forest country as Waghai: an eco-campsite where the Ambika river comes off the Dang hills through a wooded valley, with cottages, tents, a riverside stretch made for slow mornings, and trails into the surrounding forest. It is among south Gujarat's better-known forest stays, popular with Surat weekenders.\n\nThe formula matches its Dang siblings, forest-department simplicity, mess meals when booked, guided walks on request, with somewhat easier access from the plains. Monsoon brings the river up and the crowds in; winter is calm and better for birds. Book ahead through the department's eco-tourism channels for any weekend.",
   "highlights": [
     "Riverside cottages under forest hills",
     "Easier plains access than the interior campsites",
@@ -51,7 +51,7 @@
     "best_months": [7, 8, 9, 10, 11, 12, 1, 2],
     "avoid_months": [4, 5],
     "monsoon_dependent": false,
-    "notes": "Monsoon river season vs. calm birding winters — both work."
+    "notes": "Monsoon river season vs. calm birding winters: both work."
   },
   "experience": {
     "activities": ["camping", "nature-walk", "birdwatching", "picnic", "photography"],
@@ -70,13 +70,13 @@
   },
   "safety": {
     "warnings": [
-      "River bathing only in marked gentle stretches — monsoon flow is strong",
+      "River bathing only in marked gentle stretches: monsoon flow is strong",
       "Weekend crowds bring litter; carry yours back"
     ],
     "emergency": { "nearest_hospital": "Vyara civil hospital (~25 km)", "police": "Vyara PS", "notes": null }
   },
   "tips": [
-    "Combine with a Waghai-belt day — garden, Gira Falls, Kilad",
+    "Combine with a Waghai-belt day: garden, Gira Falls, Kilad",
     "Book cottages over tents in monsoon; the river air soaks everything"
   ],
   "faqs": [],
@@ -87,7 +87,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Padam Dungari Eco Campsite — Stay Notes",
+    "meta_title": "Padam Dungari Eco Campsite. Stay Notes",
     "meta_description": "Padam Dungari on the Ambika river: forest-department cottages, booking route and Waghai-belt pairings."
   },
   "provenance": {
@@ -95,7 +95,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "location.coordinates"]
   }

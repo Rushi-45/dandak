@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Karanjwa — the falls the Mahal-campsite crowd calls 'Mahal waterfall' — a monsoon drop in the Subir belt between the Girmal country and Bhalkhet.",
-  "description": "Karanjwa carries two names: the map's, and 'Mahal waterfall' — the label the eco-campsite crowd attached because Mahal is where most visitors are staying when they hear about it. The falls actually sit a proper drive south-west of the campsite, in the same Subir-belt forest country as Bhalkhet, Milan and Dev Van, and together the four make the belt the densest little waterfall cluster in the district.\n\nIt keeps the belt's terms: monsoon-fed flow, a short walk from village roads, forest framing, and no facilities of any kind. Campsite guides at Mahal know the way and will pair it with Girmal or the U-turn point for guests wanting a fuller falls day.",
+  "summary": "Karanjwa, the falls the Mahal-campsite crowd calls 'Mahal waterfall', a monsoon drop in the Subir belt between the Girmal country and Bhalkhet.",
+  "description": "Karanjwa carries two names: the map's, and 'Mahal waterfall', the label the eco-campsite crowd attached because Mahal is where most visitors are staying when they hear about it. The falls actually sit a proper drive south-west of the campsite, in the same Subir-belt forest country as Bhalkhet, Milan and Dev Van, and together the four make the belt the densest little waterfall cluster in the district.\n\nIt keeps the belt's terms: monsoon-fed flow, a short walk from village roads, forest framing, and no facilities of any kind. Campsite guides at Mahal know the way and will pair it with Girmal or the U-turn point for guests wanting a fuller falls day.",
   "highlights": [
     "The 'Mahal waterfall' of campsite word-of-mouth, under its own name",
     "Part of the Subir belt's four-fall cluster",
@@ -60,7 +60,7 @@
     "photography_notes": "Forest gloom rewards steady hands; the fall reads best with bamboo kept in frame."
   },
   "amenities": {
-    "food": "None — the Mahal campsite kitchen (order ahead) or Subir are nearest",
+    "food": "None, the Mahal campsite kitchen (order ahead) or Subir are nearest",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -77,12 +77,12 @@
   },
   "tips": [
     "From a Mahal stay, do Girmal and the U-turn point one day and the Karanjwa–Milan–Bhalkhet belt the next",
-    "Ask for 'Karanjwa dhodh' — the 'Mahal waterfall' name only works at the campsite"
+    "Ask for 'Karanjwa dhodh': the 'Mahal waterfall' name only works at the campsite"
   ],
   "faqs": [
     {
       "q": "Is Karanjwa the same as 'Mahal waterfall'?",
-      "a": "Yes — one falls, two names. 'Mahal waterfall' is campsite shorthand; Karanjwa is what the map and villages call it, a drive south-west of the campsite itself."
+      "a": "Yes. One falls, two names. 'Mahal waterfall' is campsite shorthand; Karanjwa is what the map and villages call it, a drive south-west of the campsite itself."
     }
   ],
   "nearby": [
@@ -99,16 +99,16 @@
     ]
   },
   "seo": {
-    "meta_title": "Karanjwa (Mahal) Waterfall, Dang — Subir Belt Falls",
-    "meta_description": "Karanjwa waterfall — the 'Mahal waterfall' of campsite word-of-mouth: where it actually is, the walk-in, and the Subir-belt falls cluster."
+    "meta_title": "Karanjwa (Mahal) Waterfall, Dang. Subir Belt Falls",
+    "meta_description": "Karanjwa waterfall, the 'Mahal waterfall' of campsite word-of-mouth: where it actually is, the walk-in, and the Subir-belt falls cluster."
   },
   "provenance": {
     "created": "2026-08-09",
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Karanjwa waterfall' (20.8920, 73.6526); identified by the maintainer as the falls known at Mahal campsite as 'Mahal waterfall'", "url": "https://www.google.com/maps/place/Karanjwa+waterfall/@20.8920022,73.652561,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
-      { "title": "Purna Wildlife Sanctuary — campsite-trail waterfalls mention (the source of the 'Mahal waterfall' nickname)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
+      { "title": "Google Maps, place 'Karanjwa waterfall' (20.8920, 73.6526); identified by the maintainer as the falls known at Mahal campsite as 'Mahal waterfall'", "url": "https://www.google.com/maps/place/Karanjwa+waterfall/@20.8920022,73.652561,15z", "publisher": "Google Maps", "accessed": "2026-08-10" },
+      { "title": "Purna Wildlife Sanctuary, campsite-trail waterfalls mention (the source of the 'Mahal waterfall' nickname)", "url": "https://wanderlog.com/place/details/762403/purna-wildlife-sanctuary", "publisher": "wanderlog.com", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.guides"]
   }

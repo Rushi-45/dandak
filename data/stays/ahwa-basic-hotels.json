@@ -9,20 +9,20 @@
   "spot_id": null,
   "coordinates": { "lat": 20.757, "lng": 73.686, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "walk-in", "url": null, "notes": "Simple lodges and guesthouses in both towns; walk-in or phone booking. Ahwa's matter for interior-circuit overnights, Waghai's for early ghat starts. Named alternatives now have their own records — see Pravasi Gruh in Ahwa and the government circuit house below." },
+  "booking": { "mode": "walk-in", "url": null, "notes": "Simple lodges and guesthouses in both towns; walk-in or phone booking. Ahwa's matter for interior-circuit overnights, Waghai's for early ghat starts. Named alternatives now have their own records: see Pravasi Gruh in Ahwa and the government circuit house below." },
   "contact": "Government Circuit House, Ahwa: 02631-220378",
   "amenities": ["basic clean rooms", "local dining nearby", "fuel and market access"],
   "nearest_spots": [
     { "id": "dang-shivghat", "distance_km": 5 },
     { "id": "dang-girmal-falls", "distance_km": 45 }
   ],
-  "notes": "Function over charm — these towns are the practical overnights for waterfall-circuit and Ramayana-trail days that outgrow a Saputara base.",
+  "notes": "Function over charm. These towns are the practical overnights for waterfall-circuit and Ramayana-trail days that outgrow a Saputara base.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": null,
     "confidence": "low",
     "sources": [
-      { "title": "Where To Stay In Dang — Accommodation Options in Dangs Region", "url": "https://darpan.blog/travel/stay-in-dang/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
+      { "title": "Where To Stay In Dang. Accommodation Options in Dangs Region", "url": "https://darpan.blog/travel/stay-in-dang/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["amenities", "contact"]
   }

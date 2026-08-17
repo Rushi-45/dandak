@@ -10,12 +10,12 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "A remote cascade on a Karjan-reservoir stream near Pratap Nagar — the Rajpipla belt's own pinch-in waterfall, pairing naturally with Mandan Lake.",
-  "description": "Juna Ghanta — Juna Ghata to some, Takara waterfall to others — hides on one of the streams feeding the Karjan reservoir south-east of Rajpipla, near Pratap Nagar. Monsoon trippers from Rajpipla and Vadodara know it as a half-day out: a forceful seasonal cascade in low forested hills, reached by rural roads and a final walk, with the reservoir country spreading below.\n\nDocumentation is thin — names, routes and even which stream it sits on vary by teller — so treat this as a locally-guided outing rather than a navigate-by-app one. Visitors who do the Karjan circuit often stack it with Mandan Lake View and the reservoir banks for a full green-season loop, and some continue to the nearby Chhatawada falls when flow allows.\n\nJuly to September only; outside the rains there is little to see beyond quiet hills.",
+  "summary": "A remote cascade on a Karjan-reservoir stream near Pratap Nagar, the Rajpipla belt's own pinch-in waterfall, pairing naturally with Mandan Lake.",
+  "description": "Juna Ghanta, Juna Ghata to some, Takara waterfall to others, hides on one of the streams feeding the Karjan reservoir south-east of Rajpipla, near Pratap Nagar. Monsoon trippers from Rajpipla and Vadodara know it as a half-day out: a forceful seasonal cascade in low forested hills, reached by rural roads and a final walk, with the reservoir country spreading below.\n\nDocumentation is thin, names, routes and even which stream it sits on vary by teller, so treat this as a locally-guided outing rather than a navigate-by-app one. Visitors who do the Karjan circuit often stack it with Mandan Lake View and the reservoir banks for a full green-season loop, and some continue to the nearby Chhatawada falls when flow allows.\n\nJuly to September only; outside the rains there is little to see beyond quiet hills.",
   "highlights": [
     "Seasonal cascade in the Karjan reservoir's stream country",
     "Half-day loop with Mandan Lake and the reservoir banks",
-    "Names and routes vary — a locally-guided outing"
+    "Names and routes vary, a locally-guided outing"
   ],
   "history_legend": null,
   "attributes": {},
@@ -34,7 +34,7 @@
       "rail": "Ekta Nagar station (~45 km); Ankleshwar Jn",
       "air": "Vadodara (~90 km)"
     },
-    "last_mile": "Final walk from the road end — length varies by route and season",
+    "last_mile": "Final walk from the road end, length varies by route and season",
     "road_condition": "Rural tar and gravel; monsoon slush on the last stretch",
     "parking": { "available": null, "fee": null, "notes": "Road-end clearing" }
   },
@@ -51,7 +51,7 @@
     "best_months": [7, 8, 9],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "A rains-only waterfall — July to September, tapering fast after."
+    "notes": "A rains-only waterfall, July to September, tapering fast after."
   },
   "experience": {
     "activities": ["sightseeing", "picnic", "photography", "nature-walk"],
@@ -60,7 +60,7 @@
     "photography_notes": "Morning light works down the stream cut; reservoir vistas open on the drive."
   },
   "amenities": {
-    "food": "None at the falls — Rajpipla is the supply base",
+    "food": "None at the falls. Rajpipla is the supply base",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "ok", "airtel": "weak", "vi": "weak", "bsnl": "ok" },
@@ -70,14 +70,14 @@
   },
   "safety": {
     "warnings": [
-      "Monsoon flow strengthens without warning — stay off mid-stream rocks",
+      "Monsoon flow strengthens without warning: stay off mid-stream rocks",
       "Routes are word-of-mouth; keep daylight margin and a full tank"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~25 km)", "police": "Rajpipla rural PS", "notes": null }
   },
   "tips": [
     "Stack it with Mandan Lake View and the Karjan banks for the full loop",
-    "Locals may know it as Juna Ghata or Takara — use all three names",
+    "Locals may know it as Juna Ghata or Takara, use all three names",
     "Chhatawada falls nearby extends the day when flow is strong"
   ],
   "faqs": [],
@@ -89,7 +89,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Juna Ghanta Waterfall, Narmada — Karjan's Secret",
+    "meta_title": "Juna Ghanta Waterfall, Narmada, Karjan's Secret",
     "meta_description": "The Juna Ghanta (Juna Ghata/Takara) waterfall near Pratap Nagar: monsoon window, Karjan-loop pairing and route reality."
   },
   "provenance": {
@@ -97,8 +97,8 @@
     "last_verified": "2026-08-09",
     "confidence": "low",
     "sources": [
-      { "title": "Juna Ghata Falls — Discover India", "url": "https://mytrip.guide/juna-ghata-falls/", "publisher": "mytrip.guide", "accessed": "2026-08-09" },
-      { "title": "Monsoon Waterfall Hopping: Juna Ghanta and Chhatawada — Tripoto", "url": "https://www.tripoto.com/india/trips/monsoon-waterfall-hopping-juna-ghanta-and-chhatawada-waterfalls-61975d7a9f869", "publisher": "tripoto.com", "accessed": "2026-08-09" }
+      { "title": "Juna Ghata Falls. Discover India", "url": "https://mytrip.guide/juna-ghata-falls/", "publisher": "mytrip.guide", "accessed": "2026-08-09" },
+      { "title": "Monsoon Waterfall Hopping: Juna Ghanta and Chhatawada, Tripoto", "url": "https://www.tripoto.com/india/trips/monsoon-waterfall-hopping-juna-ghanta-and-chhatawada-waterfalls-61975d7a9f869", "publisher": "tripoto.com", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "location.distances_km", "access.road", "access.last_mile"]
   }

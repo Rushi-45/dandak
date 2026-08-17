@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A large hedge maze laid out in a yantra pattern near the Statue of Unity — half puzzle, half photo op, best fun with kids in tow.",
-  "description": "The Maze Garden plants a full-scale hedge labyrinth on the campus — reportedly among the country's largest — its paths laid out in a shrivatsa/yantra-inspired geometry that reads beautifully from the elevated viewing points and turns into honest confusion at hedge level. Getting mildly lost takes ten minutes; getting out is the family entertainment.\n\nThe hedges have matured enough to block sightlines for children while adults can still orient by landmarks. It is a light 45–60 minute ticket that lands best with kids and groups in a playful mood; solo efficiency-minded itineraries can skip it without regret. Mornings beat afternoons — the maze bowl holds heat.",
+  "summary": "A large hedge maze laid out in a yantra pattern near the Statue of Unity, half puzzle, half photo op, best fun with kids in tow.",
+  "description": "The Maze Garden plants a full-scale hedge labyrinth on the campus, reportedly among the country's largest, its paths laid out in a shrivatsa/yantra-inspired geometry that reads beautifully from the elevated viewing points and turns into honest confusion at hedge level. Getting mildly lost takes ten minutes; getting out is the family entertainment.\n\nThe hedges have matured enough to block sightlines for children while adults can still orient by landmarks. It is a light 45–60 minute ticket that lands best with kids and groups in a playful mood; solo efficiency-minded itineraries can skip it without regret. Mornings beat afternoons: the maze bowl holds heat.",
   "highlights": [
     "Full-scale hedge maze in a yantra layout",
     "Elevated viewpoints for the pattern shot",
@@ -70,12 +70,12 @@
   },
   "safety": {
     "warnings": [
-      "Agree a meeting point with kids before entering — phones beat shouting"
+      "Agree a meeting point with kids before entering, phones beat shouting"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
   "tips": [
-    "Do the viewing deck after solving it — the pattern is the payoff",
+    "Do the viewing deck after solving it: the pattern is the payoff",
     "Pair with the glow garden zone for an easy half day with kids"
   ],
   "faqs": [],
@@ -86,7 +86,7 @@
   "itineraries": ["sou-family-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Maze Garden, Ekta Nagar — Bhool Bhulaiya",
+    "meta_title": "Maze Garden, Ekta Nagar, Bhool Bhulaiya",
     "meta_description": "The Statue of Unity campus hedge maze: tickets, best hours and the viewpoint for the yantra pattern."
   },
   "provenance": {
@@ -95,7 +95,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "PM dedicates Maze Garden and Miyawaki Forest in Ekta Nagar (Oct 2022)", "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1872060", "publisher": "PIB (official)", "accessed": "2026-08-08" },
-      { "title": "Maze Garden — Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/maze-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
+      { "title": "Maze Garden, Ekta Nagar Attractions", "url": "https://soutickets.in/attractions/maze-garden", "publisher": "soutickets.in (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }

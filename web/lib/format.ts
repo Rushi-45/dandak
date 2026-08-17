@@ -1,4 +1,4 @@
-/** Pure formatting helpers — safe to import from client components (no node deps). */
+/** Pure formatting helpers, safe to import from client components (no node deps). */
 
 export const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 

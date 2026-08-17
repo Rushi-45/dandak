@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A valley vista in the village country south of Ahwa — green bowls, field terraces and forest ridges where almost nobody stops.",
-  "description": "The Wasurna valley is the south-western pocket's open moment: village fields and terraces falling into a green bowl, forest ridges behind, and a mapped vantage where the road crests enough to take it all in. In monsoon the composition is the district's classic — moving cloud, saturated paddy, dark ridgelines — without a single stall or signboard to share it with.\n\nIt earns twenty minutes on any south-western loop, longer if the light is doing something. The Temburgartha dam's sunset ridge is a short drive north; the Chikhalda falls pocket is just west.",
+  "summary": "A valley vista in the village country south of Ahwa, green bowls, field terraces and forest ridges where almost nobody stops.",
+  "description": "The Wasurna valley is the south-western pocket's open moment: village fields and terraces falling into a green bowl, forest ridges behind, and a mapped vantage where the road crests enough to take it all in. In monsoon the composition is the district's classic, moving cloud, saturated paddy, dark ridgelines, without a single stall or signboard to share it with.\n\nIt earns twenty minutes on any south-western loop, longer if the light is doing something. The Temburgartha dam's sunset ridge is a short drive north; the Chikhalda falls pocket is just west.",
   "highlights": [
     "Open valley vista in a district of closed forest",
     "Monsoon paddy-and-cloud compositions",
@@ -34,7 +34,7 @@
       "rail": "Waghai (heritage narrow gauge); Bilimora Jn for broad gauge",
       "air": "Surat (~145 km)"
     },
-    "last_mile": "Roadside — steps from a pull-off",
+    "last_mile": "Roadside, steps from a pull-off",
     "road_condition": "Rural tar",
     "parking": { "available": true, "fee": 0, "notes": "Roadside pull-off" }
   },
@@ -45,7 +45,7 @@
     "duration_min": 30,
     "best_time_of_day": "evening",
     "weekly_closure": null,
-    "notes": "A pause, not a destination — combine with the pocket's falls."
+    "notes": "A pause, not a destination. Combine with the pocket's falls."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10, 11],
@@ -60,7 +60,7 @@
     "photography_notes": "Wide frames at golden hour; the terraces give leading lines the forest belt never offers."
   },
   "amenities": {
-    "food": "None — carry from Ahwa",
+    "food": "None. Carry from Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
@@ -70,13 +70,13 @@
   },
   "safety": {
     "warnings": [
-      "Park fully off the carriageway — the road is narrow"
+      "Park fully off the carriageway: the road is narrow"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~12 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
-    "Chikhalda pocket in the morning, the valley late, dam ridge for sunset — the full south-western day",
-    "Respect the fields — the terraces are working farmland"
+    "Chikhalda pocket in the morning, the valley late, dam ridge for sunset, the full south-western day",
+    "Respect the fields: the terraces are working farmland"
   ],
   "faqs": [],
   "nearby": [
@@ -88,7 +88,7 @@
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Valley of Wasurna, Dang — The South-West's Open Vista",
+    "meta_title": "Valley of Wasurna, Dang. The South-West's Open Vista",
     "meta_description": "The Wasurna valley viewpoint south of Ahwa: terraces, ridges and monsoon cloud on the district's quietest loop."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — place 'Valley of Wasurna' (20.6874, 73.6688); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Valley+of+Wasurna/@20.6874361,73.6687921,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, place 'Valley of Wasurna' (20.6874, 73.6688); supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Valley+of+Wasurna/@20.6874361,73.6687921,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "amenities.mobile_network"]
   }

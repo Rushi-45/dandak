@@ -3,7 +3,7 @@
 import { m } from "motion/react";
 import type { ReactNode } from "react";
 
-/** Subtle below-the-fold reveal — transform/opacity only. */
+/** Subtle below-the-fold reveal, transform/opacity only. */
 export function FadeIn({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   return (
     <m.div

@@ -10,14 +10,14 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A quiet sacred pond near Subir tied to the Shabari story — forest-edged water, small shrines and almost no crowd.",
-  "description": "Pampa Sarovar completes the Shabari Dham pair: a modest pond at the forest edge near Subir that Dang's tradition identifies with the Pampa of the Ramayana, on whose banks Shabari's hermitage stood and where pilgrims bathe before darshan at the main temple a few kilometres away. Small shrines and ghats mark the waterline; the setting — still water, big trees, birdsong — does the rest.\n\nAs an experience it is the opposite of a headline sight: ten unhurried minutes for most visitors, longer for pilgrims and anyone happy to sit where it is quiet. Water levels and freshness are best from monsoon through winter. Combine it with Shabari Dham as one stop; alone it is a detour only devotees will rate.",
+  "summary": "A quiet sacred pond near Subir tied to the Shabari story, forest-edged water, small shrines and almost no crowd.",
+  "description": "Pampa Sarovar completes the Shabari Dham pair: a modest pond at the forest edge near Subir that Dang's tradition identifies with the Pampa of the Ramayana, on whose banks Shabari's hermitage stood and where pilgrims bathe before darshan at the main temple a few kilometres away. Small shrines and ghats mark the waterline; the setting, still water, big trees, birdsong, does the rest.\n\nAs an experience it is the opposite of a headline sight: ten unhurried minutes for most visitors, longer for pilgrims and anyone happy to sit where it is quiet. Water levels and freshness are best from monsoon through winter. Combine it with Shabari Dham as one stop; alone it is a detour only devotees will rate.",
   "highlights": [
     "The Pampa of Dang's Ramayana geography",
     "Forest-edged pond with bathing ghats",
     "Naturally paired with Shabari Dham"
   ],
-  "history_legend": "Regional tradition places Shabari's hermitage on Pampa's banks, where she waited a lifetime for Ram. Dang's identification of this pond as that Pampa rose to prominence alongside Shabari Dham in the 2000s — devotional geography, held with real local feeling.",
+  "history_legend": "Regional tradition places Shabari's hermitage on Pampa's banks, where she waited a lifetime for Ram. Dang's identification of this pond as that Pampa rose to prominence alongside Shabari Dham in the 2000s, devotional geography, held with real local feeling.",
   "attributes": {},
   "location": {
     "taluka": "Subir",
@@ -70,13 +70,13 @@
   },
   "safety": {
     "warnings": [
-      "Bathe only at the ghat steps — the pond bed drops off unevenly"
+      "Bathe only at the ghat steps: the pond bed drops off unevenly"
     ],
     "emergency": { "nearest_hospital": "PHC Subir; Civil Hospital Ahwa (~28 km)", "police": "Subir PS", "notes": null }
   },
   "tips": [
     "Do it as the quiet second half of the Shabari Dham stop",
-    "Early morning is the site at its best — light, birds, stillness"
+    "Early morning is the site at its best, light, birds, stillness"
   ],
   "faqs": [],
   "nearby": [
@@ -102,8 +102,8 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Pampa Sarovar, Dang — Shabari's Pond",
-    "meta_description": "Pampa Sarovar near Subir: the Ramayana-linked pond paired with Shabari Dham — access, season and visit notes."
+    "meta_title": "Pampa Sarovar, Dang, Shabari's Pond",
+    "meta_description": "Pampa Sarovar near Subir: the Ramayana-linked pond paired with Shabari Dham, access, season and visit notes."
   },
   "provenance": {
     "created": "2026-08-08",

@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "Forest-department campsite on the Ambika river near Waghai — riverside cottages, nature trails and an easy first taste of Dang's forests.",
-  "description": "Kilad is the gentlest of Dang's forest-department campsites: a nature-education campus on the Ambika river minutes from Waghai, with simple cottages and dorms under big trees, a riverside frontage, short interpretive trails, and staff used to school groups and first-time forest visitors. It was built for exactly that — introducing people to the forest without demanding anything of them.\n\nDay visitors can walk the trails and riverbank; overnight guests get the better deal, with dawn birdsong, the river running steps away and Gira Falls, the botanical garden and Vansda National Park all within a fifteen-minute radius. Facilities are forest-department simple: clean, functional, generator-scheduled in places, and booked through the department's eco-tourism channels rather than hotel sites.\n\nMonsoon is the full-immersion season — river high, forest dripping — while winter gives comfortable trails and the strongest birding.",
+  "summary": "Forest-department campsite on the Ambika river near Waghai, riverside cottages, nature trails and an easy first taste of Dang's forests.",
+  "description": "Kilad is the gentlest of Dang's forest-department campsites: a nature-education campus on the Ambika river minutes from Waghai, with simple cottages and dorms under big trees, a riverside frontage, short interpretive trails, and staff used to school groups and first-time forest visitors. It was built for exactly that, introducing people to the forest without demanding anything of them.\n\nDay visitors can walk the trails and riverbank; overnight guests get the better deal, with dawn birdsong, the river running steps away and Gira Falls, the botanical garden and Vansda National Park all within a fifteen-minute radius. Facilities are forest-department simple: clean, functional, generator-scheduled in places, and booked through the department's eco-tourism channels rather than hotel sites.\n\nMonsoon is the full-immersion season, river high, forest dripping, while winter gives comfortable trails and the strongest birding.",
   "highlights": [
     "Riverside cottages under forest canopy",
     "Interpretive nature trails for beginners",
@@ -70,19 +70,19 @@
   },
   "safety": {
     "warnings": [
-      "River currents strengthen sharply in monsoon — no swimming",
+      "River currents strengthen sharply in monsoon, no swimming",
       "Keep food sealed at night; the forest's smaller residents investigate"
     ],
     "emergency": { "nearest_hospital": "CHC Waghai (~3 km)", "police": "Waghai PS", "notes": null }
   },
   "tips": [
-    "Book ahead for monsoon and winter weekends — school groups block-book",
+    "Book ahead for monsoon and winter weekends, school groups block-book",
     "Use it as a base night before an early Vansda NP or Gira Falls start"
   ],
   "faqs": [
     {
       "q": "Can I visit Kilad without staying?",
-      "a": "Yes — day visits to the trails and riverbank are allowed in campus hours for a small fee, subject to group bookings on site."
+      "a": "Yes. Day visits to the trails and riverbank are allowed in campus hours for a small fee, subject to group bookings on site."
     }
   ],
   "nearby": [
@@ -93,7 +93,7 @@
   "itineraries": ["saputara-waghai-2-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Kilad Nature Campsite, Waghai — Stay & Visit",
+    "meta_title": "Kilad Nature Campsite, Waghai. Stay & Visit",
     "meta_description": "Kilad forest campsite near Waghai: riverside cottages, trails, booking route and pairing with Gira Falls."
   },
   "provenance": {
@@ -101,7 +101,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Kilad Camping Site — Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Kilad Camping Site, Gujarat Forest Department", "url": "https://forests.gujarat.gov.in/kilad-camping-site.htm", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
       { "title": "Kilad Campsite", "url": "https://kiladcampsite.com/", "publisher": "kiladcampsite.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "visit.timings", "location.coordinates"]

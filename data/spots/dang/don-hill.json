@@ -10,15 +10,15 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A quiet tribal village on one of Gujarat's highest plateaus — grass meadows, ridge walks and valley views without Saputara's crowds.",
-  "description": "Don is what Saputara was before the hotels: a small Dangi village spread across a high plateau near the Maharashtra border, sitting at an elevation generally cited as a shade above Saputara's. The draw is simple — open grass meadows rolling to ridge edges, long views over the Sahyadri valleys on both sides of the border, and near-total quiet outside the odd weekend group.\n\nThere is no 'sight' here in the ticket-booth sense. You walk the meadows, find a rim for sunrise or sunset, watch village life go by, and in monsoon wade through knee-high grass between low cloud. A handful of viewpoints and small water bodies dot the plateau, and local youths will happily point you along the paths. Basic village homestays and food arrangements exist but are informal — day trips from Ahwa or Saputara are the standard plan.\n\nThe access road climbs steeply in its final stretch and is narrow throughout; confident driving or a local driver helps. Go for the emptiness — that is the point.",
+  "summary": "A quiet tribal village on one of Gujarat's highest plateaus, grass meadows, ridge walks and valley views without Saputara's crowds.",
+  "description": "Don is what Saputara was before the hotels: a small Dangi village spread across a high plateau near the Maharashtra border, sitting at an elevation generally cited as a shade above Saputara's. The draw is simple: open grass meadows rolling to ridge edges, long views over the Sahyadri valleys on both sides of the border, and near-total quiet outside the odd weekend group.\n\nThere is no 'sight' here in the ticket-booth sense. You walk the meadows, find a rim for sunrise or sunset, watch village life go by, and in monsoon wade through knee-high grass between low cloud. A handful of viewpoints and small water bodies dot the plateau, and local youths will happily point you along the paths. Basic village homestays and food arrangements exist but are informal: day trips from Ahwa or Saputara are the standard plan.\n\nThe access road climbs steeply in its final stretch and is narrow throughout; confident driving or a local driver helps. Go for the emptiness, that is the point.",
   "highlights": [
     "High plateau meadows above the Sahyadri valleys",
     "Sunrise and sunset rims without crowds",
     "Living Dangi village, not a built-up resort town",
     "Monsoon grasslands under moving cloud"
   ],
-  "history_legend": "Local tradition connects Don with hermitage lore of the epics — the name is often linked in the region to sage Drona. Treat it as living local storytelling rather than settled history.",
+  "history_legend": "Local tradition connects Don with hermitage lore of the epics. The name is often linked in the region to sage Drona. Treat it as living local storytelling rather than settled history.",
   "attributes": { "elevation_m": 1000, "faces": "valley" },
   "location": {
     "taluka": "Ahwa",
@@ -58,10 +58,10 @@
     "activities": ["nature-walk", "trekking", "photography", "village-tour", "stargazing"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Golden-hour ridge shots both directions; monsoon cloud moves fast — burst through the gaps. Night skies are genuinely dark for Gujarat."
+    "photography_notes": "Golden-hour ridge shots both directions; monsoon cloud moves fast, burst through the gaps. Night skies are genuinely dark for Gujarat."
   },
   "amenities": {
-    "food": "Very limited — a village shop or informal home meals; carry your own food and water for a day trip",
+    "food": "Very limited. A village shop or informal home meals; carry your own food and water for a day trip",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "Ridge edges are unfenced — keep well back in wind or wet grass",
+      "Ridge edges are unfenced: keep well back in wind or wet grass",
       "The final road climb is unlit and narrow; avoid driving it after dark",
       "Carry all water and food; nothing is guaranteed available"
     ],
@@ -81,7 +81,7 @@
     "Combine with Girmal Falls for the classic interior-Dang full day",
     "The railed 'photography point' deck on the Ahwa approach road gives the classic plateau-in-cloud frame before you climb",
     "Fuel up in Ahwa; there are no pumps on the Don road",
-    "Respect village life — ask before photographing people or homes"
+    "Respect village life, ask before photographing people or homes"
   ],
   "faqs": [
     {
@@ -109,7 +109,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Don Hill Station, Dang — Gujarat's Quiet Plateau",
+    "meta_title": "Don Hill Station, Dang, Gujarat's Quiet Plateau",
     "meta_description": "How to visit Don village in Dang: the steep access road, meadow viewpoints, best months and day-trip tips from Saputara or Ahwa."
   },
   "provenance": {
@@ -117,8 +117,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Don, Dang — Wikipedia", "url": "https://en.wikipedia.org/wiki/Don,_Dang", "publisher": "Wikipedia", "accessed": "2026-08-08" },
-      { "title": "Don Hill Station — Hidden Hill Retreat of Dang", "url": "https://en.safargujarat.com/don-hill-station-dang-gujarat/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
+      { "title": "Don, Dang, Wikipedia", "url": "https://en.wikipedia.org/wiki/Don,_Dang", "publisher": "Wikipedia", "accessed": "2026-08-08" },
+      { "title": "Don Hill Station, Hidden Hill Retreat of Dang", "url": "https://en.safargujarat.com/don-hill-station-dang-gujarat/", "publisher": "safargujarat.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["amenities.food"]
   }

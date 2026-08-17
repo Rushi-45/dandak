@@ -10,11 +10,11 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A monsoon waterfall in the Godadiya village country of Subir taluka — a local-crowd trekking spot west of the Girmal belt.",
-  "description": "Bhalkhet is one of the Subir belt's own waterfalls: a monsoon cascade near Godadiya village, reached by a short forest-and-fields walk and known almost entirely through local weekend traffic and reels rather than any tourism literature. Photographs from visits show a full white curtain in August against the usual Dang staging of black rock and saturated green.\n\nAttribution in listings wobbles across nearby village names — Godadiya, Divadyavan, and the Kalibel side all appear — which is typical for falls that sit between hamlets; ask for 'Bhalkhet dhodh' locally rather than trusting one map label. The walk is short but wet-season slick, and there are no facilities of any kind.\n\nIt slots naturally into an interior day with Girmal and the U-turn point — the kind of stop that turns the drive between headline falls into the actual trip.",
+  "summary": "A monsoon waterfall in the Godadiya village country of Subir taluka, a local-crowd trekking spot west of the Girmal belt.",
+  "description": "Bhalkhet is one of the Subir belt's own waterfalls: a monsoon cascade near Godadiya village, reached by a short forest-and-fields walk and known almost entirely through local weekend traffic and reels rather than any tourism literature. Photographs from visits show a full white curtain in August against the usual Dang staging of black rock and saturated green.\n\nAttribution in listings wobbles across nearby village names, Godadiya, Divadyavan, and the Kalibel side all appear, which is typical for falls that sit between hamlets; ask for 'Bhalkhet dhodh' locally rather than trusting one map label. The walk is short but wet-season slick, and there are no facilities of any kind.\n\nIt slots naturally into an interior day with Girmal and the U-turn point: the kind of stop that turns the drive between headline falls into the actual trip.",
   "highlights": [
     "Full monsoon curtain in the Godadiya forest country",
-    "Local weekend spot — unknown to tourism literature",
+    "Local weekend spot, unknown to tourism literature",
     "Short walk-in; pairs with the Girmal run"
   ],
   "history_legend": null,
@@ -51,38 +51,38 @@
     "best_months": [7, 8, 9, 10],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "A monsoon waterfall — full July–September, fading fast after October."
+    "notes": "A monsoon waterfall, full July–September, fading fast after October."
   },
   "experience": {
     "activities": ["trekking", "nature-walk", "photography", "picnic"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "The curtain shoots best late morning; keep gear covered — spray drifts wide in peak flow."
+    "photography_notes": "The curtain shoots best late morning; keep gear covered. Spray drifts wide in peak flow."
   },
   "amenities": {
-    "food": "None — carry everything; nearest food at Subir or Ahwa",
+    "food": "None. Carry everything; nearest food at Subir or Ahwa",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Ask in Godadiya — village youths will point or walk along",
+    "guides": "Ask in Godadiya. Village youths will point or walk along",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Wet rock around the base is treacherous — grip footwear only",
+      "Wet rock around the base is treacherous, grip footwear only",
       "No facilities or network to speak of; keep daylight margins",
-      "Flow surges after upstream rain — stay off mid-stream rocks"
+      "Flow surges after upstream rain: stay off mid-stream rocks"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~30 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
     "Fold it into the Girmal–U-turn interior day rather than driving out for it alone",
-    "Ask for 'Bhalkhet dhodh' by name — map labels around Godadiya are unreliable"
+    "Ask for 'Bhalkhet dhodh' by name: map labels around Godadiya are unreliable"
   ],
   "faqs": [],
   "nearby": [
-    { "id": "dang-dev-van-falls", "distance_km": 5, "note": "The reels' 'Wonder Waterfall' — same belt" },
+    { "id": "dang-dev-van-falls", "distance_km": 5, "note": "The reels' 'Wonder Waterfall', same belt" },
     { "id": "dang-milan-falls", "distance_km": 5 },
     { "id": "dang-girmal-falls", "distance_km": 25, "note": "The interior-day pairing" },
     { "id": "dang-shabari-dham", "distance_km": 30 }
@@ -90,7 +90,7 @@
   "itineraries": ["subir-falls-circuit"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Bhalkhet Waterfall, Dang — Subir's Local Falls",
+    "meta_title": "Bhalkhet Waterfall, Dang. Subir's Local Falls",
     "meta_description": "Bhalkhet waterfall near Godadiya in Subir taluka: the short walk-in, monsoon window, and how it pairs with Girmal."
   },
   "provenance": {
@@ -98,8 +98,8 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Bhalkhet Waterfall in Subir, Dang — listing", "url": "https://www.justdial.com/Daang/Bhalkhet-Waterfall-Divadyawan-Subir/9999P2673-2673-231205025619-Q3V9_BZDET", "publisher": "justdial.com", "accessed": "2026-08-09" },
-      { "title": "Bhalket waterfall, Dang — listing (address plus-code WH6R+4GW, Godadiya 394715; decoded to 20.9103, 73.5913)", "url": "https://www.trip.com/travel-guide/attraction/dang/bhalket-waterfall-144566556/", "publisher": "trip.com", "accessed": "2026-08-09" }
+      { "title": "Bhalkhet Waterfall in Subir, Dang, listing", "url": "https://www.justdial.com/Daang/Bhalkhet-Waterfall-Divadyawan-Subir/9999P2673-2673-231205025619-Q3V9_BZDET", "publisher": "justdial.com", "accessed": "2026-08-09" },
+      { "title": "Bhalket waterfall, Dang, listing (address plus-code WH6R+4GW, Godadiya 394715; decoded to 20.9103, 73.5913)", "url": "https://www.trip.com/travel-guide/attraction/dang/bhalket-waterfall-144566556/", "publisher": "trip.com", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "access.road", "access.last_mile"]
   }

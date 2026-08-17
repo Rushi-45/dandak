@@ -7,7 +7,7 @@ import { CONFIDENCE_META, PRICE_BAND_LABEL, stayTypeMeta } from "@/lib/ui";
 export const metadata: Metadata = {
   title: "Where to sleep",
   description:
-    "Every documented bed across Dang and Narmada — Forest Department campsites with their official tariffs, the Statue of Unity tent cities, village homestays and the town lodges in between.",
+    "Every documented bed across Dang and Narmada, Forest Department campsites with their official tariffs, the Statue of Unity tent cities, village homestays and the town lodges in between.",
   alternates: { canonical: "/stays" },
 };
 
@@ -102,7 +102,7 @@ function StayCard({ stay }: { stay: Stay }) {
           {stay.contact && <span className="text-stone-500">{stay.contact}</span>}
           {!stay.booking.url && !stay.contact && (
             <span className="text-stone-600">
-              {stay.booking.mode === "walk-in" ? "Walk-in — nothing listed online" : "Ask locally"}
+              {stay.booking.mode === "walk-in" ? "Walk-in, nothing listed online" : "Ask locally"}
             </span>
           )}
         </div>
@@ -160,14 +160,14 @@ export default function StaysPage() {
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-500">
         {stays.length} beds across both districts, {government} of them Forest Department campsites
         that you book on the state&rsquo;s own portal. The rest run from a tent city under the
-        Statue of Unity to village rooms that appear on no booking site at all — and we say plainly
+        Statue of Unity to village rooms that appear on no booking site at all, and we say plainly
         which is which.
       </p>
 
       <p className="mt-6 rounded-2xl border border-amber-400/15 bg-amber-400/[0.05] p-4 text-xs leading-relaxed text-stone-400">
         Tariffs are the ones the Forest Department publishes, and they change. Treat them as the
-        floor for a night, confirm before you travel, and read the confidence label on each card —
-        an <strong className="font-semibold text-stone-200">Explorer-grade</strong> bed is one we
+        floor for a night, confirm before you travel, and read the confidence label on each card.
+        An <strong className="font-semibold text-stone-200">Explorer-grade</strong> bed is one we
         have found evidence of but could not verify against an official listing.
       </p>
 

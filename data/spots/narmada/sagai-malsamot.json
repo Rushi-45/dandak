@@ -10,8 +10,8 @@
   "cluster": "dediapada-belt",
   "status": "active",
   "district": "narmada",
-  "summary": "Forest campsite and hilltop plateau in the Dediapada belt — eastern Narmada's 'mini hill station' with cottages, trails and monsoon views.",
-  "description": "Sagai and Malsamot together make the Dediapada belt's overnight case: Sagai is a forest-department eco-campsite in Shoolpaneshwar's folds — cottages and tents under canopy, trails, streams close by — while Malsamot above it is a small plateau the region cheerfully markets as its mini hill station, catching breeze, cloud and long views over the sanctuary's ridges.\n\nThe combination works as a slow 24 hours: arrive, walk the campsite trails, sunset from the Malsamot rim, a forest night, and a dawn walk before pushing on to Ninai falls in season. Facilities follow the forest-department pattern — clean, simple, mess meals when booked, power by schedule — and booking runs through the department's eco-tourism channels rather than commercial platforms.\n\nMonsoon is the spectacle season (streams live, cloud walking the plateau), winter the comfortable one. Either way this is the anchor stay for exploring eastern Narmada beyond day-trip range.",
+  "summary": "Forest campsite and hilltop plateau in the Dediapada belt, eastern Narmada's 'mini hill station' with cottages, trails and monsoon views.",
+  "description": "Sagai and Malsamot together make the Dediapada belt's overnight case: Sagai is a forest-department eco-campsite in Shoolpaneshwar's folds, cottages and tents under canopy, trails, streams close by, while Malsamot above it is a small plateau the region cheerfully markets as its mini hill station, catching breeze, cloud and long views over the sanctuary's ridges.\n\nThe combination works as a slow 24 hours: arrive, walk the campsite trails, sunset from the Malsamot rim, a forest night, and a dawn walk before pushing on to Ninai falls in season. Facilities follow the forest-department pattern, clean, simple, mess meals when booked, power by schedule, and booking runs through the department's eco-tourism channels rather than commercial platforms.\n\nMonsoon is the spectacle season (streams live, cloud walking the plateau), winter the comfortable one. Either way this is the anchor stay for exploring eastern Narmada beyond day-trip range.",
   "highlights": [
     "Forest cottages inside the Shoolpaneshwar belt",
     "Malsamot plateau views and sunset rim",
@@ -58,10 +58,10 @@
     "activities": ["camping", "nature-walk", "trekking", "birdwatching", "photography", "stargazing"],
     "difficulty": "moderate",
     "suitable_for": { "kids": true, "elderly": false, "wheelchair": false },
-    "photography_notes": "Malsamot rim at sunset; monsoon gives moving cloud through the valleys — keep gear rain-ready."
+    "photography_notes": "Malsamot rim at sunset; monsoon gives moving cloud through the valleys. Keep gear rain-ready."
   },
   "amenities": {
-    "food": "Campsite mess when booked; Dediapada for everything else — carry supplements",
+    "food": "Campsite mess when booked; Dediapada for everything else. Carry supplements",
     "toilets": "basic",
     "drinking_water": true,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "Unfenced plateau edges — keep distance in wind and rain",
+      "Unfenced plateau edges: keep distance in wind and rain",
       "No wandering beyond campsite bounds after dark; this is bear country",
       "Fuel up at Dediapada; nothing beyond"
     ],
@@ -80,12 +80,12 @@
   "tips": [
     "Book cottages for monsoon weekends weeks ahead",
     "Sequence: arrive by noon, plateau sunset, dawn walk, Ninai falls next morning",
-    "Cash and offline maps — connectivity is decorative here"
+    "Cash and offline maps: connectivity is decorative here"
   ],
   "faqs": [
     {
       "q": "Is Malsamot really a hill station?",
-      "a": "It's a plateau viewpoint with campsite infrastructure, not a town — 'mini hill station' oversells the amenities and undersells the peace. Go for forest and views, not cafés."
+      "a": "It's a plateau viewpoint with campsite infrastructure, not a town, 'mini hill station' oversells the amenities and undersells the peace. Go for forest and views, not cafés."
     }
   ],
   "nearby": [
@@ -96,7 +96,7 @@
   "itineraries": ["dediapada-offbeat-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Sagai–Malsamot Eco Campsite — Stay Guide",
+    "meta_title": "Sagai–Malsamot Eco Campsite. Stay Guide",
     "meta_description": "Booking Sagai campsite and Malsamot plateau in eastern Narmada: season, facilities and the Ninai falls pairing."
   },
   "provenance": {
@@ -104,7 +104,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "location.coordinates"]
   }

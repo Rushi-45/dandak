@@ -107,7 +107,7 @@ export default async function DistrictPage({ params }: { params: Params }) {
         </section>
       </FadeIn>
 
-      {/* Areas — every spot belongs to exactly one, so this covers the district
+      {/* Areas, every spot belongs to exactly one, so this covers the district
           with no overlap and gives the deeper pages their inbound links. */}
       <FadeIn>
         <section className="mt-14">

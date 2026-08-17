@@ -10,12 +10,12 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A three-step fall of 200-plus feet on the Gujarat–Maharashtra border forest near Gusrangam — among south Gujarat's tallest, and its least visited.",
-  "description": "Kaka-Kaki is the border country's giant: a three-stepped fall claimed at over two hundred feet in the dense forest where Songadh taluka runs against Maharashtra, near Gusrangam village. That puts it in the same height conversation as Girmal and Chimer — with a fraction of their tiny traffic, because reaching it is genuinely earned: village approaches via Keshbandh, Borzar or Biliamba, then four to five kilometres of mountain descent and stream crossings from the Biliamba side.\n\nEvery account repeats the same advice: take locals from the approach villages, because the path cannot be found without them. The reward is the belt's most dramatic monsoon amphitheatre, vlogged as 'the most mysterious waterfall of Dang' — the district label loose, as usual on this border, but the drama real.\n\nTravel-wise it extends the Songadh day beyond Gaumukh and Medha for parties equipped to trek; it is not a family picnic stop.",
+  "summary": "A three-step fall of 200-plus feet on the Gujarat–Maharashtra border forest near Gusrangam, among south Gujarat's tallest, and its least visited.",
+  "description": "Kaka-Kaki is the border country's giant: a three-stepped fall claimed at over two hundred feet in the dense forest where Songadh taluka runs against Maharashtra, near Gusrangam village. That puts it in the same height conversation as Girmal and Chimer, with a fraction of their tiny traffic, because reaching it is genuinely earned: village approaches via Keshbandh, Borzar or Biliamba, then four to five kilometres of mountain descent and stream crossings from the Biliamba side.\n\nEvery account repeats the same advice: take locals from the approach villages, because the path cannot be found without them. The reward is the belt's most dramatic monsoon amphitheatre, vlogged as 'the most mysterious waterfall of Dang', the district label loose, as usual on this border, but the drama real.\n\nTravel-wise it extends the Songadh day beyond Gaumukh and Medha for parties equipped to trek; it is not a family picnic stop.",
   "highlights": [
     "Three-stepped fall claimed at over 200 feet",
     "Dense border forest via Keshbandh, Borzar or Biliamba villages",
-    "A guide-essential trek — 4–5 km with stream crossings"
+    "A guide-essential trek, 4–5 km with stream crossings"
   ],
   "history_legend": null,
   "attributes": { "height_m": 60, "tiers": 3 },
@@ -34,7 +34,7 @@
       "rail": "Songadh/Vyara or Navapur stations on the Surat–Bhusawal line",
       "air": "Surat (~115 km)"
     },
-    "last_mile": "4–5 km trek from the Biliamba side — mountain descent and stream crossings; unmarked",
+    "last_mile": "4–5 km trek from the Biliamba side, mountain descent and stream crossings; unmarked",
     "road_condition": "Rural tar to the villages; the rest is forest path",
     "parking": { "available": true, "fee": 0, "notes": "At the approach village" }
   },
@@ -45,13 +45,13 @@
     "duration_min": 300,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "A trekking day — start early, take village guides, and be out before dark."
+    "notes": "A trekking day. Start early, take village guides, and be out before dark."
   },
   "seasonality": {
     "best_months": [7, 8, 9],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "The three steps need peak monsoon; the trek is also at its riskiest then — judge conditions with the guides."
+    "notes": "The three steps need peak monsoon; the trek is also at its riskiest then, judge conditions with the guides."
   },
   "experience": {
     "activities": ["trekking", "nature-walk", "photography"],
@@ -60,26 +60,26 @@
     "photography_notes": "The full three-step face needs the far viewpoint the guides know; carry rain protection for gear throughout."
   },
   "amenities": {
-    "food": "None anywhere on the route — carry the day's food and water",
+    "food": "None anywhere on the route. Carry the day's food and water",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "none", "airtel": "none", "vi": "none", "bsnl": "none" },
-    "guides": "Essential — arrange in Keshbandh, Borzar or Biliamba; the path cannot be found unaided",
+    "guides": "Essential, arrange in Keshbandh, Borzar or Biliamba; the path cannot be found unaided",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Guide-essential border forest with zero network — never attempt unaccompanied",
+      "Guide-essential border forest with zero network, never attempt unaccompanied",
       "Stream crossings rise fast in active rain; turn back early",
-      "The descent is steep and slick — proper trekking footwear only"
+      "The descent is steep and slick, proper trekking footwear only"
     ],
     "emergency": { "nearest_hospital": "CHC Songadh (~35 km)", "police": "Songadh PS", "notes": "Tell your guides' village your return plan" }
   },
   "tips": [
-    "Combine nothing else with it — Kaka-Kaki is a full day on its own",
+    "Combine nothing else with it: Kaka-Kaki is a full day on its own",
     "Fix the guide arrangement the previous evening; morning starts matter here",
-    "The 200-foot figure is local claim, not survey — enjoy it as the border's giant either way"
+    "The 200-foot figure is local claim, not survey, enjoy it as the border's giant either way"
   ],
   "faqs": [],
   "nearby": [
@@ -89,7 +89,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Kaka-Kaki Waterfall — The Border Forest's 200-Footer",
+    "meta_title": "Kaka-Kaki Waterfall, The Border Forest's 200-Footer",
     "meta_description": "Kaka-Kaki's three-step fall near Gusrangam on the Gujarat–Maharashtra line: the guide-essential trek, season and safety."
   },
   "provenance": {
@@ -97,8 +97,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Kaka-Kaki Waterfall in Tapi District — 200-foot fall near Gusrangam; approaches via Keshbandh/Borzar/Biliamba, 4–5 km trek", "url": "https://blog.nrigujarati.co.in/kaka-kaki-waterfall-in-tapi-district-explore-gujarats-magnificent-200-foot-natural-wonder-surrounded-by-dense-forests/", "publisher": "nrigujarati.co.in", "accessed": "2026-08-10" },
-      { "title": "Kaka Kaki waterfall — 'the most mysterious waterfall of Dang' (vlog)", "url": "https://www.youtube.com/watch?v=Osb0XydOQlM", "publisher": "YouTube", "accessed": "2026-08-10" }
+      { "title": "Kaka-Kaki Waterfall in Tapi District. 200-foot fall near Gusrangam; approaches via Keshbandh/Borzar/Biliamba, 4–5 km trek", "url": "https://blog.nrigujarati.co.in/kaka-kaki-waterfall-in-tapi-district-explore-gujarats-magnificent-200-foot-natural-wonder-surrounded-by-dense-forests/", "publisher": "nrigujarati.co.in", "accessed": "2026-08-10" },
+      { "title": "Kaka Kaki waterfall, 'the most mysterious waterfall of Dang' (vlog)", "url": "https://www.youtube.com/watch?v=Osb0XydOQlM", "publisher": "YouTube", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.coordinates", "attributes.height_m", "access.last_mile"]
   }

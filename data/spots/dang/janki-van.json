@@ -10,15 +10,15 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "A Ramayana-themed forest garden at Bhinar near Unai — ten sacred groves, a tribal hut and tens of thousands of trees where Sita is said to have stayed.",
-  "description": "Janki Van extends the Dandakaranya story onto the Waghai–Vansda road: a 15.66-hectare social-forestry garden at Bhinar village, planted on the belief that Janki — Sita — once lived in this stretch of the great forest. Opened in 2015 for Gujarat's 66th Van Mahotsav, it organises its plantation into ten named groves — Ashok Van, Panchvati Van, Amravan, Chandan Van, Rashi-Nakshatra Van, Navgrah Van and the rest — so the walk doubles as a tour of sacred botany, from wedding-ritual species to the trees of the astrological calendar.\n\nLocals call it a 'tree library', and that is the honest register: tens of thousands of labelled trees, an interpretation centre, a tribal hut and a children's park rather than rides and stalls. It slots perfectly between Vansda National Park and the Waghai gardens as the quiet hour of a Waghai-belt day, and Unai's railway station — and its famous hot-spring temple — sit six kilometres away.\n\nIt keeps forest-department hours, ten to six, and takes Monday off for maintenance — worth remembering before detouring.",
+  "summary": "A Ramayana-themed forest garden at Bhinar near Unai, ten sacred groves, a tribal hut and tens of thousands of trees where Sita is said to have stayed.",
+  "description": "Janki Van extends the Dandakaranya story onto the Waghai–Vansda road: a 15.66-hectare social-forestry garden at Bhinar village, planted on the belief that Janki, Sita, once lived in this stretch of the great forest. Opened in 2015 for Gujarat's 66th Van Mahotsav, it organises its plantation into ten named groves, Ashok Van, Panchvati Van, Amravan, Chandan Van, Rashi-Nakshatra Van, Navgrah Van and the rest, so the walk doubles as a tour of sacred botany, from wedding-ritual species to the trees of the astrological calendar.\n\nLocals call it a 'tree library', and that is the honest register: tens of thousands of labelled trees, an interpretation centre, a tribal hut and a children's park rather than rides and stalls. It slots perfectly between Vansda National Park and the Waghai gardens as the quiet hour of a Waghai-belt day, and Unai's railway station, and its famous hot-spring temple, sit six kilometres away.\n\nIt keeps forest-department hours, ten to six, and takes Monday off for maintenance, worth remembering before detouring.",
   "highlights": [
     "Ten Ramayana-and-astrology themed groves in one walk",
-    "The 'tree library' — labelled species by the tens of thousands",
+    "The 'tree library', labelled species by the tens of thousands",
     "Interpretation centre, tribal hut and children's park",
     "Six kilometres from Unai's hot-spring temple and station"
   ],
-  "history_legend": "The garden's premise is the region's oldest story: this belt of Dandakaranya is held to be where Janki (Sita) stayed during the exile, and the ten groves plant that geography — Ashok Van and Panchvati Van included — as living collections.",
+  "history_legend": "The garden's premise is the region's oldest story: this belt of Dandakaranya is held to be where Janki (Sita) stayed during the exile, and the ten groves plant that geography, Ashok Van and Panchvati Van included, as living collections.",
   "attributes": { "area_ha": 15.66, "opened": 2015 },
   "location": {
     "taluka": "Vansda (Navsari)",
@@ -35,7 +35,7 @@
       "rail": "Unai station (~6 km) on the Bilimora–Waghai heritage line's broad-gauge feeder side",
       "air": "Surat (~95 km)"
     },
-    "last_mile": "Level garden paths from the gate — the easiest walking surface in the belt",
+    "last_mile": "Level garden paths from the gate, the easiest walking surface in the belt",
     "road_condition": "Tarred throughout",
     "parking": { "available": true, "fee": 0, "notes": "Lot at the entrance" }
   },
@@ -61,7 +61,7 @@
     "photography_notes": "The grove name-boards and canopy avenues are the frames; soft monsoon light suits the understorey."
   },
   "amenities": {
-    "food": "None inside — Unai and Vansda have the nearest food",
+    "food": "None inside. Unai and Vansda have the nearest food",
     "toilets": "basic",
     "drinking_water": true,
     "mobile_network": { "jio": "ok", "airtel": "ok", "vi": "weak", "bsnl": "ok" },
@@ -77,8 +77,8 @@
   },
   "tips": [
     "Pair with Unai's hot-spring temple 6 km away, or fold into the Vansda NP–Waghai day",
-    "Skip Monday — it is the maintenance closure",
-    "Read the grove boards — the Rashi and Navgrah plantings reward slow walking"
+    "Skip Monday: it is the maintenance closure",
+    "Read the grove boards, the Rashi and Navgrah plantings reward slow walking"
   ],
   "faqs": [
     {
@@ -94,7 +94,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Janki Van, Bhinar — The Ramayana Forest Garden",
+    "meta_title": "Janki Van, Bhinar, The Ramayana Forest Garden",
     "meta_description": "Janki Van near Unai and Vansda: ten Ramayana-themed groves, the 'tree library', timings, Monday closure and how it fits a Waghai-belt day."
   },
   "provenance": {
@@ -102,8 +102,8 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Janki van — Wikipedia (Bhinar, Vansda; 15.66 ha; opened 2 Aug 2015; ten themed groves; coordinates 20°48'N 73°20'E)", "url": "https://en.wikipedia.org/wiki/Janki_van", "publisher": "Wikipedia", "accessed": "2026-08-10" },
-      { "title": "Janki Van, Bhinar, Unai — forest garden based on Ramayana", "url": "https://darpan.blog/travel/janki-van-bhinar-unai-gujarat-forest-garden-surat-navsari-based-ramayana/", "publisher": "darpan.blog", "accessed": "2026-08-10" }
+      { "title": "Janki van, Wikipedia (Bhinar, Vansda; 15.66 ha; opened 2 Aug 2015; ten themed groves; coordinates 20°48'N 73°20'E)", "url": "https://en.wikipedia.org/wiki/Janki_van", "publisher": "Wikipedia", "accessed": "2026-08-10" },
+      { "title": "Janki Van, Bhinar, Unai, forest garden based on Ramayana", "url": "https://darpan.blog/travel/janki-van-bhinar-unai-gujarat-forest-garden-surat-navsari-based-ramayana/", "publisher": "darpan.blog", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.coordinates", "visit.fees", "visit.timings", "amenities.mobile_network"]
   }

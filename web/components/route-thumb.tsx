@@ -10,7 +10,7 @@ const H = 96;
 const PAD = 14;
 const DAY_STROKE = ["#34d399", "#fbbf24", "#38bdf8", "#f472b6", "#a78bfa"];
 
-/** Tiny static signature of a trip's route — server-safe, no interactivity. */
+/** Tiny static signature of a trip's route, server-safe, no interactivity. */
 export function RouteThumb({ stops }: { stops: RouteThumbStop[] }) {
   if (stops.length < 2) return null;
 

@@ -4,7 +4,7 @@
  * The curated trips get their geometry baked at build time by
  * scripts/fetch-routes.mjs, but /plan builds arbitrary routes, so those have to
  * be fetched in the browser. OSRM sends `Access-Control-Allow-Origin: *`, so a
- * static site can call it directly — no server, no API key.
+ * static site can call it directly, no server, no API key.
  *
  * `overview=simplified` keeps a five-stop day to ~58 points / 2.7 KB and ~200 ms,
  * against 3472 points / 77 KB for the full geometry at the same distance.
@@ -55,7 +55,7 @@ export async function fetchRoadRoute(
     cache.set(key, leg);
     return leg;
   } catch (err) {
-    // an aborted request is a superseded one, not a failure — don't poison the cache
+    // an aborted request is a superseded one, not a failure, don't poison the cache
     if ((err as Error)?.name !== "AbortError") cache.set(key, null);
     return null;
   }

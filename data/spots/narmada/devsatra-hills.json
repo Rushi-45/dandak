@@ -10,12 +10,12 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "The green hill country above Barkhadi village — a trek to ridgetop views, a small Shiv shrine and a monsoon waterfall, vlogged as Rajpipla's hill station.",
-  "description": "Devsatra is what the Rajpipla belt has instead of a hill station: a cluster of green hillocks and ridges rising over the Devsatra villages south-east of town, climbed on foot from Barkhadi village. Vloggers reach freely for 'hidden hill station of Gujarat', and in monsoon the comparison is honest enough — cloud sits on the ridgelines, the slopes run to grass and bamboo-hut hamlets, and a seasonal waterfall threads off the hill within reach of the trail.\n\nA small Shiv shrine on the hill gives the walk a destination and the place its Dev- name; trekking and tent-camping groups have started using the ridges for exactly the quiet that Saputara has lost. There is no infrastructure of any kind — this is village land and grazing country, and the courtesies that apply below at Barkhadi's falls apply up here doubly.\n\nDo it with the Barkhadi waterfall as one outing: falls in the morning, ridge for the afternoon cloud, back at the school trailhead before dark.",
+  "summary": "The green hill country above Barkhadi village, a trek to ridgetop views, a small Shiv shrine and a monsoon waterfall, vlogged as Rajpipla's hill station.",
+  "description": "Devsatra is what the Rajpipla belt has instead of a hill station: a cluster of green hillocks and ridges rising over the Devsatra villages south-east of town, climbed on foot from Barkhadi village. Vloggers reach freely for 'hidden hill station of Gujarat', and in monsoon the comparison is honest enough: cloud sits on the ridgelines, the slopes run to grass and bamboo-hut hamlets, and a seasonal waterfall threads off the hill within reach of the trail.\n\nA small Shiv shrine on the hill gives the walk a destination and the place its Dev- name; trekking and tent-camping groups have started using the ridges for exactly the quiet that Saputara has lost. There is no infrastructure of any kind: this is village land and grazing country, and the courtesies that apply below at Barkhadi's falls apply up here doubly.\n\nDo it with the Barkhadi waterfall as one outing: falls in the morning, ridge for the afternoon cloud, back at the school trailhead before dark.",
   "highlights": [
     "Ridgetop views over the Karjan back-country",
     "Seasonal waterfall on the hill trail",
-    "Small Shiv shrine — the hill's namesake destination",
+    "Small Shiv shrine, the hill's namesake destination",
     "Monsoon cloud-and-grass scenery vlogged as Gujarat's hidden hill station"
   ],
   "history_legend": null,
@@ -35,7 +35,7 @@
       "rail": "Ekta Nagar station (~27 km)",
       "air": "Vadodara (~96 km)"
     },
-    "last_mile": "Hill trek from Barkhadi village — village lanes, then open slopes to the ridgeline and shrine",
+    "last_mile": "Hill trek from Barkhadi village. Village lanes, then open slopes to the ridgeline and shrine",
     "road_condition": "Rural tar to the village; the hill is footpath only",
     "parking": { "available": true, "fee": 0, "notes": "Park at Barkhadi primary school, as for the waterfall" }
   },
@@ -46,7 +46,7 @@
     "duration_min": 240,
     "best_time_of_day": "early-morning",
     "weekly_closure": null,
-    "notes": "Open hill country — no gate, no ticket; be off the ridges before dark."
+    "notes": "Open hill country, no gate, no ticket; be off the ridges before dark."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10, 11],
@@ -61,26 +61,26 @@
     "photography_notes": "Ridgelines shoot best at golden hour; monsoon cloud gives moving-light drama over the Karjan valleys."
   },
   "amenities": {
-    "food": "None — carry everything from Rajpipla",
+    "food": "None. Carry everything from Rajpipla",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
-    "guides": "A Barkhadi villager as guide is worth it — trails braid across grazing land",
+    "guides": "A Barkhadi villager as guide is worth it, trails braid across grazing land",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "Open slopes offer no shelter in lightning weather — descend early if storms build",
+      "Open slopes offer no shelter in lightning weather, descend early if storms build",
       "Carry all water; there is none reliable on the ridge",
-      "Grazing land and crops below — walk edges, close no gates"
+      "Grazing land and crops below: walk edges, close no gates"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~25 km)", "police": "Rajpipla rural PS", "notes": null }
   },
   "tips": [
-    "Combine with Barkhadi waterfall — same trailhead, one full day",
+    "Combine with Barkhadi waterfall, same trailhead, one full day",
     "Camping groups should ask in the village first; it is their land",
-    "Monsoon afternoons cloud over fast — ridge first, falls after, if views matter to you"
+    "Monsoon afternoons cloud over fast: ridge first, falls after, if views matter to you"
   ],
   "faqs": [],
   "nearby": [
@@ -91,7 +91,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Devsatra Hills, Narmada — Rajpipla's Hill Trek",
+    "meta_title": "Devsatra Hills, Narmada, Rajpipla's Hill Trek",
     "meta_description": "Trekking the Devsatra (Dev Hatra) hills above Barkhadi village: ridgetop views, the Shiv shrine, the seasonal waterfall and monsoon window."
   },
   "provenance": {
@@ -99,9 +99,9 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Dev Satara Hill Station Rajpipla | Hidden Gem of Gujarat — vlog", "url": "https://www.youtube.com/watch?v=RSGoN83wHUo", "publisher": "YouTube", "accessed": "2026-08-10" },
-      { "title": "Devhatra Waterfalls / Dev Hatra Hills at Rajpipla — vlog", "url": "https://www.youtube.com/watch?v=FVmS-3em6VY", "publisher": "YouTube", "accessed": "2026-08-10" },
-      { "title": "Barkhadi waterfall trip report — names the village as 'base for the Dev Hatra Hill trek'", "url": "https://safarwithsasha.com/our_trips/barkhadi-waterfall-lets-welcome-monsoon/", "publisher": "safarwithsasha.com", "accessed": "2026-08-10" }
+      { "title": "Dev Satara Hill Station Rajpipla | Hidden Gem of Gujarat, vlog", "url": "https://www.youtube.com/watch?v=RSGoN83wHUo", "publisher": "YouTube", "accessed": "2026-08-10" },
+      { "title": "Devhatra Waterfalls / Dev Hatra Hills at Rajpipla, vlog", "url": "https://www.youtube.com/watch?v=FVmS-3em6VY", "publisher": "YouTube", "accessed": "2026-08-10" },
+      { "title": "Barkhadi waterfall trip report, names the village as 'base for the Dev Hatra Hill trek'", "url": "https://safarwithsasha.com/our_trips/barkhadi-waterfall-lets-welcome-monsoon/", "publisher": "safarwithsasha.com", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.coordinates", "location.taluka", "location.distances_km", "access.last_mile", "amenities.mobile_network"]
   }

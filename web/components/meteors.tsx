@@ -1,4 +1,4 @@
-/** CSS meteors — amber streaks for the legends card. Fixed positions keep hydration stable. */
+/** CSS meteors, amber streaks for the legends card. Fixed positions keep hydration stable. */
 const METEORS = [
   { left: "8%", top: "-5%", delay: "0s", duration: "4.6s" },
   { left: "22%", top: "10%", delay: "1.4s", duration: "6.2s" },

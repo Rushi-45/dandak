@@ -10,15 +10,15 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "A cave shrine of Pandava exile lore with a monsoon waterfall beside it — reached by a rough 1.5–3 km trek from Javatla village off the Ahwa road.",
-  "description": "The Pandav Caves extend Dang's epic geography from the Ramayana into the Mahabharata: local tradition holds that the Pandavas sheltered in this rock complex during their forest exile, and the largest chamber is pointed out as Bhima's. A Shivling inside keeps the site in living worship, and in monsoon a waterfall wakes beside the caves, doubling the reward for the walk in.\n\nGetting there is the adventure: divert off the Saputara–Ahwa highway at Linga toward Javatla village, then trek the last 1.5–3 km on a rugged, winding path — moderately demanding, and best done with a local pointing the way. There is no tourist setup at all: no stalls, no facilities, no signage worth trusting. Carry water, wear grip shoes, and keep daylight margins.\n\nCome July to October for the fall at full voice; winter offers cooler trekking with the caves as the main event. Pair it with the Shabari Dham circuit or a Mahal night for a full interior day steeped in the district's story-map.",
+  "summary": "A cave shrine of Pandava exile lore with a monsoon waterfall beside it, reached by a rough 1.5–3 km trek from Javatla village off the Ahwa road.",
+  "description": "The Pandav Caves extend Dang's epic geography from the Ramayana into the Mahabharata: local tradition holds that the Pandavas sheltered in this rock complex during their forest exile, and the largest chamber is pointed out as Bhima's. A Shivling inside keeps the site in living worship, and in monsoon a waterfall wakes beside the caves, doubling the reward for the walk in.\n\nGetting there is the adventure: divert off the Saputara–Ahwa highway at Linga toward Javatla village, then trek the last 1.5–3 km on a rugged, winding path, moderately demanding, and best done with a local pointing the way. There is no tourist setup at all: no stalls, no facilities, no signage worth trusting. Carry water, wear grip shoes, and keep daylight margins.\n\nCome July to October for the fall at full voice; winter offers cooler trekking with the caves as the main event. Pair it with the Shabari Dham circuit or a Mahal night for a full interior day steeped in the district's story-map.",
   "highlights": [
     "Cave chambers tied to the Pandavas' exile in local telling",
     "Shivling in active worship inside the cave",
     "Monsoon waterfall beside the rocks",
-    "Proper 1.5–3 km trek — no tourist setup at all"
+    "Proper 1.5–3 km trek, no tourist setup at all"
   ],
-  "history_legend": "Local tradition places the Pandavas' forest refuge here, with the largest chamber assigned to Bhima. Like Dang's Ramayana sites, it is living devotional geography — cherished narrative, not archaeology.",
+  "history_legend": "Local tradition places the Pandavas' forest refuge here, with the largest chamber assigned to Bhima. Like Dang's Ramayana sites, it is living devotional geography, cherished narrative, not archaeology.",
   "attributes": { "deity": "Shivling within the cave" },
   "location": {
     "taluka": "Ahwa",
@@ -31,7 +31,7 @@
   },
   "access": {
     "modes": {
-      "road": "Divert from the Saputara–Ahwa highway at Linga village toward Javatla (~35 km from Saputara); no public transport — own vehicle or hired jeep",
+      "road": "Divert from the Saputara–Ahwa highway at Linga village toward Javatla (~35 km from Saputara); no public transport, own vehicle or hired jeep",
       "rail": "Waghai narrow gauge (~60 km); Bilimora Jn for broad gauge",
       "air": "Surat (~157 km)"
     },
@@ -61,26 +61,26 @@
     "photography_notes": "Cave-mouth frames work mid-morning when light reaches the rock; the fall pairs best with a slow shutter."
   },
   "amenities": {
-    "food": "None — carry everything; nearest food at Ahwa or Linga",
+    "food": "None. Carry everything; nearest food at Ahwa or Linga",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Take a local from Javatla — the path braids and lore comes free",
+    "guides": "Take a local from Javatla. The path braids and lore comes free",
     "ev_charging": false,
     "stay_nearby": ["dang-mahal-eco-campsite"]
   },
   "safety": {
     "warnings": [
-      "Wet rock around the cave and fall is treacherous — grip shoes essential",
-      "No facilities or quick rescue — go in a group with daylight margin",
+      "Wet rock around the cave and fall is treacherous, grip shoes essential",
+      "No facilities or quick rescue, go in a group with daylight margin",
       "Respect the shrine; the cave is in active worship"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~27 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
     "Combine with the Shabari Dham circuit for a full epic-geography day",
-    "Fuel and provisions at Ahwa — nothing after Linga",
-    "Monsoon gives the fall; winter gives the friendlier trek — pick your trade"
+    "Fuel and provisions at Ahwa, nothing after Linga",
+    "Monsoon gives the fall; winter gives the friendlier trek, pick your trade"
   ],
   "faqs": [
     {
@@ -107,7 +107,7 @@
     ]
   },
   "seo": {
-    "meta_title": "Pandav Caves & Waterfall, Dang — Trek Guide",
+    "meta_title": "Pandav Caves & Waterfall, Dang, Trek Guide",
     "meta_description": "Trekking to Dang's Pandav Caves from Javatla village: the exile lore, the monsoon waterfall, route notes and safety."
   },
   "provenance": {
@@ -115,7 +115,7 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Pandava Cave & Waterfall, Dang — Safar Gujarat", "url": "https://en.safargujarat.com/pandav-caves-waterfall-dang-distance-timings-entry-fee/", "publisher": "safargujarat.com", "accessed": "2026-08-09" }
+      { "title": "Pandava Cave & Waterfall, Dang, Safar Gujarat", "url": "https://en.safargujarat.com/pandav-caves-waterfall-dang-distance-timings-entry-fee/", "publisher": "safargujarat.com", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.coordinates", "access.last_mile"]
   }

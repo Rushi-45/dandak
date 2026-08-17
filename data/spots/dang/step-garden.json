@@ -10,8 +10,8 @@
   "cluster": "saputara",
   "status": "active",
   "district": "dang",
-  "summary": "Terraced hillside garden in Saputara town — planted steps, shaded corners and short winding paths that suit an easy family hour.",
-  "description": "The Step Garden works Saputara's slope instead of fighting it: planted terraces stacked down a hillside, linked by winding paths, small bridges and staircases, with flowerbeds and clipped shrubs holding each level. It is compact, shaded in the right places, and built for exactly the hour between checking in and heading out to the viewpoints.\n\nChildren treat the levels as a course to be run; everyone else drifts, sits, and photographs the framed views that open between trees. Bloom is best in and just after monsoon and through the winter bedding season. Like most of Saputara's town gardens it charges a token entry and keeps garden hours — mornings are quiet, holiday evenings busy.",
+  "summary": "Terraced hillside garden in Saputara town, planted steps, shaded corners and short winding paths that suit an easy family hour.",
+  "description": "The Step Garden works Saputara's slope instead of fighting it: planted terraces stacked down a hillside, linked by winding paths, small bridges and staircases, with flowerbeds and clipped shrubs holding each level. It is compact, shaded in the right places, and built for exactly the hour between checking in and heading out to the viewpoints.\n\nChildren treat the levels as a course to be run; everyone else drifts, sits, and photographs the framed views that open between trees. Bloom is best in and just after monsoon and through the winter bedding season. Like most of Saputara's town gardens it charges a token entry and keeps garden hours: mornings are quiet, holiday evenings busy.",
   "highlights": [
     "Planted terraces stepping down the hillside",
     "Shaded paths and sit-down corners",
@@ -41,9 +41,9 @@
   "visit": {
     "timings": [
       { "days": "all", "open": "08:00", "close": "12:00", "note": "Reported morning window" },
-      { "days": "all", "open": "15:00", "close": "17:00", "note": "Reported afternoon window; sources conflict — verify locally" }
+      { "days": "all", "open": "15:00", "close": "17:00", "note": "Reported afternoon window; sources conflict, verify locally" }
     ],
-    "fees": [{ "type": "entry", "amount_inr": 10, "note": "₹10 commonly cited; up to ₹50 reported — conflicting" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "₹10 commonly cited; up to ₹50 reported, conflicting" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -73,12 +73,12 @@
   },
   "safety": {
     "warnings": [
-      "Steps get slippery in rain — mind footing with small children"
+      "Steps get slippery in rain, mind footing with small children"
     ],
     "emergency": { "nearest_hospital": "Saputara CHC; Civil Hospital Ahwa (~50 km)", "police": "Saputara PS", "notes": null }
   },
   "tips": [
-    "The stairs add up — elderly visitors may prefer the flatter Lake Garden",
+    "The stairs add up: elderly visitors may prefer the flatter Lake Garden",
     "Slot it as a morning filler before the rim-road circuit"
   ],
   "faqs": [],
@@ -90,7 +90,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Step Garden, Saputara — Visit Notes",
+    "meta_title": "Step Garden, Saputara, Visit Notes",
     "meta_description": "Saputara's terraced Step Garden: timings, token entry, and when the hillside beds are at their best."
   },
   "provenance": {
@@ -99,7 +99,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "14 Top Places to Visit in Saputara (2026)", "url": "https://thetriptimes.in/blog/best-places-to-visit-in-saputara", "publisher": "thetriptimes.in", "accessed": "2026-08-08" },
-      { "title": "Step Garden, Saputara — TripHobo", "url": "https://www.triphobo.com/places/saputara-india/step-garden", "publisher": "triphobo.com", "accessed": "2026-08-08" }
+      { "title": "Step Garden, Saputara, TripHobo", "url": "https://www.triphobo.com/places/saputara-india/step-garden", "publisher": "triphobo.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "visit.fees", "location.coordinates"]
   }

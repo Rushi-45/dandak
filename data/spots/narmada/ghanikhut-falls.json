@@ -10,10 +10,10 @@
   "cluster": "dediapada-belt",
   "status": "active",
   "district": "narmada",
-  "summary": "Broad cascades at Ghanikhut village near Netrang — drive almost to the water, which makes it the belt's easiest family waterfall.",
-  "description": "Ghanikhut — the same falls circulate as Rampam, Ram-Pam and Reva — is the western Dediapada belt's low-effort waterfall: wide cascades over stepped rock at Ghanikhut village near Netrang, with the rare virtue that a car gets you practically to the water. No trek, no descent — which is exactly why local families claim it on monsoon weekends, and why it makes the natural first stop on the Netrang–Dediapada run.\n\nThe cascades are broad rather than tall, and their sound is half the attraction — trip reports keep mentioning the roar before the view. Flow holds some water for much of the year but only the monsoon months put on the show; visits are informally kept to daylight hours (roughly 7 to 7).\n\nIt is administratively across the line in Bharuch district, but travellers meet it as the gateway fall of the Shoolpaneshwar belt — pair it with Ninai or the Sagai side for a falls-ladder day from easy to earned.",
+  "summary": "Broad cascades at Ghanikhut village near Netrang. Drive almost to the water, which makes it the belt's easiest family waterfall.",
+  "description": "Ghanikhut, the same falls circulate as Rampam, Ram-Pam and Reva, is the western Dediapada belt's low-effort waterfall: wide cascades over stepped rock at Ghanikhut village near Netrang, with the rare virtue that a car gets you practically to the water. No trek, no descent, which is exactly why local families claim it on monsoon weekends, and why it makes the natural first stop on the Netrang–Dediapada run.\n\nThe cascades are broad rather than tall, and their sound is half the attraction, trip reports keep mentioning the roar before the view. Flow holds some water for much of the year but only the monsoon months put on the show; visits are informally kept to daylight hours (roughly 7 to 7).\n\nIt is administratively across the line in Bharuch district, but travellers meet it as the gateway fall of the Shoolpaneshwar belt, pair it with Ninai or the Sagai side for a falls-ladder day from easy to earned.",
   "highlights": [
-    "Drive-up access — the belt's easiest waterfall",
+    "Drive-up access, the belt's easiest waterfall",
     "Broad stepped cascades with a proper monsoon roar",
     "Natural first stop on the Netrang–Dediapada run"
   ],
@@ -34,7 +34,7 @@
       "rail": "Ankleshwar Jn (~50 km)",
       "air": "Surat or Vadodara (~90–110 km)"
     },
-    "last_mile": "Effectively none — a short level walk from where cars stop",
+    "last_mile": "Effectively none, a short level walk from where cars stop",
     "road_condition": "Tarred to the village; the last stretch is rough but ordinary-car friendly in dry spells",
     "parking": { "available": true, "fee": 0, "notes": "Informal, close to the cascades" }
   },
@@ -70,19 +70,19 @@
   },
   "safety": {
     "warnings": [
-      "Stepped rock hides drops — keep children off the wet ledges",
+      "Stepped rock hides drops: keep children off the wet ledges",
       "Currents strengthen sharply after upstream rain; stay off mid-stream rock in spate"
     ],
     "emergency": { "nearest_hospital": "CHC Netrang (~10 km)", "police": "Netrang PS", "notes": null }
   },
   "tips": [
     "Use it as the easy opener of a Dediapada waterfall day, with Ninai as the earned finish",
-    "Go before noon on weekends — picnic crowds own the afternoon",
-    "The names Ghanikhut, Rampam and Reva all point to the same falls — don't chase them separately"
+    "Go before noon on weekends, picnic crowds own the afternoon",
+    "The names Ghanikhut, Rampam and Reva all point to the same falls, don't chase them separately"
   ],
   "faqs": [],
   "nearby": [
-    { "id": "narmada-ninai-falls", "distance_km": 60, "note": "The belt's headline fall — opposite end of the effort scale" },
+    { "id": "narmada-ninai-falls", "distance_km": 60, "note": "The belt's headline fall. Opposite end of the effort scale" },
     { "id": "narmada-shoolpaneshwar-wls", "distance_km": 45 },
     { "id": "narmada-kadia-dungar-caves", "distance_km": 28, "note": "Buddhist caves on the same Bharuch side" }
   ],
@@ -100,7 +100,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Ghanikhut (Rampam) Waterfall — Netrang's Cascades",
+    "meta_title": "Ghanikhut (Rampam) Waterfall, Netrang's Cascades",
     "meta_description": "Ghanikhut waterfall near Netrang: drive-up cascades, the Rampam/Reva naming tangle, best months and pairing with Dediapada's falls."
   },
   "provenance": {
@@ -108,9 +108,9 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Ghanikhut / Ram-Pam Waterfall — Perfect Monsoon Getaway (trip report)", "url": "https://safarwithsasha.com/our_trips/ghanikhut-ram-pam-waterfall-perfect-monsoon-getaway/", "publisher": "safarwithsasha.com", "accessed": "2026-08-10" },
-      { "title": "Ghanikhut waterfall — hiking area listing, Ghanikhut village (07:00–19:00)", "url": "https://yappe.in/gujarat/ghanikhut/ghanikhut-waterfall/727969", "publisher": "yappe.in", "accessed": "2026-08-10" },
-      { "title": "Ghanikhut waterfall — attraction listing (filed under Bharuch)", "url": "https://www.trip.com/travel-guide/attraction/bharuch/ghanikhut-waterfall-138469569/", "publisher": "trip.com", "accessed": "2026-08-10" }
+      { "title": "Ghanikhut / Ram-Pam Waterfall, Perfect Monsoon Getaway (trip report)", "url": "https://safarwithsasha.com/our_trips/ghanikhut-ram-pam-waterfall-perfect-monsoon-getaway/", "publisher": "safarwithsasha.com", "accessed": "2026-08-10" },
+      { "title": "Ghanikhut waterfall, hiking area listing, Ghanikhut village (07:00–19:00)", "url": "https://yappe.in/gujarat/ghanikhut/ghanikhut-waterfall/727969", "publisher": "yappe.in", "accessed": "2026-08-10" },
+      { "title": "Ghanikhut waterfall, attraction listing (filed under Bharuch)", "url": "https://www.trip.com/travel-guide/attraction/bharuch/ghanikhut-waterfall-138469569/", "publisher": "trip.com", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "visit.timings", "amenities.mobile_network"]
   }

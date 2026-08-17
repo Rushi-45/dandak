@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "songadh-forest-day",
   "slug": "songadh-forest-day",
-  "title": "The Songadh Forest Day — Fort, Gaumukh & Medha",
+  "title": "The Songadh Forest Day, Fort, Gaumukh & Medha",
   "duration_days": 1,
   "districts": ["dang"],
   "themes": ["monsoon", "offbeat", "history", "nature"],
@@ -15,9 +15,9 @@
     { "day": 1, "order": 3, "spot_id": "dang-medha-falls", "duration_min": 120, "note": "Finish at the multi-tier 'Dudhsagar of Gujarat'" }
   ],
   "day_notes": [
-    { "day": 1, "note": "Ninety kilometres from Surat on NH-53 and doable as a long day trip: fort at opening light, then the forest falls. Trekking shoes for all three stops; Medha's path is the slipperiest. Hard-mode swap: replace both falls with Kaka-Kaki — the border 200-footer — but that is a guide-essential full day on its own, arranged the evening before at the approach villages. Soul-to-Prakriti falls sits two kilometres from Medha for completists." }
+    { "day": 1, "note": "Ninety kilometres from Surat on NH-53 and doable as a long day trip: fort at opening light, then the forest falls. Trekking shoes for all three stops; Medha's path is the slipperiest. Hard-mode swap: replace both falls with Kaka-Kaki, the border 200-footer, but that is a guide-essential full day on its own, arranged the evening before at the approach villages. Soul-to-Prakriti falls sits two kilometres from Medha for completists." }
   ],
   "total_drive_km": 230,
-  "notes": "Technically a Tapi-district day, included the way the dataset's travellers actually use it — as the northern extension of the Dang forest belt. Everything is monsoon-timed: the fort is the only stop worth making outside the rains.",
+  "notes": "Technically a Tapi-district day, included the way the dataset's travellers actually use it, as the northern extension of the Dang forest belt. Everything is monsoon-timed: the fort is the only stop worth making outside the rains.",
   "provenance": { "created": "2026-08-10", "last_reviewed": "2026-08-10" }
 }

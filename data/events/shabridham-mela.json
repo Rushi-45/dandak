@@ -16,7 +16,7 @@
   "scale": "regional",
   "crowd_impact": "The Subir approach roads and parking stretch thin on peak mela days; ordinary weeks stay easy.",
   "tips": [
-    "Combine with Pampa Sarovar — the mela extends there naturally",
+    "Combine with Pampa Sarovar, the mela extends there naturally",
     "Mornings are calmer; community meals welcome visitors respectfully"
   ],
   "provenance": {
@@ -24,7 +24,7 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Shabridham Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" }
+      { "title": "Shabridham Mela, Utsav portal", "url": "https://utsav.gov.in/view-event/shabridham-mela-1", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["timing.duration_days"]
   }

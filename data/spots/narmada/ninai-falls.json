@@ -10,8 +10,8 @@
   "cluster": "dediapada-belt",
   "status": "active",
   "district": "narmada",
-  "summary": "A compact, forceful monsoon waterfall in forested country ~35 km from Dediapada — eastern Narmada's favourite rainy-season outing.",
-  "description": "Ninai is the eastern belt's monsoon ritual: a compact waterfall where a forest stream drops hard off a rock lip into a broad pool, framed by the Shoolpaneshwar sanctuary's green on all sides. It lacks the height of the Dang giants but makes up for it in setting and force — in August the plunge churns the pool white and the spray drifts across the viewing rocks.\n\nAccess is part of the appeal and part of the challenge: the falls lie ~35 km from Dediapada by forest roads, with a final rough stretch and a descent of about 150 steps from the parking area to the rock apron. The route passes through proper sanctuary-edge forest and tribal hamlets, and in season roadside stalls appear with corn and lemon water. Facilities beyond that are minimal — this is a carry-your-own-water outing.\n\nFlow collapses quickly after the rains: July to early October is the show, and by December it is a trickle worth skipping. Weekends bring local crowds from Rajpipla and Bharuch; weekday visits are quiet.",
+  "summary": "A compact, forceful monsoon waterfall in forested country ~35 km from Dediapada, eastern Narmada's favourite rainy-season outing.",
+  "description": "Ninai is the eastern belt's monsoon ritual: a compact waterfall where a forest stream drops hard off a rock lip into a broad pool, framed by the Shoolpaneshwar sanctuary's green on all sides. It lacks the height of the Dang giants but makes up for it in setting and force, in August the plunge churns the pool white and the spray drifts across the viewing rocks.\n\nAccess is part of the appeal and part of the challenge: the falls lie ~35 km from Dediapada by forest roads, with a final rough stretch and a descent of about 150 steps from the parking area to the rock apron. The route passes through proper sanctuary-edge forest and tribal hamlets, and in season roadside stalls appear with corn and lemon water. Facilities beyond that are minimal: this is a carry-your-own-water outing.\n\nFlow collapses quickly after the rains: July to early October is the show, and by December it is a trickle worth skipping. Weekends bring local crowds from Rajpipla and Bharuch; weekday visits are quiet.",
   "highlights": [
     "Forceful plunge and wide pool in sanctuary-edge forest",
     "Scenic forest drive from Dediapada",
@@ -31,7 +31,7 @@
   },
   "access": {
     "modes": {
-      "road": "Via Dediapada toward Malsamot; the final approach is a rough forest track — high-clearance helps in monsoon",
+      "road": "Via Dediapada toward Malsamot; the final approach is a rough forest track, high-clearance helps in monsoon",
       "rail": "Ankleshwar/Bharuch side railheads (~90+ km); no practical rail access",
       "air": "Surat or Vadodara (~120–130 km)"
     },
@@ -52,7 +52,7 @@
     "best_months": [7, 8, 9, 10],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "A monsoon-only destination in practice — flow fades fast from November."
+    "notes": "A monsoon-only destination in practice. Flow fades fast from November."
   },
   "experience": {
     "activities": ["sightseeing", "photography", "picnic", "nature-walk"],
@@ -61,7 +61,7 @@
     "photography_notes": "Late morning drops direct light into the pool bowl; protect gear from drift-spray on the apron."
   },
   "amenities": {
-    "food": "Seasonal stalls at the approach in peak monsoon; otherwise nothing — carry food and water",
+    "food": "Seasonal stalls at the approach in peak monsoon; otherwise nothing. Carry food and water",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -71,21 +71,21 @@
   },
   "safety": {
     "warnings": [
-      "Do not swim — the pool has undertows and submerged rock in monsoon flow",
+      "Do not swim: the pool has undertows and submerged rock in monsoon flow",
       "The descent rocks are slick; grip footwear essential",
-      "No quick rescue here — keep children in hand at all times"
+      "No quick rescue here: keep children in hand at all times"
     ],
     "emergency": { "nearest_hospital": "CHC Dediapada (~25 km)", "police": "Dediapada PS", "notes": null }
   },
   "tips": [
-    "Dediapada is the pivot — Sagai–Malsamot lies ~50 km the other side of it; doing both is a very full day",
-    "Fuel and food up in Dediapada — nothing reliable beyond",
+    "Dediapada is the pivot: Sagai–Malsamot lies ~50 km the other side of it; doing both is a very full day",
+    "Fuel and food up in Dediapada, nothing reliable beyond",
     "Go weekday if you can; monsoon Sundays get loud"
   ],
   "faqs": [
     {
       "q": "Is Ninai worth it from the Statue of Unity?",
-      "a": "In peak monsoon, yes — it's the best waterfall day within reach, about two hours' drive. From November onward, no; the flow is gone."
+      "a": "In peak monsoon, yes. It's the best waterfall day within reach, about two hours' drive. From November onward, no; the flow is gone."
     }
   ],
   "nearby": [
@@ -107,7 +107,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Ninai Falls, Narmada — Monsoon Guide",
+    "meta_title": "Ninai Falls, Narmada, Monsoon Guide",
     "meta_description": "Reaching Ninai falls from Dediapada: forest-track access, best months, safety and pairing with Sagai–Malsamot."
   },
   "provenance": {
@@ -115,10 +115,10 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Ninai Waterfall — District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/ninai-waterfall/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
-      { "title": "Ninai Waterfalls — Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/narmada/ninai-waterfall.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
-      { "title": "Ninai Falls — Wikipedia; coordinates via Mappls", "url": "https://en.wikipedia.org/wiki/Ninai_Falls", "publisher": "Wikipedia / Mappls", "accessed": "2026-08-08" },
-      { "title": "OpenStreetMap — Ninai (node 2376720535; independently agrees with the recorded coordinates)", "url": "https://www.openstreetmap.org/node/2376720535", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
+      { "title": "Ninai Waterfall, District Narmada, Government of Gujarat", "url": "https://narmada.nic.in/tourist-place/ninai-waterfall/", "publisher": "narmada.nic.in (official)", "accessed": "2026-08-08" },
+      { "title": "Ninai Waterfalls, Gujarat Tourism", "url": "https://gujarattourism.com/central-zone/narmada/ninai-waterfall.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Ninai Falls, Wikipedia; coordinates via Mappls", "url": "https://en.wikipedia.org/wiki/Ninai_Falls", "publisher": "Wikipedia / Mappls", "accessed": "2026-08-08" },
+      { "title": "OpenStreetMap, Ninai (node 2376720535; independently agrees with the recorded coordinates)", "url": "https://www.openstreetmap.org/node/2376720535", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["access.road_condition"]
   }

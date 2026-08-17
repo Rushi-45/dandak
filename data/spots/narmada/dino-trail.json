@@ -10,14 +10,14 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A short walk among life-size dinosaur models headlined by a towering Rajasaurus — a kids' delight with a real Narmada-valley fossil hook.",
-  "description": "The Dino Trail plants a paleontological footnote in the campus: the Narmada valley is genuine dinosaur country — Rajasaurus narmadensis, an Indian predator, was described from fossils found in this river's basin — and the trail runs that fact through life-size models along a landscaped walk, crowned by a very large, very photographed Rajasaurus.\n\nIt is unapologetically a kids' stop: twenty to thirty minutes of roaring photo ops with signboards that smuggle in real science. With under-10s it earns its ticket; without them, it is a drive-past unless the fossil angle charms you.",
+  "summary": "A short walk among life-size dinosaur models headlined by a towering Rajasaurus, a kids' delight with a real Narmada-valley fossil hook.",
+  "description": "The Dino Trail plants a paleontological footnote in the campus: the Narmada valley is genuine dinosaur country, Rajasaurus narmadensis, an Indian predator, was described from fossils found in this river's basin, and the trail runs that fact through life-size models along a landscaped walk, crowned by a very large, very photographed Rajasaurus.\n\nIt is unapologetically a kids' stop: twenty to thirty minutes of roaring photo ops with signboards that smuggle in real science. With under-10s it earns its ticket; without them, it is a drive-past unless the fossil angle charms you.",
   "highlights": [
     "Towering Rajasaurus centrepiece",
     "Life-size models along a short walk",
     "Real Narmada-valley fossil story underneath"
   ],
-  "history_legend": "Rajasaurus narmadensis — 'the regal reptile of the Narmada' — was described in 2003 from fossils recovered in the Narmada basin, giving India its own named large predator and this trail its excuse.",
+  "history_legend": "Rajasaurus narmadensis, 'the regal reptile of the Narmada', was described in 2003 from fossils recovered in the Narmada basin, giving India its own named large predator and this trail its excuse.",
   "attributes": {},
   "location": {
     "taluka": "Garudeshwar",
@@ -70,7 +70,7 @@
   },
   "safety": {
     "warnings": [
-      "No climbing the models — enforced and sensible"
+      "No climbing the models, enforced and sensible"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
@@ -85,7 +85,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Dino Trail, Ekta Nagar — Rajasaurus Walk",
+    "meta_title": "Dino Trail, Ekta Nagar, Rajasaurus Walk",
     "meta_description": "The dinosaur-model trail at the SoU campus and the real Narmada fossil story behind it."
   },
   "provenance": {

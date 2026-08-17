@@ -10,15 +10,15 @@
   "cluster": "ekta-nagar-area",
   "status": "active",
   "district": "narmada",
-  "summary": "Riverside samadhi shrine of Vasudevanand Saraswati — a major Dattatreya pilgrimage on the Narmada, minutes from Ekta Nagar.",
-  "description": "Garudeshwar is a name that means little to most Gujarat tourists and everything to Dattatreya devotees: on the Narmada's bank here is the samadhi of Vasudevanand Saraswati (Tembe Swami), the early-twentieth-century ascetic revered as an incarnation of Dattatreya, alongside the older Garudeshwar Mahadev shrine that names the place. Pilgrims — many from Maharashtra — come for darshan, parayan recitations and the riverfront's unhurried devotional rhythm.\n\nFor Statue of Unity visitors it makes a graceful counterpoint: fifteen minutes from the campus's engineered spectacle to ghats where the river is worshipped rather than dammed. Datta Jayanti (December) and Guru Purnima are the peak occasions; ordinary mornings are quiet, with the aarti and the water doing the work.\n\nDress modestly, remove footwear at the shrines, and let the temple's pace set yours — this is a living pilgrimage site, not a campus attraction.",
+  "summary": "Riverside samadhi shrine of Vasudevanand Saraswati, a major Dattatreya pilgrimage on the Narmada, minutes from Ekta Nagar.",
+  "description": "Garudeshwar is a name that means little to most Gujarat tourists and everything to Dattatreya devotees: on the Narmada's bank here is the samadhi of Vasudevanand Saraswati (Tembe Swami), the early-twentieth-century ascetic revered as an incarnation of Dattatreya, alongside the older Garudeshwar Mahadev shrine that names the place. Pilgrims, many from Maharashtra, come for darshan, parayan recitations and the riverfront's unhurried devotional rhythm.\n\nFor Statue of Unity visitors it makes a graceful counterpoint: fifteen minutes from the campus's engineered spectacle to ghats where the river is worshipped rather than dammed. Datta Jayanti (December) and Guru Purnima are the peak occasions; ordinary mornings are quiet, with the aarti and the water doing the work.\n\nDress modestly, remove footwear at the shrines, and let the temple's pace set yours: this is a living pilgrimage site, not a campus attraction.",
   "highlights": [
     "Samadhi of Vasudevanand Saraswati (Tembe Swami)",
     "Narmada ghats with daily aarti",
     "Fifteen minutes from the SoU campus, a world apart",
     "Datta Jayanti in December is the peak"
   ],
-  "history_legend": "Vasudevanand Saraswati, the itinerant ascetic and Datta-tradition scholar, took samadhi at Garudeshwar in 1914; the site has since grown into one of the tradition's principal pilgrimage centres. The Garudeshwar Mahadev shrine carries the older layer — Garuda is said in local telling to have worshipped Shiva here.",
+  "history_legend": "Vasudevanand Saraswati, the itinerant ascetic and Datta-tradition scholar, took samadhi at Garudeshwar in 1914; the site has since grown into one of the tradition's principal pilgrimage centres. The Garudeshwar Mahadev shrine carries the older layer: Garuda is said in local telling to have worshipped Shiva here.",
   "attributes": { "deity": "Dattatreya / Shiva", "tradition": "Datta sampradaya", "main_festival": "Datta Jayanti (December); Guru Purnima" },
   "location": {
     "taluka": "Garudeshwar",
@@ -74,19 +74,19 @@
   },
   "safety": {
     "warnings": [
-      "Bathe only at the designated ghat sections — the Narmada's current is deceptive",
+      "Bathe only at the designated ghat sections: the Narmada's current is deceptive",
       "Festival crowds require patience with elderly companions"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~30 km)", "police": "Garudeshwar PS", "notes": null }
   },
   "tips": [
-    "Attend the morning aarti before the SoU campus opens — the timing works perfectly",
+    "Attend the morning aarti before the SoU campus opens: the timing works perfectly",
     "December visits should check Datta Jayanti dates; the town transforms"
   ],
   "faqs": [
     {
       "q": "Why do so many Maharashtrian pilgrims come here?",
-      "a": "Vasudevanand Saraswati is central to the Marathi Datta tradition — his samadhi makes Garudeshwar one of its principal tirthas, drawing steady pilgrimage from across Maharashtra."
+      "a": "Vasudevanand Saraswati is central to the Marathi Datta tradition. His samadhi makes Garudeshwar one of its principal tirthas, drawing steady pilgrimage from across Maharashtra."
     }
   ],
   "nearby": [
@@ -97,7 +97,7 @@
   "itineraries": ["dediapada-offbeat-loop", "narmada-faith-day"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Garudeshwar Datta Temple — Pilgrimage Guide",
+    "meta_title": "Garudeshwar Datta Temple, Pilgrimage Guide",
     "meta_description": "Garudeshwar on the Narmada: the Tembe Swami samadhi, aarti timings, Datta Jayanti and pairing with Ekta Nagar."
   },
   "provenance": {
@@ -105,8 +105,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Garudeshwar Dutt Mandir — Darshan Timings", "url": "https://temple.yatradham.org/temple/garudeshwar-dutt-mandir", "publisher": "yatradham.org", "accessed": "2026-08-08" },
-      { "title": "Vasudevanand Saraswati — Wikipedia", "url": "https://en.wikipedia.org/wiki/Vasudevanand_Saraswati", "publisher": "Wikipedia", "accessed": "2026-08-08" }
+      { "title": "Garudeshwar Dutt Mandir, Darshan Timings", "url": "https://temple.yatradham.org/temple/garudeshwar-dutt-mandir", "publisher": "yatradham.org", "accessed": "2026-08-08" },
+      { "title": "Vasudevanand Saraswati, Wikipedia", "url": "https://en.wikipedia.org/wiki/Vasudevanand_Saraswati", "publisher": "Wikipedia", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["location.coordinates", "location.distances_km"]
   }

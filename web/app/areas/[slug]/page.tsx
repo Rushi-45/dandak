@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const area = areaBySlug(slug);
   if (!area) return {};
   const spots = spotsOf(area.clusters);
-  const title = `${area.title} — ${spots.length} places, mapped and verified`;
+  const title = `${area.title}, ${spots.length} places, mapped and verified`;
   const description = `${area.blurb} Every documented place in ${area.title}, with seasons, road access and what it costs.`;
   const hero = spots.map((s) => getSpotImagePath(s.id)).find(Boolean) ?? null;
   const path = `/areas/${area.slug}`;
@@ -79,7 +79,7 @@ function Section({
 /**
  * First sentence only, with the rest on the spot's own page.
  *
- * The spot page is the canonical home for a spot's prose — it is about that
+ * The spot page is the canonical home for a spot's prose: it is about that
  * spot. Printing these notes in full here as well would put the same paragraphs
  * at two URLs and make the site compete with itself, which is the thing every
  * facet page gets wrong. An excerpt plus a link is the honest shape: enough to
@@ -211,7 +211,7 @@ export default async function AreaPage({ params }: { params: Params }) {
         ))}
       </div>
 
-      {/* By the numbers — derived, and not copyable without the dataset */}
+      {/* By the numbers, derived, and not copyable without the dataset */}
       <dl className="mt-8 grid grid-cols-2 gap-2.5 sm:grid-cols-4">
         {[
           { label: "Places", value: String(spots.length) },

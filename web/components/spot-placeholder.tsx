@@ -1,7 +1,7 @@
 import { categoryMeta } from "@/lib/ui";
 
 /**
- * The stand-in for a spot with no photograph — 78 of the 106 at the time of
+ * The stand-in for a spot with no photograph, 78 of the 106 at the time of
  * writing, so this is what most of the /spots grid actually looks like.
  *
  * The card used to render nothing at all in the image slot, which left the grid
@@ -13,7 +13,7 @@ import { categoryMeta } from "@/lib/ui";
  * Everything here is derived from the spot id, so the same spot draws the same
  * hillside on every render. That matters for more than tidiness: a random
  * pattern would differ between the server and the client and blow up hydration.
- * No Math.random, no Date — see the seeded generator below.
+ * No Math.random, no Date: see the seeded generator below.
  */
 
 /** FNV-1a. Small, stable, and dependency-free. */
@@ -26,7 +26,7 @@ function hashId(s: string): number {
   return h >>> 0;
 }
 
-/** mulberry32 — a seeded PRNG, so the "randomness" is a pure function of the id. */
+/** mulberry32: a seeded PRNG, so the "randomness" is a pure function of the id. */
 function mulberry32(seed: number): () => number {
   let a = seed;
   return () => {
@@ -48,7 +48,7 @@ export function SpotPlaceholder({
   category,
   className = "",
 }: {
-  /** Stable per spot — the spot id, or `${district}-${slug}` which is the same thing. */
+  /** Stable per spot: the spot id, or `${district}-${slug}` which is the same thing. */
   seed: string;
   name: string;
   category: string;
@@ -72,7 +72,7 @@ export function SpotPlaceholder({
     ridges.push({ points: pts.join(" "), opacity: 0.2 + i * 0.055 });
   }
 
-  // First letter that is actually a letter — several names open with a quote or
+  // First letter that is actually a letter: several names open with a quote or
   // a bracket ("Karanjwa (Mahal) Falls"), and a stray glyph reads as a mistake.
   const initial = (name.match(/\p{L}/u)?.[0] ?? "•").toUpperCase();
 

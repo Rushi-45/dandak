@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "saputara-classic-1-day",
   "slug": "saputara-classic-1-day",
-  "title": "Saputara in a Day — The Classic Circuit",
+  "title": "Saputara in a Day, The Classic Circuit",
   "duration_days": 1,
   "districts": ["dang"],
   "themes": ["family", "nature", "photography", "weekend-getaway"],
@@ -20,7 +20,7 @@
     { "day": 1, "order": 8, "spot_id": "dang-sunset-point", "duration_min": 90, "note": "Claim a railing spot 40 min before sunset on weekends" }
   ],
   "day_notes": [
-    { "day": 1, "note": "Everything sits within ~5 km of town — an auto or own vehicle covers it easily. Lunch at the lakefront or hotel belt; carry a layer for the post-sunset chill." }
+    { "day": 1, "note": "Everything sits within ~5 km of town, an auto or own vehicle covers it easily. Lunch at the lakefront or hotel belt; carry a layer for the post-sunset chill." }
   ],
   "total_drive_km": 15,
   "notes": "Works year-round; in monsoon swap Sunrise Point's mist lottery for a longer museum-and-lake morning.",

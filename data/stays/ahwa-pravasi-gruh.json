@@ -9,20 +9,20 @@
   "spot_id": null,
   "coordinates": { "lat": 20.757, "lng": 73.686, "precision": "area" },
   "price_band": "budget",
-  "booking": { "mode": "phone", "url": null, "notes": "Phone ahead — rooms and meals are both arranged on the call rather than online. Numbers come from a traveller writeup, not an official listing, so confirm before you rely on it." },
+  "booking": { "mode": "phone", "url": null, "notes": "Phone ahead. Rooms and meals are both arranged on the call rather than online. Numbers come from a traveller writeup, not an official listing, so confirm before you rely on it." },
   "contact": "+91 98989 97212 · +91 94271 89468",
   "amenities": ["basic rooms in Ahwa town", "meals arranged on request", "walking distance of the bus stand and market"],
   "nearest_spots": [
     { "id": "dang-shivghat", "distance_km": 5 },
     { "id": "dang-temburgartha-dam", "distance_km": 6 }
   ],
-  "notes": "A named bed in Ahwa town rather than the anonymous 'various lodges' — useful when an interior-Dang day runs late and Saputara is an hour of ghat road away.",
+  "notes": "A named bed in Ahwa town rather than the anonymous 'various lodges'. Useful when an interior-Dang day runs late and Saputara is an hour of ghat road away.",
   "provenance": {
     "created": "2026-08-11",
     "last_verified": null,
     "confidence": "low",
     "sources": [
-      { "title": "Where To Stay In Dang — Accommodation Options in Dangs Region", "url": "https://darpan.blog/travel/stay-in-dang/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
+      { "title": "Where To Stay In Dang. Accommodation Options in Dangs Region", "url": "https://darpan.blog/travel/stay-in-dang/", "publisher": "darpan.blog", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["contact", "coordinates", "amenities", "price_band"]
   }

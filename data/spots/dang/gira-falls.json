@@ -10,8 +10,8 @@
   "cluster": "waghai",
   "status": "active",
   "district": "dang",
-  "summary": "Dang's most visited waterfall — a broad ~23 m (75 ft) curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
-  "description": "Gira Falls is the waterfall most Gujarat travellers meet first: barely off the Waghai–Saputara road, a short walk from parking, and in full monsoon a genuinely loud, broad curtain of brown-white water dropping roughly twenty-three metres (about 75 ft) into the Ambika river system. Spray reaches the viewing area on big days, and the whole riverbed setting — black rock, red soil, forest on both banks — is classic Dang.\n\nThe approach is a flat walk of a few hundred metres from the roadside parking through seasonal stalls selling corn, lemon water and bhajiya. Viewing is from the riverbed and its rock shelves; there is no formal deck, so how close you get is judgement — and in July–August the safe answer is: not close. Flow peaks July to September, stays photogenic into November, and thins to a modest ribbon by January.\n\nBecause it is so accessible, weekends and holidays in monsoon get properly crowded by late morning. Come before 10:00 for space, or push deeper into Dang (Girmal) if you want falls without company.",
+  "summary": "Dang's most visited waterfall, a broad ~23 m (75 ft) curtain near Waghai that turns thunderous after the June rains and runs through early winter.",
+  "description": "Gira Falls is the waterfall most Gujarat travellers meet first: barely off the Waghai–Saputara road, a short walk from parking, and in full monsoon a genuinely loud, broad curtain of brown-white water dropping roughly twenty-three metres (about 75 ft) into the Ambika river system. Spray reaches the viewing area on big days, and the whole riverbed setting, black rock, red soil, forest on both banks, is classic Dang.\n\nThe approach is a flat walk of a few hundred metres from the roadside parking through seasonal stalls selling corn, lemon water and bhajiya. Viewing is from the riverbed and its rock shelves; there is no formal deck, so how close you get is judgement, and in July–August the safe answer is: not close. Flow peaks July to September, stays photogenic into November, and thins to a modest ribbon by January.\n\nBecause it is so accessible, weekends and holidays in monsoon get properly crowded by late morning. Come before 10:00 for space, or push deeper into Dang (Girmal) if you want falls without company.",
   "highlights": [
     "Broad ~23 m monsoon curtain minutes off the Waghai road",
     "Flat ~1 km riverside walk from parking",
@@ -40,7 +40,7 @@
   },
   "visit": {
     "timings": [{ "days": "all", "open": "08:00", "close": "17:00", "note": "Managed daylight access in season" }],
-    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Charged in season; some periods reported free — conflicting reports" }],
+    "fees": [{ "type": "entry", "amount_inr": 10, "note": "Charged in season; some periods reported free, conflicting reports" }],
     "booking": { "required": false, "url": null, "notes": null },
     "duration_min": 60,
     "best_time_of_day": "morning",
@@ -70,14 +70,14 @@
   },
   "safety": {
     "warnings": [
-      "Do not enter the water or approach the fall base in monsoon — currents and undertows are lethal",
+      "Do not enter the water or approach the fall base in monsoon: currents and undertows are lethal",
       "Rock shelves are extremely slippery when wet",
       "Watch for sudden flow surges after upstream rain"
     ],
     "emergency": { "nearest_hospital": "CHC Waghai (~3 km)", "police": "Waghai PS", "notes": null }
   },
   "tips": [
-    "Arrive before 10:00 on monsoon weekends — crowds and parking chaos build fast",
+    "Arrive before 10:00 on monsoon weekends, crowds and parking chaos build fast",
     "Combine with Waghai Botanical Garden and Kilad campsite for a half-day Waghai loop",
     "October gives strong flow with far fewer people than August"
   ],
@@ -127,7 +127,7 @@
     ]
   },
   "seo": {
-    "meta_title": "Gira Falls, Waghai — Monsoon Guide",
+    "meta_title": "Gira Falls, Waghai, Monsoon Guide",
     "meta_description": "Gira Falls near Waghai: best months, access walk, safety and crowd tips for Dang's most visited monsoon waterfall."
   },
   "provenance": {
@@ -135,9 +135,9 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Gira Falls, Saputara — Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/saputara/gira-falls", "publisher": "trawell.in", "accessed": "2026-08-08" },
-      { "title": "Gira Waterfall — Complete Travel Guide", "url": "https://en.safargujarat.com/gira-waterfall-dang-travel-guide/", "publisher": "safargujarat.com", "accessed": "2026-08-08" },
-      { "title": "OpenStreetMap — Gira Waterfalls (independent nodes 2362286107 and 11425652069, 65 m apart)", "url": "https://www.openstreetmap.org/node/2362286107", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
+      { "title": "Gira Falls, Saputara. Timings, Entry Fee, Best Season", "url": "https://www.trawell.in/gujarat/saputara/gira-falls", "publisher": "trawell.in", "accessed": "2026-08-08" },
+      { "title": "Gira Waterfall, Complete Travel Guide", "url": "https://en.safargujarat.com/gira-waterfall-dang-travel-guide/", "publisher": "safargujarat.com", "accessed": "2026-08-08" },
+      { "title": "OpenStreetMap, Gira Waterfalls (independent nodes 2362286107 and 11425652069, 65 m apart)", "url": "https://www.openstreetmap.org/node/2362286107", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["visit.fees", "attributes.height_m"]
   }

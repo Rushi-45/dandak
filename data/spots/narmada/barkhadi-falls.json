@@ -10,8 +10,8 @@
   "cluster": "rajpipla",
   "status": "active",
   "district": "narmada",
-  "summary": "A village-trail monsoon waterfall south-east of Rajpipla — an easy 2 km walk from Barkhadi's school through fields and stream crossings.",
-  "description": "Barkhadi is the Rajpipla belt's walk-in waterfall: a modest monsoon fall with a chain of small cascades and a pool in its upper reaches, in the green hillock country of the Devsatra villages between Rajpipla and the Karjan back-country. Trip reports reach for hill-station comparisons — low cloud on the ridges, bamboo-hut hamlets, everything running green — and in August that is a fair picture.\n\nThe visit is really a village walk. Vehicles park at the Barkhadi primary school, and a footpath climbs gently to the right of it — village lanes first, then field bunds, then two crossings of the same stream that feeds the fall. It runs about two kilometres one way, easy going, and the roar announces the falls before you see them. The village doubles as the base for the Devsatra hill trek if you want to extend the day.\n\nFlow is strictly monsoon-fed: before the rains set in properly there is nothing to see, and villagers themselves advise waiting a few days into a wet spell. Walk field edges rather than through standing crops, and take up the local kids' offer to guide — it is their path.",
+  "summary": "A village-trail monsoon waterfall south-east of Rajpipla, an easy 2 km walk from Barkhadi's school through fields and stream crossings.",
+  "description": "Barkhadi is the Rajpipla belt's walk-in waterfall: a modest monsoon fall with a chain of small cascades and a pool in its upper reaches, in the green hillock country of the Devsatra villages between Rajpipla and the Karjan back-country. Trip reports reach for hill-station comparisons, low cloud on the ridges, bamboo-hut hamlets, everything running green, and in August that is a fair picture.\n\nThe visit is really a village walk. Vehicles park at the Barkhadi primary school, and a footpath climbs gently to the right of it, village lanes first, then field bunds, then two crossings of the same stream that feeds the fall. It runs about two kilometres one way, easy going, and the roar announces the falls before you see them. The village doubles as the base for the Devsatra hill trek if you want to extend the day.\n\nFlow is strictly monsoon-fed: before the rains set in properly there is nothing to see, and villagers themselves advise waiting a few days into a wet spell. Walk field edges rather than through standing crops, and take up the local kids' offer to guide: it is their path.",
   "highlights": [
     "Easy ~2 km stream-and-fields walk from the village school",
     "Cascades and a small pool in the upper section",
@@ -35,7 +35,7 @@
       "rail": "Ekta Nagar station (~25 km)",
       "air": "Vadodara (~94 km, about 2 hours)"
     },
-    "last_mile": "~2 km footpath from the school — village lanes, field bunds and two stream crossings",
+    "last_mile": "~2 km footpath from the school, village lanes, field bunds and two stream crossings",
     "road_condition": "Rural tar to the village; fine outside heavy rain days",
     "parking": { "available": true, "fee": 0, "notes": "Informal parking at the village primary school" }
   },
@@ -46,13 +46,13 @@
     "duration_min": 150,
     "best_time_of_day": "morning",
     "weekly_closure": null,
-    "notes": "Open village land — no gate, no ticket. The coordinates are the school trailhead; the falls are the walk beyond."
+    "notes": "Open village land, no gate, no ticket. The coordinates are the school trailhead; the falls are the walk beyond."
   },
   "seasonality": {
     "best_months": [7, 8, 9, 10],
     "avoid_months": [12, 1, 2, 3, 4, 5],
     "monsoon_dependent": true,
-    "notes": "Dry until the monsoon establishes — go a few days into a proper wet spell; flow fades quickly after October."
+    "notes": "Dry until the monsoon establishes, go a few days into a proper wet spell; flow fades quickly after October."
   },
   "experience": {
     "activities": ["trekking", "nature-walk", "photography", "picnic", "sightseeing"],
@@ -61,35 +61,35 @@
     "photography_notes": "The upper cascades and the hillock panorama are the frames; monsoon cloud moves fast, so work the gaps."
   },
   "amenities": {
-    "food": "None at the village — carry everything from Rajpipla",
+    "food": "None at the village. Carry everything from Rajpipla",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "weak", "vi": "none", "bsnl": "weak" },
-    "guides": "Village boys often offer to walk along — take them up on it and tip",
+    "guides": "Village boys often offer to walk along. Take them up on it and tip",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "The stream crossings rise fast during active rain — turn back if the water is pushing",
-      "Rocks around the cascades are slick; swimming is possible but risky — calm edges only, never alone",
-      "No facilities or quick rescue — this is village land, not a managed site"
+      "The stream crossings rise fast during active rain: turn back if the water is pushing",
+      "Rocks around the cascades are slick; swimming is possible but risky, calm edges only, never alone",
+      "No facilities or quick rescue: this is village land, not a managed site"
     ],
     "emergency": { "nearest_hospital": "Rajpipla civil hospital (~22 km)", "police": "Rajpipla rural PS", "notes": null }
   },
   "tips": [
     "Villagers' own advice: come a few days after the monsoon has set in, not on the first rain",
-    "Walk the field edges — don't cut through standing crops",
+    "Walk the field edges, don't cut through standing crops",
     "Combine with Karjan reservoir and Mandan lake for a full Rajpipla back-country day"
   ],
   "faqs": [
     {
       "q": "How hard is the walk to Barkhadi falls?",
-      "a": "Easy: about 2 km each way from the village school along lanes and field paths, with two shallow stream crossings. Expect mud in monsoon — grip footwear over slippers."
+      "a": "Easy: about 2 km each way from the village school along lanes and field paths, with two shallow stream crossings. Expect mud in monsoon, grip footwear over slippers."
     }
   ],
   "nearby": [
-    { "id": "narmada-devsatra-hills", "distance_km": 2, "note": "The hill trek above the village — same trailhead" },
+    { "id": "narmada-devsatra-hills", "distance_km": 2, "note": "The hill trek above the village, same trailhead" },
     { "id": "narmada-juna-ghanta-falls", "distance_km": 8, "note": "The same Karjan hill belt" },
     { "id": "narmada-karjan-reservoir", "distance_km": 10 },
     { "id": "narmada-mandan-lake", "distance_km": 12 },
@@ -98,7 +98,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Barkhadi Falls, Narmada — Village-Trail Waterfall",
+    "meta_title": "Barkhadi Falls, Narmada, Village-Trail Waterfall",
     "meta_description": "Barkhadi waterfall near Rajpipla: the 2 km walk from the village school, stream crossings, best monsoon window and local etiquette."
   },
   "provenance": {
@@ -106,9 +106,9 @@
     "last_verified": "2026-08-09",
     "confidence": "medium",
     "sources": [
-      { "title": "Barkhadi waterfall: Let's welcome Monsoon — trip report with route, 94 km/2 h from Vadodara, 2 km trail", "url": "https://safarwithsasha.com/our_trips/barkhadi-waterfall-lets-welcome-monsoon/", "publisher": "safarwithsasha.com", "accessed": "2026-08-09" },
-      { "title": "Barkhadi WaterFall — Rajpipla listing", "url": "https://www.tripadvisor.in/Attraction_Review-g1156006-d26451288-Reviews-Barkhadi_WaterFall-Rajpipla_Narmada_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-09" },
-      { "title": "Primary school Barakhadi Devsatra — trailhead map pin (21.8161, 73.6289)", "url": "https://maps.app.goo.gl/1XALCdjeVaQGUVTa6", "publisher": "Google Maps (link published by safarwithsasha.com)", "accessed": "2026-08-09" }
+      { "title": "Barkhadi waterfall: Let's welcome Monsoon, trip report with route, 94 km/2 h from Vadodara, 2 km trail", "url": "https://safarwithsasha.com/our_trips/barkhadi-waterfall-lets-welcome-monsoon/", "publisher": "safarwithsasha.com", "accessed": "2026-08-09" },
+      { "title": "Barkhadi WaterFall, Rajpipla listing", "url": "https://www.tripadvisor.in/Attraction_Review-g1156006-d26451288-Reviews-Barkhadi_WaterFall-Rajpipla_Narmada_District_Gujarat.html", "publisher": "tripadvisor.in", "accessed": "2026-08-09" },
+      { "title": "Primary school Barakhadi Devsatra, trailhead map pin (21.8161, 73.6289)", "url": "https://maps.app.goo.gl/1XALCdjeVaQGUVTa6", "publisher": "Google Maps (link published by safarwithsasha.com)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.taluka", "location.distances_km", "amenities.mobile_network", "visit.timings"]
   }

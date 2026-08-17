@@ -261,7 +261,7 @@ export interface GalleryItem {
 /**
  * Everything visual we hold for a spot, in display order: the staged hero,
  * then any numbered extras that exist on disk (id-2.jpg, id-3.jpg …), then the
- * clips. Captions and credits come from the record's media.images by index —
+ * clips. Captions and credits come from the record's media.images by index,
  * the staging convention keeps the two aligned.
  */
 export function getSpotGallery(spot: Spot): GalleryItem[] {
@@ -349,7 +349,7 @@ export function getStays(): Stay[] {
  * Beds near a spot, nearest first.
  *
  * Every spot record carries `access.stay_nearby`, but it is empty on all 106 of
- * them — so this reads the relationship from the other end, where the data
+ * them, so this reads the relationship from the other end, where the data
  * actually lives: each stay lists its own `nearest_spots`. Falls back to sharing
  * a cluster, which is how a Saputara spot finds the Saputara hotel belt.
  */
@@ -371,7 +371,7 @@ export function getStaysNearSpot(spot: Spot, limit = 4): { stay: Stay; km: numbe
 
 /**
  * The planner's payload: every spot, hub and stay, slimmed to what the algorithm
- * actually reads. `summary` and `description` are omitted deliberately — they are
+ * actually reads. `summary` and `description` are omitted deliberately: they are
  * most of the weight of the /spots payload and the planner never renders them.
  *
  * The mapping itself lives in ./planner-index (no node:fs), so the browser, the
@@ -408,7 +408,7 @@ export function toCardData(s: Spot) {
     /**
      * Free to enter. Derived, not tagged: the `free-entry` tag exists in the
      * registry vocabulary but is applied to zero of the 106 records, so the
-     * explorer's "Free entry" chip silently emptied the grid — while 72 spots
+     * explorer's "Free entry" chip silently emptied the grid, while 72 spots
      * are in fact free (66 with an empty fee list, 6 with all-zero fees).
      */
     free: s.visit.fees !== null && !s.visit.fees.some((f) => f.amount_inr > 0),

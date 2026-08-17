@@ -17,14 +17,14 @@
     { "id": "narmada-ninai-falls", "distance_km": 50 },
     { "id": "narmada-shoolpaneshwar-wls", "distance_km": 15 }
   ],
-  "notes": "The anchor stay of the eastern belt — forest-department simple, plateau sunsets, near-zero connectivity. Carry cash and offline maps.",
+  "notes": "The anchor stay of the eastern belt, forest-department simple, plateau sunsets, near-zero connectivity. Carry cash and offline maps.",
   "provenance": {
     "created": "2026-08-08",
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
-      { "title": "Sagai-Samot — site page, tariffs and contact (Parisariya Pravasan Vikas Mandal, Ta. Dediapada)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=XN50Ie31NBQmjvZHtMgSKw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Sagai-Samot, site page, tariffs and contact (Parisariya Pravasan Vikas Mandal, Ta. Dediapada)", "url": "https://ecotourismforest.gujarat.gov.in/Home/Abouts?strsiteid=XN50Ie31NBQmjvZHtMgSKw%253d%253d", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-11" }
     ],
     "needs_verification": ["coordinates", "amenities"]
   }

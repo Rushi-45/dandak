@@ -10,15 +10,15 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Forest-department cottages on the Purna river deep inside Purna sanctuary — the base for dawn walks, river mornings and real forest nights.",
-  "description": "Mahal is the night you remember from a Dang trip: a forest-department campsite on the banks of the Purna river, deep inside the sanctuary, where the generator quiets, the canopy closes over the cottages and the forest runs the soundtrack. Accommodation is eco-campsite standard — riverside cottages and tents, simple mess meals when booked — and the location is the entire luxury.\n\nStays unlock what day permits can't: dawn guided walks when the forest is loudest, the river in first light, night skies with zero competition, and the internal roads before day visitors arrive. The historic Mahal forest rest house nearby dates to colonial forestry days, and the campsite continues that tradition of foresters' hospitality in plainer form.\n\nBook through the forest department's eco-tourism channels well ahead for winter weekends. Combine a night here with Girmal Falls and the Shabari Dham circuit and interior Dang stops feeling remote and starts feeling organised.",
+  "summary": "Forest-department cottages on the Purna river deep inside Purna sanctuary, the base for dawn walks, river mornings and real forest nights.",
+  "description": "Mahal is the night you remember from a Dang trip: a forest-department campsite on the banks of the Purna river, deep inside the sanctuary, where the generator quiets, the canopy closes over the cottages and the forest runs the soundtrack. Accommodation is eco-campsite standard, riverside cottages and tents, simple mess meals when booked, and the location is the entire luxury.\n\nStays unlock what day permits can't: dawn guided walks when the forest is loudest, the river in first light, night skies with zero competition, and the internal roads before day visitors arrive. The historic Mahal forest rest house nearby dates to colonial forestry days, and the campsite continues that tradition of foresters' hospitality in plainer form.\n\nBook through the forest department's eco-tourism channels well ahead for winter weekends. Combine a night here with Girmal Falls and the Shabari Dham circuit and interior Dang stops feeling remote and starts feeling organised.",
   "highlights": [
     "Riverside cottages inside Purna sanctuary",
     "Dawn guided walks from your doorstep",
     "Genuinely dark night skies",
     "Anchors the Girmal–Shabari interior circuit"
   ],
-  "history_legend": "Mahal has been a forestry station since the colonial teak-working era — the old rest house predates the sanctuary and hosted generations of forest officers.",
+  "history_legend": "Mahal has been a forestry station since the colonial teak-working era, the old rest house predates the sanctuary and hosted generations of forest officers.",
   "attributes": { "operator": "Gujarat Forest Department", "booking_portal": "Forest-department eco-tourism booking channels" },
   "location": {
     "taluka": "Ahwa",
@@ -46,7 +46,7 @@
     "duration_min": 240,
     "best_time_of_day": "early-morning",
     "weekly_closure": null,
-    "notes": "Monsoon operation is limited when sanctuary access tightens — check while planning."
+    "notes": "Monsoon operation is limited when sanctuary access tightens, check while planning."
   },
   "seasonality": {
     "best_months": [10, 11, 12, 1, 2, 3],
@@ -61,36 +61,36 @@
     "photography_notes": "River mist at dawn is the frame; astro works from the riverbank on moonless winter nights."
   },
   "amenities": {
-    "food": "Campsite mess with booking; nothing else within 30 km — carry supplements",
+    "food": "Campsite mess with booking; nothing else within 30 km. Carry supplements",
     "toilets": "basic",
     "drinking_water": true,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
-    "guides": "Campsite staff arrange guided walks — take the dawn slot",
+    "guides": "Campsite staff arrange guided walks. Take the dawn slot",
     "ev_charging": false,
     "stay_nearby": []
   },
   "safety": {
     "warnings": [
-      "No wandering beyond campsite bounds after dark — leopard country",
+      "No wandering beyond campsite bounds after dark, leopard country",
       "River bathing only at the spots staff indicate, in lean flow",
       "Carry cash; nothing digital works reliably here"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~30 km)", "police": "Ahwa PS; Mahal range office on site", "notes": null }
   },
   "tips": [
-    "Book the dawn walk when you book the cottage — slots are few",
+    "Book the dawn walk when you book the cottage: slots are few",
     "Pair the stay with Girmal Falls (25 km) the next morning",
     "Pack a power bank and torch; supply is generator-scheduled"
   ],
   "faqs": [
     {
       "q": "Is Mahal suitable for a family with kids?",
-      "a": "Yes for kids who enjoy outdoors — the campsite is safe and staffed. It is not for those needing hotel comforts; power, food and network are all forest-basic."
+      "a": "Yes for kids who enjoy outdoors. The campsite is safe and staffed. It is not for those needing hotel comforts; power, food and network are all forest-basic."
     }
   ],
   "nearby": [
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 5 },
-    { "id": "dang-mahal-falls", "distance_km": 15, "note": "Karanjwa — the falls campsite word-of-mouth calls 'Mahal waterfall'" },
+    { "id": "dang-mahal-falls", "distance_km": 15, "note": "Karanjwa. The falls campsite word-of-mouth calls 'Mahal waterfall'" },
     { "id": "dang-girmal-falls", "distance_km": 8, "note": "Gujarat's tallest falls are just across the forest" },
     { "id": "dang-shabari-dham", "distance_km": 25 }
   ],
@@ -108,7 +108,7 @@
     "videos": []
   },
   "seo": {
-    "meta_title": "Mahal Eco Campsite, Purna Sanctuary — Stay Guide",
+    "meta_title": "Mahal Eco Campsite, Purna Sanctuary. Stay Guide",
     "meta_description": "Booking Mahal campsite inside Purna sanctuary: cottages on the river, dawn walks, season and what to carry."
   },
   "provenance": {
@@ -116,8 +116,8 @@
     "last_verified": "2026-08-08",
     "confidence": "medium",
     "sources": [
-      { "title": "Forest Eco Tourism Sites — Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
-      { "title": "Mahal Eco Tourism Campsite — Purna Wildlife Sanctuary", "url": "https://mahalcampsite.com/", "publisher": "mahalcampsite.com", "accessed": "2026-08-08" }
+      { "title": "Forest Eco Tourism Sites, Gujarat Forest Department", "url": "https://ecotourismforest.gujarat.gov.in/", "publisher": "Gujarat Forest Department (official)", "accessed": "2026-08-08" },
+      { "title": "Mahal Eco Tourism Campsite, Purna Wildlife Sanctuary", "url": "https://mahalcampsite.com/", "publisher": "mahalcampsite.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.fees", "location.coordinates", "visit.notes"]
   }

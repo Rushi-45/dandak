@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "sou-family-2-day",
   "slug": "sou-family-2-day",
-  "title": "Statue of Unity with Kids — Two Full Days",
+  "title": "Statue of Unity with Kids, Two Full Days",
   "duration_days": 2,
   "districts": ["narmada"],
   "themes": ["family", "kids", "popular"],
@@ -13,7 +13,7 @@
     { "day": 1, "order": 1, "spot_id": "narmada-statue-of-unity", "duration_min": 240, "note": "Morning slot; the scale lands hardest on first sight" },
     { "day": 1, "order": 2, "spot_id": "narmada-valley-of-flowers", "duration_min": 90, "note": "Kids run, adults decompress" },
     { "day": 1, "order": 3, "spot_id": "narmada-sou-laser-show", "duration_min": 60 },
-    { "day": 2, "order": 4, "spot_id": "narmada-jungle-safari", "duration_min": 180, "note": "First slot — active animals, cool walking; aviaries first" },
+    { "day": 2, "order": 4, "spot_id": "narmada-jungle-safari", "duration_min": 180, "note": "First slot, active animals, cool walking; aviaries first" },
     { "day": 2, "order": 5, "spot_id": "narmada-children-nutrition-park", "duration_min": 90, "note": "Under-12 magic; skip if teens-only" },
     { "day": 2, "order": 6, "spot_id": "narmada-maze-garden", "duration_min": 60 },
     { "day": 2, "order": 7, "spot_id": "narmada-unity-glow-garden", "duration_min": 90, "note": "The after-dark finale" }
@@ -23,6 +23,6 @@
     { "day": 2, "note": "With teens, swap Nutrition Park for river rafting at Khalwani (14+, book a morning batch)." }
   ],
   "total_drive_km": 30,
-  "notes": "Tuesday–Sunday only — the campus closes Mondays. Tent City or Ekta Nagar hotels keep transfers short with tired kids.",
+  "notes": "Tuesday–Sunday only. The campus closes Mondays. Tent City or Ekta Nagar hotels keep transfers short with tired kids.",
   "provenance": { "created": "2026-08-08", "last_reviewed": "2026-08-08" }
 }

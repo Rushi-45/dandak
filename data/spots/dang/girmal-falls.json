@@ -10,8 +10,8 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "Gujarat's tallest waterfall — a roughly 30 m plunge on the Gira river deep in interior Dang, thundering from July to October.",
-  "description": "Girmal is the waterfall Gira's crowds never see: a single hard plunge of roughly thirty metres on the Gira river near Girmal village, deep enough into interior Dang that even peak-monsoon weekends stay manageable. The drop is taller and tighter than Gira's broad curtain, and in August the plume of spray is visible before the deck comes into view.\n\nA railed viewpoint faces the fall across the gorge — close enough for the mist to reach you in peak flow — and the drive itself is half the reward: forest roads through teak and bamboo, village fields, and ridgelines that stay green well into winter. This is the anchor stop of any interior-Dang loop, pairing naturally with Don hill or the Mahal campsite inside Purna sanctuary.\n\nFlow is strictly seasonal. July–September is the spectacle, October still strong, and by February the river thins to a stream — worth knowing before committing to the long interior drive in the dry months.",
+  "summary": "Gujarat's tallest waterfall, a roughly 30 m plunge on the Gira river deep in interior Dang, thundering from July to October.",
+  "description": "Girmal is the waterfall Gira's crowds never see: a single hard plunge of roughly thirty metres on the Gira river near Girmal village, deep enough into interior Dang that even peak-monsoon weekends stay manageable. The drop is taller and tighter than Gira's broad curtain, and in August the plume of spray is visible before the deck comes into view.\n\nA railed viewpoint faces the fall across the gorge, close enough for the mist to reach you in peak flow, and the drive itself is half the reward: forest roads through teak and bamboo, village fields, and ridgelines that stay green well into winter. This is the anchor stop of any interior-Dang loop, pairing naturally with Don hill or the Mahal campsite inside Purna sanctuary.\n\nFlow is strictly seasonal. July–September is the spectacle, October still strong, and by February the river thins to a stream, worth knowing before committing to the long interior drive in the dry months.",
   "highlights": [
     "Tallest waterfall in Gujarat at roughly 30 m",
     "Railed viewing deck facing the plunge across the gorge",
@@ -58,7 +58,7 @@
     "activities": ["sightseeing", "photography", "picnic"],
     "difficulty": "easy",
     "suitable_for": { "kids": true, "elderly": true, "wheelchair": false },
-    "photography_notes": "Shoot before 10:00 for side-lit spray; carry a lens cloth — the deck sits in the mist zone in August."
+    "photography_notes": "Shoot before 10:00 for side-lit spray; carry a lens cloth. The deck sits in the mist zone in August."
   },
   "amenities": {
     "food": "Seasonal snack stalls at the parking lot; nearest reliable food is in Ahwa",
@@ -71,7 +71,7 @@
   },
   "safety": {
     "warnings": [
-      "Do not cross the railing — rock faces are lethal when wet",
+      "Do not cross the railing: rock faces are lethal when wet",
       "No swimming at the base pool",
       "Leech protection advised on grassy paths at monsoon peak"
     ],
@@ -79,22 +79,22 @@
   },
   "tips": [
     "Club it with Don hill or Mahal campsite to justify the interior drive",
-    "Fuel up in Ahwa — there are no petrol pumps on the interior stretch",
+    "Fuel up in Ahwa: there are no petrol pumps on the interior stretch",
     "October gives strong flow, easier roads and empty decks"
   ],
   "faqs": [
     {
       "q": "Is Girmal Falls worth visiting outside monsoon?",
-      "a": "October–November still has decent flow; by February it is a thin stream — go for the drive and the valley then, not the falls."
+      "a": "October–November still has decent flow; by February it is a thin stream, go for the drive and the valley then, not the falls."
     },
     {
-      "q": "Girmal or Gira — which one should I pick?",
+      "q": "Girmal or Gira, which one should I pick?",
       "a": "Gira is bigger-crowd, five-minute-access; Girmal is taller, wilder and 90 minutes deeper into the hills. With a full day, do both; with an afternoon, Gira."
     }
   ],
   "nearby": [
-    { "id": "dang-u-turn-point", "distance_km": 3, "note": "The Gira hairpin deck on the approach — chai stop" },
-    { "id": "dang-mahal-eco-campsite", "distance_km": 8, "note": "Just across the forest — the natural overnight base" },
+    { "id": "dang-u-turn-point", "distance_km": 3, "note": "The Gira hairpin deck on the approach, chai stop" },
+    { "id": "dang-mahal-eco-campsite", "distance_km": 8, "note": "Just across the forest, the natural overnight base" },
     { "id": "dang-don-hill", "distance_km": 60, "note": "Pairs for a full day via the interior roads" },
     { "id": "dang-purna-wildlife-sanctuary", "distance_km": 10 }
   ],
@@ -114,7 +114,7 @@
     ]
   },
   "seo": {
-    "meta_title": "Girmal Falls, Dang — Gujarat's Tallest Waterfall",
+    "meta_title": "Girmal Falls, Dang, Gujarat's Tallest Waterfall",
     "meta_description": "Plan a monsoon visit to the 30 m Girmal Falls in the Dang forests: best months, road access from Saputara and Ahwa, and safety tips."
   },
   "provenance": {
@@ -124,7 +124,7 @@
     "sources": [
       { "title": "Girmal Waterfalls, Dang", "url": "https://gujarattourism.com/south-zone/dang/gimal-waterfalls.html", "publisher": "Gujarat Tourism (official)", "accessed": "2026-08-08" },
       { "title": "Girmal Waterfalls, Dangs & U Point: Highest Waterfall in Gujarat", "url": "https://darpan.blog/travel/girmal-waterfalls-dangs-u-point-highest-waterfall-in-gujarat/", "publisher": "darpan.blog", "accessed": "2026-08-08" },
-      { "title": "OpenStreetMap — Girmal Waterfall (node 11425670270; ~11 km west of the earlier estimate, beside Mahal)", "url": "https://www.openstreetmap.org/node/11425670270", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
+      { "title": "OpenStreetMap, Girmal Waterfall (node 11425670270; ~11 km west of the earlier estimate, beside Mahal)", "url": "https://www.openstreetmap.org/node/11425670270", "publisher": "OpenStreetMap contributors (ODbL)", "accessed": "2026-08-09" }
     ],
     "needs_verification": ["location.distances_km", "visit.timings"]
   }

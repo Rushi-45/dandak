@@ -12,12 +12,12 @@
     "typical_months": [2, 3],
     "duration_days": 5
   },
-  "description": "One of western India's largest tribal gatherings: around five lakh Vasava, Bhil and Tadvi devotees from Gujarat, Maharashtra, Madhya Pradesh and Rajasthan converge on Yaha Mogi's shrine at Devmogra for five days ending the eve of Mahashivratri. Families arrive with offerings of grain and bamboo baskets; vows are fulfilled, harvests dedicated, marriages blessed. The climax is the Gadh Yatra procession, when the deity travels to a natural spring for a ritual bath amid music and dance. It is an extraordinary spectacle of living adivasi devotion — and a serious logistics event, with basic facilities stretched across enormous crowds.",
+  "description": "One of western India's largest tribal gatherings: around five lakh Vasava, Bhil and Tadvi devotees from Gujarat, Maharashtra, Madhya Pradesh and Rajasthan converge on Yaha Mogi's shrine at Devmogra for five days ending the eve of Mahashivratri. Families arrive with offerings of grain and bamboo baskets; vows are fulfilled, harvests dedicated, marriages blessed. The climax is the Gadh Yatra procession, when the deity travels to a natural spring for a ritual bath amid music and dance. It is an extraordinary spectacle of living adivasi devotion, and a serious logistics event, with basic facilities stretched across enormous crowds.",
   "scale": "national",
   "crowd_impact": "Roads from Rajpipla and Sagbara run one-way managed traffic; expect kilometres of walking, long queues and full guesthouses across the belt.",
   "tips": [
     "Arrive early morning; park where directed and expect to walk",
-    "You are a guest at someone else's most important gathering — dress plainly, ask before photographing",
+    "You are a guest at someone else's most important gathering, dress plainly, ask before photographing",
     "Buy from the fair's stalls; that economy is the point"
   ],
   "provenance": {
@@ -25,7 +25,7 @@
     "last_verified": "2026-08-08",
     "confidence": "high",
     "sources": [
-      { "title": "Devmogra Mataji Mela — Utsav portal", "url": "https://utsav.gov.in/view-event/devmogra-mataji-mela", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
+      { "title": "Devmogra Mataji Mela, Utsav portal", "url": "https://utsav.gov.in/view-event/devmogra-mataji-mela", "publisher": "Ministry of Tourism (official)", "accessed": "2026-08-08" },
       { "title": "Devmogara Temple: Story, History, Pilgrimage", "url": "https://saurashtratoday.com/devmogara-temple-story-history/", "publisher": "saurashtratoday.com", "accessed": "2026-08-08" }
     ],
     "needs_verification": []

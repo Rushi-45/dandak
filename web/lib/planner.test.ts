@@ -2,7 +2,7 @@
  * Planner golden tests. Run from web/:  node --test lib/planner.test.ts
  *
  * Every case here encodes a real failure found by simulating the naive design
- * against the actual dataset — not hypothetical edge cases.
+ * against the actual dataset, not hypothetical edge cases.
  */
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -111,7 +111,7 @@ test("monsoon waterfalls are demoted in March, not deleted", () => {
   assert.equal(seasonTier(gira, 3), "weak");
 });
 
-test("Sardar Sarovar survives December — only its overflow is seasonal", () => {
+test("Sardar Sarovar survives December: only its overflow is seasonal", () => {
   // the naive rule excluded this high-confidence, year-round, ticketed site
   const dam = spot("narmada-sardar-sarovar-dam");
   assert.notEqual(seasonTier(dam, 12), "closed");
@@ -273,7 +273,7 @@ test("Tent City is reachable even though it has no coordinates", () => {
 
 test("a night offers a choice, not a single bed", () => {
   // the corpus now has a government campsite, a homestay and a hotel within
-  // reach of the same evening — a plan that names one of them is hiding two
+  // reach of the same evening: a plan that names one of them is hiding two
   const plan = planTrip(
     { from: "h:surat", to: "h:saputara", days: 3, month: 8, must: [] },
     data

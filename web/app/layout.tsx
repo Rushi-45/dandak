@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   applicationName: SITE.name,
   // No canonical here on purpose. Metadata is inherited, so a canonical on the
   // root layout makes every page that does not override it claim to be the
-  // homepage — which told Google that /spots, /stays, /map, /events,
+  // homepage, which told Google that /spots, /stays, /map, /events,
   // /itineraries, /plan and both districts were all duplicates of "/". Each
   // page declares its own; see app/page.tsx for the homepage's.
   openGraph: {
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   },
   /**
    * Search Console / Bing verification, from the environment rather than the
-   * source. A *.vercel.app subdomain cannot be verified by DNS — we do not own
-   * the zone — so the meta tag is the route. Set GOOGLE_SITE_VERIFICATION (and
+   * source. A *.vercel.app subdomain cannot be verified by DNS: we do not own
+   * the zone, so the meta tag is the route. Set GOOGLE_SITE_VERIFICATION (and
    * BING_SITE_VERIFICATION) in the Vercel project and redeploy; no code change,
    * and the tokens stay out of a public repo.
    */
@@ -108,7 +108,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 dandak
               </Link>
               {/* Six links no longer fit a 390px phone. Scroll the nav rather than
-                  drop a section from it — [&>a]:shrink-0 stops flex squeezing them. */}
+                  drop a section from it, [&>a]:shrink-0 stops flex squeezing them. */}
               <nav className="no-scrollbar flex min-w-0 items-center gap-4 overflow-x-auto text-sm text-stone-400 [&>a]:shrink-0 sm:gap-5">
                 <Link href="/spots" className="transition-colors hover:text-emerald-300">
                   Spots
@@ -158,11 +158,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 <span className="bg-gradient-to-r from-emerald-300 to-amber-200 bg-clip-text font-serif font-bold italic text-transparent">
                   dandak
                 </span>{" "}
-                — an open, provenance-tracked tourism dataset for the Dandakaranya belt. Facts
+               : an open, provenance-tracked tourism dataset for the Dandakaranya belt. Facts
                 carry confidence levels; verify volatile details before you travel.
               </p>
               <p className="mt-2 px-4 text-[11px] text-stone-600">
-                Photography by contributors on Wikimedia Commons (CC BY / CC BY-SA) — credited and
+                Photography by contributors on Wikimedia Commons (CC BY / CC BY-SA), credited and
                 linked on every image.
               </p>
             </div>

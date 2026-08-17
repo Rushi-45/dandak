@@ -10,12 +10,12 @@
   "cluster": "dang-interior",
   "status": "active",
   "district": "dang",
-  "summary": "The anchor fall of Dang's south-western pocket — Chikhalda drops by its village, with the Vadla ni vadi banyan grove beside the approach.",
-  "description": "Chikhalda leads the district's least-written-about waterfall pocket: the village country south-west of Ahwa toward the Waghai side, where a cluster of small falls — Ritu a kilometre away, Svtis to the east, Baaj to the north — run through the same monsoon. Chikhalda's own drop sits by its namesake village, and the map adds a companion worth knowing: Vadla ni vadi, a banyan grove a few hundred metres off, which serves as the shade-and-picnic half of the outing.\n\nNone of this pocket appears in tourism literature; the records exist on map pins and a traveller's word. The terms are village-Dang standard — short walks, monsoon-only flow, no facilities, and directions from whoever you meet.",
+  "summary": "The anchor fall of Dang's south-western pocket. Chikhalda drops by its village, with the Vadla ni vadi banyan grove beside the approach.",
+  "description": "Chikhalda leads the district's least-written-about waterfall pocket: the village country south-west of Ahwa toward the Waghai side, where a cluster of small falls, Ritu a kilometre away, Svtis to the east, Baaj to the north, run through the same monsoon. Chikhalda's own drop sits by its namesake village, and the map adds a companion worth knowing: Vadla ni vadi, a banyan grove a few hundred metres off, which serves as the shade-and-picnic half of the outing.\n\nNone of this pocket appears in tourism literature; the records exist on map pins and a traveller's word. The terms are village-Dang standard: short walks, monsoon-only flow, no facilities, and directions from whoever you meet.",
   "highlights": [
     "Anchor of the undocumented south-western falls pocket",
     "Vadla ni vadi banyan grove beside the approach",
-    "Ritu falls one kilometre on — a natural double"
+    "Ritu falls one kilometre on, a natural double"
   ],
   "history_legend": null,
   "attributes": {},
@@ -60,7 +60,7 @@
     "photography_notes": "The banyan grove gives rare foreground variety for the belt."
   },
   "amenities": {
-    "food": "None — carry from Ahwa or Waghai",
+    "food": "None. Carry from Ahwa or Waghai",
     "toilets": "none",
     "drinking_water": false,
     "mobile_network": { "jio": "weak", "airtel": "none", "vi": "none", "bsnl": "weak" },
@@ -71,13 +71,13 @@
   "safety": {
     "warnings": [
       "Wet rock is slick; watch children at the drop",
-      "Flow surges after rain — stay off mid-stream rock"
+      "Flow surges after rain: stay off mid-stream rock"
     ],
     "emergency": { "nearest_hospital": "Civil Hospital Ahwa (~16 km)", "police": "Ahwa PS", "notes": null }
   },
   "tips": [
     "Do the pocket as one loop: Chikhalda and the grove, Ritu next door, Baaj and its viewpoint on the way out",
-    "Carry everything — this pocket has no stalls even in season"
+    "Carry everything: this pocket has no stalls even in season"
   ],
   "faqs": [],
   "nearby": [
@@ -88,7 +88,7 @@
   "itineraries": ["ahwa-southwest-loop"],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Chikhalda Waterfall, Dang — The South-West Pocket",
+    "meta_title": "Chikhalda Waterfall, Dang, The South-West Pocket",
     "meta_description": "Chikhalda waterfall and the Vadla ni vadi banyan grove: anchor of Dang's undocumented south-western falls pocket."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "last_verified": "2026-08-10",
     "confidence": "medium",
     "sources": [
-      { "title": "Google Maps — 'Chikhalda waterfall' (20.6928, 73.5965) with the 'Vadla ni vadi' grove pin (20.6946, 73.5917) beside it; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chikhalda+waterfall/@20.692826,73.596482,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
+      { "title": "Google Maps, 'Chikhalda waterfall' (20.6928, 73.5965) with the 'Vadla ni vadi' grove pin (20.6946, 73.5917) beside it; supplied by the maintainer, who has visited", "url": "https://www.google.com/maps/place/Chikhalda+waterfall/@20.692826,73.596482,15z", "publisher": "Google Maps", "accessed": "2026-08-10" }
     ],
     "needs_verification": ["location.taluka", "access.last_mile", "amenities.mobile_network"]
   }

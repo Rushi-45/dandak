@@ -12,7 +12,7 @@ export function generateStaticParams() {
   return getAllSpots().map((s) => ({ district: s.district, slug: s.slug }));
 }
 
-/** GET /api/spots/{district}/{slug} — the full record, straight from the dataset. */
+/** GET /api/spots/{district}/{slug}, the full record, straight from the dataset. */
 export async function GET(
   _req: Request,
   { params }: { params: Promise<{ district: string; slug: string }> }

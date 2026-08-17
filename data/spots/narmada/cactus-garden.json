@@ -10,8 +10,8 @@
   "cluster": "sou-complex",
   "status": "active",
   "district": "narmada",
-  "summary": "A dome-and-dunes showcase of hundreds of cactus and succulent species near the Statue of Unity — oddly photogenic and genuinely educational.",
-  "description": "The Cactus Garden is the SoU campus's most distinctive side attraction: a large geodesic dome and landscaped outdoor beds holding hundreds of cactus and succulent species from the Americas, Africa and beyond — barrels, columns, agaves, euphorbias — arranged in gravel dunescapes that photograph like a set. Interpretation panels do honest botanical work on how these plants engineer survival.\n\nIt is compact (an hour covers it), shaded in the dome, and different enough from the campus's flower-and-lawn defaults to stay memorable. Children tend to love the sheer weirdness of the shapes. Combine it with the neighbouring jetty-zone attractions rather than making a separate trip.",
+  "summary": "A dome-and-dunes showcase of hundreds of cactus and succulent species near the Statue of Unity, oddly photogenic and genuinely educational.",
+  "description": "The Cactus Garden is the SoU campus's most distinctive side attraction: a large geodesic dome and landscaped outdoor beds holding hundreds of cactus and succulent species from the Americas, Africa and beyond, barrels, columns, agaves, euphorbias, arranged in gravel dunescapes that photograph like a set. Interpretation panels do honest botanical work on how these plants engineer survival.\n\nIt is compact (an hour covers it), shaded in the dome, and different enough from the campus's flower-and-lawn defaults to stay memorable. Children tend to love the sheer weirdness of the shapes. Combine it with the neighbouring jetty-zone attractions rather than making a separate trip.",
   "highlights": [
     "Geodesic dome of exotic cacti and succulents",
     "Dunescape beds built for photography",
@@ -70,7 +70,7 @@
   },
   "safety": {
     "warnings": [
-      "Keep children's hands off the plants — the spines are not decorative"
+      "Keep children's hands off the plants: the spines are not decorative"
     ],
     "emergency": { "nearest_hospital": "Ekta Nagar facilities; Rajpipla civil hospital (~25 km)", "police": "Ekta Nagar (Kevadia) PS", "notes": null }
   },
@@ -87,7 +87,7 @@
   "itineraries": [],
   "media": { "images": [], "videos": [] },
   "seo": {
-    "meta_title": "Cactus Garden, Ekta Nagar — Visit Notes",
+    "meta_title": "Cactus Garden, Ekta Nagar, Visit Notes",
     "meta_description": "The Statue of Unity campus's cactus dome: what's inside, timings, tickets and the best photo hours."
   },
   "provenance": {
@@ -96,7 +96,7 @@
     "confidence": "medium",
     "sources": [
       { "title": "22 Places to See at Statue of Unity", "url": "https://myahmedabad.blog/places-to-see-at-statue-of-unity/", "publisher": "myahmedabad.blog", "accessed": "2026-08-08" },
-      { "title": "Statue of Unity Ticket Price 2026 — Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" }
+      { "title": "Statue of Unity Ticket Price 2026, Attractions & Travel Guide", "url": "https://statue-of-unity.in/statue-of-unity-ticket-price-2026-attractions-travel-guide/", "publisher": "statue-of-unity.in", "accessed": "2026-08-08" }
     ],
     "needs_verification": ["visit.timings", "location.coordinates"]
   }
