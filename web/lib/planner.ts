@@ -90,8 +90,11 @@ export interface PlanInput {
   must: string[]; // spot ids
   /** spot ids the traveller skipped ("not this one"); optional so old links and tests stay valid */
   avoid?: string[];
-  /** "easy" (the default, unhurried days) or "packed" (longer days, more places) */
-  pace?: "easy" | "packed";
+  /**
+   * "easy" (the default, unhurried days), "packed" (longer days, more places)
+   * or "rushed" (packed hours and visits cut to 70% of the recorded time)
+   */
+  pace?: "easy" | "packed" | "rushed";
 }
 
 export interface PlannedStop {
@@ -199,6 +202,13 @@ export const MAX_STOPS_PER_DAY = 7;
 export const PACKED_DAY_MIN = 585;
 /** capped at 8, not "as many as fit": 9! permutations would also blow up the time-of-day pass */
 export const PACKED_MAX_STOPS_PER_DAY = 8;
+/**
+ * The rushed pace runs packed hours AND cuts each visit to 70% of what the
+ * record says the place takes. That is the one pace that breaks the site's
+ * honest-numbers promise, which is why choosing it puts a warning on the plan
+ * itself rather than only in the control's hint.
+ */
+export const RUSHED_DWELL_FACTOR = 0.7;
 export const CLUSTER_SOFT_CAP = 3;
 export const CLUSTER_ANCHOR_CAP = 5; // when the day is based in that cluster
 export const CATEGORY_SOFT_CAP = 3; // the actual fix for "twelve gardens"
@@ -363,8 +373,14 @@ export function driveMinutes(a: Node, b: Node, month: number): number {
 }
 
 /** Visit cost: the record's own duration, plus parking, plus any walk-in. */
-export function stopCostMinutes(spot: PlannerSpot): number {
-  return spot.durationMin + STOP_OVERHEAD_MIN + (spot.walkIn ? LAST_MILE_WALK_MIN : 0);
+export function stopCostMinutes(spot: PlannerSpot, dwellFactor = 1): number {
+  // Only the visit itself compresses. Parking, gearing up and the last-mile
+  // walk take what they take no matter how much of a hurry you are in.
+  return (
+    Math.round(spot.durationMin * dwellFactor) +
+    STOP_OVERHEAD_MIN +
+    (spot.walkIn ? LAST_MILE_WALK_MIN : 0)
+  );
 }
 
 // --------------------------------------------------------------- season
@@ -659,7 +675,7 @@ export function encodePlan(input: PlanInput): string {
   p.set("month", String(input.month));
   if (input.must.length) p.set("must", input.must.join(","));
   if (input.avoid?.length) p.set("avoid", input.avoid.join(","));
-  if (input.pace === "packed") p.set("pace", "packed"); // easy is the default and stays out of the URL
+  if (input.pace && input.pace !== "easy") p.set("pace", input.pace); // easy is the default and stays out of the URL
   return p.toString();
 }
 
@@ -686,7 +702,8 @@ export function decodePlan(
     .filter(Boolean)
     .filter((id) => data.spots.some((s) => s.id === id) && !must.includes(id))
     .slice(0, 30);
-  const pace = p.get("pace") === "packed" ? ("packed" as const) : ("easy" as const);
+  const rawPace = p.get("pace");
+  const pace = rawPace === "packed" || rawPace === "rushed" ? rawPace : ("easy" as const);
   return { input: { from, to, days, month, must: must.slice(0, 5), avoid, pace }, dropped };
 }
 
@@ -738,7 +755,9 @@ export function timeOfDayPass(
   month: number,
   staysArr: PlannerStay[],
   /** the pace's day budget, so a packed day is judged against packed hours */
-  dayMin: number = USABLE_DAY_MIN
+  dayMin: number = USABLE_DAY_MIN,
+  /** rushed pace: the same dwell compression the packer used */
+  dwellFactor: number = 1
 ): PackResult {
   const driveMonth = month || 1;
   const out: PlannedDay[] = [];
@@ -788,7 +807,7 @@ export function timeOfDayPass(
       // bridge is tomorrow's first leg); on the final day the bridge IS the
       // drive home and packDays counts it inside the day.
       const dayDriveOf = (perm: number[]) => driveOf(perm) - (isFinal ? 0 : m[perm[n - 1]][B]);
-      const visitTotal = nodes.reduce((s, x) => s + stopCostMinutes(x.spot!), 0);
+      const visitTotal = nodes.reduce((s, x) => s + stopCostMinutes(x.spot!, dwellFactor), 0);
       // never break the packer's hard day budget; a day already over it
       // (must-visits can do that) must at least not get worse
       const dayBudget = Math.max(dayMin, visitTotal + dayDriveOf(identity));
@@ -861,7 +880,7 @@ export function timeOfDayPass(
         seasonTier: month ? seasonTier(spot, month) : "ok",
         seasonNote: month ? seasonNote(spot, month) : null,
       });
-      dayVisit += stopCostMinutes(spot);
+      dayVisit += stopCostMinutes(spot, dwellFactor);
       dayDrive += drive;
       dayKm += leg.km;
       cursor = node;
@@ -958,7 +977,9 @@ export function packDays(
   mustIds: Set<string> = new Set(),
   /** the pace: how long a day runs and how many stops it may hold */
   dayMin: number = USABLE_DAY_MIN,
-  stopCap: number = MAX_STOPS_PER_DAY
+  stopCap: number = MAX_STOPS_PER_DAY,
+  /** rushed pace: fraction of the recorded visit time actually spent */
+  dwellFactor: number = 1
 ): PackResult {
   const driveMonth = month || 1; // 0 means "month not chosen"; speeds still need one
   const plannedDays: PlannedDay[] = [];
@@ -1000,7 +1021,7 @@ export function packDays(
     const spot = node.spot!;
     const leg = legDistanceKm(cursor, node);
     const drive = driveMinutes(cursor, node, driveMonth);
-    const cost = stopCostMinutes(spot);
+    const cost = stopCostMinutes(spot, dwellFactor);
     // Whichever day ends the trip still has to reach the finish; earlier days
     // just end where they end and you sleep there. Without reserving it, the
     // last day silently ran an hour over. Recomputed after a day closes, since
@@ -1083,13 +1104,23 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
 
   const month = input.month;
   const days = Math.min(5, Math.max(1, input.days));
-  // the pace decides how long a day runs and how many stops it may hold
-  const packedPace = input.pace === "packed";
-  const dayMin = packedPace ? PACKED_DAY_MIN : USABLE_DAY_MIN;
-  const stopCap = packedPace ? PACKED_MAX_STOPS_PER_DAY : MAX_STOPS_PER_DAY;
+  // the pace decides how long a day runs, how many stops it may hold, and
+  // (rushed only) how much of each visit's recorded time is actually spent
+  const longDays = input.pace === "packed" || input.pace === "rushed";
+  const dayMin = longDays ? PACKED_DAY_MIN : USABLE_DAY_MIN;
+  const stopCap = longDays ? PACKED_MAX_STOPS_PER_DAY : MAX_STOPS_PER_DAY;
+  const dwellFactor = input.pace === "rushed" ? RUSHED_DWELL_FACTOR : 1;
   const isLoop = isSamePlace(from, to);
   const warnings: string[] = [];
   const excluded: Excluded[] = [];
+
+  // The one pace that breaks the honest-numbers promise announces itself on
+  // the plan, not just in the control's hint, and it prints with the plan.
+  if (input.pace === "rushed") {
+    warnings.push(
+      `Rushed pace: every visit is budgeted at ${Math.round(RUSHED_DWELL_FACTOR * 100)}% of the time these places actually take. Times will feel tight, and the first delay eats the slack.`
+    );
+  }
 
   // endpoints and must-visits are never candidates
   const endpointIds = new Set(
@@ -1164,8 +1195,8 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
     isLoop ? orderRadial(from, nodes) : orderRoute(from, nodes, to, month || 1);
   /** Accept only what survives the real packer: see packDays. */
   const fits = (nodes: Node[]) =>
-    packDays(from, routeOf(nodes), to, days, month, data.stays, mustIds, dayMin, stopCap).dropped
-      .length === 0;
+    packDays(from, routeOf(nodes), to, days, month, data.stays, mustIds, dayMin, stopCap, dwellFactor)
+      .dropped.length === 0;
 
   /**
    * Greedy selection, re-ranked every round. Ranking has to be dynamic: fatigue
@@ -1220,13 +1251,14 @@ export function planTrip(input: PlanInput, data: PlannerData): PlanResult | null
   // 4. final ordering, 5. pack into days, the same packer the fit gate used
   const ordered = routeOf(chosen);
   const packed = timeOfDayPass(
-    packDays(from, ordered, to, days, month, data.stays, mustIds, dayMin, stopCap),
+    packDays(from, ordered, to, days, month, data.stays, mustIds, dayMin, stopCap, dwellFactor),
     from,
     to,
     days,
     month,
     data.stays,
-    dayMin
+    dayMin,
+    dwellFactor
   );
   const plannedDays = packed.days;
   const dropped = packed.dropped;

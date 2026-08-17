@@ -29,6 +29,7 @@ import {
   type PlanResult,
   closureWarnings,
   type ClosureWarning,
+  RUSHED_DWELL_FACTOR,
 } from "@/lib/planner";
 
 // ------------------------------------------------------------------ options
@@ -313,7 +314,7 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
   });
   const [must, setMust] = useState<string[]>(initial.input?.must ?? []);
   const [avoid, setAvoid] = useState<string[]>(initial.input?.avoid ?? []);
-  const [pace, setPace] = useState<"easy" | "packed">(initial.input?.pace ?? "easy");
+  const [pace, setPace] = useState<"easy" | "packed" | "rushed">(initial.input?.pace ?? "easy");
   const [mustQuery, setMustQuery] = useState("");
 
   /**
@@ -515,11 +516,20 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
               <Pill active={pace === "packed"} onClick={() => setPace("packed")}>
                 Packed
               </Pill>
+              <Pill active={pace === "rushed"} onClick={() => setPace("rushed")}>
+                Rushed
+              </Pill>
             </div>
-            <p className="mt-1.5 max-w-[180px] text-[11px] leading-snug text-stone-600">
-              {pace === "packed"
-                ? "Early starts, ~11-hour days, more places. Visits stay unhurried."
-                : "~9-hour days with time to linger."}
+            <p
+              className={`mt-1.5 max-w-[190px] text-[11px] leading-snug ${
+                pace === "rushed" ? "text-amber-300/90" : "text-stone-600"
+              }`}
+            >
+              {pace === "rushed"
+                ? "~11-hour days AND visits cut to ~70% of what these places take. Times get tight."
+                : pace === "packed"
+                  ? "Early starts, ~11-hour days, more places. Visits stay unhurried."
+                  : "~9-hour days with time to linger."}
             </p>
           </div>
           <div>
@@ -678,7 +688,7 @@ export function TripPlanner({ data, trips }: { data: PlannerData; trips: TripSum
             onSkip={skipSpot}
             closures={closures}
             startDate={startDate || null}
-            packedPace={deferredInput.pace === "packed"}
+            pace={deferredInput.pace ?? "easy"}
           />
         </div>
       )}
@@ -848,7 +858,7 @@ function PlanView({
   onSkip,
   closures,
   startDate,
-  packedPace,
+  pace,
 }: {
   plan: PlanResult;
   days: number;
@@ -860,8 +870,9 @@ function PlanView({
   closures: ClosureWarning[];
   /** "YYYY-MM-DD" when the traveller gave one */
   startDate: string | null;
-  /** longer days, more stops; the printed sheet should say so */
-  packedPace: boolean;
+  /** drives the printed label AND the displayed dwell times: under rushed the
+      cards must show the compressed times the budget actually assumes */
+  pace: "easy" | "packed" | "rushed";
 }) {
   const stops = plan.days.flatMap((d) => d.stops);
 
@@ -1070,6 +1081,9 @@ function PlanView({
 
   const monthName = month ? MONTHS[month - 1] : "";
   const closureFor = (day: number) => closures.find((c) => c.day === day);
+  // what a visit is budgeted at under this pace, so the cards never show a
+  // time the budget no longer honours
+  const dwell = (min: number) => (pace === "rushed" ? Math.round(min * RUSHED_DWELL_FACTOR) : min);
   // "starting Mon, 14 Sept" beats "planned for Sep" once a date is known
   const startLabel = useMemo(() => {
     if (!startDate) return null;
@@ -1108,7 +1122,7 @@ function PlanView({
         <p className="text-[11px]">
           {plan.days.length} day{plan.days.length > 1 ? "s" : ""} · {stops.length} stops ·{" "}
           {startLabel ? `starting ${startLabel}` : `planned for ${monthName}`}
-          {packedPace ? " · packed pace" : ""} · dandak.vercel.app/plan
+          {pace !== "easy" ? ` · ${pace} pace` : ""} · dandak.vercel.app/plan
         </p>
       </div>
 
@@ -1170,7 +1184,7 @@ function PlanView({
                     title={s.spot.name}
                     sub={`Day ${d.day} · ${categoryMeta(s.spot.category).emoji} ${
                       s.driveKmFromPrev > 0 ? `${Math.round(s.driveKmFromPrev)} km · ` : ""
-                    }${hhmm(s.spot.durationMin)} here`}
+                    }${hhmm(dwell(s.spot.durationMin))} here`}
                     color={color}
                     href={`/spots/${s.spot.district}/${s.spot.slug}`}
                   />
@@ -1263,7 +1277,7 @@ function PlanView({
                     order: s.order,
                     name: s.spot.name,
                     category: s.spot.category,
-                    durationMin: s.spot.durationMin,
+                    durationMin: dwell(s.spot.durationMin),
                     href: `/spots/${s.spot.district}/${s.spot.slug}`,
                     image: s.spot.hasPhoto ? `/images/spots/${s.spot.id}.jpg` : null,
                     flag: s.seasonNote,

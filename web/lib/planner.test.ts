@@ -513,5 +513,34 @@ test("packed pace covers at least as much and never breaks its own longer day", 
     for (const d of easy.days) {
       assert.ok(d.visitMin + d.driveMin <= USABLE_DAY_MIN, `easy day ${d.day} broke the easy budget`);
     }
+
+    // rushed: packed hours plus compressed visits -> covers at least as much as
+    // packed, budgets each visit at 70%, and says so on the plan itself
+    const rushed = planTrip({ from, to, days, month, must: [], pace: "rushed" }, data)!;
+    assert.ok(
+      count(rushed) >= count(packed),
+      `${from}->${to} ${days}d: rushed found ${count(rushed)} vs packed ${count(packed)}`
+    );
+    for (const d of rushed.days) {
+      assert.ok(
+        d.visitMin + d.driveMin <= PACKED_DAY_MIN,
+        `rushed day ${d.day} runs ${d.visitMin + d.driveMin} of ${PACKED_DAY_MIN} min`
+      );
+    }
+    assert.ok(
+      rushed.warnings.some((w) => w.startsWith("Rushed pace:")),
+      "choosing rushed must put the warning on the plan, not only in the control"
+    );
+    assert.ok(
+      !packed.warnings.some((w) => w.startsWith("Rushed pace:")),
+      "packed keeps honest dwell times and must not carry the rushed warning"
+    );
   }
+});
+
+test("rushed pace round-trips the URL", () => {
+  const { input } = decodePlan("from=h:surat&to=h:saputara&days=2&month=8&pace=rushed", data);
+  assert.equal(input!.pace, "rushed");
+  const { input: bogus } = decodePlan("from=h:surat&to=h:saputara&days=2&month=8&pace=frantic", data);
+  assert.equal(bogus!.pace, "easy"); // unknown paces fall back to the default
 });
