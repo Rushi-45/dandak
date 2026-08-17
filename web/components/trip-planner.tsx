@@ -5,6 +5,7 @@ import {
   useCallback,
   useDeferredValue,
   useEffect,
+  useId,
   useMemo,
   useRef,
   useState,
@@ -69,6 +70,8 @@ function NodePicker({
 }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const [activeIdx, setActiveIdx] = useState(0);
+  const listId = useId();
   const boxRef = useRef<HTMLDivElement>(null);
   const selected = options.find((o) => o.key === value);
 
@@ -94,42 +97,76 @@ function NodePicker({
       </label>
       <button
         type="button"
+        aria-expanded={open}
+        aria-haspopup="listbox"
         onClick={() => {
           setOpen((o) => !o);
           setQuery("");
+          setActiveIdx(0);
         }}
         className="mt-1.5 flex w-full items-center justify-between gap-2 rounded-xl border border-white/[0.09] bg-white/[0.04] px-3.5 py-3 text-left text-sm text-stone-200 transition-colors hover:border-emerald-400/40"
       >
         <span className="truncate">
           {selected ? `${selected.emoji} ${selected.label}` : "Choose a place"}
         </span>
-        <span className="shrink-0 text-stone-600">▾</span>
+        <span aria-hidden className="shrink-0 text-stone-600">
+          ▾
+        </span>
       </button>
 
       {open && (
         <div className="absolute z-30 mt-1.5 max-h-72 w-full overflow-hidden rounded-xl border border-white/[0.1] bg-[#0b1210] shadow-2xl shadow-black/60">
           <input
             autoFocus
+            role="combobox"
+            aria-expanded={open}
+            aria-controls={listId}
+            aria-activedescendant={matches[activeIdx] ? `${listId}-${activeIdx}` : undefined}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setActiveIdx(0);
+            }}
+            onKeyDown={(e) => {
+              // the keyboard path: a mouse-only dropdown is half a control
+              if (e.key === "ArrowDown") {
+                e.preventDefault();
+                setActiveIdx((i) => Math.min(i + 1, matches.length - 1));
+              } else if (e.key === "ArrowUp") {
+                e.preventDefault();
+                setActiveIdx((i) => Math.max(i - 1, 0));
+              } else if (e.key === "Enter") {
+                e.preventDefault();
+                const hit = matches[activeIdx] ?? matches[0];
+                if (hit) {
+                  onChange(hit.key);
+                  setOpen(false);
+                }
+              } else if (e.key === "Escape") {
+                e.preventDefault();
+                setOpen(false);
+              }
+            }}
             placeholder="Search towns and places…"
             className="w-full border-b border-white/[0.08] bg-transparent px-3.5 py-2.5 text-sm text-stone-200 outline-none placeholder:text-stone-600"
           />
-          <ul className="max-h-56 overflow-y-auto py-1">
+          <ul id={listId} role="listbox" className="max-h-56 overflow-y-auto py-1">
             {matches.length === 0 && (
               <li className="px-3.5 py-3 text-xs text-stone-500">Nothing matches that.</li>
             )}
-            {matches.map((o) => (
-              <li key={o.key}>
+            {matches.map((o, i) => (
+              <li key={o.key} role="option" id={`${listId}-${i}`} aria-selected={o.key === value}>
                 <button
                   type="button"
+                  tabIndex={-1}
                   onClick={() => {
                     onChange(o.key);
                     setOpen(false);
                   }}
-                  className={`flex w-full items-center gap-2 px-3.5 py-2 text-left text-sm transition-colors hover:bg-emerald-400/10 ${
-                    o.key === value ? "text-emerald-300" : "text-stone-300"
-                  }`}
+                  onMouseEnter={() => setActiveIdx(i)}
+                  className={`flex w-full items-center gap-2 px-3.5 py-2 text-left text-sm transition-colors ${
+                    i === activeIdx ? "bg-emerald-400/10" : ""
+                  } ${o.key === value ? "text-emerald-300" : "text-stone-300"}`}
                 >
                   <span aria-hidden className="w-5 shrink-0">
                     {o.emoji}
@@ -160,6 +197,8 @@ function Pill({
   return (
     <button
       type="button"
+      // these are toggles, and colour alone should not be the only signal
+      aria-pressed={active}
       onClick={onClick}
       className={`min-h-[38px] rounded-full px-3.5 text-[12px] font-bold transition-all ${
         active
